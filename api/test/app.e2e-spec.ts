@@ -1,13 +1,16 @@
 import { Test, TestingModule } from '@nestjs/testing';
 import { INestApplication } from '@nestjs/common';
-import * as request from 'supertest';
-import { AppModule } from '../src/app.module';
-import { PrismaService } from '../src/prisma/prisma.service';
-import { getQueueToken } from '@nestjs/bullmq';
+import { MemoryHealthIndicator } from '@nestjs/terminus';
+// supertest is an `export =` CommonJS module and esModuleInterop is off, so a default import would
+// compile to an undefined `.default` at runtime.
+import request = require('supertest');
 
-// Satisfy ConfigModule env validation without a live database
+// AppModule validates the env when it is imported, so these must be set before that import runs.
 process.env.DATABASE_URL = 'postgresql://localhost:5432/test';
 process.env.DIRECT_URL = 'postgresql://localhost:5432/test';
+
+import { AppModule } from '../src/app.module';
+import { PrismaService } from '../src/prisma/prisma.service';
 
 const mockPrismaService = {
   $connect: jest.fn().mockResolvedValue(undefined),
@@ -15,17 +18,6 @@ const mockPrismaService = {
   onModuleInit: jest.fn().mockResolvedValue(undefined),
   onModuleDestroy: jest.fn().mockResolvedValue(undefined),
   isHealthy: jest.fn().mockResolvedValue(true),
-};
-
-// Stub the chat queue so no live Redis connection is required.
-const mockChatQueue = {
-  add: jest.fn().mockResolvedValue({ id: 'e2e-job-1' }),
-  getJob: jest.fn().mockResolvedValue({
-    getState: jest.fn().mockResolvedValue('completed'),
-    returnvalue: { answer: 'stub answer' },
-  }),
-  // ioredis lifecycle methods expected by BullMQ internals
-  close: jest.fn().mockResolvedValue(undefined),
 };
 
 describe('AppModule (e2e)', () => {
@@ -37,8 +29,10 @@ describe('AppModule (e2e)', () => {
     })
       .overrideProvider(PrismaService)
       .useValue(mockPrismaService)
-      .overrideProvider(getQueueToken('chat'))
-      .useValue(mockChatQueue)
+      // The real heap check reads this Jest worker's heap, which ts-jest can push past the
+      // liveness threshold and make the probe flap.
+      .overrideProvider(MemoryHealthIndicator)
+      .useValue({ checkHeap: jest.fn().mockResolvedValue({ memory_heap: { status: 'up' } }) })
       .compile();
 
     app = module.createNestApplication();
@@ -47,7 +41,7 @@ describe('AppModule (e2e)', () => {
   });
 
   afterAll(async () => {
-    await app.close();
+    await app?.close();
   });
 
   it('when GET /api/v1/test/ping is called, returns 200 with { message: "pong" }', () => {
@@ -57,25 +51,21 @@ describe('AppModule (e2e)', () => {
       .expect({ message: 'pong' });
   });
 
-  it('when POST /api/v1/chat/jobs is called with a valid body, returns 201 with { jobId }', () => {
-    return request(app.getHttpServer())
-      .post('/api/v1/chat/jobs')
-      .send({ user_question: 'Hello' })
-      .expect(201)
-      .expect((res) => {
-        expect(res.body).toHaveProperty('jobId');
-        expect(typeof res.body.jobId).toBe('string');
-      });
+  it('when GET /api/v1/health/liveness is called, returns 200', () => {
+    return request(app.getHttpServer()).get('/api/v1/health/liveness').expect(200);
   });
 
-  it('when GET /api/v1/chat/jobs/:id is called, returns 200 with jobId, state and result', () => {
+  it('when POST /api/v1/sessions has an unknown mode, the validation pipe rejects it with 400', () => {
     return request(app.getHttpServer())
-      .get('/api/v1/chat/jobs/e2e-job-1')
-      .expect(200)
-      .expect((res) => {
-        expect(res.body).toHaveProperty('jobId', 'e2e-job-1');
-        expect(res.body).toHaveProperty('state');
-        expect(res.body).toHaveProperty('result');
-      });
+      .post('/api/v1/sessions')
+      .send({ mode: 'speedrun' })
+      .expect(400);
+  });
+
+  it('when POST /api/v1/sessions/:id/answers has a non-uuid itemId, the validation pipe rejects it with 400', () => {
+    return request(app.getHttpServer())
+      .post('/api/v1/sessions/00000000-0000-0000-0000-000000000000/answers')
+      .send({ itemType: 'reading', itemId: 'not-a-uuid', chosenLabel: 'A' })
+      .expect(400);
   });
 });

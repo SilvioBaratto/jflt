@@ -36,6 +36,8 @@ describe('Response serialization', () => {
   it('when findOne is inspected, its response schema is ItemResponseSchema', () => {
     const options = Reflect.getMetadata(
       CLASS_SERIALIZER_OPTIONS,
+      // Nest stores method metadata on the function itself; it is read here, never called.
+      // oxlint-disable-next-line typescript/unbound-method
       TestController.prototype.findOne,
     );
 
@@ -45,6 +47,8 @@ describe('Response serialization', () => {
   it('when findAll is inspected, its response schema is the single-item ItemResponseSchema', () => {
     const options = Reflect.getMetadata(
       CLASS_SERIALIZER_OPTIONS,
+      // Nest stores method metadata on the function itself; it is read here, never called.
+      // oxlint-disable-next-line typescript/unbound-method
       TestController.prototype.findAll,
     );
 

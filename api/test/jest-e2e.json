@@ -7,10 +7,9 @@
     "^.+\\.(t|j)s$": "ts-jest"
   },
   "moduleNameMapper": {
-    "^@generated/prisma$": "<rootDir>/generated/prisma/client",
-    "^@generated/zod$": "<rootDir>/generated/zod/schemas/index",
-    "^@generated/zod/(.*)$": "<rootDir>/generated/zod/schemas/$1",
-    "^@/(.*)$": "<rootDir>/src/$1"
-  },
-  "transformIgnorePatterns": ["node_modules/(?!(uuid)/)"]
+    "^@generated/prisma$": "<rootDir>/../generated/prisma/client",
+    "^@generated/zod$": "<rootDir>/../generated/zod/schemas/index",
+    "^@generated/zod/(.*)$": "<rootDir>/../generated/zod/schemas/$1",
+    "^@/(.*)$": "<rootDir>/../src/$1"
+  }
 }

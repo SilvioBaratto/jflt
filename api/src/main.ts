@@ -8,9 +8,11 @@ import { HttpExceptionFilter } from './common/filters/http-exception.filter';
 import { PrismaClientExceptionFilter } from './common/filters/prisma-exception.filter';
 import { TransformInterceptor } from './common/interceptors/transform.interceptor';
 
+import { readFileSync } from 'fs';
 import { join } from 'path';
-// eslint-disable-next-line @typescript-eslint/no-var-requires
-const { version } = require(join(process.cwd(), 'package.json'));
+const { version } = JSON.parse(readFileSync(join(process.cwd(), 'package.json'), 'utf8')) as {
+  version: string;
+};
 
 async function bootstrap() {
   const app = await NestFactory.create(AppModule, { bufferLogs: true });
@@ -87,4 +89,7 @@ async function bootstrap() {
   const port = process.env.PORT || 3000;
   await app.listen(port);
 }
-bootstrap();
+bootstrap().catch((err: unknown) => {
+  console.error(err);
+  process.exit(1);
+});

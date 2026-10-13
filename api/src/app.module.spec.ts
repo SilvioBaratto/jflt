@@ -1,4 +1,6 @@
 import 'reflect-metadata';
+import { readFileSync } from 'node:fs';
+import { join } from 'node:path';
 
 // Provide required env vars so ConfigModule.forRoot validate() does not reject during import.
 process.env.DATABASE_URL = process.env.DATABASE_URL || 'postgresql://localhost:5432/test';
@@ -7,7 +9,6 @@ process.env.DIRECT_URL = process.env.DIRECT_URL || 'postgresql://localhost:5432/
 import { ConfigModule } from '@nestjs/config';
 import { BullModule } from '@nestjs/bullmq';
 import { BullBoardModule } from '@bull-board/nestjs';
-import { MonitoringModule } from './modules/monitoring/monitoring.module';
 import { AppModule } from './app.module';
 
 // NestJS stores forRoot() return values as Promises in the @Module imports metadata.
@@ -53,42 +54,21 @@ describe('AppModule (base) — BullModule Redis wiring', () => {
   });
 
   it('when AppModule source is inspected, REDIS_HOST env var drives the connection host', () => {
-    // Read the .ts source alongside this spec — ts-jest keeps __dirname pointing at the
-    // original src/ directory, so the .ts file is always co-located with this spec.
-    // eslint-disable-next-line @typescript-eslint/no-require-imports
-    const path = require('path');
-    // eslint-disable-next-line @typescript-eslint/no-require-imports
-    const fs = require('fs');
-    const src: string = fs.readFileSync(
-      path.join(__dirname, 'app.module.ts'),
-      'utf8',
-    );
+    // ts-jest keeps __dirname pointing at the original src/ directory, so the .ts source is
+    // always co-located with this spec.
+    const src = readFileSync(join(__dirname, 'app.module.ts'), 'utf8');
 
     expect(src).toContain('REDIS_HOST');
   });
 
   it('when AppModule source is inspected, REDIS_PORT env var drives the connection port', () => {
-    // eslint-disable-next-line @typescript-eslint/no-require-imports
-    const path = require('path');
-    // eslint-disable-next-line @typescript-eslint/no-require-imports
-    const fs = require('fs');
-    const src: string = fs.readFileSync(
-      path.join(__dirname, 'app.module.ts'),
-      'utf8',
-    );
+    const src = readFileSync(join(__dirname, 'app.module.ts'), 'utf8');
 
     expect(src).toContain('REDIS_PORT');
   });
 });
 
-describe('AppModule (base) — MonitoringModule registration', () => {
-  it('when AppModule imports are inspected, MonitoringModule is registered', () => {
-    // MonitoringModule is a plain (non-dynamic) module, so it appears directly in the raw imports array.
-    const raw: unknown[] = Reflect.getMetadata('imports', AppModule) ?? [];
-
-    expect(raw).toContain(MonitoringModule);
-  });
-
+describe('AppModule (base) — Bull Board dashboard', () => {
   it('when AppModule imports are inspected, BullBoardModule root is wired for the dashboard', async () => {
     const imports = await resolveImports(AppModule);
 
