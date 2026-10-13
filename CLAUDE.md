@@ -39,11 +39,14 @@ without it and npm aborts on an `ERESOLVE` peer conflict.
 
 | Task | API (`cd api`) | Frontend (`cd frontend`) |
 |------|----------------|--------------------------|
-| Test (all) | `npm test` (Jest) | `npm test` / `ng test` (Vitest) |
+| Test (all) | `npm test` (Jest under `--experimental-vm-modules`, since NestJS 12 ships ESM) | `npm test` / `ng test` (Vitest) |
 | Single test | `npm test -- health.controller` (path/name regex); add `-t "case name"` | `ng test` (Vitest filters) |
-| Lint | `npm run lint` (ESLint) | — (no lint script; Prettier config only) |
+| Lint | `npm run lint` (oxlint, type-aware) | — (no lint script; Prettier config only) |
 | Build | `npm run build` | `npm run build` |
 | E2E | `npm run test:e2e` | — |
+
+CI (`.github/workflows/ci.yml`) runs the API's lint, unit, e2e and build, and the frontend's test and
+build, on every push and pull request to `main`.
 
 ### Database & seed (API)
 
