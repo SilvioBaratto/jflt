@@ -37,6 +37,7 @@ import { MatInputModule } from '@angular/material/input';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { environment } from '../../../environments/environment';
 import { MarkdownPipe } from '../../shared/markdown.pipe';
+import { NavSectionService, sectionRoute } from '../../shared/nav-section';
 import { ExamService } from '../../services/exam';
 import {
   Session,
@@ -70,6 +71,7 @@ import {
 export class SessionComponent implements OnInit {
   private readonly route = inject(ActivatedRoute);
   private readonly examApi = inject(ExamService);
+  private readonly navSection = inject(NavSectionService);
   private readonly destroyRef = inject(DestroyRef);
   private readonly injector = inject(Injector);
 
@@ -101,6 +103,7 @@ export class SessionComponent implements OnInit {
   readonly finalResult = signal<SessionResult | null>(null);
 
   ngOnInit(): void {
+    this.destroyRef.onDestroy(() => this.navSection.set(null));
     this.load();
   }
 
@@ -129,6 +132,7 @@ export class SessionComponent implements OnInit {
       .subscribe({
         next: (s) => {
           this.session.set(s);
+          this.navSection.set(sectionRoute(s));
           if (s.status === 'completed' && s.result) this.finalResult.set(s.result);
           const opt: Record<string, string> = {};
           for (const t of s.items.writing) opt[t.id] = t.options[0]?.key ?? 'main';

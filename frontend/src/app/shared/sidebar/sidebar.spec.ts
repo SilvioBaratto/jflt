@@ -10,12 +10,16 @@ import { LucideIconConfig } from 'lucide-angular';
 
 import { ICON_PROVIDER } from '../../icons';
 import { NAV_ITEMS } from '../nav-item';
+import { NavSectionService } from '../nav-section';
 import { RAIL_ACTIONS_SHEET, SidebarComponent, SidebarMode } from './sidebar';
 
 @Component({ selector: 'app-route-stub', template: '' })
 class RouteStubComponent {}
 
 const NAV_ROUTES: Routes = NAV_ITEMS.map((item) => ({ path: item.route.slice(1), component: RouteStubComponent }));
+
+/** The destinations plus the session page, whose URL names none of them. */
+const SESSION_ROUTES: Routes = [...NAV_ROUTES, { path: 'session/:id', component: RouteStubComponent }];
 
 /** The sidebar's own stylesheet (component styles land in <head> while the fixture lives). */
 function sidebarStyleText(): string {
@@ -50,6 +54,8 @@ describe('SidebarComponent', () => {
     loader = TestbedHarnessEnvironment.loader(fixture);
     fixture.detectChanges();
     await fixture.whenStable();
+    // routerLinkActive settles after the first pass and marks the view dirty, as it does in the app.
+    fixture.detectChanges();
     return fixture.nativeElement;
   }
 
@@ -77,6 +83,17 @@ describe('SidebarComponent', () => {
       const current = el.querySelectorAll('a[aria-current="page"]');
       expect(current.length).toBe(1);
       expect(current[0].textContent).toContain('Writing');
+    });
+
+    it('when a session page names its destination, that item is activated although the URL is /session/:id', async () => {
+      await render('expanded', SESSION_ROUTES, '/session/abc');
+      TestBed.inject(NavSectionService).set('/exam');
+      fixture.detectChanges();
+
+      const items = await (await loader.getHarness(MatNavListHarness)).getItems();
+      expect(await Promise.all(items.map((i) => i.isActivated()))).toEqual(
+        NAV_ITEMS.map((i) => i.route === '/exam'),
+      );
     });
 
     it('when the rail renders, each item carries a decorative lucide-icon', async () => {
@@ -187,6 +204,18 @@ describe('SidebarComponent', () => {
       const current = el.querySelectorAll('a.rail-item[aria-current="page"]');
       expect(current.length).toBe(1);
       expect(current[0].textContent?.trim()).toBe('Reading');
+    });
+
+    it('when a session page names its destination, that link is current although the URL is /session/:id', async () => {
+      const el = await render('collapsed', SESSION_ROUTES, '/session/abc');
+      expect(el.querySelectorAll('a.rail-item[aria-current="page"]').length).toBe(0);
+
+      TestBed.inject(NavSectionService).set('/listening');
+      fixture.detectChanges();
+
+      const current = el.querySelectorAll('a.rail-item.rail-item-active[aria-current="page"]');
+      expect(current.length).toBe(1);
+      expect(current[0].textContent?.trim()).toBe('Listening');
     });
 
     it('when collapsed without a session, no action button renders', async () => {

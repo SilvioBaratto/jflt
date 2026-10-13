@@ -6,6 +6,7 @@ import { LucideIconConfig } from 'lucide-angular';
 
 import { ICON_PROVIDER } from '../../icons';
 import { NAV_ITEMS } from '../nav-item';
+import { NavSectionService } from '../nav-section';
 import { BottomTabBarComponent, NAV_BAR_BLOCK_SIZE_PROPERTY } from './bottom-tab-bar';
 
 @Component({ selector: 'app-route-stub', template: '' })
@@ -32,6 +33,8 @@ describe('BottomTabBarComponent', () => {
     const fixture = TestBed.createComponent(BottomTabBarComponent);
     fixture.detectChanges();
     await fixture.whenStable();
+    // routerLinkActive settles after the first pass and marks the view dirty, as it does in the app.
+    fixture.detectChanges();
     return fixture;
   }
 
@@ -44,6 +47,19 @@ describe('BottomTabBarComponent', () => {
     expect(tabs.length).toBe(NAV_ITEMS.length);
     expect(tabs.length).toBeGreaterThanOrEqual(3);
     expect(tabs.length).toBeLessThanOrEqual(5);
+  });
+
+  it('when a session page names its destination, that tab is current although the URL is /session/:id', async () => {
+    const fixture = await setup([{ path: 'session/:id', children: [] }], '/session/abc');
+    expect(tabsOf(fixture).filter((a) => a.getAttribute('aria-current') === 'page')).toHaveLength(0);
+
+    TestBed.inject(NavSectionService).set('/writing');
+    fixture.detectChanges();
+
+    const current = tabsOf(fixture).filter((a) => a.getAttribute('aria-current') === 'page');
+    expect(current).toHaveLength(1);
+    expect(current[0].textContent).toContain('Writing');
+    expect(current[0].classList).toContain('nav-bar-item-active');
   });
 
   it('when the bar renders, it pads by the safe-area insets from its own stylesheet, with no utility classes', async () => {

@@ -5,8 +5,10 @@
       #link
       class="nav-bar-item"
       [routerLink]="tab.route"
-      routerLinkActive="nav-bar-item-active"
-      ariaCurrentWhenActive="page"
+      routerLinkActive
+      #rla="routerLinkActive"
+      [class.nav-bar-item-active]="rla.isActive || navSection() === tab.route"
+      [attr.aria-current]="rla.isActive || navSection() === tab.route ? 'page' : null"
     >
       <span class="nav-bar-indicator" matRipple [matRippleTrigger]="link">
         <lucide-icon class="nav-bar-icon" [name]="tab.icon" aria-hidden="true" />

@@ -12,6 +12,7 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
 import { LucideAngularModule } from 'lucide-angular';
 
 import { NavItem, NAV_ITEMS } from '../nav-item';
+import { NavSectionService } from '../nav-section';
 
 /** Custom property on <html> that holds the bar's rendered block size (read by styles/overlays/_toast.scss). */
 export const NAV_BAR_BLOCK_SIZE_PROPERTY = '--app-nav-bar-block-size';
@@ -39,6 +40,9 @@ export const NAV_BAR_BLOCK_SIZE_PROPERTY = '--app-nav-bar-block-size';
 })
 export class BottomTabBarComponent {
   tabs: NavItem[] = NAV_ITEMS;
+
+  /** Destination a session page belongs to, since its URL no longer names it. */
+  protected readonly navSection = inject(NavSectionService).current;
 
   constructor() {
     const host = inject<ElementRef<HTMLElement>>(ElementRef).nativeElement;

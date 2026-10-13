@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, Signal, computed, input, output, signal } from '@angular/core';
+import { ChangeDetectionStrategy, Component, Signal, computed, inject, input, output, signal } from '@angular/core';
 import { MatIconButton } from '@angular/material/button';
 import { MatRipple } from '@angular/material/core';
 import {
@@ -13,6 +13,7 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
 import { LucideAngularModule } from 'lucide-angular';
 
 import { NavItem, NAV_ITEMS, RailActionsSheet, SidebarMode } from '../nav-item';
+import { NavSectionService } from '../nav-section';
 
 /** Re-exported for consumers that import the rail modes next to the component. */
 export type { SidebarMode } from '../nav-item';
@@ -55,6 +56,9 @@ export class SidebarComponent {
   readonly closeSidebar = output<void>();
 
   navItems: NavItem[] = NAV_ITEMS;
+
+  /** Destination a session page belongs to, since its URL no longer names it. */
+  protected readonly navSection = inject(NavSectionService).current;
 
   /** Name shown in the account row; null in the base scaffold (no session), so the row is omitted. */
   readonly accountName: Signal<string | null> = signal(null);

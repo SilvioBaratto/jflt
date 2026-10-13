@@ -8,8 +8,10 @@
             #link
             class="rail-item"
             [routerLink]="item.route"
-            routerLinkActive="rail-item-active"
-            ariaCurrentWhenActive="page"
+            routerLinkActive
+            #rla="routerLinkActive"
+            [class.rail-item-active]="rla.isActive || navSection() === item.route"
+            [attr.aria-current]="rla.isActive || navSection() === item.route ? 'page' : null"
             (click)="onNavClick()"
           >
             <span class="rail-indicator" matRipple [matRippleTrigger]="link">
@@ -28,7 +30,7 @@
             [routerLink]="item.route"
             routerLinkActive
             #rla="routerLinkActive"
-            [activated]="rla.isActive"
+            [activated]="rla.isActive || navSection() === item.route"
             (click)="onNavClick()"
           >
             <lucide-icon matListItemIcon class="sidebar-icon" [name]="item.icon" aria-hidden="true" />
