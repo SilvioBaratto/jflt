@@ -59,9 +59,17 @@
       "question": "What is Dr Okonkwo's central objection to reintroducing conscription?",
       "options": {
         "A": "It would alienate experienced professional soldiers who would resist serving alongside poorly-trained conscripts.",
-        "B": "It would produce forces that appear credible but lack genuine operational effectiveness.",
-        "C": "It would generate enough troops to satisfy NATO's minimum manpower requirements without improving readiness.",
+        "B": "It would generate enough troops to satisfy NATO's minimum manpower requirements without improving readiness.",
+        "C": "It would produce forces that appear credible but lack genuine operational effectiveness.",
         "D": "It places an undue burden on individual rights and would therefore face legal challenges in most democracies."
+      },
+      "answer": "C",
+      "rationale": "Sarah argues conscription risks a force that looks reassuring on paper but underperforms in the field, and later says deterrence without operational credibility is hollow.",
+      "option_rationales": {
+        "A": "Targets a true-but-not-said misread; Sarah never mentions professional soldiers resisting or resenting conscripts.",
+        "B": "Reverses her point; she says conscripts take years to become deployable, not that they quickly meet NATO numbers.",
+        "C": "Correct: Sarah warns of a force that looks reassuring on paper but underperforms in the field.",
+        "D": "Over-generalisation; she lists individual rights as one cost, but never claims legal challenges, and it is not her central objection."
       }
     },
     {
@@ -69,19 +77,35 @@
       "question": "What does Dr Okonkwo explicitly concede to Marcus during the debate?",
       "options": {
         "A": "That volunteer armies are numerically insufficient for modern high-intensity warfare.",
-        "B": "That conscription would strengthen the social bond between citizens and national defence.",
+        "B": "That professional military forces tend to suffer from poor morale and high attrition rates.",
         "C": "That the northern European states which reintroduced conscription were right to do so.",
-        "D": "That professional military forces tend to suffer from poor morale and high attrition rates."
+        "D": "That conscription would strengthen the social bond between citizens and national defence."
+      },
+      "answer": "D",
+      "rationale": "Sarah says she agrees with Marcus that social cohesion is a genuine concern, which concedes that conscription could strengthen the citizen-defence bond, though she prefers less coercive routes.",
+      "option_rationales": {
+        "A": "Wrong target; she disputes that numbers equal capability, saying the case conflates quantity with capability.",
+        "B": "Wrong speaker and wrong claim; she wants to invest in pay and retention, and never says professional forces suffer poor morale.",
+        "C": "Overstates her stance; she calls the evidence from reintroducing states mixed at best, and never endorses their decision.",
+        "D": "Correct: she agrees with him on the societal point and says social cohesion is genuine."
       }
     },
     {
       "id": 3,
       "question": "When Marcus says at the close of the debate \"I believe we must,\" what is the function of this utterance?",
       "options": {
-        "A": "He withdraws his support for conscription in light of Dr Okonkwo's operational credibility argument.",
-        "B": "He signals that quality and mass are compatible goals and that governments are obliged to pursue both.",
+        "A": "He signals that quality and mass are compatible goals and that governments are obliged to pursue both.",
+        "B": "He withdraws his support for conscription in light of Dr Okonkwo's operational credibility argument.",
         "C": "He challenges the moderator's implication that the two policy positions cannot be reconciled.",
-        "D": "He implies that conscription is more cost-effective than raising the pay and retention of professional soldiers."
+        "D": "He argues that conscription should replace the investment in pay and retention that Dr Okonkwo recommends, in order to save money."
+      },
+      "answer": "A",
+      "rationale": "Marcus accepts that quality must not be sacrificed, then asks whether we can afford both and says we must, asserting that mass and quality should both be pursued.",
+      "option_rationales": {
+        "A": "Correct: he affirms that both quality and mass are needed and that governments must pursue both.",
+        "B": "Reversed; he accepts her quality point but still insists on pursuing conscription alongside it, so he does not withdraw.",
+        "C": "Wrong target; the moderator makes no such implication, and Marcus is responding to Sarah, not challenging the moderator.",
+        "D": "This option targets the misreading that \"can we afford both\" means Marcus wants to choose conscription instead of professional investment, when he actually agrees quality must not be sacrificed and insists on pursuing both."
       }
     }
   ]

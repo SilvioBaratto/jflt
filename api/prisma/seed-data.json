@@ -2500,34 +2500,52 @@
             "C": "The two per cent threshold is set too low to fund a credible conventional deterrent against modern threats.",
             "D": "NATO allies prefer to contribute to collective defence through non-financial means such as intelligence sharing."
           },
-          "correctLabel": null,
-          "rationale": null
+          "correctLabel": "B",
+          "rationale": "The analyst warns that if the US ties its commitment to a budget figure, or treats Article Five as transactional, adversaries gain an opening to question NATO's cohesion. That is the core danger of leaning on spending targets.",
+          "optionRationales": {
+            "A": "Over-generalisation: the analyst says several allies have technically met the two per cent threshold, so they have not consistently refused it.",
+            "B": "Correct: the analyst says conditionality tied to a budget figure may erode deterrence by letting adversaries question NATO's cohesion.",
+            "C": "Not said: the analyst calls the metric blunt, but never says two per cent is too low to fund deterrence.",
+            "D": "Not said: non-financial contributions such as intelligence sharing are never mentioned; the analyst stresses capability and readiness."
+          }
         },
         {
           "question": "When the analyst concedes that the conditionality argument 'has a certain internal coherence,' what is the primary function of this concession in the discussion?",
           "options": {
-            "A": "To signal a change of position and indicate growing support for stricter conditionality.",
-            "B": "To acknowledge the opposing argument's logical appeal before introducing contradictory historical evidence.",
+            "A": "To acknowledge the opposing argument's logical appeal before introducing contradictory historical evidence.",
+            "B": "To signal a change of position and indicate growing support for stricter conditionality.",
             "C": "To suggest that both sides of the debate are equally well supported by the available facts.",
             "D": "To imply that analysts who favour conditionality are ignoring the lessons of recent history."
           },
-          "correctLabel": null,
-          "rationale": null
+          "correctLabel": "A",
+          "rationale": "The analyst grants the logic of conditionality and then immediately counters with 'the historical evidence is mixed', citing Estonia, Poland and Finland. The concession is a rhetorical step before rebuttal.",
+          "optionRationales": {
+            "A": "Correct: the analyst grants the logic, then introduces historical evidence that undercuts the argument.",
+            "B": "Misreads concession as a change of position; the analyst goes on to warn that conditionality will harden scepticism.",
+            "C": "False balance: the analyst says the evidence is mixed but ends up arguing against conditionality, not for parity of support.",
+            "D": "Overstates the tone: the analyst is courteous and never accuses proponents of ignoring history."
+          }
         },
         {
           "question": "What does the analyst imply by citing Estonia, Poland, and Finland as countries that have significantly raised their defence spending?",
           "options": {
             "A": "Sustained American diplomatic pressure is the most reliable way to persuade NATO members to increase their budgets.",
             "B": "Smaller alliance members are inherently more committed to collective defence than larger NATO nations.",
-            "C": "Direct exposure to a perceived proximate threat, rather than alliance pressure, is the primary driver of serious defence investment.",
-            "D": "Countries that meet the two per cent target automatically develop deployable and interoperable military forces."
+            "C": "Countries that meet the two per cent target automatically develop deployable and interoperable military forces.",
+            "D": "Direct exposure to a perceived proximate threat, rather than alliance pressure, is the primary driver of serious defence investment."
           },
-          "correctLabel": null,
-          "rationale": null
+          "correctLabel": "D",
+          "rationale": "The analyst says these states spend because they feel directly exposed, not because Washington threatened to walk away. This implies proximate threat, not alliance pressure, drives serious investment.",
+          "optionRationales": {
+            "A": "Reversed relation: the analyst says these countries did not raise budgets in response to American pressure.",
+            "B": "Unsupported generalisation: the analyst compares motivation by exposure, not commitment of small versus large members.",
+            "C": "Contradicts earlier remarks: the analyst says meeting two per cent can still leave forces undeployable and non-interoperable.",
+            "D": "Correct: the examples show spending driven by direct exposure to a proximate threat, not by pressure."
+          }
         }
       ],
       "audioPath": "/static/listening/listening-01.mp3",
-      "hasKey": false,
+      "hasKey": true,
       "source": "seed"
     },
     {
@@ -2604,38 +2622,56 @@
           "question": "According to Professor Carter, what is the main reason economic sanctions typically fail to compel changes in state behaviour?",
           "options": {
             "A": "Sanctions are rarely comprehensive enough to affect the broader national economy.",
-            "B": "Authoritarian leaders are generally shielded from the economic hardship that sanctions create.",
-            "C": "Their principal value lies in signalling disapproval rather than in changing government policy.",
+            "B": "Sanctions succeed mainly against unilateral targets, but they fail when a broad coalition applies them.",
+            "C": "Authoritarian leaders are generally shielded from the economic hardship that sanctions create.",
             "D": "They can only succeed when accompanied by credible military threats."
           },
-          "correctLabel": null,
-          "rationale": null
+          "correctLabel": "C",
+          "rationale": "Carter argues sanctions impose costs on civilians without shifting the calculus of authoritarian elites, who are insulated from the fallout. This is the only causal explanation he gives for failure to compel change.",
+          "optionRationales": {
+            "A": "Targets a true-but-not-said misread: Carter never says sanctions are insufficiently comprehensive; Reyes mentions comprehensive pressure as a success factor.",
+            "B": "This distractor reverses the unilateral versus multilateral relation: Dr. Reyes (not Carter) argues that coordinated coalitions make sanctions work, and both speakers say unilateral sanctions are far less effective.",
+            "C": "Correct: Carter says elites are often insulated from economic fallout, so pain does not translate into policy change.",
+            "D": "Invented detail: no speaker mentions military threats; Reyes points to diplomatic incentives, not force."
+          }
         },
         {
           "question": "What key distinction does Dr. Reyes draw when assessing the effectiveness of sanctions?",
           "options": {
             "A": "Sanctions are more effective when they target individual leaders rather than the whole economy.",
-            "B": "Coordinated multilateral sanctions regimes are significantly more effective than unilateral measures.",
-            "C": "Sanctions succeed primarily against democratic governments, not authoritarian ones.",
+            "B": "Sanctions succeed primarily against democratic governments, not authoritarian ones.",
+            "C": "Coordinated multilateral sanctions regimes are significantly more effective than unilateral measures.",
             "D": "The speed with which sanctions are imposed determines whether they will achieve their objective."
           },
-          "correctLabel": null,
-          "rationale": null
+          "correctLabel": "C",
+          "rationale": "Dr. Reyes separates unilateral sanctions, which she agrees are far less effective, from coordinated multilateral regimes. She cites South Africa to show broad coalitions alter cost-benefit calculations.",
+          "optionRationales": {
+            "A": "Unsupported: nobody discusses targeting individual leaders; the contrast Reyes draws is about coalition breadth.",
+            "B": "Unsupported: no speaker distinguishes democratic from authoritarian targets as a success factor; authoritarian elites come up only in Carter's criticism.",
+            "C": "Correct: Reyes contrasts weak unilateral measures with effective multilateral regimes backed by the financial system.",
+            "D": "Unsupported: speed of imposition is never mentioned; Reyes names economy vulnerability, coalition unity and a clear demand."
+          }
         },
         {
           "question": "Why does Professor Carter refer to the Iran nuclear deal having unravelled?",
           "options": {
             "A": "To suggest that the sanctions failed because they did not damage Iran's economy sufficiently.",
-            "B": "To acknowledge that multilateral pressure can produce short-term results under favourable conditions.",
-            "C": "To undermine Dr. Reyes's example by implying that even apparent successes lack durability.",
+            "B": "To undermine Dr. Reyes's example by implying that even apparent successes lack durability.",
+            "C": "To acknowledge that multilateral pressure can produce short-term results under favourable conditions.",
             "D": "To argue that diplomatic follow-through was inadequate once the sanctions were lifted."
           },
-          "correctLabel": null,
-          "rationale": null
+          "correctLabel": "B",
+          "rationale": "Carter responds to Reyes's Iran example by calling Iran an outlier and saying the deal's unravelling reinforces his point. He is using it to deny that this apparent success was durable.",
+          "optionRationales": {
+            "A": "Misread of his point: Carter does not say the Iranian economy was insufficiently damaged; his concern is lasting impact and elite insulation.",
+            "B": "Correct: he raises the unravelling to undercut Reyes's example, saying it supports his scepticism.",
+            "C": "Reversed function: this is Reyes's view, while Carter cites the unravelling to weaken, not concede, the success claim.",
+            "D": "Not said: Carter does not discuss diplomatic follow-through after sanctions were lifted; that is an inference beyond the transcript."
+          }
         }
       ],
       "audioPath": "/static/listening/listening-02.mp3",
-      "hasKey": false,
+      "hasKey": true,
       "source": "seed"
     },
     {
@@ -2708,38 +2744,56 @@
           "question": "What is Dr Okonkwo's central objection to reintroducing conscription?",
           "options": {
             "A": "It would alienate experienced professional soldiers who would resist serving alongside poorly-trained conscripts.",
-            "B": "It would produce forces that appear credible but lack genuine operational effectiveness.",
-            "C": "It would generate enough troops to satisfy NATO's minimum manpower requirements without improving readiness.",
+            "B": "It would generate enough troops to satisfy NATO's minimum manpower requirements without improving readiness.",
+            "C": "It would produce forces that appear credible but lack genuine operational effectiveness.",
             "D": "It places an undue burden on individual rights and would therefore face legal challenges in most democracies."
           },
-          "correctLabel": null,
-          "rationale": null
+          "correctLabel": "C",
+          "rationale": "Sarah argues conscription risks a force that looks reassuring on paper but underperforms in the field, and later says deterrence without operational credibility is hollow.",
+          "optionRationales": {
+            "A": "Targets a true-but-not-said misread; Sarah never mentions professional soldiers resisting or resenting conscripts.",
+            "B": "Reverses her point; she says conscripts take years to become deployable, not that they quickly meet NATO numbers.",
+            "C": "Correct: Sarah warns of a force that looks reassuring on paper but underperforms in the field.",
+            "D": "Over-generalisation; she lists individual rights as one cost, but never claims legal challenges, and it is not her central objection."
+          }
         },
         {
           "question": "What does Dr Okonkwo explicitly concede to Marcus during the debate?",
           "options": {
             "A": "That volunteer armies are numerically insufficient for modern high-intensity warfare.",
-            "B": "That conscription would strengthen the social bond between citizens and national defence.",
+            "B": "That professional military forces tend to suffer from poor morale and high attrition rates.",
             "C": "That the northern European states which reintroduced conscription were right to do so.",
-            "D": "That professional military forces tend to suffer from poor morale and high attrition rates."
+            "D": "That conscription would strengthen the social bond between citizens and national defence."
           },
-          "correctLabel": null,
-          "rationale": null
+          "correctLabel": "D",
+          "rationale": "Sarah says she agrees with Marcus that social cohesion is a genuine concern, which concedes that conscription could strengthen the citizen-defence bond, though she prefers less coercive routes.",
+          "optionRationales": {
+            "A": "Wrong target; she disputes that numbers equal capability, saying the case conflates quantity with capability.",
+            "B": "Wrong speaker and wrong claim; she wants to invest in pay and retention, and never says professional forces suffer poor morale.",
+            "C": "Overstates her stance; she calls the evidence from reintroducing states mixed at best, and never endorses their decision.",
+            "D": "Correct: she agrees with him on the societal point and says social cohesion is genuine."
+          }
         },
         {
           "question": "When Marcus says at the close of the debate \"I believe we must,\" what is the function of this utterance?",
           "options": {
-            "A": "He withdraws his support for conscription in light of Dr Okonkwo's operational credibility argument.",
-            "B": "He signals that quality and mass are compatible goals and that governments are obliged to pursue both.",
+            "A": "He signals that quality and mass are compatible goals and that governments are obliged to pursue both.",
+            "B": "He withdraws his support for conscription in light of Dr Okonkwo's operational credibility argument.",
             "C": "He challenges the moderator's implication that the two policy positions cannot be reconciled.",
-            "D": "He implies that conscription is more cost-effective than raising the pay and retention of professional soldiers."
+            "D": "He argues that conscription should replace the investment in pay and retention that Dr Okonkwo recommends, in order to save money."
           },
-          "correctLabel": null,
-          "rationale": null
+          "correctLabel": "A",
+          "rationale": "Marcus accepts that quality must not be sacrificed, then asks whether we can afford both and says we must, asserting that mass and quality should both be pursued.",
+          "optionRationales": {
+            "A": "Correct: he affirms that both quality and mass are needed and that governments must pursue both.",
+            "B": "Reversed; he accepts her quality point but still insists on pursuing conscription alongside it, so he does not withdraw.",
+            "C": "Wrong target; the moderator makes no such implication, and Marcus is responding to Sarah, not challenging the moderator.",
+            "D": "This option targets the misreading that \"can we afford both\" means Marcus wants to choose conscription instead of professional investment, when he actually agrees quality must not be sacrificed and insists on pursuing both."
+          }
         }
       ],
       "audioPath": "/static/listening/listening-03.mp3",
-      "hasKey": false,
+      "hasKey": true,
       "source": "seed"
     },
     {
@@ -2805,13 +2859,19 @@
         {
           "question": "When the official refers to 'the structural tension we are wrestling with,' what is most likely implied?",
           "options": {
-            "A": "Article 5 was not conceived to cover the kind of ambiguous sub-threshold operations adversaries now conduct routinely.",
-            "B": "NATO planners formally disagree with the 2022 Strategic Concept's approach to hybrid threats.",
+            "A": "NATO planners formally disagree with the 2022 Strategic Concept's approach to hybrid threats.",
+            "B": "Article 5 was not conceived to cover the kind of ambiguous sub-threshold operations adversaries now conduct routinely.",
             "C": "Hybrid operations have already crossed the threshold required to trigger collective defence action.",
             "D": "NATO's collective defence treaty is legally incompatible with any response to sub-threshold attacks."
           },
-          "correctLabel": null,
-          "rationale": null
+          "correctLabel": "B",
+          "rationale": "The official says the collective defence threshold was not designed with sub-threshold activities in mind, and calls this the structural tension. So Article 5 was never built for ambiguous hybrid activity.",
+          "optionRationales": {
+            "A": "Misread: the official cites the 2022 Strategic Concept as addressing hybrid threats, and never mentions planners disagreeing with it.",
+            "B": "Correct: it follows the official's admission that the threshold was not designed for sub-threshold activities.",
+            "C": "Reversed relation: the official says only that cumulative attacks could in principle trigger consultations, not that the threshold has been crossed.",
+            "D": "Over-generalisation: he says Article 5 is poorly suited, but he describes resilience and other responses, so no legal bar is claimed."
+          }
         },
         {
           "question": "What is the journalist's attitude toward NATO's current approach to sub-threshold hybrid threats?",
@@ -2821,23 +2881,35 @@
             "C": "Sceptical that the alliance's cautious posture effectively deters adversary behaviour.",
             "D": "Sympathetic to the official's argument that legal constraints must take priority over deterrence."
           },
-          "correctLabel": null,
-          "rationale": null
+          "correctLabel": "C",
+          "rationale": "The journalist says 'could in principle' does a great deal of work and asks whether the posture licenses adversaries to operate below the radar. She later calls resilience inherently defensive, which shows doubt that the cautious approach deters.",
+          "optionRationales": {
+            "A": "Wrong attitude: she dismisses resilience as inherently defensive and never praises the investment in it.",
+            "B": "Over-generalisation: she raises the Baltic states' call for offensive operations as a question, not as her own firm demand.",
+            "C": "Correct: her pointed challenges imply doubt that the current cautious posture deters adversaries.",
+            "D": "Wrong speaker: the official stresses legal constraints, and she does not accept that they should outweigh deterrence."
+          }
         },
         {
           "question": "When the official says 'I'd push back on that framing, though not entirely,' what does this utterance primarily signal?",
           "options": {
             "A": "The official is about to announce a significant change in NATO's hybrid threat policy.",
-            "B": "The official acknowledges a measure of validity in the journalist's critique while still defending the alliance's strategy.",
+            "B": "The official intends to redirect the conversation to avoid addressing attribution difficulties directly.",
             "C": "The official completely rejects the suggestion that adversaries are exploiting NATO's ambiguity.",
-            "D": "The official intends to redirect the conversation to avoid addressing attribution difficulties directly."
+            "D": "The official acknowledges a measure of validity in the journalist's critique while still defending the alliance's strategy."
           },
-          "correctLabel": null,
-          "rationale": null
+          "correctLabel": "D",
+          "rationale": "The qualifier 'though not entirely' signals partial concession. He then agrees that attribution is a real challenge but defends resilience-based deterrence.",
+          "optionRationales": {
+            "A": "True-but-not-said: nothing in the answer announces a policy change, and he describes existing measures.",
+            "B": "Misread: he addresses attribution directly, saying it prevents invoking Article 5 on probabilistic grounds.",
+            "C": "Reversed relation: 'not entirely' rules out a complete rejection, and he agrees with part of her point.",
+            "D": "Correct: he partly concedes the point on attribution while defending the alliance's strategy."
+          }
         }
       ],
       "audioPath": "/static/listening/listening-04.mp3",
-      "hasKey": false,
+      "hasKey": true,
       "source": "seed"
     },
     {
@@ -2900,38 +2972,56 @@
           "question": "What does the economist imply about the market reaction to this morning's inflation data?",
           "options": {
             "A": "Markets have correctly concluded that the central bank's tightening cycle has run its course.",
-            "B": "Markets are drawing a policy conclusion that the available data does not yet support.",
+            "B": "Markets should place greater weight on headline inflation than on core when forecasting rate decisions.",
             "C": "Markets are failing to recognise that energy prices have fallen since last year's peak.",
-            "D": "Markets should place greater weight on headline inflation than on core when forecasting rate decisions."
+            "D": "Markets are drawing a policy conclusion that the available data does not yet support."
           },
-          "correctLabel": null,
-          "rationale": null
+          "correctLabel": "D",
+          "rationale": "The economist calls the market's two-cut pricing premature and says markets are over-weighting a single data point. He implies the data does not yet justify the conclusion that tightening is over.",
+          "optionRationales": {
+            "A": "Reversed relation: the economist says the tightening cycle cannot yet be called over and that the market view is premature.",
+            "B": "Reversed: he argues central banks focus on core because it gives a cleaner signal, not headline.",
+            "C": "Misattributed flaw: the economist himself explains the energy fall, and his objection is over-weighting a single data point, not ignorance of energy.",
+            "D": "Correct: he says markets over-weight one print, and core needs two or three more months of sustained trend."
+          }
         },
         {
           "question": "How does the host regard the practice of excluding food and energy from the official inflation measure?",
           "options": {
-            "A": "She considers it methodologically sound but poorly explained to the general public.",
+            "A": "She implies it may serve the convenience of policymakers rather than reflecting the lived reality of most households.",
             "B": "She accepts it as the most reliable basis for central bank policy decisions.",
-            "C": "She implies it may serve the convenience of policymakers rather than reflecting the lived reality of most households.",
+            "C": "She considers it methodologically sound but poorly explained to the general public.",
             "D": "She agrees with the economist's reasoning but argues it is being applied at the wrong moment in the cycle."
           },
-          "correctLabel": null,
-          "rationale": null
+          "correctLabel": "A",
+          "rationale": "The host asks whether the distinction is convenient and stresses that families cannot strip food and energy from their budgets. She implies the practice suits officials more than households.",
+          "optionRationales": {
+            "A": "Correct: her word 'convenient' and her point about family budgets imply it ignores lived reality.",
+            "B": "Wrong speaker: the economist, not the host, argues core is the cleaner basis for policy.",
+            "C": "Over-generous reading: she questions the distinction itself and never calls it methodologically sound.",
+            "D": "Misread: she does not agree with his reasoning and raises no objection about timing in the cycle."
+          }
         },
         {
           "question": "When the economist concedes that the host's criticism is legitimate but directs it at communication rather than at the measure itself, what is he primarily doing?",
           "options": {
             "A": "Admitting that core inflation is a structurally flawed measure that central banks should revise.",
-            "B": "Acknowledging a valid concern about public transparency while defending the analytical rationale for core inflation.",
+            "B": "Conceding that headline inflation is ultimately the more appropriate guide for interest rate decisions.",
             "C": "Suggesting that central banks have been deliberately withholding information from markets and households.",
-            "D": "Conceding that headline inflation is ultimately the more appropriate guide for interest rate decisions."
+            "D": "Acknowledging a valid concern about public transparency while defending the analytical rationale for core inflation."
           },
-          "correctLabel": null,
-          "rationale": null
+          "correctLabel": "D",
+          "rationale": "He grants the criticism of how the measures are communicated, but says it is not a criticism of the measures themselves. He then defends why central banks use core.",
+          "optionRationales": {
+            "A": "Overstates the concession: he explicitly says the criticism does not touch the measure itself.",
+            "B": "Reversed: he continues to favour core for rate decisions and never concedes headline is the better guide.",
+            "C": "Unsupported: he says central banks are quite transparent, so he rejects any suggestion of deliberate withholding.",
+            "D": "Correct: he accepts the transparency concern but keeps defending core as analytically sound."
+          }
         }
       ],
       "audioPath": "/static/listening/listening-05.mp3",
-      "hasKey": false,
+      "hasKey": true,
       "source": "seed"
     },
     {
@@ -3000,38 +3090,56 @@
           "question": "What does Elena imply when she argues that a tariff-protected domestic monopoly could be more fragile than a diversified global sourcing network?",
           "options": {
             "A": "Domestic manufacturers tend to be inherently less efficient than their foreign competitors.",
-            "B": "Geographical concentration of production is itself a source of supply-chain vulnerability.",
-            "C": "The primary purpose of supply-chain resilience is to maximise output rather than to reduce risk.",
+            "B": "The primary purpose of supply-chain resilience is to maximise output rather than to reduce risk.",
+            "C": "Geographical concentration of production is itself a source of supply-chain vulnerability.",
             "D": "International trade agreements provide stronger protection against shocks than tariff barriers do."
           },
-          "correctLabel": null,
-          "rationale": null
+          "correctLabel": "C",
+          "rationale": "Elena says resilience is about redundancy and diversification, not where goods are made, so a single protected domestic producer is a concentration risk. Her implication is that concentration itself creates vulnerability.",
+          "optionRationales": {
+            "A": "Over-reading: Elena never claims domestic firms are less efficient, only that a protected monopoly is fragile.",
+            "B": "Reversed purpose: Elena defines resilience as absorbing shocks and redundancy, not maximising output.",
+            "C": "Correct: a single protected producer lacks redundancy and diversification, so concentration is the weakness she implies.",
+            "D": "True-but-not-said: she never discusses trade agreements, only the value of diversified sourcing."
+          }
         },
         {
           "question": "Which statement best captures Marcus's view on market forces and supply-chain resilience?",
           "options": {
             "A": "Markets will eventually self-correct, making government intervention unnecessary.",
-            "B": "Firms cannot be expected to voluntarily absorb the cost of capacity that benefits society as a whole.",
+            "B": "Supply-chain diversification is the primary goal that any resilience policy must prioritise.",
             "C": "Industrial policy is effective only when it takes the exclusive form of direct investment subsidies.",
-            "D": "Supply-chain diversification is the primary goal that any resilience policy must prioritise."
+            "D": "Firms cannot be expected to voluntarily absorb the cost of capacity that benefits society as a whole."
           },
-          "correctLabel": null,
-          "rationale": null
+          "correctLabel": "D",
+          "rationale": "Marcus says excess capacity is like an insurance premium that society needs but individual firms have no rational reason to pay. He also says waiting for markets to self-correct has a poor record.",
+          "optionRationales": {
+            "A": "Reversed: Marcus explicitly rejects waiting for markets to self-correct.",
+            "B": "Wrong speaker: diversification is Elena's emphasis, and Marcus only accepts it as a fair point.",
+            "C": "Over-generalisation: he pairs tariffs with subsidies and does not say subsidies must be the only form.",
+            "D": "Correct: his insurance-premium point is that firms will not voluntarily fund capacity that benefits society."
+          }
         },
         {
           "question": "What is the function of Marcus's proposal for sunset clauses, independent review panels, and transparent benchmarks?",
           "options": {
             "A": "To concede that tariff policy is fundamentally ineffective and should be replaced by alternative instruments.",
-            "B": "To demonstrate that investment subsidies are a superior tool to tariffs in all circumstances.",
-            "C": "To address Elena's concern that tariffs outlast their strategic purpose by arguing that governance safeguards can contain that risk.",
+            "B": "To address Elena's concern that tariffs outlast their strategic purpose by arguing that governance safeguards can contain that risk.",
+            "C": "To demonstrate that investment subsidies are a superior tool to tariffs in all circumstances.",
             "D": "To advocate for the immediate removal of all existing tariff regimes through an internationally agreed framework."
           },
-          "correctLabel": null,
-          "rationale": null
+          "correctLabel": "B",
+          "rationale": "Marcus answers Elena's worry that tariffs become entrenched protectionism by saying the answer is institutional design. Sunset clauses and review panels are meant to stop strategic policy drifting into rent-seeking.",
+          "optionRationales": {
+            "A": "Reversed: he defends tariffs as workable with safeguards and does not concede they are ineffective.",
+            "B": "Correct: the safeguards respond directly to Elena's point that tariffs outlast their strategic purpose.",
+            "C": "Over-generalisation: he never ranks subsidies above tariffs, and the safeguards concern tariff governance.",
+            "D": "Misread: sunset clauses wind tariffs down under controlled conditions, and he does not call for removing all tariffs."
+          }
         }
       ],
       "audioPath": "/static/listening/listening-06.mp3",
-      "hasKey": false,
+      "hasKey": true,
       "source": "seed"
     },
     {
@@ -3097,39 +3205,57 @@
         {
           "question": "What is Dr. Chen's central concern about extending export controls beyond hardware to AI software and research?",
           "options": {
-            "A": "She believes that no AI technology, including advanced processors, should be subject to export restrictions.",
-            "B": "She worries that restricting AI research tools will fragment international safety work, ultimately leaving all countries more vulnerable.",
+            "A": "She worries that restricting AI research tools will fragment international safety work, ultimately leaving all countries more vulnerable.",
+            "B": "She believes that no AI technology, including advanced processors, should be subject to export restrictions.",
             "C": "She argues that restricting AI software exports will give adversarial states an advantage in building more powerful language models.",
             "D": "She contends that open-source AI research is already too sensitive to be shared freely across national borders."
           },
-          "correctLabel": null,
-          "rationale": null
+          "correctLabel": "A",
+          "rationale": "Chen says walling off software, weights and papers slows safety research that benefits from open collaboration, and risks siloed research and AI systems nobody fully understands.",
+          "optionRationales": {
+            "A": "Matches her argument that extending controls fragments the global knowledge commons and siloes safety research, leaving everyone worse off.",
+            "B": "Over-generalisation: Chen explicitly says chip-level controls are arguably defensible, so she does not oppose all restrictions.",
+            "C": "Reverses her view: she says the major risk is not an ally building a slightly better model but siloed safety research.",
+            "D": "Reversed relation: she wants open-source safety research protected and funded internationally, not judged too sensitive to share."
+          }
         },
         {
           "question": "On which specific point does Dr. Chen explicitly concede that the host's defence of export controls has merit?",
           "options": {
-            "A": "She agrees that all categories of AI artefact, including research papers, should be subject to strict national controls.",
-            "B": "She acknowledges that restricting the export of the most advanced semiconductor hardware is a defensible policy.",
+            "A": "She acknowledges that restricting the export of the most advanced semiconductor hardware is a defensible policy.",
+            "B": "She agrees that all categories of AI artefact, including research papers, should be subject to strict national controls.",
             "C": "She admits that geographic embargoes are ultimately more coherent than a tiered licensing system.",
             "D": "She accepts that fragmenting the global knowledge commons may be a necessary trade-off for national security."
           },
-          "correctLabel": null,
-          "rationale": null
+          "correctLabel": "A",
+          "rationale": "After the host's pushback, Chen concedes the point up to a degree and says restricting the most advanced processors is arguably defensible because it slows frontier capabilities.",
+          "optionRationales": {
+            "A": "Correct: she concedes chip-level controls on advanced processors are arguably defensible.",
+            "B": "Opposite of her stance: she wants differentiation and rejects treating all AI artefacts, including papers, as equal threats.",
+            "C": "Reversed relation: she calls tiered licensing more coherent than a simple geographic embargo.",
+            "D": "She warns fragmenting the knowledge commons is destabilising and never accepts it as a necessary trade-off."
+          }
         },
         {
           "question": "What does Dr. Chen imply when she describes a simple geographic embargo on AI as 'philosophically incoherent'?",
           "options": {
-            "A": "Geographic embargoes have a poor historical record of preventing the spread of sensitive dual-use technologies.",
-            "B": "Using a state's national origin as the criterion for AI access fails to address the actual security risk, which she identifies as a lack of auditing and transparency.",
+            "A": "Using a state's national origin as the criterion for AI access fails to address the actual security risk, which she identifies as a lack of auditing and transparency.",
+            "B": "Geographic embargoes have a poor historical record of preventing the spread of sensitive dual-use technologies.",
             "C": "A tiered licensing scheme would be considerably easier to enforce globally than restrictions on semiconductor exports.",
             "D": "Democratic governments should give economic competitiveness priority over national security when regulating AI."
           },
-          "correctLabel": null,
-          "rationale": null
+          "correctLabel": "A",
+          "rationale": "Chen contrasts a geographic embargo with tiered licensing based on auditing and transparency, implying nationality is the wrong proxy for the real risk.",
+          "optionRationales": {
+            "A": "Fits her argument that access should depend on demonstrated auditing and transparency commitment, not nationality alone.",
+            "B": "True-but-not-said: she gives no historical evidence about embargoes failing; her objection is conceptual.",
+            "C": "Unsupported comparison: she admits tiered licensing is more complex to administer and never compares it with chip controls.",
+            "D": "Not said: she never ranks economic competitiveness above national security and accepts restricting hardware."
+          }
         }
       ],
       "audioPath": "/static/listening/listening-07.mp3",
-      "hasKey": false,
+      "hasKey": true,
       "source": "seed"
     },
     {
@@ -3196,34 +3322,52 @@
             "C": "The growth in satellite numbers has outpaced the ability of military planners to manage low Earth orbit effectively.",
             "D": "Commercial and military satellite operators have failed to coordinate their activities in shared orbital corridors."
           },
-          "correctLabel": null,
-          "rationale": null
+          "correctLabel": "B",
+          "rationale": "Dr. Chen says the capabilities states deploy for their security are generating the conditions for catastrophic instability, which is a self-defeating security effect.",
+          "optionRationales": {
+            "A": "Targets a misread: Chen never discusses resource allocation or the cost-benefit of spending on satellites.",
+            "B": "Correct: Chen's paradox is that security-motivated deployments collectively produce instability.",
+            "C": "True-but-not-said distortion: she mentions growing numbers, but says the problem is the missing legal framework, not planners' management capacity.",
+            "D": "Wrong focus: coordination failures between commercial and military operators are never raised as the paradox."
+          }
         },
         {
           "question": "Which of Dr. Chen's concerns does Colonel Webb explicitly concede is a genuine problem?",
           "options": {
             "A": "The need for a binding treaty governing dual-use satellite capabilities.",
             "B": "The risk that NATO allies would be strategically exposed by unilateral arms reductions in space.",
-            "C": "The threat that accumulating orbital debris poses to all categories of satellites.",
-            "D": "The value of the nineteen sixty-seven Outer Space Treaty as a workable template for future agreements."
+            "C": "The value of the nineteen sixty-seven Outer Space Treaty as a workable template for future agreements.",
+            "D": "The threat that accumulating orbital debris poses to all categories of satellites."
           },
-          "correctLabel": null,
-          "rationale": null
+          "correctLabel": "D",
+          "rationale": "Colonel Webb says he concedes the debris issue is genuinely alarming. Chen had described debris as threatening commercial, scientific and military satellites alike.",
+          "optionRationales": {
+            "A": "Wrong reversal: Webb actually challenges whether a treaty can handle dual-use capabilities, so he does not concede this.",
+            "B": "Webb raises vulnerability from freezing capabilities as his own argument, not as a Chen concern, and NATO is never mentioned.",
+            "C": "Chen cites the 1967 treaty as an imperfect precedent; Webb never concedes its value as a template.",
+            "D": "Correct: Webb explicitly concedes the debris problem is genuinely alarming."
+          }
         },
         {
           "question": "What does Dr. Chen imply when she says the window for agreement may be closing faster than policymakers appreciate?",
           "options": {
             "A": "Political opposition within military alliances is likely to block any future space arms-control initiative.",
-            "B": "The rate of debris accumulation may soon make meaningful orbital agreements practically irrelevant.",
+            "B": "Commercial satellite operators represent the primary obstacle to reaching a binding agreement on space security.",
             "C": "Policymakers currently lack the technical expertise needed to evaluate competing space treaty proposals.",
-            "D": "Commercial satellite operators represent the primary obstacle to reaching a binding agreement on space security."
+            "D": "The rate of debris accumulation may soon make meaningful orbital agreements practically irrelevant."
           },
-          "correctLabel": null,
-          "rationale": null
+          "correctLabel": "D",
+          "rationale": "Chen links the closing window to the pace of debris accumulation, implying that unchecked debris will make even an imperfect agreement too late to matter.",
+          "optionRationales": {
+            "A": "Invents a cause: political opposition within alliances is never mentioned as the reason the window closes.",
+            "B": "Wrong speaker emphasis: commercial operators are mentioned only as victims of debris, never as the obstacle to agreement.",
+            "C": "Unsupported: she says policymakers underestimate the urgency, not that they lack technical expertise.",
+            "D": "Correct: Chen ties the closing window directly to debris accumulation outpacing diplomacy."
+          }
         }
       ],
       "audioPath": "/static/listening/listening-08.mp3",
-      "hasKey": false,
+      "hasKey": true,
       "source": "seed"
     },
     {
@@ -3295,24 +3439,36 @@
         {
           "question": "What is Dr Karin Sorensen's main argument regarding demographic workforce shortfalls?",
           "options": {
-            "A": "Migration will inevitably cause wages to decline across all sectors of the economy.",
-            "B": "Tackling structural underuse of the existing workforce would reduce the scale of migration needed.",
+            "A": "Tackling structural underuse of the existing workforce would reduce the scale of migration needed.",
+            "B": "Migration will inevitably cause wages to decline across all sectors of the economy.",
             "C": "Automation technology is a more effective long-term solution than either migration or labour reform.",
             "D": "OECD governments should impose restrictions on migration until childcare systems are adequately funded."
           },
-          "correctLabel": null,
-          "rationale": null
+          "correctLabel": "A",
+          "rationale": "Karin argues the dependency ratio hides poor use of the existing workforce, and that fixing women's and older workers' underuse would expand it considerably, so less migration would be needed.",
+          "optionRationales": {
+            "A": "Correct: she says addressing childcare, elder care and early retirement failures expands the effective workforce considerably.",
+            "B": "Over-generalisation: Karin says rapid inflows can suppress wages in vulnerable sectors, not across all sectors, and not inevitably.",
+            "C": "Wrong speaker: Rajan mentions automation, and only to say it cannot close the gap in time; Karin never advocates it.",
+            "D": "Not said: Karin never proposes restricting migration; she only cautions about wage effects and political backlash."
+          }
         },
         {
           "question": "What is the core point of disagreement between Rajan Mehta and Dr Sorensen?",
           "options": {
             "A": "Whether ageing populations represent a genuine threat to pension and healthcare funding.",
-            "B": "Whether labour shortfalls will affect the healthcare sector more severely than the construction sector.",
-            "C": "Whether migration can deliver workforce improvements rapidly enough to address immediate shortfalls.",
+            "B": "Whether migration can deliver workforce improvements rapidly enough to address immediate shortfalls.",
+            "C": "Whether labour shortfalls will affect the healthcare sector more severely than the construction sector.",
             "D": "Whether women in OECD countries are underemployed due to a shortage of suitable qualifications."
           },
-          "correctLabel": null,
-          "rationale": null
+          "correctLabel": "B",
+          "rationale": "Rajan insists structural reforms take a generation while migration can scale quickly. Karin counters that rapid inflows risk wage suppression and backlash, so the dispute is about speed and viability of migration as a fix.",
+          "optionRationales": {
+            "A": "Both accept the fiscal pressure; Rajan stresses it and Karin does not deny that ageing is a problem.",
+            "B": "Correct: Rajan says migration can respond quickly to shortfalls, while Karin warns against rapid inflows and calls it a quick fix.",
+            "C": "Healthcare and construction appear only as examples of sectors needing workers; neither speaker compares their severity.",
+            "D": "Reversed: Karin says women's underemployment comes from underfunded care systems, not lack of skill, and Rajan does not dispute this."
+          }
         },
         {
           "question": "When Dr Sorensen refers to 'the demographic quick fix', she implies that policymakers are:",
@@ -3322,12 +3478,18 @@
             "C": "Overestimating how quickly automation can replace human labour in care and logistics sectors.",
             "D": "Accepting that large-scale migration is politically unworkable and seeking alternative solutions instead."
           },
-          "correctLabel": null,
-          "rationale": null
+          "correctLabel": "B",
+          "rationale": "Karin says reaching for the demographic quick fix lets people keep deferring the harder conversation about what kind of society to build, so migration substitutes for deeper debate.",
+          "optionRationales": {
+            "A": "Not said: nobody accuses policymakers of misrepresenting the demographic figures, and Karin does not dispute the decline.",
+            "B": "Correct: the quick fix is migration, and she says it defers the harder conversation about the kind of societies we want.",
+            "C": "Wrong referent: automation is raised only by Rajan, and the quick fix Karin means is migration.",
+            "D": "Reversed: she fears migration is being over-relied on, not that policymakers see it as unworkable."
+          }
         }
       ],
       "audioPath": "/static/listening/listening-09.mp3",
-      "hasKey": false,
+      "hasKey": true,
       "source": "seed"
     },
     {
@@ -3390,12 +3552,18 @@
           "question": "What is James's central objection to government-led disinformation regulation?",
           "options": {
             "A": "He believes that health misinformation poses no real harm to the general public.",
-            "B": "He argues that giving governments the power to define false speech risks enabling political censorship.",
-            "C": "He maintains that existing platform liability laws already adequately address the problem.",
+            "B": "He maintains that existing platform liability laws already adequately address the problem.",
+            "C": "He argues that giving governments the power to define false speech risks enabling political censorship.",
             "D": "He suggests that scientific consensus on health matters is stable enough for regulators to apply reliably."
           },
-          "correctLabel": null,
-          "rationale": null
+          "correctLabel": "C",
+          "rationale": "James opens by saying that once a government can label speech disinformation, it has a censorship mechanism, and he cites false-information laws used against journalists.",
+          "optionRationales": {
+            "A": "Reverses James: he says health misinformation harms are measurable and serious, so he does not deny them.",
+            "B": "Not said: James never claims existing liability laws are adequate, and he calls the status quo untenable at the end.",
+            "C": "Correct: James's central worry is that government power to define disinformation becomes a tool of political censorship.",
+            "D": "Reverses his argument: he says scientific consensus shifts and experts disagree, citing changing airborne transmission guidance."
+          }
         },
         {
           "question": "When Clara distinguishes 'passive hosting' from 'active promotion,' what does she imply platforms should be held responsible for?",
@@ -3405,23 +3573,35 @@
             "C": "Accepting government guidelines on which specific claims count as disinformation.",
             "D": "Monitoring individual users' posting behaviour to prevent repeat offenders."
           },
-          "correctLabel": null,
-          "rationale": null
+          "correctLabel": "B",
+          "rationale": "Clara says platforms should be penalised for algorithmically amplifying content that independent bodies have fact-checked as demonstrably false, not for merely hosting it.",
+          "optionRationales": {
+            "A": "Over-generalisation: Clara rejects outright prohibition and never proposes rapid removal of all misinformation.",
+            "B": "Correct: active promotion means algorithmic amplification of content already found false by independent fact-checkers.",
+            "C": "Wrong source of authority: Clara relies on independent, multi-stakeholder bodies, not government guidelines on specific claims.",
+            "D": "Not mentioned: she discusses platform amplification, not tracking individual users or repeat offenders."
+          }
         },
         {
           "question": "By the close of the debate, what do both James and Clara agree on?",
           "options": {
             "A": "International multi-stakeholder bodies are the most effective safeguard against regulatory capture.",
-            "B": "Platforms' current near-total freedom from accountability is no longer acceptable.",
-            "C": "Algorithmic amplification of any contested health claim should be strictly prohibited.",
+            "B": "Algorithmic amplification of any contested health claim should be strictly prohibited.",
+            "C": "Platforms' current near-total freedom from accountability is no longer acceptable.",
             "D": "Government-appointed regulators can be made genuinely independent if properly designed."
           },
-          "correctLabel": null,
-          "rationale": null
+          "correctLabel": "C",
+          "rationale": "James says the status quo of near-total platform impunity is untenable, and Clara replies 'Exactly', confirming shared agreement.",
+          "optionRationales": {
+            "A": "Clara argues multi-stakeholder bodies lower capture risk, but James never endorses this as most effective and calls the issue a sticking point.",
+            "B": "Over-generalisation: Clara only supports penalties for amplifying fact-checked false content, not any contested claim.",
+            "C": "Correct: both accept that platforms operating with near-total impunity cannot continue.",
+            "D": "Clara claims better design reduces risk, but James doubts any government agency is truly independent and never concedes this."
+          }
         }
       ],
       "audioPath": "/static/listening/listening-10.mp3",
-      "hasKey": false,
+      "hasKey": true,
       "source": "seed"
     },
     {
@@ -3492,38 +3672,56 @@
           "question": "What does the analyst imply is the fundamental flaw in how European governments are currently managing the energy transition?",
           "options": {
             "A": "They are resisting renewable energy expansion under pressure from the fossil fuel industry.",
-            "B": "The pace of decarbonisation has been prioritised over the resilience of the electricity grid.",
-            "C": "Solar and wind technology is not yet mature enough for the scale of deployment being attempted.",
+            "B": "Solar and wind technology is not yet mature enough for the scale of deployment being attempted.",
+            "C": "The pace of decarbonisation has been prioritised over the resilience of the electricity grid.",
             "D": "Political leaders lack the technical knowledge needed to understand grid management challenges."
           },
-          "correctLabel": null,
-          "rationale": null
+          "correctLabel": "C",
+          "rationale": "Dr. Marsh warns against conflating speed with effectiveness and says dispatchable plants are retired faster than firm alternatives arrive. That implies decarbonisation pace is outrunning grid resilience.",
+          "optionRationales": {
+            "A": "Reverses her position: she supports expansion and says the direction of travel is right; resisting under fossil pressure is the host's insinuation, which she rejects.",
+            "B": "Over-generalisation: she praises the battery cost curve and never says wind and solar are immature; her issue is complementary infrastructure.",
+            "C": "Correct: she says capacity is being retired faster than firm replacements, so speed is prioritised over keeping the lights on.",
+            "D": "Not said: she never criticises leaders' technical knowledge; she critiques the sequencing of retirements and build-out."
+          }
         },
         {
           "question": "When the analyst states 'The goal is a resilient low-carbon system, not just a low-carbon one,' what is the primary function of this remark?",
           "options": {
-            "A": "To argue that intermittent renewable sources cannot on their own form the basis of a reliable electricity system.",
+            "A": "To argue that Europe should stop expanding wind and solar capacity until storage can cover multi-week shortages.",
             "B": "To signal agreement with critics who believe the energy transition is moving too fast.",
             "C": "To clarify that her concerns about pacing do not reflect opposition to decarbonisation.",
             "D": "To suggest that nuclear power should be the dominant technology in a future low-carbon grid."
           },
-          "correctLabel": null,
-          "rationale": null
+          "correctLabel": "C",
+          "rationale": "Right after the host asks whether she wants to slow down, she says she does not and that the transition needs smarter sequencing. The remark restates her support for decarbonisation while adding the resilience requirement.",
+          "optionRationales": {
+            "A": "The speaker says explicitly that she is not saying to slow down and that expanding renewables is not in question, so this option misreads her concern about pacing and backup infrastructure as a call to halt expansion.",
+            "B": "Wrong relation: she explicitly says she is not saying slow down and calls the critics' framing a false dichotomy.",
+            "C": "Correct: it clarifies that her concern is about pacing and resilience, not opposition to decarbonisation.",
+            "D": "Over-generalisation: nuclear is only one of several firm options she lists, alongside pumped hydro and hydrogen turbines."
+          }
         },
         {
           "question": "What concern does the analyst raise about the possible consequences of a large-scale power outage caused by intermittency?",
           "options": {
-            "A": "Grid operators would be legally required to restart retired fossil-fuel plants immediately.",
+            "A": "A political reaction against renewable energy could significantly delay the decarbonisation agenda.",
             "B": "Public trust in battery storage technology would collapse, halting investment in that sector.",
-            "C": "A political reaction against renewable energy could significantly delay the decarbonisation agenda.",
+            "C": "Grid operators would be legally required to restart retired fossil-fuel plants immediately.",
             "D": "European governments would face sanctions from international climate bodies for failing to maintain supply security."
           },
-          "correctLabel": null,
-          "rationale": null
+          "correctLabel": "A",
+          "rationale": "She says a major supply failure from intermittency could cause a political backlash that sets things back by a decade, to the detriment of the climate.",
+          "optionRationales": {
+            "A": "Correct: she warns the political backlash could set the transition back by a decade.",
+            "B": "Misplaced target: the backlash she fears is against the energy transition generally, not specifically a collapse of trust in battery storage.",
+            "C": "Invented detail: no legal obligation to restart fossil plants is mentioned by either speaker.",
+            "D": "Invented consequence: sanctions from international climate bodies are never mentioned."
+          }
         }
       ],
       "audioPath": "/static/listening/listening-11.mp3",
-      "hasKey": false,
+      "hasKey": true,
       "source": "seed"
     },
     {
@@ -3595,24 +3793,36 @@
         {
           "question": "What does Dr. Cole imply about the effect of climate change on resource diplomacy?",
           "options": {
-            "A": "Climate change has already caused armed conflict over shared river basins.",
-            "B": "Climate change is reducing the time available for negotiated solutions to resource disputes.",
+            "A": "Climate change is reducing the time available for negotiated solutions to resource disputes.",
+            "B": "Climate change has already caused armed conflict over shared river basins.",
             "C": "Climate change is a less significant driver of conflict than the failure of international law.",
             "D": "Climate change affects downstream nations more severely than upstream nations."
           },
-          "correctLabel": null,
-          "rationale": null
+          "correctLabel": "A",
+          "rationale": "Dr. Cole says climate is compressing the timeline: countries once had thirty years to negotiate and now have about a decade. So less time remains for negotiated solutions.",
+          "optionRationales": {
+            "A": "Correct: the thirty-years-to-a-decade contrast shows climate shrinking the window for negotiation.",
+            "B": "Targets an over-reading: Cole speaks of rising pressure and unilateral projects, never of armed conflict having already occurred.",
+            "C": "Reverses the stress: Cole names climate as what compresses the timeline, and never ranks it below failed international law.",
+            "D": "True-but-not-said distractor: Cole notes downstream populations bear the cost of dams, but he does not link this to climate change."
+          }
         },
         {
           "question": "When Professor Santos cites the Indus Waters Treaty, her underlying point is that:",
           "options": {
             "A": "international law has been uniquely effective in South Asian water management.",
             "B": "the treaty provides a specific template that Arctic nations should formally adopt.",
-            "C": "even states in deep political conflict can sustain cooperative resource arrangements.",
-            "D": "military conflict between states has no lasting effect on existing water agreements."
+            "C": "military conflict between states has no lasting effect on existing water agreements.",
+            "D": "even states in deep political conflict can sustain cooperative resource arrangements."
           },
-          "correctLabel": null,
-          "rationale": null
+          "correctLabel": "D",
+          "rationale": "Santos says the Indus treaty survived two India-Pakistan wars, to show that adversarial states can find workable arrangements. Her point is that cooperation is possible even amid hostility.",
+          "optionRationales": {
+            "A": "Over-generalisation: she cites one treaty as an example and makes no claim that law is uniquely effective in South Asia.",
+            "B": "Not said: she never proposes the treaty as a template for the Arctic, and later favours sector-specific agreements.",
+            "C": "Over-reading: the treaty survived the wars, but she does not claim conflict never affects water agreements.",
+            "D": "Correct: the treaty surviving two wars shows that even adversaries can sustain cooperative arrangements."
+          }
         },
         {
           "question": "What is the primary function of Dr. Cole's phrase 'Fair point, and I wouldn't entirely dispute it' at the start of his second turn?",
@@ -3622,12 +3832,18 @@
             "C": "To challenge the historical accuracy of the Indus Waters Treaty as an example of successful cooperation.",
             "D": "To agree with Santos that existing legal frameworks are adequate to manage Arctic competition."
           },
-          "correctLabel": null,
-          "rationale": null
+          "correctLabel": "B",
+          "rationale": "Cole grants Santos some validity, then says the Arctic is a different matter. The phrase is a limited concession that sets up a contrast.",
+          "optionRationales": {
+            "A": "Too strong: the hedge 'wouldn't entirely dispute' is partial, and Cole later repeats his scepticism.",
+            "B": "Correct: he concedes some validity, then uses 'But the Arctic is a different matter' to shift to a harder case.",
+            "C": "Wrong target: Cole does not question the Indus example's accuracy, and he accepts it as a fair point.",
+            "D": "Reversed: Cole never calls existing frameworks adequate for the Arctic and ends by doubting legal commitments."
+          }
         }
       ],
       "audioPath": "/static/listening/listening-12.mp3",
-      "hasKey": false,
+      "hasKey": true,
       "source": "seed"
     }
   ],

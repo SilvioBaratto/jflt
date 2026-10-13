@@ -55,9 +55,17 @@
       "question": "What does Elena imply when she argues that a tariff-protected domestic monopoly could be more fragile than a diversified global sourcing network?",
       "options": {
         "A": "Domestic manufacturers tend to be inherently less efficient than their foreign competitors.",
-        "B": "Geographical concentration of production is itself a source of supply-chain vulnerability.",
-        "C": "The primary purpose of supply-chain resilience is to maximise output rather than to reduce risk.",
+        "B": "The primary purpose of supply-chain resilience is to maximise output rather than to reduce risk.",
+        "C": "Geographical concentration of production is itself a source of supply-chain vulnerability.",
         "D": "International trade agreements provide stronger protection against shocks than tariff barriers do."
+      },
+      "answer": "C",
+      "rationale": "Elena says resilience is about redundancy and diversification, not where goods are made, so a single protected domestic producer is a concentration risk. Her implication is that concentration itself creates vulnerability.",
+      "option_rationales": {
+        "A": "Over-reading: Elena never claims domestic firms are less efficient, only that a protected monopoly is fragile.",
+        "B": "Reversed purpose: Elena defines resilience as absorbing shocks and redundancy, not maximising output.",
+        "C": "Correct: a single protected producer lacks redundancy and diversification, so concentration is the weakness she implies.",
+        "D": "True-but-not-said: she never discusses trade agreements, only the value of diversified sourcing."
       }
     },
     {
@@ -65,9 +73,17 @@
       "question": "Which statement best captures Marcus's view on market forces and supply-chain resilience?",
       "options": {
         "A": "Markets will eventually self-correct, making government intervention unnecessary.",
-        "B": "Firms cannot be expected to voluntarily absorb the cost of capacity that benefits society as a whole.",
+        "B": "Supply-chain diversification is the primary goal that any resilience policy must prioritise.",
         "C": "Industrial policy is effective only when it takes the exclusive form of direct investment subsidies.",
-        "D": "Supply-chain diversification is the primary goal that any resilience policy must prioritise."
+        "D": "Firms cannot be expected to voluntarily absorb the cost of capacity that benefits society as a whole."
+      },
+      "answer": "D",
+      "rationale": "Marcus says excess capacity is like an insurance premium that society needs but individual firms have no rational reason to pay. He also says waiting for markets to self-correct has a poor record.",
+      "option_rationales": {
+        "A": "Reversed: Marcus explicitly rejects waiting for markets to self-correct.",
+        "B": "Wrong speaker: diversification is Elena's emphasis, and Marcus only accepts it as a fair point.",
+        "C": "Over-generalisation: he pairs tariffs with subsidies and does not say subsidies must be the only form.",
+        "D": "Correct: his insurance-premium point is that firms will not voluntarily fund capacity that benefits society."
       }
     },
     {
@@ -75,9 +91,17 @@
       "question": "What is the function of Marcus's proposal for sunset clauses, independent review panels, and transparent benchmarks?",
       "options": {
         "A": "To concede that tariff policy is fundamentally ineffective and should be replaced by alternative instruments.",
-        "B": "To demonstrate that investment subsidies are a superior tool to tariffs in all circumstances.",
-        "C": "To address Elena's concern that tariffs outlast their strategic purpose by arguing that governance safeguards can contain that risk.",
+        "B": "To address Elena's concern that tariffs outlast their strategic purpose by arguing that governance safeguards can contain that risk.",
+        "C": "To demonstrate that investment subsidies are a superior tool to tariffs in all circumstances.",
         "D": "To advocate for the immediate removal of all existing tariff regimes through an internationally agreed framework."
+      },
+      "answer": "B",
+      "rationale": "Marcus answers Elena's worry that tariffs become entrenched protectionism by saying the answer is institutional design. Sunset clauses and review panels are meant to stop strategic policy drifting into rent-seeking.",
+      "option_rationales": {
+        "A": "Reversed: he defends tariffs as workable with safeguards and does not concede they are ineffective.",
+        "B": "Correct: the safeguards respond directly to Elena's point that tariffs outlast their strategic purpose.",
+        "C": "Over-generalisation: he never ranks subsidies above tariffs, and the safeguards concern tariff governance.",
+        "D": "Misread: sunset clauses wind tariffs down under controlled conditions, and he does not call for removing all tariffs."
       }
     }
   ]

@@ -56,10 +56,18 @@
       "id": 1,
       "question": "When the official refers to 'the structural tension we are wrestling with,' what is most likely implied?",
       "options": {
-        "A": "Article 5 was not conceived to cover the kind of ambiguous sub-threshold operations adversaries now conduct routinely.",
-        "B": "NATO planners formally disagree with the 2022 Strategic Concept's approach to hybrid threats.",
+        "A": "NATO planners formally disagree with the 2022 Strategic Concept's approach to hybrid threats.",
+        "B": "Article 5 was not conceived to cover the kind of ambiguous sub-threshold operations adversaries now conduct routinely.",
         "C": "Hybrid operations have already crossed the threshold required to trigger collective defence action.",
         "D": "NATO's collective defence treaty is legally incompatible with any response to sub-threshold attacks."
+      },
+      "answer": "B",
+      "rationale": "The official says the collective defence threshold was not designed with sub-threshold activities in mind, and calls this the structural tension. So Article 5 was never built for ambiguous hybrid activity.",
+      "option_rationales": {
+        "A": "Misread: the official cites the 2022 Strategic Concept as addressing hybrid threats, and never mentions planners disagreeing with it.",
+        "B": "Correct: it follows the official's admission that the threshold was not designed for sub-threshold activities.",
+        "C": "Reversed relation: the official says only that cumulative attacks could in principle trigger consultations, not that the threshold has been crossed.",
+        "D": "Over-generalisation: he says Article 5 is poorly suited, but he describes resilience and other responses, so no legal bar is claimed."
       }
     },
     {
@@ -70,6 +78,14 @@
         "B": "Convinced that NATO should immediately adopt collective offensive cyber operations.",
         "C": "Sceptical that the alliance's cautious posture effectively deters adversary behaviour.",
         "D": "Sympathetic to the official's argument that legal constraints must take priority over deterrence."
+      },
+      "answer": "C",
+      "rationale": "The journalist says 'could in principle' does a great deal of work and asks whether the posture licenses adversaries to operate below the radar. She later calls resilience inherently defensive, which shows doubt that the cautious approach deters.",
+      "option_rationales": {
+        "A": "Wrong attitude: she dismisses resilience as inherently defensive and never praises the investment in it.",
+        "B": "Over-generalisation: she raises the Baltic states' call for offensive operations as a question, not as her own firm demand.",
+        "C": "Correct: her pointed challenges imply doubt that the current cautious posture deters adversaries.",
+        "D": "Wrong speaker: the official stresses legal constraints, and she does not accept that they should outweigh deterrence."
       }
     },
     {
@@ -77,9 +93,17 @@
       "question": "When the official says 'I'd push back on that framing, though not entirely,' what does this utterance primarily signal?",
       "options": {
         "A": "The official is about to announce a significant change in NATO's hybrid threat policy.",
-        "B": "The official acknowledges a measure of validity in the journalist's critique while still defending the alliance's strategy.",
+        "B": "The official intends to redirect the conversation to avoid addressing attribution difficulties directly.",
         "C": "The official completely rejects the suggestion that adversaries are exploiting NATO's ambiguity.",
-        "D": "The official intends to redirect the conversation to avoid addressing attribution difficulties directly."
+        "D": "The official acknowledges a measure of validity in the journalist's critique while still defending the alliance's strategy."
+      },
+      "answer": "D",
+      "rationale": "The qualifier 'though not entirely' signals partial concession. He then agrees that attribution is a real challenge but defends resilience-based deterrence.",
+      "option_rationales": {
+        "A": "True-but-not-said: nothing in the answer announces a policy change, and he describes existing measures.",
+        "B": "Misread: he addresses attribution directly, saying it prevents invoking Article 5 on probabilistic grounds.",
+        "C": "Reversed relation: 'not entirely' rules out a complete rejection, and he agrees with part of her point.",
+        "D": "Correct: he partly concedes the point on attribution while defending the alliance's strategy."
       }
     }
   ]

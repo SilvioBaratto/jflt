@@ -130,10 +130,13 @@ def parse_writing() -> list[dict]:
 def parse_listening() -> list[dict]:
     """Load the listening JSON files and copy their MP3s into the API static dir.
 
+    Each question's key comes from its `answer`, `rationale` and `option_rationales`
+    fields; a question without an `answer` stays unkeyed and is left ungraded by the API.
+
     Returns:
-        One dict per conversation with topic, voices/speakers/lines, questions
-        (key fields left null — the seed audio shipped without an answer key),
-        audioPath, hasKey=False, and source.
+        One dict per conversation with level, topic, voices/speakers/lines, questions
+        (each {question, options, correctLabel, rationale, optionRationales}), audioPath,
+        hasKey (true only when every question is keyed), and source.
     """
     AUDIO_DEST.mkdir(parents=True, exist_ok=True)
     items = []
@@ -145,13 +148,14 @@ def parse_listening() -> list[dict]:
             shutil.copy2(mp3, AUDIO_DEST / mp3.name)
             audio_path = f"/static/listening/{mp3.name}"
         qs = [{"question": q.get("question", ""), "options": q.get("options", {}),
-               "correctLabel": None, "rationale": None} for q in d.get("questions", [])]
+               "correctLabel": q.get("answer"), "rationale": q.get("rationale"),
+               "optionRationales": q.get("option_rationales")} for q in d.get("questions", [])]
         items.append({
-            "level": 3, "topic": d.get("topic", ""),
+            "level": d.get("stanag_level", 3), "topic": d.get("topic", ""),
             "conversationType": d.get("conversation_type", ""), "setting": d.get("setting"),
             "voices": d.get("voices", {}), "speakers": d.get("speakers", []),
             "lines": d.get("lines", []), "questions": qs, "audioPath": audio_path,
-            "hasKey": False, "source": "seed",
+            "hasKey": bool(qs) and all(q["correctLabel"] for q in qs), "source": "seed",
         })
     return items
 
@@ -209,7 +213,8 @@ def main() -> None:
 
     print(f"readingItems:   {len(reading)}")
     print(f"writingTasks:   {len(writing)}  types={[t['taskType'] for t in writing]}")
-    print(f"listeningItems: {len(listening)}  audio_copied={sum(1 for x in listening if x['audioPath'])}")
+    print(f"listeningItems: {len(listening)}  audio_copied={sum(1 for x in listening if x['audioPath'])} "
+          f"keyed={sum(1 for x in listening if x['hasKey'])}")
     print(f"vocabEntries:   {len(vocab)}")
     if reading:
         r = reading[0]

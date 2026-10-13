@@ -56,30 +56,54 @@
       "id": 1,
       "question": "What is Dr. Chen's central concern about extending export controls beyond hardware to AI software and research?",
       "options": {
-        "A": "She believes that no AI technology, including advanced processors, should be subject to export restrictions.",
-        "B": "She worries that restricting AI research tools will fragment international safety work, ultimately leaving all countries more vulnerable.",
+        "A": "She worries that restricting AI research tools will fragment international safety work, ultimately leaving all countries more vulnerable.",
+        "B": "She believes that no AI technology, including advanced processors, should be subject to export restrictions.",
         "C": "She argues that restricting AI software exports will give adversarial states an advantage in building more powerful language models.",
         "D": "She contends that open-source AI research is already too sensitive to be shared freely across national borders."
+      },
+      "answer": "A",
+      "rationale": "Chen says walling off software, weights and papers slows safety research that benefits from open collaboration, and risks siloed research and AI systems nobody fully understands.",
+      "option_rationales": {
+        "A": "Matches her argument that extending controls fragments the global knowledge commons and siloes safety research, leaving everyone worse off.",
+        "B": "Over-generalisation: Chen explicitly says chip-level controls are arguably defensible, so she does not oppose all restrictions.",
+        "C": "Reverses her view: she says the major risk is not an ally building a slightly better model but siloed safety research.",
+        "D": "Reversed relation: she wants open-source safety research protected and funded internationally, not judged too sensitive to share."
       }
     },
     {
       "id": 2,
       "question": "On which specific point does Dr. Chen explicitly concede that the host's defence of export controls has merit?",
       "options": {
-        "A": "She agrees that all categories of AI artefact, including research papers, should be subject to strict national controls.",
-        "B": "She acknowledges that restricting the export of the most advanced semiconductor hardware is a defensible policy.",
+        "A": "She acknowledges that restricting the export of the most advanced semiconductor hardware is a defensible policy.",
+        "B": "She agrees that all categories of AI artefact, including research papers, should be subject to strict national controls.",
         "C": "She admits that geographic embargoes are ultimately more coherent than a tiered licensing system.",
         "D": "She accepts that fragmenting the global knowledge commons may be a necessary trade-off for national security."
+      },
+      "answer": "A",
+      "rationale": "After the host's pushback, Chen concedes the point up to a degree and says restricting the most advanced processors is arguably defensible because it slows frontier capabilities.",
+      "option_rationales": {
+        "A": "Correct: she concedes chip-level controls on advanced processors are arguably defensible.",
+        "B": "Opposite of her stance: she wants differentiation and rejects treating all AI artefacts, including papers, as equal threats.",
+        "C": "Reversed relation: she calls tiered licensing more coherent than a simple geographic embargo.",
+        "D": "She warns fragmenting the knowledge commons is destabilising and never accepts it as a necessary trade-off."
       }
     },
     {
       "id": 3,
       "question": "What does Dr. Chen imply when she describes a simple geographic embargo on AI as 'philosophically incoherent'?",
       "options": {
-        "A": "Geographic embargoes have a poor historical record of preventing the spread of sensitive dual-use technologies.",
-        "B": "Using a state's national origin as the criterion for AI access fails to address the actual security risk, which she identifies as a lack of auditing and transparency.",
+        "A": "Using a state's national origin as the criterion for AI access fails to address the actual security risk, which she identifies as a lack of auditing and transparency.",
+        "B": "Geographic embargoes have a poor historical record of preventing the spread of sensitive dual-use technologies.",
         "C": "A tiered licensing scheme would be considerably easier to enforce globally than restrictions on semiconductor exports.",
         "D": "Democratic governments should give economic competitiveness priority over national security when regulating AI."
+      },
+      "answer": "A",
+      "rationale": "Chen contrasts a geographic embargo with tiered licensing based on auditing and transparency, implying nationality is the wrong proxy for the real risk.",
+      "option_rationales": {
+        "A": "Fits her argument that access should depend on demonstrated auditing and transparency commitment, not nationality alone.",
+        "B": "True-but-not-said: she gives no historical evidence about embargoes failing; her objection is conceptual.",
+        "C": "Unsupported comparison: she admits tiered licensing is more complex to administer and never compares it with chip controls.",
+        "D": "Not said: she never ranks economic competitiveness above national security and accepts restricting hardware."
       }
     }
   ]

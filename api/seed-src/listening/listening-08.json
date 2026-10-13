@@ -56,6 +56,14 @@
         "B": "Security-driven deployments are collectively generating the very instability they are intended to prevent.",
         "C": "The growth in satellite numbers has outpaced the ability of military planners to manage low Earth orbit effectively.",
         "D": "Commercial and military satellite operators have failed to coordinate their activities in shared orbital corridors."
+      },
+      "answer": "B",
+      "rationale": "Dr. Chen says the capabilities states deploy for their security are generating the conditions for catastrophic instability, which is a self-defeating security effect.",
+      "option_rationales": {
+        "A": "Targets a misread: Chen never discusses resource allocation or the cost-benefit of spending on satellites.",
+        "B": "Correct: Chen's paradox is that security-motivated deployments collectively produce instability.",
+        "C": "True-but-not-said distortion: she mentions growing numbers, but says the problem is the missing legal framework, not planners' management capacity.",
+        "D": "Wrong focus: coordination failures between commercial and military operators are never raised as the paradox."
       }
     },
     {
@@ -64,8 +72,16 @@
       "options": {
         "A": "The need for a binding treaty governing dual-use satellite capabilities.",
         "B": "The risk that NATO allies would be strategically exposed by unilateral arms reductions in space.",
-        "C": "The threat that accumulating orbital debris poses to all categories of satellites.",
-        "D": "The value of the nineteen sixty-seven Outer Space Treaty as a workable template for future agreements."
+        "C": "The value of the nineteen sixty-seven Outer Space Treaty as a workable template for future agreements.",
+        "D": "The threat that accumulating orbital debris poses to all categories of satellites."
+      },
+      "answer": "D",
+      "rationale": "Colonel Webb says he concedes the debris issue is genuinely alarming. Chen had described debris as threatening commercial, scientific and military satellites alike.",
+      "option_rationales": {
+        "A": "Wrong reversal: Webb actually challenges whether a treaty can handle dual-use capabilities, so he does not concede this.",
+        "B": "Webb raises vulnerability from freezing capabilities as his own argument, not as a Chen concern, and NATO is never mentioned.",
+        "C": "Chen cites the 1967 treaty as an imperfect precedent; Webb never concedes its value as a template.",
+        "D": "Correct: Webb explicitly concedes the debris problem is genuinely alarming."
       }
     },
     {
@@ -73,9 +89,17 @@
       "question": "What does Dr. Chen imply when she says the window for agreement may be closing faster than policymakers appreciate?",
       "options": {
         "A": "Political opposition within military alliances is likely to block any future space arms-control initiative.",
-        "B": "The rate of debris accumulation may soon make meaningful orbital agreements practically irrelevant.",
+        "B": "Commercial satellite operators represent the primary obstacle to reaching a binding agreement on space security.",
         "C": "Policymakers currently lack the technical expertise needed to evaluate competing space treaty proposals.",
-        "D": "Commercial satellite operators represent the primary obstacle to reaching a binding agreement on space security."
+        "D": "The rate of debris accumulation may soon make meaningful orbital agreements practically irrelevant."
+      },
+      "answer": "D",
+      "rationale": "Chen links the closing window to the pace of debris accumulation, implying that unchecked debris will make even an imperfect agreement too late to matter.",
+      "option_rationales": {
+        "A": "Invents a cause: political opposition within alliances is never mentioned as the reason the window closes.",
+        "B": "Wrong speaker emphasis: commercial operators are mentioned only as victims of debris, never as the obstacle to agreement.",
+        "C": "Unsupported: she says policymakers underestimate the urgency, not that they lack technical expertise.",
+        "D": "Correct: Chen ties the closing window directly to debris accumulation outpacing diplomacy."
       }
     }
   ]

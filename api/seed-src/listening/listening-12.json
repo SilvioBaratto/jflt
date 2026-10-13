@@ -58,10 +58,18 @@
       "id": 1,
       "question": "What does Dr. Cole imply about the effect of climate change on resource diplomacy?",
       "options": {
-        "A": "Climate change has already caused armed conflict over shared river basins.",
-        "B": "Climate change is reducing the time available for negotiated solutions to resource disputes.",
+        "A": "Climate change is reducing the time available for negotiated solutions to resource disputes.",
+        "B": "Climate change has already caused armed conflict over shared river basins.",
         "C": "Climate change is a less significant driver of conflict than the failure of international law.",
         "D": "Climate change affects downstream nations more severely than upstream nations."
+      },
+      "answer": "A",
+      "rationale": "Dr. Cole says climate is compressing the timeline: countries once had thirty years to negotiate and now have about a decade. So less time remains for negotiated solutions.",
+      "option_rationales": {
+        "A": "Correct: the thirty-years-to-a-decade contrast shows climate shrinking the window for negotiation.",
+        "B": "Targets an over-reading: Cole speaks of rising pressure and unilateral projects, never of armed conflict having already occurred.",
+        "C": "Reverses the stress: Cole names climate as what compresses the timeline, and never ranks it below failed international law.",
+        "D": "True-but-not-said distractor: Cole notes downstream populations bear the cost of dams, but he does not link this to climate change."
       }
     },
     {
@@ -70,8 +78,16 @@
       "options": {
         "A": "international law has been uniquely effective in South Asian water management.",
         "B": "the treaty provides a specific template that Arctic nations should formally adopt.",
-        "C": "even states in deep political conflict can sustain cooperative resource arrangements.",
-        "D": "military conflict between states has no lasting effect on existing water agreements."
+        "C": "military conflict between states has no lasting effect on existing water agreements.",
+        "D": "even states in deep political conflict can sustain cooperative resource arrangements."
+      },
+      "answer": "D",
+      "rationale": "Santos says the Indus treaty survived two India-Pakistan wars, to show that adversarial states can find workable arrangements. Her point is that cooperation is possible even amid hostility.",
+      "option_rationales": {
+        "A": "Over-generalisation: she cites one treaty as an example and makes no claim that law is uniquely effective in South Asia.",
+        "B": "Not said: she never proposes the treaty as a template for the Arctic, and later favours sector-specific agreements.",
+        "C": "Over-reading: the treaty survived the wars, but she does not claim conflict never affects water agreements.",
+        "D": "Correct: the treaty surviving two wars shows that even adversaries can sustain cooperative arrangements."
       }
     },
     {
@@ -82,6 +98,14 @@
         "B": "To concede limited validity to Santos's argument before redirecting attention to a more contested case.",
         "C": "To challenge the historical accuracy of the Indus Waters Treaty as an example of successful cooperation.",
         "D": "To agree with Santos that existing legal frameworks are adequate to manage Arctic competition."
+      },
+      "answer": "B",
+      "rationale": "Cole grants Santos some validity, then says the Arctic is a different matter. The phrase is a limited concession that sets up a contrast.",
+      "option_rationales": {
+        "A": "Too strong: the hedge 'wouldn't entirely dispute' is partial, and Cole later repeats his scepticism.",
+        "B": "Correct: he concedes some validity, then uses 'But the Arctic is a different matter' to shift to a harder case.",
+        "C": "Wrong target: Cole does not question the Indus example's accuracy, and he accepts it as a fair point.",
+        "D": "Reversed: Cole never calls existing frameworks adequate for the Arctic and ends by doubting legal commitments."
       }
     }
   ]

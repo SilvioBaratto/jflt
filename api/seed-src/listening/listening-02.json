@@ -63,9 +63,17 @@
       "question": "According to Professor Carter, what is the main reason economic sanctions typically fail to compel changes in state behaviour?",
       "options": {
         "A": "Sanctions are rarely comprehensive enough to affect the broader national economy.",
-        "B": "Authoritarian leaders are generally shielded from the economic hardship that sanctions create.",
-        "C": "Their principal value lies in signalling disapproval rather than in changing government policy.",
+        "B": "Sanctions succeed mainly against unilateral targets, but they fail when a broad coalition applies them.",
+        "C": "Authoritarian leaders are generally shielded from the economic hardship that sanctions create.",
         "D": "They can only succeed when accompanied by credible military threats."
+      },
+      "answer": "C",
+      "rationale": "Carter argues sanctions impose costs on civilians without shifting the calculus of authoritarian elites, who are insulated from the fallout. This is the only causal explanation he gives for failure to compel change.",
+      "option_rationales": {
+        "A": "Targets a true-but-not-said misread: Carter never says sanctions are insufficiently comprehensive; Reyes mentions comprehensive pressure as a success factor.",
+        "B": "This distractor reverses the unilateral versus multilateral relation: Dr. Reyes (not Carter) argues that coordinated coalitions make sanctions work, and both speakers say unilateral sanctions are far less effective.",
+        "C": "Correct: Carter says elites are often insulated from economic fallout, so pain does not translate into policy change.",
+        "D": "Invented detail: no speaker mentions military threats; Reyes points to diplomatic incentives, not force."
       }
     },
     {
@@ -73,9 +81,17 @@
       "question": "What key distinction does Dr. Reyes draw when assessing the effectiveness of sanctions?",
       "options": {
         "A": "Sanctions are more effective when they target individual leaders rather than the whole economy.",
-        "B": "Coordinated multilateral sanctions regimes are significantly more effective than unilateral measures.",
-        "C": "Sanctions succeed primarily against democratic governments, not authoritarian ones.",
+        "B": "Sanctions succeed primarily against democratic governments, not authoritarian ones.",
+        "C": "Coordinated multilateral sanctions regimes are significantly more effective than unilateral measures.",
         "D": "The speed with which sanctions are imposed determines whether they will achieve their objective."
+      },
+      "answer": "C",
+      "rationale": "Dr. Reyes separates unilateral sanctions, which she agrees are far less effective, from coordinated multilateral regimes. She cites South Africa to show broad coalitions alter cost-benefit calculations.",
+      "option_rationales": {
+        "A": "Unsupported: nobody discusses targeting individual leaders; the contrast Reyes draws is about coalition breadth.",
+        "B": "Unsupported: no speaker distinguishes democratic from authoritarian targets as a success factor; authoritarian elites come up only in Carter's criticism.",
+        "C": "Correct: Reyes contrasts weak unilateral measures with effective multilateral regimes backed by the financial system.",
+        "D": "Unsupported: speed of imposition is never mentioned; Reyes names economy vulnerability, coalition unity and a clear demand."
       }
     },
     {
@@ -83,9 +99,17 @@
       "question": "Why does Professor Carter refer to the Iran nuclear deal having unravelled?",
       "options": {
         "A": "To suggest that the sanctions failed because they did not damage Iran's economy sufficiently.",
-        "B": "To acknowledge that multilateral pressure can produce short-term results under favourable conditions.",
-        "C": "To undermine Dr. Reyes's example by implying that even apparent successes lack durability.",
+        "B": "To undermine Dr. Reyes's example by implying that even apparent successes lack durability.",
+        "C": "To acknowledge that multilateral pressure can produce short-term results under favourable conditions.",
         "D": "To argue that diplomatic follow-through was inadequate once the sanctions were lifted."
+      },
+      "answer": "B",
+      "rationale": "Carter responds to Reyes's Iran example by calling Iran an outlier and saying the deal's unravelling reinforces his point. He is using it to deny that this apparent success was durable.",
+      "option_rationales": {
+        "A": "Misread of his point: Carter does not say the Iranian economy was insufficiently damaged; his concern is lasting impact and elite insulation.",
+        "B": "Correct: he raises the unravelling to undercut Reyes's example, saying it supports his scepticism.",
+        "C": "Reversed function: this is Reyes's view, while Carter cites the unravelling to weaken, not concede, the success claim.",
+        "D": "Not said: Carter does not discuss diplomatic follow-through after sanctions were lifted; that is an inference beyond the transcript."
       }
     }
   ]

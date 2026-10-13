@@ -58,10 +58,18 @@
       "id": 1,
       "question": "What is Dr Karin Sorensen's main argument regarding demographic workforce shortfalls?",
       "options": {
-        "A": "Migration will inevitably cause wages to decline across all sectors of the economy.",
-        "B": "Tackling structural underuse of the existing workforce would reduce the scale of migration needed.",
+        "A": "Tackling structural underuse of the existing workforce would reduce the scale of migration needed.",
+        "B": "Migration will inevitably cause wages to decline across all sectors of the economy.",
         "C": "Automation technology is a more effective long-term solution than either migration or labour reform.",
         "D": "OECD governments should impose restrictions on migration until childcare systems are adequately funded."
+      },
+      "answer": "A",
+      "rationale": "Karin argues the dependency ratio hides poor use of the existing workforce, and that fixing women's and older workers' underuse would expand it considerably, so less migration would be needed.",
+      "option_rationales": {
+        "A": "Correct: she says addressing childcare, elder care and early retirement failures expands the effective workforce considerably.",
+        "B": "Over-generalisation: Karin says rapid inflows can suppress wages in vulnerable sectors, not across all sectors, and not inevitably.",
+        "C": "Wrong speaker: Rajan mentions automation, and only to say it cannot close the gap in time; Karin never advocates it.",
+        "D": "Not said: Karin never proposes restricting migration; she only cautions about wage effects and political backlash."
       }
     },
     {
@@ -69,9 +77,17 @@
       "question": "What is the core point of disagreement between Rajan Mehta and Dr Sorensen?",
       "options": {
         "A": "Whether ageing populations represent a genuine threat to pension and healthcare funding.",
-        "B": "Whether labour shortfalls will affect the healthcare sector more severely than the construction sector.",
-        "C": "Whether migration can deliver workforce improvements rapidly enough to address immediate shortfalls.",
+        "B": "Whether migration can deliver workforce improvements rapidly enough to address immediate shortfalls.",
+        "C": "Whether labour shortfalls will affect the healthcare sector more severely than the construction sector.",
         "D": "Whether women in OECD countries are underemployed due to a shortage of suitable qualifications."
+      },
+      "answer": "B",
+      "rationale": "Rajan insists structural reforms take a generation while migration can scale quickly. Karin counters that rapid inflows risk wage suppression and backlash, so the dispute is about speed and viability of migration as a fix.",
+      "option_rationales": {
+        "A": "Both accept the fiscal pressure; Rajan stresses it and Karin does not deny that ageing is a problem.",
+        "B": "Correct: Rajan says migration can respond quickly to shortfalls, while Karin warns against rapid inflows and calls it a quick fix.",
+        "C": "Healthcare and construction appear only as examples of sectors needing workers; neither speaker compares their severity.",
+        "D": "Reversed: Karin says women's underemployment comes from underfunded care systems, not lack of skill, and Rajan does not dispute this."
       }
     },
     {
@@ -82,6 +98,14 @@
         "B": "Using migration as a convenient substitute for deeper debate about social and economic priorities.",
         "C": "Overestimating how quickly automation can replace human labour in care and logistics sectors.",
         "D": "Accepting that large-scale migration is politically unworkable and seeking alternative solutions instead."
+      },
+      "answer": "B",
+      "rationale": "Karin says reaching for the demographic quick fix lets people keep deferring the harder conversation about what kind of society to build, so migration substitutes for deeper debate.",
+      "option_rationales": {
+        "A": "Not said: nobody accuses policymakers of misrepresenting the demographic figures, and Karin does not dispute the decline.",
+        "B": "Correct: the quick fix is migration, and she says it defers the harder conversation about the kind of societies we want.",
+        "C": "Wrong referent: automation is raised only by Rajan, and the quick fix Karin means is migration.",
+        "D": "Reversed: she fears migration is being over-relied on, not that policymakers see it as unworkable."
       }
     }
   ]

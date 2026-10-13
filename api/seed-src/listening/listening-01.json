@@ -64,16 +64,32 @@
         "B": "Framing the Article Five guarantee as conditional on budget levels may signal to adversaries that NATO's cohesion is negotiable.",
         "C": "The two per cent threshold is set too low to fund a credible conventional deterrent against modern threats.",
         "D": "NATO allies prefer to contribute to collective defence through non-financial means such as intelligence sharing."
+      },
+      "answer": "B",
+      "rationale": "The analyst warns that if the US ties its commitment to a budget figure, or treats Article Five as transactional, adversaries gain an opening to question NATO's cohesion. That is the core danger of leaning on spending targets.",
+      "option_rationales": {
+        "A": "Over-generalisation: the analyst says several allies have technically met the two per cent threshold, so they have not consistently refused it.",
+        "B": "Correct: the analyst says conditionality tied to a budget figure may erode deterrence by letting adversaries question NATO's cohesion.",
+        "C": "Not said: the analyst calls the metric blunt, but never says two per cent is too low to fund deterrence.",
+        "D": "Not said: non-financial contributions such as intelligence sharing are never mentioned; the analyst stresses capability and readiness."
       }
     },
     {
       "id": 2,
       "question": "When the analyst concedes that the conditionality argument 'has a certain internal coherence,' what is the primary function of this concession in the discussion?",
       "options": {
-        "A": "To signal a change of position and indicate growing support for stricter conditionality.",
-        "B": "To acknowledge the opposing argument's logical appeal before introducing contradictory historical evidence.",
+        "A": "To acknowledge the opposing argument's logical appeal before introducing contradictory historical evidence.",
+        "B": "To signal a change of position and indicate growing support for stricter conditionality.",
         "C": "To suggest that both sides of the debate are equally well supported by the available facts.",
         "D": "To imply that analysts who favour conditionality are ignoring the lessons of recent history."
+      },
+      "answer": "A",
+      "rationale": "The analyst grants the logic of conditionality and then immediately counters with 'the historical evidence is mixed', citing Estonia, Poland and Finland. The concession is a rhetorical step before rebuttal.",
+      "option_rationales": {
+        "A": "Correct: the analyst grants the logic, then introduces historical evidence that undercuts the argument.",
+        "B": "Misreads concession as a change of position; the analyst goes on to warn that conditionality will harden scepticism.",
+        "C": "False balance: the analyst says the evidence is mixed but ends up arguing against conditionality, not for parity of support.",
+        "D": "Overstates the tone: the analyst is courteous and never accuses proponents of ignoring history."
       }
     },
     {
@@ -82,8 +98,16 @@
       "options": {
         "A": "Sustained American diplomatic pressure is the most reliable way to persuade NATO members to increase their budgets.",
         "B": "Smaller alliance members are inherently more committed to collective defence than larger NATO nations.",
-        "C": "Direct exposure to a perceived proximate threat, rather than alliance pressure, is the primary driver of serious defence investment.",
-        "D": "Countries that meet the two per cent target automatically develop deployable and interoperable military forces."
+        "C": "Countries that meet the two per cent target automatically develop deployable and interoperable military forces.",
+        "D": "Direct exposure to a perceived proximate threat, rather than alliance pressure, is the primary driver of serious defence investment."
+      },
+      "answer": "D",
+      "rationale": "The analyst says these states spend because they feel directly exposed, not because Washington threatened to walk away. This implies proximate threat, not alliance pressure, drives serious investment.",
+      "option_rationales": {
+        "A": "Reversed relation: the analyst says these countries did not raise budgets in response to American pressure.",
+        "B": "Unsupported generalisation: the analyst compares motivation by exposure, not commitment of small versus large members.",
+        "C": "Contradicts earlier remarks: the analyst says meeting two per cent can still leave forces undeployable and non-interoperable.",
+        "D": "Correct: the examples show spending driven by direct exposure to a proximate threat, not by pressure."
       }
     }
   ]

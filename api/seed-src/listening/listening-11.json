@@ -61,29 +61,53 @@
       "question": "What does the analyst imply is the fundamental flaw in how European governments are currently managing the energy transition?",
       "options": {
         "A": "They are resisting renewable energy expansion under pressure from the fossil fuel industry.",
-        "B": "The pace of decarbonisation has been prioritised over the resilience of the electricity grid.",
-        "C": "Solar and wind technology is not yet mature enough for the scale of deployment being attempted.",
+        "B": "Solar and wind technology is not yet mature enough for the scale of deployment being attempted.",
+        "C": "The pace of decarbonisation has been prioritised over the resilience of the electricity grid.",
         "D": "Political leaders lack the technical knowledge needed to understand grid management challenges."
+      },
+      "answer": "C",
+      "rationale": "Dr. Marsh warns against conflating speed with effectiveness and says dispatchable plants are retired faster than firm alternatives arrive. That implies decarbonisation pace is outrunning grid resilience.",
+      "option_rationales": {
+        "A": "Reverses her position: she supports expansion and says the direction of travel is right; resisting under fossil pressure is the host's insinuation, which she rejects.",
+        "B": "Over-generalisation: she praises the battery cost curve and never says wind and solar are immature; her issue is complementary infrastructure.",
+        "C": "Correct: she says capacity is being retired faster than firm replacements, so speed is prioritised over keeping the lights on.",
+        "D": "Not said: she never criticises leaders' technical knowledge; she critiques the sequencing of retirements and build-out."
       }
     },
     {
       "id": 2,
       "question": "When the analyst states 'The goal is a resilient low-carbon system, not just a low-carbon one,' what is the primary function of this remark?",
       "options": {
-        "A": "To argue that intermittent renewable sources cannot on their own form the basis of a reliable electricity system.",
+        "A": "To argue that Europe should stop expanding wind and solar capacity until storage can cover multi-week shortages.",
         "B": "To signal agreement with critics who believe the energy transition is moving too fast.",
         "C": "To clarify that her concerns about pacing do not reflect opposition to decarbonisation.",
         "D": "To suggest that nuclear power should be the dominant technology in a future low-carbon grid."
+      },
+      "answer": "C",
+      "rationale": "Right after the host asks whether she wants to slow down, she says she does not and that the transition needs smarter sequencing. The remark restates her support for decarbonisation while adding the resilience requirement.",
+      "option_rationales": {
+        "A": "The speaker says explicitly that she is not saying to slow down and that expanding renewables is not in question, so this option misreads her concern about pacing and backup infrastructure as a call to halt expansion.",
+        "B": "Wrong relation: she explicitly says she is not saying slow down and calls the critics' framing a false dichotomy.",
+        "C": "Correct: it clarifies that her concern is about pacing and resilience, not opposition to decarbonisation.",
+        "D": "Over-generalisation: nuclear is only one of several firm options she lists, alongside pumped hydro and hydrogen turbines."
       }
     },
     {
       "id": 3,
       "question": "What concern does the analyst raise about the possible consequences of a large-scale power outage caused by intermittency?",
       "options": {
-        "A": "Grid operators would be legally required to restart retired fossil-fuel plants immediately.",
+        "A": "A political reaction against renewable energy could significantly delay the decarbonisation agenda.",
         "B": "Public trust in battery storage technology would collapse, halting investment in that sector.",
-        "C": "A political reaction against renewable energy could significantly delay the decarbonisation agenda.",
+        "C": "Grid operators would be legally required to restart retired fossil-fuel plants immediately.",
         "D": "European governments would face sanctions from international climate bodies for failing to maintain supply security."
+      },
+      "answer": "A",
+      "rationale": "She says a major supply failure from intermittency could cause a political backlash that sets things back by a decade, to the detriment of the climate.",
+      "option_rationales": {
+        "A": "Correct: she warns the political backlash could set the transition back by a decade.",
+        "B": "Misplaced target: the backlash she fears is against the energy transition generally, not specifically a collapse of trust in battery storage.",
+        "C": "Invented detail: no legal obligation to restart fossil plants is mentioned by either speaker.",
+        "D": "Invented consequence: sanctions from international climate bodies are never mentioned."
       }
     }
   ]

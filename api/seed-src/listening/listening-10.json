@@ -53,9 +53,17 @@
       "question": "What is James's central objection to government-led disinformation regulation?",
       "options": {
         "A": "He believes that health misinformation poses no real harm to the general public.",
-        "B": "He argues that giving governments the power to define false speech risks enabling political censorship.",
-        "C": "He maintains that existing platform liability laws already adequately address the problem.",
+        "B": "He maintains that existing platform liability laws already adequately address the problem.",
+        "C": "He argues that giving governments the power to define false speech risks enabling political censorship.",
         "D": "He suggests that scientific consensus on health matters is stable enough for regulators to apply reliably."
+      },
+      "answer": "C",
+      "rationale": "James opens by saying that once a government can label speech disinformation, it has a censorship mechanism, and he cites false-information laws used against journalists.",
+      "option_rationales": {
+        "A": "Reverses James: he says health misinformation harms are measurable and serious, so he does not deny them.",
+        "B": "Not said: James never claims existing liability laws are adequate, and he calls the status quo untenable at the end.",
+        "C": "Correct: James's central worry is that government power to define disinformation becomes a tool of political censorship.",
+        "D": "Reverses his argument: he says scientific consensus shifts and experts disagree, citing changing airborne transmission guidance."
       }
     },
     {
@@ -66,6 +74,14 @@
         "B": "Algorithmically pushing content that independent fact-checkers have already debunked.",
         "C": "Accepting government guidelines on which specific claims count as disinformation.",
         "D": "Monitoring individual users' posting behaviour to prevent repeat offenders."
+      },
+      "answer": "B",
+      "rationale": "Clara says platforms should be penalised for algorithmically amplifying content that independent bodies have fact-checked as demonstrably false, not for merely hosting it.",
+      "option_rationales": {
+        "A": "Over-generalisation: Clara rejects outright prohibition and never proposes rapid removal of all misinformation.",
+        "B": "Correct: active promotion means algorithmic amplification of content already found false by independent fact-checkers.",
+        "C": "Wrong source of authority: Clara relies on independent, multi-stakeholder bodies, not government guidelines on specific claims.",
+        "D": "Not mentioned: she discusses platform amplification, not tracking individual users or repeat offenders."
       }
     },
     {
@@ -73,9 +89,17 @@
       "question": "By the close of the debate, what do both James and Clara agree on?",
       "options": {
         "A": "International multi-stakeholder bodies are the most effective safeguard against regulatory capture.",
-        "B": "Platforms' current near-total freedom from accountability is no longer acceptable.",
-        "C": "Algorithmic amplification of any contested health claim should be strictly prohibited.",
+        "B": "Algorithmic amplification of any contested health claim should be strictly prohibited.",
+        "C": "Platforms' current near-total freedom from accountability is no longer acceptable.",
         "D": "Government-appointed regulators can be made genuinely independent if properly designed."
+      },
+      "answer": "C",
+      "rationale": "James says the status quo of near-total platform impunity is untenable, and Clara replies 'Exactly', confirming shared agreement.",
+      "option_rationales": {
+        "A": "Clara argues multi-stakeholder bodies lower capture risk, but James never endorses this as most effective and calls the issue a sticking point.",
+        "B": "Over-generalisation: Clara only supports penalties for amplifying fact-checked false content, not any contested claim.",
+        "C": "Correct: both accept that platforms operating with near-total impunity cannot continue.",
+        "D": "Clara claims better design reduces risk, but James doubts any government agency is truly independent and never concedes this."
       }
     }
   ]

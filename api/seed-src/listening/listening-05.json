@@ -53,19 +53,35 @@
       "question": "What does the economist imply about the market reaction to this morning's inflation data?",
       "options": {
         "A": "Markets have correctly concluded that the central bank's tightening cycle has run its course.",
-        "B": "Markets are drawing a policy conclusion that the available data does not yet support.",
+        "B": "Markets should place greater weight on headline inflation than on core when forecasting rate decisions.",
         "C": "Markets are failing to recognise that energy prices have fallen since last year's peak.",
-        "D": "Markets should place greater weight on headline inflation than on core when forecasting rate decisions."
+        "D": "Markets are drawing a policy conclusion that the available data does not yet support."
+      },
+      "answer": "D",
+      "rationale": "The economist calls the market's two-cut pricing premature and says markets are over-weighting a single data point. He implies the data does not yet justify the conclusion that tightening is over.",
+      "option_rationales": {
+        "A": "Reversed relation: the economist says the tightening cycle cannot yet be called over and that the market view is premature.",
+        "B": "Reversed: he argues central banks focus on core because it gives a cleaner signal, not headline.",
+        "C": "Misattributed flaw: the economist himself explains the energy fall, and his objection is over-weighting a single data point, not ignorance of energy.",
+        "D": "Correct: he says markets over-weight one print, and core needs two or three more months of sustained trend."
       }
     },
     {
       "id": 2,
       "question": "How does the host regard the practice of excluding food and energy from the official inflation measure?",
       "options": {
-        "A": "She considers it methodologically sound but poorly explained to the general public.",
+        "A": "She implies it may serve the convenience of policymakers rather than reflecting the lived reality of most households.",
         "B": "She accepts it as the most reliable basis for central bank policy decisions.",
-        "C": "She implies it may serve the convenience of policymakers rather than reflecting the lived reality of most households.",
+        "C": "She considers it methodologically sound but poorly explained to the general public.",
         "D": "She agrees with the economist's reasoning but argues it is being applied at the wrong moment in the cycle."
+      },
+      "answer": "A",
+      "rationale": "The host asks whether the distinction is convenient and stresses that families cannot strip food and energy from their budgets. She implies the practice suits officials more than households.",
+      "option_rationales": {
+        "A": "Correct: her word 'convenient' and her point about family budgets imply it ignores lived reality.",
+        "B": "Wrong speaker: the economist, not the host, argues core is the cleaner basis for policy.",
+        "C": "Over-generous reading: she questions the distinction itself and never calls it methodologically sound.",
+        "D": "Misread: she does not agree with his reasoning and raises no objection about timing in the cycle."
       }
     },
     {
@@ -73,9 +89,17 @@
       "question": "When the economist concedes that the host's criticism is legitimate but directs it at communication rather than at the measure itself, what is he primarily doing?",
       "options": {
         "A": "Admitting that core inflation is a structurally flawed measure that central banks should revise.",
-        "B": "Acknowledging a valid concern about public transparency while defending the analytical rationale for core inflation.",
+        "B": "Conceding that headline inflation is ultimately the more appropriate guide for interest rate decisions.",
         "C": "Suggesting that central banks have been deliberately withholding information from markets and households.",
-        "D": "Conceding that headline inflation is ultimately the more appropriate guide for interest rate decisions."
+        "D": "Acknowledging a valid concern about public transparency while defending the analytical rationale for core inflation."
+      },
+      "answer": "D",
+      "rationale": "He grants the criticism of how the measures are communicated, but says it is not a criticism of the measures themselves. He then defends why central banks use core.",
+      "option_rationales": {
+        "A": "Overstates the concession: he explicitly says the criticism does not touch the measure itself.",
+        "B": "Reversed: he continues to favour core for rate decisions and never concedes headline is the better guide.",
+        "C": "Unsupported: he says central banks are quite transparent, so he rejects any suggestion of deliberate withholding.",
+        "D": "Correct: he accepts the transparency concern but keeps defending core as analytically sound."
       }
     }
   ]
