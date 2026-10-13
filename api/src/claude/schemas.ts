@@ -89,7 +89,7 @@ export const writingGradeSchema = z.object({
     z.object({ dimension: z.string(), score: z.number().min(0).max(4), comment: z.string() }),
   ),
   overallScore: z.number().min(0).max(4),
-  estimatedLevel: z.string(),
+  estimatedLevel: z.enum(['0', '0+', '1', '1+', '2', '2+', '3', '3+', '4', '4+']),
   strengths: z.array(z.string()),
   improvements: z.array(z.string()),
 });

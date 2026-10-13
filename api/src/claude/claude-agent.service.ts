@@ -270,7 +270,9 @@ ${rubricText}
 
 Score every rubric dimension 0-4 with a brief justification, give an overall 0-4 score, an estimated
 STANAG level (e.g. "2+", "3"), concrete strengths, and concrete improvements. Penalise being well
-outside the word band under task fulfilment.
+outside the word band under task fulfilment. A Level ${params.stanagLevel} task can show performance
+beyond Level ${params.stanagLevel} but not sustained performance at the next level, so the estimated
+level must not exceed "${params.stanagLevel}+".
 
 <response>
 ${params.response}

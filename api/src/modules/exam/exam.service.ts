@@ -1,7 +1,9 @@
-import { Injectable, NotFoundException, BadRequestException } from '@nestjs/common';
+import { Injectable, NotFoundException, BadRequestException, ConflictException } from '@nestjs/common';
 import { PrismaService } from '../../prisma/prisma.service';
 import { ClaudeAgentService } from '../../claude/claude-agent.service';
 import { CreateSessionDto, SubmitAnswerDto } from './dto/exam.dto';
+import { capTaskLevel, scoreMcq, scoreWriting, slpProfile, type McqOutcome } from './scoring';
+import { pickWritingTasks, stratifiedSample, weightedSample } from './selection';
 
 type ReadingOption = { label: string; text: string; rationale: string };
 type ListeningQuestion = {
@@ -9,7 +11,9 @@ type ListeningQuestion = {
   options: Record<string, string>;
   correctLabel: string | null;
   rationale: string | null;
+  optionRationales?: Record<string, string> | null;
 };
+type SessionItems = { reading: string[]; listening: string[]; writing: string[] };
 type WritingOption = { key: string; label: string; prompt: string; modelAnswer: string };
 
 const DEFAULT_COUNTS = {
@@ -43,7 +47,7 @@ export class ExamService {
     const items = {
       reading: counts.reading ? await this.pickReading(levels, counts.reading, !!dto.adaptive) : [],
       listening: counts.listening ? await this.pickListening(counts.listening) : [],
-      writing: counts.writing ? await this.pickWriting(counts.writing) : [],
+      writing: counts.writing ? await this.pickWriting(levels, counts.writing) : [],
     };
 
     const session = await this.prisma.examSession.create({
@@ -61,11 +65,11 @@ export class ExamService {
   async getSession(id: string): Promise<unknown> {
     const session = await this.prisma.examSession.findUnique({ where: { id } });
     if (!session) throw new NotFoundException(`session '${id}' not found`);
-    const cfg = session.config as { items: { reading: string[]; listening: string[]; writing: string[] } };
+    const items = this.itemsOf(session);
     const [reading, listening, writing, answers] = await Promise.all([
-      this.loadReading(cfg.items.reading),
-      this.loadListening(cfg.items.listening),
-      this.loadWriting(cfg.items.writing),
+      this.loadReading(items.reading),
+      this.loadListening(items.listening),
+      this.loadWriting(items.writing),
       this.prisma.answer.findMany({ where: { sessionId: id } }),
     ]);
     return {
@@ -87,10 +91,20 @@ export class ExamService {
     return this.prisma.examSession.findMany({ orderBy: { startedAt: 'desc' }, take: 100 });
   }
 
-  /** Score and store one answer; returns feedback (MCQ key + rationale, or writing grade + model answer). */
+  /**
+   * Score and store one answer; returns feedback (MCQ key + rationale, or writing grade + model answer).
+   *
+   * @throws NotFoundException when the session or item does not exist.
+   * @throws ConflictException when the session is already completed, since its result is final.
+   * @throws BadRequestException when the item is not part of this session or the answer is incomplete.
+   */
   async submitAnswer(sessionId: string, dto: SubmitAnswerDto): Promise<unknown> {
     const session = await this.prisma.examSession.findUnique({ where: { id: sessionId } });
     if (!session) throw new NotFoundException(`session '${sessionId}' not found`);
+    if (session.status === 'completed') throw new ConflictException('session already completed');
+    if (!this.itemsOf(session)[dto.itemType].includes(dto.itemId)) {
+      throw new BadRequestException(`${dto.itemType} item '${dto.itemId}' is not part of this session`);
+    }
 
     if (dto.itemType === 'reading') {
       const item = await this.prisma.readingItem.findUnique({ where: { id: dto.itemId } });
@@ -120,7 +134,13 @@ export class ExamService {
       if (!dto.chosenLabel) throw new BadRequestException('chosenLabel required');
       const correct = dto.chosenLabel === q.correctLabel;
       await this.record(sessionId, dto, { isCorrect: correct });
-      return { itemType: 'listening', correct, correctLabel: q.correctLabel, keyRationale: q.rationale };
+      return {
+        itemType: 'listening',
+        correct,
+        correctLabel: q.correctLabel,
+        keyRationale: q.rationale,
+        chosenRationale: q.optionRationales?.[dto.chosenLabel] ?? null,
+      };
     }
 
     // writing
@@ -138,34 +158,85 @@ export class ExamService {
       wordCountMin: task.wordCountMin,
       wordCountMax: task.wordCountMax,
     });
+    grade.estimatedLevel = capTaskLevel(grade.estimatedLevel, task.stanagLevel, grade.overallScore);
     await this.record(sessionId, dto, { score: grade.overallScore, feedback: grade });
     return { itemType: 'writing', grade, modelAnswer: chosen?.modelAnswer ?? null };
   }
 
-  /** Finalize a session: compute the SLP-style result, update topic stats, and schedule reviews. */
+  /**
+   * Finalize a session: compute the per-skill and SLP result, update topic stats, and schedule reviews.
+   *
+   * Idempotent: completing an already-completed session returns the stored result without touching
+   * the adaptive stats again.
+   */
   async completeSession(id: string): Promise<unknown> {
     const session = await this.prisma.examSession.findUnique({ where: { id } });
     if (!session) throw new NotFoundException(`session '${id}' not found`);
-    const answers = await this.prisma.answer.findMany({ where: { sessionId: id } });
+    if (session.status === 'completed') return session.result;
 
-    const readingAns = answers.filter((a) => a.itemType === 'reading' && a.isCorrect !== null);
-    const listeningAns = answers.filter((a) => a.itemType === 'listening' && a.isCorrect !== null);
-    const writingAns = answers.filter((a) => a.itemType === 'writing' && a.score !== null);
+    const items = this.itemsOf(session);
+    const done = await this.prisma.$transaction(async (tx) => {
+      // Claiming the row first takes its lock, and record() takes the same lock: an answer write
+      // already holding it commits before the answers are read below, and one arriving later waits
+      // and then finds the session completed, so no answer can slip in after the snapshot.
+      const { count } = await tx.examSession.updateMany({
+        where: { id, status: { not: 'completed' } },
+        data: { status: 'completed', completedAt: new Date() },
+      });
+      if (count === 0) return null;
 
-    const result = {
-      reading: await this.scoreMcq('reading', readingAns),
-      listening: await this.scoreMcq('listening', listeningAns),
-      writing: this.scoreWriting(writingAns.map((a) => a.score as number)),
-    };
+      const answers = await tx.answer.findMany({ where: { sessionId: id } });
+      const readingRows = await tx.readingItem.findMany({
+        where: { id: { in: items.reading } },
+        select: { id: true, level: true },
+      });
+      const listeningRows = await tx.listeningItem.findMany({
+        where: { id: { in: items.listening } },
+        select: { id: true, level: true, questions: true },
+      });
+      const writingRows = await tx.writingTask.findMany({
+        where: { id: { in: items.writing } },
+        select: { id: true, stanagLevel: true },
+      });
 
-    await this.updateTopicStats(answers);
-    await this.updateReviewQueue(answers);
+      const answerFor = (itemType: string, itemId: string, questionIndex = 0) =>
+        answers.find((a) => a.itemType === itemType && a.itemId === itemId && a.questionIndex === questionIndex);
+      const outcome = (level: number, isCorrect: boolean | null | undefined): McqOutcome => ({
+        level,
+        answered: isCorrect != null,
+        correct: isCorrect === true,
+      });
 
-    await this.prisma.examSession.update({
-      where: { id },
-      data: { status: 'completed', completedAt: new Date(), result: result as object },
+      const readingOutcomes = readingRows.map((r) => outcome(r.level, answerFor('reading', r.id)?.isCorrect));
+      const listeningOutcomes = listeningRows.flatMap((r) =>
+        (r.questions as unknown as ListeningQuestion[]).flatMap((q, qi) =>
+          q.correctLabel ? [outcome(r.level, answerFor('listening', r.id, qi)?.isCorrect)] : [],
+        ),
+      );
+      const writingOutcomes = writingRows.flatMap((t) => {
+        const a = answerFor('writing', t.id);
+        if (a?.score == null) return [];
+        const level = (a.feedback as { estimatedLevel?: unknown } | null)?.estimatedLevel;
+        return [{ score: a.score, level: typeof level === 'string' ? level : null, taskLevel: t.stanagLevel }];
+      });
+
+      const skills = {
+        reading: scoreMcq(readingOutcomes),
+        listening: scoreMcq(listeningOutcomes),
+        writing: scoreWriting(writingOutcomes),
+      };
+      const result = { ...skills, ...slpProfile(skills) };
+      await tx.examSession.update({ where: { id }, data: { result: result as object } });
+      return { result, answers };
     });
-    return result;
+
+    if (!done) {
+      const stored = await this.prisma.examSession.findUnique({ where: { id }, select: { result: true } });
+      return stored?.result ?? null;
+    }
+    await this.updateTopicStats(done.answers);
+    await this.updateReviewQueue(done.answers);
+    return done.result;
   }
 
   // ---------------- assembly ----------------
@@ -176,50 +247,37 @@ export class ExamService {
       select: { id: true, level: true, topic: true },
     });
     if (!candidates.length) return [];
-    let weighted = candidates.map((c) => ({ id: c.id, w: 1 }));
+    let weighted = candidates.map((c) => ({ id: c.id, level: c.level, w: 1 }));
     if (adaptive) {
       const stats = await this.prisma.topicStat.findMany({ where: { skill: 'reading' } });
       const byKey = new Map(stats.map((s) => [`${s.level}|${s.topic}`, s]));
       weighted = candidates.map((c) => {
         const s = byKey.get(`${c.level}|${c.topic}`);
         const acc = s && s.seen > 0 ? s.correct / s.seen : 0.5;
-        return { id: c.id, w: 1 - acc + 0.15 };
+        return { id: c.id, level: c.level, w: 1 - acc + 0.15 };
       });
     }
-    return this.weightedSample(weighted, count);
+    return stratifiedSample(weighted, count);
   }
 
   private async pickListening(count: number): Promise<string[]> {
     const items = await this.prisma.listeningItem.findMany({ select: { id: true } });
-    return this.weightedSample(
+    return weightedSample(
       items.map((i) => ({ id: i.id, w: 1 })),
       count,
     );
   }
 
-  private async pickWriting(count: number): Promise<string[]> {
-    const order = ['guided_note', 'formal_correspondence', 'essay'];
-    const tasks = await this.prisma.writingTask.findMany({ select: { id: true, taskType: true } });
-    tasks.sort((a, b) => order.indexOf(a.taskType) - order.indexOf(b.taskType));
-    return tasks.slice(0, count).map((t) => t.id);
+  private async pickWriting(levels: number[], count: number): Promise<string[]> {
+    const tasks = await this.prisma.writingTask.findMany({
+      select: { id: true, taskType: true, stanagLevel: true },
+    });
+    return pickWritingTasks(tasks, levels, count);
   }
 
-  private weightedSample(pool: { id: string; w: number }[], count: number): string[] {
-    const items = [...pool];
-    const picked: string[] = [];
-    while (picked.length < count && items.length) {
-      const total = items.reduce((s, x) => s + Math.max(x.w, 0.0001), 0);
-      let r = Math.random() * total;
-      let idx = 0;
-      for (; idx < items.length; idx++) {
-        r -= Math.max(items[idx]!.w, 0.0001);
-        if (r <= 0) break;
-      }
-      idx = Math.min(idx, items.length - 1);
-      picked.push(items[idx]!.id);
-      items.splice(idx, 1);
-    }
-    return picked;
+  private itemsOf(session: { config: unknown }): SessionItems {
+    const items = (session.config as { items?: Partial<SessionItems> } | null)?.items;
+    return { reading: items?.reading ?? [], listening: items?.listening ?? [], writing: items?.writing ?? [] };
   }
 
   // ---------------- key-stripping loaders ----------------
@@ -296,65 +354,31 @@ export class ExamService {
     dto: SubmitAnswerDto,
     fields: { isCorrect?: boolean | null; score?: number; feedback?: unknown },
   ): Promise<void> {
-    await this.prisma.answer.deleteMany({
-      where: { sessionId, itemId: dto.itemId, questionIndex: dto.questionIndex },
-    });
-    await this.prisma.answer.create({
-      data: {
-        sessionId,
-        itemType: dto.itemType,
-        itemId: dto.itemId,
-        questionIndex: dto.questionIndex,
-        chosenLabel: dto.chosenLabel ?? null,
-        responseText: dto.responseText ?? null,
-        isCorrect: fields.isCorrect ?? null,
-        score: fields.score ?? null,
-        feedback: (fields.feedback as object) ?? undefined,
-      },
-    });
-  }
-
-  private async scoreMcq(
-    skill: 'reading' | 'listening',
-    answers: { itemId: string; isCorrect: boolean | null }[],
-  ): Promise<unknown> {
-    if (!answers.length) return null;
-    const correct = answers.filter((a) => a.isCorrect).length;
-    const total = answers.length;
-    const pct = Math.round((100 * correct) / total);
-    let estimatedLevel = 1;
-    if (skill === 'reading') {
-      const rows = await this.prisma.readingItem.findMany({
-        where: { id: { in: answers.map((a) => a.itemId) } },
-        select: { id: true, level: true },
+    await this.prisma.$transaction(async (tx) => {
+      // The no-op status write locks the session row (see completeSession), and re-checks the status
+      // after a slow writing grade during which the session may have been completed.
+      const { count } = await tx.examSession.updateMany({
+        where: { id: sessionId, status: { not: 'completed' } },
+        data: { status: 'in_progress' },
       });
-      const lvl = new Map(rows.map((r) => [r.id, r.level]));
-      const byLevel = new Map<number, { c: number; t: number }>();
-      for (const a of answers) {
-        const l = lvl.get(a.itemId) ?? 1;
-        const e = byLevel.get(l) ?? { c: 0, t: 0 };
-        e.t += 1;
-        if (a.isCorrect) e.c += 1;
-        byLevel.set(l, e);
-      }
-      for (const l of [4, 3, 2, 1]) {
-        const e = byLevel.get(l);
-        if (e && e.c / e.t >= 0.6) {
-          estimatedLevel = l;
-          break;
-        }
-      }
-    } else {
-      estimatedLevel = pct >= 60 ? 3 : 2;
-    }
-    return { correct, total, pct, estimatedLevel };
-  }
-
-  private scoreWriting(scores: number[]): unknown {
-    if (!scores.length) return null;
-    const avg = scores.reduce((s, x) => s + x, 0) / scores.length;
-    const level = avg >= 3.5 ? '3+' : avg >= 3 ? '3' : avg >= 2.5 ? '2+' : avg >= 2 ? '2' : avg >= 1 ? '1' : '0';
-    return { avgScore: Math.round(avg * 100) / 100, estimatedLevel: level, count: scores.length };
+      if (count === 0) throw new ConflictException('session already completed');
+      await tx.answer.deleteMany({
+        where: { sessionId, itemId: dto.itemId, questionIndex: dto.questionIndex },
+      });
+      await tx.answer.create({
+        data: {
+          sessionId,
+          itemType: dto.itemType,
+          itemId: dto.itemId,
+          questionIndex: dto.questionIndex,
+          chosenLabel: dto.chosenLabel ?? null,
+          responseText: dto.responseText ?? null,
+          isCorrect: fields.isCorrect ?? null,
+          score: fields.score ?? null,
+          feedback: (fields.feedback as object) ?? undefined,
+        },
+      });
+    });
   }
 
   private async updateTopicStats(
