@@ -37,28 +37,16 @@ describe('ThemeService', () => {
     document.documentElement.style.removeProperty('color-scheme');
   });
 
+  // The product is light-only: stored or OS dark preferences must never reach the scheme.
   describe('isDark computed', () => {
-    it('when theme is light, false is returned', () => {
-      localStorage.setItem(STORAGE_KEY, 'light');
-      setupMatchMedia(true);
-      expect(createService().isDark()).toBe(false);
-    });
-
-    it('when theme is dark, true is returned', () => {
-      localStorage.setItem(STORAGE_KEY, 'dark');
-      setupMatchMedia(false);
-      expect(createService().isDark()).toBe(true);
-    });
-
-    it('when theme is system and OS prefers dark, true is returned', () => {
-      localStorage.setItem(STORAGE_KEY, 'system');
-      setupMatchMedia(true);
-      expect(createService().isDark()).toBe(true);
-    });
-
-    it('when theme is system and OS prefers light, false is returned', () => {
-      localStorage.setItem(STORAGE_KEY, 'system');
-      setupMatchMedia(false);
+    it.each([
+      ['light', true],
+      ['dark', false],
+      ['system', true],
+      ['system', false],
+    ] as const)('when theme is %s and OS prefers dark is %s, false is returned', (stored, osDark) => {
+      localStorage.setItem(STORAGE_KEY, stored);
+      setupMatchMedia(osDark);
       expect(createService().isDark()).toBe(false);
     });
   });
@@ -80,37 +68,25 @@ describe('ThemeService', () => {
     });
   });
 
-  describe('dark class application', () => {
-    it('when isDark is true, the dark class is present on documentElement', () => {
-      localStorage.setItem(STORAGE_KEY, 'dark');
-      setupMatchMedia(false);
-      createService();
-      TestBed.tick();
-      expect(document.documentElement.classList.contains('dark')).toBe(true);
-    });
+  describe('scheme class application', () => {
+    it.each(['light', 'dark', 'system'] as const)(
+      'when theme is %s, only the light class sits on documentElement',
+      (stored) => {
+        localStorage.setItem(STORAGE_KEY, stored);
+        setupMatchMedia(true);
+        createService();
+        TestBed.tick();
+        expect(document.documentElement.classList.contains('light')).toBe(true);
+        expect(document.documentElement.classList.contains('dark')).toBe(false);
+      },
+    );
 
-    it('when isDark is false, the dark class is absent from documentElement', () => {
-      localStorage.setItem(STORAGE_KEY, 'light');
-      setupMatchMedia(true);
+    it('when a dark class is left on documentElement, the service removes it', () => {
+      document.documentElement.classList.add('dark');
+      setupMatchMedia(false);
       createService();
       TestBed.tick();
       expect(document.documentElement.classList.contains('dark')).toBe(false);
-    });
-
-    it('when isDark is false, the light class forces the light color-scheme', () => {
-      localStorage.setItem(STORAGE_KEY, 'light');
-      setupMatchMedia(true);
-      createService();
-      TestBed.tick();
-      expect(document.documentElement.classList.contains('light')).toBe(true);
-    });
-
-    it('when isDark is true, the light class is absent', () => {
-      localStorage.setItem(STORAGE_KEY, 'dark');
-      setupMatchMedia(false);
-      createService();
-      TestBed.tick();
-      expect(document.documentElement.classList.contains('light')).toBe(false);
     });
   });
 
@@ -129,20 +105,6 @@ describe('ThemeService', () => {
       pinInlineScheme('dark');
 
       createService();
-      TestBed.tick();
-
-      expect(document.documentElement.classList.contains('dark')).toBe(true);
-      expect(document.documentElement.style.getPropertyValue('color-scheme')).toBe('');
-    });
-
-    it('when the theme is switched after boot, no inline color-scheme overrides the new class', () => {
-      localStorage.setItem(STORAGE_KEY, 'dark');
-      setupMatchMedia(false);
-      pinInlineScheme('dark');
-      const service = createService();
-      TestBed.tick();
-
-      service.setTheme('light');
       TestBed.tick();
 
       expect(document.documentElement.classList.contains('light')).toBe(true);
@@ -187,7 +149,7 @@ describe('ThemeService', () => {
       expect(service?.theme()).toBe('system');
     });
 
-    it('when writing localStorage throws, setTheme still applies the theme', () => {
+    it('when writing localStorage throws, setTheme still updates the theme signal', () => {
       setupMatchMedia(false);
       const service = createService();
       blockStorage('setItem');
@@ -195,8 +157,6 @@ describe('ThemeService', () => {
 
       expect(() => service.setTheme('dark')).not.toThrow();
       expect(service.theme()).toBe('dark');
-      TestBed.tick();
-      expect(document.documentElement.classList.contains('dark')).toBe(true);
     });
   });
 

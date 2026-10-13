@@ -42,7 +42,8 @@ describe('BottomTabBarComponent', () => {
   it('when the bar renders, one tab per navigation destination is shown, within the M3 3–5', async () => {
     const tabs = tabsOf(await setup());
     expect(tabs.length).toBe(NAV_ITEMS.length);
-    expect(tabs.length).toBe(4);
+    expect(tabs.length).toBeGreaterThanOrEqual(3);
+    expect(tabs.length).toBeLessThanOrEqual(5);
   });
 
   it('when the bar renders, it pads by the safe-area insets from its own stylesheet, with no utility classes', async () => {
@@ -86,14 +87,9 @@ describe('BottomTabBarComponent', () => {
     }
   });
 
-  it('when the tabs render, the Home, Dashboard, Chat and Settings labels are shown', async () => {
-    const text = tabsOf(await setup())
-      .map((t) => t.textContent)
-      .join(' ');
-    expect(text).toContain('Home');
-    expect(text).toContain('Dashboard');
-    expect(text).toContain('Chat');
-    expect(text).toContain('Settings');
+  it('when the tabs render, the Reading, Listening, Writing, Full and Start exam labels are shown in order', async () => {
+    const labels = tabsOf(await setup()).map((t) => t.textContent?.trim());
+    expect(labels).toEqual(['Reading', 'Listening', 'Writing', 'Full', 'Start exam']);
   });
 
   it('when each tab renders, it links to its destination route', async () => {
@@ -103,11 +99,11 @@ describe('BottomTabBarComponent', () => {
 
   it('when a tab is active, only that anchor exposes aria-current="page"', async () => {
     const routes = NAV_ITEMS.map((item) => ({ path: item.route.slice(1), component: RouteStubComponent }));
-    const fixture = await setup(routes, '/dashboard');
+    const fixture = await setup(routes, '/writing');
 
     const current = fixture.nativeElement.querySelectorAll('nav a[aria-current="page"]');
     expect(current.length).toBe(1);
-    expect(current[0].textContent.trim()).toBe('Dashboard');
+    expect(current[0].textContent.trim()).toBe('Writing');
     expect(current[0].classList.contains('nav-bar-item-active')).toBe(true);
   });
 

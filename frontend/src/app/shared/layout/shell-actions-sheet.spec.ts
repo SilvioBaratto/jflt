@@ -58,10 +58,11 @@ describe('ShellActionsSheetComponent', () => {
     return document.querySelector<HTMLElement>('.mat-bottom-sheet-container app-shell-actions-sheet app-sidebar')!;
   }
 
-  it('when opened, the sheet renders the rail actions in their modal form and no destinations', () => {
+  it('when opened, the sheet renders app-sidebar in its modal form with no destinations', () => {
     const sidebar = getDebugNode(sidebarElement())!.componentInstance as SidebarComponent;
     expect(sidebar.mode()).toBe('modal');
-    expect(sidebarElement().querySelector('mat-selection-list.sidebar-theme-options')).toBeTruthy();
+    // The base scaffold has no theme or account controls, so the sheet holds no actions yet.
+    expect(sidebarElement().querySelector('.sidebar-footer')).toBeNull();
     expect(sidebarElement().querySelectorAll('a').length).toBe(0);
   });
 

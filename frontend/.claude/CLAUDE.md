@@ -56,9 +56,9 @@ You are an expert in TypeScript, Angular, and scalable web application developme
 
 ## Light and dark
 
-- `ThemeService` (`src/app/services/theme.ts`) stores the chosen mode (system, light or dark, picked from the rail's Change theme menu, the compact actions sheet or the Settings page) and puts exactly one of `.light` / `.dark` on `<html>`
-- `.light` and `.dark` only set `color-scheme`, which picks the light or dark value of every `--mat-sys-*` token. There is no dark stylesheet or dark variant to maintain
-- A stored Light or Dark choice paints from the first frame: a script in `src/index.html` reads the same `app-theme` key and sets an inline `color-scheme` on `<html>` before Angular boots (the inlined critical CSS has no `.light` / `.dark` rule), and `ThemeService` removes that inline `color-scheme` when it applies the class
+- The app is light-only. A script in `src/index.html` pins an inline `color-scheme: light` on `<html>` from the first frame, `src/styles.scss` sets `color-scheme: light`, and `ThemeService` (`src/app/services/theme.ts`, injected at startup by `app.config.ts`) applies `.light` and removes that inline pin. Its `isDark` is constant `false`, so stored `app-theme` values and the OS preference never change the scheme
+- No surface offers a theme choice: the rail, the compact shell and the (unrouted) Settings page show none. `setTheme`, the OS listener, `THEME_OPTIONS`, the compact actions sheet and the sidebar's `modal` mode remain from the scaffold but are unreachable
+- `.light` and `.dark` only set `color-scheme`, which picks the light or dark value of every `--mat-sys-*` token. There is no dark stylesheet or dark variant to maintain, so re-enabling dark mode means making `isDark` follow the stored choice again and restoring a picker
 - A region that forces a scheme (`class="dark"` on a subtree) must paint its own `background` and `color` from `--mat-sys-*` tokens
 
 ## Overlay panels
@@ -72,7 +72,7 @@ You are an expert in TypeScript, Angular, and scalable web application developme
 - In TypeScript, read `WindowSizeClassService` (`src/app/services/window-size-class.ts`): `current()`, `isCompact()` and `atLeast(sizeClass)`
 - In CSS, repeat the same literals: `(max-width: 599.98px)`, `(min-width: 600px)`, `(min-width: 840px)`, `(min-width: 1200px)`, `(min-width: 1600px)`. Prefer CSS when only styles change; use the service when the component tree differs
 - Never use the CDK `Breakpoints` presets (600/960/1280/1920) or a 768px breakpoint
-- The shell (`src/app/shared/layout/`) follows the M3 navigation pattern strictly. Below 600px: a top app bar plus a navigation bar (`app-bottom-tab-bar`, 64px + `env(safe-area-inset-bottom)` tall); a button in the top app bar opens the theme and account actions, never destinations. From 600px: a collapsed navigation rail docked in `mat-sidenav`; from 840px a toggle expands it; from 1600px it starts expanded, unless the user has toggled the rail: that choice is stored in localStorage (`app-rail-expanded`, `RAIL_EXPANDED_STORAGE_KEY` in `layout.ts`) and wins at every width from 840px, across reloads. There is no navigation drawer, and the bar and the rail never show the same destinations at one width
+- The shell (`src/app/shared/layout/`) follows the M3 navigation pattern strictly. Below 600px: a top app bar plus a navigation bar (`app-bottom-tab-bar`, 64px + `env(safe-area-inset-bottom)` tall); the top app bar holds only the brand (with no theme or account actions there is no actions button). From 600px: a collapsed navigation rail docked in `mat-sidenav`; from 840px a toggle expands it; from 1600px it starts expanded, unless the user has toggled the rail: that choice is stored in localStorage (`app-rail-expanded`, `RAIL_EXPANDED_STORAGE_KEY` in `layout.ts`) and wins at every width from 840px, across reloads. There is no navigation drawer, and the bar and the rail never show the same destinations at one width
 - Destinations live in `NAV_ITEMS` (`src/app/shared/nav-item.ts`); the bar and the rail both render that list
 
 ## Icons
