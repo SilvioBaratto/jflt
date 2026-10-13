@@ -124,6 +124,16 @@ html {
   align-items: flex-start;
 }
 
+// The radio host inherits the label's line height (36px at the 150% root size), and its 20px icon is an
+// inline-block that sits on that tall line box, dropping it below the centre of the 40px state layer.
+// A zero line height keeps the line box exactly as tall as the icon so the ring stays centred on it.
+.opts .mdc-radio {
+  line-height: 0;
+  // Centre the 40px state layer on the label's first line: the label pads 10px above a line of
+  // body-large height, so that line's centre sits 10px + half a line below the row's top.
+  margin-block-start: calc(10px + var(--mat-sys-body-large-line-height) / 2 - 20px);
+}
+
 .opts .mdc-label {
   white-space: normal;
   overflow-wrap: anywhere;
