@@ -55,11 +55,14 @@ services:
       DATABASE_HOST: db
       DATABASE_PORT: 5432
       REDIS_HOST: redis
+      CLAUDE_CONFIG_DIR: /root/.claude
     ports:
       - "${API_HOST_PORT:-8000}:8000"
     volumes:
       - ./api:/app
       - /app/node_modules
+      # Container-only `claude` CLI login (run `docker compose exec api claude auth login` once).
+      - claude_home:/root/.claude
     networks:
       - app_network
     command: npm run start:dev
@@ -98,6 +101,7 @@ services:
 
 volumes:
   postgres_data:
+  claude_home:
 
 networks:
   app_network:

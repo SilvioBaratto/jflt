@@ -77,17 +77,18 @@ via `X-Dev-User`), `content` (serve items from the bank), `exam` (sessions, answ
 writing), `vocab`, `progress` (adaptive engine), `generate` (on-demand item generation + TTS), and
 `test` (a template CRUD example, safe to delete).
 
-**AI layer — `src/claude/` (not BAML).** `ClaudeAgentService` wraps the `@anthropic-ai/claude-agent-sdk`
-`query()` call for single-shot structured output: it passes a JSON Schema (draft-07, built from the Zod
-schemas in `claude/schemas.ts` via `toSdkSchema`) and returns validated structured data. `grounding.ts`
-holds the reading/writing grounding prompts. The `generate` and `exam` modules depend on it via
-`ClaudeModule`.
+**AI layer — `src/claude/` (not BAML).** `ClaudeAgentService` shells out to the `claude` CLI in print mode
+(`claude -p --output-format json --json-schema ...`), so calls bill against the logged-in Claude Code
+subscription — no API key, no `@anthropic-ai/claude-agent-sdk`. It passes a JSON Schema (draft-07, built
+from the Zod schemas in `claude/schemas.ts` via `toSdkSchema`) and returns the CLI's `structured_output`,
+validated with Zod. `grounding.ts` holds the reading/writing grounding prompts. The `generate` and `exam`
+modules depend on it via `ClaudeModule`. Model comes from `JFLT_MODEL` (alias or id, default `sonnet`).
 
-> **Foundry auth gotcha.** The SDK is configured for **Azure AI Foundry** through the environment
-> (`CLAUDE_CODE_USE_FOUNDRY=1`, `ANTHROPIC_FOUNDRY_RESOURCE`, model from `JFLT_MODEL`). With no token
-> set it uses the Entra default credential chain — i.e. your `az login` session. **A Docker container
-> has no `az login`**, so for live Claude calls either run the API on the host, or pass
-> `ANTHROPIC_FOUNDRY_AUTH_TOKEN` / `ANTHROPIC_FOUNDRY_API_KEY` into the container.
+> **Auth gotcha.** The `claude` binary must be on PATH and logged in (`claude auth login`) wherever the API
+> runs. The Docker images install the CLI, and compose keeps the container's own login in the
+> `claude_home` volume (`CLAUDE_CONFIG_DIR=/root/.claude`): run `docker compose exec api claude auth login`
+> once from an interactive terminal. `docker compose down -v` deletes the volume and the login with it.
+> Alternatively run the API on the host, where your existing login applies.
 
 **Validation & serialization:** Zod v4 schemas wired through NestJS's **built-in**
 `StandardSchemaValidationPipe` (`APP_PIPE`) and `StandardSchemaSerializerInterceptor` (`APP_INTERCEPTOR`)

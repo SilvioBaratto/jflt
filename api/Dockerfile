@@ -3,8 +3,9 @@ FROM node:24-alpine AS dev
 
 WORKDIR /app
 
-# Install netcat for entrypoint health-check
-RUN apk add --no-cache netcat-openbsd
+# Install netcat for the entrypoint health-check, plus the claude CLI that the AI layer shells out to
+RUN apk add --no-cache netcat-openbsd libgcc libstdc++ ripgrep && \
+    npm install -g @anthropic-ai/claude-code
 
 # Copy package files and install ALL dependencies (including devDependencies)
 COPY package.json package-lock.json* ./
@@ -34,8 +35,9 @@ FROM node:24-alpine
 
 WORKDIR /app
 
-# Install netcat for entrypoint health-check
-RUN apk add --no-cache netcat-openbsd
+# Install netcat for the entrypoint health-check, plus the claude CLI that the AI layer shells out to
+RUN apk add --no-cache netcat-openbsd libgcc libstdc++ ripgrep && \
+    npm install -g @anthropic-ai/claude-code
 
 # Create non-root user
 RUN addgroup -g 1001 -S appgroup && \

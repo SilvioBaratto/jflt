@@ -4,7 +4,7 @@ import { z } from 'zod';
  * Convert a Zod schema to the JSON Schema draft-07 shape the Agent SDK validator accepts.
  *
  * @param schema - The Zod schema to convert.
- * @returns A plain JSON Schema object usable as the SDK `outputFormat.schema`.
+ * @returns A plain JSON Schema object usable as the `claude --json-schema` argument.
  */
 export function toSdkSchema(schema: z.ZodType): Record<string, unknown> {
   return z.toJSONSchema(schema, { target: 'draft-7' }) as Record<string, unknown>;

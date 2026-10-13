@@ -1,5 +1,6 @@
 import { Injectable, Logger } from '@nestjs/common';
-import { query } from '@anthropic-ai/claude-agent-sdk';
+import { spawn } from 'node:child_process';
+import { tmpdir } from 'node:os';
 import { readingGrounding, writingGrounding } from './grounding';
 import {
   toSdkSchema,
@@ -16,8 +17,7 @@ import {
   type ListeningKeys,
 } from './schemas';
 
-type QueryOptions = NonNullable<Parameters<typeof query>[0]['options']>;
-type RunOptions = Omit<QueryOptions, 'outputFormat'>;
+const CLI_TIMEOUT_MS = 5 * 60_000;
 
 const CEFR_BY_LEVEL: Record<number, string> = { 1: 'A2', 2: 'B1-B2', 3: 'C1', 4: 'C2' };
 const VOICES = ['alloy', 'echo', 'fable', 'onyx', 'nova', 'shimmer'];
@@ -31,51 +31,77 @@ export interface ReadingVerification {
 }
 
 /**
- * Wraps the Claude Agent SDK (configured for Azure Foundry via environment) and exposes the
- * JFLT generation and grading operations the app needs: fresh reading/listening/writing items
- * and rubric-based grading of a candidate's writing.
+ * Runs the JFLT generation and grading operations through the local `claude` CLI in print mode,
+ * so calls bill against the logged-in Claude Code subscription instead of an API key.
  *
- * Auth and backend come from the process environment (CLAUDE_CODE_USE_FOUNDRY, ANTHROPIC_FOUNDRY_*,
- * Entra `az login`), which the SDK reads natively — so this service must run where those are present.
+ * The `claude` binary must be on PATH and logged in (`claude login`) wherever the API runs.
  */
 @Injectable()
 export class ClaudeAgentService {
   private readonly logger = new Logger(ClaudeAgentService.name);
 
-  /** The Foundry deployment / model id used for every call (override with JFLT_MODEL). */
+  /** Model alias or id passed to `claude --model` for every call (override with JFLT_MODEL). */
   get model(): string {
-    return process.env.JFLT_MODEL?.trim() || 'claude-sonnet-4-6-eaq-gf08h1';
-  }
-
-  private baseOptions(): RunOptions {
-    return { model: this.model, settingSources: [], tools: [] };
+    return process.env.JFLT_MODEL?.trim() || 'sonnet';
   }
 
   /**
    * Run one single-shot structured-output turn and return the validated structured output.
    *
-   * @param prompt - The instruction for this turn.
+   * @param prompt - The instruction for this turn, piped over stdin to stay clear of argv limits.
    * @param schema - A JSON Schema (draft-07) the output must satisfy.
-   * @returns The agent's structured output, untyped — parse it with the owning Zod schema.
-   * @throws If the run ends on a non-success subtype, carries an API error, or yields no output.
+   * @returns The CLI's structured output, untyped — parse it with the owning Zod schema.
+   * @throws If the CLI cannot start, times out, exits non-zero, reports an error, or yields no output.
    */
-  private async runStructured(prompt: string, schema: Record<string, unknown>): Promise<unknown> {
-    let output: unknown;
-    for await (const message of query({
-      prompt,
-      options: { ...this.baseOptions(), outputFormat: { type: 'json_schema', schema } },
-    })) {
-      if (message.type === 'result') {
-        if (message.subtype !== 'success') {
-          throw new Error(`agent run ended with subtype "${message.subtype}"`);
+  private runStructured(prompt: string, schema: Record<string, unknown>): Promise<unknown> {
+    const args = [
+      '-p',
+      '--output-format', 'json',
+      '--json-schema', JSON.stringify(schema),
+      '--model', this.model,
+      '--tools', '',
+      '--setting-sources', '',
+      '--no-session-persistence',
+    ];
+    return new Promise((resolve, reject) => {
+      // A neutral cwd keeps the project's CLAUDE.md out of the model's context.
+      const child = spawn('claude', args, { cwd: tmpdir(), timeout: CLI_TIMEOUT_MS });
+      let stdout = '';
+      let stderr = '';
+      child.stdout.on('data', (d: Buffer) => (stdout += d));
+      child.stderr.on('data', (d: Buffer) => (stderr += d));
+      child.on('error', (err) => reject(new Error(`failed to run claude CLI: ${err.message}`)));
+      child.on('close', (code, signal) => {
+        if (code !== 0) {
+          // On auth/model errors the useful message is the JSON `result` field, not raw stdout.
+          let detail = stderr || stdout;
+          try {
+            detail = (JSON.parse(stdout) as { result?: string }).result || detail;
+          } catch {
+            /* stdout was not JSON; keep the raw text */
+          }
+          return reject(new Error(`claude CLI exited with ${signal ?? code}: ${detail.slice(0, 500)}`));
         }
-        const m = message as { is_error?: boolean; structured_output?: unknown; result?: string };
-        if (m.is_error) throw new Error(`agent run returned an API error: ${m.result ?? 'unknown'}`);
-        if (m.structured_output !== undefined) output = m.structured_output;
-      }
-    }
-    if (output === undefined) throw new Error('agent run produced no structured output');
-    return output;
+        try {
+          const m = JSON.parse(stdout) as {
+            subtype?: string;
+            is_error?: boolean;
+            result?: string;
+            structured_output?: unknown;
+          };
+          if (m.is_error || m.subtype !== 'success') {
+            return reject(new Error(`claude run failed (${m.subtype}): ${m.result ?? 'unknown'}`));
+          }
+          if (m.structured_output === undefined) {
+            return reject(new Error('claude run produced no structured output'));
+          }
+          resolve(m.structured_output);
+        } catch (err) {
+          reject(new Error(`unparseable claude CLI output: ${(err as Error).message}`));
+        }
+      });
+      child.stdin.end(prompt);
+    });
   }
 
   /**
