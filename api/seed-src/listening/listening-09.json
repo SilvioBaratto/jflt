@@ -1,0 +1,88 @@
+{
+  "id": "listening-09",
+  "level": "C1",
+  "stanag_level": 3,
+  "topic": "Ageing populations, migration and the future of the workforce",
+  "conversation_type": "radio feature with two guests and a presenter",
+  "setting": "A weekday morning radio current-affairs programme in which the presenter moderates a civil but pointed exchange between two specialists who hold partly opposing views on whether managed migration can sustainably offset demographic workforce decline.",
+  "voices": {
+    "PRESENTER": "nova",
+    "RAJAN": "onyx",
+    "KARIN": "shimmer"
+  },
+  "speakers": [
+    { "id": "PRESENTER", "role": "Radio programme presenter", "voice": "nova" },
+    { "id": "RAJAN", "role": "Migration policy analyst, EU Advisory Council", "voice": "onyx" },
+    { "id": "KARIN", "role": "Labour economist, Stockholm Institute", "voice": "shimmer" }
+  ],
+  "lines": [
+    {
+      "speaker": "PRESENTER",
+      "text": "Welcome to Global Briefing. Europe's population is ageing at a pace that few policymakers anticipated even a decade ago. Today we are asking whether managed migration can realistically fill the gap in the workforce, or whether that framing is itself part of the problem. I am joined by Dr Karin Sorensen, a labour economist at the Stockholm Institute, and by Rajan Mehta, a migration policy analyst with the EU Advisory Council. Rajan, let me start with you."
+    },
+    {
+      "speaker": "RAJAN",
+      "text": "Thank you. The short answer is: we have no alternative to substantially higher migration flows if we want to maintain functioning labour markets in ageing societies. The dependency ratio, that is the number of working-age adults supporting each retiree, is deteriorating faster than any domestic policy instrument can offset. Countries like Germany, Japan and Italy are projected to lose between a fifth and a quarter of their working-age population by mid-century, and that is simply not a gap automation can close in time."
+    },
+    {
+      "speaker": "KARIN",
+      "text": "I would push back on that framing, if I may. The dependency ratio is a useful shorthand, but it can be misleading. What it conceals is how poorly we are already using our existing workforce. Women in many OECD countries are still significantly underemployed, not because of lack of skill, but because childcare and elder care systems are chronically underfunded. And older workers are being pushed out of the labour market a decade before they need to be. If you address those structural failures, the effective workforce expands considerably."
+    },
+    {
+      "speaker": "RAJAN",
+      "text": "I would agree that those are real inefficiencies. But, and this is the crux, those reforms take a generation to deliver results. We are talking about cultural shifts, legal frameworks, infrastructure investment. You cannot fast-track them. Migration, by contrast, can be scaled relatively quickly to respond to sector-specific shortfalls: healthcare, construction, logistics, care work."
+    },
+    {
+      "speaker": "KARIN",
+      "text": "Well, here I would want to enter a note of caution. The evidence suggests that large, rapid inflows can suppress wages in exactly those sectors where workers are already most vulnerable. And if the political backlash to that undermines the broader case for openness, you risk ending up with neither the migration nor the structural reform."
+    },
+    {
+      "speaker": "PRESENTER",
+      "text": "That tension, migration as a short-term fix versus longer-term structural change, seems to be at the heart of the debate. Rajan, does the political economy argument give you pause?"
+    },
+    {
+      "speaker": "RAJAN",
+      "text": "It gives me pause, but not enough to shift my overall position. The fiscal arithmetic of ageing is simply too stark. Without migration, pension systems and healthcare will face a funding crisis long before alternative workforce strategies mature."
+    },
+    {
+      "speaker": "KARIN",
+      "text": "And my concern is that we keep deferring the harder conversation, which is about the kind of societies we want to build, by reaching for the demographic quick fix."
+    },
+    {
+      "speaker": "PRESENTER",
+      "text": "A productive disagreement, perhaps. Thank you both."
+    }
+  ],
+  "questions": [
+    {
+      "id": 1,
+      "question": "What is Dr Karin Sorensen's main argument regarding demographic workforce shortfalls?",
+      "options": {
+        "A": "Migration will inevitably cause wages to decline across all sectors of the economy.",
+        "B": "Tackling structural underuse of the existing workforce would reduce the scale of migration needed.",
+        "C": "Automation technology is a more effective long-term solution than either migration or labour reform.",
+        "D": "OECD governments should impose restrictions on migration until childcare systems are adequately funded."
+      }
+    },
+    {
+      "id": 2,
+      "question": "What is the core point of disagreement between Rajan Mehta and Dr Sorensen?",
+      "options": {
+        "A": "Whether ageing populations represent a genuine threat to pension and healthcare funding.",
+        "B": "Whether labour shortfalls will affect the healthcare sector more severely than the construction sector.",
+        "C": "Whether migration can deliver workforce improvements rapidly enough to address immediate shortfalls.",
+        "D": "Whether women in OECD countries are underemployed due to a shortage of suitable qualifications."
+      }
+    },
+    {
+      "id": 3,
+      "question": "When Dr Sorensen refers to 'the demographic quick fix', she implies that policymakers are:",
+      "options": {
+        "A": "Misrepresenting the scale of demographic decline in order to justify unpopular immigration policies.",
+        "B": "Using migration as a convenient substitute for deeper debate about social and economic priorities.",
+        "C": "Overestimating how quickly automation can replace human labour in care and logistics sectors.",
+        "D": "Accepting that large-scale migration is politically unworkable and seeking alternative solutions instead."
+      }
+    }
+  ]
+}

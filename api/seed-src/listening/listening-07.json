@@ -1,0 +1,86 @@
+{
+  "id": "listening-07",
+  "level": "C1",
+  "stanag_level": 3,
+  "topic": "Governing dual-use artificial intelligence",
+  "conversation_type": "podcast interview with a policy researcher",
+  "setting": "A public-affairs podcast in which a journalist interviews a European digital-governance researcher about the unintended consequences of current AI export-control regimes.",
+  "voices": {
+    "ALEX": "alloy",
+    "MARA": "nova"
+  },
+  "speakers": [
+    { "id": "ALEX", "role": "podcast host", "voice": "alloy" },
+    { "id": "MARA", "role": "policy researcher, senior fellow at the European Centre for Digital Governance", "voice": "nova" }
+  ],
+  "lines": [
+    {
+      "speaker": "ALEX",
+      "text": "Welcome to Tech Policy Watch. I am joined today by Dr. Mara Chen, a senior fellow at the European Centre for Digital Governance, who has just published a report on the regulation of dual-use artificial intelligence. Dr. Chen, your report opens with a provocation: you argue that current export controls on AI systems may be doing more harm than good. What do you mean by that?"
+    },
+    {
+      "speaker": "MARA",
+      "text": "Well, the concern is this. Governments are increasingly treating advanced AI models the way they treat weapons — classifying them, restricting their export, limiting who can access underlying weights and training data. And I understand the impulse. These systems genuinely can be weaponised. But here is the tension: the safety research needed to make these systems governable — alignment techniques, interpretability tools, red-teaming frameworks — that research benefits enormously from open collaboration across borders. When you wall it off, you do not just slow down adversaries; you slow down the very work that could make AI safer for everyone."
+    },
+    {
+      "speaker": "ALEX",
+      "text": "That is a thought-provoking argument, but I want to push back on it. Export controls are not new. We apply them to semiconductors, to encryption technology, to certain biological agents. If a technology is inherently dual-use, restricting its spread is a legitimate security measure, regardless of what we might lose in scientific exchange."
+    },
+    {
+      "speaker": "MARA",
+      "text": "I would concede that point up to a degree. Chip-level controls — restricting the export of the most advanced processors — are arguably defensible because they slow the development of frontier capabilities. But when we extend those controls to software, to model weights, to research papers, we risk fragmenting the global knowledge commons in ways that are actually destabilising. Right now, the major risk is not that a democratic ally develops a slightly better language model. It is that safety research becomes nationally siloed, and we end up with multiple powerful AI systems that nobody fully understands."
+    },
+    {
+      "speaker": "ALEX",
+      "text": "So if I am reading you correctly, your position is not that dual-use AI should be unregulated, but that the current regulatory instruments are poorly targeted?"
+    },
+    {
+      "speaker": "MARA",
+      "text": "Precisely. What we need is differentiation. Hardware and frontier compute — restrict those. Open-source safety research — protect it, fund it internationally. The mistake is to treat all AI artefacts as equivalent threats. That approach is both strategically counterproductive and, I would argue, philosophically incoherent."
+    },
+    {
+      "speaker": "ALEX",
+      "text": "But surely there is a practical problem: how do you draw that line without creating loopholes that actors operating in bad faith will exploit?"
+    },
+    {
+      "speaker": "MARA",
+      "text": "That is the hard question, and I do not pretend to have a clean answer. One approach is tiered licensing — where access is conditional not on nationality alone, but on demonstrated commitment to auditing and transparency standards. It is more complex to administer, but it is far more coherent than a simple geographic embargo."
+    },
+    {
+      "speaker": "ALEX",
+      "text": "Dr. Chen, thank you for a genuinely challenging perspective. The full report is linked in the show notes."
+    }
+  ],
+  "questions": [
+    {
+      "id": 1,
+      "question": "What is Dr. Chen's central concern about extending export controls beyond hardware to AI software and research?",
+      "options": {
+        "A": "She believes that no AI technology, including advanced processors, should be subject to export restrictions.",
+        "B": "She worries that restricting AI research tools will fragment international safety work, ultimately leaving all countries more vulnerable.",
+        "C": "She argues that restricting AI software exports will give adversarial states an advantage in building more powerful language models.",
+        "D": "She contends that open-source AI research is already too sensitive to be shared freely across national borders."
+      }
+    },
+    {
+      "id": 2,
+      "question": "On which specific point does Dr. Chen explicitly concede that the host's defence of export controls has merit?",
+      "options": {
+        "A": "She agrees that all categories of AI artefact, including research papers, should be subject to strict national controls.",
+        "B": "She acknowledges that restricting the export of the most advanced semiconductor hardware is a defensible policy.",
+        "C": "She admits that geographic embargoes are ultimately more coherent than a tiered licensing system.",
+        "D": "She accepts that fragmenting the global knowledge commons may be a necessary trade-off for national security."
+      }
+    },
+    {
+      "id": 3,
+      "question": "What does Dr. Chen imply when she describes a simple geographic embargo on AI as 'philosophically incoherent'?",
+      "options": {
+        "A": "Geographic embargoes have a poor historical record of preventing the spread of sensitive dual-use technologies.",
+        "B": "Using a state's national origin as the criterion for AI access fails to address the actual security risk, which she identifies as a lack of auditing and transparency.",
+        "C": "A tiered licensing scheme would be considerably easier to enforce globally than restrictions on semiconductor exports.",
+        "D": "Democratic governments should give economic competitiveness priority over national security when regulating AI."
+      }
+    }
+  ]
+}

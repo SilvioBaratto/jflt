@@ -1,0 +1,86 @@
+{
+  "id": "listening-04",
+  "level": "C1",
+  "stanag_level": 3,
+  "topic": "Hybrid and cyber threats that fall below the threshold of armed conflict",
+  "conversation_type": "press-conference question-and-answer",
+  "setting": "A press conference at NATO headquarters following publication of a new alliance assessment on sub-threshold hybrid threats; the official fielding questions is a senior alliance spokesperson.",
+  "voices": {
+    "JOURNALIST": "nova",
+    "OFFICIAL": "onyx"
+  },
+  "speakers": [
+    { "id": "JOURNALIST", "role": "Press correspondent", "voice": "nova" },
+    { "id": "OFFICIAL", "role": "NATO senior spokesperson", "voice": "onyx" }
+  ],
+  "lines": [
+    {
+      "speaker": "OFFICIAL",
+      "text": "Thank you all for being here. I am happy to take your questions."
+    },
+    {
+      "speaker": "JOURNALIST",
+      "text": "Thank you. The past year alone has seen repeated incidents of undersea cable sabotage, GPS spoofing over the Baltic, and coordinated disinformation campaigns targeting allied elections. At what point do these activities collectively cross a threshold that compels a coordinated NATO response?"
+    },
+    {
+      "speaker": "OFFICIAL",
+      "text": "That is precisely the question keeping alliance planners awake at night. What I can tell you is that hybrid operations are explicitly addressed in NATO's 2022 Strategic Concept. The alliance has made clear that a pattern of cumulative hybrid attacks could, in principle, trigger Article 5 consultations. However, and I want to be straightforward here, the threshold for collective defence was not designed with sub-threshold activities in mind. That is the structural tension we are wrestling with."
+    },
+    {
+      "speaker": "JOURNALIST",
+      "text": "Respectfully, 'could in principle' is doing a great deal of work in that sentence. Adversaries appear to have calculated quite precisely where that ambiguity lies. Isn't the current posture effectively a licence to operate below the radar indefinitely?"
+    },
+    {
+      "speaker": "OFFICIAL",
+      "text": "I'd push back on that framing, though not entirely. You are right that the attribution challenge is real. We cannot, as an alliance, invoke Article 5 on the basis of probabilistic attribution alone. That would set a dangerous precedent. What we have done instead is invest significantly in resilience, designating critical infrastructure as a strategic priority and developing baseline protection standards with member states. The deterrence logic here is different from conventional warfare. You disrupt the adversary's capacity to inflict harm rather than simply threatening retaliation after the fact."
+    },
+    {
+      "speaker": "JOURNALIST",
+      "text": "But resilience is inherently defensive. Some allies, notably the Baltic states, have argued for a proactive cyber posture, essentially offensive operations designed to impose costs and raise the price of continued harassment. Where does NATO stand on that?"
+    },
+    {
+      "speaker": "OFFICIAL",
+      "text": "NATO as a collective body does not conduct offensive cyber operations. Individual allies retain that sovereign capability, and the alliance does benefit from the deterrent effect those national capacities create. But I would caution against assuming that mirroring the adversary's tactics is either straightforward or costless. There are legitimate legal constraints, genuine escalation risks, and, frankly, norms we have a long-term interest in preserving. The Baltic concerns are entirely understandable given their geographic proximity to the threat, but there is not yet consensus on crossing into offensive territory as a collective matter."
+    },
+    {
+      "speaker": "JOURNALIST",
+      "text": "So to be direct: the alliance acknowledges that its response options are limited, that adversaries are aware of this, and that the framework is being updated incrementally. Would that be a fair summary?"
+    },
+    {
+      "speaker": "OFFICIAL",
+      "text": "I would call it an honest summary, with one qualification: the pace of adaptation is accelerating. That is not entirely reassuring, I grant you, but it reflects where we are at this moment."
+    }
+  ],
+  "questions": [
+    {
+      "id": 1,
+      "question": "When the official refers to 'the structural tension we are wrestling with,' what is most likely implied?",
+      "options": {
+        "A": "Article 5 was not conceived to cover the kind of ambiguous sub-threshold operations adversaries now conduct routinely.",
+        "B": "NATO planners formally disagree with the 2022 Strategic Concept's approach to hybrid threats.",
+        "C": "Hybrid operations have already crossed the threshold required to trigger collective defence action.",
+        "D": "NATO's collective defence treaty is legally incompatible with any response to sub-threshold attacks."
+      }
+    },
+    {
+      "id": 2,
+      "question": "What is the journalist's attitude toward NATO's current approach to sub-threshold hybrid threats?",
+      "options": {
+        "A": "Broadly supportive, particularly of the alliance's investment in critical infrastructure resilience.",
+        "B": "Convinced that NATO should immediately adopt collective offensive cyber operations.",
+        "C": "Sceptical that the alliance's cautious posture effectively deters adversary behaviour.",
+        "D": "Sympathetic to the official's argument that legal constraints must take priority over deterrence."
+      }
+    },
+    {
+      "id": 3,
+      "question": "When the official says 'I'd push back on that framing, though not entirely,' what does this utterance primarily signal?",
+      "options": {
+        "A": "The official is about to announce a significant change in NATO's hybrid threat policy.",
+        "B": "The official acknowledges a measure of validity in the journalist's critique while still defending the alliance's strategy.",
+        "C": "The official completely rejects the suggestion that adversaries are exploiting NATO's ambiguity.",
+        "D": "The official intends to redirect the conversation to avoid addressing attribution difficulties directly."
+      }
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "id": "listening-12",
+  "level": "C1",
+  "stanag_level": 3,
+  "topic": "Climate-driven competition over water and Arctic resources",
+  "conversation_type": "panel discussion",
+  "setting": "A broadcast panel discussion exploring how climate change is reshaping geopolitical competition over freshwater and Arctic resources, recorded for an international affairs programme.",
+  "voices": {
+    "MOD": "echo",
+    "DR_COLE": "alloy",
+    "PROF_SANTOS": "nova"
+  },
+  "speakers": [
+    { "id": "MOD", "role": "Moderator", "voice": "echo" },
+    { "id": "DR_COLE", "role": "Senior fellow, Global Security Institute", "voice": "alloy" },
+    { "id": "PROF_SANTOS", "role": "UN Environment Programme adviser", "voice": "nova" }
+  ],
+  "lines": [
+    {
+      "speaker": "MOD",
+      "text": "Welcome to Climate Watch. Today we examine two intersecting pressures: dwindling freshwater across vulnerable river basins and the rapidly opening Arctic — both reshaping geopolitical competition in ways that demand urgent attention. Joining me are Dr. Cole, a senior fellow at the Global Security Institute, and Professor Santos, who advises the UN Environment Programme. Dr. Cole, how serious is the resource competition dynamic?"
+    },
+    {
+      "speaker": "DR_COLE",
+      "text": "Arguably the defining security challenge of this decade. States sharing river basins — the Nile, the Mekong, the Amu Darya — are shifting from cooperative frameworks toward unilateral infrastructure projects. Upstream nations build dams; downstream populations bear the cost. And what concerns me most is that climate is compressing the timeline. Countries that once had thirty years to negotiate are now looking at a decade before the pressure becomes acute."
+    },
+    {
+      "speaker": "PROF_SANTOS",
+      "text": "I'd push back on the framing of inevitability, though. The history of shared waterways shows that even adversarial states have found workable arrangements — the Indus Waters Treaty survived two wars between India and Pakistan. The question isn't whether cooperation is possible; it's whether political will can be mobilised ahead of a crisis rather than in response to one."
+    },
+    {
+      "speaker": "DR_COLE",
+      "text": "Fair point, and I wouldn't entirely dispute it. But the Arctic is a different matter. Ice melt has opened shipping routes and exposed hydrocarbon and mineral deposits inaccessible a generation ago. Russia is asserting territorial claims; NATO allies are scrambling to close capability gaps; and China — without a single kilometre of Arctic coastline — is styling itself a near-Arctic state. That signals something qualitatively different from a river-basin dispute."
+    },
+    {
+      "speaker": "PROF_SANTOS",
+      "text": "Where I agree with you is that the Arctic Council's consensus model is under genuine strain. But we must distinguish competitive positioning — which is inevitable — from outright conflict, which is not. States are hedging, yes, yet they're also concluding quiet bilateral arrangements because they recognise an open confrontation would be costly for all sides."
+    },
+    {
+      "speaker": "MOD",
+      "text": "So — the gravitational pull of national interest versus the logic of mutual constraint. Professor Santos, is there a realistic mechanism that could hold?"
+    },
+    {
+      "speaker": "PROF_SANTOS",
+      "text": "Sector-specific agreements, I would argue. We've already seen this work with Arctic fisheries: when a resource is finite and mismanagement harms everyone, pragmatic cooperation emerges even among rivals. The danger is that energy and rare-earth deposits don't carry the same mutuality of vulnerability — the asymmetries are too large."
+    },
+    {
+      "speaker": "DR_COLE",
+      "text": "And that is precisely where I remain sceptical. When the stakes involve strategic advantage — rare-earth deposits, year-round shipping lanes — the incentive to defect from any framework is enormous. History suggests that in high-value resource contests, legal commitments tend to be honoured in the breach."
+    },
+    {
+      "speaker": "MOD",
+      "text": "A sobering note on which to close. Thank you both."
+    }
+  ],
+  "questions": [
+    {
+      "id": 1,
+      "question": "What does Dr. Cole imply about the effect of climate change on resource diplomacy?",
+      "options": {
+        "A": "Climate change has already caused armed conflict over shared river basins.",
+        "B": "Climate change is reducing the time available for negotiated solutions to resource disputes.",
+        "C": "Climate change is a less significant driver of conflict than the failure of international law.",
+        "D": "Climate change affects downstream nations more severely than upstream nations."
+      }
+    },
+    {
+      "id": 2,
+      "question": "When Professor Santos cites the Indus Waters Treaty, her underlying point is that:",
+      "options": {
+        "A": "international law has been uniquely effective in South Asian water management.",
+        "B": "the treaty provides a specific template that Arctic nations should formally adopt.",
+        "C": "even states in deep political conflict can sustain cooperative resource arrangements.",
+        "D": "military conflict between states has no lasting effect on existing water agreements."
+      }
+    },
+    {
+      "id": 3,
+      "question": "What is the primary function of Dr. Cole's phrase 'Fair point, and I wouldn't entirely dispute it' at the start of his second turn?",
+      "options": {
+        "A": "To signal a fundamental reversal of his earlier view on the inevitability of resource conflict.",
+        "B": "To concede limited validity to Santos's argument before redirecting attention to a more contested case.",
+        "C": "To challenge the historical accuracy of the Indus Waters Treaty as an example of successful cooperation.",
+        "D": "To agree with Santos that existing legal frameworks are adequate to manage Arctic competition."
+      }
+    }
+  ]
+}

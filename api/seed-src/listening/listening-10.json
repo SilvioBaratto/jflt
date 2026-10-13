@@ -1,0 +1,82 @@
+{
+  "id": "listening-10",
+  "level": "C1",
+  "stanag_level": 3,
+  "topic": "Regulating disinformation without eroding press freedom",
+  "conversation_type": "studio debate",
+  "setting": "A radio studio debate between a media law scholar advocating tiered platform liability and a press freedom journalist sceptical of government-defined truth.",
+  "voices": {
+    "JAMES": "onyx",
+    "CLARA": "nova"
+  },
+  "speakers": [
+    { "id": "JAMES", "role": "press freedom journalist", "voice": "onyx" },
+    { "id": "CLARA", "role": "media law scholar", "voice": "nova" }
+  ],
+  "lines": [
+    {
+      "speaker": "JAMES",
+      "text": "The appetite for regulating what people say online has never been greater, and I understand the impulse — the harms caused by health misinformation alone are measurable and serious. But the moment you hand a government the power to label speech disinformation, you have handed it a censorship mechanism. History is littered with examples of false information laws being weaponised against journalists."
+    },
+    {
+      "speaker": "CLARA",
+      "text": "That's a fair concern, and I wouldn't dispute that there are authoritarian regimes that abuse such legislation. But I think you're conflating two very different things: suppressing political speech on the one hand and correcting provably false factual claims — the kind that get people killed — on the other. When someone posts fabricated vaccine death statistics, that isn't opinion; it's a falsifiable assertion."
+    },
+    {
+      "speaker": "JAMES",
+      "text": "But who decides what's falsifiable? Scientific consensus shifts. Reasonable experts disagree. In 2020, official guidance on airborne transmission changed several times in a matter of weeks. If we had locked down debate at week one, we would have suppressed legitimate scientific discussion."
+    },
+    {
+      "speaker": "CLARA",
+      "text": "Arguably, yes — and that's precisely why I'd argue for tiered liability rather than outright prohibition. Platforms should face meaningful penalties not for hosting contested claims, but for algorithmically amplifying content that has been fact-checked and found to be demonstrably false by independent bodies. The distinction I'm drawing is between passive hosting and active promotion."
+    },
+    {
+      "speaker": "JAMES",
+      "text": "I take the point about amplification, and I'll concede that's a more defensible line to draw. My residual worry, though, is governance: who are these independent bodies and how are they insulated from political pressure? A regulatory agency under a government of any stripe is never truly independent."
+    },
+    {
+      "speaker": "CLARA",
+      "text": "That's where international frameworks matter. If fact-checking standards are set at the level of — say — a multi-stakeholder body with civil society representation, the risk of capture is substantially lower. No system is immune, but that's an argument for better design, not for abandoning the project altogether."
+    },
+    {
+      "speaker": "JAMES",
+      "text": "Fair enough. I think we agree that the status quo — platforms operating with near-total impunity — is untenable. The sticking point is accountability structures, not the principle of intervention itself."
+    },
+    {
+      "speaker": "CLARA",
+      "text": "Exactly. And I'd add that this isn't purely a legal problem — it's a design problem as well. Smart regulation should create incentives for platforms to build more robust verification systems, not simply to retreat from liability at the margins."
+    }
+  ],
+  "questions": [
+    {
+      "id": 1,
+      "question": "What is James's central objection to government-led disinformation regulation?",
+      "options": {
+        "A": "He believes that health misinformation poses no real harm to the general public.",
+        "B": "He argues that giving governments the power to define false speech risks enabling political censorship.",
+        "C": "He maintains that existing platform liability laws already adequately address the problem.",
+        "D": "He suggests that scientific consensus on health matters is stable enough for regulators to apply reliably."
+      }
+    },
+    {
+      "id": 2,
+      "question": "When Clara distinguishes 'passive hosting' from 'active promotion,' what does she imply platforms should be held responsible for?",
+      "options": {
+        "A": "Removing all health misinformation within hours of it being uploaded.",
+        "B": "Algorithmically pushing content that independent fact-checkers have already debunked.",
+        "C": "Accepting government guidelines on which specific claims count as disinformation.",
+        "D": "Monitoring individual users' posting behaviour to prevent repeat offenders."
+      }
+    },
+    {
+      "id": 3,
+      "question": "By the close of the debate, what do both James and Clara agree on?",
+      "options": {
+        "A": "International multi-stakeholder bodies are the most effective safeguard against regulatory capture.",
+        "B": "Platforms' current near-total freedom from accountability is no longer acceptable.",
+        "C": "Algorithmic amplification of any contested health claim should be strictly prohibited.",
+        "D": "Government-appointed regulators can be made genuinely independent if properly designed."
+      }
+    }
+  ]
+}

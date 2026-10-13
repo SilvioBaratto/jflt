@@ -1,6 +1,6 @@
 <div class="bank">
   <header class="bank-header">
-    <h1>Question Bank</h1>
+    <h1>Question bank</h1>
     <p>Browse the material. Use the sidebar to start practising a skill or a full mock exam.</p>
   </header>
 
@@ -8,7 +8,7 @@
     <mat-card appearance="outlined" class="sec">
       <div class="sec-head">
         <h2>Reading @if (reading(); as r) { <span class="n">{{ r.total }}</span> }</h2>
-        <a routerLink="/reading" matButton>Practise →</a>
+        <a routerLink="/reading" matButton aria-label="Practise reading">Practise</a>
       </div>
       @if (reading(); as r) {
         <ul class="items">
@@ -24,15 +24,17 @@
     <mat-card appearance="outlined" class="sec">
       <div class="sec-head">
         <h2>Listening @if (listening(); as l) { <span class="n">{{ l.total }}</span> }</h2>
-        <a routerLink="/listening" matButton>Practise →</a>
+        <a routerLink="/listening" matButton aria-label="Practise listening">Practise</a>
       </div>
       @if (listening(); as l) {
         <ul class="items">
           @for (it of l.items; track it.id) {
             <li>
               <span class="lvl">L{{ it.level }}</span>
-              <span class="topic">{{ it.topic }}</span>
-              <span class="meta">{{ it.conversationType }} · {{ it.questionCount }} Q</span>
+              <span class="it-body">
+                <span class="topic">{{ it.topic }}</span>
+                <span class="meta">{{ it.conversationType }} · {{ it.questionCount }} Q</span>
+              </span>
             </li>
           }
         </ul>
@@ -44,15 +46,17 @@
     <mat-card appearance="outlined" class="sec">
       <div class="sec-head">
         <h2>Writing @if (writing(); as w) { <span class="n">{{ w.total }}</span> }</h2>
-        <a routerLink="/writing" matButton>Practise →</a>
+        <a routerLink="/writing" matButton aria-label="Practise writing">Practise</a>
       </div>
       @if (writing(); as w) {
         <ul class="items">
           @for (it of w.items; track it.id) {
             <li>
               <span class="lvl">L{{ it.stanagLevel }}</span>
-              <span class="topic">{{ it.title }}</span>
-              <span class="meta">{{ it.wordCountMin }}–{{ it.wordCountMax }} w</span>
+              <span class="it-body">
+                <span class="topic">{{ it.title }}</span>
+                <span class="meta">{{ it.wordCountMin }}–{{ it.wordCountMax }} w</span>
+              </span>
             </li>
           }
         </ul>

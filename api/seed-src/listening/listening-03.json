@@ -1,0 +1,88 @@
+{
+  "id": "listening-03",
+  "level": "C1",
+  "stanag_level": 3,
+  "topic": "Reintroducing conscription versus keeping all-professional armed forces",
+  "conversation_type": "television debate between two guests and a moderator",
+  "setting": "A live evening news debate programme; the moderator keeps a measured, neutral tone while the two guests argue sharply but courteously.",
+  "voices": {
+    "MOD": "shimmer",
+    "MARCUS": "onyx",
+    "SARAH": "nova"
+  },
+  "speakers": [
+    { "id": "MOD", "role": "television debate moderator", "voice": "shimmer" },
+    { "id": "MARCUS", "role": "senior defence analyst, pro-conscription", "voice": "onyx" },
+    { "id": "SARAH", "role": "military policy researcher, pro-professional forces", "voice": "nova" }
+  ],
+  "lines": [
+    {
+      "speaker": "MOD",
+      "text": "Good evening. Tonight we are debating one of the most consequential questions in European defence: should governments reintroduce compulsory military service, or is the all-volunteer model still fit for purpose? I am joined by Marcus Webb, a senior defence analyst, and Doctor Sarah Okonkwo, a military policy researcher. Marcus, the case for conscription — make it."
+    },
+    {
+      "speaker": "MARCUS",
+      "text": "Thank you. The argument is essentially strategic. We are operating in a threat environment that NATO itself describes as the most challenging since the Cold War. Volunteer armies, however highly trained, are structurally too small for a high-intensity conflict. Conscription is not about nostalgia; it is about mass. Several northern European states have already reintroduced it, and they have done so because the numbers simply do not add up otherwise."
+    },
+    {
+      "speaker": "SARAH",
+      "text": "I take Marcus's point on numbers, but I think the case conflates quantity with capability. A conscript force takes years to generate genuinely deployable capacity. The training pipeline, the equipment, the institutional knowledge — these do not scale overnight. What you risk is spending enormous resources on a force that looks reassuring on paper but underperforms in the field."
+    },
+    {
+      "speaker": "MARCUS",
+      "text": "That is a fair caveat, and I would not dismiss it. But I would argue the framing is too narrow. The strategic value of conscription is not purely military — it is societal. When a broader cross-section of the population serves, you rebuild the social contract between citizens and national defence. Right now, defence is something that happens to a small professional class. That is a political vulnerability in a democracy."
+    },
+    {
+      "speaker": "SARAH",
+      "text": "And there I agree with you, up to a point. Social cohesion is a genuine concern, and I do not want to minimise it. But there are less coercive ways to address it: national service models that include non-military roles, expanded reserve programmes, civic education. Mandatory conscription carries real costs — economic disruption, individual rights, and frankly, morale. The evidence from states that abolished it and then reintroduced it is mixed at best."
+    },
+    {
+      "speaker": "MOD",
+      "text": "Sarah, a brief final point — you have both acknowledged that conscription has a deterrence value beyond pure military output. Does that shift your overall position at all?"
+    },
+    {
+      "speaker": "SARAH",
+      "text": "Deterrence through demonstrated political will is real, and I would not dismiss it. But deterrence without operational credibility is ultimately hollow. My position is that we should invest in professional forces — in pay, retention, and capability — rather than dilute quality for the sake of optics."
+    },
+    {
+      "speaker": "MOD",
+      "text": "Marcus, last word."
+    },
+    {
+      "speaker": "MARCUS",
+      "text": "I think Doctor Okonkwo is right that quality must not be sacrificed. The question is whether we can afford both — and I believe we must."
+    }
+  ],
+  "questions": [
+    {
+      "id": 1,
+      "question": "What is Dr Okonkwo's central objection to reintroducing conscription?",
+      "options": {
+        "A": "It would alienate experienced professional soldiers who would resist serving alongside poorly-trained conscripts.",
+        "B": "It would produce forces that appear credible but lack genuine operational effectiveness.",
+        "C": "It would generate enough troops to satisfy NATO's minimum manpower requirements without improving readiness.",
+        "D": "It places an undue burden on individual rights and would therefore face legal challenges in most democracies."
+      }
+    },
+    {
+      "id": 2,
+      "question": "What does Dr Okonkwo explicitly concede to Marcus during the debate?",
+      "options": {
+        "A": "That volunteer armies are numerically insufficient for modern high-intensity warfare.",
+        "B": "That conscription would strengthen the social bond between citizens and national defence.",
+        "C": "That the northern European states which reintroduced conscription were right to do so.",
+        "D": "That professional military forces tend to suffer from poor morale and high attrition rates."
+      }
+    },
+    {
+      "id": 3,
+      "question": "When Marcus says at the close of the debate \"I believe we must,\" what is the function of this utterance?",
+      "options": {
+        "A": "He withdraws his support for conscription in light of Dr Okonkwo's operational credibility argument.",
+        "B": "He signals that quality and mass are compatible goals and that governments are obliged to pursue both.",
+        "C": "He challenges the moderator's implication that the two policy positions cannot be reconciled.",
+        "D": "He implies that conscription is more cost-effective than raising the pay and retention of professional soldiers."
+      }
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "id": "listening-06",
+  "level": "C1",
+  "stanag_level": 3,
+  "topic": "Supply-chain resilience, tariffs and the politics of reshoring",
+  "conversation_type": "conference-panel conversation",
+  "setting": "A recorded panel session at an international trade and investment conference in Brussels, where three experts debate whether tariff policy is an effective and sustainable tool for building supply-chain resilience.",
+  "voices": {
+    "MOD": "alloy",
+    "ELENA": "nova",
+    "MARCUS": "echo"
+  },
+  "speakers": [
+    { "id": "MOD", "role": "conference moderator", "voice": "alloy" },
+    { "id": "ELENA", "role": "trade economist", "voice": "nova" },
+    { "id": "MARCUS", "role": "industrial policy advisor", "voice": "echo" }
+  ],
+  "lines": [
+    {
+      "speaker": "MOD",
+      "text": "Welcome back to the panel. We have been debating whether tariff policy is the right lever for supply-chain resilience. Elena, you have suggested the whole framing may be flawed. Can you take us through that argument?"
+    },
+    {
+      "speaker": "ELENA",
+      "text": "Gladly. I think there is a category error running through much of this discussion. Tariffs raise the cost of imported goods, which can, in theory, make domestic production look relatively more attractive. But resilience is not simply about where goods are made. It is about redundancy, diversification, and the capacity to absorb shocks. A tariff-protected domestic monopoly may actually be far more fragile than a well-diversified international sourcing network. We saw this quite clearly during the semiconductor shortage: the bottleneck was not trade policy but a structural under-investment in fabrication capacity across the board."
+    },
+    {
+      "speaker": "MARCUS",
+      "text": "I take Elena's point about diversification, and I would not dismiss the redundancy argument. But I think she is substantially underestimating the incentive problem. Private firms, operating under quarterly earnings pressure, will not voluntarily build excess capacity. That capacity is essentially an insurance premium — something society needs but that individual companies have no rational reason to pay. Targeted tariffs, combined with investment subsidies, can force firms to internalize that cost. Whether tariffs are the most elegant instrument is a fair debate, but the alternative — simply waiting for markets to self-correct — has a fairly poor track record."
+    },
+    {
+      "speaker": "ELENA",
+      "text": "I accept that the market failure argument has some force. Where I push back is on the political economy. Once tariffs are in place, they are extraordinarily difficult to remove. The lobbying pressure to preserve them, and to extend them to adjacent sectors, tends to overwhelm the original strategic rationale. What begins as a precision industrial policy instrument gradually becomes straightforward protectionism. There is a long historical record on this point."
+    },
+    {
+      "speaker": "MARCUS",
+      "text": "That is a genuine concern, and I would not pretend otherwise. But I would argue the answer is institutional design, not inaction. Sunset clauses, independent review panels, transparent benchmarks for when tariffs are wound down — these are the safeguards that can prevent strategic policy from drifting into rent-seeking."
+    },
+    {
+      "speaker": "MOD",
+      "text": "So the real argument is not tariffs versus free trade but whether governments have the institutional capacity to deploy tariffs strategically without capture."
+    },
+    {
+      "speaker": "ELENA",
+      "text": "Precisely, and on that question, I remain quite sceptical. History suggests the answer is usually no."
+    },
+    {
+      "speaker": "MARCUS",
+      "text": "And I remain cautiously optimistic that we are learning from past mistakes — though I will grant that optimism requires a certain act of faith."
+    }
+  ],
+  "questions": [
+    {
+      "id": 1,
+      "question": "What does Elena imply when she argues that a tariff-protected domestic monopoly could be more fragile than a diversified global sourcing network?",
+      "options": {
+        "A": "Domestic manufacturers tend to be inherently less efficient than their foreign competitors.",
+        "B": "Geographical concentration of production is itself a source of supply-chain vulnerability.",
+        "C": "The primary purpose of supply-chain resilience is to maximise output rather than to reduce risk.",
+        "D": "International trade agreements provide stronger protection against shocks than tariff barriers do."
+      }
+    },
+    {
+      "id": 2,
+      "question": "Which statement best captures Marcus's view on market forces and supply-chain resilience?",
+      "options": {
+        "A": "Markets will eventually self-correct, making government intervention unnecessary.",
+        "B": "Firms cannot be expected to voluntarily absorb the cost of capacity that benefits society as a whole.",
+        "C": "Industrial policy is effective only when it takes the exclusive form of direct investment subsidies.",
+        "D": "Supply-chain diversification is the primary goal that any resilience policy must prioritise."
+      }
+    },
+    {
+      "id": 3,
+      "question": "What is the function of Marcus's proposal for sunset clauses, independent review panels, and transparent benchmarks?",
+      "options": {
+        "A": "To concede that tariff policy is fundamentally ineffective and should be replaced by alternative instruments.",
+        "B": "To demonstrate that investment subsidies are a superior tool to tariffs in all circumstances.",
+        "C": "To address Elena's concern that tariffs outlast their strategic purpose by arguing that governance safeguards can contain that risk.",
+        "D": "To advocate for the immediate removal of all existing tariff regimes through an internationally agreed framework."
+      }
+    }
+  ]
+}

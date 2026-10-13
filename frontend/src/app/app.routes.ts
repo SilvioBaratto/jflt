@@ -8,7 +8,7 @@ export const routes: Routes = [
       {
         path: '',
         loadComponent: () => import('./pages/home/home').then((m) => m.HomeComponent),
-        title: 'Question Bank',
+        title: 'Question bank',
       },
       {
         path: 'reading',

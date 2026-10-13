@@ -34,15 +34,31 @@
   flex: none;
 }
 
-/* The only scroll container. overscroll-behavior keeps scroll chaining and pull-to-refresh inside it. */
+/*
+ * The only scroll container. overscroll-behavior keeps scroll chaining and pull-to-refresh
+ * inside it. The shell owns every page's horizontal frame so the pages can't drift apart:
+ * it pads by the window-size-class margin, centres a single content column (every routed page
+ * is a direct child and is capped at the same width), and clips the inline axis so nothing can
+ * provoke a horizontal scrollbar. Only the block axis scrolls.
+ */
 .shell-main {
   flex: 1 1 auto;
   min-block-size: 0;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  overflow-x: hidden;
   overflow-y: auto;
   overscroll-behavior: contain;
+  padding-inline: var(--app-page-gutter);
+  padding-block: var(--app-page-pad-block-start) var(--app-page-pad-block-end);
 }
+
+/*
+ * The routed page (the single centred column) is constrained in styles.scss, not here: it is
+ * projected through the router outlet, so it carries no _ngcontent attribute of this component
+ * and an encapsulated `.shell-main > *` rule would never match it. See the "Page frame" global.
+ */
 
 /* <main> takes focus only programmatically (tabindex="-1", skip link and route changes); it is not a control. */
 .shell-main:focus {

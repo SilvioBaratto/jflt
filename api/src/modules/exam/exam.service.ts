@@ -32,7 +32,7 @@ export class ExamService {
   /** Create a session, assemble its items per mode/skill/levels/counts, and return it (keys stripped). */
   async createSession(dto: CreateSessionDto): Promise<unknown> {
     const skills = dto.skill ? [dto.skill] : (['reading', 'listening', 'writing'] as const);
-    const levels = dto.levels?.length ? dto.levels : dto.skill ? [1, 2, 3, 4] : [1, 2, 3, 4];
+    const levels = dto.levels?.length ? dto.levels : [3, 4];
     const base = DEFAULT_COUNTS[dto.mode];
     const counts = {
       reading: dto.counts?.reading ?? (skills.includes('reading') ? base.reading : 0),

@@ -75,6 +75,133 @@ html {
   transition: none !important;
 }
 
+// ── Page frame ─────────────────────────────────────────────────────────────
+// Every routed page is laid out as one centred content column of the same width
+// with the same side margins, so navigating between pages never shifts or resizes
+// that column. The shell (layout.css) reads these on its single scroll container;
+// pages never set their own max-width, gutters or horizontal scroll, so they can't
+// drift apart. Margins follow the M3 window-size-class spec: 16px at compact,
+// 24px from medium up. The column caps at a width that keeps reading passages near
+// a comfortable measure rather than stretching full-bleed on wide displays.
+:root {
+  --app-page-max: 820px;
+  --app-page-gutter: 16px;
+  --app-page-pad-block-start: 24px;
+  --app-page-pad-block-end: 48px;
+}
+
+@media (min-width: 600px) {
+  :root {
+    --app-page-gutter: 24px;
+  }
+}
+
+// The routed page is a direct child of the shell's scroll container (.shell-main) but is
+// projected through the router outlet, so it has no component encapsulation attribute and must
+// be constrained from global scope rather than from layout.css. Every page becomes the same
+// centred column: 100% of the available width, capped at the shared max, and allowed to shrink
+// below its content's intrinsic width so a long unbreakable token can't force a horizontal scroll.
+.shell-main > :not(router-outlet) {
+  inline-size: 100%;
+  max-inline-size: var(--app-page-max, 820px);
+  min-inline-size: 0;
+}
+
+// A reading/listening answer option can be a whole sentence. mat-radio-button owns the
+// `.mdc-form-field`/`.mdc-label` elements in its own encapsulated view, so the session page
+// can't reach them from its stylesheet: let the label wrap and align the control to its first
+// line from global scope instead. Scoped to `.opts`, the only place the session renders radios.
+.opts .mdc-form-field {
+  align-items: flex-start;
+}
+
+.opts .mdc-label {
+  white-space: normal;
+  overflow-wrap: anywhere;
+  padding-block: 10px;
+}
+
+// Markdown rendered from model-generated text (session passages, instructions, prompts, model
+// answers) via the `markdown` pipe + [innerHTML]. Those child nodes carry no component
+// encapsulation attribute, so they are styled from global scope. Body copy is justified and
+// hyphenated and fills the full card width (no measure cap), per request; a stray long token
+// still breaks instead of forcing a horizontal scroll.
+.md {
+  text-align: justify;
+  hyphens: auto;
+  line-height: 1.6;
+  overflow-wrap: anywhere;
+}
+
+.md > :first-child {
+  margin-block-start: 0;
+}
+
+.md > :last-child {
+  margin-block-end: 0;
+}
+
+.md p {
+  margin-block: 0 0.75em;
+}
+
+.md ul,
+.md ol {
+  margin-block: 0 0.75em;
+  padding-inline-start: 1.5em;
+}
+
+.md li {
+  margin-block: 0.2em 0;
+}
+
+// Headings and preformatted blocks read left-aligned even inside justified copy.
+.md h1,
+.md h2,
+.md h3,
+.md h4 {
+  margin-block: 1em 0.4em;
+  font: var(--mat-sys-title-medium);
+  letter-spacing: var(--mat-sys-title-medium-tracking);
+  text-align: start;
+}
+
+.md strong {
+  font-weight: 600;
+}
+
+.md a {
+  color: var(--mat-sys-primary);
+}
+
+.md code {
+  font-family: ui-monospace, monospace;
+  font-size: 0.9em;
+  background: var(--mat-sys-surface-container-high);
+  padding: 0.1em 0.3em;
+  border-radius: 4px;
+}
+
+.md pre {
+  white-space: pre-wrap;
+  text-align: start;
+  background: var(--mat-sys-surface-container-high);
+  padding: 0.75rem;
+  border-radius: 8px;
+}
+
+.md pre code {
+  padding: 0;
+  background: none;
+}
+
+.md blockquote {
+  margin-inline: 0;
+  padding-inline-start: 1em;
+  border-inline-start: 3px solid var(--mat-sys-outline-variant);
+  color: var(--mat-sys-on-surface-variant);
+}
+
 // ── Base ─────────────────────────────────────────────────────────────────────
 
 html,

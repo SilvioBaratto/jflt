@@ -1,0 +1,92 @@
+{
+  "id": "listening-02",
+  "level": "C1",
+  "stanag_level": 3,
+  "topic": "Whether economic sanctions actually change state behaviour",
+  "conversation_type": "panel discussion with a host and two analysts",
+  "setting": "A public-affairs radio programme in which a host moderates a professional debate between two international-relations analysts with opposing assessments of sanctions policy.",
+  "voices": {
+    "HOST": "alloy",
+    "PROF_CARTER": "onyx",
+    "DR_REYES": "nova"
+  },
+  "speakers": [
+    { "id": "HOST", "role": "programme host and moderator", "voice": "alloy" },
+    { "id": "PROF_CARTER", "role": "analyst sceptical of sanctions effectiveness", "voice": "onyx" },
+    { "id": "DR_REYES", "role": "analyst who argues for conditional sanctions effectiveness", "voice": "nova" }
+  ],
+  "lines": [
+    {
+      "speaker": "HOST",
+      "text": "Welcome to Global Affairs Today. I'm joined by two experts to discuss one of the most contested tools in international diplomacy: economic sanctions. The core question is simple — do they actually work? Professor Carter, let me start with you. Do sanctions change state behaviour?"
+    },
+    {
+      "speaker": "PROF_CARTER",
+      "text": "Well, that depends on what you mean by work. If the goal is to signal displeasure or satisfy a domestic audience, then yes, arguably they serve a purpose. But if we're asking whether sanctions compel a targeted government to fundamentally alter its foreign policy — the evidence is, frankly, quite sobering. A comprehensive review of sanction episodes over the past four decades suggests a success rate somewhere between fifteen and thirty per cent, and even those figures are contested."
+    },
+    {
+      "speaker": "HOST",
+      "text": "Dr. Reyes, would you take a different view?"
+    },
+    {
+      "speaker": "DR_REYES",
+      "text": "I would push back on that framing, actually. The question isn't whether sanctions work in the abstract — it's whether they work under the right conditions. The Iran nuclear deal is a case in point. Multilateral, comprehensive financial pressure, coordinated with credible diplomatic incentives, did bring Tehran to the table. That is a meaningful outcome."
+    },
+    {
+      "speaker": "PROF_CARTER",
+      "text": "To be fair, Iran is something of an outlier. And one could argue the deal has since unravelled, which rather reinforces my point. Sanctions impose enormous costs on civilian populations without necessarily shifting the calculus of authoritarian elites, who are often insulated from the economic fallout."
+    },
+    {
+      "speaker": "DR_REYES",
+      "text": "That's a legitimate concern, and I won't dismiss it. But I think we need to distinguish between unilateral sanctions — which, you're right, tend to be far less effective — and coordinated multilateral regimes backed by the international financial system. The South Africa case demonstrated that broad coalitions can alter a state's cost-benefit analysis in ways that isolated measures simply cannot."
+    },
+    {
+      "speaker": "HOST",
+      "text": "So are we ultimately saying that the design and the coalition matter more than the instrument itself?"
+    },
+    {
+      "speaker": "PROF_CARTER",
+      "text": "That would be my reading, yes. Sanctions are at best a slow-burn tool of attrition, not a precision instrument. The assumption that economic pain translates neatly into political concession has never been well supported by the data."
+    },
+    {
+      "speaker": "DR_REYES",
+      "text": "I'd agree that design is critical. But I'd stop short of writing them off entirely. Under the right circumstances — a vulnerable economy, a unified coalition, a clear and achievable demand — they remain a viable component of the diplomatic toolkit."
+    },
+    {
+      "speaker": "HOST",
+      "text": "A cautious consensus, then, with significant caveats on both sides. Thank you both."
+    }
+  ],
+  "questions": [
+    {
+      "id": 1,
+      "question": "According to Professor Carter, what is the main reason economic sanctions typically fail to compel changes in state behaviour?",
+      "options": {
+        "A": "Sanctions are rarely comprehensive enough to affect the broader national economy.",
+        "B": "Authoritarian leaders are generally shielded from the economic hardship that sanctions create.",
+        "C": "Their principal value lies in signalling disapproval rather than in changing government policy.",
+        "D": "They can only succeed when accompanied by credible military threats."
+      }
+    },
+    {
+      "id": 2,
+      "question": "What key distinction does Dr. Reyes draw when assessing the effectiveness of sanctions?",
+      "options": {
+        "A": "Sanctions are more effective when they target individual leaders rather than the whole economy.",
+        "B": "Coordinated multilateral sanctions regimes are significantly more effective than unilateral measures.",
+        "C": "Sanctions succeed primarily against democratic governments, not authoritarian ones.",
+        "D": "The speed with which sanctions are imposed determines whether they will achieve their objective."
+      }
+    },
+    {
+      "id": 3,
+      "question": "Why does Professor Carter refer to the Iran nuclear deal having unravelled?",
+      "options": {
+        "A": "To suggest that the sanctions failed because they did not damage Iran's economy sufficiently.",
+        "B": "To acknowledge that multilateral pressure can produce short-term results under favourable conditions.",
+        "C": "To undermine Dr. Reyes's example by implying that even apparent successes lack durability.",
+        "D": "To argue that diplomatic follow-through was inadequate once the sanctions were lifted."
+      }
+    }
+  ]
+}

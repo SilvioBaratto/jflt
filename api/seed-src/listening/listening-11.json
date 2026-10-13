@@ -1,0 +1,90 @@
+{
+  "id": "listening-11",
+  "level": "C1",
+  "stanag_level": 3,
+  "topic": "The energy transition and the security of electricity supply",
+  "conversation_type": "interview with an energy analyst",
+  "setting": "A broadcast interview recorded for a current-affairs radio programme, with an analytical but accessible register and measured, conversational pacing.",
+  "voices": {
+    "HOST": "nova",
+    "DR_MARSH": "onyx"
+  },
+  "speakers": [
+    { "id": "HOST", "role": "radio interviewer", "voice": "nova" },
+    { "id": "DR_MARSH", "role": "independent energy analyst", "voice": "onyx" }
+  ],
+  "lines": [
+    {
+      "speaker": "HOST",
+      "text": "Joining me now is Dr. Elena Marsh, an independent energy analyst who has spent the past decade advising governments on power sector reform. Dr. Marsh, Europe is pushing aggressively to expand wind and solar capacity. That seems unambiguously good news, doesn't it?"
+    },
+    {
+      "speaker": "DR_MARSH",
+      "text": "Well, I wouldn't say unambiguously. The direction of travel is right — we do need to decarbonise the electricity system, and quickly. But I think we're running the risk of conflating speed with effectiveness. The question isn't whether to expand renewables; it's whether we're building the complementary infrastructure fast enough to keep the lights on when the wind doesn't blow or the sun doesn't shine."
+    },
+    {
+      "speaker": "HOST",
+      "text": "But isn't that precisely the argument fossil fuel companies have been making for years to delay action? Critics would say the technology is there — we just need the political will to deploy it."
+    },
+    {
+      "speaker": "DR_MARSH",
+      "text": "With respect, that's a false dichotomy. Pointing out a genuine engineering challenge is not the same as defending the status quo. What concerns me is that several European countries have been retiring dispatchable capacity — gas plants, even some nuclear — faster than firm alternatives have been brought online. That creates windows of vulnerability, particularly during winter demand peaks."
+    },
+    {
+      "speaker": "HOST",
+      "text": "Surely battery storage is closing that gap fairly rapidly."
+    },
+    {
+      "speaker": "DR_MARSH",
+      "text": "It's improving, yes — the cost curve has been remarkable. But current grid-scale battery installations can typically discharge for four to six hours. When we're talking about a cold, still, overcast week in January — what the industry calls a dark doldrums event — you need multi-day or even multi-week storage capacity. That's a fundamentally different engineering problem, and we're nowhere near solving it at the required scale."
+    },
+    {
+      "speaker": "HOST",
+      "text": "So what's the answer? Are you saying we should slow down?"
+    },
+    {
+      "speaker": "DR_MARSH",
+      "text": "No, I'm not saying slow down. I'm saying we need to sequence this more intelligently. Invest in demand flexibility — smart tariffs, industrial load-shifting — so that consumption can adapt to supply rather than the other way round. And we need to be honest that some firm low-carbon capacity, whether that's pumped hydro, hydrogen-fired turbines, or next-generation nuclear, must be part of the mix during the transition. The goal is a resilient low-carbon system, not just a low-carbon one."
+    },
+    {
+      "speaker": "HOST",
+      "text": "That's a distinction that might be uncomfortable for some in the green movement."
+    },
+    {
+      "speaker": "DR_MARSH",
+      "text": "Possibly. But the credibility of the whole energy transition depends on the lights staying on. If we experience a major supply failure attributable to intermittency, the political backlash could set things back by a decade. And that outcome would serve nobody — least of all the climate."
+    }
+  ],
+  "questions": [
+    {
+      "id": 1,
+      "question": "What does the analyst imply is the fundamental flaw in how European governments are currently managing the energy transition?",
+      "options": {
+        "A": "They are resisting renewable energy expansion under pressure from the fossil fuel industry.",
+        "B": "The pace of decarbonisation has been prioritised over the resilience of the electricity grid.",
+        "C": "Solar and wind technology is not yet mature enough for the scale of deployment being attempted.",
+        "D": "Political leaders lack the technical knowledge needed to understand grid management challenges."
+      }
+    },
+    {
+      "id": 2,
+      "question": "When the analyst states 'The goal is a resilient low-carbon system, not just a low-carbon one,' what is the primary function of this remark?",
+      "options": {
+        "A": "To argue that intermittent renewable sources cannot on their own form the basis of a reliable electricity system.",
+        "B": "To signal agreement with critics who believe the energy transition is moving too fast.",
+        "C": "To clarify that her concerns about pacing do not reflect opposition to decarbonisation.",
+        "D": "To suggest that nuclear power should be the dominant technology in a future low-carbon grid."
+      }
+    },
+    {
+      "id": 3,
+      "question": "What concern does the analyst raise about the possible consequences of a large-scale power outage caused by intermittency?",
+      "options": {
+        "A": "Grid operators would be legally required to restart retired fossil-fuel plants immediately.",
+        "B": "Public trust in battery storage technology would collapse, halting investment in that sector.",
+        "C": "A political reaction against renewable energy could significantly delay the decarbonisation agenda.",
+        "D": "European governments would face sanctions from international climate bodies for failing to maintain supply security."
+      }
+    }
+  ]
+}

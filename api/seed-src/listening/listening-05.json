@@ -1,0 +1,82 @@
+{
+  "id": "listening-05",
+  "level": "C1",
+  "stanag_level": 3,
+  "topic": "Why headline and core inflation figures tell different stories",
+  "conversation_type": "business-news interview with an economist",
+  "setting": "A live radio programme, Market Briefing, recorded on the morning of a major CPI data release; the tone is analytical and brisk, with the host pressing the guest on the policy implications of the diverging figures.",
+  "voices": {
+    "HOST": "nova",
+    "ECONOMIST": "onyx"
+  },
+  "speakers": [
+    { "id": "HOST", "role": "business news anchor", "voice": "nova" },
+    { "id": "ECONOMIST", "role": "macroeconomist and policy analyst", "voice": "onyx" }
+  ],
+  "lines": [
+    {
+      "speaker": "HOST",
+      "text": "Welcome back to Market Briefing. Inflation figures released this morning show headline CPI has fallen to three point two per cent, yet core inflation remains stuck at four point six. Why the gap, and which number should we actually be trusting?"
+    },
+    {
+      "speaker": "ECONOMIST",
+      "text": "Well, that is the central tension right now, and it is not a new one. Headline CPI captures everything — food at the supermarket, petrol at the pump, energy bills — which makes it very visible to households. Core strips those out because food and energy prices move on global commodity cycles and seasonal factors that monetary policy simply cannot address in the short run. So when a central bank is calibrating interest rates, core gives a cleaner signal about domestic demand pressures."
+    },
+    {
+      "speaker": "HOST",
+      "text": "But is that not a convenient distinction? Because for the majority of working families, food and energy are not optional extras that you can strip out of your weekly budget. Surely the gap between the two figures is doing real damage to public trust in official statistics."
+    },
+    {
+      "speaker": "ECONOMIST",
+      "text": "I take that point, and I think it is a legitimate criticism of how we communicate these measures — not of the measures themselves. The Fed, the ECB, all the major central banks are quite transparent about why they focus on core. The problem is that the gap we are seeing right now — over one and a half percentage points — is unusually wide, and that is largely because energy prices have fallen sharply since last year's peak. So headline has dropped faster than underlying demand pressures have actually eased."
+    },
+    {
+      "speaker": "HOST",
+      "text": "Which implies that core is telling a more cautious story than the headline figure would suggest?"
+    },
+    {
+      "speaker": "ECONOMIST",
+      "text": "Precisely. And that matters enormously for rate expectations. Markets saw this morning's headline print and immediately priced in two rate cuts by year end. I think that is premature. Core is telling you that services inflation, wages, domestic demand — the things a central bank can actually influence — are still running well above target."
+    },
+    {
+      "speaker": "HOST",
+      "text": "So you are pushing back against the market consensus?"
+    },
+    {
+      "speaker": "ECONOMIST",
+      "text": "I am, yes. Not because markets are irrational, but because they are, I think, over-weighting a single data point. The trend in core needs to be sustained for at least two or three more months before you can confidently say that the tightening cycle is over."
+    }
+  ],
+  "questions": [
+    {
+      "id": 1,
+      "question": "What does the economist imply about the market reaction to this morning's inflation data?",
+      "options": {
+        "A": "Markets have correctly concluded that the central bank's tightening cycle has run its course.",
+        "B": "Markets are drawing a policy conclusion that the available data does not yet support.",
+        "C": "Markets are failing to recognise that energy prices have fallen since last year's peak.",
+        "D": "Markets should place greater weight on headline inflation than on core when forecasting rate decisions."
+      }
+    },
+    {
+      "id": 2,
+      "question": "How does the host regard the practice of excluding food and energy from the official inflation measure?",
+      "options": {
+        "A": "She considers it methodologically sound but poorly explained to the general public.",
+        "B": "She accepts it as the most reliable basis for central bank policy decisions.",
+        "C": "She implies it may serve the convenience of policymakers rather than reflecting the lived reality of most households.",
+        "D": "She agrees with the economist's reasoning but argues it is being applied at the wrong moment in the cycle."
+      }
+    },
+    {
+      "id": 3,
+      "question": "When the economist concedes that the host's criticism is legitimate but directs it at communication rather than at the measure itself, what is he primarily doing?",
+      "options": {
+        "A": "Admitting that core inflation is a structurally flawed measure that central banks should revise.",
+        "B": "Acknowledging a valid concern about public transparency while defending the analytical rationale for core inflation.",
+        "C": "Suggesting that central banks have been deliberately withholding information from markets and households.",
+        "D": "Conceding that headline inflation is ultimately the more appropriate guide for interest rate decisions."
+      }
+    }
+  ]
+}

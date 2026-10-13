@@ -1,9 +1,13 @@
 import {
   Component,
   ChangeDetectionStrategy,
+  ElementRef,
+  Injector,
   OnInit,
+  afterNextRender,
   inject,
   signal,
+  viewChild,
   DestroyRef,
 } from '@angular/core';
 import { ActivatedRoute, RouterLink } from '@angular/router';
@@ -15,6 +19,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { environment } from '../../../environments/environment';
+import { MarkdownPipe } from '../../shared/markdown.pipe';
 import { ExamService } from '../../services/exam';
 import {
   Session,
@@ -37,6 +42,7 @@ import {
     MatFormFieldModule,
     MatInputModule,
     MatProgressSpinnerModule,
+    MarkdownPipe,
   ],
   templateUrl: './session.html',
   styleUrl: './session.css',
@@ -46,6 +52,9 @@ export class SessionComponent implements OnInit {
   private readonly route = inject(ActivatedRoute);
   private readonly examApi = inject(ExamService);
   private readonly destroyRef = inject(DestroyRef);
+  private readonly injector = inject(Injector);
+
+  private readonly resultsHeading = viewChild<ElementRef<HTMLElement>>('resultsHeading');
 
   readonly session = signal<Session | null>(null);
   readonly loading = signal(true);
@@ -182,7 +191,11 @@ export class SessionComponent implements OnInit {
         next: (res) => {
           this.finalResult.set(res);
           this.finishing.set(false);
-          window.scrollTo({ top: 0, behavior: 'smooth' });
+          // <main> is the shell's scroll container, not the window, so move focus to the result
+          // heading: that scrolls it into view here and announces the outcome to a screen reader.
+          afterNextRender(() => this.resultsHeading()?.nativeElement.focus(), {
+            injector: this.injector,
+          });
         },
         error: () => this.finishing.set(false),
       });

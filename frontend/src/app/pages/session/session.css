@@ -1,11 +1,5 @@
 :host {
   display: block;
-  padding: 1.5rem 1rem 4rem;
-}
-
-.session {
-  max-width: 820px;
-  margin: 0 auto;
 }
 
 .center {
@@ -50,8 +44,6 @@
 }
 
 .passage {
-  white-space: pre-wrap;
-  line-height: 1.6;
   color: var(--mat-sys-on-surface);
 }
 
@@ -67,6 +59,10 @@
   gap: 0.25rem;
   margin-bottom: 0.5rem;
 }
+
+/* The radio label wraps for a full-sentence option, aligned to its first line — but the rule
+   has to live in styles.scss: `.mdc-form-field`/`.mdc-label` belong to mat-radio-button's own
+   view, so an encapsulated rule here would never reach them. */
 
 .q {
   border-top: 1px solid var(--mat-sys-outline-variant);
@@ -104,24 +100,38 @@
 }
 
 .instr {
-  white-space: pre-wrap;
   color: var(--mat-sys-on-surface);
 }
 
 .levels {
   display: flex;
-  gap: 0.4rem;
+  flex-wrap: wrap;
+  /* 8px keeps adjacent targets from overlapping; wrap stops the row forcing a horizontal scroll. */
+  gap: 8px;
   margin: 0.5rem 0;
 }
 
 .level {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-block-size: 40px;
+  min-inline-size: 48px;
   border: 1px solid var(--mat-sys-outline);
   background: transparent;
   color: var(--mat-sys-on-surface);
-  border-radius: 999px;
-  padding: 0.2rem 0.8rem;
+  border-radius: var(--mat-sys-corner-full);
+  padding: 0.4rem 1rem;
   cursor: pointer;
-  font: inherit;
+  font: var(--mat-sys-label-large);
+  letter-spacing: var(--mat-sys-label-large-tracking);
+}
+
+/* Same ring as every other control: outside the pill, with a gap, in the focus-indicator color. */
+.level:focus-visible {
+  outline: var(--mat-focus-indicator-border-width, 3px) solid
+    var(--mat-focus-indicator-border-color, var(--mat-sys-secondary));
+  outline-offset: 2px;
 }
 
 .level.on {
@@ -159,11 +169,9 @@
 }
 
 .model {
-  white-space: pre-wrap;
   background: var(--mat-sys-surface-container-high);
   padding: 0.75rem;
   border-radius: 8px;
-  font: var(--mat-sys-body-medium);
 }
 
 .finish-bar {
@@ -172,8 +180,16 @@
   justify-content: center;
 }
 
-.results h2 {
+.results h1 {
   margin-top: 0;
+  font: var(--mat-sys-headline-medium);
+  color: var(--mat-sys-on-surface);
+}
+
+/* Focused in code after the session completes to move the reader to the result; it is a heading,
+   not a control, so it shows no focus ring. */
+.results h1:focus {
+  outline: none;
 }
 
 .results .line {

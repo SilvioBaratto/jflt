@@ -1,0 +1,90 @@
+{
+  "id": "listening-01",
+  "level": "C1",
+  "stanag_level": 3,
+  "topic": "NATO burden-sharing and the credibility of extended deterrence",
+  "conversation_type": "radio current-affairs interview",
+  "setting": "A prime-time radio current-affairs programme in which the host interviews a Brussels-based defence policy analyst on whether NATO spending targets are the right measure of allied commitment.",
+  "voices": {
+    "HOST": "nova",
+    "ANALYST": "onyx"
+  },
+  "speakers": [
+    { "id": "HOST", "role": "Radio journalist and interviewer", "voice": "nova" },
+    { "id": "ANALYST", "role": "Defence policy analyst", "voice": "onyx" }
+  ],
+  "lines": [
+    {
+      "speaker": "HOST",
+      "text": "Good evening. NATO's two per cent spending target was once a vague aspiration; today it is a genuine flashpoint. Joining me is defence analyst Dr. Elena Voss, recently back from Brussels. Dr. Voss, is the burden-sharing debate really about money, or is it about something deeper?"
+    },
+    {
+      "speaker": "ANALYST",
+      "text": "Thank you. It is both, in a sense, though I would argue that money is the more visible symptom of a deeper strategic ambivalence. Several European allies have technically met the two per cent threshold, yet their contributions to collective defence remain patchy. You can spend two per cent of GDP and still fail to field deployable, interoperable forces. So the metric itself is rather blunt."
+    },
+    {
+      "speaker": "HOST",
+      "text": "But surely, if allies persistently fall short of the baseline, that signals a lack of political commitment. Washington has made clear that it regards chronic under-spending as free-riding. Is that not a legitimate grievance?"
+    },
+    {
+      "speaker": "ANALYST",
+      "text": "It is a legitimate grievance, up to a point. The problem is that burden-sharing arguments tend to reduce a complex alliance to a simple ledger. Extended deterrence, particularly the nuclear guarantee, depends not just on spending levels but on credible signalling, on forward posture, on the quality of political consultation. If the United States conveys to adversaries that its commitment is contingent on a budget figure, it may inadvertently erode the very deterrent it is trying to uphold."
+    },
+    {
+      "speaker": "HOST",
+      "text": "That is a striking point. You are saying that the rhetoric of conditionality can itself become destabilising."
+    },
+    {
+      "speaker": "ANALYST",
+      "text": "Precisely. Adversaries read American statements very carefully. Any suggestion that the Article Five guarantee is transactional rather than unconditional gives those adversaries an opening to question NATO's cohesion. And that is damaging regardless of what European defence ministries actually spend."
+    },
+    {
+      "speaker": "HOST",
+      "text": "Yet some analysts argue the opposite — that tougher conditionality would sharpen European resolve. If allies knew the guarantee was not automatic, might they not invest more seriously in their own defence?"
+    },
+    {
+      "speaker": "ANALYST",
+      "text": "I understand the logic, and I concede it has a certain internal coherence. But the historical evidence is mixed. The countries that have significantly raised their defence budgets have generally done so in response to a proximate threat, not to American pressure. Estonia, Poland, Finland — they spend because they feel directly exposed, not because Washington threatened to walk away. There is a real risk that conditionality will harden European scepticism about American reliability without producing the strategic depth NATO actually needs."
+    },
+    {
+      "speaker": "HOST",
+      "text": "So your argument is that the alliance needs better metrics rather than louder warnings."
+    },
+    {
+      "speaker": "ANALYST",
+      "text": "Exactly. Assess allies on capability and readiness — on whether they can actually field and sustain forces — not simply on what share of GDP passes through the defence budget. That is where the credibility of extended deterrence is genuinely built or lost."
+    }
+  ],
+  "questions": [
+    {
+      "id": 1,
+      "question": "What is the analyst's central concern about using spending targets as the primary measure of allied commitment?",
+      "options": {
+        "A": "European allies have consistently refused to meet even the minimum two per cent target, putting collective defence at serious risk.",
+        "B": "Framing the Article Five guarantee as conditional on budget levels may signal to adversaries that NATO's cohesion is negotiable.",
+        "C": "The two per cent threshold is set too low to fund a credible conventional deterrent against modern threats.",
+        "D": "NATO allies prefer to contribute to collective defence through non-financial means such as intelligence sharing."
+      }
+    },
+    {
+      "id": 2,
+      "question": "When the analyst concedes that the conditionality argument 'has a certain internal coherence,' what is the primary function of this concession in the discussion?",
+      "options": {
+        "A": "To signal a change of position and indicate growing support for stricter conditionality.",
+        "B": "To acknowledge the opposing argument's logical appeal before introducing contradictory historical evidence.",
+        "C": "To suggest that both sides of the debate are equally well supported by the available facts.",
+        "D": "To imply that analysts who favour conditionality are ignoring the lessons of recent history."
+      }
+    },
+    {
+      "id": 3,
+      "question": "What does the analyst imply by citing Estonia, Poland, and Finland as countries that have significantly raised their defence spending?",
+      "options": {
+        "A": "Sustained American diplomatic pressure is the most reliable way to persuade NATO members to increase their budgets.",
+        "B": "Smaller alliance members are inherently more committed to collective defence than larger NATO nations.",
+        "C": "Direct exposure to a perceived proximate threat, rather than alliance pressure, is the primary driver of serious defence investment.",
+        "D": "Countries that meet the two per cent target automatically develop deployable and interoperable military forces."
+      }
+    }
+  ]
+}

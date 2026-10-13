@@ -18,8 +18,10 @@ import { CreateSessionBody } from '../../models/exam';
   imports: [MatProgressSpinnerModule],
   template: `
     <div class="launch">
-      <mat-spinner diameter="40" />
-      <p>{{ label() }}</p>
+      @if (!failed()) {
+        <mat-spinner diameter="40" />
+      }
+      <p aria-live="polite">{{ label() }}</p>
     </div>
   `,
   styles: `
@@ -40,6 +42,7 @@ export class LaunchComponent implements OnInit {
   private readonly destroyRef = inject(DestroyRef);
 
   readonly label = signal('Starting…');
+  readonly failed = signal(false);
 
   ngOnInit(): void {
     const data = this.route.snapshot.data as {
@@ -54,7 +57,10 @@ export class LaunchComponent implements OnInit {
       .pipe(takeUntilDestroyed(this.destroyRef))
       .subscribe({
         next: (s) => this.router.navigate(['/session', s.id], { replaceUrl: true }),
-        error: () => this.label.set('Could not start. Please go back and try again.'),
+        error: () => {
+          this.failed.set(true);
+          this.label.set("Couldn't start. Go back and try again.");
+        },
       });
   }
 }

@@ -4,15 +4,15 @@
   <div class="session">
     @if (finalResult(); as fr) {
       <mat-card class="results" appearance="outlined">
-        <h2>Session results</h2>
+        <h1 #resultsHeading tabindex="-1">Session results</h1>
         @if (fr.reading) {
-          <p class="line">Reading — {{ fr.reading.correct }}/{{ fr.reading.total }} ({{ fr.reading.pct }}%) · est. level {{ fr.reading.estimatedLevel }}</p>
+          <p class="line">Reading — {{ fr.reading.correct }}/{{ fr.reading.total }} ({{ fr.reading.pct }}%) · estimated level {{ fr.reading.estimatedLevel }}</p>
         }
         @if (fr.listening) {
-          <p class="line">Listening — {{ fr.listening.correct }}/{{ fr.listening.total }} ({{ fr.listening.pct }}%) · est. level {{ fr.listening.estimatedLevel }}</p>
+          <p class="line">Listening — {{ fr.listening.correct }}/{{ fr.listening.total }} ({{ fr.listening.pct }}%) · estimated level {{ fr.listening.estimatedLevel }}</p>
         }
         @if (fr.writing) {
-          <p class="line">Writing — avg {{ fr.writing.avgScore }}/4 · est. level {{ fr.writing.estimatedLevel }}</p>
+          <p class="line">Writing — avg {{ fr.writing.avgScore }}/4 · estimated level {{ fr.writing.estimatedLevel }}</p>
         }
         <a routerLink="/" matButton="filled">Back to home</a>
       </mat-card>
@@ -27,7 +27,7 @@
         @for (item of s.items.reading; track item.id) {
           <mat-card class="item" appearance="outlined">
             <div class="meta">L{{ item.level }} · {{ item.topic }}</div>
-            <p class="passage">{{ item.passage }}</p>
+            <div class="passage md" [innerHTML]="item.passage | markdown"></div>
             <p class="question">{{ item.question }}</p>
             <mat-radio-group
               class="opts"
@@ -101,17 +101,23 @@
           <mat-card class="item" appearance="outlined">
             <div class="meta">L{{ task.stanagLevel }} · {{ task.wordCountMin }}–{{ task.wordCountMax }} words</div>
             <h3>{{ task.title }}</h3>
-            <p class="instr">{{ task.instructions }}</p>
+            <div class="instr md" [innerHTML]="task.instructions | markdown"></div>
             @if (task.options.length > 1) {
-              <div class="levels">
+              <div class="levels" role="group" aria-label="Choose a prompt option">
                 @for (o of task.options; track o.key) {
-                  <button type="button" class="level" [class.on]="writingOption()[task.id] === o.key" (click)="pickWritingOption(task.id, o.key)">
+                  <button
+                    type="button"
+                    class="level"
+                    [class.on]="writingOption()[task.id] === o.key"
+                    [attr.aria-pressed]="writingOption()[task.id] === o.key"
+                    (click)="pickWritingOption(task.id, o.key)"
+                  >
                     {{ o.key }}
                   </button>
                 }
               </div>
               @for (o of task.options; track o.key) {
-                @if (writingOption()[task.id] === o.key) { <p class="prompt">{{ o.prompt }}</p> }
+                @if (writingOption()[task.id] === o.key) { <div class="prompt md" [innerHTML]="o.prompt | markdown"></div> }
               }
             }
             <mat-form-field appearance="outline" class="full">
@@ -126,7 +132,7 @@
             </mat-form-field>
             <div class="wc">{{ wordCount(writingText()[task.id]) }} words</div>
             @if (!writingResult()[task.id]) {
-              <button matButton="filled" (click)="submitWriting(task)" [disabled]="grading()[task.id] || !writingText()[task.id]">
+              <button matButton="tonal" (click)="submitWriting(task)" [disabled]="grading()[task.id] || !writingText()[task.id]">
                 @if (grading()[task.id]) { <mat-spinner diameter="18" /> Grading… } @else { Submit for grading }
               </button>
             }
@@ -141,7 +147,7 @@
                 @if (wr.grade.strengths.length) { <p><strong>Strengths:</strong> {{ wr.grade.strengths.join('; ') }}</p> }
                 @if (wr.grade.improvements.length) { <p><strong>Improve:</strong> {{ wr.grade.improvements.join('; ') }}</p> }
                 @if (wr.modelAnswer) {
-                  <details><summary>Model answer</summary><pre class="model">{{ wr.modelAnswer }}</pre></details>
+                  <details><summary>Model answer</summary><div class="model md" [innerHTML]="wr.modelAnswer | markdown"></div></details>
                 }
               </div>
             }
@@ -151,7 +157,7 @@
 
       <div class="finish-bar">
         <button matButton="filled" (click)="finish()" [disabled]="finishing()">
-          @if (finishing()) { <mat-spinner diameter="18" /> } @else { Finish & see results }
+          @if (finishing()) { <mat-spinner diameter="18" /> } @else { Finish and see results }
         </button>
       </div>
     }
