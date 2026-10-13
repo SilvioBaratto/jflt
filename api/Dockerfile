@@ -50,6 +50,7 @@ RUN npm ci --omit=dev --ignore-scripts
 COPY --from=builder /app/generated ./generated
 COPY --from=builder /app/prisma ./prisma
 COPY --from=builder /app/dist ./dist
+COPY --from=builder /app/static ./static
 
 # Copy entrypoint script. Strip any CR (defends against a CRLF checkout on
 # Windows) and make it executable so the shebang resolves inside the container.

@@ -2,6 +2,8 @@
  * Seed the database from prisma/seed-data.json (built by scripts/build-seed-data.py).
  *
  * Idempotent: clears existing seed-sourced content first, so it is safe to re-run.
+ * With SEED_IF_EMPTY=1 it exits untouched when the bank already has reading items, so container
+ * restarts never wipe seeded rows that exam answers reference.
  * Run with `npm run seed` from api/ (DATABASE_URL comes from the root .env).
  */
 import { config } from 'dotenv';
@@ -17,6 +19,10 @@ const prisma = new PrismaClient({
 });
 
 async function main(): Promise<void> {
+  if (process.env.SEED_IF_EMPTY === '1' && (await prisma.readingItem.count()) > 0) {
+    console.log('Content bank already seeded; skipping.');
+    return;
+  }
   const file = join(process.cwd(), 'prisma', 'seed-data.json');
   const data = JSON.parse(readFileSync(file, 'utf8'));
 

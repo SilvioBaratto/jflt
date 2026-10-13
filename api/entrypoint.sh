@@ -20,6 +20,12 @@ echo "Running database migrations..."
 npx prisma migrate deploy
 echo "Migrations completed!"
 
+# tsx is a devDependency, so this only runs in the dev image.
+if [ -x node_modules/.bin/tsx ]; then
+    echo "Seeding content bank if empty..."
+    SEED_IF_EMPTY=1 npm run seed
+fi
+
 echo "Setup complete! Starting application..."
 
 # Execute the main command
