@@ -2,6 +2,7 @@ services:
   # PostgreSQL Database
   db:
     image: postgres:16-alpine
+    restart: unless-stopped
     environment:
       POSTGRES_DB: app_db
       POSTGRES_USER: postgres
@@ -21,6 +22,7 @@ services:
   # Redis (BullMQ queue backend)
   redis:
     image: redis:7-alpine
+    restart: unless-stopped
     ports:
       - "${REDIS_HOST_PORT:-6379}:6379"
     healthcheck:
@@ -37,6 +39,7 @@ services:
       context: ./api
       dockerfile: Dockerfile
       target: dev
+    restart: unless-stopped
     depends_on:
       db:
         condition: service_healthy
@@ -78,6 +81,7 @@ services:
     build:
       context: ./frontend
       dockerfile: Dockerfile
+    restart: unless-stopped
     depends_on:
       api:
         condition: service_healthy
