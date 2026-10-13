@@ -46,13 +46,14 @@ export interface RailActionsSheet {
  * Single source of truth for primary navigation. The compact navigation bar and
  * the medium-and-up navigation rail render the same destinations, so the two
  * surfaces cannot drift out of sync. M3 navigation bars hold 3–5 destinations.
- * Every page routed under the shell is listed here, except the /components catalog,
- * which is a developer reference rather than a primary view.
+ * Five is the maximum, so the question bank (`/`) is not a destination here: the brand link
+ * in the rail header and the compact top app bar leads back to it. The /components catalog is
+ * a developer reference rather than a primary view.
  */
 export const NAV_ITEMS: NavItem[] = [
   { name: 'Reading', route: '/reading', icon: 'BookOpen' },
   { name: 'Listening', route: '/listening', icon: 'Headphones' },
   { name: 'Writing', route: '/writing', icon: 'Pencil' },
   { name: 'Full', route: '/full', icon: 'Layers' },
-  { name: 'Start Exam', route: '/exam', icon: 'GraduationCap' },
+  { name: 'Start exam', route: '/exam', icon: 'GraduationCap' },
 ];

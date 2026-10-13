@@ -17,7 +17,7 @@ import { takeUntilDestroyed, toSignal } from '@angular/core/rxjs-interop';
 import { MatBottomSheet, MatBottomSheetRef } from '@angular/material/bottom-sheet';
 import { MatSidenav, MatSidenavContainer, MatSidenavContent } from '@angular/material/sidenav';
 import { Title } from '@angular/platform-browser';
-import { NavigationEnd, NavigationStart, Router, RouterLink, RouterOutlet, TitleStrategy } from '@angular/router';
+import { NavigationEnd, NavigationStart, Router, RouterLink, RouterLinkActive, RouterOutlet, TitleStrategy } from '@angular/router';
 import { filter, map } from 'rxjs/operators';
 
 import { WindowSizeClassService } from '../../services/window-size-class';
@@ -84,6 +84,7 @@ type ShellFocusTarget =
   imports: [
     RouterOutlet,
     RouterLink,
+    RouterLinkActive,
     MatSidenavContainer,
     MatSidenav,
     MatSidenavContent,
@@ -211,10 +212,15 @@ export class LayoutComponent {
         this.restoreFromId =
           event.navigationTrigger === 'popstate' ? (event.restoredState?.navigationId ?? null) : null;
       } else if (event instanceof NavigationEnd) {
+        const firstNavigation = this.shownNavigationId === 0;
         this.shownNavigationId = event.id;
         const top = this.restoreFromId === null ? 0 : (this.scrollOffsets.get(this.restoreFromId) ?? 0);
         this.scrollMainTo(top);
-        this.focusMain();
+        // On the first load focus stays on the document so Tab reaches the skip link and
+        // the navigation before the page content.
+        if (!firstNavigation) {
+          this.focusMain();
+        }
       }
     });
   }

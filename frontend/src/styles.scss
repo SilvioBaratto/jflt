@@ -123,12 +123,13 @@ html {
 
 // Markdown rendered from model-generated text (session passages, instructions, prompts, model
 // answers) via the `markdown` pipe + [innerHTML]. Those child nodes carry no component
-// encapsulation attribute, so they are styled from global scope. Body copy is justified and
-// hyphenated and fills the full card width (no measure cap), per request; a stray long token
-// still breaks instead of forcing a horizontal scroll.
+// encapsulation attribute, so they are styled from global scope. Body copy is start-aligned
+// and not hyphenated: justified, hyphenated passages hurt readability (WCAG 1.4.8). Line length
+// is capped by the view that hosts the text; a stray long token still breaks instead of forcing
+// a horizontal scroll.
 .md {
-  text-align: justify;
-  hyphens: auto;
+  --md-font-mono: ui-monospace, monospace;
+  text-align: start;
   line-height: 1.6;
   overflow-wrap: anywhere;
 }
@@ -155,7 +156,6 @@ html {
   margin-block: 0.2em 0;
 }
 
-// Headings and preformatted blocks read left-aligned even inside justified copy.
 .md h1,
 .md h2,
 .md h3,
@@ -167,7 +167,7 @@ html {
 }
 
 .md strong {
-  font-weight: 600;
+  font-weight: var(--mat-sys-label-large-weight-prominent);
 }
 
 .md a {
@@ -175,11 +175,11 @@ html {
 }
 
 .md code {
-  font-family: ui-monospace, monospace;
+  font-family: var(--md-font-mono);
   font-size: 0.9em;
   background: var(--mat-sys-surface-container-high);
   padding: 0.1em 0.3em;
-  border-radius: 4px;
+  border-radius: var(--mat-sys-corner-extra-small);
 }
 
 .md pre {
@@ -187,7 +187,7 @@ html {
   text-align: start;
   background: var(--mat-sys-surface-container-high);
   padding: 0.75rem;
-  border-radius: 8px;
+  border-radius: var(--mat-sys-corner-small);
 }
 
 .md pre code {
@@ -250,6 +250,9 @@ label {
   inset-block-start: -100%;
   inset-inline-start: 16px;
   z-index: 1001;
+  display: inline-flex;
+  align-items: center;
+  min-block-size: 48px;
   padding: 8px 16px;
   background: var(--mat-sys-inverse-surface);
   color: var(--mat-sys-inverse-on-surface);
@@ -259,8 +262,9 @@ label {
   text-decoration: none;
 }
 
+// Clears the notch or status bar that viewport-fit=cover lets cover the top edge.
 .skip-link:focus {
-  inset-block-start: 16px;
+  inset-block-start: calc(16px + env(safe-area-inset-top));
 }
 
 // The same ring as every other control: outside the link with a gap, in the

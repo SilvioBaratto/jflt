@@ -1,68 +1,107 @@
 <div class="bank">
   <header class="bank-header">
     <h1>Question bank</h1>
-    <p>Browse the material. Use the sidebar to start practising a skill or a full mock exam.</p>
+    <p>Browse the material, then start practising</p>
   </header>
 
   <div class="sections">
     <mat-card appearance="outlined" class="sec">
       <div class="sec-head">
-        <h2>Reading @if (reading(); as r) { <span class="n">{{ r.total }}</span> }</h2>
+        <h2 #readingHeading tabindex="-1">Reading @if (reading(); as d) { <span class="n">{{ d.total }}<span class="cdk-visually-hidden"> {{ d.total | i18nPlural: itemsPlural }}</span></span> }</h2>
         <a routerLink="/reading" matButton aria-label="Practise reading">Practise</a>
       </div>
-      @if (reading(); as r) {
-        <ul class="items">
-          @for (it of r.items; track it.id) {
-            <li><span class="lvl">L{{ it.level }}</span><span class="topic">{{ it.topic }}</span></li>
+      <div [attr.aria-busy]="readingState() === 'loading'">
+        @switch (readingState()) {
+          @case ('error') {
+            <div class="error" role="alert">
+              <p>Couldn't load reading items</p>
+              <button matButton type="button" (click)="readingHeading.focus(); loadReading()">Try again</button>
+            </div>
           }
-        </ul>
-      } @else {
-        <mat-spinner diameter="24" />
-      }
+          @case ('loading') {
+            <mat-spinner diameter="24" aria-label="Loading reading items" />
+          }
+          @default {
+            @if (reading(); as d) {
+              <ul class="items" role="list">
+                @for (it of d.items; track it.id) {
+                  <li><span class="lvl"><span aria-hidden="true">L{{ it.level }}</span><span class="cdk-visually-hidden">Level {{ it.level }}</span></span><span class="topic">{{ it.topic }}</span></li>
+                }
+              </ul>
+            }
+          }
+        }
+      </div>
     </mat-card>
 
     <mat-card appearance="outlined" class="sec">
       <div class="sec-head">
-        <h2>Listening @if (listening(); as l) { <span class="n">{{ l.total }}</span> }</h2>
+        <h2 #listeningHeading tabindex="-1">Listening @if (listening(); as d) { <span class="n">{{ d.total }}<span class="cdk-visually-hidden"> {{ d.total | i18nPlural: itemsPlural }}</span></span> }</h2>
         <a routerLink="/listening" matButton aria-label="Practise listening">Practise</a>
       </div>
-      @if (listening(); as l) {
-        <ul class="items">
-          @for (it of l.items; track it.id) {
-            <li>
-              <span class="lvl">L{{ it.level }}</span>
-              <span class="it-body">
-                <span class="topic">{{ it.topic }}</span>
-                <span class="meta">{{ it.conversationType }} · {{ it.questionCount }} Q</span>
-              </span>
-            </li>
+      <div [attr.aria-busy]="listeningState() === 'loading'">
+        @switch (listeningState()) {
+          @case ('error') {
+            <div class="error" role="alert">
+              <p>Couldn't load listening items</p>
+              <button matButton type="button" (click)="listeningHeading.focus(); loadListening()">Try again</button>
+            </div>
           }
-        </ul>
-      } @else {
-        <mat-spinner diameter="24" />
-      }
+          @case ('loading') {
+            <mat-spinner diameter="24" aria-label="Loading listening items" />
+          }
+          @default {
+            @if (listening(); as d) {
+              <ul class="items" role="list">
+                @for (it of d.items; track it.id) {
+                  <li>
+                    <span class="lvl"><span aria-hidden="true">L{{ it.level }}</span><span class="cdk-visually-hidden">Level {{ it.level }}</span></span>
+                    <span class="it-body">
+                      <span class="topic">{{ it.topic }}</span>
+                      <span class="meta">{{ it.conversationType }} · {{ it.questionCount | i18nPlural: questionsPlural }}</span>
+                    </span>
+                  </li>
+                }
+              </ul>
+            }
+          }
+        }
+      </div>
     </mat-card>
 
     <mat-card appearance="outlined" class="sec">
       <div class="sec-head">
-        <h2>Writing @if (writing(); as w) { <span class="n">{{ w.total }}</span> }</h2>
+        <h2 #writingHeading tabindex="-1">Writing @if (writing(); as d) { <span class="n">{{ d.total }}<span class="cdk-visually-hidden"> {{ d.total | i18nPlural: itemsPlural }}</span></span> }</h2>
         <a routerLink="/writing" matButton aria-label="Practise writing">Practise</a>
       </div>
-      @if (writing(); as w) {
-        <ul class="items">
-          @for (it of w.items; track it.id) {
-            <li>
-              <span class="lvl">L{{ it.stanagLevel }}</span>
-              <span class="it-body">
-                <span class="topic">{{ it.title }}</span>
-                <span class="meta">{{ it.wordCountMin }}–{{ it.wordCountMax }} w</span>
-              </span>
-            </li>
+      <div [attr.aria-busy]="writingState() === 'loading'">
+        @switch (writingState()) {
+          @case ('error') {
+            <div class="error" role="alert">
+              <p>Couldn't load writing tasks</p>
+              <button matButton type="button" (click)="writingHeading.focus(); loadWriting()">Try again</button>
+            </div>
           }
-        </ul>
-      } @else {
-        <mat-spinner diameter="24" />
-      }
+          @case ('loading') {
+            <mat-spinner diameter="24" aria-label="Loading writing tasks" />
+          }
+          @default {
+            @if (writing(); as d) {
+              <ul class="items" role="list">
+                @for (it of d.items; track it.id) {
+                  <li>
+                    <span class="lvl"><span aria-hidden="true">L{{ it.stanagLevel }}</span><span class="cdk-visually-hidden">Level {{ it.stanagLevel }}</span></span>
+                    <span class="it-body">
+                      <span class="topic">{{ it.title }}</span>
+                      <span class="meta">{{ it.wordCountMin }}–{{ it.wordCountMax }} words</span>
+                    </span>
+                  </li>
+                }
+              </ul>
+            }
+          }
+        }
+      </div>
     </mat-card>
   </div>
 </div>

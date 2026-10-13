@@ -1,5 +1,5 @@
 @if (loading()) {
-  <div class="center"><mat-spinner diameter="40" /></div>
+  <div class="center"><mat-spinner diameter="40" aria-label="Loading session" /></div>
 } @else if (session(); as s) {
   <div class="session">
     @if (finalResult(); as fr) {
@@ -28,8 +28,8 @@
       </mat-card>
     } @else {
       <header class="shead">
-        <h1>{{ s.mode === 'exam' ? 'Mock exam' : 'Practice' }}</h1>
-        <span class="sub">{{ s.skill || 'all skills' }}</span>
+        <h1 tabindex="-1">{{ s.mode === 'exam' ? 'Mock exam' : 'Practice' }}</h1>
+        <span class="sub">{{ skillLabel(s.skill) }}</span>
       </header>
 
       @if (s.items.reading.length) {
@@ -38,9 +38,10 @@
           <mat-card class="item" appearance="outlined">
             <div class="meta">L{{ item.level }} · {{ item.topic }}</div>
             <div class="passage md" [innerHTML]="item.passage | markdown"></div>
-            <p class="question">{{ item.question }}</p>
+            <p class="question" [id]="'q-' + item.id">{{ item.question }}</p>
             <mat-radio-group
               class="opts"
+              [attr.aria-labelledby]="'q-' + item.id"
               [value]="readingChoice()[item.id] || ''"
               (change)="pickReading(item.id, $event.value)"
               [disabled]="!!readingResult()[item.id] || finishing()"
@@ -52,6 +53,7 @@
             @if (!readingResult()[item.id]) {
               <button
                 matButton
+                disabledInteractive
                 (click)="submitReading(item)"
                 [disabled]="!readingChoice()[item.id] || checking()[item.id] || finishing()"
               >
@@ -59,7 +61,7 @@
               </button>
             }
             @if (readingResult()[item.id]; as r) {
-              <div class="fb" [class.ok]="r.correct" [class.no]="!r.correct">
+              <div class="fb" tabindex="-1" [attr.data-fb]="'reading:' + item.id" [class.ok]="r.correct" [class.no]="!r.correct">
                 <strong>{{ r.correct ? 'Correct' : 'Incorrect' }}</strong> — key {{ r.correctLabel }}
                 <p>{{ r.keyRationale }}</p>
                 @if (!r.correct && r.chosenRationale) { <p class="muted">Your choice: {{ r.chosenRationale }}</p> }
@@ -75,13 +77,20 @@
           <mat-card class="item" appearance="outlined">
             <div class="meta">{{ item.conversationType }} · {{ item.topic }}</div>
             @if (item.audioPath) {
-              <audio controls preload="none" [src]="audioBase + item.audioPath" class="audio"></audio>
+              <audio
+                controls
+                preload="none"
+                [src]="audioBase + item.audioPath"
+                [attr.aria-label]="'Audio for ' + item.topic"
+                class="audio"
+              ></audio>
             }
             @for (q of item.questions; track $index) {
               <div class="q">
-                <p class="question">{{ $index + 1 }}. {{ q.question }}</p>
+                <p class="question" [id]="'q-' + listeningKey(item.id, $index)">{{ $index + 1 }}. {{ q.question }}</p>
                 <mat-radio-group
                   class="opts"
+                  [attr.aria-labelledby]="'q-' + listeningKey(item.id, $index)"
                   [value]="listeningChoice()[listeningKey(item.id, $index)] || ''"
                   (change)="pickListening(item.id, $index, $event.value)"
                   [disabled]="!!listeningResult()[listeningKey(item.id, $index)] || finishing()"
@@ -93,6 +102,7 @@
                 @if (!listeningResult()[listeningKey(item.id, $index)]) {
                   <button
                     matButton
+                    disabledInteractive
                     (click)="submitListening(item, $index)"
                     [disabled]="
                       !listeningChoice()[listeningKey(item.id, $index)] ||
@@ -105,9 +115,15 @@
                 }
                 @if (listeningResult()[listeningKey(item.id, $index)]; as r) {
                   @if (r.ungraded) {
-                    <div class="fb"><strong>Answer recorded</strong> — this question has no answer key yet</div>
+                    <div class="fb" tabindex="-1" [attr.data-fb]="'listening:' + listeningKey(item.id, $index)"><strong>Answer recorded</strong> — this question has no answer key yet</div>
                   } @else {
-                  <div class="fb" [class.ok]="r.correct" [class.no]="!r.correct">
+                  <div
+                    class="fb"
+                    tabindex="-1"
+                    [attr.data-fb]="'listening:' + listeningKey(item.id, $index)"
+                    [class.ok]="r.correct"
+                    [class.no]="!r.correct"
+                  >
                     <strong>{{ r.correct ? 'Correct' : 'Incorrect' }}</strong> — key {{ r.correctLabel }}
                     <p>{{ r.keyRationale }}</p>
                     @if (!r.correct && r.chosenRationale) { <p class="muted">Your choice: {{ r.chosenRationale }}</p> }
@@ -128,46 +144,44 @@
             <h3>{{ task.title }}</h3>
             <div class="instr md" [innerHTML]="task.instructions | markdown"></div>
             @if (task.options.length > 1) {
-              <div class="levels" role="group" aria-label="Choose a prompt option">
+              <mat-button-toggle-group
+                class="levels"
+                aria-label="Choose a prompt option"
+                [value]="writingOption()[task.id]"
+                [disabled]="!!writingResult()[task.id] || grading()[task.id] || finishing()"
+                (change)="pickWritingOption(task.id, $event.value)"
+              >
                 @for (o of task.options; track o.key) {
-                  <button
-                    type="button"
-                    class="level"
-                    [class.on]="writingOption()[task.id] === o.key"
-                    [attr.aria-pressed]="writingOption()[task.id] === o.key"
-                    [disabled]="!!writingResult()[task.id] || grading()[task.id] || finishing()"
-                    (click)="pickWritingOption(task.id, o.key)"
-                  >
-                    {{ o.key }}
-                  </button>
+                  <mat-button-toggle [value]="o.key">{{ o.key }}</mat-button-toggle>
                 }
-              </div>
+              </mat-button-toggle-group>
               @for (o of task.options; track o.key) {
                 @if (writingOption()[task.id] === o.key) { <div class="prompt md" [innerHTML]="o.prompt | markdown"></div> }
               }
             }
             <mat-form-field appearance="outline" class="full">
+              <mat-label>Your response</mat-label>
               <textarea
                 matInput
                 rows="8"
                 [value]="writingText()[task.id] || ''"
                 (input)="setWritingText(task.id, $any($event.target).value)"
                 [disabled]="!!writingResult()[task.id] || grading()[task.id] || finishing()"
-                placeholder="Write your response here…"
               ></textarea>
+              <mat-hint align="end">{{ wordCount(writingText()[task.id]) }} words</mat-hint>
             </mat-form-field>
-            <div class="wc">{{ wordCount(writingText()[task.id]) }} words</div>
             @if (!writingResult()[task.id]) {
               <button
                 matButton="tonal"
+                disabledInteractive
                 (click)="submitWriting(task)"
                 [disabled]="grading()[task.id] || !writingText()[task.id] || finishing()"
               >
-                @if (grading()[task.id]) { <mat-spinner diameter="18" /> Grading… } @else { Submit for grading }
+                @if (grading()[task.id]) { <mat-spinner diameter="18" aria-hidden="true" /> Grading… } @else { Submit for grading }
               </button>
             }
             @if (writingResult()[task.id]; as wr) {
-              <div class="grade">
+              <div class="grade" tabindex="-1" [attr.data-fb]="'writing:' + task.id">
                 <p class="score">Overall {{ wr.grade.overallScore }}/4 · level {{ wr.grade.estimatedLevel }}</p>
                 <ul>
                   @for (d of wr.grade.dimensions; track d.dimension) {
@@ -194,7 +208,7 @@
           (click)="finish()"
           [disabled]="finishing() || busy()"
         >
-          @if (finishing()) { <mat-spinner diameter="18" /> }
+          @if (finishing()) { <mat-spinner diameter="18" aria-hidden="true" /> }
           Finish and see results
         </button>
         <p class="muted" role="status">{{ finishStatus() }}</p>
@@ -204,6 +218,23 @@
       </div>
     }
   </div>
+} @else if (loadError()) {
+  <div class="center">
+    <div class="state">
+      <h1 tabindex="-1">Could not load the session</h1>
+      <p>Check your connection and try again</p>
+      <button matButton="filled" disabledInteractive [disabled]="retrying()" (click)="retry()">
+        @if (retrying()) { <mat-spinner diameter="18" aria-hidden="true" /> }
+        Try again
+      </button>
+    </div>
+  </div>
 } @else {
-  <div class="center"><p>Session not found. <a routerLink="/">Go home</a></p></div>
+  <div class="center">
+    <div class="state">
+      <h1 tabindex="-1">Session not found</h1>
+      <p>It may have been removed</p>
+      <a matButton="filled" routerLink="/">Back to home</a>
+    </div>
+  </div>
 }

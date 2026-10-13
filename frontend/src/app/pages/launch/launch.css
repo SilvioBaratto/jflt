@@ -1,0 +1,38 @@
+.launch {
+  display: grid;
+  place-items: center;
+  align-content: center;
+  gap: 1rem;
+  min-height: 60vh;
+  color: var(--mat-sys-on-surface-variant);
+  text-align: center;
+}
+
+h1 {
+  margin: 0;
+  font: var(--mat-sys-headline-medium);
+  letter-spacing: var(--mat-sys-headline-medium-tracking);
+  color: var(--mat-sys-on-surface);
+}
+
+/* Focused in code to announce the outcome; it is a heading, not a control, so it shows no ring. */
+h1:focus {
+  outline: none;
+}
+
+p {
+  margin: 0;
+  font: var(--mat-sys-body-large);
+  letter-spacing: var(--mat-sys-body-large-tracking);
+}
+
+.error {
+  color: var(--mat-sys-error);
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+}

@@ -5,7 +5,6 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { MediaMatcher } from '@angular/cdk/layout';
 import { TestbedHarnessEnvironment } from '@angular/cdk/testing/testbed';
 import { MatBottomSheetHarness } from '@angular/material/bottom-sheet/testing';
-import { MatButtonHarness } from '@angular/material/button/testing';
 import { MATERIAL_ANIMATIONS } from '@angular/material/core';
 import { Router, Routes, provideRouter } from '@angular/router';
 import { LucideIconConfig } from 'lucide-angular';
@@ -60,6 +59,7 @@ describe('LayoutComponent', () => {
   let host: HTMLElement;
 
   const routes: Routes = [
+    { path: '', pathMatch: 'full', component: RouteStubComponent, title: 'Question bank' },
     { path: 'home', component: RouteStubComponent, title: 'Home' },
     { path: 'dashboard', component: RouteStubComponent, title: 'Dashboard' },
   ];
@@ -89,10 +89,6 @@ describe('LayoutComponent', () => {
     await TestBed.inject(Router).navigateByUrl(url);
     fixture.detectChanges();
     await fixture.whenStable();
-  }
-
-  function actionsButton(): HTMLButtonElement {
-    return host.querySelector<HTMLButtonElement>('app-navbar button[navbarActions]')!;
   }
 
   afterEach(() => {
@@ -161,28 +157,18 @@ describe('LayoutComponent', () => {
     expect(host.querySelector('app-toast')).toBeNull();
   });
 
-  it('when the top app bar renders at compact, it holds the brand and a trailing icon button that opens the actions sheet', async () => {
+  it('when the top app bar renders at compact, it holds the brand and no actions button while the sheet has no actions', async () => {
     await render();
     const navbar = host.querySelector('app-navbar')!;
     expect(navbar.querySelector('header')).toBeTruthy();
-    expect(navbar.querySelector('[navbarBrand]')?.textContent?.trim()).toBe('Acme');
-
-    const toggle = await TestbedHarnessEnvironment.loader(fixture).getHarness(
-      MatButtonHarness.with({ selector: 'app-navbar [navbarActions]' }),
-    );
-    expect(await toggle.getVariant()).toBe('icon');
-    const button = actionsButton();
-    expect(button.getAttribute('aria-haspopup')).toBe('dialog');
-    // Named for the layer's sheet contents (theme only in the base scaffold), never "navigation".
-    expect(button.getAttribute('aria-label')).toBe(RAIL_ACTIONS_SHEET.triggerLabel);
-    expect(button.hasAttribute('aria-expanded')).toBe(false);
-    expect(button.hasAttribute('aria-controls')).toBe(false);
-    expect(button.querySelector('lucide-icon')?.getAttribute('aria-hidden')).toBe('true');
+    expect(navbar.querySelector('[navbarBrand]')?.textContent?.trim()).toBe('JFLT');
+    // The base scaffold's sheet is empty (no theme or account controls), so nothing may promise it.
+    expect(navbar.querySelector('button')).toBeNull();
   });
 
-  it('when the actions button is clicked, a modal bottom sheet opens with app-sidebar in its modal form', async () => {
+  it('when the actions sheet opens, a modal bottom sheet holds app-sidebar in its modal form', async () => {
     await render();
-    actionsButton().click();
+    fixture.componentInstance.openActionsSheet();
     await flush(fixture);
 
     const sheet = await TestbedHarnessEnvironment.documentRootLoader(fixture).getHarness(MatBottomSheetHarness);
@@ -190,13 +176,12 @@ describe('LayoutComponent', () => {
     // The panel class the global overlay partial can select the sheet by.
     const pane = document.querySelector('.cdk-overlay-pane.app-shell-actions-sheet');
     expect(pane?.querySelector('.mat-bottom-sheet-container[role="dialog"] app-shell-actions-sheet app-sidebar')).toBeTruthy();
-    expect(pane?.querySelector('app-sidebar mat-selection-list.sidebar-theme-options')).toBeTruthy();
     expect(pane?.querySelectorAll('a').length).toBe(0);
   });
 
   it('when the shell is destroyed with the actions sheet open, the sheet closes with it', async () => {
     await render();
-    actionsButton().click();
+    fixture.componentInstance.openActionsSheet();
     await flush(fixture);
     expect(document.querySelector('app-shell-actions-sheet')).toBeTruthy();
 
@@ -206,11 +191,39 @@ describe('LayoutComponent', () => {
     expect(document.querySelector('app-shell-actions-sheet')).toBeNull();
   });
 
-  it('when navigation ends, focus moves to main-content', async () => {
+  it('when the first navigation ends, focus stays off main so the skip link stays reachable', async () => {
+    await render();
+    await navigate('/home');
+    expect(document.activeElement).not.toBe(host.querySelector('#main-content'));
+  });
+
+  it('when a later navigation ends, focus moves to main-content', async () => {
     await render();
     const main = host.querySelector<HTMLElement>('#main-content')!;
     await navigate('/home');
+    await navigate('/dashboard');
     expect(document.activeElement).toBe(main);
+  });
+
+  it('when the shell is compact, the top app bar brand links to the question bank', async () => {
+    await render();
+    const brand = host.querySelector<HTMLAnchorElement>('app-navbar a.brand-link')!;
+    expect(brand.getAttribute('href')).toBe('/');
+    await navigate('/home');
+    expect(brand.hasAttribute('aria-current')).toBe(false);
+    await navigate('/');
+    expect(brand.getAttribute('aria-current')).toBe('page');
+  });
+
+  it('when the rail is collapsed, the brand link to the question bank is still in the rail header', async () => {
+    await render('medium');
+    const brand = host.querySelector<HTMLAnchorElement>('.rail-header a.rail-brand')!;
+    expect(brand.getAttribute('href')).toBe('/');
+    expect(host.querySelector('.rail-header app-hamburger')).toBeNull();
+    await navigate('/home');
+    expect(brand.hasAttribute('aria-current')).toBe(false);
+    await navigate('/');
+    expect(brand.getAttribute('aria-current')).toBe('page');
   });
 
   it('when a navigation ends, main (the only scroll container) starts the new page at the top', async () => {

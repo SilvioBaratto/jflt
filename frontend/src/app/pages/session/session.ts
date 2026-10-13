@@ -12,6 +12,7 @@ import {
   DestroyRef,
   WritableSignal,
 } from '@angular/core';
+import { HttpErrorResponse } from '@angular/common/http';
 import { ActivatedRoute, RouterLink } from '@angular/router';
 import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 import {
@@ -29,6 +30,7 @@ import {
 } from 'rxjs';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
+import { MatButtonToggleModule } from '@angular/material/button-toggle';
 import { MatRadioModule } from '@angular/material/radio';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
@@ -55,6 +57,7 @@ import {
     MatCardModule,
     MatButtonModule,
     MatRadioModule,
+    MatButtonToggleModule,
     MatFormFieldModule,
     MatInputModule,
     MatProgressSpinnerModule,
@@ -70,10 +73,13 @@ export class SessionComponent implements OnInit {
   private readonly destroyRef = inject(DestroyRef);
   private readonly injector = inject(Injector);
 
+  private readonly host = inject<ElementRef<HTMLElement>>(ElementRef);
   private readonly resultsHeading = viewChild<ElementRef<HTMLElement>>('resultsHeading');
 
   readonly session = signal<Session | null>(null);
   readonly loading = signal(true);
+  readonly loadError = signal(false);
+  readonly retrying = signal(false);
   readonly audioBase = environment.apiUrl.replace(/\/api\/v1\/$/, '');
 
   readonly readingChoice = signal<Record<string, string>>({});
@@ -95,10 +101,27 @@ export class SessionComponent implements OnInit {
   readonly finalResult = signal<SessionResult | null>(null);
 
   ngOnInit(): void {
+    this.load();
+  }
+
+  /** Retry a failed load, keeping the error view (and its focused button) until the outcome is known. */
+  retry(): void {
+    if (this.retrying()) return;
+    this.load(true);
+  }
+
+  /** Load the session, telling a missing one (404) apart from a failure worth retrying. */
+  load(retry = false): void {
     const id = this.route.snapshot.paramMap.get('id');
     if (!id) {
       this.loading.set(false);
       return;
+    }
+    if (retry) {
+      this.retrying.set(true);
+    } else {
+      this.loadError.set(false);
+      this.loading.set(true);
     }
     this.examApi
       .get(id)
@@ -110,10 +133,37 @@ export class SessionComponent implements OnInit {
           const opt: Record<string, string> = {};
           for (const t of s.items.writing) opt[t.id] = t.options[0]?.key ?? 'main';
           this.writingOption.set(opt);
+          this.loadError.set(false);
           this.loading.set(false);
+          this.settleRetry(retry);
         },
-        error: () => this.loading.set(false),
+        error: (err: unknown) => {
+          this.loadError.set(!(err instanceof HttpErrorResponse && err.status === 404));
+          this.loading.set(false);
+          this.settleRetry(retry);
+        },
       });
+  }
+
+  // A settled retry can swap the error view for the session or the not-found view, removing the
+  // focused Try again button; the new view's h1 takes focus so keyboard users keep their place.
+  private settleRetry(retry: boolean): void {
+    if (!retry) return;
+    this.retrying.set(false);
+    afterNextRender(
+      () => {
+        const active = this.host.nativeElement.ownerDocument.activeElement;
+        if (active && active !== active.ownerDocument.body && this.host.nativeElement.contains(active)) return;
+        this.host.nativeElement.querySelector<HTMLElement>('h1')?.focus();
+      },
+      { injector: this.injector },
+    );
+  }
+
+  /** Sentence-case label for the session's skill filter. */
+  skillLabel(skill: string | null | undefined): string {
+    const s = skill || 'all skills';
+    return s.charAt(0).toUpperCase() + s.slice(1);
   }
 
   private lkey(itemId: string, qi: number): string {
@@ -131,7 +181,7 @@ export class SessionComponent implements OnInit {
 
   /** Submit a reading item for scoring. */
   submitReading(item: ReadingItem): void {
-    this.fire(this.readingSubmission(item));
+    this.fire(this.readingSubmission(item), `reading:${item.id}`);
   }
 
   /** Record the chosen label for a listening question. */
@@ -141,7 +191,7 @@ export class SessionComponent implements OnInit {
 
   /** Submit one listening question for scoring. */
   submitListening(item: ListeningItem, qi: number): void {
-    this.fire(this.listeningSubmission(item, qi));
+    this.fire(this.listeningSubmission(item, qi), `listening:${this.lkey(item.id, qi)}`);
   }
 
   /** Choose which essay prompt option to answer. */
@@ -162,7 +212,7 @@ export class SessionComponent implements OnInit {
 
   /** Submit a writing response for live grading. */
   submitWriting(task: WritingTask): void {
-    this.fire(this.writingSubmission(task));
+    this.fire(this.writingSubmission(task), `writing:${task.id}`);
   }
 
   /** Render a level label for display; "<3" (below the lowest tested level) reads as "below 3". */
@@ -250,8 +300,20 @@ export class SessionComponent implements OnInit {
 
   // The error interceptor has already reported a failed request; a manual check or submit just
   // leaves the item unscored so the candidate can retry, rather than rethrowing unhandled.
-  private fire(submission: Observable<unknown> | null): void {
-    submission?.pipe(catchError(() => EMPTY), takeUntilDestroyed(this.destroyRef)).subscribe();
+  // On success focus moves to the feedback, because the Check or Submit button that had focus is
+  // removed once the result renders; the focused container is announced, so it carries no live role.
+  private fire(submission: Observable<unknown> | null, feedbackKey: string): void {
+    submission
+      ?.pipe(catchError(() => EMPTY), takeUntilDestroyed(this.destroyRef))
+      .subscribe(() => {
+        afterNextRender(
+          () =>
+            this.host.nativeElement
+              .querySelector<HTMLElement>(`[data-fb="${feedbackKey}"]`)
+              ?.focus(),
+          { injector: this.injector },
+        );
+      });
   }
 
   private readingSubmission(item: ReadingItem): Observable<unknown> | null {

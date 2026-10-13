@@ -1,3 +1,4 @@
+import { HttpErrorResponse } from '@angular/common/http';
 import { TestBed } from '@angular/core/testing';
 import { provideRouter } from '@angular/router';
 import { RouterTestingHarness } from '@angular/router/testing';
@@ -65,10 +66,16 @@ describe('SessionComponent', () => {
     complete: ReturnType<typeof vi.fn>;
   };
 
+  let harness: RouterTestingHarness;
+
   async function open(session: Session): Promise<SessionComponent> {
     api.get.mockReturnValue(of(session));
-    const harness = await RouterTestingHarness.create();
+    harness = await RouterTestingHarness.create();
     return harness.navigateByUrl('/session/s1', SessionComponent);
+  }
+
+  function el(): HTMLElement {
+    return harness.routeNativeElement as HTMLElement;
   }
 
   beforeEach(() => {
@@ -205,5 +212,159 @@ describe('SessionComponent', () => {
     expect(c.levelLabel('<3')).toBe('below 3');
     expect(c.levelLabel('3+')).toBe('3+');
     expect(c.levelLabel(2)).toBe('2');
+  });
+
+  it('labels each radio group with its question and names the audio player', async () => {
+    const withAudio = makeSession();
+    withAudio.items.listening[0].audioPath = '/a.mp3';
+    await open(withAudio);
+    harness.detectChanges();
+
+    const groups = el().querySelectorAll('mat-radio-group');
+    expect(groups.length).toBe(3);
+    for (const g of Array.from(groups)) {
+      const id = g.getAttribute('aria-labelledby')!;
+      expect(el().querySelector(`[id="${id}"]`)?.textContent).toContain('q?');
+    }
+    expect(el().querySelector('audio')?.getAttribute('aria-label')).toBe('Audio for t');
+  });
+
+  it('gives the response field a label and hides button spinners from assistive tech', async () => {
+    const c = await open(makeSession());
+    harness.detectChanges();
+    expect(el().querySelector('mat-form-field mat-label')?.textContent).toBe('Your response');
+    expect(el().querySelector('mat-form-field mat-hint')?.textContent).toContain('0 words');
+
+    c.setWritingText('w1', 'Draft.');
+    api.submit.mockReturnValueOnce(new Subject());
+    c.submitWriting(c.session()!.items.writing[0]);
+    harness.detectChanges();
+    const btn = Array.from(el().querySelectorAll('button')).find((b) => b.textContent?.includes('Grading'))!;
+    expect(btn.getAttribute('aria-disabled')).toBe('true');
+    expect(btn.querySelector('mat-spinner')?.getAttribute('aria-hidden')).toBe('true');
+  });
+
+  it('uses a button toggle group for prompt options when there are several', async () => {
+    const s = makeSession();
+    s.items.writing[0].options = [
+      { key: 'A', label: '', prompt: 'pa' },
+      { key: 'B', label: '', prompt: 'pb' },
+    ];
+    const c = await open(s);
+    harness.detectChanges();
+    const group = el().querySelector('mat-button-toggle-group')!;
+    expect(group.getAttribute('aria-label')).toBe('Choose a prompt option');
+    expect(group.querySelectorAll('mat-button-toggle').length).toBe(2);
+
+    (group.querySelectorAll('mat-button-toggle')[1].querySelector('button') as HTMLElement).click();
+    expect(c.writingOption()['w1']).toBe('B');
+  });
+
+  it('after a Check result renders, moves focus to the feedback container', async () => {
+    const c = await open(makeSession());
+    c.pickReading('r1', 'B');
+    harness.detectChanges();
+    const check = el().querySelector('button') as HTMLButtonElement;
+    expect(check.textContent).toContain('Check');
+    expect(check.hasAttribute('disabled')).toBe(false);
+
+    c.submitReading(c.session()!.items.reading[0]);
+    harness.detectChanges();
+    await harness.fixture.whenStable();
+
+    const fb = el().querySelector('[data-fb="reading:r1"]') as HTMLElement;
+    expect(fb.getAttribute('tabindex')).toBe('-1');
+    expect(fb.getAttribute('role')).toBeNull();
+    expect(document.activeElement).toBe(fb);
+  });
+
+  it('keeps the Check button focusable while the request is in flight', async () => {
+    const c = await open(makeSession());
+    c.pickReading('r1', 'B');
+    api.submit.mockReturnValueOnce(new Subject());
+    c.submitReading(c.session()!.items.reading[0]);
+    harness.detectChanges();
+
+    const check = el().querySelector('button') as HTMLButtonElement;
+    expect(check.getAttribute('aria-disabled')).toBe('true');
+    expect(check.hasAttribute('disabled')).toBe(false);
+  });
+
+  it('shows a not-found heading for a 404', async () => {
+    api.get.mockReturnValue(throwError(() => new HttpErrorResponse({ status: 404 })));
+    harness = await RouterTestingHarness.create();
+    const c = await harness.navigateByUrl('/session/s1', SessionComponent);
+    harness.detectChanges();
+
+    expect(c.loadError()).toBe(false);
+    expect(el().querySelectorAll('h1').length).toBe(1);
+    expect(el().querySelector('h1')?.textContent).toBe('Session not found');
+  });
+
+  it('offers a retry for other load failures and recovers on success', async () => {
+    api.get.mockReturnValue(throwError(() => new HttpErrorResponse({ status: 503 })));
+    harness = await RouterTestingHarness.create();
+    const c = await harness.navigateByUrl('/session/s1', SessionComponent);
+    harness.detectChanges();
+
+    expect(c.loadError()).toBe(true);
+    expect(el().querySelector('h1')?.textContent).toBe('Could not load the session');
+
+    api.get.mockReturnValue(of(makeSession()));
+    (el().querySelector('button') as HTMLButtonElement).click();
+    harness.detectChanges();
+
+    expect(c.loadError()).toBe(false);
+    expect(c.session()).toBeTruthy();
+  });
+
+  it('while a retry is in flight, the error view and its focused button stay in place', async () => {
+    api.get.mockReturnValue(throwError(() => new HttpErrorResponse({ status: 503 })));
+    harness = await RouterTestingHarness.create();
+    const c = await harness.navigateByUrl('/session/s1', SessionComponent);
+    harness.detectChanges();
+
+    const pending = new Subject<Session>();
+    api.get.mockReturnValue(pending);
+    const button = el().querySelector('button') as HTMLButtonElement;
+    button.focus();
+    button.click();
+    harness.detectChanges();
+
+    expect(c.retrying()).toBe(true);
+    expect(el().querySelector('h1')?.textContent).toBe('Could not load the session');
+    expect(document.activeElement).toBe(button);
+    expect(button.getAttribute('aria-disabled')).toBe('true');
+
+    pending.next(makeSession());
+    pending.complete();
+    harness.detectChanges();
+    await harness.fixture.whenStable();
+
+    expect(c.retrying()).toBe(false);
+    expect(document.activeElement?.tagName).toBe('H1');
+    expect(document.activeElement?.textContent).toBe('Mock exam');
+  });
+
+  it('when a retry finds the session gone, focus moves to the not-found heading', async () => {
+    api.get.mockReturnValue(throwError(() => new HttpErrorResponse({ status: 503 })));
+    harness = await RouterTestingHarness.create();
+    await harness.navigateByUrl('/session/s1', SessionComponent);
+    harness.detectChanges();
+
+    api.get.mockReturnValue(throwError(() => new HttpErrorResponse({ status: 404 })));
+    const button = el().querySelector('button') as HTMLButtonElement;
+    button.focus();
+    button.click();
+    harness.detectChanges();
+    await harness.fixture.whenStable();
+
+    expect(document.activeElement?.textContent).toBe('Session not found');
+  });
+
+  it('renders the skill filter in sentence case', async () => {
+    const c = await open(makeSession());
+    expect(c.skillLabel(null)).toBe('All skills');
+    expect(c.skillLabel('reading')).toBe('Reading');
   });
 });

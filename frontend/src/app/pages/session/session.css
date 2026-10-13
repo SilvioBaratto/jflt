@@ -23,7 +23,6 @@
 
 .sub {
   color: var(--mat-sys-on-surface-variant);
-  text-transform: capitalize;
 }
 
 .sec {
@@ -38,17 +37,48 @@
 }
 
 .meta {
-  font-size: 0.75rem;
+  font: var(--mat-sys-label-medium);
+  letter-spacing: var(--mat-sys-label-medium-tracking);
   color: var(--mat-sys-on-surface-variant);
   margin-bottom: 0.5rem;
 }
 
+.state {
+  text-align: center;
+}
+
+.state h1 {
+  margin: 0 0 0.5rem;
+  font: var(--mat-sys-headline-medium);
+  letter-spacing: var(--mat-sys-headline-medium-tracking);
+  color: var(--mat-sys-on-surface);
+}
+
+.state p {
+  margin: 0 0 1rem;
+  color: var(--mat-sys-on-surface-variant);
+}
+
+/* M3 keeps running text at 40–60 characters per line; `ch` is the width of "0", wider than an
+   average letter, so 45ch lands near 60 characters. */
+.passage,
+.question,
+.instr,
+.prompt,
+.model {
+  max-inline-size: 45ch;
+}
+
 .passage {
+  font: var(--mat-sys-body-large);
+  letter-spacing: var(--mat-sys-body-large-tracking);
+  line-height: 1.6;
   color: var(--mat-sys-on-surface);
 }
 
 .question {
-  font-weight: 600;
+  font: var(--mat-sys-title-medium);
+  letter-spacing: var(--mat-sys-title-medium-tracking);
   margin: 0.75rem 0 0.5rem;
   color: var(--mat-sys-on-surface);
 }
@@ -78,16 +108,16 @@
 .fb {
   margin-top: 0.5rem;
   padding: 0.6rem 0.8rem;
-  border-radius: 8px;
+  border-radius: var(--mat-sys-corner-small);
   background: var(--mat-sys-surface-container-high);
 }
 
 .fb.ok {
-  border-left: 3px solid var(--app-success, var(--mat-sys-primary));
+  border-inline-start: 3px solid var(--app-success, var(--mat-sys-primary));
 }
 
 .fb.no {
-  border-left: 3px solid var(--mat-sys-error);
+  border-inline-start: 3px solid var(--mat-sys-error);
 }
 
 .fb p {
@@ -104,48 +134,7 @@
 }
 
 .levels {
-  display: flex;
-  flex-wrap: wrap;
-  /* 8px keeps adjacent targets from overlapping; wrap stops the row forcing a horizontal scroll. */
-  gap: 8px;
   margin: 0.5rem 0;
-}
-
-.level {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  min-block-size: 40px;
-  min-inline-size: 48px;
-  border: 1px solid var(--mat-sys-outline);
-  background: transparent;
-  color: var(--mat-sys-on-surface);
-  border-radius: var(--mat-sys-corner-full);
-  padding: 0.4rem 1rem;
-  cursor: pointer;
-  font: var(--mat-sys-label-large);
-  letter-spacing: var(--mat-sys-label-large-tracking);
-}
-
-/* Same ring as every other control: outside the pill, with a gap, in the focus-indicator color. */
-.level:focus-visible {
-  outline: var(--mat-focus-indicator-border-width, 3px) solid
-    var(--mat-focus-indicator-border-color, var(--mat-sys-secondary));
-  outline-offset: 2px;
-}
-
-.level.on {
-  background: var(--mat-sys-primary);
-  color: var(--mat-sys-on-primary);
-  border-color: var(--mat-sys-primary);
-}
-
-/* M3 disabled treatment: 38% content, 12% outline, with the selected fill dropped. */
-.level:disabled {
-  cursor: default;
-  background: transparent;
-  color: color-mix(in srgb, var(--mat-sys-on-surface) 38%, transparent);
-  border-color: color-mix(in srgb, var(--mat-sys-on-surface) 12%, transparent);
 }
 
 .prompt {
@@ -157,29 +146,24 @@
   width: 100%;
 }
 
-.wc {
-  font-size: 0.8rem;
-  color: var(--mat-sys-on-surface-variant);
-  margin-bottom: 0.5rem;
-}
-
 .grade {
   margin-top: 0.75rem;
 }
 
 .score {
-  font-weight: 600;
+  font: var(--mat-sys-title-medium);
+  letter-spacing: var(--mat-sys-title-medium-tracking);
   color: var(--mat-sys-primary);
 }
 
 .grade ul {
-  padding-left: 1.1rem;
+  padding-inline-start: 1.1rem;
 }
 
 .model {
   background: var(--mat-sys-surface-container-high);
   padding: 0.75rem;
-  border-radius: 8px;
+  border-radius: var(--mat-sys-corner-small);
 }
 
 .finish-bar {
@@ -204,13 +188,16 @@
   color: var(--mat-sys-on-surface);
 }
 
-/* Focused in code after the session completes to move the reader to the result; it is a heading,
-   not a control, so it shows no focus ring. */
+/* Headings focused in code (after completing or after a retry) move the reader to the new view;
+   they are not controls, so they show no focus ring. */
+.shead h1:focus,
+.state h1:focus,
 .results h1:focus {
   outline: none;
 }
 
 .results .line {
-  font-size: 1.05rem;
+  font: var(--mat-sys-body-large);
+  letter-spacing: var(--mat-sys-body-large-tracking);
   margin: 0.4rem 0;
 }

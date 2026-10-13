@@ -16,19 +16,24 @@
     >
       <!-- The banner at these widths: the top app bar, the compact header, doesn't render here. -->
       <div class="rail-content" role="banner">
-        @if (canExpandRail()) {
-          <div class="rail-header">
+        <div class="rail-header">
+          @if (canExpandRail()) {
             <app-hamburger
               variant="rail"
               [open]="railExpanded()"
               controls="app-rail"
               (toggle)="toggleRail()"
             />
-            @if (sidebarMode() === 'expanded') {
-              <a routerLink="/" class="rail-brand">JFLT</a>
-            }
-          </div>
-        }
+          }
+          <a
+            routerLink="/"
+            class="rail-brand"
+            routerLinkActive
+            [routerLinkActiveOptions]="{ exact: true }"
+            ariaCurrentWhenActive="page"
+            >JFLT</a
+          >
+        </div>
         <app-sidebar [mode]="sidebarMode()" />
       </div>
     </mat-sidenav>
@@ -37,7 +42,15 @@
   <mat-sidenav-content class="shell-content">
     @if (isMobile()) {
       <app-navbar class="shell-top-app-bar">
-        <a routerLink="/" navbarBrand>JFLT</a>
+        <a
+          routerLink="/"
+          navbarBrand
+          class="brand-link"
+          routerLinkActive
+          [routerLinkActiveOptions]="{ exact: true }"
+          ariaCurrentWhenActive="page"
+          >JFLT</a
+        >
       </app-navbar>
     }
 

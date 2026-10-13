@@ -128,15 +128,40 @@
   padding-inline: 20px 16px;
 }
 
+/* The collapsed rail is too narrow for the toggle and the brand side by side. */
 .rail:not(.rail-wide) .rail-header {
+  flex-direction: column;
   justify-content: center;
+  gap: 0;
   padding-inline: 0;
+}
+
+.rail-brand,
+.brand-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-block-size: 48px;
+  min-inline-size: 48px;
+  color: var(--mat-sys-on-surface);
+  font: var(--mat-sys-title-medium);
+  letter-spacing: var(--mat-sys-title-medium-tracking);
+  text-decoration: none;
 }
 
 .rail-brand {
   min-inline-size: 0;
-  color: var(--mat-sys-on-surface);
-  font: var(--mat-sys-title-medium);
-  letter-spacing: var(--mat-sys-title-medium-tracking);
   overflow-wrap: anywhere;
+}
+
+.rail:not(.rail-wide) .rail-brand {
+  min-inline-size: 48px;
+}
+
+.rail-brand:focus-visible,
+.brand-link:focus-visible {
+  outline: var(--mat-focus-indicator-border-width, 3px) solid
+    var(--mat-focus-indicator-border-color, var(--mat-sys-secondary));
+  outline-offset: -2px;
+  border-radius: var(--mat-sys-corner-small);
 }

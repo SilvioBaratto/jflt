@@ -1,0 +1,13 @@
+<div class="launch">
+  <h1 #heading tabindex="-1">{{ title() }}</h1>
+  @if (failed()) {
+    <p class="error" role="alert">Couldn't start the session. Check your connection and try again.</p>
+    <div class="actions">
+      <button matButton="filled" type="button" (click)="start()">Try again</button>
+      <a matButton="outlined" routerLink="/">Back to question bank</a>
+    </div>
+  } @else {
+    <mat-spinner diameter="40" [attr.aria-label]="label()" />
+    <p role="status">{{ label() }}</p>
+  }
+</div>

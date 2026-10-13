@@ -137,9 +137,14 @@ describe('Responsive shell (integration)', () => {
     return rail().querySelector<HTMLButtonElement>('.rail-header app-hamburger button');
   }
 
-  /** Compact top app bar button that opens the actions bottom sheet. */
-  function actionsButton(): HTMLButtonElement {
-    return host.querySelector<HTMLButtonElement>('app-navbar button.shell-actions-toggle')!;
+  /** A destination in the compact navigation bar, the shell control focus returns to after the sheet closes. */
+  function barLink(): HTMLAnchorElement {
+    return host.querySelector<HTMLAnchorElement>('app-bottom-tab-bar a')!;
+  }
+
+  /** The base scaffold's top app bar has no actions button, so the sheet opens through the shell API. */
+  function openSheet(): void {
+    component.openActionsSheet();
   }
 
   /** The bottom sheet container, rendered in the body-level overlay container. */
@@ -185,15 +190,11 @@ describe('Responsive shell (integration)', () => {
       expect(sheet()).toBeNull();
     });
 
-    it('when the actions button is clicked, a labelled bottom sheet opens with the rail actions and no destinations', async () => {
-      const button = actionsButton();
-      expect(button.getAttribute('aria-haspopup')).toBe('dialog');
-      expect(button.getAttribute('aria-label')).toBe(RAIL_ACTIONS_SHEET.triggerLabel);
-      // A dialog trigger, not a disclosure: no expanded state, and the sheet has no id to point at.
-      expect(button.hasAttribute('aria-expanded')).toBe(false);
-      expect(button.hasAttribute('aria-controls')).toBe(false);
+    it('when the actions sheet opens, a labelled bottom sheet holds app-sidebar in its modal form and no destinations', async () => {
+      // The sheet is empty in the base scaffold, so the top app bar shows no button for it.
+      expect(host.querySelector('app-navbar button')).toBeNull();
 
-      button.click();
+      openSheet();
       await settle();
 
       const harness = await TestbedHarnessEnvironment.documentRootLoader(fixture).getHarness(MatBottomSheetHarness);
@@ -201,17 +202,16 @@ describe('Responsive shell (integration)', () => {
       const container = sheet()!;
       expect(container.getAttribute('role')).toBe('dialog');
       expect(container.querySelector('app-shell-actions-sheet app-sidebar')).toBeTruthy();
-      expect(container.querySelector('mat-selection-list.sidebar-theme-options')).toBeTruthy();
       expect(container.querySelectorAll('a').length).toBe(0);
       expect(container.querySelector('nav, mat-nav-list')).toBeNull();
       // Nothing promises navigation: no hamburger anywhere at compact.
       expect(document.querySelector('app-hamburger')).toBeNull();
     });
 
-    it('when the sheet opens, focus moves into it, and Esc closes it and returns focus to the actions button', async () => {
-      const button = actionsButton();
-      button.focus();
-      button.click();
+    it('when the sheet opens, focus moves into it, and Esc closes it and returns focus to the control that had it', async () => {
+      const opener = barLink();
+      opener.focus();
+      openSheet();
       await settle();
 
       // In a browser the trap focuses the first tabbable action. jsdom lays nothing out, so the
@@ -223,11 +223,11 @@ describe('Responsive shell (integration)', () => {
       await settle();
 
       expect(sheet()).toBeNull();
-      expect(document.activeElement).toBe(button);
+      expect(document.activeElement).toBe(opener);
     });
 
     it('when the scrim is clicked, the sheet closes', async () => {
-      actionsButton().click();
+      openSheet();
       await settle();
 
       document.querySelector<HTMLElement>('.cdk-overlay-backdrop')!.click();
@@ -271,14 +271,13 @@ describe('Responsive shell (integration)', () => {
       expect(await (await loader.getHarness(MatSidenavHarness)).isOpen()).toBe(true);
     });
 
-    it('when medium, the rail is the one banner, holding the Primary navigation and the rail actions', () => {
+    it('when medium, the rail is the one banner, holding the Primary navigation', () => {
       expect(navLabels()).toEqual(['Primary']);
       const bannerElements = banners();
       expect(bannerElements.length).toBe(1);
       const banner = bannerElements[0];
       expect(banner.classList.contains('rail-content')).toBe(true);
       expect(banner.querySelector('nav[aria-label="Primary"]')).toBeTruthy();
-      expect(banner.querySelector('.sidebar-footer button.sidebar-theme-toggle')).toBeTruthy();
     });
   });
 
@@ -304,7 +303,7 @@ describe('Responsive shell (integration)', () => {
         expect(railToggle()?.getAttribute('aria-label')).toBe('Collapse navigation');
         // The toggle and the brand sit in the banner with the destinations.
         expect(railToggle()?.closest('[role="banner"]')).toBeTruthy();
-        expect(rail().querySelector('[role="banner"] .rail-brand')?.textContent?.trim()).toBe('Acme');
+        expect(rail().querySelector('[role="banner"] .rail-brand')?.textContent?.trim()).toBe('JFLT');
       });
     });
   }
@@ -396,7 +395,7 @@ describe('Responsive shell (integration)', () => {
 
     it('when the window crosses 600px with the sheet open, the sheet closes and the docked rail replaces the bar', async () => {
       await render('compact');
-      actionsButton().click();
+      openSheet();
       await settle();
       expect(sheet()).toBeTruthy();
 
@@ -415,42 +414,18 @@ describe('Responsive shell (integration)', () => {
   });
 
   /**
-   * A size change that removes the focused shell control (the sheet and its trigger at 600px,
-   * the rail toggle below 840px, the rail or the bar at 600px, the expanded rail's items when it
-   * collapses) moves focus to the same control in the new form instead of dropping it to <body>.
+   * A size change that removes the focused shell control (the rail toggle below 840px, the rail
+   * or the bar at 600px, the expanded rail's items when it collapses) moves focus to the same control in the new form instead of dropping it to <body>.
    */
   describe('focus across size classes', () => {
-    function railAction(selector: string): HTMLElement | null {
-      return rail().querySelector<HTMLElement>(`.sidebar-footer ${selector}`);
-    }
-
     function destination(container: Element | null, route: string): HTMLAnchorElement | null {
       const links = Array.from(container?.querySelectorAll<HTMLAnchorElement>('a[href]') ?? []);
       return links.find((link) => link.getAttribute('href') === route) ?? null;
     }
 
-    it('when the window crosses 600px with focus in the actions sheet, focus moves to the same action in the docked rail', async () => {
-      await render('compact');
-      const trigger = actionsButton();
-      trigger.focus();
-      trigger.click();
-      await settle();
-      // A theme choice in the sheet maps to the rail's Change theme button, which opens the same choices.
-      const sheetOption = sheet()!.querySelector<HTMLElement>('.sidebar-theme-options mat-list-option')!;
-      sheetOption.focus();
-      expect(document.activeElement).toBe(sheetOption);
-
-      await resize('medium');
-      await settle();
-
-      expect(sheet()).toBeNull();
-      expect(document.activeElement).not.toBe(document.body);
-      expect(document.activeElement).toBe(railAction('button.sidebar-theme-toggle'));
-    });
-
     it('when the window narrows below 840px with focus on the rail toggle, focus moves to the current destination', async () => {
       await render('expanded');
-      await TestBed.inject(Router).navigateByUrl('/dashboard');
+      await TestBed.inject(Router).navigateByUrl('/reading');
       await settle();
       railToggle()!.focus();
 
@@ -458,40 +433,29 @@ describe('Responsive shell (integration)', () => {
 
       expect(railToggle()).toBeNull();
       const current = rail().querySelector('a.rail-item[aria-current="page"]');
-      expect(current?.getAttribute('href')).toBe('/dashboard');
+      expect(current?.getAttribute('href')).toBe('/reading');
       expect(document.activeElement).toBe(current);
     });
 
     it('when the window crosses 600px with focus on a destination, focus follows it between the rail and the navigation bar', async () => {
       await render('medium');
-      destination(rail(), '/chat')!.focus();
+      destination(rail(), '/listening')!.focus();
 
       await resize('compact');
-      expect(document.activeElement).toBe(destination(host.querySelector('app-bottom-tab-bar'), '/chat'));
+      expect(document.activeElement).toBe(destination(host.querySelector('app-bottom-tab-bar'), '/listening'));
 
       await resize('medium');
-      expect(document.activeElement).toBe(destination(rail(), '/chat'));
-    });
-
-    it('when the window crosses 600px with focus on a rail action, focus moves to the top app bar button that opens the actions, and back', async () => {
-      await render('medium');
-      railAction('button.sidebar-theme-toggle')!.focus();
-
-      await resize('compact');
-      expect(document.activeElement).toBe(actionsButton());
-
-      await resize('medium');
-      expect(document.activeElement).toBe(railAction('button.sidebar-theme-toggle'));
+      expect(document.activeElement).toBe(destination(rail(), '/listening'));
     });
 
     it('when the default expanded rail collapses at large, focus stays on the same destination', async () => {
       await render('extraLarge');
-      destination(rail().querySelector('mat-nav-list'), '/settings')!.focus();
+      destination(rail().querySelector('mat-nav-list'), '/exam')!.focus();
 
       await resize('large');
 
       expect(rail().classList.contains('rail-wide')).toBe(false);
-      expect(document.activeElement).toBe(destination(rail().querySelector('nav'), '/settings'));
+      expect(document.activeElement).toBe(destination(rail().querySelector('nav'), '/exam'));
     });
 
     it('when focus is outside the shell controls, a size change leaves it where it is', async () => {

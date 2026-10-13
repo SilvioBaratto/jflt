@@ -5,18 +5,21 @@
 .bank-header h1 {
   margin: 0 0 0.25rem;
   font: var(--mat-sys-headline-large);
+  letter-spacing: var(--mat-sys-headline-large-tracking);
   color: var(--mat-sys-on-surface);
 }
 
 .bank-header p {
   margin: 0 0 1.5rem;
+  font: var(--mat-sys-body-large);
+  letter-spacing: var(--mat-sys-body-large-tracking);
   color: var(--mat-sys-on-surface-variant);
   max-width: 60ch;
 }
 
 .sections {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: minmax(0, 1fr);
   gap: 1rem;
   align-items: start;
 }
@@ -36,12 +39,14 @@
 .sec-head h2 {
   margin: 0;
   font: var(--mat-sys-title-large);
+  letter-spacing: var(--mat-sys-title-large-tracking);
   color: var(--mat-sys-on-surface);
 }
 
 .n {
+  font: var(--mat-sys-label-large);
+  letter-spacing: var(--mat-sys-label-large-tracking);
   color: var(--mat-sys-primary);
-  font-weight: 700;
 }
 
 .items {
@@ -75,13 +80,16 @@
 
 .lvl {
   flex: none;
+  font: var(--mat-sys-label-large);
+  letter-spacing: var(--mat-sys-label-large-tracking);
   font-variant-numeric: tabular-nums;
-  font-weight: 600;
   color: var(--mat-sys-primary);
   min-width: 2.2ch;
 }
 
 .topic {
+  font: var(--mat-sys-body-large);
+  letter-spacing: var(--mat-sys-body-large-tracking);
   flex: 1;
   min-inline-size: 0;
   overflow-wrap: anywhere;
@@ -91,6 +99,28 @@
 .meta {
   min-inline-size: 0;
   overflow-wrap: anywhere;
-  font-size: 0.75rem;
+  font: var(--mat-sys-body-small);
+  letter-spacing: var(--mat-sys-body-small-tracking);
   color: var(--mat-sys-on-surface-variant);
+}
+
+.error {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.error p {
+  margin: 0;
+  font: var(--mat-sys-body-large);
+  letter-spacing: var(--mat-sys-body-large-tracking);
+  color: var(--mat-sys-error);
+}
+
+/* A retry replaces the focused Try again button with the spinner, so focus moves to the section
+   heading; it is not a control, so it shows no focus ring. */
+.sec-head h2:focus {
+  outline: none;
 }
