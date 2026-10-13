@@ -131,9 +131,36 @@ export interface WritingResult {
   modelAnswer: string | null;
 }
 
-/** Per-skill breakdown returned when a session is completed. */
+/**
+ * Result for one MCQ skill. `total` counts every keyed question presented, answered or not;
+ * `estimatedLevel` is a STANAG level, or "<N" when the lowest tested level N was not reached.
+ * Sessions completed before levels became labels may hold a number here.
+ */
+export interface McqSkillResult {
+  correct: number;
+  answered?: number;
+  total: number;
+  pct: number;
+  estimatedLevel: string | number;
+  byLevel?: { level: number; correct: number; total: number }[];
+}
+
+/** Levels per skill in STANAG SLP order; null where the skill was not assessed. */
+export interface SlpProfile {
+  listening: string | null;
+  speaking: null;
+  reading: string | null;
+  writing: string | null;
+}
+
+/**
+ * Per-skill breakdown returned when a session is completed. `profile` and `slp` are absent on
+ * sessions completed before the SLP profile was introduced.
+ */
 export interface SessionResult {
-  reading: { correct: number; total: number; pct: number; estimatedLevel: number } | null;
-  listening: { correct: number; total: number; pct: number; estimatedLevel: number } | null;
+  reading: McqSkillResult | null;
+  listening: McqSkillResult | null;
   writing: { avgScore: number; estimatedLevel: string; count: number } | null;
+  profile?: SlpProfile;
+  slp?: string;
 }

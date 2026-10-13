@@ -140,6 +140,14 @@
   border-color: var(--mat-sys-primary);
 }
 
+/* M3 disabled treatment: 38% content, 12% outline, with the selected fill dropped. */
+.level:disabled {
+  cursor: default;
+  background: transparent;
+  color: color-mix(in srgb, var(--mat-sys-on-surface) 38%, transparent);
+  border-color: color-mix(in srgb, var(--mat-sys-on-surface) 12%, transparent);
+}
+
 .prompt {
   font-style: italic;
   color: var(--mat-sys-on-surface-variant);
@@ -177,7 +185,17 @@
 .finish-bar {
   margin-top: 2rem;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.finish-bar p {
+  margin: 0;
+}
+
+.finish-error {
+  color: var(--mat-sys-error);
 }
 
 .results h1 {

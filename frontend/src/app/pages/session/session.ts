@@ -5,13 +5,28 @@ import {
   Injector,
   OnInit,
   afterNextRender,
+  computed,
   inject,
   signal,
   viewChild,
   DestroyRef,
+  WritableSignal,
 } from '@angular/core';
 import { ActivatedRoute, RouterLink } from '@angular/router';
 import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
+import {
+  EMPTY,
+  Observable,
+  catchError,
+  defer,
+  finalize,
+  forkJoin,
+  map,
+  of,
+  switchMap,
+  tap,
+  throwError,
+} from 'rxjs';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { MatRadioModule } from '@angular/material/radio';
@@ -27,6 +42,7 @@ import {
   ListeningItem,
   WritingTask,
   McqResult,
+  McqSkillResult,
   WritingResult,
   SessionResult,
 } from '../../models/exam';
@@ -68,7 +84,14 @@ export class SessionComponent implements OnInit {
   readonly writingText = signal<Record<string, string>>({});
   readonly writingResult = signal<Record<string, WritingResult>>({});
   readonly grading = signal<Record<string, boolean>>({});
+  readonly checking = signal<Record<string, boolean>>({});
+  readonly busy = computed(
+    () =>
+      Object.values(this.grading()).some(Boolean) || Object.values(this.checking()).some(Boolean),
+  );
   readonly finishing = signal(false);
+  readonly finishStatus = signal('');
+  readonly finishError = signal<string | null>(null);
   readonly finalResult = signal<SessionResult | null>(null);
 
   ngOnInit(): void {
@@ -83,6 +106,7 @@ export class SessionComponent implements OnInit {
       .subscribe({
         next: (s) => {
           this.session.set(s);
+          if (s.status === 'completed' && s.result) this.finalResult.set(s.result);
           const opt: Record<string, string> = {};
           for (const t of s.items.writing) opt[t.id] = t.options[0]?.key ?? 'main';
           this.writingOption.set(opt);
@@ -107,16 +131,7 @@ export class SessionComponent implements OnInit {
 
   /** Submit a reading item for scoring. */
   submitReading(item: ReadingItem): void {
-    const chosen = this.readingChoice()[item.id];
-    if (!chosen) return;
-    const id = this.session()?.id;
-    if (!id) return;
-    this.examApi
-      .submit(id, { itemType: 'reading', itemId: item.id, chosenLabel: chosen })
-      .pipe(takeUntilDestroyed(this.destroyRef))
-      .subscribe({
-        next: (res) => this.readingResult.update((m) => ({ ...m, [item.id]: res as McqResult })),
-      });
+    this.fire(this.readingSubmission(item));
   }
 
   /** Record the chosen label for a listening question. */
@@ -126,17 +141,7 @@ export class SessionComponent implements OnInit {
 
   /** Submit one listening question for scoring. */
   submitListening(item: ListeningItem, qi: number): void {
-    const key = this.lkey(item.id, qi);
-    const chosen = this.listeningChoice()[key];
-    if (!chosen) return;
-    const id = this.session()?.id;
-    if (!id) return;
-    this.examApi
-      .submit(id, { itemType: 'listening', itemId: item.id, questionIndex: qi, chosenLabel: chosen })
-      .pipe(takeUntilDestroyed(this.destroyRef))
-      .subscribe({
-        next: (res) => this.listeningResult.update((m) => ({ ...m, [key]: res as McqResult })),
-      });
+    this.fire(this.listeningSubmission(item, qi));
   }
 
   /** Choose which essay prompt option to answer. */
@@ -157,47 +162,165 @@ export class SessionComponent implements OnInit {
 
   /** Submit a writing response for live grading. */
   submitWriting(task: WritingTask): void {
-    const text = this.writingText()[task.id];
-    if (!text?.trim()) return;
-    const id = this.session()?.id;
-    if (!id) return;
-    this.grading.update((m) => ({ ...m, [task.id]: true }));
-    this.examApi
-      .submit(id, {
-        itemType: 'writing',
-        itemId: task.id,
-        optionKey: this.writingOption()[task.id],
-        responseText: text,
-      })
-      .pipe(takeUntilDestroyed(this.destroyRef))
-      .subscribe({
-        next: (res) => {
-          this.writingResult.update((m) => ({ ...m, [task.id]: res as WritingResult }));
-          this.grading.update((m) => ({ ...m, [task.id]: false }));
-        },
-        error: () => this.grading.update((m) => ({ ...m, [task.id]: false })),
-      });
+    this.fire(this.writingSubmission(task));
   }
 
-  /** Finish the session and load the SLP-style result. */
+  /** Render a level label for display; "<3" (below the lowest tested level) reads as "below 3". */
+  levelLabel(level: string | number): string {
+    const l = String(level);
+    return l.startsWith('<') ? `below ${l.slice(1)}` : l;
+  }
+
+  /** Number of keyed questions in a skill result that were never answered. */
+  unanswered(r: McqSkillResult): number {
+    return r.answered == null ? 0 : r.total - r.answered;
+  }
+
+  /**
+   * Finish the session and load the SLP-style result.
+   *
+   * Choices that were never checked and writing that was never submitted are submitted first, so
+   * finishing does not silently drop work the candidate did. A no-op while any check or grading
+   * request is in flight, because completing before it lands would leave that answer out of the
+   * result. Every pending submission runs to the end even if another fails, so a retry does not
+   * re-grade writing that was already graded.
+   */
   finish(): void {
-    const id = this.session()?.id;
-    if (!id || this.finishing()) return;
+    const s = this.session();
+    if (!s || this.finishing() || this.busy()) return;
+
+    const reading = s.items.reading
+      .filter((item) => !this.readingResult()[item.id])
+      .map((item) => this.readingSubmission(item));
+    const listening = s.items.listening.flatMap((item) =>
+      item.questions.map((_, qi) =>
+        this.listeningResult()[this.lkey(item.id, qi)] ? null : this.listeningSubmission(item, qi),
+      ),
+    );
+    const writing = s.items.writing
+      .filter((task) => !this.writingResult()[task.id])
+      .map((task) => this.writingSubmission(task))
+      .filter((o) => o !== null);
+    const pending = [...reading, ...listening, ...writing]
+      .filter((o) => o !== null)
+      .map((o) =>
+        o.pipe(
+          map(() => true),
+          catchError(() => of(false)),
+        ),
+      );
+
+    const n = writing.length;
+    this.finishStatus.set(
+      n ? `Grading ${n} writing ${n === 1 ? 'response' : 'responses'}…` : 'Scoring…',
+    );
+    this.finishError.set(null);
     this.finishing.set(true);
-    this.examApi
-      .complete(id)
-      .pipe(takeUntilDestroyed(this.destroyRef))
+    let submitted = true;
+    (pending.length ? forkJoin(pending) : of([]))
+      .pipe(
+        switchMap((oks) => {
+          submitted = oks.every(Boolean);
+          return submitted ? this.examApi.complete(s.id) : throwError(() => new Error('submit'));
+        }),
+        takeUntilDestroyed(this.destroyRef),
+      )
       .subscribe({
         next: (res) => {
           this.finalResult.set(res);
           this.finishing.set(false);
+          this.finishStatus.set('');
           // <main> is the shell's scroll container, not the window, so move focus to the result
           // heading: that scrolls it into view here and announces the outcome to a screen reader.
           afterNextRender(() => this.resultsHeading()?.nativeElement.focus(), {
             injector: this.injector,
           });
         },
-        error: () => this.finishing.set(false),
+        error: () => {
+          this.finishing.set(false);
+          this.finishStatus.set('');
+          this.finishError.set(
+            submitted
+              ? 'The session could not be finished. Try again.'
+              : 'Some answers could not be submitted, so the session was not finished. Try again.',
+          );
+        },
       });
+  }
+
+  // The error interceptor has already reported a failed request; a manual check or submit just
+  // leaves the item unscored so the candidate can retry, rather than rethrowing unhandled.
+  private fire(submission: Observable<unknown> | null): void {
+    submission?.pipe(catchError(() => EMPTY), takeUntilDestroyed(this.destroyRef)).subscribe();
+  }
+
+  private readingSubmission(item: ReadingItem): Observable<unknown> | null {
+    const chosen = this.readingChoice()[item.id];
+    const id = this.session()?.id;
+    if (!chosen || !id) return null;
+    return this.tracked(
+      this.checking,
+      item.id,
+      this.examApi
+        .submit(id, { itemType: 'reading', itemId: item.id, chosenLabel: chosen })
+        .pipe(
+          tap((res) => this.readingResult.update((m) => ({ ...m, [item.id]: res as McqResult }))),
+        ),
+    );
+  }
+
+  private listeningSubmission(item: ListeningItem, qi: number): Observable<unknown> | null {
+    const key = this.lkey(item.id, qi);
+    const chosen = this.listeningChoice()[key];
+    const id = this.session()?.id;
+    if (!chosen || !id) return null;
+    return this.tracked(
+      this.checking,
+      key,
+      this.examApi
+        .submit(id, {
+          itemType: 'listening',
+          itemId: item.id,
+          questionIndex: qi,
+          chosenLabel: chosen,
+        })
+        .pipe(
+          tap((res) => this.listeningResult.update((m) => ({ ...m, [key]: res as McqResult }))),
+        ),
+    );
+  }
+
+  private writingSubmission(task: WritingTask): Observable<unknown> | null {
+    const text = this.writingText()[task.id];
+    const id = this.session()?.id;
+    if (!text?.trim() || !id) return null;
+    return this.tracked(
+      this.grading,
+      task.id,
+      this.examApi
+        .submit(id, {
+          itemType: 'writing',
+          itemId: task.id,
+          optionKey: this.writingOption()[task.id],
+          responseText: text,
+        })
+        .pipe(
+          tap((res) =>
+            this.writingResult.update((m) => ({ ...m, [task.id]: res as WritingResult })),
+          ),
+        ),
+    );
+  }
+
+  /** Flag `key` in `flags` from subscription until the request settles or is cancelled. */
+  private tracked(
+    flags: WritableSignal<Record<string, boolean>>,
+    key: string,
+    request: Observable<unknown>,
+  ): Observable<unknown> {
+    return defer(() => {
+      flags.update((m) => ({ ...m, [key]: true }));
+      return request.pipe(finalize(() => flags.update((m) => ({ ...m, [key]: false }))));
+    });
   }
 }

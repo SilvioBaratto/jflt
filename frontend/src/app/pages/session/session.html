@@ -5,11 +5,21 @@
     @if (finalResult(); as fr) {
       <mat-card class="results" appearance="outlined">
         <h1 #resultsHeading tabindex="-1">Session results</h1>
-        @if (fr.reading) {
-          <p class="line">Reading — {{ fr.reading.correct }}/{{ fr.reading.total }} ({{ fr.reading.pct }}%) · estimated level {{ fr.reading.estimatedLevel }}</p>
+        @if (fr.slp) {
+          <p class="line"><strong>SLP profile (L/S/R/W): {{ fr.slp }}</strong></p>
+          <p class="muted">Speaking is not assessed here; – marks a skill this session did not cover</p>
         }
-        @if (fr.listening) {
-          <p class="line">Listening — {{ fr.listening.correct }}/{{ fr.listening.total }} ({{ fr.listening.pct }}%) · estimated level {{ fr.listening.estimatedLevel }}</p>
+        @if (fr.listening; as r) {
+          <p class="line">
+            Listening — {{ r.correct }}/{{ r.total }} ({{ r.pct }}%)@if (unanswered(r)) { · {{ unanswered(r) }} unanswered }
+            · estimated level {{ levelLabel(r.estimatedLevel) }}
+          </p>
+        }
+        @if (fr.reading; as r) {
+          <p class="line">
+            Reading — {{ r.correct }}/{{ r.total }} ({{ r.pct }}%)@if (unanswered(r)) { · {{ unanswered(r) }} unanswered }
+            · estimated level {{ levelLabel(r.estimatedLevel) }}
+          </p>
         }
         @if (fr.writing) {
           <p class="line">Writing — avg {{ fr.writing.avgScore }}/4 · estimated level {{ fr.writing.estimatedLevel }}</p>
@@ -33,14 +43,20 @@
               class="opts"
               [value]="readingChoice()[item.id] || ''"
               (change)="pickReading(item.id, $event.value)"
-              [disabled]="!!readingResult()[item.id]"
+              [disabled]="!!readingResult()[item.id] || finishing()"
             >
               @for (o of item.options; track o.label) {
                 <mat-radio-button [value]="o.label">{{ o.label }}) {{ o.text }}</mat-radio-button>
               }
             </mat-radio-group>
             @if (!readingResult()[item.id]) {
-              <button matButton (click)="submitReading(item)" [disabled]="!readingChoice()[item.id]">Check</button>
+              <button
+                matButton
+                (click)="submitReading(item)"
+                [disabled]="!readingChoice()[item.id] || checking()[item.id] || finishing()"
+              >
+                Check
+              </button>
             }
             @if (readingResult()[item.id]; as r) {
               <div class="fb" [class.ok]="r.correct" [class.no]="!r.correct">
@@ -68,7 +84,7 @@
                   class="opts"
                   [value]="listeningChoice()[listeningKey(item.id, $index)] || ''"
                   (change)="pickListening(item.id, $index, $event.value)"
-                  [disabled]="!!listeningResult()[listeningKey(item.id, $index)]"
+                  [disabled]="!!listeningResult()[listeningKey(item.id, $index)] || finishing()"
                 >
                   @for (opt of ['A', 'B', 'C', 'D']; track opt) {
                     <mat-radio-button [value]="opt">{{ opt }}) {{ q.options[opt] }}</mat-radio-button>
@@ -78,16 +94,25 @@
                   <button
                     matButton
                     (click)="submitListening(item, $index)"
-                    [disabled]="!listeningChoice()[listeningKey(item.id, $index)]"
+                    [disabled]="
+                      !listeningChoice()[listeningKey(item.id, $index)] ||
+                      checking()[listeningKey(item.id, $index)] ||
+                      finishing()
+                    "
                   >
                     Check
                   </button>
                 }
                 @if (listeningResult()[listeningKey(item.id, $index)]; as r) {
+                  @if (r.ungraded) {
+                    <div class="fb"><strong>Answer recorded</strong> — this question has no answer key yet</div>
+                  } @else {
                   <div class="fb" [class.ok]="r.correct" [class.no]="!r.correct">
                     <strong>{{ r.correct ? 'Correct' : 'Incorrect' }}</strong> — key {{ r.correctLabel }}
                     <p>{{ r.keyRationale }}</p>
+                    @if (!r.correct && r.chosenRationale) { <p class="muted">Your choice: {{ r.chosenRationale }}</p> }
                   </div>
+                  }
                 }
               </div>
             }
@@ -110,6 +135,7 @@
                     class="level"
                     [class.on]="writingOption()[task.id] === o.key"
                     [attr.aria-pressed]="writingOption()[task.id] === o.key"
+                    [disabled]="!!writingResult()[task.id] || grading()[task.id] || finishing()"
                     (click)="pickWritingOption(task.id, o.key)"
                   >
                     {{ o.key }}
@@ -126,13 +152,17 @@
                 rows="8"
                 [value]="writingText()[task.id] || ''"
                 (input)="setWritingText(task.id, $any($event.target).value)"
-                [disabled]="!!writingResult()[task.id]"
+                [disabled]="!!writingResult()[task.id] || grading()[task.id] || finishing()"
                 placeholder="Write your response here…"
               ></textarea>
             </mat-form-field>
             <div class="wc">{{ wordCount(writingText()[task.id]) }} words</div>
             @if (!writingResult()[task.id]) {
-              <button matButton="tonal" (click)="submitWriting(task)" [disabled]="grading()[task.id] || !writingText()[task.id]">
+              <button
+                matButton="tonal"
+                (click)="submitWriting(task)"
+                [disabled]="grading()[task.id] || !writingText()[task.id] || finishing()"
+              >
                 @if (grading()[task.id]) { <mat-spinner diameter="18" /> Grading… } @else { Submit for grading }
               </button>
             }
@@ -156,9 +186,21 @@
       }
 
       <div class="finish-bar">
-        <button matButton="filled" (click)="finish()" [disabled]="finishing()">
-          @if (finishing()) { <mat-spinner diameter="18" /> } @else { Finish and see results }
+        <!-- disabledInteractive keeps the button focused while it is disabled, so keyboard focus is
+             not dropped to the page when finishing starts and a failed finish can be retried in place. -->
+        <button
+          matButton="filled"
+          disabledInteractive
+          (click)="finish()"
+          [disabled]="finishing() || busy()"
+        >
+          @if (finishing()) { <mat-spinner diameter="18" /> }
+          Finish and see results
         </button>
+        <p class="muted" role="status">{{ finishStatus() }}</p>
+        @if (finishError(); as e) {
+          <p class="finish-error" role="alert">{{ e }}</p>
+        }
       </div>
     }
   </div>
