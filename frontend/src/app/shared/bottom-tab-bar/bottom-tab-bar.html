@@ -1,0 +1,17 @@
+<!-- The label is visible text, so it is the link's accessible name: no aria-label. -->
+<nav class="nav-bar" aria-label="Primary">
+  @for (tab of tabs; track tab.route) {
+    <a
+      #link
+      class="nav-bar-item"
+      [routerLink]="tab.route"
+      routerLinkActive="nav-bar-item-active"
+      ariaCurrentWhenActive="page"
+    >
+      <span class="nav-bar-indicator" matRipple [matRippleTrigger]="link">
+        <lucide-icon class="nav-bar-icon" [name]="tab.icon" aria-hidden="true" />
+      </span>
+      <span class="nav-bar-label">{{ tab.name }}</span>
+    </a>
+  }
+</nav>

@@ -1,0 +1,24 @@
+<!-- Rendered by MatDialog into the overlay container while `open` is true. -->
+<ng-template #sheet>
+  <div class="drawer-sheet">
+    <div class="drawer-header">
+      @if (label()) {
+        <!-- matDialogTitle adds and removes this id in the dialog's aria-labelledby. -->
+        <h2 matDialogTitle class="drawer-headline">{{ label() }}</h2>
+      }
+      <button
+        matIconButton
+        type="button"
+        class="drawer-close"
+        [attr.aria-label]="closeLabel()"
+        (click)="handleClose()"
+      >
+        <lucide-icon name="X" />
+      </button>
+    </div>
+
+    <div class="drawer-body">
+      <ng-content />
+    </div>
+  </div>
+</ng-template>

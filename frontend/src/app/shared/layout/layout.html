@@ -1,0 +1,59 @@
+<a class="skip-link" href="#main-content" (click)="skipToMain($event)">Skip to content</a>
+
+<mat-sidenav-container class="shell" autosize>
+  @if (!isMobile()) {
+    <!--
+      Navigation rail, docked from 600px (below 600px the navigation bar holds the destinations
+      and a bottom sheet the actions). disableClose keeps Esc from hiding it.
+    -->
+    <mat-sidenav
+      id="app-rail"
+      class="rail"
+      [class.rail-wide]="sidebarMode() === 'expanded'"
+      mode="side"
+      [opened]="true"
+      [disableClose]="true"
+    >
+      <!-- The banner at these widths: the top app bar, the compact header, doesn't render here. -->
+      <div class="rail-content" role="banner">
+        @if (canExpandRail()) {
+          <div class="rail-header">
+            <app-hamburger
+              variant="rail"
+              [open]="railExpanded()"
+              controls="app-rail"
+              (toggle)="toggleRail()"
+            />
+            @if (sidebarMode() === 'expanded') {
+              <a routerLink="/" class="rail-brand">JFLT</a>
+            }
+          </div>
+        }
+        <app-sidebar [mode]="sidebarMode()" />
+      </div>
+    </mat-sidenav>
+  }
+
+  <mat-sidenav-content class="shell-content">
+    @if (isMobile()) {
+      <app-navbar class="shell-top-app-bar">
+        <a routerLink="/" navbarBrand>JFLT</a>
+      </app-navbar>
+    }
+
+    <!--
+      The only scroll container; see layout.css for the viewport-unit trade-offs.
+      No aria-label: there is one main landmark, and a label would only repeat its role.
+    -->
+    <main #main id="main-content" class="shell-main" tabindex="-1">
+      <router-outlet />
+    </main>
+
+    @if (isMobile()) {
+      <app-bottom-tab-bar class="shell-nav-bar" />
+    }
+  </mat-sidenav-content>
+</mat-sidenav-container>
+
+<!-- Route announcer: reads the new page title to screen readers. -->
+<div class="cdk-visually-hidden" aria-live="polite" aria-atomic="true">{{ announced() }}</div>

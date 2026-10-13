@@ -1,0 +1,10 @@
+<!-- Nothing renders in place: app-drawer opens the content in the overlay container while `open` is true. -->
+<app-drawer
+  [(open)]="open"
+  [side]="side()"
+  [label]="label()"
+  closeLabel="Close panel"
+  (close)="closed.emit()"
+>
+  <ng-content />
+</app-drawer>

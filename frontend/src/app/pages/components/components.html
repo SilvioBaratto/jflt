@@ -1,0 +1,70 @@
+<div class="catalog">
+  <header class="catalog-header">
+    <h1 class="catalog-title">Component catalog</h1>
+    <p class="catalog-intro">
+      Every shared UI component, shown in a light and a dark region so you can check both color schemes side by side
+    </p>
+  </header>
+
+  <section class="catalog-section" data-section="Core" aria-labelledby="catalog-core-heading">
+    <h2 id="catalog-core-heading" class="section-heading">Core</h2>
+    <app-core-section />
+  </section>
+
+  <section class="catalog-section" data-section="Forms" aria-labelledby="catalog-forms-heading">
+    <h2 id="catalog-forms-heading" class="section-heading">Forms</h2>
+    <app-forms-section />
+  </section>
+
+  <section class="catalog-section" data-section="Navigation" aria-labelledby="catalog-navigation-heading">
+    <h2 id="catalog-navigation-heading" class="section-heading">Navigation</h2>
+    <app-navigation-section />
+  </section>
+
+  <section class="catalog-section" data-section="Overlays" aria-labelledby="catalog-overlays-heading">
+    <h2 id="catalog-overlays-heading" class="section-heading">Overlays</h2>
+    <p class="section-intro">
+      Modals, slide-overs, drawers, snackbars, and tooltips open in an overlay container at the end of the page,
+      outside these regions, so they follow the app's theme rather than the region you open them from. Only one modal,
+      slide-over, or drawer is open at a time.
+    </p>
+
+    <!-- The section previews each trigger group in a light and a dark region; the dialogs are mounted once, below. -->
+    <app-overlays-section (opened)="openOverlay($event)" />
+  </section>
+
+  <section class="catalog-section" data-section="Data Display" aria-labelledby="catalog-data-display-heading">
+    <h2 id="catalog-data-display-heading" class="section-heading">Data display</h2>
+    <app-data-display-section />
+  </section>
+</div>
+
+<!--
+  One instance of each overlay. Each open state is derived from activeOverlay, so at most one is open.
+  MatDialog renders them in the overlay container under the body element, where they follow the
+  global theme, and returns focus to the trigger when they close. A user dismissal clears
+  activeOverlay through (closed) / (close), scoped to its own overlay so a late dismissal never
+  clears one opened after it.
+
+  Modal actions: dismissive Cancel first as a text button, then the one confirming action, Publish,
+  as the filled button, so it is the most prominent action in the dialog.
+-->
+<app-modal #modal label="Publish changes?" [open]="activeOverlay() === 'modal'" (closed)="closeOverlay('modal')">
+  <p class="overlay-text">Everyone with access to this project will see your changes</p>
+  <app-modal-actions>
+    <button matButton type="button" (click)="modal.close()">Cancel</button>
+    <button matButton="filled" type="button" (click)="modal.close()">Publish</button>
+  </app-modal-actions>
+</app-modal>
+
+<app-slide-over
+  label="Project details"
+  [open]="activeOverlay() === 'slide-over'"
+  (closed)="closeOverlay('slide-over')"
+>
+  <p class="overlay-text">Created by Alice Smith. Last updated 5 minutes ago.</p>
+</app-slide-over>
+
+<app-drawer label="Notifications" side="right" [open]="activeOverlay() === 'drawer'" (close)="closeOverlay('drawer')">
+  <p class="overlay-text">You're all caught up</p>
+</app-drawer>

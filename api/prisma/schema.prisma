@@ -1,0 +1,178 @@
+generator client {
+  provider = "prisma-client"
+  output   = "../generated/prisma"
+}
+
+generator zod {
+  provider = "prisma-zod-generator"
+  output   = "../generated/zod"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+// -----------------------------------------------
+// Models
+// -----------------------------------------------
+
+model User {
+  id       String  @id @default(uuid()) @db.Uuid
+  email    String  @unique @db.VarChar(255)
+  name     String  @db.VarChar(255)
+  isActive Boolean @default(true) @map("is_active")
+
+  createdAt DateTime @default(now()) @map("created_at") @db.Timestamptz
+  updatedAt DateTime @updatedAt @map("updated_at") @db.Timestamptz
+
+  @@map("users")
+}
+
+// --- Content bank -------------------------------------------------
+
+/// A single multilevel reading MCQ item (one passage, one question, four options).
+model ReadingItem {
+  id           String   @id @default(uuid()) @db.Uuid
+  level        Int // STANAG 1-4
+  topic        String   @db.VarChar(255)
+  passage      String
+  question     String
+  options      Json // [{ label, text, rationale }]
+  correctLabel String   @map("correct_label") @db.VarChar(1)
+  source       String   @default("seed") @db.VarChar(16) // seed | generated
+  createdAt    DateTime @default(now()) @map("created_at") @db.Timestamptz
+
+  @@index([level])
+  @@index([topic])
+  @@map("reading_items")
+}
+
+/// A writing paper task. `options` holds one entry for note/correspondence tasks
+/// and three for the essay (each with its own prompt and model answer).
+model WritingTask {
+  id           String   @id @default(uuid()) @db.Uuid
+  taskType     String   @map("task_type") @db.VarChar(32) // guided_note | formal_correspondence | essay
+  stanagLevel  Int      @map("stanag_level")
+  title        String   @db.VarChar(255)
+  instructions String
+  wordCountMin Int      @map("word_count_min")
+  wordCountMax Int      @map("word_count_max")
+  rubric       Json // [{ dimension, descriptor }]
+  options      Json // [{ key, prompt, modelAnswer }]
+  source       String   @default("seed") @db.VarChar(16)
+  createdAt    DateTime @default(now()) @map("created_at") @db.Timestamptz
+
+  @@map("writing_tasks")
+}
+
+/// A listening item: a multi-speaker conversation plus comprehension questions.
+/// `questions` embeds the answer key server-side (correctLabel/rationale) even
+/// when the on-disk TTS JSON omitted it; `hasKey` flags whether it is gradable.
+model ListeningItem {
+  id               String   @id @default(uuid()) @db.Uuid
+  level            Int
+  topic            String   @db.VarChar(255)
+  conversationType String   @map("conversation_type") @db.VarChar(64)
+  setting          String?
+  voices           Json
+  speakers         Json
+  lines            Json
+  questions        Json // [{ question, options:{A..D}, correctLabel?, rationale? }]
+  audioPath        String?  @map("audio_path") @db.VarChar(255) // served static path
+  hasKey           Boolean  @default(false) @map("has_key")
+  source           String   @default("seed") @db.VarChar(16)
+  createdAt        DateTime @default(now()) @map("created_at") @db.Timestamptz
+
+  @@index([level])
+  @@map("listening_items")
+}
+
+/// A bilingual vocabulary/grammar entry parsed from the preparation guide.
+model VocabEntry {
+  id            String   @id @default(uuid()) @db.Uuid
+  part          String   @db.VarChar(8) // I | II | III | IV
+  section       String   @db.VarChar(255)
+  termEn        String   @map("term_en")
+  translationIt String   @map("translation_it")
+  note          String?
+  createdAt     DateTime @default(now()) @map("created_at") @db.Timestamptz
+
+  @@index([part])
+  @@index([section])
+  @@map("vocab_entries")
+}
+
+// --- Attempts & scoring ------------------------------------------
+
+/// One practice set or timed mock exam.
+model ExamSession {
+  id          String    @id @default(uuid()) @db.Uuid
+  mode        String    @db.VarChar(16) // practice | exam
+  skill       String?   @db.VarChar(16) // reading | listening | writing | null (full)
+  status      String    @default("in_progress") @db.VarChar(16) // in_progress | completed
+  config      Json? // { levels, counts, timed, durationSec, ... }
+  result      Json? // SLP-style { reading, listening, writing }
+  startedAt   DateTime  @default(now()) @map("started_at") @db.Timestamptz
+  completedAt DateTime? @map("completed_at") @db.Timestamptz
+
+  answers Answer[]
+
+  @@index([mode])
+  @@map("exam_sessions")
+}
+
+/// A single answer within a session. Polymorphic by (itemType, itemId): MCQ
+/// answers set chosenLabel/isCorrect; writing answers set responseText/score/feedback.
+model Answer {
+  id            String      @id @default(uuid()) @db.Uuid
+  sessionId     String      @map("session_id") @db.Uuid
+  session       ExamSession @relation(fields: [sessionId], references: [id], onDelete: Cascade)
+  itemType      String      @map("item_type") @db.VarChar(16) // reading | listening | writing
+  itemId        String      @map("item_id") @db.Uuid
+  questionIndex Int         @default(0) @map("question_index") // listening multi-question
+  chosenLabel   String?     @map("chosen_label") @db.VarChar(1)
+  responseText  String?     @map("response_text")
+  isCorrect     Boolean?    @map("is_correct")
+  score         Float? // writing: 0-4
+  feedback      Json? // writing: { dimensions[], overall, suggestions[] }
+  answeredAt    DateTime    @default(now()) @map("answered_at") @db.Timestamptz
+
+  @@index([sessionId])
+  @@index([itemType, itemId])
+  @@map("answers")
+}
+
+// --- Adaptive engine ---------------------------------------------
+
+/// Rolling performance per (skill, level, topic) — drives weak-area targeting.
+model TopicStat {
+  id        String   @id @default(uuid()) @db.Uuid
+  skill     String   @db.VarChar(16) // reading | listening | writing
+  level     Int
+  topic     String   @db.VarChar(255)
+  seen      Int      @default(0)
+  correct   Int      @default(0)
+  updatedAt DateTime @updatedAt @map("updated_at") @db.Timestamptz
+
+  @@unique([skill, level, topic])
+  @@map("topic_stats")
+}
+
+/// Spaced-repetition queue (SM-2-style) for missed items and vocab drilling.
+model ReviewItem {
+  id            String   @id @default(uuid()) @db.Uuid
+  itemType      String   @map("item_type") @db.VarChar(16) // reading | listening | vocab
+  itemId        String   @map("item_id") @db.Uuid
+  questionIndex Int      @default(0) @map("question_index")
+  dueAt         DateTime @default(now()) @map("due_at") @db.Timestamptz
+  intervalDays  Int      @default(0) @map("interval_days")
+  ease          Float    @default(2.5)
+  reps          Int      @default(0)
+  lapses        Int      @default(0)
+  lastResult    Boolean? @map("last_result")
+  createdAt     DateTime @default(now()) @map("created_at") @db.Timestamptz
+
+  @@unique([itemType, itemId, questionIndex])
+  @@index([dueAt])
+  @@map("review_items")
+}

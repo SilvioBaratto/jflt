@@ -1,0 +1,18 @@
+<div matSnackBarLabel class="toast-label">
+  <lucide-icon class="toast-icon" [name]="icon" />
+  <span class="toast-message"><span class="cdk-visually-hidden">{{ statusLabel }}:&ngsp;</span>{{ data.message }}</span>
+</div>
+
+@if (data.dismissible) {
+  <div matSnackBarActions class="toast-actions">
+    <button
+      matIconButton
+      matSnackBarAction
+      type="button"
+      aria-label="Dismiss notification"
+      (click)="dismiss()"
+    >
+      <lucide-icon name="X" />
+    </button>
+  </div>
+}

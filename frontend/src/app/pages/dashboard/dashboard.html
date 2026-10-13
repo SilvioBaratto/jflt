@@ -1,0 +1,67 @@
+<!-- Page content is capped and centered inside the shell's <main>. -->
+<div class="dashboard">
+  <header class="dashboard-header">
+    <h1 class="dashboard-title">Dashboard</h1>
+    <p class="dashboard-supporting-text">An overview of your key metrics</p>
+  </header>
+
+  <section class="dashboard-section" aria-labelledby="dashboard-metrics-heading">
+    <h2 id="dashboard-metrics-heading" class="cdk-visually-hidden">Key metrics</h2>
+
+    <!--
+      The live region stays in the DOM and only its text changes, so screen readers announce the
+      loading state when it starts. It sits outside the busy container, which assistive technology
+      may skip while aria-busy is true, and says nothing while no request is running.
+    -->
+    <p class="cdk-visually-hidden" role="status">
+      @if (isLoading()) {
+        Loading metrics…
+      }
+    </p>
+
+    @if (isLoading()) {
+      <!-- Placeholder tiles hold the feed's layout while the request runs. app-skeleton is aria-hidden. -->
+      <div class="metric-feed" aria-busy="true">
+        @for (placeholder of placeholders; track placeholder) {
+          <mat-card class="metric-card">
+            <mat-card-content class="skeleton-stack">
+              <app-skeleton width="50%" />
+              <app-skeleton width="66%" height="40px" />
+              <app-skeleton width="75%" />
+            </mat-card-content>
+          </mat-card>
+        }
+      </div>
+    } @else {
+      <!--
+        role="list": list-style none makes WebKit drop the implicit list semantics.
+        Values are numbers: the locale pipes add the grouping separator, currency symbol and percent sign.
+      -->
+      <ul class="metric-feed" role="list">
+        @for (metric of metrics; track metric.label) {
+          <li class="metric-feed-item">
+            <mat-card class="metric-card">
+              <mat-card-content>
+                <h3 class="metric-label">{{ metric.label }}</h3>
+                <p class="metric-value">
+                  @switch (metric.format) {
+                    @case ('currency') {
+                      {{ metric.value | currency: 'USD' : 'symbol' : '1.0-0' }}
+                    }
+                    @case ('percent') {
+                      {{ metric.value | percent: '1.1-1' }}
+                    }
+                    @default {
+                      {{ metric.value | number }}
+                    }
+                  }
+                </p>
+                <p class="metric-hint">{{ metric.hint }}</p>
+              </mat-card-content>
+            </mat-card>
+          </li>
+        }
+      </ul>
+    }
+  </section>
+</div>

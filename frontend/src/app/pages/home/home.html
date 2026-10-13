@@ -1,0 +1,64 @@
+<div class="bank">
+  <header class="bank-header">
+    <h1>Question Bank</h1>
+    <p>Browse the material. Use the sidebar to start practising a skill or a full mock exam.</p>
+  </header>
+
+  <div class="sections">
+    <mat-card appearance="outlined" class="sec">
+      <div class="sec-head">
+        <h2>Reading @if (reading(); as r) { <span class="n">{{ r.total }}</span> }</h2>
+        <a routerLink="/reading" matButton>Practise →</a>
+      </div>
+      @if (reading(); as r) {
+        <ul class="items">
+          @for (it of r.items; track it.id) {
+            <li><span class="lvl">L{{ it.level }}</span><span class="topic">{{ it.topic }}</span></li>
+          }
+        </ul>
+      } @else {
+        <mat-spinner diameter="24" />
+      }
+    </mat-card>
+
+    <mat-card appearance="outlined" class="sec">
+      <div class="sec-head">
+        <h2>Listening @if (listening(); as l) { <span class="n">{{ l.total }}</span> }</h2>
+        <a routerLink="/listening" matButton>Practise →</a>
+      </div>
+      @if (listening(); as l) {
+        <ul class="items">
+          @for (it of l.items; track it.id) {
+            <li>
+              <span class="lvl">L{{ it.level }}</span>
+              <span class="topic">{{ it.topic }}</span>
+              <span class="meta">{{ it.conversationType }} · {{ it.questionCount }} Q</span>
+            </li>
+          }
+        </ul>
+      } @else {
+        <mat-spinner diameter="24" />
+      }
+    </mat-card>
+
+    <mat-card appearance="outlined" class="sec">
+      <div class="sec-head">
+        <h2>Writing @if (writing(); as w) { <span class="n">{{ w.total }}</span> }</h2>
+        <a routerLink="/writing" matButton>Practise →</a>
+      </div>
+      @if (writing(); as w) {
+        <ul class="items">
+          @for (it of w.items; track it.id) {
+            <li>
+              <span class="lvl">L{{ it.stanagLevel }}</span>
+              <span class="topic">{{ it.title }}</span>
+              <span class="meta">{{ it.wordCountMin }}–{{ it.wordCountMax }} w</span>
+            </li>
+          }
+        </ul>
+      } @else {
+        <mat-spinner diameter="24" />
+      }
+    </mat-card>
+  </div>
+</div>

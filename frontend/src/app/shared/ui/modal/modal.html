@@ -1,0 +1,27 @@
+<!--
+  MatDialog renders this template in the body-level overlay container and supplies the scrim,
+  the dialog role, aria-hidden on the page outside the overlay container (aria-modal stays off by
+  Material's default), the focus trap, Esc and scrim dismissal and focus restore.
+  Elements declared here live in the dialog's own view, so mat-dialog-close and mat-dialog-actions
+  find its MatDialogRef. Projected elements do not: they close it through ModalComponent.close().
+
+  M3 simple dialog anatomy: headline, content, actions, and no close icon. The headline stays the
+  content's direct sibling, so Material drops the content's top padding by itself.
+-->
+<ng-template #dialogTemplate>
+  <h2 mat-dialog-title class="modal-title" [id]="titleId">{{ label() }}</h2>
+
+  <mat-dialog-content>
+    <ng-content />
+  </mat-dialog-content>
+
+  @if (actions()) {
+    <mat-dialog-actions align="end">
+      <ng-content select="app-modal-actions" />
+    </mat-dialog-actions>
+  } @else {
+    <mat-dialog-actions align="end">
+      <button matButton type="button" mat-dialog-close>Close</button>
+    </mat-dialog-actions>
+  }
+</ng-template>

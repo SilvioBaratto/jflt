@@ -1,0 +1,76 @@
+<div class="sidebar" [class.sidebar-collapsed]="collapsed()">
+  @if (showDestinations()) {
+    @if (collapsed()) {
+      <!-- Collapsed rail: custom icon-over-label items (Angular Material has no rail). -->
+      <nav class="rail-nav" aria-label="Primary">
+        @for (item of navItems; track item.route) {
+          <a
+            #link
+            class="rail-item"
+            [routerLink]="item.route"
+            routerLinkActive="rail-item-active"
+            ariaCurrentWhenActive="page"
+            (click)="onNavClick()"
+          >
+            <span class="rail-indicator" matRipple [matRippleTrigger]="link">
+              <lucide-icon class="rail-icon" [name]="item.icon" aria-hidden="true" />
+            </span>
+            <span class="rail-label">{{ item.name }}</span>
+          </a>
+        }
+      </nav>
+    } @else {
+      <!-- Expanded rail: mat-nav-list renders role="navigation" itself, so it takes the label. -->
+      <mat-nav-list class="sidebar-list" aria-label="Primary">
+        @for (item of navItems; track item.route) {
+          <a
+            mat-list-item
+            [routerLink]="item.route"
+            routerLinkActive
+            #rla="routerLinkActive"
+            [activated]="rla.isActive"
+            (click)="onNavClick()"
+          >
+            <lucide-icon matListItemIcon class="sidebar-icon" [name]="item.icon" aria-hidden="true" />
+            <span matListItemTitle>{{ item.name }}</span>
+          </a>
+        }
+      </mat-nav-list>
+    }
+  }
+
+  @if (accountName() || canSignOut()) {
+    <div class="sidebar-footer">
+      @if (collapsed()) {
+        @if (canSignOut()) {
+          <button
+            matIconButton
+            type="button"
+            class="sidebar-logout"
+            aria-label="Sign out"
+            matTooltip="Sign out"
+            matTooltipPosition="after"
+            (click)="onLogout()"
+          >
+            <lucide-icon class="sidebar-icon sidebar-icon-directional" name="LogOut" aria-hidden="true" />
+          </button>
+        }
+      } @else {
+        @if (accountName(); as name) {
+          <div class="sidebar-account">
+            <lucide-icon class="sidebar-icon" name="User" aria-hidden="true" />
+            <span class="sidebar-account-name">{{ name }}</span>
+          </div>
+        }
+        @if (canSignOut()) {
+          <mat-action-list class="sidebar-list">
+            <button mat-list-item type="button" class="sidebar-logout" (click)="onLogout()">
+              <lucide-icon matListItemIcon class="sidebar-icon sidebar-icon-directional" name="LogOut" aria-hidden="true" />
+              <span matListItemTitle>Sign out</span>
+            </button>
+          </mat-action-list>
+        }
+      }
+    </div>
+  }
+</div>
