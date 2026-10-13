@@ -73,7 +73,7 @@
 /* ── Navigation rail ─────────────────────────────────────────────────────── */
 
 /*
- * Rail widths come from the M3 component specs: collapsed 96dp, expanded 220–360dp (280px here).
+ * Rail widths come from the M3 component specs: collapsed 96dp, expanded 220–360dp (320px here).
  * The collapsed rail is 96px at least and otherwise sizes to its content (min-content): enlarged
  * text widens it to the longest label word instead of breaking that word, and the container's
  * autosize moves the content along.
@@ -88,7 +88,7 @@
 }
 
 .rail.rail-wide {
-  --mat-sidenav-container-width: calc(280px + env(safe-area-inset-left));
+  --mat-sidenav-container-width: calc(320px + env(safe-area-inset-left));
 }
 
 :host-context([dir='rtl']) .rail {
@@ -96,7 +96,7 @@
 }
 
 :host-context([dir='rtl']) .rail.rail-wide {
-  --mat-sidenav-container-width: calc(280px + env(safe-area-inset-right));
+  --mat-sidenav-container-width: calc(320px + env(safe-area-inset-right));
 }
 
 /* The rail only ever docks (from 600px): square edges, flush with the content. */

@@ -481,7 +481,7 @@ describe('Responsive shell (integration)', () => {
         .join('\n');
       expect(css).toMatch(/\.rail(?:\[[^\]]+\])*\s*\{[^}]*--mat-sidenav-container-width:\s*min-content/);
       expect(css).toMatch(/\.rail(?:\[[^\]]+\])*\s*\{[^}]*min-inline-size:\s*calc\(96px \+ env\(safe-area-inset-left\)\)/);
-      expect(css).toMatch(/\.rail\.rail-wide(?:\[[^\]]+\])*\s*\{[^}]*--mat-sidenav-container-width:\s*calc\(280px/);
+      expect(css).toMatch(/\.rail\.rail-wide(?:\[[^\]]+\])*\s*\{[^}]*--mat-sidenav-container-width:\s*calc\(320px/);
     });
 
     it('when the rail changes size with no change detection (a web font loads, text is enlarged in place), the content offset is re-measured', async () => {

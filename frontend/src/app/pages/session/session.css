@@ -59,20 +59,10 @@
   color: var(--mat-sys-on-surface-variant);
 }
 
-/* M3 keeps running text at 40–60 characters per line; `ch` is the width of "0", wider than an
-   average letter, so 45ch lands near 60 characters. */
-.passage,
-.question,
-.instr,
-.prompt,
-.model {
-  max-inline-size: 45ch;
-}
-
 .passage {
   font: var(--mat-sys-body-large);
   letter-spacing: var(--mat-sys-body-large-tracking);
-  line-height: 1.6;
+  line-height: 1.5;
   color: var(--mat-sys-on-surface);
 }
 
@@ -84,6 +74,10 @@
 }
 
 .opts {
+  --mat-radio-label-text-font: var(--mat-sys-body-large-font);
+  --mat-radio-label-text-size: var(--mat-sys-body-large-size);
+  --mat-radio-label-text-line-height: var(--mat-sys-body-large-line-height);
+  --mat-radio-label-text-tracking: var(--mat-sys-body-large-tracking);
   display: flex;
   flex-direction: column;
   gap: 0.25rem;
@@ -144,6 +138,7 @@
 
 .full {
   width: 100%;
+  margin-block-start: 1rem;
 }
 
 .grade {

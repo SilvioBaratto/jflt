@@ -143,7 +143,8 @@
   padding-block: 0;
   padding-inline: 12px;
   /*
-   * M3 expanded rail items: at least 56px tall, fully rounded, label-large. The containers
+   * Expanded rail items: at least 56px tall, fully rounded. The type is 14px on a 24px line to match
+   * NotebookLM's source list, whose sizes the product owner asked for. The containers
    * size to their text (min-block-size below), so enlarged text wraps instead of truncating.
    */
   --mat-list-list-item-one-line-container-height: auto;
@@ -152,8 +153,8 @@
   --mat-list-list-item-leading-icon-end-space: 12px;
   --mat-list-list-item-label-text-font: var(--mat-sys-label-large-font);
   --mat-list-list-item-label-text-size: var(--mat-sys-label-large-size);
-  --mat-list-list-item-label-text-line-height: var(--mat-sys-label-large-line-height);
-  --mat-list-list-item-label-text-weight: var(--mat-sys-label-large-weight);
+  --mat-list-list-item-label-text-line-height: 1.5rem;
+  --mat-list-list-item-label-text-weight: var(--mat-sys-body-large-weight);
   --mat-list-list-item-label-text-tracking: var(--mat-sys-label-large-tracking);
 }
 

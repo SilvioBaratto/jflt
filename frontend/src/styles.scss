@@ -30,8 +30,8 @@ html {
       // when fonts.bunny.net is unreachable. index.html loads only the weights the
       // type scale uses.
       typography: (
-        plain-family: (Outfit, system-ui, sans-serif),
-        brand-family: ('Space Grotesk', system-ui, sans-serif),
+        plain-family: ('Google Sans Flex', system-ui, sans-serif),
+        brand-family: ('Google Sans Flex', system-ui, sans-serif),
       ),
       density: 0,
     )
@@ -60,6 +60,15 @@ html {
   }
 }
 
+// Every --mat-sys-* type size is in rem, so one root size scales all text. NotebookLM renders 16px
+// text at 150% browser zoom on the product owner's screen; at 100% zoom, 150% here draws the same
+// glyph size. Phones keep the default so text doesn't overflow a 360px viewport.
+@media (min-width: 840px) {
+  html {
+    font-size: 150%;
+  }
+}
+
 // ThemeService / catalog previews: force a scheme on a subtree. Descendants that
 // paint `background`/`color` from `--mat-sys-*` tokens resolve to that scheme.
 .light {
@@ -81,10 +90,10 @@ html {
 // that column. The shell (layout.css) reads these on its single scroll container;
 // pages never set their own max-width, gutters or horizontal scroll, so they can't
 // drift apart. Margins follow the M3 window-size-class spec: 16px at compact,
-// 24px from medium up. The column caps at a width that keeps reading passages near
-// a comfortable measure rather than stretching full-bleed on wide displays.
+// 24px from medium up. The column caps at 1200px so the cards use most of a wide display without
+// stretching full-bleed on ultrawide ones.
 :root {
-  --app-page-max: 820px;
+  --app-page-max: 1200px;
   --app-page-gutter: 16px;
   --app-page-pad-block-start: 24px;
   --app-page-pad-block-end: 48px;
@@ -103,7 +112,7 @@ html {
 // below its content's intrinsic width so a long unbreakable token can't force a horizontal scroll.
 .shell-main > :not(router-outlet) {
   inline-size: 100%;
-  max-inline-size: var(--app-page-max, 820px);
+  max-inline-size: var(--app-page-max, 1200px);
   min-inline-size: 0;
 }
 
@@ -123,14 +132,16 @@ html {
 
 // Markdown rendered from model-generated text (session passages, instructions, prompts, model
 // answers) via the `markdown` pipe + [innerHTML]. Those child nodes carry no component
-// encapsulation attribute, so they are styled from global scope. Body copy is start-aligned
-// and not hyphenated: justified, hyphenated passages hurt readability (WCAG 1.4.8). Line length
-// is capped by the view that hosts the text; a stray long token still breaks instead of forcing
-// a horizontal scroll.
+// encapsulation attribute, so they are styled from global scope. Body copy is justified and
+// hyphenated and fills the full card width (no measure cap): this is the product owner's explicit
+// reading layout, so do not swap it for start-aligned text or a ch-based line-length cap. A stray
+// long token still breaks instead of forcing a horizontal scroll.
 .md {
   --md-font-mono: ui-monospace, monospace;
-  text-align: start;
-  line-height: 1.6;
+  text-align: justify;
+  hyphens: auto;
+  // 16px text on a 24px line, the NotebookLM reading size the product owner asked for.
+  line-height: 1.5;
   overflow-wrap: anywhere;
 }
 
@@ -156,6 +167,7 @@ html {
   margin-block: 0.2em 0;
 }
 
+// Headings and preformatted blocks read left-aligned even inside justified copy.
 .md h1,
 .md h2,
 .md h3,
