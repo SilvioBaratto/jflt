@@ -228,30 +228,30 @@
   - Lectura errónea: el texto da la razón a esa crítica («con razón»), pero la presenta como una objeción a la que «se suma otra» y no la compara con la reducción de las llegadas.
 - [ ] **B)** Apenas cumplen su objetivo inmediato, porque las salidas se reanudan en cuanto el socio cobra los fondos y deja de tener motivos para vigilar sus costas.
   - Lectura errónea: según el texto, «Las cifras suelen darle la razón a corto plazo»; el socio relaja la vigilancia de forma calculada, como baza en cada negociación, no por haber cobrado ya.
-- [ ] **C)** Funcionan mientras dura la financiación, de modo que unos fondos estables y plurianuales bastarían para garantizar la cooperación del socio durante muchos años.
+- [ ] **C)** Funcionan mientras dure la financiación, de modo que unos fondos estables y plurianuales bastarían para garantizar la cooperación del socio durante muchos años.
   - Lectura errónea: el socio no solo pide «más fondos», sino también concesiones «en materias que nada tienen que ver con la migración», de modo que una financiación estable no le quita la baza.
-- [x] **D)** Ponen en manos del socio una baza que puede activar a voluntad, y cuanto más necesita la Unión su cooperación, menos margen le queda para exigirle cambios.
-  - Correcta: al confiar a un tercero el control de las salidas, la Unión le entrega «la capacidad de reabrirlo», y cuanto más depende del acuerdo, «menos margen conserva para exigir reformas».
+- [x] **D)** Ponen en manos del socio una baza que puede jugar cuando le conviene, y esa dependencia priva a la Unión de autoridad para exigirle cambios.
+  - Correcta: al confiar a un tercero «el control de un flujo», la Unión le entrega también la capacidad de reabrirlo, y cuanto más depende del acuerdo, «menos margen conserva para exigir reformas».
 
 ### 22. Key: B
 
 - [ ] **A)** Anticipa una crítica a la fiabilidad de los sistemas actuales, cuyos fallos de interceptación permiten que una parte de los drones alcance su objetivo.
   - Lectura errónea: la frase no alude a fallos de interceptación; el párrafo da por hecho que «la mayoría de sus aparatos caerá» y sitúa la pérdida en el coste de cada derribo.
-- [x] **B)** Plantea una aparente contradicción que el párrafo resuelve después, pues abatir casi todos los drones puede ser una derrota si cada disparo cuesta mucho más que el blanco.
+- [x] **B)** Plantea una aparente contradicción que el párrafo resuelve, pues abatir casi todos los drones puede ser una derrota si cada disparo cuesta más que el blanco.
   - Correcta: la paradoja se aclara enseguida, porque si cada dron abatido «exige un misil que cuesta cien veces más», el atacante gana al vaciar «los arsenales del defensor».
 - [ ] **C)** Adelanta la tesis de que los drones baratos han dejado obsoletos los misiles de alta gama, que el texto propone sustituir por cañones y armas de energía dirigida.
   - Generalización excesiva: el texto afirma que los misiles de alta gama «seguirán siendo imprescindibles contra amenazas complejas» y propone completarlos con capas más baratas, no sustituirlos.
-- [ ] **D)** Introduce una advertencia técnica, pues señala que los sistemas actuales tienen dificultades para detectar y derribar oleadas de drones lanzadas a la vez.
-  - Lectura errónea: el texto no plantea dificultades técnicas para derribar las oleadas; el atacante las lanza sabiendo que «la mayoría de sus aparatos caerá».
+- [ ] **D)** Introduce una concesión a quienes defienden los sistemas actuales, pues admite que su elevada tasa de acierto justifica el precio de cada interceptor.
+  - Lectura errónea: la tasa de acierto se menciona para mostrar que no basta, ya que el sistema puede, «aun así, estar perdiendo» si cada derribo «exige un misil que cuesta cien veces más».
 
 ### 23. Key: A
 
 - [x] **A)** Pagan con frecuencia una fábrica que habría llegado igualmente, atraída por factores que ninguna ayuda está en condiciones de modificar a corto plazo.
   - Correcta: las empresas eligen por factores «que ninguna subvención altera a corto plazo», y la región ganadora paga en muchos casos por una fábrica que «habría llegado igualmente».
-- [ ] **B)** Se recuperan con creces a medio plazo, porque la planta acaba atrayendo a la región una red de proveedores que multiplica el empleo creado al principio.
-  - Generalización excesiva: el texto admite que una planta «puede atraer después a toda una red de proveedores», pero no dice que eso compense lo pagado y advierte que esos casos exigen «un análisis sosegado».
+- [ ] **B)** Suelen recuperarse con creces a medio plazo, porque la planta acaba atrayendo a la región una red de proveedores que multiplica el empleo creado al principio.
+  - Generalización excesiva: el texto admite que una planta «puede atraer después a toda una red de proveedores», pero no dice que eso compense lo pagado y advierte que distinguir esos casos exige «un análisis sosegado».
 - [ ] **C)** Resultan decisivas en la elección final, ya que, cuando varias regiones reúnen las mismas condiciones, las empresas se fijan sobre todo en los incentivos fiscales.
-  - Generalización excesiva: que una subvención decida «entre dos emplazamientos equivalentes» ocurre solo a veces; por lo general la decisión está «prácticamente tomada antes de que concluya la subasta».
+  - Generalización excesiva: que una subvención decida «entre dos emplazamientos equivalentes» ocurre solo a veces; a menudo la decisión está «prácticamente tomada antes de que concluya la subasta».
 - [ ] **D)** Restan recursos sobre todo a las regiones perdedoras, que comprometen fondos durante la puja y después se quedan sin la planta y sin el dinero ofrecido.
   - Lectura errónea: el texto no dice que las regiones perdedoras gasten nada; lo que ceden es información, ya que «han revelado cuánto estaban dispuestas a pagar».
 
@@ -261,7 +261,7 @@
   - Lectura errónea: el texto afirma que «Volver al sistema anterior no parece una salida razonable» y valora fórmulas que combinan los datos con la lectura de los trabajos.
 - [ ] **B)** Los juzga útiles y fiables, pero lamenta que perjudiquen a las disciplinas cuyos resultados tardan más en publicarse y acumulan menos citas.
   - No se dice: el texto no compara disciplinas; quienes salen perjudicados son «Los proyectos arriesgados» y las tareas que «ningún índice registra».
-- [ ] **C)** Los tiene por una herramienta mejorable, pero confía en que unos indicadores más completos, que midan también la docencia y la divulgación, corrijan sus defectos.
+- [ ] **C)** Los tiene por una herramienta mejorable, pero confía en que indicadores más completos, que midan también la docencia y la divulgación, corrijan sus defectos.
   - Lectura errónea: las fórmulas que el texto valora no añaden indicadores, sino que «obligan a confiar de nuevo en el juicio de los evaluadores».
 - [x] **D)** Los reconoce como un avance frente a la arbitrariedad previa, pero advierte que los investigadores han acabado ajustando su trabajo a lo que esas cifras premian.
   - Correcta: admite que los indicadores frenaron la endogamia, pero señala que «han empezado a moldear la conducta que pretendían medir», como muestran la división de estudios y las autocitas.
@@ -272,38 +272,38 @@
   - Lectura errónea: la prosperidad del primer párrafo es solo el punto de partida; el texto describe después cómo esa afluencia «va desgastando aquello que los visitantes vienen a buscar».
 - [ ] **B)** Acusatorio, pues responsabiliza a los visitantes de la marcha de los vecinos y exige a los ayuntamientos que prohíban los pisos de uso turístico.
   - No se dice: el texto no culpa a los visitantes ni pide prohibiciones; explica la marcha de los vecinos porque un piso «rinde más alquilado por noches» y ve difíciles de evaluar las medidas municipales.
-- [x] **C)** Irónico, pues muestra cómo la llegada masiva de visitantes va despojando al barrio precisamente de aquello que los atrajo.
+- [x] **C)** Irónico, pues muestra que el éxito turístico del barrio acaba despojándolo precisamente de los rasgos que atrajeron a los visitantes.
   - Correcta: la ironía asoma en lo «que los folletos llaman autenticidad» y en el escenario donde «los únicos vecinos que encuentra son otros visitantes», imágenes de un éxito que destruye su propio atractivo.
 - [ ] **D)** Melancólico, pues añora el barrio modesto de hace unas décadas y ve en la restauración de sus edificios el origen de su decadencia.
   - Lectura errónea: el texto no culpa a la restauración ni añora el pasado, ya que admite que «Ninguna ciudad desea volver a los edificios ruinosos».
 
 ### 26. Key: A
 
-- [x] **A)** Les concede que estas coaliciones negocian con más agilidad, pero les reprocha ignorar el coste de un orden fragmentado en normas que no obligan a los demás.
-  - Correcta: reconoce que «El argumento tiene fundamento», pero advierte de que las normas pactadas entre pocos «obligan solo a quienes las firman» y dan lugar a «un mosaico de regímenes superpuestos».
+- [x] **A)** Les concede que estas coaliciones negocian con más agilidad, pero les reprocha ignorar el coste de un orden fragmentado en normas que solo obligan a quienes las firman.
+  - Correcta: reconoce que «No les falta razón», pero advierte de que las normas pactadas entre pocos «obligan solo a quienes las firman» y dan lugar a «un mosaico de regímenes superpuestos».
 - [ ] **B)** Les concede la razón en lo esencial, pero cree que estas coaliciones deberían limitarse a los asuntos técnicos y dejar las cuestiones de seguridad a los foros universales.
   - No se dice: el texto no reparte materias entre coaliciones y foros; entre sus ejemplos figuran tanto normas sobre semiconductores como «patrullas marítimas».
 - [ ] **C)** Les concede que los foros universales están paralizados, pero confía en que el ejemplo de estas coaliciones acabe empujándolos a reformar sus reglas de votación.
   - No se dice: el texto no espera que los foros se reformen; presenta su lentitud como consecuencia de que «obligan a contar con todos».
-- [ ] **D)** Les concede que estas coaliciones son eficaces, pero sostiene que los grandes foros multilaterales, por lentos que sean, acaban siendo más eficaces que ellas a largo plazo.
-  - Lectura errónea: el texto no atribuye a los foros universales más eficacia, sino una legitimidad que residía «en esa lentitud».
+- [ ] **D)** Les concede que estas coaliciones son eficaces, pero les reprocha olvidar que los grandes foros multilaterales, por lentos que sean, acaban siendo más eficaces a largo plazo.
+  - Lectura errónea: el texto no atribuye a los foros universales más eficacia, sino una legitimidad que reside «en esa lentitud».
 
 ### 27. Key: C
 
-- [ ] **A)** Evitan pedir ayuda militar salvo en casos extremos, porque temen que la llegada de una unidad del Ejército se lea como prueba de su incapacidad.
-  - No se dice: el texto no menciona reticencias a pedir ayuda; al contrario, la ayuda militar, «concebida como último recurso», empieza a figurar en los planes como si fuera el primero.
-- [ ] **B)** Reclaman la ayuda militar cada vez antes, porque el presupuesto de Defensa les reembolsa lo que gastan sus servicios en cada emergencia.
-  - Lectura errónea: lo que paga el presupuesto de Defensa es la intervención militar, una reserva «que no les cuesta nada»; el texto no habla de reembolsos a los servicios civiles.
-- [x] **C)** Escatiman recursos a sus servicios de emergencia, porque cuentan con una reserva que no les cuesta nada para los pocos días al año en que hace falta.
-  - Correcta: la pregunta retórica del segundo párrafo muestra que, con una reserva «que no les cuesta nada», disminuye el incentivo para «dotar de medios a sus propios servicios».
-- [ ] **D)** Recurren a la ayuda militar con recelo, porque creen que los militares carecen de la preparación específica de los bomberos y de protección civil.
-  - No se dice: el texto no recoge desconfianza alguna y destaca que las Fuerzas Armadas disponen de «medios que ninguna otra administración reúne a la vez».
+- [ ] **A)** Reservan la ayuda militar para cuando la situación se desborda, de modo que en la práctica apenas recurren a ella fuera de las grandes catástrofes.
+  - Lectura errónea: «si la situación se desborda» describe aquello con lo que cuentan las administraciones, no un uso restringido; el texto añade que la ayuda militar empieza a figurar en los planes de emergencia «como un recurso ordinario».
+- [ ] **B)** Reclaman la ayuda militar en cuanto surge una emergencia, porque el presupuesto de Defensa les reembolsa después lo que gastan en ella sus propios servicios.
+  - Lectura errónea: lo que paga el presupuesto de Defensa es la intervención militar, una reserva «que no le cuesta nada»; el texto no habla de reembolsos a los servicios civiles.
+- [x] **C)** Escatiman recursos a sus servicios de emergencia, porque el auxilio militar, que financia otro presupuesto, cubre los pocos días al año en que hace falta.
+  - Correcta: la pregunta retórica del segundo párrafo muestra que, con una reserva que «la paga el presupuesto de Defensa», disminuye el incentivo para «dotar de medios a sus propios servicios».
+- [ ] **D)** Piden ayuda militar sobre todo por el rédito político que les reporta, porque las encuestas premian cada intervención de las Fuerzas Armadas.
+  - No se dice: la aprobación que recogen las encuestas es la de los militares («una aprobación ciudadana muy alta cada vez que intervienen»); el texto atribuye la dependencia a una reserva que no pagan, no a un cálculo de imagen.
 
 ### 28. Key: B
 
 - [ ] **A)** Una reserva de mano de obra barata a la que la empresa recurre para cubrir puestos sin tener que pagar el sueldo de un trabajador.
   - Lectura errónea: el texto no habla de ahorrar salarios; la gran empresa observa a los estudiantes «en situaciones reales» para contratar después a los mejores.
-- [x] **B)** Un medio de elegir a sus futuros empleados tras verlos trabajar durante meses, lo que le ahorra el coste de buscarlos fuera.
+- [x] **B)** Un medio para que la empresa elija a sus futuros empleados tras verlos trabajar durante meses, sin el coste de buscarlos fuera.
   - Correcta: la propia frase lo aclara, pues la empresa observa a los alumnos durante meses y contrata «a los que mejor han respondido», «sin necesidad de convocar procesos de selección».
 - [ ] **C)** Un centro de formación de alto nivel en el que la empresa prepara a especialistas que luego compiten por los mejores puestos del sector.
   - Lectura errónea: la empresa no prepara especialistas para el sector, sino que contrata «a los que mejor han respondido», de modo que la cantera la abastece a ella misma.
@@ -317,17 +317,17 @@
 - [ ] **B)** Señala el origen de la mayoría de los incendios actuales, que se deben todavía a las quemas agrícolas y ganaderas tradicionales de las zonas rurales del interior.
   - Lectura errónea: según el texto, «El abandono rural acabó con casi todas esas prácticas», que se citan por la vegetación que retiraban del monte, no como causa de los incendios actuales.
 - [ ] **C)** Ilustra que el fuego forma parte del ciclo natural del monte, por lo que el texto considera un error destinar tantos medios a sofocar cada incendio.
-  - Lectura errónea: el texto reconoce que los pequeños fuegos «limpiaban el terreno», pero no tacha de error la extinción; propone gestionar la carga de combustible para que deje de acumularse.
-- [x] **D)** Explica por qué la vegetación se acumula hoy sin que nada la retire, lo que ayuda a entender que extinguir más rápido no haya frenado los grandes incendios.
+  - Lectura errónea: el texto reconoce que los pequeños fuegos «limpiaban el terreno», pero no tacha de error la extinción; recoge propuestas para gestionar el combustible y advierte de que, «Sin ellas», seguirá acumulándose.
+- [x] **D)** Explica por qué el monte ya no se despeja como antes, lo que ayuda a entender que extinguir más rápido no haya frenado los grandes incendios.
   - Correcta: esas prácticas consumían la vegetación, y su desaparición, unida a una extinción más rápida, explica que la biomasa se acumule «sin que nada la retire» y que los grandes incendios sean más violentos.
 
 ### 30. Key: A
 
-- [x] **A)** Que su resultado dependerá sobre todo de qué especies se elijan y de que los ejemplares reciban cuidados durante sus primeros años.
+- [x] **A)** Que su resultado dependerá sobre todo de qué especies se elijan y de que los ejemplares jóvenes reciban riego y cuidado durante sus primeros años.
   - Correcta: la dificultad aparece al decidir «qué árboles plantar», y muchos ejemplares «mueren en sus primeros veranos por falta de riego o de mantenimiento», de modo que la cifra de plantaciones no garantiza la sombra prometida.
-- [ ] **B)** Que su resultado dependerá sobre todo de elegir especies autóctonas, cuyo menor consumo de agua compensa con creces la sombra más escasa que proporcionan.
-  - Lectura errónea: el texto advierte de que las autóctonas «tardan décadas en ofrecer una protección comparable» y deja abierta la elección de especies, sin afirmar que su ahorro de agua compense esa desventaja.
+- [ ] **B)** Que su resultado dependerá sobre todo de evitar la tala de los árboles maduros, que hoy dan a las calles mucha más sombra que la que aportarán los nuevos ejemplares.
+  - Lectura errónea: la tala de «un ejemplar maduro» ilustra la cuestión de plazos, no el factor decisivo de los planes, y el texto no compara la sombra de los árboles maduros con la que darán los nuevos.
 - [ ] **C)** Que su resultado será más simbólico que real, porque el efecto del arbolado sobre la temperatura de las calles es menor de lo que suele suponerse.
   - Lectura errónea: el texto atribuye al arbolado beneficios tangibles, como rebajar «varios grados la temperatura de la acera», y afirma que las dificultades no restan valor a la idea.
-- [ ] **D)** Que su resultado dependerá sobre todo de plantar ejemplares ya crecidos, que dan sombra desde el primer verano y evitan esperar décadas a que se desarrollen.
-  - No se dice: el texto no contempla plantar ejemplares adultos; solo habla de árboles nuevos, que tardarán «quince o veinte años en dar la sombra que promete el plan».
+- [ ] **D)** Que su resultado dependerá sobre todo de cuántos árboles se planten, porque la rebaja de temperatura en las calles aumenta con cada nuevo ejemplar.
+  - Lectura errónea: muchos ejemplares «mueren en sus primeros veranos», y lo plantado tarda «quince o veinte años en dar la sombra que promete el plan», de modo que el número no asegura el resultado.
