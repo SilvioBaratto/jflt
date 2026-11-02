@@ -161,3 +161,153 @@ Admitido esto, la pregunta pertinente es quién paga y por qué vía, y ninguna 
 - **B)** Comparten un mismo punto débil: dependen de que la administración prevea qué productos serán críticos, algo en lo que no siempre acierta.
 - **C)** Acaban trasladando el coste al contribuyente, de modo que elegir entre ellos es una cuestión de eficacia más que de reparto de la carga.
 - **D)** Al repartir cada uno el coste de forma distinta, elegir entre ellos equivale a decidir quién paga una protección que beneficia al conjunto.
+
+### 11. (Las sanciones económicas como instrumento de política exterior)
+
+Pocas herramientas de política exterior resultan tan atractivas para un gobierno como las sanciones económicas. Permiten castigar una conducta sin arriesgar vidas, se aprueban con relativa rapidez y transmiten a la opinión pública la sensación de que se está haciendo algo. Su eficacia inmediata tampoco es desdeñable: cuando el país que sanciona controla las monedas, los bancos y los seguros por los que circula buena parte del comercio mundial, cortar el acceso a esos circuitos puede asfixiar a la economía afectada en pocas semanas.
+
+Esa misma fuerza encierra, sin embargo, su punto débil. Cada vez que se aplican, las sanciones enseñan algo tanto al Estado castigado como a quienes observan desde fuera. Los gobiernos que temen verse algún día en una situación parecida empiezan a diversificar sus reservas, a liquidar parte de su comercio en otras monedas y a ensayar sistemas de pago que no dependan de los bancos del país sancionador. Ninguno de esos circuitos alternativos es, por ahora, tan eficiente como el que pretenden sortear, y muchos funcionan de manera precaria. Pero cada transacción que se desvía hacia ellos reduce un poco la palanca de la que dependerá la sanción siguiente.
+
+El resultado es un instrumento que se desgasta con el uso. Un poder basado en que los demás carezcan de alternativa se resiente cada vez que se ejerce, porque cada ejercicio les da un motivo para buscarla. De ahí que la contención en el recurso a las sanciones no deba confundirse con debilidad: es la manera de conservar su capacidad disuasoria para los casos que de verdad las justifiquen. Un gobierno que las emplee ante cualquier agravio puede descubrir, cuando llegue una crisis grave, que el arma ha perdido buena parte de su filo.
+
+**¿Cuál es la idea central del texto acerca de las sanciones económicas?**
+
+- **A)** Mantienen casi intacto su poder de presión, porque los circuitos de pago alternativos son todavía demasiado precarios para servir de refugio a los Estados sancionados.
+- **B)** Responden más al deseo de mostrar firmeza ante la opinión pública que a un cálculo de eficacia, por lo que sus efectos reales suelen ser escasos.
+- **C)** Dependen de que los demás no tengan a qué recurrir, y cada aplicación los anima a buscar salidas, de modo que usarlas a menudo acaba por debilitarlas.
+- **D)** Han perdido eficacia porque los gobiernos las aplican con excesiva cautela, lo que concede a los Estados afectados tiempo para buscar alternativas.
+
+### 12. (La denuncia oficial de las campañas de desinformación extranjeras)
+
+Cuando los servicios de inteligencia detectan una campaña de desinformación orquestada desde el exterior, el gobierno afectado se enfrenta a una disyuntiva incómoda. Denunciarla públicamente tiene ventajas evidentes: alerta a los ciudadanos, advierte al responsable de que ha sido descubierto y demuestra que las instituciones están vigilantes. Pero la denuncia tiene también un efecto secundario. Muchas de estas operaciones apenas llegan a unos pocos miles de usuarios antes de ser detectadas, y un comunicado oficial, reproducido por todos los medios, puede multiplicar la difusión de unos mensajes que, sin él, se habrían apagado por sí solos.
+
+El silencio, por su parte, no es gratuito. Si la campaña llega a calar y más tarde se sabe que el gobierno estaba al corriente, su inacción se interpretará como negligencia o, peor aún, como complicidad, y erosionará la confianza que se pretendía proteger. Hay, además, un desfase de calendario: atribuir con solvencia una operación a un Estado concreto exige semanas de análisis, mientras que el daño, si se produce, llega en días, y en vísperas de unas elecciones, en horas.
+
+Ante este dilema, la tentación es adoptar una regla general, ya sea la de denunciar siempre por principio de transparencia o la de no dar nunca publicidad al adversario. Ambas fallan por la misma razón: tratan como equivalentes operaciones de muy distinta envergadura. Una campaña que no ha salido de un circuito marginal se desactiva mejor avisando discretamente a las plataformas para que retiren los mensajes. Cuando, en cambio, el bulo ya circula ampliamente, callar no protege a nadie, y una explicación pública se vuelve necesaria aunque todavía no pueda señalarse con certeza al responsable.
+
+**¿De qué debería depender, según el texto, la decisión de dar a conocer una de estas campañas?**
+
+- **A)** Del alcance que hayan logrado ya sus mensajes, puesto que, mientras circulen en un ámbito reducido, la publicidad oficial les daría un eco del que carecen.
+- **B)** Del grado de certeza sobre su origen, puesto que acusar a un Estado sin pruebas concluyentes dañaría la credibilidad del gobierno más que la propia campaña.
+- **C)** Del momento político en que se produzcan, puesto que en vísperas de unas elecciones una injerencia exterior puede causar daños en cuestión de horas.
+- **D)** De la respuesta de las plataformas, puesto que la denuncia pública se justifica cuando estas se niegan a retirar los mensajes que se les señalan.
+
+### 13. (Los límites legales al precio del alquiler)
+
+La limitación de las rentas del alquiler goza de un apoyo popular que pocas medidas de vivienda pueden igualar. Su lógica es sencilla: si los precios suben más deprisa que los salarios, se fija un tope y se protege a quien corre el riesgo de no poder renovar su contrato. Para el inquilino que ya ocupa una vivienda en una zona tensionada, el alivio es tangible y se nota desde el primer mes.
+
+El resto del mercado reacciona de otro modo. Ante un tope que reduce la rentabilidad esperada, una parte de los propietarios decide vender, pasarse al alquiler de temporada, que suele escapar a la regulación, o mantener el piso vacío a la espera de tiempos mejores. La oferta se encoge, y quien busca casa se encuentra con menos anuncios, más competencia por cada uno y una selección de candidatos más exigente, en la que pesan la nómina fija y los avales. El inquilino protegido, por su parte, se lo piensa dos veces antes de mudarse, aunque cambie de trabajo o crezca su familia, porque sabe que perdería su renta contenida.
+
+El efecto, por tanto, va más allá de una transferencia de los propietarios a los inquilinos. Una parte considerable del coste recae sobre otros inquilinos: los jóvenes que se emancipan, quienes llegan a la ciudad por un empleo, quienes se separan y necesitan otro hogar. Son, además, los menos visibles en el debate, porque aún no tienen un contrato que defender ni una asociación que los represente. Un tope puede tener sentido como medida transitoria mientras se amplía la oferta; presentado como solución definitiva, en cambio, oculta quién paga una parte de la factura.
+
+**¿Qué conclusión sugiere el texto acerca de limitar las rentas del alquiler?**
+
+- **A)** Supone ante todo una transferencia de renta de los propietarios a los inquilinos, y su principal inconveniente es reducir la rentabilidad del alquiler.
+- **B)** Facilita que los inquilinos protegidos cambien de vivienda cuando varían sus circunstancias, ya que el ahorro mensual les deja más margen para mudarse.
+- **C)** Desplaza sobre todo la oferta hacia el alquiler de temporada, de modo que la escasez se traslada al segmento del mercado que escapa a la regulación.
+- **D)** Hace pagar a unos inquilinos parte del alivio de otros, puesto que quienes todavía buscan casa cargan con una porción considerable del coste de la medida.
+
+### 14. (La transición hacia la criptografía poscuántica)
+
+Gran parte de las comunicaciones cifradas que hoy se consideran seguras dejarán de serlo el día en que exista un ordenador cuántico capaz de romper los algoritmos de clave pública más extendidos. Nadie sabe cuándo llegará ese día: las estimaciones de los especialistas oscilan entre unos pocos años y varias décadas, y hay quien duda de que llegue. Ante semejante incertidumbre, muchas organizaciones aplazan la migración a nuevos algoritmos, una tarea cara que obliga a revisar sistemas antiguos y compite con amenazas mucho más inmediatas.
+
+Esa espera descansa en una pregunta que no tiene respuesta, cuando existe otra que sí la tiene. Un adversario con recursos puede interceptar y almacenar hoy grandes volúmenes de tráfico cifrado que es incapaz de leer, con la intención de descifrarlo cuando disponga de la tecnología adecuada. Para él, la información no caduca al terminar la comunicación: queda archivada, a la espera. Un mensaje diplomático, un historial clínico o los planos de un sistema de armas pueden seguir siendo sensibles dentro de veinte años; la cotización de una divisa o la ubicación de un envío pierden su valor en cuestión de horas.
+
+La pregunta útil, por tanto, no es cuándo llegará el ordenador cuántico, sino cuánto tiempo debe permanecer secreto cada dato y cuánto tardará la organización en completar la migración, que en sistemas complejos se mide en años. Si la suma de ambos plazos supera el horizonte en que la amenaza podría materializarse, el riesgo ya existe, aunque no se haya producido ataque alguno. Para buena parte de la información que manejan los ministerios, los hospitales o la industria de defensa, esa cuenta arroja un resultado incómodo. Queda por ver si las administraciones, poco inclinadas a gastar en amenazas sin fecha, harán el cálculo a tiempo.
+
+**¿Qué función cumplen en el texto los ejemplos que cierran el segundo párrafo?**
+
+- **A)** Sirven para identificar la información que más interesa a un adversario que almacena hoy tráfico cifrado con la intención de leerlo en el futuro.
+- **B)** Sirven para mostrar que la urgencia de proteger la información varía de un dato a otro según el tiempo que cada uno deba seguir siendo secreto.
+- **C)** Sirven para señalar que los sistemas que custodian datos clínicos, diplomáticos o militares son los más lentos de adaptar a los nuevos algoritmos.
+- **D)** Sirven para advertir de que incluso los datos de vida más corta, como una cotización o un envío, quedan expuestos a ese almacenamiento.
+
+### 15. (Las grandes constelaciones de satélites en órbita baja)
+
+En pocos años, la órbita baja ha dejado de ser un espacio frecuentado por agencias públicas y algunos operadores comerciales para convertirse en el escenario de una carrera. Unas pocas empresas han desplegado constelaciones de miles de satélites que ofrecen conexión a internet en casi cualquier punto del planeta, y otras preparan proyectos de tamaño similar. Llegar primero tiene premio: las franjas de altitud más útiles y las frecuencias de radio necesarias para comunicarse con tierra son limitadas, y las normas internacionales que las asignan favorecen, en la práctica, a quien las solicita y las ocupa antes.
+
+Los beneficios de esta expansión son reales y no conviene minimizarlos. Regiones aisladas acceden por primera vez a una conexión de calidad, y los servicios de emergencia disponen de comunicaciones que no dependen de infraestructuras terrestres vulnerables. La carrera tiene, no obstante, corredores ausentes. La mayoría de los Estados carece de lanzadores propios y de una industria espacial capaz de competir; cuando esos países estén en condiciones de hacerlo, es probable que encuentren las mejores órbitas ocupadas y el espectro repartido. A ello se suma un riesgo que alcanza a todos: cuantos más objetos giran a las mismas altitudes, mayor es la probabilidad de colisiones cuyos fragmentos pueden inutilizar órbitas enteras durante décadas, también para quienes nunca lanzaron nada.
+
+Las reglas vigentes se concibieron cuando poner un satélite en órbita era una hazaña al alcance de muy pocos. Adaptarlas exigiría acordar cuotas, obligaciones de retirada al final de la vida útil y mecanismos que reserven capacidad para los que lleguen más tarde, condiciones que difícilmente aceptarán quienes ya van en cabeza. Mientras tanto, cada lanzamiento consolida un poco más un reparto que nadie ha decidido de forma explícita.
+
+**¿Con qué actitud aborda el texto la expansión de estas constelaciones?**
+
+- **A)** Con inquietud ante un reparto que se consolida sin haberse decidido, aunque sin restar valor a los servicios que estas redes ya prestan a las zonas aisladas.
+- **B)** Con optimismo, pues confía en que las normas internacionales se adapten a tiempo para reservar capacidad a los países que todavía no pueden lanzar satélites.
+- **C)** Con resignación, pues, aunque lamenta el reparto desigual de las órbitas, lo presenta como el precio inevitable de llevar conexión a todo el planeta.
+- **D)** Con una preocupación centrada sobre todo en la seguridad, pues ve en el riesgo de colisiones entre satélites el principal problema de estas redes.
+
+### 16. (El cierre de periódicos locales y comarcales)
+
+El cierre de un periódico comarcal apenas ocupa unas líneas en la prensa nacional. Se cuenta como un episodio más de la crisis de un sector que perdió buena parte de sus ingresos publicitarios con la llegada de internet, y se da por hecho que la información local seguirá circulando por otras vías: redes sociales, grupos de mensajería, páginas municipales. En términos empresariales, la decisión suele ser impecable, porque la cabecera ha dejado de ser rentable.
+
+Con ella desaparece, en cambio, algo que no figura en ningún balance. Las redes difunden opiniones y rumores con enorme eficacia, pero casi nadie en ellas asiste a un pleno municipal de tres horas, revisa los pliegos de un contrato de recogida de basuras o compara el presupuesto aprobado con lo efectivamente gastado. Ese trabajo, tedioso y poco rentable, lo hacía el periodista local, y cuando falta no estalla ningún escándalo: sencillamente, deja de haber alguien que mire. Según estudios de varios países, allí donde ha cerrado la prensa local tiende a bajar la participación en las elecciones municipales, se presentan menos candidatos y los ayuntamientos pagan más por endeudarse, quizá porque los prestamistas perciben un menor control de sus cuentas.
+
+Esos costes no los paga la empresa que cierra, sino los vecinos de la comarca, y por eso el mercado no los tiene en cuenta cuando concluye que un periódico ya no es viable. De ahí que haya empezado a discutirse si la información local merece algún tipo de apoyo público. La cuestión es delicada, porque un medio que depende de la subvención del ayuntamiento al que debe vigilar difícilmente lo vigilará con libertad. Dar con fórmulas que sostengan ese trabajo sin crear tal dependencia es una de las tareas pendientes de las democracias locales.
+
+**¿Qué da a entender el texto sobre el cierre de los periódicos comarcales?**
+
+- **A)** Que su efecto queda compensado en buena medida por las redes sociales y los grupos de mensajería, que hacen circular la información local con más rapidez.
+- **B)** Que su consecuencia más visible es un aumento de los escándalos municipales, que ya nadie destapa a tiempo por falta de periodistas en la zona.
+- **C)** Que sus costes recaen sobre los vecinos de la comarca y no sobre la empresa, de modo que la decisión de cerrar se adopta sin tenerlos en cuenta.
+- **D)** Que su remedio más claro está en la subvención municipal, dado que vigilar a los ayuntamientos es un trabajo tedioso que rara vez resulta rentable.
+
+### 17. (La atención pública a las personas en situación de dependencia)
+
+Cuando se aprobó, la ley de atención a la dependencia se presentó como el cuarto pilar del Estado del bienestar, junto a la sanidad, la educación y las pensiones. Por primera vez se reconocía a quienes no pueden valerse por sí mismos un derecho a recibir cuidados, exigible ante la Administración, y se dibujaba una red de servicios profesionales: ayuda a domicilio, centros de día, plazas residenciales. Para los casos en que esos servicios no estuvieran disponibles, se preveía una prestación económica destinada al familiar que asumiera el cuidado en casa, concebida como un complemento excepcional.
+
+La ambición del proyecto no tardó en chocar con sus medios. La red de servicios exigía una inversión sostenida que las administraciones, con las cuentas en apuros, no podían asumir, mientras que la prestación económica era más barata y rápida de conceder. Los servicios profesionales crecieron más despacio de lo previsto, y aquella prestación pensada para casos particulares acabó supliéndolos en buena parte de los expedientes. El cuidado lo siguen prestando, como antes de la ley, los familiares, muchos de los cuales reducen su jornada o abandonan su empleo a cambio de una cantidad que apenas compensa lo que dejan de ingresar.
+
+Las listas de espera completan el cuadro: miles de personas tienen reconocido su grado de dependencia y siguen aguardando la ayuda que les corresponde, y no pocas fallecen antes de recibirla. Cerrar la brecha entre lo prometido y lo prestado obligaría a elegir. Puede financiarse por fin la red de servicios que la ley imaginaba, o puede reconocerse que el cuidado familiar es el verdadero sostén del sistema, en cuyo caso habría que dotarlo de derechos laborales y de una retribución suficiente. Prolongar la ficción de un sistema profesional que descansa, en la práctica, sobre las familias parece la peor de las opciones.
+
+**¿Qué significa «supliéndolos» en el contexto del segundo párrafo?**
+
+- **A)** Que la prestación económica se sumó a los servicios profesionales y reforzó su alcance, tal como se había previsto al aprobarse la ley.
+- **B)** Que la prestación económica pasó a ocupar el lugar de los servicios en muchos casos, pese a que se había concebido como una vía excepcional.
+- **C)** Que la prestación económica se destinó a pagar los servicios profesionales que las familias contrataban por su cuenta cuando no había oferta pública.
+- **D)** Que la prestación económica compensó a las familias por los ingresos que perdían al reducir su jornada o dejar su empleo para cuidar del familiar.
+
+### 18. (Los avisos a la población ante episodios de lluvias torrenciales)
+
+Los sistemas de aviso a la población han mejorado de forma notable. Las agencias meteorológicas anticipan con días de antelación los episodios de lluvias torrenciales, y las autoridades pueden hacer llegar un mensaje a todos los teléfonos móviles de una zona en pocos minutos. Tras cada catástrofe, el debate público suele girar en torno a la parte técnica de ese engranaje: si la alerta se emitió a tiempo, quién debía enviarla y por qué se retrasó.
+
+Un aviso, sin embargo, es solo el primer eslabón de una cadena, y únicamente protege si quien lo recibe sabe qué hacer con él. Un mensaje que anuncia un riesgo extremo de inundación no aclara si conviene subir a un piso alto o salir de casa, si hay que alejarse del cauce o quedarse quieto, ni por qué calles es peligroso conducir. En episodios de este tipo, una parte considerable de las víctimas muere dentro de un vehículo o en sótanos y garajes, a los que muchas han bajado para poner el coche a salvo, es decir, haciendo justo lo que un ciudadano preparado habría evitado. El aviso les llega; les falta saber cómo responder a él.
+
+Esa preparación no puede improvisarse el día de la alerta. Requiere simulacros periódicos, planes de autoprotección en escuelas y empresas, mapas de riesgo que los vecinos conozcan y mensajes redactados de antemano con instrucciones concretas para cada zona. Algunos países expuestos a terremotos o huracanes han incorporado esa formación a la vida escolar y vecinal, con resultados visibles en sus cifras de víctimas. Mientras la discusión se limite a la hora exacta a la que sonaron los teléfonos, se seguirá perfeccionando el eslabón que mejor funciona y descuidando el que suele fallar.
+
+**¿Qué función cumple en el texto la referencia a las víctimas que mueren en vehículos, sótanos y garajes?**
+
+- **A)** Prueba que los mensajes llegan demasiado tarde para que los vecinos de las zonas inundables puedan alcanzar un lugar seguro.
+- **B)** Subraya la violencia de unas inundaciones frente a las que el aviso, por pronto que se emita, ya poco puede hacer para salvar vidas.
+- **C)** Señala un fallo urbanístico, pues muchos sótanos y garajes se construyen en zonas que los mapas de riesgo ya marcan como inundables.
+- **D)** Sirve de prueba de que muchas muertes se deben a reacciones equivocadas ante una alerta que sí se ha recibido a tiempo.
+
+### 19. (La regresión de las playas y su gestión pública)
+
+Cada invierno, los temporales se llevan una parte de la arena de numerosas playas, y cada primavera las administraciones la reponen con dragados o con aportes traídos de canteras para que la temporada turística empiece con normalidad. El procedimiento cumple su propósito inmediato, porque la playa reaparece a tiempo, pero su coste se repite año tras año y tiende a crecer. La subida del nivel del mar y unos temporales más intensos aceleran la pérdida, mientras que los embalses retienen los sedimentos que antes bajaban por los ríos y los paseos marítimos construidos sobre las dunas impiden que la costa se recupere por sí sola.
+
+La alternativa que defienden muchos geólogos es el retroceso ordenado: dejar de reconstruir lo que el mar reclama, recuperar dunas y marismas y, en los tramos más expuestos, retirar edificaciones e infraestructuras. Para sus partidarios, es la única opción coherente con la dinámica natural del litoral. Ahora bien, sus costes son inmediatos y se concentran en unos pocos: propietarios que pierden su vivienda, municipios que ven menguar la playa que sostiene su economía, negocios que viven del paseo marítimo. Pocos gobiernos locales sobreviven a una decisión así.
+
+Ninguna de las dos vías sale, pues, indemne. La reposición es cara e indefinida; el retroceso, coherente con la naturaleza pero socialmente doloroso. Con todo, aplazar la elección tampoco es una salida neutral. Cada temporada de reposiciones consolida viviendas, hoteles e inversiones en primera línea que harán más costosa cualquier retirada futura, y cada temporal más violento estrecha el margen para planificarla. Quien opte por seguir reponiendo arena debería hacerlo, al menos, sabiendo que también está eligiendo.
+
+**¿Qué posición mantiene el texto ante las dos formas de afrontar la pérdida de arena?**
+
+- **A)** Sostiene que las dos vías tienen costes graves, pero que dejar la decisión para más adelante también los tiene: encarece la retirada y resta margen para ordenarla.
+- **B)** Sostiene que el retroceso ordenado es preferible, por ser la única opción coherente con la dinámica natural del litoral, aunque sus costes sociales resulten elevados.
+- **C)** Sostiene que la reposición anual es la opción más realista, ya que a los gobiernos locales les resulta casi imposible asumir el coste político de una retirada.
+- **D)** Sostiene que conviene combinar ambas, manteniendo la reposición mientras se recuperan dunas y marismas, para no verse obligados a elegir entre una y otra.
+
+### 20. (Las monedas digitales emitidas por los bancos centrales)
+
+Varios bancos centrales trabajan en la emisión de una moneda digital propia: dinero público, como los billetes, pero en formato electrónico y utilizable desde el teléfono. En lo técnico, el proyecto avanza con paso firme. Más difícil resulta precisar para qué se necesita, y las justificaciones ofrecidas han ido cambiando. Al principio se insistía en garantizar el acceso al dinero público en un mundo en el que el efectivo retrocede. Después ganó peso el argumento de la soberanía, puesto que buena parte de los pagos con tarjeta dependen de redes extranjeras. Más recientemente se ha añadido la promesa de una privacidad mayor que la que ofrecen las aplicaciones comerciales de pago.
+
+Cada uno de esos fines es razonable, pero no todos conducen al mismo diseño. Si se trata de sustituir el efectivo, la moneda debería funcionar sin conexión y con un anonimato parecido al de los billetes, algo difícil de conciliar con las normas contra el blanqueo de capitales. Si el objetivo es competir con las redes de tarjetas, hará falta que los comercios la acepten y que los bancos la distribuyan con entusiasmo, cuando estos temen que los ahorradores trasladen sus depósitos al banco central. Para tranquilizarlos se han propuesto límites a la cantidad que cada persona pueda mantener, lo que a su vez resta atractivo al instrumento.
+
+Un proyecto que intenta atender a todos los objetivos a la vez corre el riesgo de no cumplir bien ninguno y de acabar convertido en un medio de pago demasiado limitado para competir, demasiado vigilado para sustituir el efectivo y demasiado complejo para entusiasmar a nadie. Antes de cerrar los detalles técnicos, convendría decidir qué problema se quiere resolver en primer lugar y asumir los sacrificios que esa elección comporta.
+
+**¿Qué objeción principal plantea el texto al proyecto de moneda digital?**
+
+- **A)** Que avanza con demasiada lentitud en el plano técnico, mientras buena parte de los pagos con tarjeta siguen dependiendo de redes extranjeras.
+- **B)** Que ofrece menos privacidad que las aplicaciones comerciales de pago, pese a que proteger la intimidad de los usuarios fue su primera justificación.
+- **C)** Que intenta atender a varios objetivos a la vez sin haber decidido cuál debe prevalecer, cuando cada uno de ellos exige un diseño distinto.
+- **D)** Que pone en peligro la financiación de los bancos, porque animará a muchos ahorradores a trasladar sus depósitos al banco central.
