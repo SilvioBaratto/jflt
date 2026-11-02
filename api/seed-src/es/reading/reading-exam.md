@@ -625,3 +625,153 @@ Conservar lo digital es, por tanto, un asunto de instituciones más que de almac
 - **B)** Adelantarse a la objeción de que enfrenta soportes de ambición muy distinta, sin renunciar por ello al contraste que le interesa.
 - **C)** Admitir que exagera la fragilidad de los disquetes, cuyo contenido, a su juicio, puede recuperarse con el aparato adecuado.
 - **D)** Advertir que la comparación no resiste un examen riguroso, de modo que no pasa de ser una anécdota de arranque sin peso en su argumento.
+
+### 41. (Las fronteras en litigio en los servicios de mapas digitales)
+
+Durante generaciones, los litigios fronterizos se libraron también en los atlas escolares. Cada Estado imprimía sus mapas con el territorio en disputa pintado del mismo color que el resto del país, el vecino hacía lo propio con los suyos, y las notas de protesta que se cruzaban las cancillerías cuando una editorial extranjera trazaba la línea por otro sitio formaban parte del ritual. Un viajero con un atlas de cada país en la maleta podía comprobar por sí mismo que la frontera estaba en discusión.
+
+Los grandes servicios de mapas en línea han encontrado una solución más ingeniosa: mostrar a cada usuario la frontera que prefiere su gobierno. La misma franja de terreno aparece como parte de un país cuando se consulta desde él, como parte del vecino cuando se consulta desde el otro lado y, para el resto del mundo, separada por una discreta línea discontinua. Las empresas lo describen como una adaptación a la legislación local, y la descripción es exacta: en más de un país, publicar un mapa que contradiga la versión oficial constituye un delito.
+
+El arreglo tiene méritos difíciles de discutir. Ningún ministerio protesta, ninguna empresa pierde un mercado y cada ciudadano ve confirmado en la pantalla lo que aprendió en la escuela. Por el camino solo se pierde un detalle menor: la posibilidad de que alguien descubra, sin salir de casa, que su frontera es objeto de litigio. La línea discontinua, que al menos daba noticia del desacuerdo, queda reservada a quienes contemplan el conflicto desde fuera; los ciudadanos de los dos países, que eligen a los gobiernos que negocian y que, llegado el caso, tendrían que defender esa franja, ven en su pantalla un asunto zanjado. ¿Qué margen tendrá un gobierno para ceder un palmo de un territorio que sus votantes nunca han visto en disputa?
+
+**¿Qué da a entender el autor con la pregunta que cierra el texto?**
+
+- **A)** Que, al convencer a cada población de que el litigio ya está resuelto a su favor, el arreglo resta a los gobiernos margen para un compromiso.
+- **B)** Que, al calmar a la opinión pública de ambos países, el arreglo concede a los gobiernos la discreción que suelen requerir las negociaciones fronterizas.
+- **C)** Que los ciudadanos deberían poder pronunciarse sobre una eventual cesión de territorio, ya que serían ellos quienes tendrían que defenderlo.
+- **D)** Que las empresas, al decidir qué frontera muestra cada pantalla, han acabado por sustituir a los gobiernos en la gestión de estos litigios.
+
+### 42. (Los precios dinámicos en la venta de entradas y en el transporte)
+
+En la venta de entradas para un gran concierto, el precio se mueve hoy como una cotización en bolsa. A las nueve en punto, cuando se abre la venta, una localidad cuesta sesenta euros; a las nueve y cinco, con trescientas mil personas en la cola virtual, el algoritmo la ofrece por doscientos cuarenta. El mismo mecanismo encarece el último tren de la tarde en vísperas de un puente y el taxi en cuanto empieza a llover. La indignación de los compradores es tan previsible como la reacción de los economistas, que suelen acogerla con un suspiro.
+
+Hay que reconocer que el suspiro tiene fundamento. Un precio fijo inferior al que el público está dispuesto a pagar no abarata las entradas: las vuelve escasas, y la escasez se reparte entonces por otros medios, como la paciencia en la cola, la suerte o la habilidad de los revendedores, que compran a sesenta y venden a trescientos sin haber compuesto una sola canción. El precio dinámico, al menos, devuelve ese margen a quien organiza el concierto y asigna cada asiento a quien más lo valora.
+
+Conviene, no obstante, detenerse en ese último verbo. En este razonamiento, valorar más significa estar en condiciones de pagar más, y la equivalencia dista de ser evidente: el estudiante que lleva diez años escuchando al grupo aprecia el concierto bastante más que el directivo que lo descubrió la semana pasada, por mucho que sus cuentas corrientes sugieran lo contrario. El taxista que triplica la tarifa bajo un aguacero asigna su vehículo con una eficiencia irreprochable; lo que difícilmente conseguirá es que el pasajero, empapado, se lo agradezca.
+
+**¿Cómo hay que entender la razón que el autor concede a los economistas?**
+
+- **A)** Como el reconocimiento de que la protesta del público nace, ante todo, de no advertir que un precio fijo acaba favoreciendo a los revendedores.
+- **B)** Como una cortesía hacia el adversario, que el autor retira luego al mostrar que los precios dinámicos encarecen en conjunto lo que se vende.
+- **C)** Como el reconocimiento de que el sistema es aceptable en los conciertos, donde frena la reventa, pero no en servicios necesarios como el transporte.
+- **D)** Como el reconocimiento de que el sistema reparte con eficacia lo escaso, sin que ello baste para desacreditar la queja de quienes protestan.
+
+### 43. (La costumbre de dar nombre propio a las borrascas)
+
+Desde hace algunos años, los servicios meteorológicos de varios países europeos dan nombre propio a las borrascas que amenazan con causar daños importantes. La razón es sensata: un nombre se recuerda mejor que una fecha, circula con facilidad en los avisos y en las conversaciones, y la población parece tomarse más en serio una amenaza a la que puede llamar por su nombre. Como medida de protección civil, cuesta poco y funciona, lo que no es poca cosa.
+
+Un nombre propio, sin embargo, hace algo más que avisar: convierte un fenómeno en un personaje. En las crónicas, la borrasca se «ceba» con una comarca, «no da tregua» a la costa o «castiga» a los vecinos de un barrio, y al día siguiente se hace recuento de los destrozos que «ha dejado a su paso». La gramática no deja lugar a dudas: los daños tienen un sujeto, y ese sujeto ya se aleja rumbo al nordeste. Por fortuna para muchos, la borrasca no tiene abogado. Si lo tuviera, este podría alegar en su defensa que el agua se limitó a seguir el cauce de una rambla sobre la que se autorizó una urbanización, que el colector del barrio no se ha ampliado en treinta años y que los mapas de riesgo ya señalaban como inundable el polígono que acaba de anegarse.
+
+Nadie propone, desde luego, que los meteorólogos vuelvan a designar las borrascas por la fecha en que llegan: el aviso funciona, y eso pesa más que cualquier objeción. La lista con los nombres de la próxima temporada, por lo demás, ya está publicada, en riguroso orden alfabético. Cuando llegue la primera borrasca de la lista, las crónicas volverán a contar los destrozos que «ha dejado a su paso».
+
+**¿Qué pretende el autor al imaginar lo que alegaría en su defensa el abogado de la borrasca?**
+
+- **A)** Ridiculizar el tono de las crónicas, que, al hacer de la borrasca un personaje, tienden a exagerar su violencia y a alarmar a la población.
+- **B)** Defender que los meteorólogos dejen de bautizar las borrascas, pues el nombre propio las hace responsables de unos daños que comparten con otros.
+- **C)** Señalar que el relato habitual de cada temporal le atribuye en exclusiva unos daños en los que también han pesado decisiones humanas que nadie menciona.
+- **D)** Proponer que los afectados puedan reclamar ante los tribunales contra las administraciones que permitieron construir en zonas de riesgo.
+
+### 44. (La investigación sobre geoingeniería solar)
+
+Entre las respuestas al calentamiento global que se discuten en los círculos científicos, la llamada geoingeniería solar ocupa un lugar incómodo. La idea consiste en dispersar en la estratosfera partículas que reflejen una pequeña fracción de la luz solar, imitando lo que hacen de forma natural las grandes erupciones volcánicas, que en el pasado han llegado a enfriar el planeta durante uno o dos años. Sus efectos sobre las lluvias o sobre la capa de ozono se conocen mal, y la investigación apenas ha salido de los ordenadores: los escasos experimentos al aire libre que se han propuesto, todos de escala minúscula, se han suspendido tras las protestas.
+
+La objeción de fondo es moral antes que técnica. Si los gobiernos llegan a creer que disponen de un remedio de último recurso, sostienen sus críticos, perderán el interés por reducir las emisiones, que es lo único que ataca la causa del problema. Por ese motivo, algunos investigadores se niegan a trabajar en el asunto y varias revistas lo tratan con una cautela poco habitual. El argumento merece respeto y descansa en una observación sensata: quien se sabe asegurado tiende a arriesgar más.
+
+Cuesta, sin embargo, reconocer en esa objeción a los gobiernos que uno conoce. El razonamiento presupone unas administraciones volcadas en recortar sus emisiones, a las que la mera existencia de unos cuantos modelos informáticos podría apartar de su tarea. Sería una lástima, sin duda, distraerlas de un empeño al que llevan tres décadas dedicando, cumbre tras cumbre, tanta elocuencia. Hay, con todo, un punto en el que la objeción acierta: una técnica relativamente barata, al alcance de un solo país y con efectos desiguales entre regiones plantea problemas de gobierno que nadie ha empezado a resolver.
+
+**¿Qué pone en duda el autor cuando dice que sería una lástima distraer a los gobiernos de su empeño?**
+
+- **A)** Que los gobiernos se dediquen de verdad a la tarea de la que, según los críticos, podría apartarlos la investigación.
+- **B)** Que la geoingeniería pueda investigarse sin debilitar el compromiso de los gobiernos con la reducción de las emisiones.
+- **C)** Que los científicos que se niegan a investigar la técnica actúen por convicción, y no por miedo a perjudicar su prestigio profesional.
+- **D)** Que los gobiernos estén dispuestos a renunciar a una técnica que les saldría mucho más barata que recortar sus emisiones.
+
+### 45. (Los casos de fraude en las ayudas sociales y su eco en los medios)
+
+Basta con que salga a la luz un caso de fraude en las ayudas sociales para que alguien, en una tertulia o en una columna, invoque el Lazarillo. La referencia ahorra muchas explicaciones. Si el pícaro es una figura de nuestra literatura clásica, el beneficiario que oculta unos ingresos o empadrona en su casa a un pariente que vive en otra parte no sería más que el último heredero de una tradición tan antigua como la propia novela, y el asunto quedaría zanjado con una cita culta y un encogimiento de hombros.
+
+Quien vuelva a la novela encontrará, sin embargo, algo más incómodo. Lázaro no nace tramposo; aprende a serlo, y aprende de sus amos. El ciego le estrella la cabeza contra un toro de piedra para enseñarle que el mozo de un ciego ha de saber un punto más que el diablo. El clérigo guarda el pan en un arca bajo llave y lo mata de hambre mientras presume de caridad. El escudero, tan hambriento como su criado, sale a la calle con un palillo entre los dientes para que todos crean que ha comido. Las trampas del muchacho responden, casi siempre, a las de quienes tenían el deber de alimentarlo.
+
+El fraude, por supuesto, debe perseguirse. Pero los expedientes de estas ayudas cuentan a veces otra historia: solicitudes que tardan un año en resolverse, requisitos que cambian a mitad del trámite, formularios que piden documentos que la propia Administración ya tiene, y unas semanas de trabajo temporal que obligan a devolver la prestación de todo un semestre. La novela, por cierto, es breve; se lee en una tarde, y no estaría de más leerla entera antes de citarla.
+
+**¿Con qué propósito recuerda el autor cómo tratan a Lázaro sus amos?**
+
+- **A)** Presentar el fraude en las ayudas como una respuesta legítima de quienes reciben de la administración un trato duro e injusto.
+- **B)** Recordar que la picaresca es un rasgo arraigado en la cultura del país, presente ya en algunas de las obras más célebres de su literatura clásica.
+- **C)** Reprochar a los comentaristas que citen una novela que no conocen y que, bien leída, trata sobre todo del hambre y no tanto del engaño.
+- **D)** Señalar que el clásico, leído entero, obliga a mirar también a unas instituciones cuyo trato empuja al engaño a quien depende de ellas.
+
+### 46. (Los analistas aficionados y la información de fuentes abiertas)
+
+Hasta hace no mucho, saber cuántos carros de combate había concentrado un país junto a una frontera exigía un satélite espía, un avión de reconocimiento o un informante bien situado, y la respuesta se guardaba en una caja fuerte a disposición de media docena de ministros. Hoy un estudiante con un ordenador portátil puede contarlos en imágenes comerciales de satélite, cotejarlas con los vídeos que los vecinos de la zona cuelgan en las redes sociales y publicar sus conclusiones antes de que el ministro haya recibido su informe.
+
+Los servicios de inteligencia han acogido la novedad con sentimientos encontrados. Algunos contratan a los aficionados más brillantes; otros advierten, en sus memorias anuales, contra «la proliferación de análisis no contrastados». La advertencia tiene fundamento: los aficionados se equivocan, confunden unas maniobras con una invasión y caen a veces en la trampa de un vídeo preparado para engañarlos. Sus errores, eso sí, se cometen a la vista de todos y suelen corregirse en cuestión de horas, a menudo por otros aficionados. Los de los servicios profesionales, que también se equivocan, aguardan treinta años en un archivo antes de que alguien pueda examinarlos.
+
+El valor de un servicio secreto se ha desplazado. Cuando cualquiera puede ver los carros, lo difícil ya no es verlos, sino saber si van a cruzar la frontera, algo que depende de intenciones que no aparecen en ninguna fotografía. En ese terreno, los servicios conservan ventajas que ningún aficionado puede igualar, como las fuentes humanas, las comunicaciones interceptadas o los años de trato con el adversario, y es ahí, más que en el recuento de carros, donde tendrán que demostrar para qué sirven.
+
+**¿Qué insinúa el autor al comparar lo que sucede con los errores de los aficionados y con los de los servicios?**
+
+- **A)** Que los aficionados son, en conjunto, más fiables que los servicios profesionales, puesto que se equivocan con bastante menos frecuencia.
+- **B)** Que la advertencia de los servicios contra los análisis ajenos olvida que sus propios errores escapan durante décadas a todo examen.
+- **C)** Que los servicios deberían hacer públicos sus análisis con la misma rapidez con que los aficionados difunden los suyos en las redes.
+- **D)** Que los servicios ocultan deliberadamente sus errores para proteger ante los ministros y ante el público su prestigio y su presupuesto.
+
+### 47. (Las propinas que sugieren los datáfonos al pagar con tarjeta)
+
+En muchas cafeterías, el momento de pagar se ha alargado. El empleado gira el datáfono hacia el cliente, y la pantalla, antes de pedirle la tarjeta, le ofrece tres botones grandes con otros tantos porcentajes de propina: el 10, el 15 y el 20 %. El cliente ha comprado un café para llevar que él mismo ha recogido del mostrador. El empleado, entretanto, mira hacia otro lado con una discreción muy profesional.
+
+La propina nació como premio a un servicio atento, y en los países donde los salarios del sector la dan por descontada forma parte de la retribución. En otros, la costumbre era más modesta: se redondeaba el importe o se dejaban unas monedas en el platillo, y nadie se fijaba en quién lo hacía. La pantalla ha alterado ambas cosas. Por una parte, ha desligado la propina del servicio, porque aparece igual tras una comida de tres platos que tras una botella de agua sacada de la nevera. Por otra, ha puesto cifras a lo que era un gesto, y quien elige la más baja sabe que está eligiendo la más baja.
+
+Los economistas que estudian el comportamiento conocen bien el mecanismo: las opciones que se presentan primero o en el centro se eligen con más frecuencia, y una cantidad sugerida sirve de referencia de la que pocos se alejan. Los defensores del sistema recuerdan, con razón, que nadie está obligado a nada. Existe, en efecto, la posibilidad de no dejar propina: un botón más pequeño, en una esquina de la pantalla, con la leyenda «Sin propina». Se parece a las salidas de emergencia de un cine, cuya ubicación todo el mundo conoce y que nadie utiliza sin un buen motivo.
+
+**¿Qué sugiere el autor con la comparación que cierra el texto?**
+
+- **A)** Que no dejar propina sigue siendo posible, pero la pantalla convierte esa elección en una excepción que el cliente tendría que justificar.
+- **B)** Que el comercio ofrece la opción de no dejar propina porque una norma lo obliga, y no porque desee que algún cliente la elija.
+- **C)** Que el botón para no dejar propina está tan escondido que muchos clientes no lo encuentran y pagan una propina que no pensaban dejar.
+- **D)** Que son los empleados, con su presencia junto al mostrador, quienes disuaden al cliente de pulsar la opción de no dejar propina.
+
+### 48. (Las ventanas de consentimiento al navegar por internet)
+
+Al abrir una página web, el usuario europeo se encuentra casi siempre con una ventana que le pide permiso. La empresa, le explica, respeta su privacidad y utiliza herramientas de seguimiento para mejorar su experiencia, personalizar la publicidad y analizar el tráfico. Para aceptarlas todas basta con pulsar un botón grande y de color vivo; para configurar las preferencias hay que seguir un enlace discreto que conduce a un panel con decenas de casillas y varios centenares de empresas asociadas, donde rechazar cada uso exige más pasos que aceptarlos todos. La escena se repite decenas de veces al día.
+
+El principio en que se apoya el sistema procede de la medicina. Antes de una intervención quirúrgica, el cirujano explica al paciente en qué consiste, qué riesgos entraña y qué alternativas existen, responde a sus preguntas y le deja tiempo para pensarlo; solo entonces el paciente firma. En la red, la firma se ha conservado intacta. El usuario medio otorga cada año varios miles de autorizaciones, y leerlas todas le llevaría más tiempo del que pasa en las propias páginas.
+
+Las normas que exigen esas ventanas no fueron un error: antes de ellas, el seguimiento se producía sin que nadie preguntara nada, y hoy cualquiera puede averiguar quién lo sigue y con qué fin, siempre que disponga de una tarde libre. Han tenido, además, un efecto que quizá sus autores no previeron. Si un día surge una reclamación, la empresa podrá presentar un registro, con fecha y hora, del clic con que el usuario dio su conformidad. El usuario, por su parte, podrá aportar la certeza de que no tenía la menor idea de lo que aceptaba.
+
+**¿Por qué recuerda el autor cómo se obtiene el consentimiento de un paciente antes de operarlo?**
+
+- **A)** Para reclamar que los datos personales reciban la misma protección legal que la ley otorga a la información sobre la salud.
+- **B)** Para denunciar que las empresas tecnológicas toman prestado el lenguaje de la medicina con el fin de dar a su negocio un aire respetable.
+- **C)** Para hacer ver que lo que ante el cirujano es una decisión meditada queda reducido en la red a un trámite que se cumple sin pensar.
+- **D)** Para mostrar que el consentimiento tampoco funciona en la medicina, donde los pacientes firman sin leer lo que se les presenta.
+
+### 49. (Los grupos de mensajería de las familias de un mismo curso escolar)
+
+La sesión se abrió a las diez menos cuarto de la noche con una cuestión urgente: la desaparición, en el patio, de un jersey azul marino sin marcar. Tras la exposición de la madre afectada, tomaron la palabra sucesivamente un padre que solicitó, con carácter previo, que se precisara el tono exacto de la prenda, una madre que aprovechó el turno para reabrir el debate sobre la excursión de mayo y varias familias que se limitaron a manifestar su adhesión con un pulgar levantado. A las once y cuarto, con ochenta y siete mensajes en el diario de sesiones, el jersey seguía en paradero desconocido y la asamblea había aprobado, sin votación y casi sin advertirlo, el regalo de fin de curso para la tutora.
+
+Los grupos de mensajería que reúnen a las familias de un mismo curso se han convertido en una pieza más de la vida escolar. Su utilidad es evidente: avisan de una reunión, recuerdan que mañana toca llevar el chándal y permiten a los padres que trabajan enterarse de lo que antes solo sabían quienes esperaban a la puerta del colegio. Ahora bien, funcionan con reglas que nadie ha escrito. No hay presidencia, el orden del día lo fija el primero que escribe y los acuerdos los adopta, por agotamiento de los demás, quien más tiempo puede dedicar a la pantalla.
+
+Los colegios han aprendido a convivir con un canal que no controlan. Más de una dirección ha descubierto que una queja sobre un profesor llevaba semanas debatiéndose en el grupo antes de llegar a su despacho, y que llegaba ya con sentencia firme. Ningún reglamento escolar menciona todavía la existencia de estos grupos, lo cual no parece haberles restado la menor autoridad.
+
+**¿Qué efecto persigue el autor al narrar la conversación del primer párrafo como si fuera una sesión parlamentaria?**
+
+- **A)** Ridiculizar a las familias por debatir con tanta solemnidad asuntos tan menores como la pérdida de un jersey en el patio.
+- **B)** Anticipar con humor que el grupo ejerce, sin mandato ni procedimiento alguno, unas funciones propias de un órgano de gobierno.
+- **C)** Dar a entender que las familias trasladan al grupo las rivalidades y los bandos de la política, de los que ni el colegio se libra.
+- **D)** Defender que los colegios regulen estos grupos y nombren a un moderador que ordene los debates y someta los acuerdos a votación.
+
+### 50. (El aprovechamiento del agua depurada para el consumo humano)
+
+En las regiones castigadas por sequías recurrentes, los ingenieros disponen desde hace años de una solución probada: depurar las aguas residuales de una ciudad hasta devolverles una calidad apta para el consumo. Las plantas más avanzadas combinan filtros de membrana, ósmosis inversa y radiación ultravioleta, y el agua que producen supera con holgura los análisis que se exigen a la del grifo. El obstáculo con que tropieza esta solución no es técnico ni, en rigor, económico.
+
+La bibliografía especializada llama a ese obstáculo, sin eufemismos, el factor asco. Por impecables que sean las analíticas, la idea de beber lo que hace unos días bajaba por los desagües provoca en muchos ciudadanos un rechazo que ningún dato consigue disipar. Poco importa que el agua de numerosos ríos haya atravesado ya las depuradoras de varios pueblos situados aguas arriba antes de llegar a la toma de una ciudad; nadie piensa en ello al abrir el grifo, y probablemente es mejor así.
+
+La solución adoptada en más de un lugar es de una sencillez ejemplar. El agua depurada no se envía directamente a la red, sino que se vierte antes en un embalse o en un acuífero, donde pasa unos meses mezclada con el agua de lluvia, y desde allí vuelve a la potabilizadora como cualquier otra. El procedimiento no tiene nada de secreto; las compañías lo explican en sus folletos con todo detalle. Desde el punto de vista sanitario, el paseo aporta poco: el agua no sale del embalse más limpia de lo que entró, y a veces sale algo menos. Pero sale convertida en agua del embalse, que se bebe sin reparos desde hace un siglo. Es un rodeo caro para una mejora que ningún análisis detecta, aunque con toda probabilidad resulta más barato que cualquier campaña destinada a convencer a la población.
+
+**¿Cómo valora el autor la solución de hacer pasar el agua depurada por un embalse?**
+
+- **A)** La considera un engaño piadoso: tranquiliza a la población, pero a costa de ocultarle la verdadera procedencia del agua que bebe.
+- **B)** La considera la opción más prudente: el tiempo que el agua pasa en el embalse permite a la naturaleza completar su depuración.
+- **C)** La considera un gasto injustificado: obedece a un temor infundado que bastaría con disipar dando a conocer los análisis.
+- **D)** La considera un rodeo de escaso valor sanitario: no mejora el agua, pero la vuelve aceptable para quien la rechazaba.
