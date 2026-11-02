@@ -143,7 +143,7 @@
 - [ ] **C)** Su efecto principal es empujar a los propietarios hacia el alquiler de temporada, de modo que la medida pierde alcance conforme crece el segmento que escapa a la regulación.
   - Generalización excesiva: el alquiler de temporada es solo una de las reacciones de los propietarios, junto a vender o «mantener el piso vacío», y el texto no dice que la medida pierda alcance por ello.
 - [x] **D)** Hace pagar a unos inquilinos parte del alivio de otros, porque la retirada de pisos del mercado perjudica a quienes aún no tienen un contrato que defender.
-  - Correcta: los propietarios venden, cambian de tipo de alquiler o dejan «el piso vacío», quien busca casa encuentra «menos anuncios» y, así, parte del coste «recae sobre otros inquilinos».
+  - Correcta: algunos propietarios venden, cambian de tipo de alquiler o dejan «el piso vacío»; quien busca casa encuentra «menos anuncios», y así parte del coste «recae sobre otros inquilinos».
 
 ### 14. Key: B
 
@@ -151,7 +151,7 @@
   - Lectura errónea: los ejemplos oponen datos según el tiempo que deben seguir siendo secretos, no según quién los produce; entre los de larga vida figuran «los planos de un sistema de armas», y el texto incluye a «la industria de defensa».
 - [x] **B)** Sirven para mostrar que la urgencia de proteger la información varía de un dato a otro según el tiempo que cada uno deba seguir siendo secreto.
   - Correcta: el contraste entre lo que seguirá siendo sensible «dentro de veinte años» y lo que caduca en horas prepara la «pregunta útil»: cuánto tiempo debe permanecer secreto cada dato.
-- [ ] **C)** Sirven para respaldar la decisión de las organizaciones que aplazan la migración, al mostrar que gran parte de lo que se cifra pierde pronto su valor.
+- [ ] **C)** Sirven para respaldar la decisión de las organizaciones que aplazan la migración, al mostrar que la mayoría de los datos cifrados pierde pronto su valor.
   - Lectura errónea: aplazar es lo que hacen «muchas organizaciones», y los ejemplos lo cuestionan, pues algunos datos «pueden seguir siendo sensibles dentro de veinte años».
 - [ ] **D)** Sirven para ilustrar por qué la migración resulta tan cara, ya que obliga a revisar sistemas muy distintos entre sí y, a menudo, antiguos.
   - Lectura errónea: que la migración es «una tarea cara» se dice en el primer párrafo; los ejemplos no tratan de sistemas, sino de datos que deben seguir siendo secretos durante más o menos tiempo.
@@ -162,10 +162,10 @@
   - Correcta: reconoce que los beneficios «son reales», pero advierte de los «corredores ausentes» y de un reparto «que nadie ha decidido de forma explícita».
 - [ ] **B)** Con una confianza prudente en que las normas internacionales se adapten a tiempo, aunque admite que las empresas que van en cabeza se resistirán a ceder parte de su capacidad.
   - Lectura errónea: el texto no expresa confianza en la reforma, pues las condiciones para adaptar las reglas son algo que «difícilmente aceptarán quienes ya van en cabeza».
-- [ ] **C)** Con aprobación hacia una carrera que lleva internet a regiones que hasta ahora carecían de una buena conexión, aunque lamenta que muchos Estados se hayan quedado sin sitio en ella.
-  - Lectura errónea: los beneficios son una concesión («no conviene minimizarlos»); el peso del texto recae en los «corredores ausentes» y en un reparto sin decidir, no en la aprobación de la carrera.
-- [ ] **D)** Con preocupación por la seguridad de la órbita, que ve amenazada por la acumulación de satélites y sus posibles colisiones, aunque valora la conexión que estas redes ofrecen.
-  - Generalización excesiva: el riesgo de colisiones es un problema que «se suma» al reparto desigual; la inquietud principal del texto recae en los «corredores ausentes».
+- [ ] **C)** Con simpatía hacia una carrera que lleva internet a regiones que hasta ahora carecían de una buena conexión, aunque lamenta que muchos Estados se hayan quedado sin sitio en ella.
+  - Lectura errónea: los beneficios son una concesión («no conviene minimizarlos»); el peso del texto recae en los «corredores ausentes» y en un reparto sin decidir, no en la simpatía hacia la carrera.
+- [ ] **D)** Con preocupación por el riesgo de colisiones, que considera un problema de las propias empresas que despliegan estas redes, aunque valora la conexión que estas ofrecen.
+  - Lectura errónea: el texto presenta las colisiones como «un riesgo que alcanza a todos», también para «quienes nunca lanzaron nada», y su inquietud principal recae en los «corredores ausentes».
 
 ### 16. Key: C
 
@@ -181,11 +181,11 @@
 ### 17. Key: B
 
 - [ ] **A)** Que la prestación económica se sumó a los servicios profesionales y reforzó su alcance, tal como se había previsto al aprobarse la ley.
-  - Lectura errónea: la prestación no reforzó a los servicios, que «crecieron más despacio de lo previsto»; sumarse a ellos como «un recurso excepcional» era el plan, no lo que ocurrió.
+  - Lectura errónea: la prestación no estaba prevista para sumarse a los servicios, sino para cuando «esos servicios no estuvieran disponibles», y estos «crecieron más despacio de lo previsto».
 - [x] **B)** Que la prestación económica ocupó en muchos expedientes, y de forma duradera, el lugar que la ley reservaba a los servicios profesionales.
   - Correcta: aquella prestación «pensada para casos particulares» acabó ocupando el lugar de los servicios «en buena parte de los expedientes», y el cuidado lo siguen prestando los familiares, como antes de la ley.
 - [ ] **C)** Que la prestación económica cubrió de forma provisional el hueco de los servicios mientras la red profesional, que crecía despacio, terminaba de desplegarse.
-  - Lectura errónea: la sustitución no fue provisional: el cuidado lo siguen prestando los familiares, y el derecho «convive así con una práctica» que la ley pretendía dejar atrás.
+  - Lectura errónea: la sustitución no fue provisional, pues el cuidado lo siguen prestando los familiares y el derecho «convive así con una práctica» que la ley pretendía dejar atrás.
 - [ ] **D)** Que la prestación económica compensó, en la mayoría de los casos, los ingresos que las familias perdían al reducir su jornada o dejar su empleo.
   - Lectura errónea: el texto dice que esa cantidad «apenas compensa lo que dejan de ingresar», y el pronombre de «supliéndolos» remite a los servicios, no a los ingresos.
 
@@ -213,7 +213,7 @@
 
 ### 20. Key: C
 
-- [ ] **A)** Que su desarrollo técnico avanza más despacio que las expectativas que ha creado, de modo que promete más de lo que hoy puede ofrecer.
+- [ ] **A)** Que promete más de lo que hoy puede ofrecer, porque su desarrollo técnico va por detrás de las expectativas que ha despertado.
   - Lectura errónea: el texto afirma que, «En lo técnico, estos proyectos avanzan con paso firme»; la dificultad está en precisar para qué se necesita esa moneda.
 - [ ] **B)** Que ofrece menos privacidad que las aplicaciones comerciales de pago, pese a que proteger la intimidad de los usuarios fue su primera justificación.
   - Lectura errónea: la privacidad es la justificación añadida «Más recientemente», y lo que se promete es una privacidad mayor que la de las aplicaciones comerciales.

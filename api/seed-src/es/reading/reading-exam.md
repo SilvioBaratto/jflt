@@ -164,7 +164,7 @@ Admitido esto, la pregunta pertinente es quién paga y por qué vía, y ninguna 
 
 ### 11. (Las sanciones económicas como instrumento de política exterior)
 
-Las sanciones económicas figuran entre las herramientas de política exterior más atractivas para un gobierno. Permiten castigar una conducta sin arriesgar vidas, se aprueban con relativa rapidez y transmiten a la opinión pública la sensación de que se está haciendo algo. Su eficacia inmediata tampoco es desdeñable: cuando el país que sanciona controla las monedas, los bancos y los seguros por los que circula gran parte del comercio mundial, cortar el acceso a esos circuitos puede asfixiar a la economía afectada en pocas semanas.
+Las sanciones económicas figuran entre las herramientas de política exterior más atractivas para un gobierno. Permiten castigar una conducta sin arriesgar vidas, se aprueban con relativa rapidez y transmiten a la opinión pública la sensación de que se está haciendo algo. Su eficacia inmediata tampoco es desdeñable: cuando el país que sanciona controla las monedas, los bancos y los seguros por los que circula el grueso del comercio mundial, cortar el acceso a esos circuitos puede asfixiar a la economía afectada en pocas semanas.
 
 Esa misma fuerza encierra, sin embargo, su punto débil. Cada vez que se aplican, las sanciones enseñan algo tanto al Estado castigado como a quienes observan desde fuera. Los gobiernos que temen verse algún día en una situación parecida empiezan a diversificar sus reservas, a liquidar parte de su comercio en otras monedas y a ensayar sistemas de pago que no dependan de los bancos del país sancionador. Ninguno de esos circuitos alternativos es, por ahora, tan eficiente como el que pretenden sortear, y muchos funcionan de manera precaria. Pero cada transacción que se desvía hacia ellos resta un poco de fuerza a la palanca de la que dependerá la sanción siguiente.
 
@@ -213,13 +213,13 @@ Gran parte de las comunicaciones cifradas que hoy se consideran seguras dejarán
 
 Esa espera descansa en una pregunta que no tiene respuesta, cuando existe otra que sí la tiene. Un adversario con recursos puede interceptar y almacenar hoy grandes volúmenes de tráfico cifrado que es incapaz de leer, con la intención de descifrarlo cuando disponga de la tecnología adecuada. Para él, la información no caduca al terminar la comunicación: queda archivada, a la espera. Un mensaje diplomático, un historial clínico o los planos de un sistema de armas pueden seguir siendo sensibles dentro de veinte años; la cotización de una divisa o la ubicación de un envío pierden su valor en cuestión de horas.
 
-La pregunta útil, por tanto, no es cuándo llegará el ordenador cuántico, sino cuánto tiempo debe permanecer secreto cada dato y cuánto tardará la organización en completar la migración, que en sistemas complejos se mide en años. Si la suma de ambos plazos supera el horizonte en que la amenaza podría materializarse, el riesgo ya existe, aunque no se haya producido ataque alguno. Para la información que manejan los ministerios, los hospitales o la industria de defensa, esa cuenta arroja a menudo un resultado incómodo. Queda por ver si las administraciones, poco inclinadas a gastar en amenazas sin fecha, harán el cálculo a tiempo.
+La pregunta útil, por tanto, no es cuándo llegará el ordenador cuántico, sino cuánto tiempo debe permanecer secreto cada dato y cuánto tardará la organización en completar la migración, que en sistemas complejos se mide en años. Si la suma de ambos plazos supera el horizonte en que la amenaza podría materializarse, el riesgo ya existe, aunque no se haya producido ataque alguno. Para la información que manejan los ministerios, los hospitales o la industria de defensa, esa cuenta arroja a menudo un resultado incómodo.
 
 **¿Qué función cumplen en el texto los ejemplos que cierran el segundo párrafo?**
 
 - **A)** Sirven para indicar que la información de los organismos públicos corre más peligro que la de las empresas, cuyos datos caducan antes.
 - **B)** Sirven para mostrar que la urgencia de proteger la información varía de un dato a otro según el tiempo que cada uno deba seguir siendo secreto.
-- **C)** Sirven para respaldar la decisión de las organizaciones que aplazan la migración, al mostrar que gran parte de lo que se cifra pierde pronto su valor.
+- **C)** Sirven para respaldar la decisión de las organizaciones que aplazan la migración, al mostrar que la mayoría de los datos cifrados pierde pronto su valor.
 - **D)** Sirven para ilustrar por qué la migración resulta tan cara, ya que obliga a revisar sistemas muy distintos entre sí y, a menudo, antiguos.
 
 ### 15. (Las grandes constelaciones de satélites en órbita baja)
@@ -234,16 +234,16 @@ Las reglas vigentes se concibieron cuando poner un satélite en órbita era una 
 
 - **A)** Con inquietud ante un reparto del espacio que se va fijando sin acuerdo previo, aunque sin restar valor a los servicios que estas redes ya prestan a las zonas aisladas.
 - **B)** Con una confianza prudente en que las normas internacionales se adapten a tiempo, aunque admite que las empresas que van en cabeza se resistirán a ceder parte de su capacidad.
-- **C)** Con aprobación hacia una carrera que lleva internet a regiones que hasta ahora carecían de una buena conexión, aunque lamenta que muchos Estados se hayan quedado sin sitio en ella.
-- **D)** Con preocupación por la seguridad de la órbita, que ve amenazada por la acumulación de satélites y sus posibles colisiones, aunque valora la conexión que estas redes ofrecen.
+- **C)** Con simpatía hacia una carrera que lleva internet a regiones que hasta ahora carecían de una buena conexión, aunque lamenta que muchos Estados se hayan quedado sin sitio en ella.
+- **D)** Con preocupación por el riesgo de colisiones, que considera un problema de las propias empresas que despliegan estas redes, aunque valora la conexión que estas ofrecen.
 
 ### 16. (El cierre de periódicos locales y comarcales)
 
-El cierre de un periódico comarcal apenas ocupa unas líneas en la prensa nacional. Se cuenta como un episodio más de la crisis de un sector que vio desplomarse sus ingresos publicitarios con la llegada de internet, y se da por hecho que la información local seguirá circulando por otras vías: redes sociales, grupos de mensajería, páginas municipales. En términos empresariales, la decisión suele ser impecable, porque la cabecera ya no es rentable.
+El cierre de un periódico comarcal apenas ocupa unas líneas en la prensa nacional. Se cuenta como un episodio más de la crisis de un sector que vio desplomarse sus ingresos publicitarios con la llegada de internet, y se da por hecho que la información local seguirá circulando por otras vías: redes sociales, grupos de mensajería, páginas municipales. En términos empresariales, la decisión suele ser impecable, porque la cabecera pierde dinero.
 
 Con ella desaparece, en cambio, algo que no figura en ningún balance. Las redes difunden opiniones y rumores con enorme eficacia, pero casi nadie en ellas asiste a un pleno municipal de tres horas, revisa los pliegos de un contrato de recogida de basuras o compara el presupuesto aprobado con lo efectivamente gastado. Ese trabajo, tedioso y poco rentable, lo hacía el periodista local, y cuando falta no estalla ningún escándalo: sencillamente, deja de haber alguien que mire. Según estudios de varios países, allí donde ha cerrado la prensa local tiende a bajar la participación en las elecciones municipales, se presentan menos candidatos y los ayuntamientos pagan más por endeudarse, quizá porque los prestamistas perciben un menor control de sus cuentas.
 
-Esos costes no los paga la empresa que cierra, sino los vecinos de la comarca, y por eso el mercado no los tiene en cuenta cuando concluye que un periódico ya no es viable. De ahí que haya empezado a discutirse si la información local merece algún tipo de apoyo público. La cuestión es delicada, porque un medio que depende de la subvención del ayuntamiento al que debe vigilar difícilmente lo vigilará con libertad. Dar con fórmulas que sostengan ese trabajo sin crear tal dependencia es una de las tareas pendientes de las democracias locales.
+Como esos costes no se reflejan en ninguna cuenta de resultados, el mercado los ignora cuando concluye que un periódico ya no es viable. De ahí que haya empezado a discutirse si la información local merece algún tipo de apoyo público. La cuestión es delicada, porque un medio que depende de la subvención del ayuntamiento al que debe vigilar difícilmente lo vigilará con libertad. Dar con fórmulas que sostengan ese trabajo sin crear tal dependencia es una de las tareas pendientes de las democracias locales.
 
 **¿Qué da a entender el texto sobre el cierre de los periódicos comarcales?**
 
@@ -307,7 +307,7 @@ Un proyecto que intenta atender a todos los objetivos a la vez corre el riesgo d
 
 **¿Qué objeción principal plantea el texto al proyecto de moneda digital?**
 
-- **A)** Que su desarrollo técnico avanza más despacio que las expectativas que ha creado, de modo que promete más de lo que hoy puede ofrecer.
+- **A)** Que promete más de lo que hoy puede ofrecer, porque su desarrollo técnico va por detrás de las expectativas que ha despertado.
 - **B)** Que ofrece menos privacidad que las aplicaciones comerciales de pago, pese a que proteger la intimidad de los usuarios fue su primera justificación.
 - **C)** Que persigue a la vez fines que reclaman diseños incompatibles, sin haber establecido todavía cuál de ellos debe tener prioridad sobre los demás.
 - **D)** Que pone en peligro la financiación de los bancos, porque animará a muchos ahorradores a trasladar sus depósitos al banco central.
