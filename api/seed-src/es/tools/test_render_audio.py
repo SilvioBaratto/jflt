@@ -1,5 +1,6 @@
 import io
 import json
+import socket
 from email.message import Message
 import urllib.error
 import urllib.request
@@ -198,6 +199,17 @@ def test_openai_synth_honours_a_custom_model():
     assert json.loads(bodies[0])["model"] == "tts-1-hd"
 
 
+@pytest.fixture
+def no_network(monkeypatch):
+    """Fail loudly if anything tries to open a socket, while letting http.client validate headers."""
+
+    def refuse(*args, **kwargs):
+        """Stand in for `socket.create_connection`."""
+        raise AssertionError("network access attempted")
+
+    monkeypatch.setattr(socket, "create_connection", refuse)
+
+
 class FakeResponse(io.BytesIO):
     """A stand-in for the object `urlopen` returns."""
 
@@ -297,3 +309,80 @@ def test_cli_reports_validation_errors_without_a_traceback(tmp_path, capsys):
 
     assert code == 1
     assert "listening-01" in capsys.readouterr().err
+
+
+def test_cli_strips_whitespace_around_the_key(tmp_path):
+    """A CRLF-terminated .env value must reach the speech client without the line ending."""
+    write_item(tmp_path, "listening-01")
+    keys = []
+
+    def make_synth(key):
+        """Record the key the client would be built with."""
+        keys.append(key)
+        return RecordingSynth()
+
+    code = main(
+        ["--yes"], seed_dir=tmp_path, environ={"OPENAI_API_KEY": "sk-x\r\n"}, make_synth=make_synth
+    )
+
+    assert code == 0
+    assert keys == ["sk-x"]
+
+
+@pytest.mark.parametrize(
+    "key",
+    ["sk-SECRET\rtail", "sk-SECRET\nb", "sk-SECRET b", "sk-SECRET\x00b", "sk-SECRET\u20acb"],
+)
+def test_cli_rejects_a_malformed_key_without_echoing_it(tmp_path, capsys, no_network, key):
+    """http.client quotes an illegal header value verbatim, so the key must be rejected first."""
+    write_item(tmp_path, "listening-01")
+
+    code = main(["--yes"], seed_dir=tmp_path, environ={"OPENAI_API_KEY": key})
+
+    captured = capsys.readouterr()
+    assert code == 1
+    assert "OPENAI_API_KEY" in captured.err
+    assert "SECRET" not in captured.out + captured.err
+    assert not (tmp_path / "listening-01.mp3").exists()
+
+
+@pytest.mark.parametrize("key", ["", "  \r\n"])
+def test_cli_treats_a_blank_key_as_unset(tmp_path, capsys, key):
+    """Whitespace alone is not a key."""
+    write_item(tmp_path, "listening-01")
+
+    code = main(["--yes"], seed_dir=tmp_path, environ={"OPENAI_API_KEY": key})
+
+    assert code == 1
+    assert "OPENAI_API_KEY" in capsys.readouterr().err
+
+
+def test_cli_redacts_the_key_from_a_failure_message(tmp_path, capsys):
+    """Any layer that echoes the key in an error must not leak it to stderr."""
+    write_item(tmp_path, "listening-01")
+
+    def make_synth(key):
+        """Build a speech function whose failure quotes the key."""
+
+        def synth(text, voice):
+            """Fail the way a client that echoes its credentials would."""
+            raise RuntimeError(f"upstream rejected Bearer {key}")
+
+        return synth
+
+    code = main(
+        ["--yes"], seed_dir=tmp_path, environ={"OPENAI_API_KEY": "sk-SECRET"}, make_synth=make_synth
+    )
+
+    captured = capsys.readouterr()
+    assert code == 1
+    assert "upstream rejected" in captured.err
+    assert "SECRET" not in captured.out + captured.err
+
+
+def test_default_transport_hides_header_values_when_the_request_cannot_be_built(no_network):
+    """A header http.client refuses is quoted by its ValueError, so the transport must drop it."""
+    with pytest.raises(RuntimeError) as caught:
+        render_audio._urllib_post("https://example.test/x", {"Authorization": "Bearer SECRET\r"}, b"{}")
+
+    assert "SECRET" not in str(caught.value)

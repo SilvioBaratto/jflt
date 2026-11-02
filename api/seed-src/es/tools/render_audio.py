@@ -43,6 +43,9 @@ def _urllib_post(url: str, headers: dict[str, str], body: bytes) -> bytes:
         # Same shape as the Node service's error; only the body is quoted so the key stays out.
         detail = exc.read().decode("utf-8", errors="replace")[:200]
         raise RuntimeError(f"TTS {exc.code}: {detail}") from exc
+    except ValueError:
+        # http.client quotes the offending header value, which here is the bearer token.
+        raise RuntimeError("TTS request could not be built: invalid header or URL value") from None
 
 
 def openai_synth(api_key: str, model: str = DEFAULT_MODEL, *, post: HttpPost = _urllib_post) -> Synth:
@@ -164,6 +167,19 @@ def render_all(
     return written
 
 
+def _clean_api_key(raw: str | None) -> str | None:
+    """Strip surrounding whitespace from a key and return None when it is unusable.
+
+    A CRLF `.env` or a pasted newline leaves line-ending characters on the value, which
+    http.client rejects while quoting the whole header. Trimming recovers that harmless case;
+    anything still outside printable ASCII is refused so the key never reaches a header.
+    """
+    key = (raw or "").strip()
+    if key and all(33 <= ord(char) <= 126 for char in key):
+        return key
+    return None
+
+
 def build_parser() -> argparse.ArgumentParser:
     """Return the command-line parser."""
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
@@ -193,13 +209,17 @@ def main(
         make_synth: Builds the speech function from the API key.
 
     Returns:
-        0 on success, 1 when the key is missing, `--yes` is absent, or a script is invalid.
+        0 on success, 1 when the key is missing or malformed, `--yes` is absent, or a
+        script is invalid.
     """
     args = build_parser().parse_args(argv)
     env = os.environ if environ is None else environ
-    api_key = env.get("OPENAI_API_KEY")
-    if not api_key:
-        print("OPENAI_API_KEY is not set; export it before rendering.", file=sys.stderr)
+    raw_key = env.get("OPENAI_API_KEY")
+    api_key = _clean_api_key(raw_key)
+    if api_key is None:
+        unset = not (raw_key or "").strip()
+        reason = "is not set" if unset else "contains spaces, control or non-ASCII characters"
+        print(f"OPENAI_API_KEY {reason}; export a clean key before rendering.", file=sys.stderr)
         return 1
     try:
         written = render_all(
@@ -212,7 +232,8 @@ def main(
         print("Rendering sends the script text to OpenAI; re-run with --yes to confirm.", file=sys.stderr)
         return 1
     except (ValueError, RuntimeError) as exc:
-        print(f"render failed: {exc}", file=sys.stderr)
+        # A client or server error may echo its credentials; stderr can end up in a shared transcript.
+        print(f"render failed: {str(exc).replace(api_key, '***')}", file=sys.stderr)
         return 1
     for path in written:
         print(f"wrote {path}")
