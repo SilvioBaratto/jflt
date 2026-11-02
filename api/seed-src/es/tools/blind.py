@@ -82,6 +82,12 @@ def listening_pack(items: Sequence[dict], first: int, last: int) -> list[dict]:
     ]
 
 
+def _key_of(ident: str, label: object) -> str:
+    if not isinstance(label, str) or not label.strip():
+        raise ValueError(f"{ident}: no key")
+    return label
+
+
 def expected_keys(reading: Sequence[dict], listening: Sequence[dict]) -> dict[str, str]:
     """Collect the correct label for every answerable id.
 
@@ -92,11 +98,19 @@ def expected_keys(reading: Sequence[dict], listening: Sequence[dict]) -> dict[st
     Returns:
         A map from `R<n>` and `L<n>.<q>` to the correct label. A listening item itself
         has no entry because only its questions are answered.
+
+    Raises:
+        ValueError: If a reading item or listening question has no key. The parser leaves
+            `""` or `None` there, which would otherwise read as a label nobody can match.
     """
-    keys = {f"R{position}": item["correctLabel"] for position, item in enumerate(reading, start=1)}
+    keys = {
+        f"R{position}": _key_of(f"R{position}", item["correctLabel"])
+        for position, item in enumerate(reading, start=1)
+    }
     for position, item in enumerate(listening, start=1):
         for number, question in enumerate(item["questions"], start=1):
-            keys[f"L{position}.{number}"] = question["correctLabel"]
+            ident = f"L{position}.{number}"
+            keys[ident] = _key_of(ident, question["correctLabel"])
     return keys
 
 

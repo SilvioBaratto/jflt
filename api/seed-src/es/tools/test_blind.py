@@ -1,4 +1,5 @@
 import json
+import shutil
 from collections.abc import Iterator
 from pathlib import Path
 
@@ -6,7 +7,7 @@ import pytest
 
 from blind import compare, expected_keys, listening_pack, reading_pack, requested_keys
 from builder import REPO, load_builder
-from run_checks import main
+from run_checks import main, run_compare, run_pack
 
 ENGLISH_SEED = REPO / "api" / "seed-src"
 ENGLISH_REF = REPO / "api" / "references"
@@ -168,6 +169,29 @@ def test_expected_keys_ids_match_the_pack_ids(english):
     assert set(pack_ids) == set(keys)
 
 
+@pytest.mark.parametrize("missing", ["", None], ids=["empty", "none"])
+def test_expected_keys_rejects_an_unkeyed_reading_item(english, missing):
+    """A reading item without a key names its id instead of yielding an empty label."""
+    reading, _ = english
+    unkeyed = [dict(item) for item in reading[:3]]
+    unkeyed[1]["correctLabel"] = missing
+
+    with pytest.raises(ValueError, match=r"R2: no key"):
+        expected_keys(unkeyed, [])
+
+
+@pytest.mark.parametrize("missing", ["", None], ids=["empty", "none"])
+def test_expected_keys_rejects_an_unkeyed_listening_question(english, missing):
+    """A listening question without an answer names its L<n>.<q> id."""
+    _, listening = english
+    unkeyed = [dict(item) for item in listening[:2]]
+    unkeyed[1]["questions"] = [dict(q) for q in unkeyed[1]["questions"]]
+    unkeyed[1]["questions"][1]["correctLabel"] = missing
+
+    with pytest.raises(ValueError, match=r"L2\.2: no key"):
+        expected_keys([], unkeyed)
+
+
 def test_requested_keys_restricts_to_the_range(english):
     """The comparison window is selected by item position within one kind."""
     reading, listening = english
@@ -292,7 +316,7 @@ def test_compare_command_is_clean_for_the_right_answers(root, tmp_path, capsys):
     code = main(["compare", "--answers", str(answers), "--kind", "reading", "--first", "1", "--last", "3"], root=root)
 
     assert code == 0
-    assert "0 errors" in capsys.readouterr().out
+    assert "3 answers expected, 0 errors" in capsys.readouterr().out
 
 
 def test_compare_command_lists_mismatches_and_missing_answers(root, tmp_path, capsys):
@@ -347,3 +371,44 @@ def test_compare_command_reports_a_missing_answers_file(root, tmp_path, capsys):
 
     assert code == 1
     assert "answers file" in capsys.readouterr().out
+
+
+def test_compare_summary_counts_the_answers_expected(root, tmp_path, capsys):
+    """The summary reports the window size, not how many answers were found correct."""
+    answers = write_answers(tmp_path / "a.json", {"R1": "A"})
+
+    main(["compare", "--answers", str(answers), "--kind", "reading", "--first", "1", "--last", "4"], root=root)
+
+    out = capsys.readouterr().out
+    assert "compare: 4 answers expected," in out
+    assert "answers checked" not in out
+
+
+def test_compare_command_reports_an_unkeyed_item(root, tmp_path, capsys):
+    """An unkeyed reading item is named on one line and the exit status is 1."""
+    reading = root / "api" / "seed-src" / "es" / "reading"
+    reading.unlink()
+    shutil.copytree(ENGLISH_SEED / "reading", reading)
+    key_file = reading / "reading-answer-key.md"
+    key_file.write_text(
+        key_file.read_text(encoding="utf-8").replace("### 2. Key:", "### 2. Clave:", 1), encoding="utf-8"
+    )
+    answers = write_answers(tmp_path / "a.json", {"R1": "A"})
+
+    code = main(["compare", "--answers", str(answers), "--kind", "reading", "--first", "1", "--last", "3"], root=root)
+
+    out = capsys.readouterr().out
+    assert code == 1
+    assert "R2: no key" in out
+    assert "Traceback" not in out
+
+
+@pytest.mark.parametrize("kind", ["writing", "", "Reading"])
+def test_run_pack_and_run_compare_raise_for_an_unknown_kind(root, tmp_path, kind):
+    """Anything but reading or listening is a programming error, not a content problem."""
+    answers = write_answers(tmp_path / "a.json", {})
+
+    with pytest.raises(ValueError, match="kind"):
+        run_pack(root, kind, 1, 1, tmp_path / "pack.json")
+    with pytest.raises(ValueError, match="kind"):
+        run_compare(root, kind, 1, 1, answers)

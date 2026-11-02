@@ -41,6 +41,7 @@ PARSER_VOCAB_NAME = "english-vocabulary-guide.md"
 SPANISH_VOCAB_NAME = "spanish-vocabulary-guide.md"
 MIN_VOCAB_ENTRIES = 150
 MIN_VOCAB_SECTIONS = 8
+BLIND_KINDS = ("reading", "listening")
 
 Result = tuple[list[str], str]
 
@@ -198,6 +199,12 @@ def _parse_kind(root: Path, kind: str, scratch: Path) -> list[dict]:
     return builder.parse_reading() if kind == "reading" else builder.parse_listening()
 
 
+def _require_kind(kind: str) -> None:
+    # Raised before any try block below so it surfaces as a bug, not as a content error.
+    if kind not in BLIND_KINDS:
+        raise ValueError(f"kind must be one of {', '.join(BLIND_KINDS)}, not {kind!r}")
+
+
 def _load_answers(path: Path) -> dict[str, str]:
     data = json.loads(path.read_text(encoding="utf-8"))
     if not isinstance(data, dict) or not all(isinstance(value, str) for value in data.values()):
@@ -217,7 +224,11 @@ def run_pack(root: Path, kind: str, first: int, last: int, out: Path) -> int:
 
     Returns:
         0 when the pack was written, 1 when the content or the window is unusable.
+
+    Raises:
+        ValueError: If `kind` is neither `reading` nor `listening`.
     """
+    _require_kind(kind)
     with tempfile.TemporaryDirectory() as tmp:
         try:
             items = _parse_kind(root, kind, Path(tmp))
@@ -252,7 +263,11 @@ def run_compare(root: Path, kind: str, first: int, last: int, answers_path: Path
 
     Returns:
         0 when every answer matches, 1 when any differs or the inputs are unusable.
+
+    Raises:
+        ValueError: If `kind` is neither `reading` nor `listening`.
     """
+    _require_kind(kind)
     try:
         answers = _load_answers(answers_path)
     except (OSError, ValueError) as exc:
@@ -264,8 +279,8 @@ def run_compare(root: Path, kind: str, first: int, last: int, answers_path: Path
         except (OSError, ValueError) as exc:
             print(f"compare: cannot read the content files: {exc}")
             return 1
-    keys = expected_keys(items, []) if kind == "reading" else expected_keys([], items)
     try:
+        keys = expected_keys(items, []) if kind == "reading" else expected_keys([], items)
         window = requested_keys(keys, kind, first, last)
     except ValueError as exc:
         print(f"compare: {exc}")
@@ -273,7 +288,7 @@ def run_compare(root: Path, kind: str, first: int, last: int, answers_path: Path
     errors = compare(window, answers)
     for error in errors:
         print(error)
-    print(f"compare: {len(window)} answers checked, {len(errors)} errors")
+    print(f"compare: {len(window)} answers expected, {len(errors)} errors")
     return 1 if errors else 0
 
 
