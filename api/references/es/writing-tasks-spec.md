@@ -106,6 +106,12 @@ Spanish:
   `palabras`): `*Level 3 · essay · 250–500 words*`.
 - `**Model answer**` — the line that introduces the answer in the model-answers file.
 
+Inside a model answer, never start a line with a bold label and colon in a list item (`- **…:** …`).
+The parser's rubric pattern (`^- \*\*(.+?):\*\* (.*)$` in `scripts/build-seed-data.py`) scans the
+whole task block, answer included, so a line such as `- **Asunto:** …` or a bulleted bold report
+heading becomes an extra rubric dimension and fails the label check. Write *Asunto:* as a plain line,
+and give a report its headings without a leading `- **`.
+
 ## Spanish conventions for correspondence
 - *usted* throughout, never *tú* or *vosotros*; plural address is *ustedes*. Keep third-person verbs
   and the clitics consistent (*Le ruego que me remita…*).
