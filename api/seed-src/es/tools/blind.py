@@ -5,6 +5,10 @@ exactly one defensible answer. The packs therefore carry only what a candidate s
 every field is copied explicitly so a new key-related field in the parsed dicts can never
 leak into a pack by accident. Ids are 1-based positions in the parsed set: `R<n>` for a
 reading item, `L<n>` for a listening item and `L<n>.<q>` for its questions.
+
+The heading each item shows above its content is part of the pack even when it paraphrases
+the key: candidates read it, so a solver that did not would be easier to fool than a real
+candidate and would miss keys that can be reached without reading the passage at all.
 """
 
 import re
@@ -28,8 +32,10 @@ def reading_pack(items: Sequence[dict], first: int, last: int) -> list[dict]:
         last: 1-based position of the last item to include (inclusive).
 
     Returns:
-        One `{"id", "passage", "question", "options"}` entry per item, with `options`
-        mapping each label to its text. Nothing that reveals the key is included.
+        One `{"id", "heading", "passage", "question", "options"}` entry per item, with
+        `options` mapping each label to its text and `heading` the item's topic exactly as
+        the exam card shows it. The heading is passed through unmodified even if it hints
+        at the key; level, source, the key and every rationale are left out.
 
     Raises:
         ValueError: If the window is not within `1..len(items)`.
@@ -38,6 +44,7 @@ def reading_pack(items: Sequence[dict], first: int, last: int) -> list[dict]:
     return [
         {
             "id": f"R{position}",
+            "heading": item["topic"],
             "passage": item["passage"],
             "question": item["question"],
             "options": {option["label"]: option["text"] for option in item["options"]},
@@ -56,9 +63,12 @@ def listening_pack(items: Sequence[dict], first: int, last: int) -> list[dict]:
         last: 1-based position of the last item to include (inclusive).
 
     Returns:
-        One `{"id", "transcript", "questions"}` entry per item. The transcript has one
-        `SPEAKER: text` line per turn; each question is `{"id", "question", "options"}`.
-        Topic, setting, speakers' roles, audio path and every rationale are left out.
+        One `{"id", "heading", "transcript", "questions"}` entry per item. The heading is
+        `<conversationType> · <topic>`, the label the listening card shows, passed through
+        unmodified even if it hints at the key. The transcript has one `SPEAKER: text`
+        line per turn and stands in for the audio; each question is
+        `{"id", "question", "options"}`. Setting, speakers' roles and voices, audio path
+        and every rationale are left out.
 
     Raises:
         ValueError: If the window is not within `1..len(items)`.
@@ -67,6 +77,7 @@ def listening_pack(items: Sequence[dict], first: int, last: int) -> list[dict]:
     return [
         {
             "id": f"L{position}",
+            "heading": f"{item['conversationType']} · {item['topic']}",
             "transcript": "\n".join(f"{line['speaker']}: {line['text']}" for line in item["lines"]),
             "questions": [
                 {

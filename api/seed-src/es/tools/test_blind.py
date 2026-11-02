@@ -59,36 +59,94 @@ def write_answers(path: Path, answers: dict[str, str]) -> Path:
 
 
 def test_reading_pack_has_no_key_material(english):
-    """A reading pack entry carries only the id and what a candidate sees."""
+    """A reading pack entry carries only the id, the heading and what a candidate sees."""
     reading, _ = english
     pack = reading_pack(reading, 1, len(reading))
 
-    assert set(pack[0]) == {"id", "passage", "question", "options"}
+    assert set(pack[0]) == {"id", "heading", "passage", "question", "options"}
     assert all(set(entry) == set(pack[0]) for entry in pack)
     leaked = list(strings(pack))
     for item in reading:
         for option in item["options"]:
             assert not any(option["rationale"] in text for text in leaked)
-        assert not any(item["topic"] in text for text in leaked)
     assert not {"correctLabel", "rationale", "level", "topic", "source"} & field_names(pack)
 
 
 def test_listening_pack_has_no_key_material(english):
-    """A listening pack never exposes keys, rationales, topics or audio metadata."""
+    """A listening pack never exposes keys, rationales, setting or audio metadata."""
     _, listening = english
     pack = listening_pack(listening, 1, len(listening))
 
-    assert set(pack[0]) == {"id", "transcript", "questions"}
+    assert set(pack[0]) == {"id", "heading", "transcript", "questions"}
+    assert all(set(entry) == set(pack[0]) for entry in pack)
     assert all(set(entry["questions"][0]) == {"id", "question", "options"} for entry in pack)
     leaked = list(strings(pack))
     for item in listening:
-        assert not any(item["topic"] in text for text in leaked)
         for question in item["questions"]:
             assert not any(question["rationale"] in text for text in leaked)
             for rationale in question["optionRationales"].values():
                 assert not any(rationale in text for text in leaked)
-    forbidden = {"correctLabel", "rationale", "optionRationales", "audioPath", "hasKey", "topic", "setting"}
+    forbidden = {
+        "correctLabel",
+        "rationale",
+        "optionRationales",
+        "audioPath",
+        "hasKey",
+        "topic",
+        "conversationType",
+        "setting",
+        "level",
+        "voices",
+        "speakers",
+        "source",
+    }
     assert not forbidden & field_names(pack)
+
+
+def test_reading_pack_heading_is_the_exam_heading(english):
+    """The heading is the item's topic, the label the reading card shows above the passage."""
+    reading, _ = english
+    pack = reading_pack(reading, 1, len(reading))
+
+    assert [entry["heading"] for entry in pack] == [item["topic"] for item in reading]
+
+
+def test_listening_pack_heading_is_type_and_topic(english):
+    """The heading is `<conversationType> · <topic>`, exactly what the listening card shows."""
+    _, listening = english
+    pack = listening_pack(listening, 1, len(listening))
+
+    assert [entry["heading"] for entry in pack] == [
+        f"{item['conversationType']} · {item['topic']}" for item in listening
+    ]
+
+
+def test_reading_pack_passes_a_heading_that_contains_the_key_through_unmodified(english):
+    """A heading that gives the key away must reach the solver intact, since candidates see it."""
+    reading, _ = english
+    item = dict(reading[0])
+    key_text = next(option["text"] for option in item["options"] if option["label"] == item["correctLabel"])
+    item["topic"] = f"Why {key_text}"
+
+    entry = reading_pack([item], 1, 1)[0]
+
+    assert entry["heading"] == f"Why {key_text}"
+    assert key_text in entry["heading"]
+
+
+def test_listening_pack_passes_a_heading_that_contains_the_key_through_unmodified(english):
+    """A listening heading naming the key answer is left as written for the solver to see."""
+    _, listening = english
+    item = dict(listening[0])
+    question = item["questions"][0]
+    key_text = question["options"][question["correctLabel"]]
+    item["conversationType"] = "interview"
+    item["topic"] = f"about {key_text}"
+
+    entry = listening_pack([item], 1, 1)[0]
+
+    assert entry["heading"] == f"interview · about {key_text}"
+    assert key_text in entry["heading"]
 
 
 def test_reading_pack_ids_are_one_based_positions(english):
@@ -257,7 +315,7 @@ def test_pack_command_writes_reading_json(root, tmp_path, capsys):
 
     pack = json.loads(out.read_text(encoding="utf-8"))
     assert [entry["id"] for entry in pack] == ["R1", "R2", "R3"]
-    assert set(pack[0]) == {"id", "passage", "question", "options"}
+    assert set(pack[0]) == {"id", "heading", "passage", "question", "options"}
     assert "3 reading" in capsys.readouterr().out
 
 
@@ -270,6 +328,7 @@ def test_pack_command_writes_listening_json(root, tmp_path):
     pack = json.loads(out.read_text(encoding="utf-8"))
     assert [entry["id"] for entry in pack] == ["L1", "L2"]
     assert pack[0]["questions"][0]["id"] == "L1.1"
+    assert all(" · " in entry["heading"] for entry in pack)
 
 
 def test_pack_command_keeps_non_ascii_text_readable(root, tmp_path):
