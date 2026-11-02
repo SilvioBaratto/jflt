@@ -340,7 +340,7 @@
   - Lectura errónea: el texto presenta esa lectura como «una anécdota sobre la hipocresía del oficio» y añade que «la anécdota se queda corta», porque la vaguedad presta un servicio.
 - [ ] **B)** Señalar que la mayoría de las cumbres bilaterales termina sin acuerdo alguno, porque los gobiernos acuden a ellas con unas posiciones que saben de antemano irreconciliables.
   - Generalización excesiva: que un intercambio de puntos de vista «equivale a constatar que no hubo acuerdo» descifra una fórmula concreta; el texto no dice cuántas cumbres fracasan ni con qué posiciones acuden a ellas los gobiernos.
-- [x] **C)** Mostrar que unas fórmulas en apariencia huecas transmiten, a quien domina sus claves, una información precisa y reconocible sobre lo que sucedió en el encuentro.
+- [x] **C)** Mostrar que unas fórmulas en apariencia huecas transmiten, a quien domina sus claves, una información precisa sobre lo que sucedió en el encuentro.
   - Correcta: la traducción prepara la idea de que «cada fórmula tiene un valor tan reconocido como el de una moneda» y de que en las cancillerías «se sabe cuánto pesa cada adjetivo».
 - [ ] **D)** Celebrar la claridad del lenguaje diplomático, gracias a la cual cualquier ciudadano puede saber de inmediato qué se acordó realmente en la cumbre.
   - Generalización excesiva: el código solo lo descifra «El lector curtido»; para el lector desprevenido, en el comunicado «nunca ocurre nada grave», y además apenas tiene lectores.
@@ -360,7 +360,7 @@
 
 - [ ] **A)** Ridiculizar el gasto en ceremonias y festejos, que a su juicio consume unos fondos que deberían destinarse a terminar las obras pendientes.
   - Lectura errónea: la ceremonia «con fuegos artificiales» es una imagen irónica del pretexto, no una queja por su coste; el texto no compara lo que cuestan los festejos con lo que cuestan las obras.
-- [x] **B)** Señalar como anómala una gestión pública que solo consigue sacar adelante obras necesarias cuando un plazo ajeno a sus méritos la obliga.
+- [x] **B)** Señalar como anómala una gestión pública que solo consigue terminar obras necesarias cuando la obliga un plazo ajeno a los méritos de estas.
   - Correcta: la pregunta subraya lo extraño de que obras que habrían «dormido décadas en los cajones» solo se terminen cuando una «fecha inaplazable» lo imponga, en vez de defenderse «por sus propios méritos».
 - [ ] **C)** Defender que las ciudades renuncien a las candidaturas y financien sus infraestructuras con los presupuestos ordinarios de cada año.
   - No se dice: el autor no pide renunciar a las candidaturas ni propone otra forma de financiación; su pregunta reclama defender las obras «por sus propios méritos».
@@ -381,8 +381,8 @@
 ### 35. Key: B
 
 - [ ] **A)** Sugerir que las listas oficiales ejercen una censura discreta, que, igual que la hoguera de la novela, priva a los alumnos de las obras retiradas.
-  - Lectura errónea: el texto aclara que «Las comisiones de hoy no queman nada, desde luego»; la hoguera ilustra la arbitrariedad de los jueces, no una censura.
-- [x] **B)** Insinuar que, tras su lenguaje técnico, las listas reflejan con frecuencia los gustos, las afinidades y la autoimagen de quienes las elaboran.
+  - Lectura errónea: el texto aclara que «Las comisiones de hoy no queman nada, desde luego» y que el gusto de los expertos «no tiene, por sí mismo, nada de escandaloso»; la hoguera ilustra la arbitrariedad de los jueces, no una censura.
+- [x] **B)** Insinuar que, bajo su justificación técnica, las listas reflejan con frecuencia los gustos, las afinidades y la autoimagen de quienes las elaboran.
   - Correcta: como el cura y el barbero, que salvan «el libro del amigo», las comisiones eligen según la imagen de sí misma que quiere ver «la generación que los elige», pese a su «lenguaje impecablemente técnico».
 - [ ] **C)** Advertir del daño que pueden causar las malas lecturas, como le ocurrió al hidalgo, y justificar así el cuidado con que se seleccionan los libros escolares.
   - Lectura errónea: los libros que trastornaron al hidalgo son solo el pretexto del episodio; lo que el texto destaca es que «el rigor es menor de lo que aparenta».
@@ -391,24 +391,24 @@
 
 ### 36. Key: C
 
-- [ ] **A)** Que se deje de combatir a estas especies, puesto que llegaron por decisiones humanas y forman ya parte del paisaje de cada cuenca.
-  - Lectura errónea: el origen humano de estas especies no lleva al autor a abandonar su control, pues «Recordarlo no exime de controlarlo».
+- [ ] **A)** Que se distinga entre las especies que conviene tolerar y las que hay que eliminar, igual que el jardinero decide qué plantas conserva.
+  - Lectura errónea: el autor no propone tolerar unas especies y eliminar otras; asumir «una presencia que ya no va a desaparecer» no supone dejar de actuar, pues «Recordarlo no exime de controlarlo», y la erradicación resulta «casi siempre inalcanzable».
 - [ ] **B)** Que se sustituya la erradicación por la plantación de especies autóctonas capaces de ocupar el terreno antes que las invasoras.
   - No se dice: la jardinería es una imagen del tipo de trabajo que se necesita, «un cuidado constante», no una propuesta de plantar especies autóctonas.
-- [x] **C)** Que se juzgue el control por la constancia de un esfuerzo sin final previsto, y no por una victoria definitiva que rara vez llega.
-  - Correcta: frente a una erradicación «casi siempre inalcanzable», el autor pide valorar el control como «un cuidado constante, sin desfiles de victoria», es decir, por la contención sostenida.
+- [x] **C)** Que se valore el control por lo que consigue contener año tras año, y no por una erradicación que casi nunca se logra del todo.
+  - Correcta: si la erradicación es «casi siempre inalcanzable» y lo realista es «contener su expansión», el «cuidado constante» que pide el autor se mide por lo que se logra contener, no por una victoria final.
 - [ ] **D)** Que baste con suavizar el vocabulario de las campañas, puesto que los métodos de control empleados hasta ahora ya dan buen resultado.
-  - Lectura errónea: el cambio no es cosmético, porque con la lógica bélica los presupuestos «se recortan cuando la victoria no llega» aunque el programa esté haciendo bien su trabajo.
+  - Lectura errónea: el autor no pide un simple retoque de vocabulario ni da por buenos los métodos actuales: la erradicación es «casi siempre inalcanzable», y con la lógica bélica los presupuestos «se recortan cuando la victoria no llega».
 
 ### 37. Key: D
 
-- [ ] **A)** Comprende su malestar, pues la equidistancia de esos países les priva de unos apoyos con los que creían poder contar en cada votación.
+- [ ] **A)** Comprende su malestar, pues la equidistancia de esos países las priva de unos apoyos con los que creían poder contar en cada votación.
   - Lectura errónea: lejos de comprender la queja, el autor la desmonta al advertir que, «Bien mirado, el reproche apunta a otra cosa», y presenta como legítima la disposición a «decepcionar un poco a todos».
-- [ ] **B)** Las presenta como víctimas de un chantaje, ya que esos países aprovechan su rivalidad para vender su apoyo al mejor postor.
+- [ ] **B)** Las presenta como víctimas de un chantaje, ya que esos países aprovechan la rivalidad entre ellas para vender su apoyo al mejor postor.
   - No se dice: el texto no habla de chantaje ni de subastas de apoyo; describe a esos países recibiendo a «delegaciones enfrentadas» dentro de una estrategia de equilibrio.
-- [ ] **C)** Las considera rivales más en apariencia que en la realidad, puesto que el comercio que mantienen entre ellas ha sobrevivido a las peores crisis.
-  - Generalización excesiva: que las grandes potencias mantengan «un comercio que ni las peores crisis han logrado interrumpir» no hace aparente su rivalidad; el autor lo cita para señalar su incoherencia.
-- [x] **D)** Les reprocha la incoherencia de condenar en otros un trato con ambos bandos que ellas mismas mantienen sin reparo entre sí.
+- [ ] **C)** Las considera rivales más en apariencia que en realidad, puesto que el comercio que mantienen entre ellas ha sobrevivido a las peores crisis.
+  - Generalización excesiva: que las grandes potencias mantengan «un comercio que ni las peores crisis han logrado interrumpir» no convierte su rivalidad en una mera apariencia; el autor lo cita para señalar su incoherencia.
+- [x] **D)** Les reprocha la incoherencia de condenar en otros un trato con el bando contrario que ellas mismas mantienen sin el menor reparo.
   - Correcta: la ironía de «tiene su gracia» apunta a que las grandes potencias condenan en otros «la libertad que los grandes se permiten entre ellos».
 
 ### 38. Key: A
@@ -419,7 +419,7 @@
   - Lectura errónea: el autor admite que la convivencia «no es un objetivo menor», pero lo concede para preguntar por qué habría que encargársela a una institución que «no la quiere».
 - [ ] **C)** La rechaza por una cuestión de principio, al entender que obligar a servir en filas vulnera la libertad de cada joven para decidir su propio futuro.
   - No se dice: el texto no plantea objeciones de principio; sus reparos son prácticos: «Faltan acuartelamientos, faltan instructores y falta presupuesto».
-- [ ] **D)** La considera viable siempre que antes se dote a los ejércitos de los acuartelamientos, los instructores y el presupuesto que les faltan.
+- [ ] **D)** La considera viable siempre que antes se dote a los ejércitos de los acuartelamientos, instructores y presupuesto que necesitan.
   - Lectura errónea: el autor no condiciona su juicio a los medios, pues el recluta de nueve meses empieza a ser útil «cuando le llega la hora de volver a casa» y la convivencia puede buscarse con fórmulas civiles «sin necesidad de uniformes ni de cuarteles».
 
 ### 39. Key: D
@@ -441,5 +441,5 @@
   - Correcta: al admitir que es injusta con unos disquetes «que nunca aspiraron a la eternidad», el autor desactiva la objeción previsible y conserva el contraste, que «ilustra una paradoja que los archiveros conocen bien».
 - [ ] **C)** Admitir que exagera la fragilidad de los disquetes, cuyo contenido, a su juicio, puede recuperarse con el aparato adecuado.
   - Lectura errónea: el autor no concede que exagere; afirma que el contenido de esos disquetes «nadie sabe ya cómo recuperar».
-- [ ] **D)** Advertir que la comparación no resiste un examen riguroso, razón por la cual la abandona en el párrafo siguiente.
-  - Lectura errónea: el autor no abandona la comparación; la retoma al señalar que «La tablilla, por el contrario, no necesita intermediarios» y la recupera al final con los mercaderes que confiaron sus cuentas «al barro».
+- [ ] **D)** Advertir que la comparación no resiste un examen riguroso, de modo que no pasa de ser una anécdota de arranque sin peso en su argumento.
+  - Lectura errónea: la comparación sostiene el argumento, pues el autor la retoma al señalar que «La tablilla, por el contrario, no necesita intermediarios» y cierra el texto con los mercaderes que confiaron sus cuentas «al barro».
