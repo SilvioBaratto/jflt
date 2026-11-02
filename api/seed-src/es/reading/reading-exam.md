@@ -311,3 +311,163 @@ Un proyecto que intenta atender a todos los objetivos a la vez corre el riesgo d
 - **B)** Que ofrece menos privacidad que las aplicaciones comerciales de pago, pese a que proteger la intimidad de los usuarios fue su primera justificación.
 - **C)** Que persigue a la vez fines que reclaman diseños incompatibles, sin haber establecido todavía cuál de ellos debe tener prioridad sobre los demás.
 - **D)** Que pone en peligro la financiación de los bancos, porque animará a muchos ahorradores a trasladar sus depósitos al banco central.
+
+### 21. (Los acuerdos de la Unión Europea con países de tránsito migratorio)
+
+Cuando aumentan las llegadas irregulares por el Mediterráneo, la Unión Europea recurre a menudo a la misma fórmula: un acuerdo con el país de tránsito, que se compromete a vigilar sus costas y a readmitir a quienes partieron de su territorio a cambio de financiación, equipos y facilidades de visado. Las cifras suelen darle la razón a corto plazo. Tras la firma, las salidas disminuyen y los gobiernos europeos pueden presentar el acuerdo como un éxito.
+
+La factura completa tarda más en llegar. Al confiar a un tercero el control de un flujo que su opinión pública considera prioritario, la Unión le entrega también la capacidad de reabrirlo. El socio descubre pronto que basta con relajar la vigilancia unas semanas para que el asunto vuelva a las portadas europeas, y aprende a usar esa posibilidad en cada negociación: para pedir más fondos, para acallar las críticas sobre su situación interna o para obtener concesiones en materias que nada tienen que ver con la migración. La cooperación inicial deriva así en una relación en la que una de las partes fija el precio.
+
+Las organizaciones humanitarias han denunciado, con razón, las condiciones en que se retiene a los migrantes en algunos de estos países. A esa objeción se suma otra, de alcance diplomático, que recibe menos atención: cuanto más depende la Unión del acuerdo, menos margen conserva para exigir reformas, condicionar su ayuda o denunciar abusos. Estos pactos pueden tener sentido como pieza de una política más amplia, siempre que no se conviertan en la única. Quien confía a otro la llave de su casa no debería extrañarse de que, con el tiempo, sea ese otro quien decida cuándo y a qué precio se abre la puerta.
+
+**¿Cuál es la idea central del texto acerca de estos acuerdos?**
+
+- **A)** Plantean ante todo un problema humanitario, ya que el trato que reciben los migrantes retenidos en los países socios pesa más que la reducción de las llegadas.
+- **B)** Apenas cumplen su objetivo inmediato, porque las salidas se reanudan en cuanto el socio cobra los fondos y deja de tener motivos para vigilar sus costas.
+- **C)** Funcionan mientras dura la financiación, de modo que unos fondos estables y plurianuales bastarían para garantizar la cooperación del socio durante muchos años.
+- **D)** Ponen en manos del socio una baza que puede activar a voluntad, y cuanto más necesita la Unión su cooperación, menos margen le queda para exigirle cambios.
+
+### 22. (La defensa antiaérea ante los ataques con drones)
+
+Durante décadas, la defensa antiaérea se concibió para un tipo concreto de amenaza: aviones y misiles caros, escasos y difíciles de reponer. Frente a ellos tenía sentido emplear interceptores sofisticados, cuyo precio quedaba justificado por el valor de lo que derribaban. La aparición de drones de ataque fabricados en serie, con componentes comerciales y a un coste que a veces no supera el de un automóvil, ha alterado esa ecuación.
+
+Un sistema de defensa puede tener hoy una tasa de acierto excelente y, aun así, estar perdiendo. Si cada dron que se abate exige un misil que cuesta cien veces más, el atacante puede permitirse lanzar oleadas sabiendo que la mayoría de sus aparatos caerá, porque su propósito es menos alcanzar el objetivo que vaciar los arsenales del defensor y agotar su presupuesto. Las estadísticas de interceptación, que se difunden como prueba de eficacia, dicen poco sobre esa otra contabilidad, la del desgaste.
+
+De ahí que haya cambiado lo que se valora en un sistema. Junto a su precisión cuentan ahora el coste de cada disparo y la cantidad de munición que puede reponerse al ritmo al que se gasta. Cañones de tiro rápido, sistemas de guerra electrónica o armas de energía dirigida, que hace unos años se consideraban soluciones secundarias, vuelven a ocupar el centro de los programas de adquisición. Los misiles de alta gama seguirán siendo imprescindibles contra amenazas complejas, pero reservarlos para ellas exigirá disponer de capas más baratas que filtren el resto. Todo indica que, en un enfrentamiento prolongado, resistirá mejor el ejército que antes resuelva esa combinación.
+
+**¿Qué papel desempeña en el argumento la primera frase del segundo párrafo?**
+
+- **A)** Anticipa una crítica a la fiabilidad de los sistemas actuales, cuyos fallos de interceptación permiten que una parte de los drones alcance su objetivo.
+- **B)** Plantea una aparente contradicción que el párrafo resuelve después, pues abatir casi todos los drones puede ser una derrota si cada disparo cuesta mucho más que el blanco.
+- **C)** Adelanta la tesis de que los drones baratos han dejado obsoletos los misiles de alta gama, que el texto propone sustituir por cañones y armas de energía dirigida.
+- **D)** Introduce una advertencia técnica, pues señala que los sistemas actuales tienen dificultades para detectar y derribar oleadas de drones lanzadas a la vez.
+
+### 23. (Las ayudas públicas para atraer grandes plantas industriales)
+
+Cuando una gran empresa anuncia que busca emplazamiento para una nueva planta de baterías o de semiconductores, se abre entre regiones una competición que los medios siguen como un torneo. Cada candidata ofrece suelo urbanizado a precio simbólico, rebajas fiscales, subvenciones por empleo creado y tramitación acelerada. La ganadora lo celebra con una ceremonia.
+
+Los estudios invitan a mirarla con más frialdad. Las empresas eligen emplazamiento sobre todo por factores que ninguna subvención altera a corto plazo: la cercanía de clientes y proveedores, el precio y la seguridad del suministro eléctrico, la disponibilidad de mano de obra cualificada. Cuando varias regiones reúnen esas condiciones, la empresa tiene un incentivo evidente para prolongar la puja, porque cada oferta sirve para mejorar la siguiente. No es raro que la decisión esté prácticamente tomada antes de que concluya la subasta y que esta sirva sobre todo para fijar el precio que pagará la región elegida.
+
+El resultado es una transferencia difícil de ver. La región ganadora cree haber comprado una fábrica que en muchos casos habría llegado igualmente, y el dinero comprometido sale de partidas que podrían haber financiado lo que de verdad atrae inversión, como la formación técnica o las redes eléctricas. Las perdedoras, por su parte, han revelado cuánto estaban dispuestas a pagar, y la próxima empresa sabrá aprovechar ese dato.
+
+Esto no convierte cualquier ayuda en un despilfarro. A veces una subvención decide entre dos emplazamientos equivalentes, y una gran planta puede atraer después a toda una red de proveedores. Distinguir esos casos exige, sin embargo, un análisis sosegado que rara vez se hace cuando la puja ya está en marcha y ningún gobierno quiere pasar por el que dejó escapar la inversión.
+
+**¿Qué se desprende del texto acerca de las ayudas que se ofrecen en estas competiciones?**
+
+- **A)** Pagan con frecuencia una fábrica que habría llegado igualmente, atraída por factores que ninguna ayuda está en condiciones de modificar a corto plazo.
+- **B)** Se recuperan con creces a medio plazo, porque la planta acaba atrayendo a la región una red de proveedores que multiplica el empleo creado al principio.
+- **C)** Resultan decisivas en la elección final, ya que, cuando varias regiones reúnen las mismas condiciones, las empresas se fijan sobre todo en los incentivos fiscales.
+- **D)** Restan recursos sobre todo a las regiones perdedoras, que comprometen fondos durante la puja y después se quedan sin la planta y sin el dinero ofrecido.
+
+### 24. (La evaluación de la actividad investigadora mediante indicadores)
+
+Hasta hace unas décadas, la carrera de un investigador dependía en gran medida del criterio de unos pocos colegas, a menudo de su misma institución, y no era raro que la lealtad pesara tanto como el mérito. La introducción de indicadores bibliométricos, como el número de artículos, las citas recibidas o el prestigio de las revistas, vino a corregir esa opacidad. Por primera vez, los méritos podían compararse con datos públicos, y la endogamia encontró un freno que ninguna exhortación había logrado imponerle.
+
+Con el tiempo, sin embargo, los indicadores han empezado a moldear la conducta que pretendían medir. Si lo que cuenta es el número de publicaciones, compensa dividir un mismo estudio en varios artículos breves; si cuentan las citas, proliferan las autocitas y los acuerdos tácitos entre grupos para citarse mutuamente. Los proyectos arriesgados, que pueden tardar años en dar un resultado publicable o no darlo nunca, se vuelven poco aconsejables para quien aspira a una plaza. Y las tareas que ningún índice registra, como la docencia, la revisión de trabajos ajenos o la divulgación, quedan relegadas a los ratos libres.
+
+Volver al sistema anterior no parece una salida razonable, porque la arbitrariedad que se quiso corregir era real. Algunas agencias de evaluación ensayan fórmulas intermedias: pedir a cada candidato que presente solo sus cinco trabajos más relevantes y justifique su aportación, o combinar los datos con la lectura efectiva de una muestra de ellos. Son métodos más lentos y más caros, y obligan a confiar de nuevo en el juicio de los evaluadores. Quizá sea ese su principal acierto: recordar que una cifra puede orientar una decisión, pero difícilmente sustituirla.
+
+**¿Qué actitud adopta el texto ante el uso de indicadores para evaluar a los investigadores?**
+
+- **A)** Los valora como freno a la endogamia, pero estima que su efecto se ha agotado y que lo sensato sería devolver la evaluación al criterio de los colegas.
+- **B)** Los juzga útiles y fiables, pero lamenta que perjudiquen a las disciplinas cuyos resultados tardan más en publicarse y acumulan menos citas.
+- **C)** Los tiene por una herramienta mejorable, pero confía en que unos indicadores más completos, que midan también la docencia y la divulgación, corrijan sus defectos.
+- **D)** Los reconoce como un avance frente a la arbitrariedad previa, pero advierte que los investigadores han acabado ajustando su trabajo a lo que esas cifras premian.
+
+### 25. (El turismo en los centros históricos de las ciudades)
+
+El casco antiguo de muchas ciudades europeas vive una prosperidad que sus vecinos de hace treinta años no habrían imaginado. Las fachadas se han restaurado, las calles están limpias y los comercios abren todo el año. Los visitantes acuden atraídos por algo que los folletos llaman autenticidad: la plaza donde juegan los niños, la tienda de ultramarinos, la ropa tendida en los balcones, el bar donde los parroquianos discuten de fútbol.
+
+Esa misma afluencia va desgastando aquello que los visitantes vienen a buscar. Cuando un piso rinde más alquilado por noches que a un residente, los propietarios hacen sus cuentas y los vecinos se van marchando a la periferia. Con ellos cierra la tienda de ultramarinos, que da paso a una de recuerdos, y la escuela del barrio pierde alumnos. La ropa tendida desaparece de los balcones. El decorado sigue en pie, pero cada vez quedan menos personas que lo habiten, y el visitante acaba recorriendo un escenario en el que los únicos vecinos que encuentra son otros visitantes.
+
+Los ayuntamientos han empezado a reaccionar con licencias limitadas, tasas turísticas y restricciones a los pisos de uso turístico. Sus efectos aún son difíciles de evaluar, y los sectores que viven del turismo recuerdan, no sin parte de razón, que el barrio también se moría cuando nadie lo visitaba. Ninguna ciudad desea volver a los edificios ruinosos y a las calles desiertas de hace unas décadas. Pero conviene preguntarse qué se pretende conservar cuando se protege un centro histórico: ¿las piedras o la vida que les daba sentido?
+
+**¿Qué tono predomina en el texto al describir la transformación de estos barrios?**
+
+- **A)** Elogioso, pues presenta el turismo como la fuerza que rescató a unos barrios degradados y casi vacíos.
+- **B)** Acusatorio, pues responsabiliza a los visitantes de la marcha de los vecinos y exige a los ayuntamientos que prohíban los pisos de uso turístico.
+- **C)** Irónico, pues muestra cómo la llegada masiva de visitantes va despojando al barrio precisamente de aquello que los atrajo.
+- **D)** Melancólico, pues añora el barrio modesto de hace unas décadas y ve en la restauración de sus edificios el origen de su decadencia.
+
+### 26. (Las coaliciones reducidas de Estados frente a los foros multilaterales)
+
+Ante la parálisis de los grandes foros multilaterales, donde un solo veto basta para bloquear una resolución y una ronda comercial puede prolongarse durante décadas, cada vez más gobiernos prefieren pactar con unos pocos socios afines. Coaliciones de cinco, diez o quince Estados fijan normas sobre semiconductores, coordinan patrullas marítimas o acuerdan estándares para el hidrógeno en cuestión de meses. Para sus defensores, esta diplomacia de círculos reducidos es la respuesta pragmática a un mundo en el que la unanimidad se ha vuelto inalcanzable.
+
+El argumento tiene fundamento. Un grupo pequeño de países con intereses parecidos negocia con más rapidez, comparte información sensible con menos recelo y puede comprometerse con objetivos más ambiciosos. Varias de las iniciativas más eficaces de los últimos años han nacido así.
+
+Esa eficacia tiene, sin embargo, una contrapartida. Las normas pactadas entre pocos obligan solo a quienes las firman, y los excluidos, que suelen ser los países con menos peso, no tienen motivo alguno para respetarlas, y sí para formar sus propios clubes con reglas distintas. El resultado no es un orden más ágil, sino un mosaico de regímenes superpuestos en el que las empresas y los Estados pequeños deben cumplir a la vez exigencias dispares, y en el que la potencia que encabeza cada club decide quién entra. Los foros universales son lentos precisamente porque obligan a contar con todos; en esa lentitud residía también su legitimidad.
+
+Es probable que las coaliciones reducidas hayan llegado para quedarse, y quizá sea preferible que existan a que no se decida nada. Quien las presenta como un simple atajo olvida, con todo, que por el camino se pierde algo más que tiempo.
+
+**¿Qué posición adopta el texto ante quienes defienden las coaliciones reducidas de Estados?**
+
+- **A)** Les concede que estas coaliciones negocian con más agilidad, pero les reprocha ignorar el coste de un orden fragmentado en normas que no obligan a los demás.
+- **B)** Les concede la razón en lo esencial, pero cree que estas coaliciones deberían limitarse a los asuntos técnicos y dejar las cuestiones de seguridad a los foros universales.
+- **C)** Les concede que los foros universales están paralizados, pero confía en que el ejemplo de estas coaliciones acabe empujándolos a reformar sus reglas de votación.
+- **D)** Les concede que estas coaliciones son eficaces, pero sostiene que los grandes foros multilaterales, por lentos que sean, acaban siendo más eficaces que ellas a largo plazo.
+
+### 27. (El empleo de las Fuerzas Armadas en emergencias civiles)
+
+En incendios, inundaciones, nevadas o crisis sanitarias, la imagen de militares desplegados para auxiliar a la población se ha vuelto habitual, y las encuestas reflejan una aprobación ciudadana muy alta cada vez que intervienen. El reconocimiento es merecido. Las Fuerzas Armadas disponen de medios que ninguna otra administración reúne a la vez: helicópteros, ingenieros, hospitales de campaña, capacidad logística y personal disponible a cualquier hora y en cualquier punto del territorio.
+
+Esa disponibilidad tiene, sin embargo, efectos que se perciben menos. Cada vez que una comunidad autónoma o un ayuntamiento sabe que, si la situación se desborda, acabará llegando una unidad militar, disminuye su incentivo para dotar de medios a sus propios servicios de bomberos, de protección civil o de vialidad invernal. ¿Para qué mantener todo el año una plantilla y un parque de maquinaria que solo se necesitan unos pocos días, si existe una reserva que no les cuesta nada porque la paga el presupuesto de Defensa? La ayuda militar, concebida como último recurso, empieza así a figurar en los planes de emergencia como si fuera el primero.
+
+Esa dependencia tampoco sale gratis para los propios ejércitos. Las horas que una unidad dedica a retirar barro o a atender una residencia son horas que no dedica a instruirse para su cometido principal, y los equipos se desgastan en tareas para las que no fueron adquiridos. Mientras las emergencias sean esporádicas, el coste resulta asumible. Si se vuelven más frecuentes, como apuntan las previsiones climáticas, la suma de despliegues podría mermar la preparación de unidades que no tienen sustituto en su propio terreno.
+
+Nadie discute que los militares deban acudir cuando su ayuda es imprescindible. Queda por ver quién se ocupará de que lo sea cada vez con menos frecuencia.
+
+**¿Qué da a entender el texto sobre las administraciones autonómicas y locales en estas situaciones?**
+
+- **A)** Evitan pedir ayuda militar salvo en casos extremos, porque temen que la llegada de una unidad del Ejército se lea como prueba de su incapacidad.
+- **B)** Reclaman la ayuda militar cada vez antes, porque el presupuesto de Defensa les reembolsa lo que gastan sus servicios en cada emergencia.
+- **C)** Escatiman recursos a sus servicios de emergencia, porque cuentan con una reserva que no les cuesta nada para los pocos días al año en que hace falta.
+- **D)** Recurren a la ayuda militar con recelo, porque creen que los militares carecen de la preparación específica de los bomberos y de protección civil.
+
+### 28. (La implantación de la formación profesional dual)
+
+La reforma de la formación profesional aspira a que todos los estudiantes pasen una parte sustancial de su aprendizaje en una empresa, siguiendo un modelo que ha dado buenos resultados en varios países del centro de Europa. La idea es atractiva: los alumnos aprenden con las máquinas y los procedimientos que encontrarán en su empleo, las empresas forman a trabajadores ajustados a sus necesidades y el paso del aula al trabajo se acorta.
+
+Ese modelo, sin embargo, descansa en un tejido empresarial muy distinto del nuestro. Allí abundan las empresas medianas con una larga tradición de aprendices, y existen tutores acreditados y cámaras de comercio que velan por la calidad de la enseñanza. Aquí predominan las empresas muy pequeñas, sin esa tradición ni personal dedicado a formar. Para la gran empresa, en cambio, el sistema resulta muy conveniente, porque le sirve de cantera: durante meses observa a los estudiantes en situaciones reales y después contrata a los que mejor han respondido, sin necesidad de convocar procesos de selección.
+
+De ahí que los puestos de formación tiendan a concentrarse donde hay grandes empresas, es decir, en las áreas metropolitanas y en unos pocos sectores. El alumno de una comarca rural, o el que cursa un ciclo con escasa presencia industrial, encuentra pocas opciones, y algunas consisten en prácticas en las que apenas aprende nada nuevo. Las administraciones educativas intentan compensarlo con incentivos y con la figura del tutor compartido entre varias empresas, pero su alcance es todavía limitado.
+
+El sistema puede madurar con los años, como ocurrió en los países que se toman como referencia. Conviene recordar, no obstante, que allí se tardó generaciones en construir lo que aquí se pretende implantar en unos pocos cursos.
+
+**¿Qué significa «cantera» en el contexto del segundo párrafo?**
+
+- **A)** Una reserva de mano de obra barata a la que la empresa recurre para cubrir puestos sin tener que pagar el sueldo de un trabajador.
+- **B)** Un medio de elegir a sus futuros empleados tras verlos trabajar durante meses, lo que le ahorra el coste de buscarlos fuera.
+- **C)** Un centro de formación de alto nivel en el que la empresa prepara a especialistas que luego compiten por los mejores puestos del sector.
+- **D)** Una fuente de ideas nuevas que los estudiantes traen del aula y que la empresa aprovecha después en su producción.
+
+### 29. (Los incendios forestales y los medios de extinción)
+
+Los servicios de extinción de incendios forestales son hoy mucho más eficaces que hace cuarenta años. Disponen de medios aéreos, de redes de vigilancia y de brigadas profesionales capaces de llegar a un foco en pocos minutos, y la inmensa mayoría de los incendios se apaga antes de alcanzar unas pocas hectáreas. Aun así, la superficie quemada en los peores años no ha disminuido en la misma proporción, y los grandes incendios son cada vez más violentos y más difíciles de controlar.
+
+Para entenderlo conviene remontarse en el tiempo. Durante siglos, el monte mediterráneo se mantuvo relativamente despejado gracias a actividades que consumían la vegetación: los rebaños pastaban en el sotobosque, los vecinos recogían leña para calentarse y cocinar, y los pequeños fuegos, que nadie se apresuraba a apagar, ardían con poca intensidad y limpiaban el terreno. El abandono rural acabó con casi todas esas prácticas, y una extinción cada vez más rápida eliminó también los fuegos menores. La biomasa que antes desaparecía año tras año se acumula ahora sin que nada la retire, y cuando un incendio escapa al primer ataque, en un día de calor extremo y viento, encuentra un combustible continuo que ninguna brigada puede detener.
+
+Algunos especialistas proponen gestionar esa carga mediante quemas controladas en invierno, ayudas a la ganadería extensiva o el aprovechamiento de la biomasa con fines energéticos. Son medidas lentas, que apenas lucen en una rueda de prensa y que exigen convencer a una población que asocia cualquier columna de humo con una catástrofe. Sin ellas, los medios de extinción seguirán ganando casi todas las escaramuzas de cada verano en un monte que, entretanto, va acumulando el combustible de la próxima gran batalla.
+
+**¿Qué función cumple en el texto la mención de los rebaños, la leña y los pequeños fuegos de otras épocas?**
+
+- **A)** Evoca con nostalgia una forma de vida rural que el texto propone recuperar como principal remedio contra los grandes incendios forestales.
+- **B)** Señala el origen de la mayoría de los incendios actuales, que se deben todavía a las quemas agrícolas y ganaderas tradicionales de las zonas rurales del interior.
+- **C)** Ilustra que el fuego forma parte del ciclo natural del monte, por lo que el texto considera un error destinar tantos medios a sofocar cada incendio.
+- **D)** Explica por qué la vegetación se acumula hoy sin que nada la retire, lo que ayuda a entender que extinguir más rápido no haya frenado los grandes incendios.
+
+### 30. (Los planes de arbolado urbano frente al calor)
+
+Ante veranos cada vez más calurosos, muchas ciudades han anunciado planes para plantar miles de árboles. La medida goza de un consenso poco habitual: un árbol de copa amplia puede rebajar varios grados la temperatura de la acera que cubre, reduce el consumo de aire acondicionado en los edificios cercanos y hace transitables a mediodía calles que en agosto resultan insoportables. Es difícil encontrar una inversión pública que ofrezca tantos beneficios por euro gastado.
+
+Las dudas aparecen cuando hay que decidir qué árboles plantar. Las especies que más sombra dan suelen necesitar riego abundante justo en los meses en que el agua escasea, que son también aquellos en que más se agradece su sombra. Las especies autóctonas adaptadas a la sequía sobreviven con mucha menos agua, pero muchas crecen despacio y tienen copas más abiertas, de modo que tardan décadas en ofrecer una protección comparable. En una ciudad sometida a restricciones, regar el arbolado puede competir con otros usos que nadie está dispuesto a sacrificar.
+
+Hay, además, una cuestión de plazos. Un árbol plantado hoy tardará quince o veinte años en dar la sombra que promete el plan, y durante ese tiempo necesitará cuidados que a menudo no figuran en el presupuesto; muchos ejemplares mueren en sus primeros veranos por falta de riego o de mantenimiento. Entretanto, la tala de un ejemplar maduro por una obra o una plaga elimina en una mañana una sombra que tardará una generación en reponerse.
+
+Ninguna de estas dificultades resta valor a la idea, pero todas ellas plantean una pregunta que los planes rara vez formulan: si se planta para el clima de hoy o para el de dentro de veinte años, que quizá exija otros árboles.
+
+**¿Qué sugiere el texto acerca de los planes municipales de plantación de árboles?**
+
+- **A)** Que su resultado dependerá sobre todo de qué especies se elijan y de que los ejemplares reciban cuidados durante sus primeros años.
+- **B)** Que su resultado dependerá sobre todo de elegir especies autóctonas, cuyo menor consumo de agua compensa con creces la sombra más escasa que proporcionan.
+- **C)** Que su resultado será más simbólico que real, porque el efecto del arbolado sobre la temperatura de las calles es menor de lo que suele suponerse.
+- **D)** Que su resultado dependerá sobre todo de plantar ejemplares ya crecidos, que dan sombra desde el primer verano y evitan esperar décadas a que se desarrollen.
