@@ -64,7 +64,8 @@ reviewers (the blind solver and the Spanish language review) on every batch.
     not a peripheral detail.
 11. The stem is answerable from the passage without the options visible (it is not the options that
     make it answerable). When it asks for a judgement, it names whose judgement it is (*según el
-    autor*, *en opinión de la autora*).
+    autor*, *en opinión de la autora*). The item heading, which the candidate sees above the passage,
+    must not resolve the question (see topic-domains.md).
 12. One clear task per item. No double-barrelled questions. Prefer positive stems; if a negative is
     unavoidable, write it in capitals (*NO*, *EXCEPTO*).
 

@@ -30,10 +30,15 @@ not meet in open-source Spanish reading.
 For each item, give the passage a specific angle (a claim, a tension, a trade-off, or a shift) rather
 than a flat encyclopaedic summary, so the question can test argument and stance, not just facts.
 Spanish analysis typically frames its angle as a paradox (doing one thing while needing its opposite),
-a gap between ambition and capacity, a question left open, or a metaphor of contest. The item heading
-`### N. (topic)` states the angle in Spanish as a claim, in sentence case — e.g. *(La autonomía
-estratégica europea depende de proveedores que no controla)*, not a domain label such as *(Defensa
-europea)*.
+a gap between ambition and capacity, a question left open, or a metaphor of contest. The angle lives
+in the passage, never in the heading: the app shows the candidate the item heading `### N. (topic)`
+directly above the passage, and the blind solver sees it too, so a heading that states the conclusion
+answers the question. The heading names the subject and situation of the passage in Spanish, in
+sentence case, specific enough that no two headings match, and never states, paraphrases or hints at
+the author's conclusion or at any option (no verdict words such as *depende de*, *no garantiza*,
+*obliga a*). Good: *(La autonomía estratégica europea y sus proveedores)*. Bad, because it states
+the claim: *(La autonomía estratégica europea depende de proveedores que no controla)*. Also bad,
+because it is a bare domain label: *(Defensa europea)*.
 
 - **Spread.** In each 30-item level cover all six domains, about five items each, and give no two
   items the same angle.

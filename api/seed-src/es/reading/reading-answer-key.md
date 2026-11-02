@@ -4,12 +4,12 @@
 
 ### 1. Key: B
 
-- [ ] **A)** Resultaron inútiles, porque las unidades instruidas no mejoraron su eficacia en combate y sus mandos acabaron rechazando la cooperación europea.
-  - Lectura errónea: el autor concede expresamente que «muchas unidades mejoraron su desempeño táctico»; el fallo que señala no es técnico, sino político.
-- [x] **B)** Trataron la capacidad militar como algo ajeno a la política, cuando reforzarla en Estados como esos altera el reparto interno del poder.
+- [ ] **A)** Mejoraron la capacidad táctica de las unidades, pero fallaron porque la formación no se adaptó a las condiciones de combate de la región.
+  - Lectura errónea: el texto reconoce que «muchas unidades mejoraron su desempeño táctico», pero sitúa el fallo en lo político, no en la adecuación de la formación al terreno.
+- [x] **B)** Trataron la capacidad militar como algo ajeno a la política, cuando reforzarla en Estados como los del Sahel altera el reparto interno del poder.
   - Correcta: reformula «como si la capacidad fuera políticamente neutra» y la idea de que fortalecer al ejército «equivale a alterar el equilibrio interno de poder», que es el núcleo del argumento.
-- [ ] **C)** Deberían dar paso a un despliegue europeo de combate en la región, ya que los ejércitos locales se han mostrado incapaces de controlar su territorio.
-  - No se dice: el texto no propone ningún despliegue de combate; pide reordenar las preguntas previas a la formación, no sustituirla por tropas europeas.
+- [ ] **C)** Acertaron en el planteamiento, pero se quedaron cortas: habría hecho falta formar a más unidades y durante más tiempo para estabilizar la región.
+  - Relación invertida: el texto pide dejar de medir el éxito en cantidad («cuántos soldados pueden formarse») y preguntarse antes ante quién rendirá cuentas esa fuerza.
 - [ ] **D)** Perdieron su sentido sobre todo por la llegada de proveedores de seguridad rivales, que ofrecían a los gobiernos de la región condiciones mucho menos exigentes.
   - Relación invertida: el cambio de socios es una consecuencia de las rupturas del orden constitucional que el texto vincula a una formación sin control político, no la causa del fracaso.
 
@@ -26,12 +26,12 @@
 
 ### 3. Key: A
 
-- [x] **A)** La considera una respuesta comprensible dada la urgencia del momento, aunque costosa y reveladora de que faltaban herramientas mejor dirigidas.
+- [x] **A)** La considera una respuesta comprensible dada la urgencia del momento, aunque costosa y reveladora de que no se habían previsto herramientas mejor dirigidas.
   - Correcta: reconoce que «la rapidez es también una forma de eficacia», detalla sus costes y concluye que se recurrió a ella porque «no se habían preparado a tiempo los instrumentos».
-- [ ] **B)** La juzga un error difícil de justificar, puesto que las transferencias dirigidas a los hogares vulnerables podían aplicarse con la misma rapidez.
+- [ ] **B)** La juzga un error difícil de justificar, puesto que las transferencias dirigidas a los hogares vulnerables podían haberse aplicado con la misma rapidez.
   - Lectura errónea: el texto subraya que esas transferencias «tampoco» son sencillas porque exigen registros y capacidad de gestión, y niega que la ayuda general fuera «un disparate».
-- [ ] **C)** La defiende como la mejor opción disponible, porque su rapidez compensó con creces los efectos regresivos que le atribuyen algunos de sus críticos.
-  - Generalización excesiva: convierte la concesión («la rapidez es también una forma de eficacia») en una defensa plena; además, el efecto regresivo lo señala el propio texto, que nunca dice que la rapidez lo compensara.
+- [ ] **C)** La ve como un acierto por su rapidez, aunque admite que fue cara, y subraya que alivió sobre todo a los hogares con menos ingresos.
+  - Lectura errónea: el texto afirma que la ayuda «benefició en mayor medida a quienes más combustible gastaban», que «no son precisamente los hogares de menor renta».
 - [ ] **D)** La valora sobre todo por haber contenido el consumo de combustible en plena crisis, a pesar del elevado coste que supuso para las arcas públicas.
   - Relación invertida: según el texto, la bonificación «atenuó la señal de precio que habría animado a ahorrar», es decir, desincentivó la moderación del consumo.
 
@@ -41,7 +41,7 @@
   - Relación invertida: el texto afirma que buena parte de esa investigación es «de doble uso» y advierte que nada de ello hace «ingenua» la preocupación ética.
 - [ ] **B)** Han logrado impedir que los hallazgos de la investigación civil acaben en sistemas de armas, aunque a costa de perder fuentes de financiación.
   - Lectura errónea: el autor sostiene justo lo contrario, que un proyecto civil «puede acabar alimentando un sistema de armas» y que rechazar la financiación militar «no impide» ese desenlace.
-- [x] **C)** Se basan en un criterio fácil de comprobar que, paradójicamente, resta a la universidad capacidad de influir en el uso de sus hallazgos.
+- [x] **C)** Se basan en un criterio fácil de comprobar que, paradójicamente, resta a la universidad capacidad de influir en el uso que otros hagan de sus hallazgos.
   - Correcta: sintetiza que el criterio de la financiación es «sencillo de aplicar», pero rechazar la financiación militar «priva a la universidad de cualquier capacidad de influir en las condiciones de uso».
 - [ ] **D)** Deberían sustituirse por una prohibición general de publicar trabajos cuyos resultados puedan tener aplicaciones militares o de seguridad.
   - No se dice: el autor propone evaluación de riesgos, transparencia y control de las exportaciones, no restringir la publicación de resultados.
@@ -66,15 +66,15 @@
 - [ ] **C)** Deberían ir ligadas a campañas de sensibilización que persuadan a los agricultores de no sustituir sus cultivos tradicionales por otros más rentables.
   - No se dice: el autor no propone persuadir a los agricultores, sino una medida normativa sobre las concesiones de agua.
 - [ ] **D)** Tendrían que concentrarse en las parcelas que aún riegan por inundación, que son aquellas donde el ahorro de agua por hectárea resulta mayor.
-  - Lectura errónea: aplica la misma contabilidad por parcela que el autor critica; el ahorro por hectárea es real, pero el texto muestra que no se traduce en menos consumo a escala de cuenca.
+  - Lectura errónea: aplica la misma contabilidad por parcela que el autor critica; el ahorro por hectárea es real, pero el texto muestra que, «a escala de cuenca», no se traduce en menos consumo.
 
 ### 7. Key: C
 
 - [ ] **A)** Comprensivo con la prudencia europea, pues considera que la lentitud es el precio razonable de unas normas estables que la región terminará valorando.
   - Relación invertida: para el autor, la lentitud vacía esas bazas «de valor político» y una oferta lenta «pierde frente a otra imperfecta pero inmediata».
-- [ ] **B)** Resignado, pues da a entender que la influencia europea en la región ha pasado ya a otros socios y que poco puede hacer la Unión por recuperarla.
-  - Generalización excesiva: el autor plantea una condición («Si la Unión quiere…») y un camino posible; no da la influencia europea por perdida.
-- [x] **C)** Crítico pero constructivo, ya que reconoce las bazas con que cuenta Europa y le reprocha que la lentitud de sus decisiones las desaproveche.
+- [ ] **B)** Crítico con Bruselas pero resignado, pues da a entender que la región ya ha optado por otros socios y que poco cabe hacer al respecto.
+  - Lectura errónea: comparte la crítica a la lentitud, pero el autor no da la partida por perdida; plantea una condición («Si la Unión quiere…») y dice qué tendría que cambiar.
+- [x] **C)** Exigente con la Unión, ya que reconoce las bazas con que cuenta Europa y le reprocha que la lentitud de sus decisiones las desaproveche.
   - Correcta: admite que el diagnóstico de afinidad «no es falso» y que Europa tiene bazas propias, pero censura una lentitud que «las vacía de valor político» y señala qué tendría que cambiar.
 - [ ] **D)** Irónico y desdeñoso hacia los valores compartidos, que presenta como un mero recurso de cumbre sin correspondencia con los vínculos reales entre ambas regiones.
   - Lectura errónea: la ironía final apunta a la lentitud europea; sobre la afinidad, el autor dice expresamente que el diagnóstico «no es falso» y que los vínculos son «tan densos» como en pocas regiones.
@@ -92,11 +92,11 @@
 
 ### 9. Key: B
 
-- [ ] **A)** La rechaza por completo, ya que considera que las normas europeas no imponen costes apreciables a las empresas, grandes o pequeñas, que desarrollan esta tecnología.
-  - Generalización excesiva: el texto admite que la regulación no es «inocua» y que su aplicación ambigua puede perjudicar a las empresas pequeñas.
-- [x] **B)** La juzga exagerada y atribuye el retraso sobre todo a un problema de escala, aunque reconoce el riesgo que una aplicación dispar de las normas supone para las pymes.
+- [ ] **A)** La considera acertada en parte, pues reparte la responsabilidad del retraso a partes iguales entre unas normas exigentes y una inversión todavía insuficiente.
+  - Lectura errónea: el texto no reparte la culpa a partes iguales; duda de que la regulación sea «la causa principal del retraso» y sitúa el problema, «ante todo», en la escala.
+- [x] **B)** La juzga exagerada y atribuye el retraso sobre todo a la escala, aunque reconoce el riesgo que una aplicación dispar de las normas supone para las pymes.
   - Correcta: sitúa la causa principal en la inversión, la infraestructura y la fragmentación del mercado, pero reconoce el riesgo de inseguridad jurídica para las empresas pequeñas.
-- [ ] **C)** La acepta en lo esencial, pero cree que el problema quedaría resuelto en buena medida si los Estados miembros armonizaran la interpretación de las normas comunes.
+- [ ] **C)** La relativiza, pero sitúa el principal obstáculo en la interpretación desigual de las normas entre Estados miembros, que convendría armonizar cuanto antes.
   - Lectura errónea: la interpretación desigual es un riesgo que el texto reconoce de forma secundaria; el problema que considera central es «de escala».
 - [ ] **D)** La rechaza en el caso de las grandes compañías, pero la comparte respecto de las empresas emergentes, a las que la norma empuja a instalarse fuera de Europa.
   - Atribución cambiada: que las empresas emergentes se marchen huyendo de las reglas es el «lugar común» del primer párrafo; el texto afirma que las prometedoras «no suelen emigrar huyendo de una norma, sino en busca de capital».
@@ -107,7 +107,7 @@
   - Lectura errónea: el texto no jerarquiza los instrumentos y advierte que, con las reservas públicas, las administraciones «no siempre aciertan» al decidir qué almacenar.
 - [ ] **B)** Sus inconvenientes son tan parecidos que lo más prudente sería dejar que el propio mercado corrija con el tiempo la falta de resiliencia.
   - Relación invertida: el texto sostiene que, como bien compartido, la resiliencia «tiende a quedarse por debajo de lo que convendría a todos», de modo que no propone confiar en el mercado.
-- [ ] **C)** Las obligaciones regulatorias ofrecen la salida más equitativa, ya que reparten la carga entre los competidores y dejan al margen al consumidor.
-  - Lectura errónea: según el texto, esas obligaciones reparten la carga, pero «acaban repercutiendo en los precios que paga el consumidor».
-- [x] **D)** Cada uno traslada la carga a un grupo distinto, de modo que elegir entre estos instrumentos supone decidir quién costea una protección colectiva.
+- [ ] **C)** Acaban trasladando el coste al contribuyente, de modo que elegir entre ellos es una cuestión de eficacia más que de reparto de la carga.
+  - Generalización excesiva: solo de las subvenciones dice el texto que trasladan el coste «al contribuyente»; las obligaciones regulatorias, en cambio, «acaban repercutiendo en los precios que paga el consumidor».
+- [x] **D)** Cada uno reparte el coste de una manera distinta, de modo que optar por uno u otro implica decidir quién costea una protección colectiva.
   - Correcta: sintetiza que «ninguna de las respuestas sale gratis» y que elegir entre los instrumentos supone decidir «a quién se pide que financie» una seguridad común.
