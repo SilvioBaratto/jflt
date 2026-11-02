@@ -78,6 +78,12 @@ def replace_with_copy(path: Path, text: str) -> None:
     path.write_text(text, encoding="utf-8")
 
 
+def replace_with_bytes(path: Path, data: bytes) -> None:
+    """Swap a symlinked English file for raw bytes without writing through the link."""
+    path.unlink()
+    path.write_bytes(data)
+
+
 def edit_model_answers(root: Path, edit) -> None:
     model = root / "api" / "seed-src" / "es" / "writing" / "writing-model-answers.md"
     replace_with_copy(model, edit(model.read_text(encoding="utf-8")))
@@ -121,3 +127,56 @@ def test_writing_rejects_more_model_answers_than_exam_tasks(root, capsys):
 
     assert main(["writing"], root=root) == 1
     assert "W: alignment: the exam has 16 tasks but the model answers have 17" in capsys.readouterr().out
+
+
+def test_audio_final_requires_twelve_scripts_with_an_mp3_each(root, capsys):
+    """Under --final a missing script or a script without audio is an error."""
+    listening = root / "api" / "seed-src" / "es" / "listening"
+    (listening / "listening-12.json").unlink()
+
+    assert main(["audio"], root=root) == 0
+    assert main(["audio", "--final"], root=root) == 1
+    assert "audio: expected 12 listening-NN.json scripts" in capsys.readouterr().out
+
+
+def test_audio_final_flags_a_script_without_its_mp3(root, capsys):
+    """A script whose MP3 is missing fails --final with the count message too."""
+    (root / "api" / "seed-src" / "es" / "listening" / "listening-05.mp3").unlink()
+
+    assert main(["audio", "--final"], root=root) == 1
+
+    out = capsys.readouterr().out
+    assert "audio: expected 12 listening-NN.json scripts" in out
+    assert "11 with an mp3" in out
+
+
+def test_reading_with_invalid_utf8_prints_one_error_line(root, capsys):
+    """A mis-encoded reading file is reported, not raised as a traceback."""
+    replace_with_bytes(root / "api" / "seed-src" / "es" / "reading" / "reading-exam.md", b"\xff\xfe\x80")
+
+    assert main(["reading"], root=root) == 1
+
+    out = capsys.readouterr().out
+    assert out.startswith("R: cannot read the content files")
+    assert "Traceback" not in out
+
+
+def test_vocab_with_invalid_utf8_prints_one_error_line(root, capsys):
+    """A mis-encoded vocabulary guide is reported, not raised as a traceback."""
+    guide = root / "api" / "references" / "es" / "spanish-vocabulary-guide.md"
+    guide.write_bytes(b"\xff\xfe\x80")
+
+    assert main(["vocab"], root=root) == 1
+
+    out = capsys.readouterr().out
+    assert out.startswith("V: cannot read the content files")
+    assert "Traceback" not in out
+
+
+def test_help_describes_the_tool(capsys):
+    """The parser carries its own one-line description instead of slicing the module doc."""
+    with pytest.raises(SystemExit) as stopped:
+        main(["--help"])
+
+    assert stopped.value.code == 0
+    assert "mechanical" in capsys.readouterr().out

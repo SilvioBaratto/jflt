@@ -69,7 +69,7 @@ def run_reading(root: Path, scratch: Path, final: bool) -> Result:
     try:
         items = builder.parse_reading()
         key_markdown = (es / "reading" / "reading-answer-key.md").read_text(encoding="utf-8")
-    except OSError as exc:
+    except (OSError, ValueError) as exc:
         return _unreadable("R", exc)
     errors = check_reading(items, expect_count=READING_COUNT if final else None)
     errors += check_answer_key_layout(key_markdown)
@@ -146,6 +146,12 @@ def run_audio(root: Path, scratch: Path, final: bool) -> Result:
         errors += check_audio(item, script.with_suffix(".mp3"))
     if not scripts:
         errors.append("L: no listening-*.json scripts found")
+    rendered = sum(script.with_suffix(".mp3").is_file() for script in scripts)
+    if final and (len(scripts) != LISTENING_COUNT or rendered != len(scripts)):
+        errors.append(
+            f"audio: expected {LISTENING_COUNT} listening-NN.json scripts with an mp3 each, "
+            f"found {len(scripts)} scripts and {rendered} with an mp3"
+        )
     return errors, f"{len(scripts)} scripts"
 
 
@@ -165,10 +171,10 @@ def run_vocab(root: Path, scratch: Path, final: bool) -> Result:
     ref.mkdir()
     try:
         shutil.copyfile(guide, ref / PARSER_VOCAB_NAME)
-    except OSError as exc:
+        builder = load_builder(root / "api" / "seed-src" / "es", ref, scratch)
+        entries = builder.parse_vocab()
+    except (OSError, ValueError) as exc:
         return _unreadable("V", exc)
-    builder = load_builder(root / "api" / "seed-src" / "es", ref, scratch)
-    entries = builder.parse_vocab()
     errors = check_vocab(
         entries,
         min_entries=MIN_VOCAB_ENTRIES if final else 1,
@@ -279,7 +285,7 @@ def _add_window_arguments(command: argparse.ArgumentParser) -> None:
 
 def build_parser() -> argparse.ArgumentParser:
     """Build the command-line parser: one subcommand per check, `all`, `pack` and `compare`."""
-    parser = argparse.ArgumentParser(prog="run_checks.py", description=__doc__.split("\n\n")[0])
+    parser = argparse.ArgumentParser(prog="run_checks.py", description="Run the mechanical quality checks over the Spanish STANAG content.")
     commands = parser.add_subparsers(dest="command", required=True)
     for name in (*CHECKS, "all"):
         help_text = "run every check" if name == "all" else f"run the {name} check"
