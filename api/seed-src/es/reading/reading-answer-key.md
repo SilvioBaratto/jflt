@@ -115,7 +115,7 @@
 ### 11. Key: C
 
 - [ ] **A)** Mantienen casi intacto su poder de presión, porque los circuitos de pago alternativos son todavía demasiado precarios para servir de refugio a los Estados sancionados.
-  - Lectura errónea: el texto admite que los circuitos alternativos funcionan «de manera precaria», pero añade que cada transacción desviada «reduce un poco la palanca» de la sanción siguiente.
+  - Lectura errónea: el texto admite que muchos de los circuitos alternativos funcionan «de manera precaria», pero añade que cada transacción desviada «resta un poco de fuerza a la palanca» de la sanción siguiente.
 - [ ] **B)** Responden más al deseo de mostrar firmeza ante la opinión pública que a un cálculo de eficacia, por lo que sus efectos reales suelen ser escasos.
   - Lectura errónea: la «sensación de que se está haciendo algo» es uno de sus atractivos, pero el texto afirma que su eficacia inmediata «tampoco es desdeñable».
 - [x] **C)** Dependen de que los demás no tengan a qué recurrir, y cada aplicación los anima a buscar salidas, de modo que usarlas a menudo acaba por debilitarlas.
@@ -127,97 +127,97 @@
 
 - [x] **A)** Del alcance que hayan logrado ya sus mensajes, puesto que, mientras circulen en un ámbito reducido, la publicidad oficial les daría un eco del que carecen.
   - Correcta: el texto distingue la campaña que «no ha salido de un circuito marginal», que se desactiva con un aviso discreto, de aquella cuyo bulo «ya circula ampliamente», que exige una explicación pública.
-- [ ] **B)** Del grado de certeza sobre su origen, puesto que acusar a un Estado sin pruebas concluyentes dañaría la credibilidad del gobierno más que la propia campaña.
+- [ ] **B)** Del grado de certeza sobre su origen, puesto que acusar a un Estado sin pruebas concluyentes dañaría la credibilidad oficial más que la propia campaña.
   - Lectura errónea: el texto considera necesaria la explicación pública «aunque todavía no pueda señalarse con certeza al responsable»; la atribución no es la condición.
-- [ ] **C)** Del momento político en que se produzcan, puesto que en vísperas de unas elecciones una injerencia exterior puede causar daños en cuestión de horas.
+- [ ] **C)** Del momento político en que se produzca, puesto que en vísperas de unas elecciones una injerencia exterior puede causar daños en cuestión de horas.
   - Lectura errónea: las elecciones solo ilustran lo rápido que puede llegar el daño («en vísperas de unas elecciones, en horas»); no son el criterio que el texto propone.
 - [ ] **D)** De la respuesta de las plataformas, puesto que la denuncia pública se justifica cuando estas se niegan a retirar los mensajes que se les señalan.
   - No se dice: el texto no condiciona la denuncia a la reacción de las plataformas; el aviso discreto a estas es la vía para la campaña que «no ha salido de un circuito marginal».
 
 ### 13. Key: D
 
-- [ ] **A)** Supone ante todo una transferencia de renta de los propietarios a los inquilinos, y su principal inconveniente es reducir la rentabilidad del alquiler.
+- [ ] **A)** Supone ante todo una transferencia de los propietarios a los inquilinos, y su principal inconveniente es reducir la rentabilidad del alquiler.
   - Lectura errónea: el texto afirma que el efecto «va más allá de una transferencia de los propietarios a los inquilinos», porque parte del coste recae sobre otros inquilinos.
 - [ ] **B)** Facilita que los inquilinos protegidos cambien de vivienda cuando varían sus circunstancias, ya que el ahorro mensual les deja más margen para mudarse.
   - Relación invertida: el inquilino protegido «se lo piensa dos veces antes de mudarse», porque sabe que perdería su renta contenida; el tope frena su movilidad.
-- [ ] **C)** Desplaza sobre todo la oferta hacia el alquiler de temporada, de modo que la escasez se traslada al segmento del mercado que escapa a la regulación.
-  - Generalización excesiva: el alquiler de temporada es solo una de las reacciones de los propietarios, junto a vender o «mantener el piso vacío»; la conclusión del texto se refiere a quién soporta el coste.
-- [x] **D)** Hace pagar a unos inquilinos parte del alivio de otros, puesto que quienes todavía buscan casa cargan con una porción considerable del coste de la medida.
-  - Correcta: el texto concluye que «Una parte considerable del coste recae sobre otros inquilinos», los que buscan casa, mientras el alivio lo obtiene quien ya tiene contrato.
+- [ ] **C)** Su efecto principal es empujar a los propietarios hacia el alquiler de temporada, de modo que la medida pierde alcance conforme crece el segmento que escapa a la regulación.
+  - Generalización excesiva: el alquiler de temporada es solo una de las reacciones de los propietarios, junto a vender o «mantener el piso vacío», y el texto no dice que la medida pierda alcance por ello.
+- [x] **D)** Hace pagar a unos inquilinos parte del alivio de otros, porque la retirada de pisos del mercado perjudica a quienes aún no tienen un contrato que defender.
+  - Correcta: los propietarios venden, cambian de tipo de alquiler o dejan «el piso vacío», quien busca casa encuentra «menos anuncios» y, así, parte del coste «recae sobre otros inquilinos».
 
 ### 14. Key: B
 
-- [ ] **A)** Sirven para identificar la información que más interesa a un adversario que almacena hoy tráfico cifrado con la intención de leerlo en el futuro.
-  - Lectura errónea: los ejemplos incluyen datos que «pierden su valor en cuestión de horas» y que no interesarían a quien espera años para descifrarlos; su función es contrastar plazos.
+- [ ] **A)** Sirven para indicar que la información de los organismos públicos corre más peligro que la de las empresas, cuyos datos caducan antes.
+  - Lectura errónea: los ejemplos oponen datos según el tiempo que deben seguir siendo secretos, no según quién los produce; entre los de larga vida figuran «los planos de un sistema de armas», y el texto incluye a «la industria de defensa».
 - [x] **B)** Sirven para mostrar que la urgencia de proteger la información varía de un dato a otro según el tiempo que cada uno deba seguir siendo secreto.
   - Correcta: el contraste entre lo que seguirá siendo sensible «dentro de veinte años» y lo que caduca en horas prepara la «pregunta útil»: cuánto tiempo debe permanecer secreto cada dato.
-- [ ] **C)** Sirven para señalar que los sistemas que custodian datos clínicos, diplomáticos o militares son los más lentos de adaptar a los nuevos algoritmos.
-  - No se dice: el texto indica que la migración «se mide en años» en sistemas complejos, pero los ejemplos no comparan el coste de adaptar unos sistemas u otros.
-- [ ] **D)** Sirven para advertir de que incluso los datos de vida más corta, como una cotización o un envío, quedan expuestos a ese almacenamiento.
-  - Lectura errónea: según el texto, la cotización de una divisa o la ubicación de un envío «pierden su valor en cuestión de horas», de modo que almacenarlas para descifrarlas años después no supone riesgo.
+- [ ] **C)** Sirven para respaldar la decisión de las organizaciones que aplazan la migración, al mostrar que gran parte de lo que se cifra pierde pronto su valor.
+  - Lectura errónea: aplazar es lo que hacen «muchas organizaciones», y los ejemplos lo cuestionan, pues algunos datos «pueden seguir siendo sensibles dentro de veinte años».
+- [ ] **D)** Sirven para ilustrar por qué la migración resulta tan cara, ya que obliga a revisar sistemas muy distintos entre sí y, a menudo, antiguos.
+  - Lectura errónea: que la migración es «una tarea cara» se dice en el primer párrafo; los ejemplos no tratan de sistemas, sino de datos que deben seguir siendo secretos durante más o menos tiempo.
 
 ### 15. Key: A
 
-- [x] **A)** Con inquietud ante un reparto que se consolida sin haberse decidido, aunque sin restar valor a los servicios que estas redes ya prestan a las zonas aisladas.
+- [x] **A)** Con inquietud ante un reparto del espacio que se va fijando sin acuerdo previo, aunque sin restar valor a los servicios que estas redes ya prestan a las zonas aisladas.
   - Correcta: reconoce que los beneficios «son reales», pero advierte de los «corredores ausentes» y de un reparto «que nadie ha decidido de forma explícita».
-- [ ] **B)** Con optimismo, pues confía en que las normas internacionales se adapten a tiempo para reservar capacidad a los países que todavía no pueden lanzar satélites.
-  - Lectura errónea: el texto enumera lo que exigiría adaptar las reglas, pero añade que son condiciones que «difícilmente aceptarán quienes ya van en cabeza».
-- [ ] **C)** Con resignación, pues, aunque lamenta el reparto desigual de las órbitas, lo presenta como el precio inevitable de llevar conexión a todo el planeta.
-  - Lectura errónea: el reparto no se presenta como inevitable, sino como fruto de reglas concebidas para otra época, que podrían adaptarse mediante «cuotas» y reservas de capacidad.
-- [ ] **D)** Con una preocupación centrada sobre todo en la seguridad, pues ve en el riesgo de colisiones entre satélites el principal problema de estas redes.
+- [ ] **B)** Con una confianza prudente en que las normas internacionales se adapten a tiempo, aunque admite que las empresas que van en cabeza se resistirán a ceder parte de su capacidad.
+  - Lectura errónea: el texto no expresa confianza en la reforma, pues las condiciones para adaptar las reglas son algo que «difícilmente aceptarán quienes ya van en cabeza».
+- [ ] **C)** Con aprobación hacia una carrera que lleva internet a regiones que hasta ahora carecían de una buena conexión, aunque lamenta que muchos Estados se hayan quedado sin sitio en ella.
+  - Lectura errónea: los beneficios son una concesión («no conviene minimizarlos»); el peso del texto recae en los «corredores ausentes» y en un reparto sin decidir, no en la aprobación de la carrera.
+- [ ] **D)** Con preocupación por la seguridad de la órbita, que ve amenazada por la acumulación de satélites y sus posibles colisiones, aunque valora la conexión que estas redes ofrecen.
   - Generalización excesiva: el riesgo de colisiones es un problema que «se suma» al reparto desigual; la inquietud principal del texto recae en los «corredores ausentes».
 
 ### 16. Key: C
 
 - [ ] **A)** Que su efecto queda compensado en buena medida por las redes sociales y los grupos de mensajería, que hacen circular la información local con más rapidez.
   - Lectura errónea: el texto reconoce que las redes difunden «opiniones y rumores», pero señala que casi nadie en ellas hace el trabajo de vigilancia del periodista local.
-- [ ] **B)** Que su consecuencia más visible es un aumento de los escándalos municipales, que ya nadie destapa a tiempo por falta de periodistas en la zona.
-  - Lectura errónea: el texto dice lo contrario: cuando falta el periodista «no estalla ningún escándalo», sencillamente deja de haber alguien que mire.
-- [x] **C)** Que sus costes recaen sobre los vecinos de la comarca y no sobre la empresa, de modo que la decisión de cerrar se adopta sin tenerlos en cuenta.
-  - Correcta: los costes «no los paga la empresa que cierra», y por eso el mercado «no los tiene en cuenta» al concluir que el periódico ya no es viable.
+- [ ] **B)** Que su consecuencia más visible es que los escándalos municipales salen a la luz más tarde, cuando ya resultan difíciles de corregir.
+  - Lectura errónea: el texto no habla de escándalos que se destapan con retraso; sostiene que, cuando falta el periodista, «no estalla ningún escándalo» y la pérdida no se ve.
+- [x] **C)** Que su coste pasa en gran parte inadvertido, porque lo que desaparece es una labor de vigilancia cuya falta no produce ninguna noticia.
+  - Correcta: con el periódico desaparece «algo que no figura en ningún balance», y cuando falta el periodista «no estalla ningún escándalo: sencillamente, deja de haber alguien que mire».
 - [ ] **D)** Que su remedio más claro está en la subvención municipal, dado que vigilar a los ayuntamientos es un trabajo tedioso que rara vez resulta rentable.
-  - Relación invertida: el texto advierte de que un medio que depende de la subvención del ayuntamiento «difícilmente lo vigilará con libertad».
+  - Lectura errónea: el texto advierte de que un medio que depende de la subvención del ayuntamiento «difícilmente lo vigilará con libertad».
 
 ### 17. Key: B
 
 - [ ] **A)** Que la prestación económica se sumó a los servicios profesionales y reforzó su alcance, tal como se había previsto al aprobarse la ley.
-  - Lectura errónea: la prestación no reforzó a los servicios, que «crecieron más despacio de lo previsto»; sumarse a ellos como «un complemento excepcional» era el plan, no lo que ocurrió.
-- [x] **B)** Que la prestación económica pasó a ocupar el lugar de los servicios en muchos casos, pese a que se había concebido como una vía excepcional.
-  - Correcta: aquella prestación «pensada para casos particulares» acabó ocupando el lugar de los servicios «en buena parte de los expedientes», y el cuidado lo siguen prestando los familiares.
-- [ ] **C)** Que la prestación económica se destinó a pagar los servicios profesionales que las familias contrataban por su cuenta cuando no había oferta pública.
-  - No se dice: el texto no menciona servicios contratados por las familias; la prestación se destina al «familiar que asumiera el cuidado en casa».
-- [ ] **D)** Que la prestación económica compensó a las familias por los ingresos que perdían al reducir su jornada o dejar su empleo para cuidar del familiar.
+  - Lectura errónea: la prestación no reforzó a los servicios, que «crecieron más despacio de lo previsto»; sumarse a ellos como «un recurso excepcional» era el plan, no lo que ocurrió.
+- [x] **B)** Que la prestación económica ocupó en muchos expedientes, y de forma duradera, el lugar que la ley reservaba a los servicios profesionales.
+  - Correcta: aquella prestación «pensada para casos particulares» acabó ocupando el lugar de los servicios «en buena parte de los expedientes», y el cuidado lo siguen prestando los familiares, como antes de la ley.
+- [ ] **C)** Que la prestación económica cubrió de forma provisional el hueco de los servicios mientras la red profesional, que crecía despacio, terminaba de desplegarse.
+  - Lectura errónea: la sustitución no fue provisional: el cuidado lo siguen prestando los familiares, y el derecho «convive así con una práctica» que la ley pretendía dejar atrás.
+- [ ] **D)** Que la prestación económica compensó, en la mayoría de los casos, los ingresos que las familias perdían al reducir su jornada o dejar su empleo.
   - Lectura errónea: el texto dice que esa cantidad «apenas compensa lo que dejan de ingresar», y el pronombre de «supliéndolos» remite a los servicios, no a los ingresos.
 
 ### 18. Key: D
 
 - [ ] **A)** Prueba que los mensajes llegan demasiado tarde para que los vecinos de las zonas inundables puedan alcanzar un lugar seguro.
-  - Relación invertida: el texto afirma que «El aviso les llega» y que a las víctimas les falta «saber cómo responder a él».
+  - Lectura errónea: el texto afirma que «El aviso les llega» y que a las víctimas les falta «saber cómo responder a él».
 - [ ] **B)** Subraya la violencia de unas inundaciones frente a las que el aviso, por pronto que se emita, ya poco puede hacer para salvar vidas.
   - Lectura errónea: según el texto, esas víctimas hacen «justo lo que un ciudadano preparado habría evitado», de modo que la preparación sí habría cambiado el resultado.
-- [ ] **C)** Señala un fallo urbanístico, pues muchos sótanos y garajes se construyen en zonas que los mapas de riesgo ya marcan como inundables.
-  - No se dice: los «mapas de riesgo» aparecen como herramienta de preparación vecinal, no como prueba de un error al construir sótanos y garajes.
-- [x] **D)** Sirve de prueba de que muchas muertes se deben a reacciones equivocadas ante una alerta que sí se ha recibido a tiempo.
+- [ ] **C)** Señala un fallo urbanístico, pues muchas carreteras y pasos inferiores se trazaron en zonas que los mapas de riesgo ya marcan como inundables.
+  - No se dice: los «mapas de riesgo» aparecen como herramienta de preparación vecinal, no como prueba de un error al trazar carreteras o pasos inferiores.
+- [x] **D)** Sirve de prueba de que muchas muertes se deben a reacciones equivocadas ante una alerta que las víctimas sí habían recibido.
   - Correcta: el ejemplo respalda la idea de que un aviso protege «si quien lo recibe sabe qué hacer con él»: esas personas recibieron el mensaje y reaccionaron mal.
 
 ### 19. Key: A
 
-- [x] **A)** Sostiene que las dos vías tienen costes graves, pero que dejar la decisión para más adelante también los tiene: encarece la retirada y resta margen para ordenarla.
-  - Correcta: el texto concluye que «Ninguna de las dos vías sale, pues, indemne» y añade que aplazar la elección «tampoco es una salida neutral», porque encarece la retirada futura y estrecha el margen para planificarla.
-- [ ] **B)** Sostiene que el retroceso ordenado es preferible, por ser la única opción coherente con la dinámica natural del litoral, aunque sus costes sociales resulten elevados.
-  - Atribución cambiada: la idea de que es la única opción coherente pertenece a «sus partidarios», no al texto, que subraya sus costes inmediatos.
-- [ ] **C)** Sostiene que la reposición anual es la opción más realista, ya que a los gobiernos locales les resulta casi imposible asumir el coste político de una retirada.
+- [x] **A)** Sostiene que las dos vías tienen costes serios, pero que dejar la decisión para más adelante también los tiene: encarece la retirada y resta margen para ordenarla.
+  - Correcta: el texto concluye que «Ambas vías resultan, pues, costosas» y añade que aplazar la elección «tampoco es una salida neutral», porque encarece la retirada futura y estrecha el margen para planificarla.
+- [ ] **B)** Sostiene que las dos vías tienen costes serios, pero que el retroceso acabará imponiéndose por ser la única opción coherente con la dinámica del litoral.
+  - Atribución cambiada: que sea la única opción coherente lo sostienen «sus partidarios», y el texto no predice que el retroceso vaya a imponerse.
+- [ ] **C)** Sostiene que las dos vías tienen costes serios, pero que la reposición es preferible mientras los gobiernos locales no puedan asumir el coste de una retirada.
   - Lectura errónea: que «Pocos gobiernos locales sobreviven a una decisión así» es una dificultad del retroceso, no una defensa de la reposición, cuyo coste «se repite año tras año».
-- [ ] **D)** Sostiene que conviene combinar ambas, manteniendo la reposición mientras se recuperan dunas y marismas, para no verse obligados a elegir entre una y otra.
-  - Relación invertida: mantener la reposición sin elegir es justo lo que el texto cuestiona, ya que consolida inversiones en primera línea que harán «más costosa cualquier retirada futura».
+- [ ] **D)** Sostiene que las dos vías tienen costes serios, pero que pueden combinarse, reponiendo arena mientras se recuperan dunas y marismas, para no tener que elegir entre una y otra.
+  - Lectura errónea: mantener la reposición sin elegir es justo lo que el texto cuestiona, ya que consolida inversiones en primera línea que harán «más costosa cualquier retirada futura».
 
 ### 20. Key: C
 
-- [ ] **A)** Que avanza con demasiada lentitud en el plano técnico, mientras buena parte de los pagos con tarjeta siguen dependiendo de redes extranjeras.
-  - Lectura errónea: el texto afirma que, «En lo técnico, el proyecto avanza con paso firme»; la dificultad está en precisar para qué se necesita.
+- [ ] **A)** Que su desarrollo técnico avanza más despacio que las expectativas que ha creado, de modo que promete más de lo que hoy puede ofrecer.
+  - Lectura errónea: el texto afirma que, «En lo técnico, estos proyectos avanzan con paso firme»; la dificultad está en precisar para qué se necesita esa moneda.
 - [ ] **B)** Que ofrece menos privacidad que las aplicaciones comerciales de pago, pese a que proteger la intimidad de los usuarios fue su primera justificación.
   - Lectura errónea: la privacidad es la justificación añadida «Más recientemente», y lo que se promete es una privacidad mayor que la de las aplicaciones comerciales.
-- [x] **C)** Que intenta atender a varios objetivos a la vez sin haber decidido cuál debe prevalecer, cuando cada uno de ellos exige un diseño distinto.
-  - Correcta: el texto advierte de que los fines «no todos conducen al mismo diseño» y pide decidir «qué problema se quiere resolver en primer lugar».
+- [x] **C)** Que persigue a la vez fines que reclaman diseños incompatibles, sin haber establecido todavía cuál de ellos debe tener prioridad sobre los demás.
+  - Correcta: el texto advierte de que los fines «no todos conducen al mismo diseño» y de que un proyecto que intenta «atender a todos los objetivos a la vez» corre el riesgo de no cumplir bien ninguno.
 - [ ] **D)** Que pone en peligro la financiación de los bancos, porque animará a muchos ahorradores a trasladar sus depósitos al banco central.
   - Atribución cambiada: el traslado de depósitos es un temor de los bancos («estos temen»), al que se ha respondido proponiendo límites por persona.
