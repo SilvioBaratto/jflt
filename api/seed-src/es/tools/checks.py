@@ -62,11 +62,21 @@ TTS_VOICES = frozenset({"alloy", "echo", "fable", "onyx", "nova", "shimmer"})
 # The TTS endpoint rejects longer inputs after earlier lines were already billed.
 TTS_MAX_CHARS = 4096
 
+# Anchored to the whole option: an unanchored match would flag ordinary content such as
+# "Ninguna de las partes cedió terreno". The verdict tail ("es correcta") is the only text
+# allowed after a catch-all phrase.
 _FORBIDDEN_OPTION = re.compile(
-    r"\b(todas|ninguna)\s+(de\s+)?(las|los)\s+(anteriores|opciones|respuestas|alternativas)\b"
-    r"|\b(todas|ninguna)\s+(son|es)\s+(correctas?|ciertas?|verdaderas?)\b"
-    r"|\b(all|none)\s+of\s+the\s+above\b",
-    re.IGNORECASE,
+    r"""^[\W_]*(?:
+        (?:todas|todos|ninguna|ninguno)\s+(?:de\s+)?(?:las|los)\s+
+            (?:anteriores|opciones|respuestas|alternativas)(?:\s+anteriores)?
+        |(?:todo|nada)\s+(?:de\s+)?lo\s+anterior
+        |(?:todas|todos|ninguna|ninguno)(?:\s+(?:ellas|ellos))?\s+(?:son|es)\s+
+            (?:correct|ciert|verdader|válid)[ao]s?
+        |(?:ambas|ambos)(?:\s+(?:opciones|respuestas|alternativas))?
+        |(?:tanto\s+)?[A-D]\s+(?:y|e|como)\s+[A-D]
+        |(?:all|none)\s+of\s+the\s+above
+    )(?:\s+(?:es|son)\s+(?:correct|ciert|verdader|válid)[ao]s?)?[\W_]*$""",
+    re.IGNORECASE | re.VERBOSE,
 )
 
 
@@ -91,7 +101,9 @@ def _nfc_errors(ident: str, fields: Iterable[tuple[str, str | None]]) -> list[st
     ]
 
 
-def _key_spread_errors(scope: str, letters: list[str], total: int, *, full_range: bool) -> list[str]:
+def _key_spread_errors(
+    scope: str, letters: Iterable[str | None], total: int, *, full_range: bool
+) -> list[str]:
     counts = Counter(letters)
     errors = []
     if full_range:
@@ -154,7 +166,7 @@ def _check_reading_item(ident: str, item: dict, bands: dict) -> list[str]:
             errors.append(f"{ident}: option {label} rationale missing")
         match = _FORBIDDEN_OPTION.search(option.get("text") or "")
         if match:
-            errors.append(f"{ident}: forbidden option {label}: {match.group(0)!r}")
+            errors.append(f"{ident}: forbidden option {label}: {match.group(0).strip()!r}")
 
     question = (item.get("question") or "").strip()
     if not question:
@@ -200,7 +212,11 @@ def _check_reading_set(items: list[dict], expect_count: int | None, bands: dict)
     errors = []
     by_level: dict[int, list[dict]] = {}
     for item in items:
-        by_level.setdefault(item.get("level"), []).append(item)
+        level = item.get("level")
+        # A missing or non-numeric level is already an `R<n>` error from the item check;
+        # grouping it would only break the sort below.
+        if isinstance(level, int):
+            by_level.setdefault(level, []).append(item)
 
     if expect_count is not None:
         if len(items) != expect_count:
@@ -340,7 +356,12 @@ def _check_writing_task(ident: str, task: dict, dimensions: tuple[str, ...]) -> 
     level = task.get("stanagLevel")
     task_type = task.get("taskType")
     declared = (task.get("wordCountMin"), task.get("wordCountMax"))
-    band = WRITING_BANDS.get((level, task_type))
+    # A level or type the parser could not read has no band; it is reported just below.
+    band = (
+        WRITING_BANDS.get((level, task_type))
+        if isinstance(level, int) and isinstance(task_type, str)
+        else None
+    )
     if band is None:
         errors.append(f"{ident}: no word band defined for L{level} {task_type!r}")
     elif declared != band:
@@ -425,6 +446,44 @@ def check_writing(
         errors += _check_writing_task(f"W{position}", task, dimensions)
     if expect_set:
         errors += _check_writing_set(tasks)
+    return errors
+
+
+_TASK_HEADING = re.compile(r"^## (Task \d+[^\n]*)", re.MULTILINE)
+
+
+def check_writing_alignment(
+    exam_markdown: str, model_markdown: str, *, allow_pending: bool = False
+) -> list[str]:
+    """Check that model answers sit in the same order as the exam tasks.
+
+    `parse_writing` pairs the two documents by position only, so two swapped tasks would
+    seed each task with the other's model answer and rubric without any other check
+    noticing.
+
+    Args:
+        exam_markdown: Full text of `writing-exam.md`.
+        model_markdown: Full text of `writing-model-answers.md`.
+        allow_pending: Accept a model file that has fewer tasks than the exam, for a set
+            still being written. More model tasks than exam tasks is always an error.
+
+    Returns:
+        One `W<position>` string per position whose `## Task N — Title` heading differs,
+        plus one `W` string when the task counts differ (unless pending answers are
+        allowed). Positions are compared over the tasks both documents have.
+    """
+    exam = [heading.strip() for heading in _TASK_HEADING.findall(exam_markdown)]
+    model = [heading.strip() for heading in _TASK_HEADING.findall(model_markdown)]
+    errors = [
+        f"W{position}: alignment: exam task {exam_title!r} is paired with model answer {model_title!r}"
+        for position, (exam_title, model_title) in enumerate(zip(exam, model), start=1)
+        if exam_title != model_title
+    ]
+    fewer_is_fine = allow_pending and len(model) < len(exam)
+    if len(exam) != len(model) and not fewer_is_fine:
+        errors.append(
+            f"W: alignment: the exam has {len(exam)} tasks but the model answers have {len(model)}"
+        )
     return errors
 
 

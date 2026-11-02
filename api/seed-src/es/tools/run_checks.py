@@ -31,6 +31,7 @@ from checks import (
     check_reading,
     check_vocab,
     check_writing,
+    check_writing_alignment,
 )
 
 READING_COUNT = 60
@@ -78,7 +79,7 @@ def run_reading(root: Path, scratch: Path, final: bool) -> Result:
 
 
 def run_writing(root: Path, scratch: Path, final: bool) -> Result:
-    """Check the writing tasks and model answers.
+    """Check the writing tasks and model answers, and that the two files line up.
 
     Args:
         root: Repository root holding `api/seed-src/es` and `api/references/es`.
@@ -88,12 +89,17 @@ def run_writing(root: Path, scratch: Path, final: bool) -> Result:
     Returns:
         The error strings and a one-line summary of what was parsed.
     """
+    folder = root / "api" / "seed-src" / "es" / "writing"
     builder = _es_builder(root, scratch)
     try:
         tasks = builder.parse_writing()
+        exam = (folder / "writing-exam.md").read_text(encoding="utf-8")
+        model = (folder / "writing-model-answers.md").read_text(encoding="utf-8")
     except (OSError, ValueError) as exc:
         return _unreadable("W", exc)
-    return check_writing(tasks, expect_set=final), f"{len(tasks)} tasks"
+    errors = check_writing(tasks, expect_set=final)
+    errors += check_writing_alignment(exam, model, allow_pending=not final)
+    return errors, f"{len(tasks)} tasks"
 
 
 def run_listening(root: Path, scratch: Path, final: bool) -> Result:

@@ -70,3 +70,54 @@ def test_all_runs_every_check(root, capsys):
     out = capsys.readouterr().out
     for kind in ("reading", "writing", "listening", "audio", "vocab"):
         assert f"{kind}:" in out
+
+
+def replace_with_copy(path: Path, text: str) -> None:
+    """Swap a symlinked English file for a real copy so edits never reach the originals."""
+    path.unlink()
+    path.write_text(text, encoding="utf-8")
+
+
+def edit_model_answers(root: Path, edit) -> None:
+    model = root / "api" / "seed-src" / "es" / "writing" / "writing-model-answers.md"
+    replace_with_copy(model, edit(model.read_text(encoding="utf-8")))
+
+
+def test_writing_alignment_is_clean_on_the_matching_english_set(root, capsys):
+    """Matching exam and model-answer headings produce no alignment error."""
+    main(["writing", "--final"], root=root)
+
+    assert "alignment" not in capsys.readouterr().out
+
+
+def test_writing_flags_a_swapped_model_answer_title(root, capsys):
+    """A model answer filed under another task's heading is reported by position."""
+    edit_model_answers(
+        root,
+        lambda text: text.replace(
+            "## Task 1 — Sanctions Framework Renewal: Request for Clarification",
+            "## Task 1 — Procurement Recommendation: Supply Chain Diversification",
+        ),
+    )
+
+    assert main(["writing"], root=root) == 1
+    assert "W1: alignment" in capsys.readouterr().out
+
+
+def test_writing_allows_fewer_model_answers_only_without_final(root, capsys):
+    """A model file cut short is accepted while drafting and reported under --final."""
+    edit_model_answers(root, lambda text: text[: text.index("## Task 4 ")])
+
+    main(["writing"], root=root)
+    assert "alignment" not in capsys.readouterr().out
+
+    main(["writing", "--final"], root=root)
+    assert "W: alignment: the exam has 16 tasks but the model answers have 3" in capsys.readouterr().out
+
+
+def test_writing_rejects_more_model_answers_than_exam_tasks(root, capsys):
+    """Extra model answers are an error even without --final."""
+    edit_model_answers(root, lambda text: text + "\n## Task 17 — Extra\n\nCuerpo.\n")
+
+    assert main(["writing"], root=root) == 1
+    assert "W: alignment: the exam has 16 tasks but the model answers have 17" in capsys.readouterr().out

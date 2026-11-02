@@ -14,6 +14,7 @@ from checks import (
     check_reading,
     check_vocab,
     check_writing,
+    check_writing_alignment,
     key_overlap,
 )
 
@@ -101,6 +102,55 @@ def test_flags_none_of_the_above():
     assert errors_with(check_reading([item]), "forbidden option")
 
 
+@pytest.mark.parametrize(
+    "text",
+    [
+        "Todas las anteriores",
+        "Todos los anteriores",
+        "Todo lo anterior",
+        "Ninguna de las anteriores",
+        "Ninguno de los anteriores",
+        "Ninguna de las opciones",
+        "Ninguna de las respuestas es correcta",
+        "Nada de lo anterior",
+        "Todas ellas son correctas",
+        "TODAS LAS ANTERIORES.",
+        "Ninguna de las anteriores es correcta",
+        "A y B",
+        "Tanto A como B",
+        "Ambas",
+        "Ambas son correctas",
+        "All of the above",
+        "None of the above",
+    ],
+)
+def test_flags_forbidden_catch_all_options(text):
+    """Every whole-option catch-all phrase is reported, whatever its wording or case."""
+    item = make_item()
+    item["options"][3]["text"] = text
+
+    assert errors_with(check_reading([item]), "forbidden option")
+
+
+@pytest.mark.parametrize(
+    "text",
+    [
+        "Ninguna de las partes cedió terreno en la negociación",
+        "Todos los participantes aceptaron la propuesta sin reservas",
+        "Todas las delegaciones, salvo una, firmaron el acuerdo",
+        "El texto afirma que nada de lo anterior bastó para frenar la crisis",
+        "Ambas delegaciones rechazaron el calendario propuesto",
+        "Todo lo anterior obliga al autor a matizar su tesis",
+    ],
+)
+def test_ordinary_options_with_catch_all_words_are_not_flagged(text):
+    """Content options that merely contain todos or ninguna are not false positives."""
+    item = make_item()
+    item["options"][3]["text"] = text
+
+    assert not errors_with(check_reading([item]), "forbidden option")
+
+
 def test_flags_passage_out_of_band():
     assert errors_with(check_reading([make_item(words=100)]), "passage length")
 
@@ -161,6 +211,20 @@ def test_key_spread_requires_five_to_ten_per_letter_at_thirty_items():
 
     assert errors_with(check_reading(skewed), "key spread")
     assert check_reading(balanced) == []
+
+
+def test_item_without_level_or_key_is_reported_in_a_full_set():
+    """Malformed level and key values become errors instead of breaking the set checks."""
+    items = make_level(10)
+    items[0]["level"] = None
+    items[1]["correctLabel"] = None
+    items.append(make_item(11, level=3, key="A") | {"level": "tres"})
+
+    errors = check_reading(items, expect_count=60)
+
+    assert errors_with(errors, "R1", "level None")
+    assert errors_with(errors, "R2", "invalid answer key")
+    assert errors_with(errors, "R11", "level tres")
 
 
 def test_expect_count():
@@ -353,6 +417,17 @@ def test_flags_non_nfc_model_answer():
     assert errors_with(check_writing([task]), "not NFC")
 
 
+def test_task_without_level_or_type_is_reported_not_raised():
+    """A task the parser left without level or type gets a word-band error."""
+    no_level = make_task()
+    no_level["stanagLevel"] = None
+    no_type = make_task()
+    no_type["taskType"] = None
+
+    assert errors_with(check_writing([no_level]), "W1", "no word band defined")
+    assert errors_with(check_writing([no_type]), "W1", "no word band defined")
+
+
 def test_set_shape():
     assert check_writing(make_task_set(), expect_set=True) == []
     assert errors_with(check_writing(make_task_set()[:15], expect_set=True), "set shape")
@@ -372,6 +447,66 @@ def test_set_shape_requires_level_three_tasks_first():
 def test_english_writing_passes(english):
     assert check_writing(english.writing, dimensions=RUBRIC_DIMENSIONS_EN) == []
     assert check_writing(english.writing, expect_set=True, dimensions=RUBRIC_DIMENSIONS_EN) == []
+
+
+def writing_doc(*titles):
+    """Build a markdown document with one `## Task N — Title` section per title."""
+    return "# Documento\n\n" + "".join(
+        f"## Task {n} — {title}\n\nCuerpo {n}.\n\n" for n, title in enumerate(titles, start=1)
+    )
+
+
+def test_writing_alignment_clean_when_titles_match():
+    """Identical headings in both documents give no alignment errors."""
+    exam = writing_doc("Carta", "Ensayo", "Informe")
+
+    assert check_writing_alignment(exam, writing_doc("Carta", "Ensayo", "Informe")) == []
+
+
+def test_writing_alignment_names_both_swapped_positions():
+    """Two swapped titles are reported once per position, each with its own prefix."""
+    exam = writing_doc("Carta", "Ensayo", "Informe")
+    model = writing_doc("Informe", "Ensayo", "Carta")
+
+    errors = check_writing_alignment(exam, model)
+
+    assert errors_with(errors, "W1", "alignment", "Carta", "Informe")
+    assert errors_with(errors, "W3", "alignment", "Carta", "Informe")
+    assert not errors_with(errors, "W2")
+    assert len(errors) == 2
+
+
+def test_writing_alignment_reports_a_count_difference():
+    """A model file with a different task count adds one error with the W prefix."""
+    exam = writing_doc("Carta", "Ensayo", "Informe")
+
+    errors = check_writing_alignment(exam, writing_doc("Carta", "Ensayo"))
+
+    assert errors_with(errors, "alignment", "3", "2")
+    assert len(errors) == 1
+
+
+def test_writing_alignment_allows_fewer_models_while_drafting():
+    """With allow_pending a shorter model file is accepted, a longer one never is."""
+    exam = writing_doc("Carta", "Ensayo", "Informe")
+
+    assert check_writing_alignment(exam, writing_doc("Carta"), allow_pending=True) == []
+    assert errors_with(
+        check_writing_alignment(exam, writing_doc("Carta", "Ensayo", "Informe", "Extra"), allow_pending=True),
+        "alignment",
+    )
+    assert errors_with(
+        check_writing_alignment(exam, writing_doc("Otra"), allow_pending=True), "W1", "alignment"
+    )
+
+
+def test_english_writing_files_are_aligned():
+    """The shipped English exam and model answers pair up task for task."""
+    folder = SEED_SRC / "writing"
+    exam = (folder / "writing-exam.md").read_text(encoding="utf-8")
+    model = (folder / "writing-model-answers.md").read_text(encoding="utf-8")
+
+    assert check_writing_alignment(exam, model) == []
 
 
 # --- listening -------------------------------------------------------------
