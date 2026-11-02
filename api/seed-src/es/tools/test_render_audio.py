@@ -1,12 +1,15 @@
+import http.client
 import io
 import json
 import socket
 from email.message import Message
+from pathlib import Path
 import urllib.error
 import urllib.request
 
 import pytest
 
+import checks
 import render_audio
 from render_audio import main, openai_synth, render_all, render_item, validate_item
 
@@ -386,3 +389,222 @@ def test_default_transport_hides_header_values_when_the_request_cannot_be_built(
         render_audio._urllib_post("https://example.test/x", {"Authorization": "Bearer SECRET\r"}, b"{}")
 
     assert "SECRET" not in str(caught.value)
+
+
+def test_validate_item_rejects_a_voice_outside_the_tts_set():
+    """A wrong-case voice would be refused by the API after earlier lines were billed."""
+    synth = RecordingSynth()
+    item = make_item(voices={"HOST": "Nova", "ANALYST": "onyx"})
+
+    with pytest.raises(ValueError, match="HOST.*Nova") as caught:
+        render_item(item, synth)
+
+    assert synth.calls == []
+    assert "alloy" in str(caught.value)
+
+
+def test_validate_item_accepts_every_voice_and_length_the_checks_allow():
+    """The renderer and the content checks share one voice set and one length limit."""
+    for voice in checks.TTS_VOICES:
+        validate_item(make_item(voices={"HOST": voice, "ANALYST": voice}))
+    validate_item(make_item(lines=[{"speaker": "HOST", "text": "a" * checks.TTS_MAX_CHARS}]))
+    with pytest.raises(ValueError, match=str(checks.TTS_MAX_CHARS)):
+        validate_item(make_item(lines=[{"speaker": "HOST", "text": "a" * (checks.TTS_MAX_CHARS + 1)}]))
+
+
+def test_validate_item_rejects_a_voice_that_is_not_a_string():
+    """A list or number in the voices map is a clean error, not a TypeError."""
+    with pytest.raises(ValueError, match="HOST"):
+        validate_item(make_item(voices={"HOST": ["nova"], "ANALYST": "onyx"}))
+
+
+def run_cli(seed_dir, *args, synth=None, key="k"):
+    """Run `main` against `seed_dir` with a fake speech function and an injected key."""
+    return main(
+        list(args),
+        seed_dir=seed_dir,
+        environ={"OPENAI_API_KEY": key},
+        make_synth=lambda _key: synth or RecordingSynth(),
+    )
+
+
+def test_cli_does_not_blame_a_filesystem_permission_error_on_a_missing_yes(
+    tmp_path, capsys, monkeypatch, no_network
+):
+    """EACCES while writing an MP3 is a render failure, not a request for --yes."""
+    write_item(tmp_path, "listening-01")
+
+    def deny(self, data):
+        """Fail the way a read-only folder does."""
+        raise PermissionError(13, "Permission denied", str(self))
+
+    monkeypatch.setattr(Path, "write_bytes", deny)
+
+    code = run_cli(tmp_path, "--yes")
+
+    err = capsys.readouterr().err
+    assert code == 1
+    assert err.startswith("render failed: ")
+    assert "Permission denied" in err
+    assert "--yes" not in err
+
+
+def test_cli_checks_yes_before_it_calls_render_all(tmp_path, capsys, monkeypatch, no_network):
+    """Without --yes the renderer is never entered, so no filesystem work happens."""
+    write_item(tmp_path, "listening-01")
+
+    def explode(*args, **kwargs):
+        """Fail if the CLI reaches the renderer."""
+        raise AssertionError("render_all was called without --yes")
+
+    monkeypatch.setattr(render_audio, "render_all", explode)
+
+    assert run_cli(tmp_path) == 1
+    assert "--yes" in capsys.readouterr().err
+
+
+@pytest.mark.parametrize(
+    "failure",
+    [
+        urllib.error.URLError("connection refused"),
+        TimeoutError("timed out"),
+        TimeoutError(),
+        http.client.RemoteDisconnected("Remote end closed connection without response"),
+        http.client.IncompleteRead(b"ab", 10),
+    ],
+    ids=["urlerror", "timeout", "timeout-no-message", "remote-disconnected", "incomplete-read"],
+)
+def test_cli_turns_network_failures_into_one_line(tmp_path, capsys, no_network, failure):
+    """Transport errors end the run with a short message instead of a traceback."""
+    write_item(tmp_path, "listening-01")
+
+    def synth(text, voice):
+        """Fail like a dropped connection."""
+        raise failure
+
+    code = run_cli(tmp_path, "--yes", synth=synth)
+
+    err = capsys.readouterr().err
+    assert code == 1
+    assert err.startswith("render failed: ")
+    assert len(err.strip().splitlines()) == 1
+    assert "Traceback" not in err
+    assert not (tmp_path / "listening-01.mp3").exists()
+
+
+def test_cli_redacts_the_key_from_a_network_failure(tmp_path, capsys, no_network):
+    """A transport error that quotes the bearer token must not reach stderr."""
+    write_item(tmp_path, "listening-01")
+
+    def synth(text, voice):
+        """Fail with a message that echoes the credentials."""
+        raise urllib.error.URLError("rejected\nBearer sk-SECRET")
+
+    code = run_cli(tmp_path, "--yes", synth=synth, key="sk-SECRET")
+
+    captured = capsys.readouterr()
+    assert code == 1
+    assert "SECRET" not in captured.out + captured.err
+    assert len(captured.err.strip().splitlines()) == 1
+
+
+@pytest.mark.parametrize("make_dir", [False, True], ids=["missing", "empty"])
+def test_cli_reports_a_seed_folder_without_scripts(tmp_path, capsys, no_network, make_dir):
+    """Nothing to render is an error, not a silent success."""
+    seed_dir = tmp_path / "listening"
+    if make_dir:
+        seed_dir.mkdir()
+        (seed_dir / "notes.json").write_text("{}", encoding="utf-8")
+    synth = RecordingSynth()
+
+    code = run_cli(seed_dir, "--yes", synth=synth)
+
+    err = capsys.readouterr().err
+    assert code == 1
+    assert f"no listening-NN.json in {seed_dir}" in err
+    assert synth.calls == []
+
+
+def test_render_all_raises_for_a_folder_without_scripts(tmp_path):
+    """The library call fails loudly too, even when --only names an item."""
+    with pytest.raises(ValueError, match="no listening-NN.json"):
+        render_all(tmp_path, RecordingSynth(), confirmed=True)
+    with pytest.raises(ValueError, match="no listening-NN.json"):
+        render_all(tmp_path, RecordingSynth(), confirmed=True, only={"listening-01"})
+
+
+@pytest.mark.parametrize("content", ["{not json", "[1, 2]", ""], ids=["syntax", "not-an-object", "empty"])
+def test_cli_names_the_script_with_malformed_json(tmp_path, capsys, no_network, content):
+    """A broken file is named by stem and nothing is rendered, not even the good scripts."""
+    write_item(tmp_path, "listening-01")
+    (tmp_path / "listening-02.json").write_text(content, encoding="utf-8")
+    synth = RecordingSynth()
+
+    code = run_cli(tmp_path, "--yes", synth=synth)
+
+    err = capsys.readouterr().err
+    assert code == 1
+    assert "listening-02" in err
+    assert "Traceback" not in err
+    assert synth.calls == []
+    assert not (tmp_path / "listening-01.mp3").exists()
+
+
+def test_cli_names_the_script_that_is_not_utf8(tmp_path, capsys, no_network):
+    """Mis-encoded bytes are reported against the file that holds them."""
+    (tmp_path / "listening-04.json").write_bytes(b"\xff\xfe\x80")
+
+    code = run_cli(tmp_path, "--yes")
+
+    assert code == 1
+    assert "listening-04" in capsys.readouterr().err
+
+
+def test_render_all_skip_existing_leaves_finished_items_alone(tmp_path):
+    """A retry after a mid-batch failure must not re-synthesise or rewrite finished items."""
+    write_item(tmp_path, "listening-01")
+    write_item(tmp_path, "listening-02")
+    (tmp_path / "listening-01.mp3").write_bytes(b"OLD")
+    synth = RecordingSynth()
+
+    written = render_all(tmp_path, synth, confirmed=True, skip_existing=True)
+
+    assert written == [tmp_path / "listening-02.mp3"]
+    assert (tmp_path / "listening-01.mp3").read_bytes() == b"OLD"
+    assert len(synth.calls) == 3
+
+
+def test_render_all_overwrites_existing_mp3_by_default(tmp_path):
+    """Without the flag a re-render replaces the file, as before."""
+    write_item(tmp_path, "listening-01")
+    (tmp_path / "listening-01.mp3").write_bytes(b"OLD")
+
+    render_all(tmp_path, RecordingSynth(), confirmed=True)
+
+    assert (tmp_path / "listening-01.mp3").read_bytes() != b"OLD"
+
+
+def test_cli_skip_existing_reports_what_it_skipped(tmp_path, capsys, no_network):
+    """`--skip-existing` renders the rest and says which items were left alone."""
+    write_item(tmp_path, "listening-01")
+    write_item(tmp_path, "listening-02")
+    (tmp_path / "listening-01.mp3").write_bytes(b"OLD")
+    synth = RecordingSynth()
+
+    code = run_cli(tmp_path, "--yes", "--skip-existing", synth=synth)
+
+    out = capsys.readouterr().out
+    assert code == 0
+    assert (tmp_path / "listening-01.mp3").read_bytes() == b"OLD"
+    assert "wrote" in out and "listening-02.mp3" in out
+    assert "skipped" in out and "listening-01.mp3" in out
+    assert len(synth.calls) == 3
+
+
+def test_cli_skip_existing_is_off_by_default(tmp_path, no_network):
+    """Without the flag the CLI re-renders items that already have an MP3."""
+    write_item(tmp_path, "listening-01")
+    (tmp_path / "listening-01.mp3").write_bytes(b"OLD")
+
+    assert run_cli(tmp_path, "--yes") == 0
+    assert (tmp_path / "listening-01.mp3").read_bytes() != b"OLD"

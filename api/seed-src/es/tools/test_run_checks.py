@@ -85,6 +85,7 @@ def replace_with_bytes(path: Path, data: bytes) -> None:
 
 
 def edit_model_answers(root: Path, edit) -> None:
+    """Rewrite the Spanish model-answers file with `edit` applied to its text."""
     model = root / "api" / "seed-src" / "es" / "writing" / "writing-model-answers.md"
     replace_with_copy(model, edit(model.read_text(encoding="utf-8")))
 
