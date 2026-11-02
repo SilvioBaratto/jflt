@@ -98,7 +98,9 @@ a figure the listener would have to memorise.
 (`listening-NN`), `level` (`"C1"`), `stanag_level` (3), `topic`, `conversation_type`, `setting`,
 `voices` (`{SPEAKER: voice}`), `speakers` (`[{id, role, voice}]`), `lines` (`[{speaker, text}]`),
 `questions` (`[{id, question, options: {A–D}, answer, rationale, option_rationales: {A–D}}]`). Keys
-stay in English; values are Spanish except the voice names, the speaker ids and `"C1"`.
+stay in English; values are Spanish except the voice names, the speaker ids and `"C1"`. The `topic`
+and `conversation_type` are shown to the candidate before the audio, so the same neutrality rule as
+for reading headings applies: they name the subject and format, never the conclusion or an option.
 
 **Checked by tooling** (`check_listening`, `check_audio` in `checks.py`):
 - `stanag_level` is 3; `topic`, `conversation_type` and `setting` are non-empty.

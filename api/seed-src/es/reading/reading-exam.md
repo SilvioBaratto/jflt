@@ -12,9 +12,9 @@ Abandonar la región tampoco sería una respuesta sensata, puesto que su estabil
 
 **¿Cuál es la tesis central del texto sobre las misiones europeas de adiestramiento en el Sahel?**
 
-- **A)** Mejoraron la capacidad táctica de las unidades, pero fallaron porque la formación no se adaptó a las condiciones de combate de la región.
-- **B)** Trataron la capacidad militar como algo ajeno a la política, cuando reforzarla en Estados como los del Sahel altera el reparto interno del poder.
-- **C)** Acertaron en el planteamiento, pero se quedaron cortas: habría hecho falta formar a más unidades y durante más tiempo para estabilizar la región.
+- **A)** Reforzaron a gobiernos civiles frágiles frente a sus propios ejércitos, lo que provocó la reacción de los militares y la ruptura del orden constitucional.
+- **B)** Trataron la capacidad militar como algo ajeno a la política, cuando reforzarla en Estados de la región altera el reparto interno del poder.
+- **C)** Acertaron en el planteamiento, pero se quedaron cortas: habría hecho falta formar a más unidades y durante más tiempo.
 - **D)** Perdieron su sentido sobre todo por la llegada de proveedores de seguridad rivales, que ofrecían a los gobiernos de la región condiciones mucho menos exigentes.
 
 ### 2. (Las adquisiciones europeas de defensa: comprar fuera o fabricar dentro)
@@ -25,7 +25,7 @@ Lo que esa dicotomía oculta es que el cuello de botella está menos en la decis
 
 Planteado así, el problema cambia de naturaleza. No se trata tanto de elegir entre rapidez y soberanía como de ofrecer a la industria la previsibilidad que justifique invertir. Contratos a largo plazo, compras conjuntas entre Estados miembros y especificaciones comunes podrían hacer más por la autonomía que cualquier cláusula de preferencia europea. Mientras los gobiernos sigan comprando al ritmo de cada urgencia, seguirán descubriendo que su propio modelo de compra es lo que les impide responder a tiempo a la siguiente.
 
-**¿Qué función cumple en el argumento la observación de que los proveedores de fuera «tampoco entregan de inmediato»?**
+**¿Qué función cumple en el argumento la última frase del segundo párrafo?**
 
 - **A)** Introduce una concesión a los partidarios de comprar fuera, al admitir que sus sistemas siguen siendo los únicos disponibles a corto plazo.
 - **B)** Ilustra con un caso concreto por qué las empresas europeas no han ampliado sus líneas de montaje pese a contar con diseños competitivos.
@@ -43,9 +43,9 @@ La alternativa habitual, las transferencias dirigidas a los hogares vulnerables,
 **¿Cómo valora el artículo la bonificación general a los carburantes?**
 
 - **A)** La considera una respuesta comprensible dada la urgencia del momento, aunque costosa y reveladora de que no se habían previsto herramientas mejor dirigidas.
-- **B)** La juzga un error difícil de justificar, puesto que las transferencias dirigidas a los hogares vulnerables podían haberse aplicado con la misma rapidez.
-- **C)** La ve como un acierto por su rapidez, aunque admite que fue cara, y subraya que alivió sobre todo a los hogares con menos ingresos.
-- **D)** La valora sobre todo por haber contenido el consumo de combustible en plena crisis, a pesar del elevado coste que supuso para las arcas públicas.
+- **B)** La considera comprensible en plena emergencia, aunque le reprocha sobre todo el agujero que abrió en las cuentas públicas cuando más falta hacía el dinero.
+- **C)** La considera defendible por su rapidez y sugiere repetirla en la próxima crisis, siempre que se prevea desde el principio una retirada escalonada.
+- **D)** La considera comprensible, aunque cree que su mayor perjuicio fue disuadir a los gobiernos de preparar transferencias dirigidas a los hogares vulnerables.
 
 ### 4. (Las universidades europeas ante la investigación con fines militares)
 
@@ -59,10 +59,10 @@ Nada de esto hace ingenua la preocupación ética; lo que sí sugiere es que una
 
 **¿Qué se desprende del texto acerca de las declaraciones universitarias que excluyen la colaboración militar?**
 
-- **A)** Obedecen a una inquietud ética infundada, puesto que la investigación académica rara vez tiene aplicaciones de interés para la defensa.
-- **B)** Han logrado impedir que los hallazgos de la investigación civil acaben en sistemas de armas, aunque a costa de perder fuentes de financiación.
-- **C)** Se basan en un criterio fácil de comprobar que, paradójicamente, resta a la universidad capacidad de influir en el uso que otros hagan de sus hallazgos.
-- **D)** Deberían sustituirse por una prohibición general de publicar trabajos cuyos resultados puedan tener aplicaciones militares o de seguridad.
+- **A)** Trasladan la responsabilidad a cada investigador, que es quien decide en último término a qué fines civiles o militares se aplican sus resultados.
+- **B)** Expresan una inquietud que el autor comparte, hasta el punto de proponer que el veto alcance también a los fondos civiles con posibles usos bélicos.
+- **C)** Se basan en un criterio fácil de comprobar, pero que deja a la universidad sin capacidad de influir en el uso que otros den a sus hallazgos.
+- **D)** Deberían mantenerse, aunque acompañadas de una mayor transparencia sobre el origen de los fondos que recibe cada grupo de investigación.
 
 ### 5. (Las políticas públicas contra la despoblación rural)
 
@@ -76,10 +76,10 @@ Atraer nuevos habitantes sigue siendo útil, pero conviene admitir que la poblac
 
 **¿Qué significa en este contexto la expresión «menos vistosa» referida a la política de retener población?**
 
-- **A)** Que sus resultados son más difíciles de medir, porque los vecinos que deciden quedarse no figuran en las estadísticas demográficas oficiales.
-- **B)** Que suele gestionarse con menos transparencia, ya que las administraciones prefieren no divulgar el coste real de mantener los servicios rurales.
-- **C)** Que resulta menos eficaz para frenar la despoblación que las ayudas destinadas a atraer a teletrabajadores y a nuevas familias.
-- **D)** Que se traduce en gastos continuos y poco llamativos, de los que resulta difícil obtener un rédito político ante la opinión pública.
+- **A)** Que exige un presupuesto más modesto, ya que mantener una escuela o un consultorio cuesta menos que rehabilitar viviendas para nuevos vecinos.
+- **B)** Que su coste se diluye en las partidas ordinarias de educación, sanidad y transporte, y apenas consta como gasto contra la despoblación.
+- **C)** Que se aplica con una discreción buscada, porque las administraciones prefieren no publicitar medidas dirigidas a quienes ya viven en el pueblo.
+- **D)** Que se traduce en gastos continuos que no se prestan a inauguraciones, de modo que aportan poco rédito político ante la opinión pública.
 
 ### 6. (Las subvenciones a la modernización del regadío)
 
@@ -91,10 +91,10 @@ La tecnología conserva, con todo, ventajas claras: reduce la erosión, mejora l
 
 **¿Qué se deduce del texto sobre las ayudas a la modernización del regadío que se concedan en el futuro?**
 
-- **A)** Deberían suprimirse, porque el riego por goteo ha resultado perjudicial para los suelos y ha empeorado la calidad de las aguas subterráneas.
-- **B)** Deberían condicionarse a que se acoten los derechos de uso de cada cuenca, para que el volumen liberado no acabe regando nuevas superficies.
+- **A)** Deberían reducirse poco a poco, ya que el goteo ha favorecido en muchas fincas el paso a cultivos más exigentes y rentables.
+- **B)** Deberían condicionarse a que se revisen las concesiones de agua, para que el volumen liberado no acabe regando nuevas superficies.
 - **C)** Deberían ir ligadas a campañas de sensibilización que persuadan a los agricultores de no sustituir sus cultivos tradicionales por otros más rentables.
-- **D)** Tendrían que concentrarse en las parcelas que aún riegan por inundación, que son aquellas donde el ahorro de agua por hectárea resulta mayor.
+- **D)** Deberían condicionarse a que cada finca acredite un ahorro de agua por hectárea, ya que ese es el indicador que mejor refleja el éxito de la modernización.
 
 ### 7. (Las relaciones entre la Unión Europea y América Latina)
 
@@ -108,10 +108,10 @@ Si la Unión quiere que la relación con la región sea algo más que retórica,
 
 **¿Qué tono adopta el artículo al analizar la política europea hacia América Latina?**
 
-- **A)** Comprensivo con la prudencia europea, pues considera que la lentitud es el precio razonable de unas normas estables que la región terminará valorando.
+- **A)** Nostálgico, pues lamenta que se haya perdido la afinidad cultural y humana que durante décadas unió a Europa con la región.
 - **B)** Crítico con Bruselas pero resignado, pues da a entender que la región ya ha optado por otros socios y que poco cabe hacer al respecto.
-- **C)** Exigente con la Unión, ya que reconoce las bazas con que cuenta Europa y le reprocha que la lentitud de sus decisiones las desaproveche.
-- **D)** Irónico y desdeñoso hacia los valores compartidos, que presenta como un mero recurso de cumbre sin correspondencia con los vínculos reales entre ambas regiones.
+- **C)** Exigente con la Unión: reconoce sus bazas, pero le reprocha que la lentitud de sus decisiones las desaproveche frente a socios más rápidos.
+- **D)** Sarcástico con la diplomacia europea, cuyos discursos presenta como simple retórica para disimular la falta de interés real por la región.
 
 ### 8. (La reserva voluntaria de las Fuerzas Armadas)
 
@@ -142,12 +142,12 @@ Menos defendible parece convertir la norma en chivo expiatorio de un problema qu
 
 **¿Qué posición adopta el texto ante la tesis de que la regulación explica el retraso europeo en inteligencia artificial?**
 
-- **A)** La considera acertada en parte, pues reparte la responsabilidad del retraso a partes iguales entre unas normas exigentes y una inversión todavía insuficiente.
+- **A)** La cuestiona, pero atribuye el retraso a que la regulación ha ahuyentado el capital que la industria tecnológica europea necesitaba para crecer.
 - **B)** La juzga exagerada y atribuye el retraso sobre todo a la escala, aunque reconoce el riesgo que una aplicación dispar de las normas supone para las pymes.
-- **C)** La relativiza, pero sitúa el principal obstáculo en la interpretación desigual de las normas entre Estados miembros, que convendría armonizar cuanto antes.
+- **C)** La relativiza, pero sitúa el principal obstáculo en que cada Estado miembro interprete las normas a su manera, algo que convendría corregir cuanto antes.
 - **D)** La rechaza en el caso de las grandes compañías, pero la comparte respecto de las empresas emergentes, a las que la norma empuja a instalarse fuera de Europa.
 
-### 10. (La resiliencia de las cadenas de suministro y su financiación)
+### 10. (La resiliencia de las cadenas de suministro)
 
 Tras las interrupciones de suministro de los últimos años, pocas palabras se han repetido tanto en los foros económicos como «resiliencia». Gobiernos y empresas coinciden en que depender de un único proveedor lejano para componentes críticos es una imprudencia, y abundan los planes para diversificar orígenes, acercar la producción o acumular existencias de seguridad. Cuando se pasa de los planes a las cuentas, sin embargo, el entusiasmo se enfría.
 
@@ -155,9 +155,9 @@ La razón es conocida. Diversificar proveedores o mantener inventarios elevados 
 
 Admitido esto, la pregunta pertinente es quién paga y por qué vía, y ninguna de las respuestas sale gratis. Las subvenciones trasladan el coste al contribuyente y exponen al Estado a financiar inversiones que las empresas habrían hecho de todos modos. Las reservas estratégicas públicas obligan a decidir qué productos almacenar y en qué cantidad, una tarea en la que las administraciones no siempre aciertan. Las obligaciones regulatorias, como exigir un número mínimo de proveedores, reparten la carga entre los competidores, pero acaban repercutiendo en los precios que paga el consumidor. Elegir entre estos instrumentos supone decidir a quién se pide que financie una seguridad que beneficia a todos, y esa decisión, más política que técnica, es la que los planes de resiliencia suelen aplazar.
 
-**¿Qué conclusión puede extraerse del texto sobre los instrumentos públicos para financiar la resiliencia?**
+**¿Qué conclusión puede extraerse del texto sobre los instrumentos públicos que menciona para reforzar la resiliencia?**
 
-- **A)** Las reservas estratégicas gestionadas por el Estado son la vía más eficaz, porque evitan que el coste acabe repercutiendo en los precios que paga el consumidor.
-- **B)** Sus inconvenientes son tan parecidos que lo más prudente sería dejar que el propio mercado corrija con el tiempo la falta de resiliencia.
+- **A)** Las reservas estratégicas públicas resultan la opción más equilibrada, ya que evitan que el coste acabe repercutiendo en los precios que paga el consumidor.
+- **B)** Comparten un mismo punto débil: dependen de que la administración prevea qué productos serán críticos, algo en lo que no siempre acierta.
 - **C)** Acaban trasladando el coste al contribuyente, de modo que elegir entre ellos es una cuestión de eficacia más que de reparto de la carga.
-- **D)** Cada uno reparte el coste de una manera distinta, de modo que optar por uno u otro implica decidir quién costea una protección colectiva.
+- **D)** Al repartir cada uno el coste de forma distinta, elegir entre ellos equivale a decidir quién paga una protección que beneficia al conjunto.
