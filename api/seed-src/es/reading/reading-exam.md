@@ -471,3 +471,157 @@ Ninguna de estas dificultades resta valor a la idea, pero todas ellas plantean u
 - **B)** Que su resultado dependerá sobre todo de evitar la tala de los árboles maduros, que hoy dan a las calles mucha más sombra que la que aportarán los nuevos ejemplares.
 - **C)** Que su resultado será más simbólico que real, porque el efecto del arbolado sobre la temperatura de las calles es menor de lo que suele suponerse.
 - **D)** Que su resultado dependerá sobre todo de cuántos árboles se planten, porque la rebaja de temperatura en las calles aumenta con cada nuevo ejemplar.
+
+## Level 4
+
+### 31. (Los comunicados conjuntos que cierran las cumbres bilaterales)
+
+Leído sin preparación, el comunicado conjunto que se publica al término de una cumbre bilateral describe un mundo sin conflictos. Las conversaciones han sido «francas y constructivas», las delegaciones han «intercambiado puntos de vista» sobre los asuntos pendientes y ambos gobiernos se comprometen a «seguir trabajando» para resolverlos. El lector curtido sabe traducir: una conversación franca es una discusión áspera, el intercambio de puntos de vista equivale a constatar que no hubo acuerdo y el compromiso de seguir trabajando anuncia que el expediente vuelve al cajón del que salió.
+
+Esa traducción suele circular como una anécdota sobre la hipocresía del oficio, y la anécdota se queda corta. En las cancillerías, cada fórmula tiene un valor tan reconocido como el de una moneda: se sabe cuánto pesa cada adjetivo, y la desaparición de uno que figuraba en el comunicado anterior da que hablar durante semanas. Gracias a ese código, dos gobiernos pueden firmar el mismo texto y ofrecer en casa versiones distintas del encuentro sin que su desacuerdo se convierta en una humillación pública que alguno de ellos se sentiría obligado a vengar. La vaguedad, bien entendida, es el servicio que el comunicado presta, y no un defecto de su redacción.
+
+El sistema descansa, sin embargo, en una premisa que empieza a fallar: que el comunicado sea la única versión autorizada de lo ocurrido. Hoy, antes de que los analistas de las cancillerías hayan terminado de pesar los adjetivos, los propios mandatarios han difundido en sus redes un relato propio, a menudo más tajante y a veces incompatible con el que acaban de firmar. El texto pactado sobrevive como el único lugar donde el desacuerdo se administra con cuidado. Nunca se había puesto tanto esmero en un documento destinado a tan pocos lectores.
+
+**¿Con qué propósito traduce el texto, en el primer párrafo, las fórmulas habituales de estos comunicados?**
+
+- **A)** Denunciar que la diplomacia oculta sus fracasos a los ciudadanos tras unas fórmulas huecas que el profano no está en condiciones de descifrar.
+- **B)** Señalar que la mayoría de las cumbres bilaterales termina sin acuerdo alguno, algo que los gobiernos procuran disimular presentando sus resultados como un éxito.
+- **C)** Mostrar que unas fórmulas en apariencia huecas transmiten, a quien domina sus claves, una información precisa y fiable sobre lo que sucedió en el encuentro.
+- **D)** Celebrar la claridad del lenguaje diplomático, gracias a la cual cualquier ciudadano puede saber de inmediato qué se acordó realmente en la cumbre.
+
+### 32. (Los informes periódicos sobre la disponibilidad de las unidades militares)
+
+Cada trimestre, las unidades comunican a sus mandos superiores su grado de disponibilidad mediante un código de tres colores que cualquier conductor reconocería al instante. El verde indica que el personal, el material y el adiestramiento permiten cumplir la misión asignada; el rojo, que no lo permiten; el ámbar, que existen carencias que limitan la capacidad sin llegar a anularla. La sencillez del sistema es su gran virtud: un oficial de estado mayor puede abarcar en una sola pantalla la situación de decenas de unidades.
+
+En la práctica, los colores han adquirido además un significado que ningún reglamento recoge. Un verde rotundo despierta en los escalones superiores una sospecha inmediata: el jefe de la unidad o no ha mirado con atención o peca de optimista. El rojo desencadena visitas de inspección, reuniones, explicaciones por escrito y una anotación poco favorable en la hoja de servicios de quien lo firmó. El ámbar, a diferencia de ambos, no compromete a nadie. Sirve igual para la falta de un repuesto que para la de media flota de vehículos, y quien lo elige sabe que ha cumplido con su deber de advertir sin haber dado a nadie un disgusto.
+
+Visto desde el cuartel general, el resultado es un panorama de una serenidad admirable, un mar de ámbar en el que nada parece urgente porque todo parece regular. Alguna vez se ha propuesto sustituir la escala por otra con más matices, lo que no resolvería gran cosa: solo ofrecería más tonos intermedios en los que refugiarse. Los jefes de unidad no mienten; responden con lógica a un sistema que encarece las malas noticias. El semáforo, en suma, nunca se equivoca del todo: siempre aconseja prudencia.
+
+**¿Cómo debe interpretarse la «serenidad admirable» que, según el texto, ofrece el panorama visto desde el cuartel general?**
+
+- **A)** Como un indicio de que la calma de los informes es engañosa, pues refleja menos el estado de las unidades que lo que a sus jefes les cuesta dar malas noticias.
+- **B)** Como un reconocimiento de que el sistema cumple su función, ya que permite al estado mayor abarcar de un vistazo la situación de decenas de unidades sin perderse en detalles.
+- **C)** Como una constatación de que casi todas las unidades se hallan en una situación intermedia, con carencias que reducen su capacidad sin impedirles cumplir su misión.
+- **D)** Como una acusación contra los jefes de unidad, que ocultan de forma deliberada las deficiencias de su material para no comprometer su carrera.
+
+### 33. (Los estudios de impacto económico de los grandes acontecimientos deportivos)
+
+Los estudios de impacto económico que acompañan la candidatura de una ciudad a unos juegos olímpicos o a una gran final continental tienen una cualidad envidiable: rara vez decepcionan a quien los encarga. Suman el gasto previsto de los visitantes, el de las obras y el de la organización, aplican al total un multiplicador generoso y llegan a cifras de empleo y de actividad que justifican con holgura el desembolso público.
+
+Las evaluaciones que se hacen años después, cuando ya no hay candidatura que defender, suelen ser más sobrias. Los aficionados que acuden a la competición desplazan a otros turistas, que esas semanas evitan la ciudad por miedo a las aglomeraciones; muchos residentes se marchan de vacaciones o gastan en entradas lo que habrían gastado en otra cosa; y las instalaciones levantadas para quince días de competición exigen después un mantenimiento que casi nunca se había presupuestado. El balance neto, cuando alguien se molesta en calcularlo, resulta modesto y, en ocasiones, negativo.
+
+Cabría concluir que las ciudades candidatas se dejan engañar por sus propios estudios. Es más probable que muchas sepan muy bien lo que compran. Una fecha inaplazable, con medio mundo pendiente de ella, es un instrumento político formidable: obliga a terminar en siete años una línea de metro, una depuradora o la rehabilitación de un barrio, proyectos que en condiciones normales habrían dormido décadas en los cajones entre recursos judiciales, disputas entre administraciones y cambios de gobierno. El acontecimiento hace las veces de un plazo que nadie se atreve a incumplir, y el estudio de impacto, de envoltorio presentable para una decisión tomada por otros motivos.
+
+¿Tan difícil resulta defender una línea de metro por sus propios méritos que haga falta una ceremonia inaugural con fuegos artificiales para justificarla?
+
+**¿Qué da a entender el autor acerca de muchas de las ciudades que presentan estas candidaturas?**
+
+- **A)** Que se dejan deslumbrar por estudios hechos a la medida de quien los paga, y por eso asumen unos gastos que después no logran recuperar.
+- **B)** Que ven en el acontecimiento sobre todo un calendario forzoso para acabar obras bloqueadas, y que sus estudios sirven más para justificar que para decidir.
+- **C)** Que deberían renunciar a presentarse, porque las instalaciones levantadas para unas pocas semanas de competición acaban lastrando durante años las cuentas municipales.
+- **D)** Que necesitarían estudios encargados a organismos independientes, capaces de descontar el gasto que el acontecimiento se limita a desplazar de un sector a otro.
+
+### 34. (La edición genética de cultivos y la normativa sobre organismos modificados)
+
+En muchos ordenamientos, la normativa sobre organismos modificados genéticamente distingue con encomiable firmeza entre dos maneras de alterar el genoma de una planta. La primera consiste en exponer miles de semillas a radiaciones o a sustancias químicas que provocan mutaciones al azar, sembrarlas y quedarse con los pocos ejemplares que muestran algún rasgo útil, sin saber muy bien qué otros cambios arrastran consigo. La segunda, mucho más reciente, permite modificar una sola letra del genoma en el punto exacto que se elige. La ley considera la primera una técnica convencional, exenta de controles especiales, y somete la segunda a años de evaluación, etiquetado y trazabilidad.
+
+El criterio invocado es el de la experiencia. La mutagénesis por radiación se emplea desde mediados del siglo pasado, y de ella proceden variedades de cereales y de cítricos que se consumen a diario sin que la mayoría de la gente lo sepa y sin que se les conozcan efectos nocivos. Es un argumento respetable, aunque conduce a una conclusión curiosa: el método que altera el genoma a ciegas pasa por ser el de confianza, y el que lo hace con precisión, el sospechoso. Más que el riesgo del producto, la norma parece medir la antigüedad del procedimiento.
+
+Los partidarios de la regulación actual replican que precisión no equivale a inocuidad, y la objeción no carece de fundamento: una herramienta más potente permite también modificaciones más ambiciosas. Pero si esa es la preocupación, lo coherente sería examinar los rasgos que se introducen, ya sea la tolerancia a un herbicida o un cambio en el contenido de un nutriente, con independencia del método empleado. Cabe prever que, dentro de medio siglo, la edición genética reciba a su vez el título de técnica convencional, sin más mérito para entonces que el de haber envejecido.
+
+**¿Qué actitud adopta el autor ante el criterio con que la normativa distingue las dos técnicas?**
+
+- **A)** Lo comparte en lo esencial, pues la experiencia acumulada durante décadas con la mutagénesis ofrece una garantía que la edición genética todavía no puede aportar.
+- **B)** Lo acepta como razonable, ya que una herramienta capaz de cambios más ambiciosos justifica por sí misma un periodo de evaluación más largo y más exigente.
+- **C)** Lo critica sobre todo por el etiquetado obligatorio, que alarma al consumidor sin informarle, cuando este ya come a diario variedades mutadas sin saberlo.
+- **D)** Lo considera incoherente, pues somete a más controles la técnica más precisa solo por ser la más reciente, en vez de juzgar cada variedad por los cambios que incorpora.
+
+### 35. (La revisión de las lecturas obligatorias en el bachillerato)
+
+Siempre que una reforma educativa revisa la lista de lecturas obligatorias del bachillerato, la comisión encargada justifica sus decisiones en un lenguaje impecablemente técnico: competencia lectora, adecuación a la edad, equilibrio entre géneros y épocas. La escena cuenta con un precedente ilustre. En el sexto capítulo del Quijote, el cura y el barbero someten a escrutinio la biblioteca del hidalgo para quemar los libros que lo han trastornado y, con la solemnidad de un tribunal, van dictando sentencia volumen por volumen. El lector advierte pronto que el rigor es menor de lo que aparenta: se salva el libro del amigo, se indulta al autor admirado y se condena sin apenas examen al que nunca fue del gusto de los jueces.
+
+Las comisiones de hoy no queman nada, desde luego, y sus miembros suelen ser profesores con muchos años de aula. Basta, aun así, comparar dos listas separadas por un par de décadas para reconocer el gesto. Los títulos que se incorporan dicen menos sobre las necesidades de los alumnos que sobre la imagen que de sí misma quiere ver la generación que los elige: sus inquietudes, sus lecturas de juventud, la idea de país que aspira a transmitir. Los que salen apenas se discuten; desaparecen en silencio, como los volúmenes que en la novela acaban en la hoguera cuando a los jueces se les agota la paciencia.
+
+Que el gusto de lectores expertos oriente la selección no tiene, por sí mismo, nada de escandaloso; peor sería dejarla en manos de un algoritmo de preferencias juveniles. Convendría, eso sí, no presentar como pura pedagogía lo que tiene mucho de autorretrato. Hay, por cierto, un título que ninguna comisión se ha atrevido nunca a tocar, y es justamente el que contiene la escena del escrutinio. Que pocos alumnos lleguen a terminarlo es un detalle en el que las comisiones, comprensiblemente, prefieren no detenerse.
+
+**¿Qué función cumple en el argumento el recuerdo del escrutinio de la biblioteca del hidalgo?**
+
+- **A)** Denunciar como una forma de censura las listas oficiales, que, igual que la hoguera de la novela, privan a los alumnos de las obras que se retiran.
+- **B)** Insinuar que, tras su lenguaje técnico, las comisiones deciden con frecuencia según los gustos y las simpatías personales de sus propios integrantes.
+- **C)** Advertir del daño que pueden causar las malas lecturas, como le ocurre al hidalgo, y justificar así el cuidado con que se seleccionan los libros escolares.
+- **D)** Reivindicar los clásicos frente a las obras actuales, dado que la novela de Cervantes resiste en la lista a todas las revisiones que se suceden.
+
+### 36. (Los programas de control de las especies exóticas invasoras)
+
+El vocabulario con que se habla de las especies exóticas invasoras procede casi por entero del parte de guerra. Hay invasores que colonizan los ríos, frentes que avanzan cuenca arriba, campañas de erradicación y voluntarios movilizados para defender un humedal. Ese lenguaje tiene una eficacia indudable: convierte un problema ecológico difuso en una causa con enemigo, y un enemigo moviliza fondos y voluntades mejor que cualquier informe técnico.
+
+Toda guerra, sin embargo, promete una victoria, y ahí empiezan las dificultades. Cuando un pez, un molusco o una planta acuática se han asentado en una cuenca, la erradicación resulta casi siempre inalcanzable; lo realista es contener su expansión, proteger los enclaves más valiosos y asumir una presencia que ya no va a desaparecer. Un programa que mantiene a raya a un mejillón invasor durante veinte años ha hecho bien su trabajo, pero, juzgado con la vara de la guerra, parece una derrota interminable. Los presupuestos, concedidos para ganar, se recortan cuando la victoria no llega, y la especie recupera en dos temporadas el terreno que había perdido en diez.
+
+Los partes de guerra, por lo demás, omiten un detalle incómodo. Muchas de estas especies llegaron por decisiones humanas que en su día parecieron sensatas: peces soltados para la pesca deportiva, plantas ornamentales elegidas por su resistencia, crustáceos importados para la acuicultura. El enemigo, en no pocos casos, fue invitado. Recordarlo no exime de controlarlo, pero sí aconseja un lenguaje menos épico, más próximo al de la jardinería que al de la estrategia militar: un cuidado constante, sin desfiles de victoria.
+
+**¿Cuál es, según el autor, el principal inconveniente de plantear el control de estas especies como una guerra?**
+
+- **A)** Que presenta como enemigos a unos seres vivos que no eligieron su destino, lo que resulta injusto con unas especies trasladadas allí por decisión humana.
+- **B)** Que legitima métodos de erradicación agresivos, como el veneno o la caza masiva, cuyos daños colaterales acaban alcanzando también a las especies autóctonas.
+- **C)** Que impone una meta que pocas veces se alcanza, de modo que contener la especie, lo único sensato, se toma por un fracaso que justifica recortes.
+- **D)** Que moviliza menos apoyos de lo esperado, porque el público se cansa pronto de unas campañas cuyo tono alarmista les resta credibilidad.
+
+### 37. (Las potencias medias ante la rivalidad entre grandes bloques)
+
+En las capitales de las grandes potencias se ha extendido la costumbre de reprochar a ciertos países su equidistancia. La palabra se pronuncia con el desdén que antes se reservaba a la tibieza: se acusa a esos Estados de comprar armas a un bloque y tecnología al otro, de votar en cada resolución según les convenga y de recibir con la misma alfombra roja a delegaciones enfrentadas. La consigna implícita es antigua y no admite matices: quien no está conmigo está contra mí.
+
+No debe confundirse, no obstante, esa conducta con la neutralidad clásica. El Estado neutral se aparta: proclama que no tomará parte en los conflictos ajenos y confía en que se le respete por ello. Las potencias medias de hoy hacen casi lo contrario. Participan en todo y con todos, y esa presencia simultánea es su mejor seguro, porque cada vínculo con un bloque encarece el castigo que el otro podría imponerles. Su política exterior se parece menos a una abstención que a un ejercicio de equilibrio permanente, que exige diplomáticos numerosos, información fina y la disposición a decepcionar un poco a todos para no depender por completo de ninguno.
+
+Que las grandes potencias lo llamen oportunismo tiene su gracia, pues ellas mismas mantienen entre sí un comercio que ni las peores crisis han logrado interrumpir. Bien mirado, el reproche apunta a otra cosa: a que los demás se tomen con ambos bandos la libertad que los grandes se permiten entre ellos. Está por ver cuánto tiempo podrán sostener ese equilibrio estos países; de momento, les sale más barato que cualquiera de las alternativas.
+
+**¿En qué se diferencian, según el texto, estas potencias medias de los Estados neutrales clásicos?**
+
+- **A)** En que carecen de una línea propia y se limitan a seguir, en cada votación, al bloque que en ese momento les ofrece mayores ventajas.
+- **B)** En que defienden sus principios con más coherencia, ya que se niegan a respaldar en las votaciones a los bloques que vulneran el derecho internacional.
+- **C)** En que su equilibrio es más aparente que real, porque terminan inclinándose hacia el bloque que les suministra las armas y la tecnología que más necesitan.
+- **D)** En que buscan protegerse multiplicando sus lazos con los dos bandos, de modo que castigarlas salga caro, en lugar de mantenerse al margen de sus pugnas.
+
+### 38. (La propuesta de recuperar el servicio militar obligatorio)
+
+Cada cierto tiempo regresa al debate público la propuesta de recuperar el servicio militar obligatorio, y siempre lo hace envuelta en el mismo vocabulario solemne. Se invoca la cohesión nacional, el crisol en el que jóvenes de toda procedencia aprenderían a convivir, la disciplina que tanta falta le haría a una generación criada entre pantallas y el deber de todo ciudadano de contribuir a la defensa común. Pronunciada desde una tribuna, la idea tiene algo de irresistible.
+
+Llama la atención, por otra parte, el escaso entusiasmo de la institución que tendría que acoger a los reclutas. Los ejércitos profesionales llevan décadas organizándose en torno a unidades reducidas, material complejo y largos periodos de formación. Un soldado que sirva nueve meses empieza a resultar útil más o menos cuando le llega la hora de volver a casa, y mientras tanto ocupa a los sargentos y oficiales que deberían instruir a la tropa profesional. Faltan acuartelamientos, faltan instructores y falta presupuesto para alojar, alimentar y equipar cada año a decenas de miles de jóvenes. Dicho en román paladino, los cuarteles no están para muchos trotes.
+
+Puede que la sociedad necesite, en efecto, espacios donde jóvenes de procedencias distintas aprendan a convivir, y no es un objetivo menor. Existen, de hecho, fórmulas de servicio civil que persiguen ese fin sin necesidad de uniformes ni de cuarteles. Más difícil resulta entender por qué habría que encargar esa tarea precisamente a la institución que, con la cortesía que impone la disciplina, lleva tiempo dando a entender que no la quiere.
+
+**¿Qué postura deja entrever el autor ante esta propuesta?**
+
+- **A)** La ve poco práctica para unos ejércitos sin medios, y cree que sus fines sociales podrían lograrse sin necesidad de uniformes.
+- **B)** La comparte en lo esencial, pues cree que la sociedad necesita espacios en los que jóvenes de procedencias distintas aprendan a convivir y a respetarse.
+- **C)** La rechaza por una cuestión de principio, al entender que obligar a servir en filas vulnera la libertad de cada joven para decidir su propio futuro.
+- **D)** La considera viable siempre que antes se dote a los ejércitos de los acuartelamientos, los instructores y el presupuesto que hoy echan en falta.
+
+### 39. (La inflación oficial y la percepción de los precios entre los ciudadanos)
+
+Las encuestas revelan con regularidad que los ciudadanos creen que los precios suben el doble de lo que indica el índice oficial, y los informes técnicos suelen despachar la discrepancia con una paciencia casi pedagógica. El público, se explica, recuerda mejor las subidas que las bajadas, se fija en los productos que compra a menudo y no pondera, como hacen los estadísticos, el peso de cada bien en la cesta de consumo. La conclusión se impone sola: hay un sesgo, y los sesgos se corrigen informando mejor.
+
+A esa explicación solo cabe ponerle un reparo menor: describe con bastante exactitud lo que el ciudadano está midiendo. El índice oficial calcula cuánto cuesta una cesta media que incluye, debidamente prorrateados, el coche que se cambia cada diez años, el ordenador y el viaje de verano. El ciudadano, en cambio, pasa por caja cada semana con el pan, la fruta, el aceite y el combustible, que en los periodos de inflación suelen figurar entre los productos que más se encarecen. Que los televisores cuesten un 10 % menos que el año anterior es una noticia excelente para quien vaya a comprar uno; la mayoría de los hogares no lo hace todos los meses.
+
+Para los hogares de renta baja, que dedican a la alimentación y a la energía una proporción mayor de su presupuesto, la cifra que se percibe en el supermercado se acerca más a la que de verdad soportan que la del índice general. Las dos cifras, por tanto, no se contradicen; contestan a preguntas distintas. El índice dice cuánto ha variado el coste de la vida de un hogar medio que no existe en ninguna parte; la percepción, cuánto ha variado el de quien hace la compra cada sábado.
+
+**¿A quién se dirige, sobre todo, la ironía del texto?**
+
+- **A)** A los ciudadanos que, por desconocer cómo se elabora el índice, están convencidos de que los precios suben mucho más deprisa de lo que en realidad lo hacen.
+- **B)** A los institutos de estadística, que eligen la composición de la cesta de consumo de modo que la inflación oficial resulte más favorable para el gobierno.
+- **C)** A los gobiernos que se escudan en el índice general para negar el encarecimiento de la vida y retrasar las ayudas a los hogares de menor renta.
+- **D)** A los especialistas que tachan de sesgo la impresión del público, sin advertir que esta registra con fidelidad el encarecimiento de las compras más habituales.
+
+### 40. (La conservación a largo plazo de los documentos digitales)
+
+En algunos museos se exhiben tablillas de arcilla con las cuentas de mercaderes de hace cuatro mil años que cualquier especialista puede leer todavía. Y en muchas oficinas se guardan disquetes de hace treinta años cuyo contenido nadie sabe ya cómo recuperar. La comparación es un poco maliciosa con los disquetes, que nunca aspiraron a la eternidad, pero ilustra una paradoja que los archiveros conocen bien: jamás se había producido tanta información, ni había sido tan fácil perderla.
+
+La fragilidad, contra lo que suele creerse, no reside sobre todo en el soporte. Un documento digital solo es legible si existe un aparato capaz de leer el soporte, un programa que entienda el formato y un sistema operativo que ejecute ese programa, y cada eslabón de la cadena envejece a su propio ritmo y depende de empresas que pueden desaparecer o perder el interés por él. Copiar los datos a soportes nuevos cada pocos años resuelve el primer problema, pero no los demás: se conservan intactos unos ceros y unos que ya nadie sabe interpretar. La tablilla, por el contrario, no necesita intermediarios; le basta con un lector que conozca la lengua.
+
+Conservar lo digital es, por tanto, un asunto de instituciones más que de almacenamiento: alguien tiene que migrar los formatos, documentar cómo se crearon los archivos y mantener viva, durante décadas, la capacidad de abrirlos, con un gasto que no termina nunca. Cabe preguntarse qué sabrán de nuestra época los historiadores del próximo siglo, y si no tendrán más noticias de aquellos mercaderes que confiaron sus cuentas al barro.
+
+**¿Qué quiere decir el autor al calificar de «un poco maliciosa» la comparación entre las tablillas y los disquetes?**
+
+- **A)** Que insinúa una mala fe de los fabricantes, que habrían ideado a propósito soportes efímeros para obligar a sus clientes a renovar los equipos.
+- **B)** Que pide a un soporte modesto una eternidad que nadie le prometió, sin restar validez a la paradoja que los archiveros advierten.
+- **C)** Que exagera la fragilidad de los disquetes, cuyo contenido puede recuperarse casi siempre si se dispone de un aparato que todavía sea capaz de leerlos.
+- **D)** Que, aunque llamativa, enfrenta soportes que no admiten un mismo criterio, de modo que el autor la deja de lado en el párrafo siguiente.
