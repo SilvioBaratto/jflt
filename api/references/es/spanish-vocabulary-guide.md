@@ -133,7 +133,7 @@ utilizzo comune · 8. Strutture grammaticali per costruire frasi (livello C1)
 | atestado | Verbale, informativa di polizia giudiziaria (falso amico: non «attestato», che si dice certificado) |
 | suceso | Fatto, avvenimento, spesso delittuoso o di cronaca nera (falso amico: non «successo», che si dice éxito) |
 | presidio | Carcere, penitenziario (falso amico: l'it. «presidio», nel senso di guarnigione, si dice guarnición; il «presidio del territorio» si rende con control o vigilancia; in spagnolo il senso di guarnigione è storico) |
-| juez de instrucción | Giudice istruttore: in Spagna dirige le indagini penali, funzione che in Italia spetta al pubblico ministero (Spagna) |
+| juez de instrucción | Giudice istruttore: in Spagna dirige le indagini penali, funzione che in Italia spetta al pubblico ministero; la riforma della legge di procedura penale potrebbe cambiarne il ruolo (Spagna) |
 | fiscal / Fiscalía | Pubblico ministero / Procura (falso amico: come sostantivo non è «fiscale»; come aggettivo, invece, fiscal = fiscale) |
 | Audiencia Nacional | Tribunale con giurisdizione su tutto il territorio per terrorismo, criminalità organizzata e altri reati gravi (Spagna) |
 | Delegación del Gobierno | Delegazione del Governo: rappresenta il Governo centrale in ogni comunità autonoma e coordina la sicurezza pubblica; a livello provinciale c'è la Subdelegación del Gobierno, più vicina alla Prefettura (Spagna) |
@@ -228,7 +228,7 @@ utilizzo comune · 8. Strutture grammaticali per costruire frasi (livello C1)
 | UEI | Unidad Especial de Intervención | Unità speciale d'intervento della Guardia Civil (≈ GIS dei Carabinieri) (Spagna) |
 | UIP | Unidades de Intervención Policial | Reparti di ordine pubblico della Policía Nacional (≈ Reparti mobili) (Spagna) |
 | GRS | Grupos de Reserva y Seguridad | Reparti di ordine pubblico e sicurezza della Guardia Civil, inquadrati nell'Agrupación de Reserva y Seguridad (Spagna) |
-| UNIFIL / FPNUL | Fuerza Provisional de las Naciones Unidas en el Líbano | UNIFIL, forza dell'ONU in Libano: mandato finale fino al 31 dicembre 2026, poi ritiro (la Difesa spagnola usa UNIFIL; FPNUL è la sigla spagnola) |
+| UNIFIL / FPNUL | Fuerza Provisional de las Naciones Unidas en el Líbano | UNIFIL, forza dell'ONU in Libano: mandato finale fissato al 31 dicembre 2026 dalla ris. 2790 (2025), seguito dal ritiro (la Difesa spagnola usa UNIFIL; FPNUL è la sigla spagnola) |
 | ACNUR | Alto Comisionado de las Naciones Unidas para los Refugiados | UNHCR, Alto Commissariato delle Nazioni Unite per i rifugiati |
 | EE. UU. | Estados Unidos | USA, Stati Uniti (la lettera doppia indica il plurale) |
 
@@ -690,11 +690,17 @@ spagnoli sono stati verificati sul Wikcionario e sulle fonti normative e istituz
   https://www.boe.es/buscar/act.php?id=BOE-A-2002-8628 — il CNI opera dentro e fuori il territorio
   nazionale ed è adscrito al Ministerio de Defensa.
 - *Ley 10/2010, de 28 de abril, de prevención del blanqueo de capitales y de la financiación del
-  terrorismo* — https://www.boe.es/eli/es/l/2010/04/28/10/con — blanqueo de capitales; *Ley Orgánica
-  13/2022, de 20 de diciembre* — https://www.boe.es/buscar/act.php?id=BOE-A-2022-21676 — trata de seres
-  humanos.
-- *Real Decreto 757/1990, de 15 de junio, por el que se regulan las Agregadurías de Defensa* —
-  https://www.boe.es/eli/es/rd/1990/06/15/757 — Agregado de Defensa.
+  terrorismo* — https://www.boe.es/eli/es/l/2010/04/28/10/con — blanqueo de capitales; *Código
+  Penal, art. 177 bis* — https://www.boe.es/buscar/act.php?id=BOE-A-1995-25444 — trata de seres humanos.
+- *Real Decreto 959/2005, de 29 de julio, por el que se regulan las Agregadurías de Defensa* —
+  https://www.boe.es/eli/es/rd/2005/07/29/959 — Agregado de Defensa.
+- *Legge 5 agosto 2022, n. 119*, art. 7 (modifiche al Codice dell'ordinamento militare), Gazzetta
+  Ufficiale n. 189 del 13 agosto 2022 —
+  https://concorsi.difesa.it/interforze/VSP704_1bis/2017/Documents/Legge119_2022.pdf — nomi attuali
+  dei gradi dell'Esercito (graduato, graduato scelto, graduato capo, primo graduato, graduato aiutante,
+  al posto di caporal maggiore scelto, capo e capo scelto). Non esiste una tabella ufficiale di
+  equivalenza spagnolo-italiana per i gradi della tropa y marinería: le righe con ≈ sono equivalenze
+  di posizione, non ufficiali.
 - *Real Decreto 194/2010, de 26 de febrero, Normas sobre seguridad en las Fuerzas Armadas*, art. 25 —
   https://www.boe.es/buscar/act.php?id=BOE-A-2010-4219 — il centinela «informará de las novedades».
 - La Moncloa, «Administración periférica del Estado» —
