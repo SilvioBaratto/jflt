@@ -14,6 +14,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { ExamService } from '../../services/exam';
 import { CreateSessionBody } from '../../models/exam';
+import { LanguageService } from '../../services/language';
 
 type LaunchData = {
   mode: 'practice' | 'exam';
@@ -32,6 +33,7 @@ type LaunchData = {
 export class LaunchComponent implements OnInit {
   private readonly route = inject(ActivatedRoute);
   private readonly exam = inject(ExamService);
+  private readonly language = inject(LanguageService);
   private readonly router = inject(Router);
   private readonly destroyRef = inject(DestroyRef);
   private readonly heading = viewChild.required<ElementRef<HTMLElement>>('heading');
@@ -60,6 +62,7 @@ export class LaunchComponent implements OnInit {
       mode: this.data.mode,
       skill: this.data.skill,
       adaptive: true,
+      language: this.language.language(),
     };
     this.exam
       .create(body)
