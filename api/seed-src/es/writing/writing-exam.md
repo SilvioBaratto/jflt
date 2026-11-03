@@ -110,3 +110,113 @@ Escriba un ensayo analítico en el que sopese si conviene tratar la escasez de a
 - Reconocer los límites de la postura que defienda.
 - Concluir con una valoración fundamentada y, si procede, una recomendación.
 - Mantener un registro analítico e impersonal en todo el texto.
+
+## Task 9 — Nota verbal sobre interferencias en un ejercicio multinacional
+*Level 4 · formal_correspondence · 250–400 words*
+
+Usted trabaja en la Dirección General de Política Exterior y de Seguridad del Ministerio de Asuntos Exteriores, Unión Europea y Cooperación. Del 6 al 10 de marzo de 2028, una unidad española de guerra electrónica participó en el ejercicio multinacional «Estepa Abierta 28», organizado por la República de Sarvenia en su territorio. El 8 de marzo, entre las 10.40 y las 11.25, las tripulaciones de tres vuelos comerciales que se aproximaban al aeropuerto sarvenio de Kervel notificaron pérdidas intermitentes de la señal de navegación por satélite; aplicaron los procedimientos previstos para estos casos y aterrizaron sin incidentes, aunque uno de ellos tuvo que desviarse a otro aeropuerto. Según los datos preliminares, la unidad española emitió dentro del plan de frecuencias aprobado por la dirección del ejercicio, pero la causa de la interferencia aún no se ha determinado. En su nota verbal n.º 41/2028, de 13 de marzo, la Embajada de Sarvenia en Madrid afirma que la unidad española «actuó sin autorización» y «puso en grave peligro a cientos de pasajeros», exige una disculpa formal y reclama que España indemnice a las compañías aéreas por los costes del desvío.
+
+Redacte la nota verbal con la que el Ministerio responde a la Embajada. Su nota debe:
+
+- Respetar la estructura de la nota verbal: fórmula inicial en tercera persona con referencia a la nota recibida, fórmula final de cortesía, y lugar y fecha.
+- Expresar pesar por lo ocurrido y por la inquietud causada sin reconocer una responsabilidad que la investigación aún no ha establecido.
+- Matizar las dos afirmaciones de la nota sarvenia que España no comparte, sin trasladar la responsabilidad a la dirección del ejercicio.
+- Responder a la petición de indemnización sin aceptarla ni rechazarla de plano.
+- Proponer un mecanismo conjunto para esclarecer los hechos, con un plazo, y comunicar al menos una medida cautelar adoptada por España.
+
+## Task 10 — La mejora del rendimiento físico y cognitivo de los militares
+*Level 4 · essay · 350–700 words*
+
+Los avances de la farmacología y de la neurotecnología permiten ya prolongar la vigilia, acelerar el aprendizaje o atenuar los efectos del estrés en situaciones extremas. El centro de investigación militar de un Estado aliado ha anunciado ensayos con fármacos que mantendrían la capacidad de concentración de los pilotos durante más de cuarenta horas y con técnicas de estimulación cerebral no invasiva destinadas a acortar la formación de los operadores de sistemas complejos. Sus defensores sostienen que un Estado tiene el deber de dar a sus militares todas las ventajas posibles; sus detractores advierten de que el consentimiento de un militar nunca es del todo libre, de que se desconocen los efectos a largo plazo y de que la mejora obligaría a los ejércitos rivales a seguir el mismo camino.
+
+Escriba un ensayo en el que analice si las Fuerzas Armadas de un Estado democrático pueden recurrir legítimamente a técnicas de mejora del rendimiento físico o cognitivo de su personal y, en su caso, con qué límites. Su ensayo debe:
+
+- Establecer en la introducción el criterio (por ejemplo, la reversibilidad, el consentimiento o la finalidad) con el que juzgará qué intervenciones son admisibles.
+- Analizar si el consentimiento de un militar puede ser libre dentro de una estructura jerárquica y qué garantías podrían compensar esa limitación.
+- Dar voz al argumento de que el Estado debe a sus militares toda ventaja posible y concederle lo bastante como para tener que corregir su propia tesis.
+- Considerar las obligaciones del Estado hacia el militar una vez que este abandone el servicio.
+- Señalar al menos una cuestión que su propuesta deja sin resolver.
+- Concluir con una idea que no se limite a resumir lo dicho y emplear con intención al menos un recurso de estilo, como una pregunta retórica, una ironía contenida o una atenuación deliberada.
+
+## Task 11 — Respuesta a una comisión parlamentaria sobre un informe clasificado
+*Level 4 · formal_correspondence · 250–400 words*
+
+Usted es secretario de Estado de Defensa. Los días 14 y 15 de febrero de 2028, un ciberataque dejó fuera de servicio durante 36 horas el sistema informático con el que las Fuerzas Armadas gestionan sus suministros en territorio nacional. El Ministerio encargó una investigación técnica, el «Informe Cierzo», que describe las vulnerabilidades aprovechadas por los atacantes, algunas de las cuales aún no se han corregido; el informe está clasificado como secreto. La presidenta de la Comisión de Defensa del Congreso de los Diputados, Pilar Montaner Ruiz, le ha remitido una carta, fechada el 6 de marzo de 2028, en la que pide que se envíe una copia íntegra del informe a todos los miembros de la Comisión en un plazo de quince días. La carta afirma, además, citando informaciones de prensa, que el ataque «comprometió el abastecimiento de las operaciones en el exterior», lo que no es cierto: esas operaciones se abastecen a través de un sistema distinto, que no se vio afectado. Su respuesta se incorporará al expediente de la Comisión y es probable que se haga pública.
+
+Redacte la carta con la que responde a la presidenta de la Comisión. Su carta debe:
+
+- Reconocer expresamente la función de control que corresponde a la Comisión y la legitimidad de su petición.
+- Explicar por qué el informe no puede remitirse en la forma solicitada, sin que la negativa pueda leerse como desconfianza hacia los diputados.
+- Desmentir la afirmación sobre las operaciones en el exterior sin revelar detalles técnicos que pudieran estar clasificados.
+- Proponer al menos dos vías alternativas para que la Comisión acceda a la información, con fechas concretas.
+- Cuidar cada formulación teniendo en cuenta que la carta puede hacerse pública: ninguna frase debe poder interpretarse como un desaire a la Cámara ni como un intento de ocultación.
+- Emplear el tratamiento y las fórmulas propias de la correspondencia oficial entre un alto cargo del Gobierno y la presidencia de una comisión parlamentaria.
+
+## Task 12 — La regla de la unanimidad en la política exterior europea
+*Level 4 · essay · 350–700 words*
+
+En la Unión Europea, las decisiones de política exterior y de seguridad común se adoptan, salvo contadas excepciones, por unanimidad: basta la oposición de un solo Estado para bloquear una declaración, un paquete de sanciones o el lanzamiento de una misión. Varios gobiernos proponen extender la votación por mayoría cualificada a algunos de estos ámbitos para ganar rapidez y credibilidad. Otros responden que la política exterior pertenece al núcleo de la soberanía, que la unanimidad protege a los Estados pequeños y medianos y que una decisión impuesta a un Estado que la rechaza difícilmente se aplicará con convicción.
+
+Escriba un ensayo, dirigido a un público de diplomáticos y responsables políticos, en el que discuta si la Unión debería renunciar a la unanimidad en su política exterior. Su ensayo debe:
+
+- Precisar a qué tipos de decisión aplicaría la mayoría cualificada y cuáles mantendría bajo la regla de la unanimidad, y justificar la línea divisoria.
+- Analizar qué ocurre con la legitimidad y la aplicación efectiva de una decisión cuando un Estado miembro ha votado en contra.
+- Valorar qué ganaría y qué arriesgaría España, como Estado de tamaño medio, con el cambio de regla.
+- Identificar la objeción que considere más difícil de rebatir y dejar que modifique su propuesta.
+- Admitir qué problemas de la política exterior europea no resolvería ningún cambio en las reglas de votación.
+- Mantener el tono de un análisis dirigido a diplomáticos, con al menos un recurso retórico deliberado, y cerrar con una conclusión que formule una idea nueva en lugar de resumir.
+
+## Task 13 — Documento de posición sobre una reserva europea de aviones contra incendios
+*Level 4 · formal_correspondence · 250–400 words*
+
+Usted es consejero de Interior en la Representación Permanente de España ante la Unión Europea. El Consejo negocia un reglamento que crearía la Reserva Europea de Medios Aéreos contra Incendios Forestales (REMAI), una flota de 24 aviones anfibios adquiridos y mantenidos en común. El último texto transaccional de la Presidencia (documento 7412/28) prevé que los costes se repartan en proporción a la renta nacional bruta de cada Estado miembro, que los aviones tengan su base permanente en dos aeródromos de Europa central, elegidos por su posición equidistante, y que cada solicitud de activación deba ser validada por un comité de representantes de los Estados en un plazo de hasta 24 horas. España apoya la creación de la reserva y está dispuesta a aceptar el reparto de costes, aunque con él su contribución sería mayor que con el criterio basado en el riesgo de incendio que había propuesto. Considera, en cambio, inaceptables la ubicación permanente y el plazo de validación: desde Europa central, un avión anfibio tarda entre cuatro y cinco horas en llegar a un incendio en el litoral mediterráneo. Varias delegaciones del norte de Europa, donde los incendios forestales también aumentan, temen que trasladar los aviones al sur deje sin cobertura sus territorios. La presidenta del Grupo de Trabajo sobre Protección Civil ha pedido a las delegaciones un documento de posición antes de la reunión del 12 de abril de 2028.
+
+Redacte el documento de posición de España dirigido a la presidenta del grupo de trabajo. Su documento debe:
+
+- Incluir un encabezamiento con la destinataria, el asunto y la referencia del texto transaccional, y mantener de principio a fin la redacción impersonal propia de un documento de posición.
+- Explicar brevemente por qué España considera necesaria la reserva y reconocer el esfuerzo de la Presidencia.
+- Aceptar expresamente el reparto de costes y explicar por qué España lo acepta aunque no le resulte favorable.
+- Rebatir la ubicación permanente y el plazo de validación con argumentos operativos concretos.
+- Proponer una fórmula de ubicación y otra de activación que no dejen sin cobertura a los Estados del norte.
+- Formular las discrepancias sin que ninguna frase enfrente a los Estados del norte con los del sur.
+
+## Task 14 — La financiación del aumento del gasto en defensa
+*Level 4 · essay · 350–700 words*
+
+Numerosos gobiernos europeos se han comprometido a aumentar de forma sostenida su gasto en defensa durante la próxima década. Las vías para financiarlo son conocidas: emitir deuda, subir impuestos o recortar otras partidas del presupuesto. Cada una tiene sus defensores: la deuda reparte el coste entre generaciones que también se beneficiarán de la seguridad; los impuestos hacen visible el esfuerzo y lo someten al juicio de los ciudadanos; los recortes evitan aumentar la presión fiscal, pero recaen sobre otras políticas públicas.
+
+Escriba un ensayo en el que defienda la forma de financiación que considere más adecuada para un país como España. Su ensayo debe:
+
+- Proponer en la introducción una combinación concreta de fuentes de financiación, no una sola, y el principio que la ordena.
+- Relacionar la elección de cada fuente con el tipo de gasto (inversión en equipos o gastos permanentes de personal y mantenimiento) y con la duración prevista del esfuerzo.
+- Examinar si el recurso a la deuda traslada a las generaciones futuras una carga injusta o un beneficio legítimo.
+- Considerar cómo afectaría cada opción a la cohesión social y al apoyo ciudadano a la defensa.
+- Anticipar la crítica más seria que recibiría su propuesta y añadirle la garantía que esa crítica haga necesaria.
+- Cerrar extrayendo del razonamiento una consecuencia para el debate público, no un resumen de lo dicho.
+
+## Task 15 — Memorándum sobre una candidatura a una organización internacional
+*Level 4 · formal_correspondence · 250–400 words*
+
+Usted es director general de Organismos Internacionales en el Ministerio de Asuntos Exteriores, Unión Europea y Cooperación. La República de Orlania, con la que España mantiene una asociación estratégica desde 2021, ha solicitado mediante nota verbal el apoyo español a la candidatura de su ministra de Pesca, la doctora Lene Arvidsen, a la Secretaría General de la Organización Atlántica de Cooperación Pesquera, cuya Asamblea elegirá el cargo en marzo de 2029. España no puede atender la petición: hace meses, en el marco de la coordinación con sus socios de la Unión Europea, se comprometió a apoyar a otro candidato. En la reunión bilateral celebrada en Madrid el 14 de noviembre de 2028, el viceministro orlanio de Asuntos Exteriores dejó caer que la decisión española «se tendrá en cuenta» en la negociación, todavía abierta, de un acuerdo bilateral de transporte aéreo. El ministro desea preservar la relación con Orlania y está dispuesto a ofrecerle otras formas de apoyo, tanto en la Organización como en el plano bilateral.
+
+Redacte el memorándum que se entregará al embajador de Orlania en Madrid para fijar por escrito la posición española. Su texto debe:
+
+- Ajustarse a la forma de un memorándum diplomático: título, redacción impersonal en tercera persona, sin saludo ni firma, y lugar y fecha al final.
+- Elogiar a la candidata sin que el elogio pueda interpretarse como una puerta abierta.
+- Comunicar de forma inequívoca, aunque con la cortesía que exige el caso, que España no podrá apoyar la candidatura, y explicar el motivo sin identificar al otro candidato.
+- Desvincular con firmeza, pero sin reproche, la elección de la negociación sobre transporte aéreo.
+- Ofrecer al menos dos formas concretas de apoyo o de cooperación alternativas, una de ellas con fecha.
+
+## Task 16 — Extranjeros en las Fuerzas Armadas y acceso a la nacionalidad
+*Level 4 · essay · 350–700 words*
+
+Ante la dificultad de cubrir sus plazas de tropa, varios ejércitos europeos admiten ya a extranjeros con residencia legal, y algunos Estados les ofrecen, tras unos años de servicio, un acceso más rápido a la nacionalidad. Para unos, se trata de una vía de integración y de una respuesta sensata al envejecimiento de la población; para otros, la medida convierte la ciudadanía en una contraprestación, atrae sobre todo a quienes tienen menos alternativas y debilita el vínculo entre la defensa y la comunidad política que la sostiene.
+
+Escriba un ensayo para una revista de pensamiento en el que se pronuncie sobre si los Estados deben abrir sus Fuerzas Armadas a los extranjeros residentes y vincular el servicio a la adquisición de la nacionalidad. Su ensayo debe:
+
+- Responder por separado a las dos cuestiones (la admisión y el acceso a la nacionalidad), que no tienen por qué recibir la misma respuesta.
+- Explicar qué concepción de la ciudadanía presupone cada una de las posturas en debate.
+- Analizar el riesgo de que la oferta atraiga sobre todo a quienes tienen menos alternativas y las consecuencias que ello tendría.
+- Discutir el argumento más fuerte de la postura contraria a la suya y extraer de él una corrección de su propia tesis.
+- Reconocer al menos un límite de su argumentación.
+- Mantener un estilo cuidado, propio de una revista de pensamiento, con algún recurso expresivo deliberado y sin generalizaciones sobre ningún colectivo.
