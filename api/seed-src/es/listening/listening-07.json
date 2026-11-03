@@ -24,7 +24,7 @@
   "lines": [
     {
       "speaker": "PRESENTADOR",
-      "text": "Nos vamos ahora a la capital, donde la misión internacional de observadores ha presentado esta mañana su primera valoración de las elecciones presidenciales del domingo. Según los resultados oficiales, el presidente ha sido reelegido con holgura. Allí sigue nuestra corresponsal, Elena Ruiz. Elena, ¿qué ha dicho la misión?"
+      "text": "Vamos ahora con la información internacional. La misión de observadores que ha seguido las elecciones presidenciales del domingo ha presentado esta mañana su primera valoración. Según los resultados oficiales, el presidente ha sido reelegido con holgura. Desde la capital del país nos atiende nuestra corresponsal, Elena Ruiz. Elena, ¿qué ha dicho la misión?"
     },
     {
       "speaker": "CORRESPONSAL",
@@ -52,11 +52,11 @@
     },
     {
       "speaker": "CORRESPONSAL",
-      "text": "Y la noticia será otra, claro. Ese informe lo leerán algunos ministerios de Exteriores y las organizaciones que trabajan en el país, y poco más. Hace un rato, un diplomático europeo me lo resumía con cierta ironía: la declaración preliminar la oye todo el mundo, y el informe final lo lee quien ya lo sabía."
+      "text": "Hace un rato, un diplomático europeo me decía con cierta ironía que aquí hay dos calendarios: el de los periodistas, que se acaba esta semana, y el de la misión, al que aún le quedan dos meses."
     },
     {
       "speaker": "PRESENTADOR",
-      "text": "Elena Ruiz, desde la capital. Mañana volveremos a conectar con ella para conocer los próximos pasos de la oposición."
+      "text": "Gracias, Elena. Mañana volveremos a conectar con nuestra corresponsal para conocer los próximos pasos de la oposición."
     }
   ],
   "questions": [
@@ -80,19 +80,19 @@
     },
     {
       "id": 2,
-      "question": "Según la corresponsal, ¿a qué se debe la prudencia de la misión al hablar en público?",
+      "question": "¿A qué atribuye la corresponsal la prudencia de la misión al hablar en público?",
       "options": {
         "A": "A que teme que una valoración dura desate protestas en la calle y ponga en peligro a sus equipos.",
-        "B": "A que necesita el visto bueno del Gobierno para trabajar y deja el examen detallado para más adelante.",
-        "C": "A que sus observadores llegaron tarde al país y apenas pudieron seguir la campaña electoral.",
+        "B": "A que su presencia en el país depende de la voluntad del Gobierno, y aún tiene trabajo pendiente allí.",
+        "C": "A que la misión llegó tarde al país y espera al informe final para juzgar la campaña.",
         "D": "A que coincide con el Gobierno en que lo decisivo de unas elecciones es lo que ocurre el día de la votación."
       },
       "answer": "B",
-      "rationale": "La corresponsal atribuye la prudencia a razones «más prosaicas»: la misión solo trabaja si el Gobierno «la invita», necesita seguir en el país, y el «análisis de fondo» llegará con el informe final.",
+      "rationale": "La corresponsal atribuye la prudencia a razones «más prosaicas»: la misión solo trabaja en un país «si su Gobierno la invita» y «necesita seguir aquí unas semanas más».",
       "option_rationales": {
-        "A": "Conocimiento externo: el temor a protestas o por la seguridad de los equipos es una explicación plausible, pero la corresponsal no la menciona; sus razones son la invitación del Gobierno y el «informe final».",
-        "B": "Correcta: reúne las dos razones de la corresponsal: la misión depende de que el Gobierno «la invita» y reserva el «análisis de fondo» para el informe final.",
-        "C": "Lectura errónea: los equipos de la misión llegaron «seis semanas antes de la votación» y vieron la campaña de cerca.",
+        "A": "Conocimiento externo: el temor a protestas o por la seguridad de los equipos es una explicación plausible, pero la corresponsal no la menciona; habla de la invitación del Gobierno y de que la misión «necesita seguir aquí unas semanas más».",
+        "B": "Correcta: la misión solo trabaja en el país «si su Gobierno la invita» y aún «necesita seguir aquí unas semanas más», mientras se resuelven las reclamaciones.",
+        "C": "Lectura errónea: el informe final llegará después, pero la misión no llegó tarde: sus equipos llegaron «seis semanas antes de la votación» y «vieron la campaña de cerca».",
         "D": "Relación invertida: según la corresponsal, los observadores piensan lo contrario: «ninguno cree que el domingo fuera lo importante»."
       }
     },
@@ -106,11 +106,11 @@
         "D": "Para señalar que la oposición se apoyará en el informe final para impugnar los resultados oficiales."
       },
       "answer": "C",
-      "rationale": "Tras recordar que el informe lo leerán «algunos ministerios de Exteriores» «y poco más», la corresponsal cita la ironía del diplomático: «el informe final lo lee quien ya lo sabía».",
+      "rationale": "El diplomático contrapone el calendario de la prensa, «el de los periodistas, que se acaba esta semana», al de la misión, «al que aún le quedan dos meses»: cuando llegue el informe final, el presidente «ya habrá empezado su nuevo mandato» y la atención estará en otra parte.",
       "option_rationales": {
-        "A": "No se dice: el diplomático no pone en duda la imparcialidad de la misión; su comentario contrapone quién oye la «declaración preliminar» y quién lee el informe.",
+        "A": "No se dice: el diplomático no pone en duda la imparcialidad de la misión; solo contrapone dos plazos, «el de los periodistas, que se acaba esta semana», y el de la misión.",
         "B": "Conocimiento externo: nada indica que el informe vaya a rebajar las críticas; los observadores dicen que allí estará «el análisis de fondo».",
-        "C": "Correcta: si el informe final lo lee «quien ya lo sabía», las críticas sobre la campaña llegarán cuando «la noticia será otra».",
+        "C": "Correcta: si la atención de la prensa se acaba «esta semana» y a la misión «aún le quedan dos meses», sus críticas de fondo llegarán cuando el público ya esté pendiente de otras noticias.",
         "D": "No se dice: la oposición solo aparece acusando a la misión de «mirar hacia otro lado»; nadie habla de impugnar los resultados con el informe."
       }
     }

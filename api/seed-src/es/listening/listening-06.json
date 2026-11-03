@@ -54,7 +54,7 @@
     },
     {
       "speaker": "DIRECTORA",
-      "text": "Suena muy bien hasta que se le pone precio. Hablamos de monitores cuatro tardes por semana, en once colegios y durante todo el curso. Y el año que viene no serán once solicitudes, serán treinta, porque en cuanto un colegio lo consigue, el de al lado lo pide."
+      "text": "Suena muy bien hasta que se le pone precio. Hablamos de pagar educadores cuatro tardes por semana, en once colegios y durante todo el curso. Y el año que viene no serán once solicitudes, serán treinta, porque en cuanto un colegio lo consigue, el de al lado lo pide."
     },
     {
       "speaker": "INSPECTOR",
@@ -72,7 +72,7 @@
   "questions": [
     {
       "id": 1,
-      "question": "¿Qué sugiere el inspector con el dato del colegio del barrio de la estación?",
+      "question": "¿Qué apunta el inspector con el dato del colegio del barrio de la estación?",
       "options": {
         "A": "Que en ese colegio no se alcanzó la participación mínima que la norma exige para dar por válida la votación.",
         "B": "Que las familias con beca de comedor votaron mayoritariamente en contra de cambiar el horario.",
@@ -90,9 +90,9 @@
     },
     {
       "id": 2,
-      "question": "¿Cómo responde el inspector a la preocupación de la directora por el coste?",
+      "question": "¿Qué replica el inspector cuando la directora pone reparos a la propuesta del asesor?",
       "options": {
-        "A": "Que el gasto será menor de lo previsto, porque pocas familias acabarán usando esas actividades.",
+        "A": "Que el gasto será menor de lo previsto, porque pocas familias usarán esas actividades.",
         "B": "Que las asociaciones de familias podrían asumir las actividades en los colegios que lo soliciten.",
         "C": "Que la consejería debería frenar las nuevas solicitudes hasta conocer el resultado de estas once.",
         "D": "Que hay que acertar con las condiciones desde ahora, porque otros centros imitarán la decisión."
@@ -110,10 +110,10 @@
       "id": 3,
       "question": "¿Qué decide finalmente la directora?",
       "options": {
-        "A": "Aprobar ya las solicitudes de los centros que ofrecen tardes a cualquier alumno y aplazar el resto.",
+        "A": "Aprobar ya las solicitudes de los centros con actividades de tarde para cualquier alumno y aplazar el resto.",
         "B": "Aprobar las once solicitudes a condición de que la consejería pague actividades de tarde al alumnado becado.",
         "C": "Rechazar las solicitudes de los centros en los que votaron menos de la mitad de las familias con hijos matriculados.",
-        "D": "Pedir que se repita la votación en los centros de los barrios con más dificultades."
+        "D": "Autorizar las once solicitudes durante un curso de prueba y revisar después cómo ha funcionado."
       },
       "answer": "A",
       "rationale": "La directora autoriza ya a los colegios con actividades de tarde «abiertas a todos los alumnos» y deja los demás en suspenso hasta que presenten «un plan para atender a esos niños».",
@@ -121,7 +121,7 @@
         "A": "Correcta: se aprueban ya los centros con tardes «abiertas a todos los alumnos», y el resto queda a la espera de «un plan para atender a esos niños».",
         "B": "Atribución cambiada: es la propuesta del asesor, que la directora frena porque «Suena muy bien hasta que se le pone precio»; al final no autoriza las once.",
         "C": "Lectura errónea: la baja participación la señala el inspector, pero el asesor advierte que denegar por eso haría perder «el primer recurso que se presente»; la directora no rechaza ninguna solicitud.",
-        "D": "No se dice: nadie propone repetir la votación; la directora condiciona la autorización a que el centro presente «un plan para atender a esos niños»."
+        "D": "Lectura errónea: la revisión «dentro de un año» acompaña a una autorización parcial; los centros sin actividades abiertas a todos «quedan en suspenso», no se autorizan a prueba."
       }
     }
   ]

@@ -62,7 +62,7 @@
     },
     {
       "speaker": "DIRECTOR",
-      "text": "En eso le doy la razón, y no tengo intención de quedarme quieto. Solo me gustaría que esta conversación la oyera también quien aprueba nuestro presupuesto. Y que la oyera entera, no únicamente la parte de los minutos y la energía."
+      "text": "No le falta razón, y no tengo intención de quedarme quieto. Pero esta conversación tendría que oírla también quien aprueba nuestro presupuesto. Y oírla entera, no únicamente la parte de los minutos y la energía."
     },
     {
       "speaker": "MODERADOR",
@@ -72,19 +72,19 @@
   "questions": [
     {
       "id": 1,
-      "question": "¿Por qué desaconseja el director prescindir de los modelos clásicos para ahorrar?",
+      "question": "¿Por qué desaconseja el director prescindir de los modelos clásicos?",
       "options": {
-        "A": "Porque los modelos nuevos aún no igualan a los clásicos en las predicciones a varios días.",
-        "B": "Porque los modelos nuevos se forman con cálculos de esos sistemas y parten de ellos cada día.",
+        "A": "Porque los modelos clásicos ofrecen más variables y mayor resolución que los nuevos.",
+        "B": "Porque los modelos nuevos aprenden de cálculos de esos sistemas y parten de ellos cada día.",
         "C": "Porque el entrenamiento de los modelos nuevos exige la potencia de cálculo de los superordenadores.",
         "D": "Porque los modelos que parten directamente de las observaciones dan, por ahora, resultados modestos."
       },
       "answer": "B",
       "rationale": "El director explica que se entrena con «reconstrucciones de la atmósfera hechas con modelos clásicos» y que cada mañana el modelo nuevo «arranca del estado de la atmósfera que ha calculado el sistema de siempre»: apagar lo antiguo sería serrar «la rama en la que se sienta lo nuevo».",
       "option_rationales": {
-        "A": "Lectura errónea: el director no discute la precisión de los modelos nuevos («los resultados están ahí»); es la ingeniera quien afirma que a cinco o seis días aciertan «tanto como los modelos clásicos».",
+        "A": "Conocimiento externo: es una ventaja real de los modelos clásicos, pero el director no la menciona; su argumento es que lo nuevo se entrena con «reconstrucciones de la atmósfera hechas con modelos clásicos».",
         "B": "Correcta: los modelos nuevos se entrenan con «reconstrucciones de la atmósfera hechas con modelos clásicos» y parten cada día del estado que calcula «el sistema de siempre».",
-        "C": "Conocimiento externo: el director no habla de la potencia necesaria para entrenar; su argumento es que el modelo nuevo «arranca del estado de la atmósfera» que calcula el sistema clásico.",
+        "C": "Conocimiento externo: entrenar estos modelos exige mucho cálculo, pero el director no habla de ello; su argumento es que el modelo nuevo «arranca del estado de la atmósfera» que calcula el sistema clásico.",
         "D": "Atribución cambiada: que «Los primeros resultados son modestos» lo admite después la ingeniera, a propósito de los modelos que parten de las observaciones; no es la razón del director."
       }
     },
@@ -95,20 +95,20 @@
         "A": "Que se quedan cortos al estimar su intensidad, porque aprenden de un pasado sin casos comparables.",
         "B": "Que no explican por qué prevén el episodio, lo que complica justificar una alerta ante la población.",
         "C": "Que arrastran los fallos del sistema clásico con los extremos, ya que arrancan de sus cálculos.",
-        "D": "Que tardan más que los clásicos en recalcular la predicción si el episodio cambia de rumbo."
+        "D": "Que sus cientos de escenarios alternativos complican decidir cuándo se debe dar la alarma."
       },
       "answer": "A",
       "rationale": "Ante «una ola de calor más intensa que cualquiera de las registradas», el director observa que estos modelos «tienden a suavizar los picos», «como si les costara creerse lo que están calculando»: al aprender del pasado, se quedan cortos ante lo nunca visto.",
       "option_rationales": {
         "A": "Correcta: un modelo que «aprende del pasado» tiende a «suavizar los picos», de modo que subestima la intensidad de lo que no ha visto antes.",
-        "B": "No se dice: el director no reprocha a los modelos que no expliquen sus predicciones; su reserva es que «tienden a suavizar los picos».",
+        "B": "Conocimiento externo: la opacidad de estos modelos es una crítica real, pero el director no la plantea; su reserva es que «tienden a suavizar los picos».",
         "C": "Lectura errónea: mezcla dos reservas distintas; que el modelo nuevo «arranca del estado de la atmósfera» calculado por el sistema clásico es el primer argumento, no la causa de su fallo con los extremos.",
-        "D": "Relación invertida: la rapidez es la ventaja de los modelos nuevos, que calculan una semana «en pocos minutos»; el director no les atribuye lentitud."
+        "D": "Lectura errónea: los «cientos de predicciones ligeramente distintas» son una ventaja que presenta la ingeniera; el director no los critica: su reserva es que estos modelos «tienden a suavizar los picos»."
       }
     },
     {
       "id": 3,
-      "question": "¿Qué da a entender el director en su última intervención?",
+      "question": "¿Qué deja entrever el director al mencionar a quien aprueba el presupuesto de su servicio?",
       "options": {
         "A": "Que reprocha a la ingeniera haber exagerado el ahorro de energía para promocionar sus modelos.",
         "B": "Que pide que las empresas tecnológicas compartan con el servicio público el coste de los avisos.",
@@ -120,7 +120,7 @@
       "option_rationales": {
         "A": "Lectura errónea: «la parte de los minutos y la energía» alude a lo que podría retener quien decide el gasto; el director no acusa a la ingeniera de exagerar.",
         "B": "No se dice: las empresas tecnológicas las menciona la ingeniera, que advierte que ninguna «está obligada a avisar a nadie»; el director no propone que paguen nada.",
-        "C": "Lectura errónea: el director asegura que no tiene «intención de quedarme quieto»; no pone condiciones económicas a la adopción de los modelos nuevos.",
+        "C": "Lectura errónea: el director dice sin reservas «no tengo intención de quedarme quieto»; no pone condiciones económicas a la adopción de los modelos nuevos.",
         "D": "Correcta: si teme que se oiga solo «la parte de los minutos y la energía», es porque cree que quien «aprueba nuestro presupuesto» podría ver en el ahorro un motivo para prescindir de lo clásico."
       }
     }

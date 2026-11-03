@@ -36,7 +36,7 @@
     },
     {
       "speaker": "INVESTIGADOR",
-      "text": "Algunos ejércitos lo han hecho en despliegues concretos, y para una operación corta y de alto riesgo me parece razonable. En una misión de seis meses es otra historia. El contacto con la familia es lo que sostiene a mucha gente lejos de casa, y quitarlo tiene un coste que no aparece en ningún informe. Además, una prohibición que todos saben imposible de vigilar se acaba incumpliendo a escondidas, que es la peor manera de usar un teléfono."
+      "text": "Algunos ejércitos lo han hecho en despliegues concretos, y para una operación corta y de alto riesgo me parece razonable. En una misión de seis meses es otra historia. El contacto con la familia es lo que sostiene a mucha gente lejos de casa, y quitarlo tiene un coste que no aparece en ningún informe. Además, si todo el mundo sabe que una prohibición no se puede vigilar, se acaba incumpliendo a escondidas, que es la peor manera de usar un teléfono."
     },
     {
       "speaker": "PRESENTADORA",
@@ -52,7 +52,7 @@
     },
     {
       "speaker": "INVESTIGADOR",
-      "text": "Saben usarlo mejor que nadie, que no es lo mismo. Manejan diez aplicaciones con soltura y no tienen ni idea de qué datos envía cada una ni a quién. Y le diré otra cosa que he visto en los ejercicios que he evaluado. Los oficiales que más vigilaban el teléfono de su tropa eran a menudo los que dejaban el suyo encendido encima de la mesa del puesto de mando."
+      "text": "Saben usarlo mejor que nadie, que no es lo mismo. Manejan diez aplicaciones con soltura y no tienen ni idea de qué datos envía cada una ni a quién. Es más, he visto algo llamativo en los ejercicios que he evaluado. Los oficiales que más vigilaban el teléfono de su tropa eran a menudo los que dejaban el suyo encendido encima de la mesa del puesto de mando."
     },
     {
       "speaker": "PRESENTADORA",
@@ -70,7 +70,7 @@
       "options": {
         "A": "La admite en operaciones breves y arriesgadas, pero la cree contraproducente en las misiones largas.",
         "B": "La considera eficaz, aunque cree que debería compensarse con más llamadas desde la propia base.",
-        "C": "La ve aceptable con tal de que los mandos den ejemplo y renuncien también a llevar su propio teléfono.",
+        "C": "La ve aceptable con tal de que su cumplimiento se vigile mediante registros frecuentes en las propias bases.",
         "D": "La juzga innecesaria, porque cree que el peligro procede de las aplicaciones y no del aparato."
       },
       "answer": "A",
@@ -78,18 +78,18 @@
       "option_rationales": {
         "A": "Correcta: distingue la operación «corta y de alto riesgo», donde la prohibición le parece razonable, de la misión larga, donde lleva a usar el teléfono «a escondidas», «la peor manera».",
         "B": "No se dice: el investigador valora el contacto con la familia, que «sostiene a mucha gente lejos de casa», pero no propone compensar la prohibición con llamadas desde la base.",
-        "C": "Lectura errónea: el descuido de los mandos aparece más tarde, en los ejercicios donde dejaban el teléfono «encendido encima de la mesa»; no lo plantea como condición para prohibir.",
+        "C": "Lectura errónea: el investigador no pide más controles; parte de que la prohibición «no se puede vigilar» y por eso «se acaba incumpliendo a escondidas».",
         "D": "Lectura errónea: las aplicaciones forman parte de sus reglas («aplicaciones que no se instalan»), pero el investigador no niega el peligro del aparato: el teléfono «habla por su cuenta»."
       }
     },
     {
       "id": 2,
-      "question": "¿Qué pretende mostrar el investigador con lo que observó en los ejercicios que ha evaluado?",
+      "question": "¿Qué se desprende de lo que el investigador cuenta sobre los oficiales en los ejercicios?",
       "options": {
         "A": "Que los soldados más jóvenes entienden mejor que sus mandos los riesgos que entraña cada aplicación.",
         "B": "Que el puesto de mando es el lugar donde con más rigor se vigila el uso de los teléfonos personales.",
         "C": "Que el descuido que los mandos reprochan a la tropa se da también entre los propios mandos.",
-        "D": "Que los ejercicios de evaluación sirven para detectar a los oficiales peor preparados."
+        "D": "Que a los mandos les basta una demostración práctica para corregir sus descuidos con el teléfono."
       },
       "answer": "C",
       "rationale": "Los oficiales que «más vigilaban el teléfono de su tropa» eran «a menudo los que dejaban el suyo encendido»: el investigador muestra, sin decirlo, que los mandos caen en lo mismo que reprochan.",
@@ -97,12 +97,12 @@
         "A": "Lectura errónea: el investigador sostiene que los jóvenes saben usar el teléfono, «que no es lo mismo» que entender sus riesgos; no los compara con los mandos.",
         "B": "Lectura errónea: la «mesa del puesto de mando» es donde los oficiales dejaban su teléfono encendido, no un lugar de control riguroso.",
         "C": "Correcta: los mismos oficiales que vigilaban a su tropa dejaban «el suyo encendido encima de la mesa del puesto de mando».",
-        "D": "No se dice: el investigador cuenta lo que vio «en los ejercicios que he evaluado», pero no habla de usarlos para detectar oficiales mal preparados."
+        "D": "Lectura errónea: la demostración práctica forma parte de su propuesta de formación («Basta con que un soldado vea una vez»); de los oficiales solo cuenta que dejaban «el suyo encendido», no que corrigieran nada."
       }
     },
     {
       "id": 3,
-      "question": "¿Qué quiere decir el investigador cuando afirma que las normas se escriben «a ciegas»?",
+      "question": "En boca del investigador, ¿qué significa que las normas se escriban «a ciegas»?",
       "options": {
         "A": "Que se copian de las de otros ejércitos sin adaptarlas a las misiones propias.",
         "B": "Que se redactan sin haber medido cuánto delatan de una unidad las señales de sus móviles.",
@@ -110,7 +110,7 @@
         "D": "Que se aprueban con prisas tras cada incidente, sin consultar a los especialistas."
       },
       "answer": "B",
-      "rationale": "El investigador echa de menos que alguien compruebe «en un ejercicio real» cuánto se puede averiguar de una unidad por sus teléfonos; mientras no se haga, las normas se escriben sin saber qué protegen.",
+      "rationale": "El investigador echa de menos que alguien compruebe «en un ejercicio real» cuánto se puede averiguar de una unidad por sus teléfonos; mientras no se haga, las normas se escriben sin saber cuánto revelan en realidad los teléfonos.",
       "option_rationales": {
         "A": "No se dice: el investigador reconoce que hoy «casi todos tienen normas escritas», pero no dice que se copien de otros ejércitos.",
         "B": "Correcta: «a ciegas» remite a lo que echa de menos: comprobar «cuánto se puede averiguar de una unidad» a partir de lo que emiten sus teléfonos.",
