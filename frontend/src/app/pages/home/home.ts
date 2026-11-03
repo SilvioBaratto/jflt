@@ -1,20 +1,22 @@
 import {
   Component,
   ChangeDetectionStrategy,
-  OnInit,
   inject,
   signal,
   DestroyRef,
   WritableSignal,
+  effect,
+  untracked,
 } from '@angular/core';
 import { I18nPluralPipe } from '@angular/common';
-import { Observable } from 'rxjs';
+import { Observable, Subscription } from 'rxjs';
 import { RouterLink } from '@angular/router';
 import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { ContentService } from '../../services/content';
+import { LanguageService } from '../../services/language';
 import { ContentList, ReadingSummary, ListeningSummary, WritingSummary } from '../../models/content';
 
 type LoadState = 'loading' | 'error' | 'ready';
@@ -27,9 +29,11 @@ type LoadState = 'loading' | 'error' | 'ready';
   styleUrl: './home.css',
 })
 /** The question bank: counts and browsable lists of the reading/listening/writing material. */
-export class HomeComponent implements OnInit {
+export class HomeComponent {
   private readonly content = inject(ContentService);
+  private readonly language = inject(LanguageService);
   private readonly destroyRef = inject(DestroyRef);
+  private readonly inFlight = new Map<string, Subscription>();
 
   // The ICU plural syntax needs the $localize polyfill, which the app does not load; the pipe
   // gives the same CLDR plural handling without it. '#' is replaced by the count.
@@ -45,32 +49,52 @@ export class HomeComponent implements OnInit {
   readonly listeningState = signal<LoadState>('loading');
   readonly writingState = signal<LoadState>('loading');
 
-  ngOnInit(): void {
-    this.loadReading();
-    this.loadListening();
-    this.loadWriting();
+  constructor() {
+    // Runs once on creation (the first load) and again on every language switch. The loads are
+    // untracked so the effect depends on the language alone, not on whatever the services read.
+    effect(() => {
+      this.language.language();
+      untracked(() => {
+        this.loadReading();
+        this.loadListening();
+        this.loadWriting();
+      });
+    });
   }
 
   loadReading(): void {
-    this.load(this.content.reading(), this.reading, this.readingState);
+    this.load('reading', this.content.reading(), this.reading, this.readingState);
   }
 
   loadListening(): void {
-    this.load(this.content.listening(), this.listening, this.listeningState);
+    this.load('listening', this.content.listening(), this.listening, this.listeningState);
   }
 
   loadWriting(): void {
-    this.load(this.content.writing(), this.writing, this.writingState);
+    this.load('writing', this.content.writing(), this.writing, this.writingState);
   }
 
-  private load<T>(source: Observable<T>, data: WritableSignal<T | null>, state: WritableSignal<LoadState>): void {
+  private load<T>(
+    key: string,
+    source: Observable<T>,
+    data: WritableSignal<T | null>,
+    state: WritableSignal<LoadState>,
+  ): void {
+    // A response for the previous language must not land over the new one, so a reload cancels
+    // the request still in flight for the same section.
+    this.inFlight.get(key)?.unsubscribe();
+    // The old items belong to the previous language; showing them under the spinner would mislabel them.
+    data.set(null);
     state.set('loading');
-    source.pipe(takeUntilDestroyed(this.destroyRef)).subscribe({
-      next: (v) => {
-        data.set(v);
-        state.set('ready');
-      },
-      error: () => state.set('error'),
-    });
+    this.inFlight.set(
+      key,
+      source.pipe(takeUntilDestroyed(this.destroyRef)).subscribe({
+        next: (v) => {
+          data.set(v);
+          state.set('ready');
+        },
+        error: () => state.set('error'),
+      }),
+    );
   }
 }

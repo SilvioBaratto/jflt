@@ -41,8 +41,10 @@
     }
   }
 
-  @if (accountName() || canSignOut()) {
+  @if (!modal()) {
     <div class="sidebar-footer">
+      <!-- Shown whether or not a session exists: the content language is not an account setting. -->
+      <app-language-selector class="sidebar-language" />
       @if (collapsed()) {
         @if (canSignOut()) {
           <button

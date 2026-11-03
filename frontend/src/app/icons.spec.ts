@@ -59,6 +59,10 @@ describe('ICON_PROVIDER', () => {
       expect(ICON_PROVIDER.useValue.getIcon('Sun')).toBeTruthy();
     });
 
+    it('returns icon data for Languages', () => {
+      expect(ICON_PROVIDER.useValue.getIcon('Languages')).toBeTruthy();
+    });
+
     it('returns icon data for Moon', () => {
       expect(ICON_PROVIDER.useValue.getIcon('Moon')).toBeTruthy();
     });

@@ -1,4 +1,10 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { provideHttpClient } from '@angular/common/http';
+import {
+  HttpTestingController,
+  TestRequest,
+  provideHttpClientTesting,
+} from '@angular/common/http/testing';
 import { provideRouter } from '@angular/router';
 import { HarnessLoader } from '@angular/cdk/testing';
 import { TestbedHarnessEnvironment } from '@angular/cdk/testing/testbed';
@@ -6,7 +12,9 @@ import { MatCardHarness } from '@angular/material/card/testing';
 import { Subject, throwError } from 'rxjs';
 import { vi } from 'vitest';
 
+import { environment } from '../../../environments/environment';
 import { ContentService } from '../../services/content';
+import { LanguageService } from '../../services/language';
 import {
   ContentList,
   ListeningSummary,
@@ -18,8 +26,24 @@ import { HomeComponent } from './home';
 const READING: ContentList<ReadingSummary> = {
   total: 60,
   items: [
-    { id: 'r1', level: 3, topic: 'Sanctions', passage: 'p', question: 'q', source: 'seed' },
-    { id: 'r2', level: 4, topic: 'Deterrence', passage: 'p', question: 'q', source: 'seed' },
+    {
+      id: 'r1',
+      level: 3,
+      topic: 'Sanctions',
+      passage: 'p',
+      question: 'q',
+      source: 'seed',
+      language: 'en',
+    },
+    {
+      id: 'r2',
+      level: 4,
+      topic: 'Deterrence',
+      passage: 'p',
+      question: 'q',
+      source: 'seed',
+      language: 'en',
+    },
   ],
 };
 const LISTENING: ContentList<ListeningSummary> = {
@@ -32,6 +56,7 @@ const LISTENING: ContentList<ListeningSummary> = {
       conversationType: 'radio interview',
       questionCount: 3,
       source: 'seed',
+      language: 'en',
     },
   ],
 };
@@ -47,6 +72,7 @@ const WRITING: ContentList<WritingSummary> = {
       wordCountMin: 350,
       wordCountMax: 700,
       source: 'seed',
+      language: 'en',
     },
   ],
 };
@@ -60,6 +86,7 @@ describe('HomeComponent', () => {
   let writing$: Subject<ContentList<WritingSummary>>;
 
   beforeEach(async () => {
+    localStorage.clear();
     reading$ = new Subject();
     listening$ = new Subject();
     writing$ = new Subject();
@@ -225,5 +252,232 @@ describe('HomeComponent', () => {
     c.loadWriting();
     fixture.detectChanges();
     expect(c.writingState()).toBe('error');
+  });
+});
+
+describe('HomeComponent content language', () => {
+  const BASE = `${environment.apiUrl}content`;
+  const EMPTY = { total: 0, items: [] };
+  const ES_READING: ContentList<ReadingSummary> = {
+    total: 2,
+    items: [
+      { ...READING.items[0], id: 'r-es-1', topic: 'Sanciones', language: 'es' },
+      { ...READING.items[1], id: 'r-es-2', topic: 'Disuasión', language: 'es' },
+    ],
+  };
+  const ES_LISTENING: ContentList<ListeningSummary> = {
+    total: 1,
+    items: [{ ...LISTENING.items[0], id: 'l-es-1', topic: 'Reparto de cargas', language: 'es' }],
+  };
+  const ES_WRITING: ContentList<WritingSummary> = {
+    total: 1,
+    items: [
+      { ...WRITING.items[0], id: 'w-es-1', title: 'Tarea 10 — Disuasión nuclear', language: 'es' },
+    ],
+  };
+
+  let fixture: ComponentFixture<HomeComponent>;
+  let host: HTMLElement;
+  let http: HttpTestingController;
+  let language: LanguageService;
+
+  function lists(lang: string): {
+    reading: TestRequest;
+    listening: TestRequest;
+    writing: TestRequest;
+  } {
+    return {
+      reading: http.expectOne(`${BASE}/reading?lang=${lang}`),
+      listening: http.expectOne(`${BASE}/listening?lang=${lang}`),
+      writing: http.expectOne(`${BASE}/writing?lang=${lang}`),
+    };
+  }
+
+  async function settle(): Promise<void> {
+    fixture.detectChanges();
+    await fixture.whenStable();
+  }
+
+  async function switchTo(lang: 'en' | 'es'): Promise<void> {
+    language.setLanguage(lang);
+    await settle();
+  }
+
+  beforeEach(async () => {
+    localStorage.clear();
+    await TestBed.configureTestingModule({
+      imports: [HomeComponent],
+      providers: [provideRouter([]), provideHttpClient(), provideHttpClientTesting()],
+    }).compileComponents();
+
+    http = TestBed.inject(HttpTestingController);
+    language = TestBed.inject(LanguageService);
+  });
+
+  async function open(): Promise<void> {
+    fixture = TestBed.createComponent(HomeComponent);
+    host = fixture.nativeElement;
+    await settle();
+  }
+
+  afterEach(() => {
+    http.verify();
+    localStorage.clear();
+  });
+
+  it('when the page opens, each list is requested once in English', async () => {
+    await open();
+    const r = lists('en');
+    r.reading.flush(READING);
+    r.listening.flush(LISTENING);
+    r.writing.flush(WRITING);
+    await settle();
+
+    expect(host.textContent).toContain('Deterrence');
+    expect(host.textContent).toContain('Burden-sharing');
+  });
+
+  it('when Spanish was chosen earlier, the first requests are already in Spanish', async () => {
+    language.setLanguage('es');
+    await open();
+
+    lists('es');
+  });
+
+  it('when the language changes, every list is requested once more in the new language', async () => {
+    await open();
+    const en = lists('en');
+    en.reading.flush(READING);
+    en.listening.flush(LISTENING);
+    en.writing.flush(WRITING);
+    await settle();
+
+    await switchTo('es');
+
+    const es = lists('es');
+    es.reading.flush(ES_READING);
+    es.listening.flush(ES_LISTENING);
+    es.writing.flush(ES_WRITING);
+    await settle();
+
+    expect(host.textContent).toContain('Disuasión');
+    expect(host.textContent).toContain('Reparto de cargas');
+    expect(host.textContent).toContain('Tarea 10 — Disuasión nuclear');
+    expect(host.textContent).not.toContain('Deterrence');
+    expect(host.querySelectorAll('mat-spinner').length).toBe(0);
+  });
+
+  it('when the language changes, the sections show spinners and drop the old items until the new ones arrive', async () => {
+    await open();
+    const en = lists('en');
+    en.reading.flush(READING);
+    en.listening.flush(LISTENING);
+    en.writing.flush(WRITING);
+    await settle();
+
+    await switchTo('es');
+
+    expect(host.querySelectorAll('mat-spinner').length).toBe(3);
+    expect(host.querySelectorAll('[aria-busy="true"]').length).toBe(3);
+    expect(host.querySelectorAll('ul.items').length).toBe(0);
+    expect(host.querySelector('.n')).toBeNull();
+    lists('es');
+  });
+
+  it('when the language changes before the answers arrive, the superseded requests are cancelled', async () => {
+    await open();
+    const en = lists('en');
+
+    await switchTo('es');
+
+    expect(en.reading.cancelled).toBe(true);
+    expect(en.listening.cancelled).toBe(true);
+    expect(en.writing.cancelled).toBe(true);
+    const es = lists('es');
+    es.reading.flush(ES_READING);
+    es.listening.flush(ES_LISTENING);
+    es.writing.flush(ES_WRITING);
+    await settle();
+    expect(host.textContent).toContain('Sanciones');
+  });
+
+  it('when the selected language is chosen again, nothing is requested', async () => {
+    await open();
+    const en = lists('en');
+    en.reading.flush(READING);
+    en.listening.flush(LISTENING);
+    en.writing.flush(WRITING);
+    await settle();
+
+    await switchTo('en');
+
+    http.expectNone(() => true);
+  });
+
+  it('when a list comes back empty, its section says there are no items in this language yet', async () => {
+    await open();
+    const r = lists('en');
+    r.reading.flush(EMPTY);
+    r.listening.flush(LISTENING);
+    r.writing.flush(EMPTY);
+    await settle();
+
+    const cards = Array.from(host.querySelectorAll('mat-card'));
+    const empty = (card: Element) => card.querySelector('.empty')?.textContent?.trim();
+    expect(empty(cards[0])).toBe('No items in this language yet');
+    expect(cards[0].querySelector('ul.items')).toBeNull();
+    expect(empty(cards[1])).toBeUndefined();
+    expect(cards[1].querySelector('ul.items')).not.toBeNull();
+    expect(empty(cards[2])).toBe('No items in this language yet');
+  });
+
+  it('when a language has no items, switching to one that has them replaces the empty state', async () => {
+    await open();
+    const en = lists('en');
+    en.reading.flush(EMPTY);
+    en.listening.flush(EMPTY);
+    en.writing.flush(EMPTY);
+    await settle();
+    expect(host.querySelectorAll('.empty').length).toBe(3);
+
+    await switchTo('es');
+    const es = lists('es');
+    es.reading.flush(ES_READING);
+    es.listening.flush(ES_LISTENING);
+    es.writing.flush(ES_WRITING);
+    await settle();
+
+    expect(host.querySelectorAll('.empty').length).toBe(0);
+    expect(host.querySelectorAll('ul.items').length).toBe(3);
+  });
+
+  it('when a reload fails, the section shows its alert and Try again requests it in the new language', async () => {
+    await open();
+    const en = lists('en');
+    en.reading.flush(READING);
+    en.listening.flush(LISTENING);
+    en.writing.flush(WRITING);
+    await settle();
+
+    await switchTo('es');
+    const es = lists('es');
+    es.reading.flush('boom', { status: 500, statusText: 'Server Error' });
+    es.listening.flush(ES_LISTENING);
+    es.writing.flush(ES_WRITING);
+    await settle();
+
+    const alert = host.querySelector('[role="alert"]');
+    expect(alert?.textContent).toContain("Couldn't load reading items");
+    expect(host.textContent).not.toContain('Deterrence');
+    expect(host.textContent).toContain('Reparto de cargas');
+
+    alert!.querySelector<HTMLButtonElement>('button')!.click();
+    await settle();
+    http.expectNone(`${BASE}/listening?lang=es`);
+    http.expectOne(`${BASE}/reading?lang=es`).flush(ES_READING);
+    await settle();
+
+    expect(host.querySelector('[role="alert"]')).toBeNull();
+    expect(host.textContent).toContain('Disuasión');
   });
 });

@@ -142,7 +142,7 @@ describe('Responsive shell (integration)', () => {
     return host.querySelector<HTMLAnchorElement>('app-bottom-tab-bar a')!;
   }
 
-  /** The base scaffold's top app bar has no actions button, so the sheet opens through the shell API. */
+  /** The base scaffold's top app bar has no actions-sheet button, so the sheet opens through the shell API. */
   function openSheet(): void {
     component.openActionsSheet();
   }
@@ -191,8 +191,11 @@ describe('Responsive shell (integration)', () => {
     });
 
     it('when the actions sheet opens, a labelled bottom sheet holds app-sidebar in its modal form and no destinations', async () => {
-      // The sheet is empty in the base scaffold, so the top app bar shows no button for it.
-      expect(host.querySelector('app-navbar button')).toBeNull();
+      // The sheet is empty in the base scaffold, so the top app bar shows no button for it: its
+      // only button is the language selector's.
+      expect(Array.from(host.querySelectorAll('app-navbar button')).map((b) => b.closest('app-language-selector'))).toEqual([
+        host.querySelector('app-navbar app-language-selector'),
+      ]);
 
       openSheet();
       await settle();
@@ -456,6 +459,18 @@ describe('Responsive shell (integration)', () => {
 
       expect(rail().classList.contains('rail-wide')).toBe(false);
       expect(document.activeElement).toBe(destination(rail().querySelector('nav'), '/exam'));
+    });
+
+    it('when the window crosses 600px with focus on the language selector, focus follows it between the rail footer and the top app bar', async () => {
+      await render('medium');
+      rail().querySelector<HTMLElement>('app-language-selector button')!.focus();
+
+      await resize('compact');
+      expect(host.querySelector('app-navbar app-language-selector button')).toBeTruthy();
+      expect(document.activeElement).toBe(host.querySelector('app-navbar app-language-selector button'));
+
+      await resize('medium');
+      expect(document.activeElement).toBe(rail().querySelector('.sidebar-footer app-language-selector button'));
     });
 
     it('when focus is outside the shell controls, a size change leaves it where it is', async () => {

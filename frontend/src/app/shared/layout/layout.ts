@@ -22,6 +22,7 @@ import { filter, map } from 'rxjs/operators';
 
 import { WindowSizeClassService } from '../../services/window-size-class';
 import { BottomTabBarComponent } from '../bottom-tab-bar/bottom-tab-bar';
+import { LanguageSelectorComponent } from '../language-selector/language-selector';
 import { RailActionsSheet, SidebarMode } from '../nav-item';
 import { RAIL_ACTIONS_SHEET, SidebarComponent } from '../sidebar/sidebar';
 import { HamburgerComponent } from '../ui/hamburger/hamburger';
@@ -59,6 +60,7 @@ function persistRailChoice(expanded: boolean): void {
 type ShellFocusTarget =
   | { kind: 'destination'; href: string }
   | { kind: 'action'; selector: '.sidebar-theme-toggle' | '.sidebar-logout' }
+  | { kind: 'language' }
   | { kind: 'railToggle' };
 
 /**
@@ -66,9 +68,11 @@ type ShellFocusTarget =
  *
  * | Window size class         | Navigation and actions                                            |
  * |---------------------------|-------------------------------------------------------------------|
- * | compact (< 600px)         | Top app bar + navigation bar; the top app bar button opens a      |
- * |                           | modal bottom sheet with the rail's actions (no destinations)      |
- * | medium (600–839px)        | Collapsed rail, docked, no expand toggle                          |
+ * | compact (< 600px)         | Top app bar (brand + content language selector) + navigation bar; |
+ * |                           | its actions button opens a modal bottom sheet with the rail's     |
+ * |                           | actions (no destinations)                                         |
+ * | medium (600–839px)        | Collapsed rail, docked, no expand toggle; the selector sits in    |
+ * |                           | the rail footer                                                   |
  * | expanded, large (840–1599)| Collapsed rail by default; the toggle docks an expanded rail      |
  * | extra-large (>= 1600px)   | Expanded rail by default                                          |
  *
@@ -92,6 +96,7 @@ type ShellFocusTarget =
     BottomTabBarComponent,
     NavbarComponent,
     HamburgerComponent,
+    LanguageSelectorComponent,
   ],
   templateUrl: './layout.html',
   styleUrl: './layout.css',
@@ -283,6 +288,9 @@ export class LayoutComponent {
     if (link) {
       return { kind: 'destination', href: link.getAttribute('href') ?? '' };
     }
+    if (focused.closest('app-language-selector')) {
+      return { kind: 'language' };
+    }
     if (focused.closest('.sidebar-logout')) {
       return { kind: 'action', selector: '.sidebar-logout' };
     }
@@ -322,6 +330,9 @@ export class LayoutComponent {
           ? rail.querySelector<HTMLElement>(`.sidebar-footer ${target.selector}`)
           : host.querySelector<HTMLElement>('.shell-actions-toggle');
       }
+      case 'language':
+        // The one selector sits in the rail footer from 600px and in the top app bar below it.
+        return host.querySelector<HTMLElement>('app-language-selector button');
       case 'railToggle':
         // Below 840px there is no toggle: the current destination sits where it was.
         return (

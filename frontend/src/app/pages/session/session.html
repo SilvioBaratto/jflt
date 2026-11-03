@@ -36,11 +36,12 @@
         <h2 class="sec">Reading</h2>
         @for (item of s.items.reading; track item.id) {
           <mat-card class="item" appearance="outlined">
-            <div class="meta">L{{ item.level }} · {{ item.topic }}</div>
-            <div class="passage md" [innerHTML]="item.passage | markdown"></div>
-            <p class="question" [id]="'q-' + item.id">{{ item.question }}</p>
+            <div class="meta">L{{ item.level }}</div>
+            <div class="passage md" [attr.lang]="s.language" [innerHTML]="item.passage | markdown"></div>
+            <p class="question" [attr.lang]="s.language" [id]="'q-' + item.id">{{ item.question }}</p>
             <mat-radio-group
               class="opts"
+              [attr.lang]="s.language"
               [attr.aria-labelledby]="'q-' + item.id"
               [value]="readingChoice()[item.id] || ''"
               (change)="pickReading(item.id, $event.value)"
@@ -63,8 +64,8 @@
             @if (readingResult()[item.id]; as r) {
               <div class="fb" tabindex="-1" [attr.data-fb]="'reading:' + item.id" [class.ok]="r.correct" [class.no]="!r.correct">
                 <strong>{{ r.correct ? 'Correct' : 'Incorrect' }}</strong> — key {{ r.correctLabel }}
-                <p>{{ r.keyRationale }}</p>
-                @if (!r.correct && r.chosenRationale) { <p class="muted">Your choice: {{ r.chosenRationale }}</p> }
+                <p [attr.lang]="s.language">{{ r.keyRationale }}</p>
+                @if (!r.correct && r.chosenRationale) { <p class="muted">Your choice: <span [attr.lang]="s.language">{{ r.chosenRationale }}</span></p> }
               </div>
             }
           </mat-card>
@@ -75,21 +76,22 @@
         <h2 class="sec">Listening</h2>
         @for (item of s.items.listening; track item.id) {
           <mat-card class="item" appearance="outlined">
-            <div class="meta">{{ item.conversationType }} · {{ item.topic }}</div>
+            <div class="meta" [attr.lang]="s.language">{{ item.conversationType }}</div>
             @if (item.audioPath) {
               <audio
                 controls
                 preload="none"
                 [src]="audioBase + item.audioPath"
-                [attr.aria-label]="'Audio for ' + item.topic"
+                [attr.aria-label]="'Audio for conversation ' + ($index + 1)"
                 class="audio"
               ></audio>
             }
             @for (q of item.questions; track $index) {
               <div class="q">
-                <p class="question" [id]="'q-' + listeningKey(item.id, $index)">{{ $index + 1 }}. {{ q.question }}</p>
+                <p class="question" [attr.lang]="s.language" [id]="'q-' + listeningKey(item.id, $index)">{{ $index + 1 }}. {{ q.question }}</p>
                 <mat-radio-group
                   class="opts"
+                  [attr.lang]="s.language"
                   [attr.aria-labelledby]="'q-' + listeningKey(item.id, $index)"
                   [value]="listeningChoice()[listeningKey(item.id, $index)] || ''"
                   (change)="pickListening(item.id, $index, $event.value)"
@@ -125,8 +127,8 @@
                     [class.no]="!r.correct"
                   >
                     <strong>{{ r.correct ? 'Correct' : 'Incorrect' }}</strong> — key {{ r.correctLabel }}
-                    <p>{{ r.keyRationale }}</p>
-                    @if (!r.correct && r.chosenRationale) { <p class="muted">Your choice: {{ r.chosenRationale }}</p> }
+                    <p [attr.lang]="s.language">{{ r.keyRationale }}</p>
+                    @if (!r.correct && r.chosenRationale) { <p class="muted">Your choice: <span [attr.lang]="s.language">{{ r.chosenRationale }}</span></p> }
                   </div>
                   }
                 }
@@ -141,8 +143,8 @@
         @for (task of s.items.writing; track task.id) {
           <mat-card class="item" appearance="outlined">
             <div class="meta">L{{ task.stanagLevel }} · {{ task.wordCountMin }}–{{ task.wordCountMax }} words</div>
-            <h3>{{ task.title }}</h3>
-            <div class="instr md" [innerHTML]="task.instructions | markdown"></div>
+            <h3 [attr.lang]="s.language">{{ task.title }}</h3>
+            <div class="instr md" [attr.lang]="s.language" [innerHTML]="task.instructions | markdown"></div>
             @if (task.options.length > 1) {
               <mat-button-toggle-group
                 class="levels"
@@ -156,7 +158,7 @@
                 }
               </mat-button-toggle-group>
               @for (o of task.options; track o.key) {
-                @if (writingOption()[task.id] === o.key) { <div class="prompt md" [innerHTML]="o.prompt | markdown"></div> }
+                @if (writingOption()[task.id] === o.key) { <div class="prompt md" [attr.lang]="s.language" [innerHTML]="o.prompt | markdown"></div> }
               }
             }
             <mat-form-field appearance="outline" class="full">
@@ -164,6 +166,7 @@
               <textarea
                 matInput
                 rows="8"
+                [attr.lang]="s.language"
                 [value]="writingText()[task.id] || ''"
                 (input)="setWritingText(task.id, $any($event.target).value)"
                 [disabled]="!!writingResult()[task.id] || grading()[task.id] || finishing()"
@@ -185,13 +188,13 @@
                 <p class="score">Overall {{ wr.grade.overallScore }}/4 · level {{ wr.grade.estimatedLevel }}</p>
                 <ul>
                   @for (d of wr.grade.dimensions; track d.dimension) {
-                    <li><strong>{{ d.dimension }}: {{ d.score }}/4</strong> — {{ d.comment }}</li>
+                    <li [attr.lang]="s.language"><strong>{{ d.dimension }}: {{ d.score }}/4</strong> — {{ d.comment }}</li>
                   }
                 </ul>
-                @if (wr.grade.strengths.length) { <p><strong>Strengths:</strong> {{ wr.grade.strengths.join('; ') }}</p> }
-                @if (wr.grade.improvements.length) { <p><strong>Improve:</strong> {{ wr.grade.improvements.join('; ') }}</p> }
+                @if (wr.grade.strengths.length) { <p><strong>Strengths:</strong>&ngsp;<span [attr.lang]="s.language">{{ wr.grade.strengths.join('; ') }}</span></p> }
+                @if (wr.grade.improvements.length) { <p><strong>Improve:</strong>&ngsp;<span [attr.lang]="s.language">{{ wr.grade.improvements.join('; ') }}</span></p> }
                 @if (wr.modelAnswer) {
-                  <details><summary>Model answer</summary><div class="model md" [innerHTML]="wr.modelAnswer | markdown"></div></details>
+                  <details><summary>Model answer</summary><div class="model md" [attr.lang]="s.language" [innerHTML]="wr.modelAnswer | markdown"></div></details>
                 }
               </div>
             }

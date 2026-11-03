@@ -1,3 +1,5 @@
+import { Language } from '../services/language';
+
 /** A page of question-bank items with the total match count. */
 export interface ContentList<T> {
   total: number;
@@ -12,6 +14,7 @@ export interface ReadingSummary {
   passage: string;
   question: string;
   source: string;
+  language: Language;
 }
 
 /** Listening item summary for the bank browser. */
@@ -24,6 +27,7 @@ export interface ListeningSummary {
   audioPath?: string | null;
   questionCount: number;
   source: string;
+  language: Language;
 }
 
 /** Writing task summary for the bank browser. */
@@ -36,4 +40,5 @@ export interface WritingSummary {
   wordCountMin: number;
   wordCountMax: number;
   source: string;
+  language: Language;
 }

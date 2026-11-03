@@ -112,10 +112,12 @@ describe('SidebarComponent', () => {
       expect(emitted).toHaveBeenCalledTimes(1);
     });
 
-    it('when the rail renders without a session, it offers no actions: no theme control, account row or Sign out', async () => {
+    it('when the rail renders without a session, its footer holds only the language selector: no theme control, account row or Sign out', async () => {
       const el = await render();
       expect(el.querySelector('mat-action-list')).toBeNull();
-      expect(el.querySelector('.sidebar-footer')).toBeNull();
+      expect(Array.from(el.querySelectorAll('.sidebar-footer > *')).map((child) => child.tagName.toLowerCase())).toEqual([
+        'app-language-selector',
+      ]);
       expect(fixture.componentInstance.accountName()).toBeNull();
       expect(fixture.componentInstance.canSignOut()).toBe(false);
       expect(el.querySelector('.sidebar-account')).toBeNull();
@@ -130,7 +132,6 @@ describe('SidebarComponent', () => {
         TestBed.resetTestingModule();
         const el = await render(mode);
         expect(el.querySelector('.sidebar-theme-toggle')).toBeNull();
-        expect(el.querySelector('[aria-haspopup="menu"]')).toBeNull();
         expect(el.querySelector('mat-selection-list')).toBeNull();
         expect(el.textContent).not.toMatch(/theme|dark/i);
       }
@@ -218,9 +219,11 @@ describe('SidebarComponent', () => {
       expect(current[0].textContent?.trim()).toBe('Listening');
     });
 
-    it('when collapsed without a session, no action button renders', async () => {
+    it('when collapsed without a session, the language selector is the only action button', async () => {
       const el = await render('collapsed');
-      expect(el.querySelector('button')).toBeNull();
+      const buttons = Array.from(el.querySelectorAll('button'));
+      expect(buttons.length).toBe(1);
+      expect(buttons[0].closest('app-language-selector')).toBeTruthy();
       expect(el.querySelector('.sidebar-logout')).toBeNull();
     });
   });
@@ -240,6 +243,41 @@ describe('SidebarComponent', () => {
       expect(el.querySelector('mat-selection-list')).toBeNull();
       expect(el.querySelector('button')).toBeNull();
       expect(el.textContent?.trim()).toBe('');
+    });
+  });
+
+  describe('content language selector', () => {
+    it('when the rail is expanded, the selector sits in the footer below the destinations', async () => {
+      const el = await render('expanded');
+      const selector = el.querySelector('.sidebar-footer app-language-selector');
+      expect(selector).toBeTruthy();
+      expect(selector?.querySelector('button')?.getAttribute('aria-label')).toBe('Content language, current: English');
+      const list = el.querySelector('mat-nav-list')!;
+      expect(list.compareDocumentPosition(selector!) & Node.DOCUMENT_POSITION_FOLLOWING).toBeTruthy();
+    });
+
+    it('when the rail is collapsed, the selector sits in the footer below the destinations', async () => {
+      const el = await render('collapsed');
+      const selector = el.querySelector('.sidebar-footer app-language-selector');
+      expect(selector).toBeTruthy();
+      expect(selector?.querySelector('button')?.getAttribute('aria-label')).toBe('Content language, current: English');
+      const nav = el.querySelector('nav.rail-nav')!;
+      expect(nav.compareDocumentPosition(selector!) & Node.DOCUMENT_POSITION_FOLLOWING).toBeTruthy();
+    });
+
+    it.each(['expanded', 'collapsed'] as const)('when the %s rail renders, exactly one selector is present', async (mode) => {
+      const el = await render(mode);
+      expect(el.querySelectorAll('app-language-selector').length).toBe(1);
+    });
+
+    it('when modal, the compact sheet holds no selector: the top app bar has it', async () => {
+      const el = await render('modal');
+      expect(el.querySelector('app-language-selector')).toBeNull();
+    });
+
+    it('when the rail is expanded, the selector icon lines up with the destination icons (20px start padding)', async () => {
+      await render('expanded');
+      expect(sidebarStyleText()).toMatch(/\.sidebar-language(?:\[[^\]]+\])*\s*\{[^}]*padding-inline:\s*20px/);
     });
   });
 
