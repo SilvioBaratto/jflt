@@ -36,11 +36,12 @@
         <h2 class="sec">Reading</h2>
         @for (item of s.items.reading; track item.id) {
           <mat-card class="item" appearance="outlined">
-            <div class="meta">L{{ item.level }} · {{ item.topic }}</div>
-            <div class="passage md" [innerHTML]="item.passage | markdown"></div>
-            <p class="question" [id]="'q-' + item.id">{{ item.question }}</p>
+            <div class="meta">L{{ item.level }}</div>
+            <div class="passage md" [attr.lang]="s.language" [innerHTML]="item.passage | markdown"></div>
+            <p class="question" [attr.lang]="s.language" [id]="'q-' + item.id">{{ item.question }}</p>
             <mat-radio-group
               class="opts"
+              [attr.lang]="s.language"
               [attr.aria-labelledby]="'q-' + item.id"
               [value]="readingChoice()[item.id] || ''"
               (change)="pickReading(item.id, $event.value)"
@@ -75,21 +76,22 @@
         <h2 class="sec">Listening</h2>
         @for (item of s.items.listening; track item.id) {
           <mat-card class="item" appearance="outlined">
-            <div class="meta">{{ item.conversationType }} · {{ item.topic }}</div>
+            <div class="meta" [attr.lang]="s.language">{{ item.conversationType }}</div>
             @if (item.audioPath) {
               <audio
                 controls
                 preload="none"
                 [src]="audioBase + item.audioPath"
-                [attr.aria-label]="'Audio for ' + item.topic"
+                [attr.aria-label]="'Audio for conversation ' + ($index + 1)"
                 class="audio"
               ></audio>
             }
             @for (q of item.questions; track $index) {
               <div class="q">
-                <p class="question" [id]="'q-' + listeningKey(item.id, $index)">{{ $index + 1 }}. {{ q.question }}</p>
+                <p class="question" [attr.lang]="s.language" [id]="'q-' + listeningKey(item.id, $index)">{{ $index + 1 }}. {{ q.question }}</p>
                 <mat-radio-group
                   class="opts"
+                  [attr.lang]="s.language"
                   [attr.aria-labelledby]="'q-' + listeningKey(item.id, $index)"
                   [value]="listeningChoice()[listeningKey(item.id, $index)] || ''"
                   (change)="pickListening(item.id, $index, $event.value)"
@@ -141,8 +143,8 @@
         @for (task of s.items.writing; track task.id) {
           <mat-card class="item" appearance="outlined">
             <div class="meta">L{{ task.stanagLevel }} · {{ task.wordCountMin }}–{{ task.wordCountMax }} words</div>
-            <h3>{{ task.title }}</h3>
-            <div class="instr md" [innerHTML]="task.instructions | markdown"></div>
+            <h3 [attr.lang]="s.language">{{ task.title }}</h3>
+            <div class="instr md" [attr.lang]="s.language" [innerHTML]="task.instructions | markdown"></div>
             @if (task.options.length > 1) {
               <mat-button-toggle-group
                 class="levels"
@@ -156,7 +158,7 @@
                 }
               </mat-button-toggle-group>
               @for (o of task.options; track o.key) {
-                @if (writingOption()[task.id] === o.key) { <div class="prompt md" [innerHTML]="o.prompt | markdown"></div> }
+                @if (writingOption()[task.id] === o.key) { <div class="prompt md" [attr.lang]="s.language" [innerHTML]="o.prompt | markdown"></div> }
               }
             }
             <mat-form-field appearance="outline" class="full">
@@ -164,6 +166,7 @@
               <textarea
                 matInput
                 rows="8"
+                [attr.lang]="s.language"
                 [value]="writingText()[task.id] || ''"
                 (input)="setWritingText(task.id, $any($event.target).value)"
                 [disabled]="!!writingResult()[task.id] || grading()[task.id] || finishing()"

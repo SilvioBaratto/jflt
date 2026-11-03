@@ -6,6 +6,7 @@ import { Observable, Subject, of, throwError } from 'rxjs';
 import { vi } from 'vitest';
 
 import { ExamService } from '../../services/exam';
+import { Language, LanguageService } from '../../services/language';
 import { Session, SessionResult, SubmitAnswerBody } from '../../models/exam';
 import { SessionComponent } from './session';
 
@@ -59,6 +60,41 @@ function makeSession(overrides: Partial<Session> = {}): Session {
   };
 }
 
+const ES_AUDIO_PATH = '/static/listening/es/listening-01.mp3';
+
+/** A session whose content is in `language`, with a topic on every item so a leak would be visible. */
+function makeLanguageSession(language: Language): Session {
+  const s = makeSession({ language });
+  s.items.reading[0] = {
+    id: 'r1',
+    level: 3,
+    topic: 'Algo',
+    passage: 'Un pasaje.',
+    question: 'Una pregunta?',
+    options: [
+      { label: 'A', text: 'primera' },
+      { label: 'B', text: 'segunda' },
+    ],
+  };
+  s.items.reading.length = 1;
+  s.items.listening[0] = {
+    id: 'l1',
+    level: 3,
+    topic: 'Otro tema',
+    conversationType: 'entrevista radiofonica',
+    audioPath: ES_AUDIO_PATH,
+    lines: [],
+    questions: [{ question: 'Otra pregunta?', options: { A: 'a', B: 'b', C: 'c', D: 'd' } }],
+  };
+  s.items.writing[0].title = 'Ensayo';
+  s.items.writing[0].instructions = 'Escribe.';
+  s.items.writing[0].options = [
+    { key: 'A', label: '', prompt: 'Primera opcion' },
+    { key: 'B', label: '', prompt: 'Segunda opcion' },
+  ];
+  return s;
+}
+
 describe('SessionComponent', () => {
   let calls: string[];
   let api: {
@@ -80,6 +116,7 @@ describe('SessionComponent', () => {
   }
 
   beforeEach(() => {
+    localStorage.clear();
     calls = [];
     api = {
       get: vi.fn(),
@@ -227,7 +264,7 @@ describe('SessionComponent', () => {
       const id = g.getAttribute('aria-labelledby')!;
       expect(el().querySelector(`[id="${id}"]`)?.textContent).toContain('q?');
     }
-    expect(el().querySelector('audio')?.getAttribute('aria-label')).toBe('Audio for t');
+    expect(el().querySelector('audio')?.getAttribute('aria-label')).toBe('Audio for conversation 1');
   });
 
   it('gives the response field a label and hides button spinners from assistive tech', async () => {
@@ -367,5 +404,95 @@ describe('SessionComponent', () => {
     const c = await open(makeSession());
     expect(c.skillLabel(null)).toBe('All skills');
     expect(c.skillLabel('reading')).toBe('Reading');
+  });
+
+  describe('content language', () => {
+    const CONTENT_SELECTORS = [
+      '.passage',
+      '.item:nth-of-type(1) .question',
+      '.item:nth-of-type(1) mat-radio-group',
+      '.q .question',
+      '.q mat-radio-group',
+      '.item h3',
+      '.instr',
+      '.prompt',
+      'textarea',
+    ];
+
+    function langOf(selector: string): string | null {
+      const node = el().querySelector(selector);
+      expect(node, selector).not.toBeNull();
+      return node!.getAttribute('lang');
+    }
+
+    it('shows the level alone in a reading header and the conversation type alone in a listening header', async () => {
+      await open(makeLanguageSession('es'));
+      harness.detectChanges();
+
+      const [reading, listening] = Array.from(el().querySelectorAll('.item .meta'));
+      expect(reading.textContent!.trim()).toBe('L3');
+      expect(listening.textContent!.trim()).toBe('entrevista radiofonica');
+      expect(el().textContent).not.toContain('Algo');
+      expect(el().textContent).not.toContain('Otro tema');
+    });
+
+    it('keeps the topic out of the audio name that a screen reader announces', async () => {
+      await open(makeLanguageSession('es'));
+      harness.detectChanges();
+
+      const label = el().querySelector('audio')!.getAttribute('aria-label')!;
+      expect(label).toBe('Audio for conversation 1');
+      expect(label).not.toContain('Otro tema');
+    });
+
+    it.each<Language>(['es', 'en'])('marks the content containers of a %s session with its language', async (language) => {
+      await open(makeLanguageSession(language));
+      harness.detectChanges();
+
+      for (const selector of CONTENT_SELECTORS) {
+        expect(langOf(selector), selector).toBe(language);
+      }
+      expect(el().querySelector('.item:nth-of-type(2) .meta')?.getAttribute('lang')).toBe(language);
+    });
+
+    it('leaves the English interface labels without a lang attribute', async () => {
+      await open(makeLanguageSession('es'));
+      harness.detectChanges();
+
+      for (const selector of ['.session', '.shead', '.shead h1', 'h2.sec', 'mat-label', 'button']) {
+        expect(el().querySelector(selector)?.hasAttribute('lang'), selector).toBe(false);
+      }
+      expect(el().querySelector('.item:nth-of-type(1) .meta')?.hasAttribute('lang')).toBe(false);
+    });
+
+    it('plays the audio path the API returned, whatever the language', async () => {
+      const c = await open(makeLanguageSession('es'));
+      harness.detectChanges();
+
+      expect(el().querySelector('audio')!.getAttribute('src')).toBe(`${c.audioBase}${ES_AUDIO_PATH}`);
+    });
+
+    it.each<[Language, Language]>([
+      ['es', 'en'],
+      ['en', 'es'],
+    ])('keeps a %s session unchanged when the content language preference becomes %s', async (sessionLanguage, preference) => {
+      const c = await open(makeLanguageSession(sessionLanguage));
+      harness.detectChanges();
+      const before = el().innerHTML;
+      const loaded = c.session();
+
+      TestBed.inject(LanguageService).setLanguage(preference);
+      harness.detectChanges();
+      await harness.fixture.whenStable();
+
+      expect(c.session()).toBe(loaded);
+      expect(c.session()!.language).toBe(sessionLanguage);
+      expect(api.get).toHaveBeenCalledTimes(1);
+      expect(el().innerHTML).toBe(before);
+      for (const selector of CONTENT_SELECTORS) {
+        expect(langOf(selector), selector).toBe(sessionLanguage);
+      }
+      expect(el().querySelector('audio')!.getAttribute('src')).toBe(`${c.audioBase}${ES_AUDIO_PATH}`);
+    });
   });
 });
