@@ -407,33 +407,103 @@ describe('SessionComponent', () => {
   });
 
   describe('content language', () => {
-    const CONTENT_SELECTORS = [
-      '.passage',
-      '.item:nth-of-type(1) .question',
-      '.item:nth-of-type(1) mat-radio-group',
-      '.q .question',
-      '.q mat-radio-group',
-      '.item h3',
-      '.instr',
-      '.prompt',
-      'textarea',
-    ];
+    beforeEach(() => {
+      api.submit.mockImplementation((_id: string, body: SubmitAnswerBody): Observable<unknown> =>
+        of(
+          body.itemType === 'writing'
+            ? {
+                itemType: 'writing',
+                grade: {
+                  overallScore: 3,
+                  estimatedLevel: '3',
+                  dimensions: [
+                    { dimension: 'Precision gramatical', score: 3, comment: 'Pocos errores.' },
+                    { dimension: 'Vocabulario', score: 2, comment: 'Repite palabras.' },
+                  ],
+                  strengths: ['Buena estructura', 'Ideas claras'],
+                  improvements: ['Revisar los acentos'],
+                },
+                modelAnswer: 'Un **modelo** de respuesta.',
+              }
+            : {
+                itemType: body.itemType,
+                correct: false,
+                correctLabel: 'A',
+                keyRationale: 'La opcion A cita el texto.',
+                chosenRationale: 'La opcion B no aparece en el texto.',
+              },
+        ),
+      );
+    });
 
-    function langOf(selector: string): string | null {
-      const node = el().querySelector(selector);
-      expect(node, selector).not.toBeNull();
-      return node!.getAttribute('lang');
+    function cards(): Element[] {
+      return Array.from(el().querySelectorAll('.item'));
+    }
+
+    /** Every content container of the reading, listening and writing cards, by name. */
+    function contentNodes(): [string, Element | null][] {
+      const [reading, listening, writing] = cards();
+      return [
+        ['reading passage', reading.querySelector('.passage')],
+        ['reading question', reading.querySelector('.question')],
+        ['reading options', reading.querySelector('mat-radio-group')],
+        ['listening header', listening.querySelector('.meta')],
+        ['listening question', listening.querySelector('.question')],
+        ['listening options', listening.querySelector('mat-radio-group')],
+        ['writing title', writing.querySelector('h3')],
+        ['writing instructions', writing.querySelector('.instr')],
+        ['writing prompt', writing.querySelector('.prompt')],
+        ['writing response', writing.querySelector('textarea')],
+      ];
+    }
+
+    /** The feedback text a checked or graded answer adds, by name; only the text, never its English label. */
+    function feedbackNodes(): [string, Element | null][] {
+      const [reading, listening, writing] = cards();
+      const [strengths, improvements] = Array.from(writing.querySelectorAll('.grade > p:not(.score) > span'));
+      return [
+        ['reading key rationale', reading.querySelector('.fb p:not(.muted)')],
+        ['reading chosen rationale', reading.querySelector('.fb .muted span')],
+        ['listening key rationale', listening.querySelector('.fb p:not(.muted)')],
+        ['listening chosen rationale', listening.querySelector('.fb .muted span')],
+        ...Array.from(writing.querySelectorAll('.grade li')).map((li, i): [string, Element] => [`grade dimension ${i}`, li]),
+        ['strengths', strengths ?? null],
+        ['improvements', improvements ?? null],
+        ['model answer', writing.querySelector('.model')],
+      ];
+    }
+
+    function expectLang(nodes: [string, Element | null][], language: Language): void {
+      for (const [name, node] of nodes) {
+        expect(node, name).not.toBeNull();
+        expect(node!.getAttribute('lang'), name).toBe(language);
+      }
+    }
+
+    async function openWithFeedback(language: Language): Promise<SessionComponent> {
+      const c = await open(makeLanguageSession(language));
+      const { reading, listening, writing } = c.session()!.items;
+      c.pickReading('r1', 'B');
+      c.submitReading(reading[0]);
+      c.pickListening('l1', 0, 'B');
+      c.submitListening(listening[0], 0);
+      c.setWritingText('w1', 'Mi ensayo.');
+      c.submitWriting(writing[0]);
+      harness.detectChanges();
+      return c;
     }
 
     it('shows the level alone in a reading header and the conversation type alone in a listening header', async () => {
       await open(makeLanguageSession('es'));
       harness.detectChanges();
 
-      const [reading, listening] = Array.from(el().querySelectorAll('.item .meta'));
+      const [reading, listening] = cards().map((card) => card.querySelector('.meta')!);
       expect(reading.textContent!.trim()).toBe('L3');
       expect(listening.textContent!.trim()).toBe('entrevista radiofonica');
-      expect(el().textContent).not.toContain('Algo');
-      expect(el().textContent).not.toContain('Otro tema');
+      for (const topic of ['Algo', 'Otro tema']) {
+        expect(el().textContent).not.toContain(topic);
+        expect(el().innerHTML).not.toContain(topic);
+      }
     });
 
     it('keeps the topic out of the audio name that a screen reader announces', async () => {
@@ -449,10 +519,7 @@ describe('SessionComponent', () => {
       await open(makeLanguageSession(language));
       harness.detectChanges();
 
-      for (const selector of CONTENT_SELECTORS) {
-        expect(langOf(selector), selector).toBe(language);
-      }
-      expect(el().querySelector('.item:nth-of-type(2) .meta')?.getAttribute('lang')).toBe(language);
+      expectLang(contentNodes(), language);
     });
 
     it('leaves the English interface labels without a lang attribute', async () => {
@@ -462,7 +529,7 @@ describe('SessionComponent', () => {
       for (const selector of ['.session', '.shead', '.shead h1', 'h2.sec', 'mat-label', 'button']) {
         expect(el().querySelector(selector)?.hasAttribute('lang'), selector).toBe(false);
       }
-      expect(el().querySelector('.item:nth-of-type(1) .meta')?.hasAttribute('lang')).toBe(false);
+      expect(cards()[0].querySelector('.meta')?.hasAttribute('lang')).toBe(false);
     });
 
     it('plays the audio path the API returned, whatever the language', async () => {
@@ -472,12 +539,39 @@ describe('SessionComponent', () => {
       expect(el().querySelector('audio')!.getAttribute('src')).toBe(`${c.audioBase}${ES_AUDIO_PATH}`);
     });
 
+    it.each<Language>(['es', 'en'])('marks the feedback text of a %s session with its language', async (language) => {
+      await openWithFeedback(language);
+
+      expectLang(feedbackNodes(), language);
+      const [reading] = cards();
+      expect(reading.querySelector('.fb .muted span')!.textContent).toBe('La opcion B no aparece en el texto.');
+      expect(reading.querySelector('.fb p:not(.muted)')!.textContent).toBe('La opcion A cita el texto.');
+    });
+
+    it('keeps the English labels around the feedback text outside any lang element', async () => {
+      await openWithFeedback('es');
+
+      const [reading, listening, writing] = cards();
+      const labels = [
+        ...[reading, listening].flatMap((card) => [card.querySelector('.fb strong'), card.querySelector('.fb .muted')]),
+        writing.querySelector('.grade .score'),
+        ...Array.from(writing.querySelectorAll('.grade > p:not(.score) > strong')),
+        writing.querySelector('.grade summary'),
+      ];
+      expect(labels).toHaveLength(8);
+      for (const label of labels) {
+        expect(label, label?.outerHTML).not.toBeNull();
+        expect(label!.closest('[lang]'), label!.outerHTML).toBeNull();
+      }
+      expect(reading.querySelector('.fb .muted')!.textContent).toContain('Your choice:');
+      expect(writing.querySelectorAll('.grade > p:not(.score) > strong')[0].textContent).toBe('Strengths:');
+    });
+
     it.each<[Language, Language]>([
       ['es', 'en'],
       ['en', 'es'],
     ])('keeps a %s session unchanged when the content language preference becomes %s', async (sessionLanguage, preference) => {
-      const c = await open(makeLanguageSession(sessionLanguage));
-      harness.detectChanges();
+      const c = await openWithFeedback(sessionLanguage);
       const before = el().innerHTML;
       const loaded = c.session();
 
@@ -489,9 +583,8 @@ describe('SessionComponent', () => {
       expect(c.session()!.language).toBe(sessionLanguage);
       expect(api.get).toHaveBeenCalledTimes(1);
       expect(el().innerHTML).toBe(before);
-      for (const selector of CONTENT_SELECTORS) {
-        expect(langOf(selector), selector).toBe(sessionLanguage);
-      }
+      expectLang(contentNodes(), sessionLanguage);
+      expectLang(feedbackNodes(), sessionLanguage);
       expect(el().querySelector('audio')!.getAttribute('src')).toBe(`${c.audioBase}${ES_AUDIO_PATH}`);
     });
   });

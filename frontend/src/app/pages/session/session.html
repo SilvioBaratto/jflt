@@ -64,8 +64,8 @@
             @if (readingResult()[item.id]; as r) {
               <div class="fb" tabindex="-1" [attr.data-fb]="'reading:' + item.id" [class.ok]="r.correct" [class.no]="!r.correct">
                 <strong>{{ r.correct ? 'Correct' : 'Incorrect' }}</strong> — key {{ r.correctLabel }}
-                <p>{{ r.keyRationale }}</p>
-                @if (!r.correct && r.chosenRationale) { <p class="muted">Your choice: {{ r.chosenRationale }}</p> }
+                <p [attr.lang]="s.language">{{ r.keyRationale }}</p>
+                @if (!r.correct && r.chosenRationale) { <p class="muted">Your choice: <span [attr.lang]="s.language">{{ r.chosenRationale }}</span></p> }
               </div>
             }
           </mat-card>
@@ -127,8 +127,8 @@
                     [class.no]="!r.correct"
                   >
                     <strong>{{ r.correct ? 'Correct' : 'Incorrect' }}</strong> — key {{ r.correctLabel }}
-                    <p>{{ r.keyRationale }}</p>
-                    @if (!r.correct && r.chosenRationale) { <p class="muted">Your choice: {{ r.chosenRationale }}</p> }
+                    <p [attr.lang]="s.language">{{ r.keyRationale }}</p>
+                    @if (!r.correct && r.chosenRationale) { <p class="muted">Your choice: <span [attr.lang]="s.language">{{ r.chosenRationale }}</span></p> }
                   </div>
                   }
                 }
@@ -188,13 +188,13 @@
                 <p class="score">Overall {{ wr.grade.overallScore }}/4 · level {{ wr.grade.estimatedLevel }}</p>
                 <ul>
                   @for (d of wr.grade.dimensions; track d.dimension) {
-                    <li><strong>{{ d.dimension }}: {{ d.score }}/4</strong> — {{ d.comment }}</li>
+                    <li [attr.lang]="s.language"><strong>{{ d.dimension }}: {{ d.score }}/4</strong> — {{ d.comment }}</li>
                   }
                 </ul>
-                @if (wr.grade.strengths.length) { <p><strong>Strengths:</strong> {{ wr.grade.strengths.join('; ') }}</p> }
-                @if (wr.grade.improvements.length) { <p><strong>Improve:</strong> {{ wr.grade.improvements.join('; ') }}</p> }
+                @if (wr.grade.strengths.length) { <p><strong>Strengths:</strong> <span [attr.lang]="s.language">{{ wr.grade.strengths.join('; ') }}</span></p> }
+                @if (wr.grade.improvements.length) { <p><strong>Improve:</strong> <span [attr.lang]="s.language">{{ wr.grade.improvements.join('; ') }}</span></p> }
                 @if (wr.modelAnswer) {
-                  <details><summary>Model answer</summary><div class="model md" [innerHTML]="wr.modelAnswer | markdown"></div></details>
+                  <details><summary>Model answer</summary><div class="model md" [attr.lang]="s.language" [innerHTML]="wr.modelAnswer | markdown"></div></details>
                 }
               </div>
             }
