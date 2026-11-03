@@ -1,9 +1,12 @@
-"""Tests for scripts/build-seed-data.py, driven through its command line."""
+"""Tests for scripts/build-seed-data.py, driven through its command line and its language table."""
 
+import dataclasses
+import importlib.util
 import json
 import subprocess
 import sys
 from pathlib import Path
+from types import ModuleType
 
 import pytest
 
@@ -32,15 +35,26 @@ def records_in(data: dict, group: str, language: str) -> list[dict]:
     return [record for record in data[group] if record.get("language") == language]
 
 
-def static_listening_state() -> dict[str, int]:
-    """Map every path under api/static/listening to its inode change time.
+def static_listening_state() -> dict[str, tuple[int, int]]:
+    """Map every path under api/static/listening (including es/) to its mtime and ctime.
 
-    `shutil.copy2` keeps the source mtime, so only the ctime reveals an overwrite.
+    `shutil.copy2` keeps the source mtime, so only the ctime reveals an overwrite with a file
+    that has the same timestamp.
     """
     if not STATIC_LISTENING.exists():
         return {}
-    return {str(p.relative_to(STATIC_LISTENING)): p.stat().st_ctime_ns
+    return {str(p.relative_to(STATIC_LISTENING)): (p.stat().st_mtime_ns, p.stat().st_ctime_ns)
             for p in sorted(STATIC_LISTENING.rglob("*"))}
+
+
+@pytest.fixture(scope="module")
+def builder() -> ModuleType:
+    """Load the builder script by path; its hyphenated file name cannot be imported by name."""
+    spec = importlib.util.spec_from_file_location("build_seed_data", SCRIPT)
+    assert spec is not None and spec.loader is not None
+    module = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(module)
+    return module
 
 
 @pytest.fixture(scope="module")
@@ -63,9 +77,45 @@ def test_all_holds_each_language_at_its_expected_size(all_languages, language):
 
 def test_every_record_belongs_to_a_known_language(all_languages):
     """A record without `en` or `es` would be skipped by the seed loader."""
+    assert {r.get("language") for group in GROUPS for r in all_languages[group]} == {"en", "es"}
     for group in GROUPS:
         expected = EXPECTED_COUNTS["en"][group] + EXPECTED_COUNTS["es"][group]
         assert len(all_languages[group]) == expected, group
+
+
+def test_spanish_records_come_from_the_spanish_sources(all_languages):
+    """Equal counts alone would not catch Spanish pointing at the English source folders."""
+    for group, field in (("readingItems", "passage"), ("writingTasks", "instructions"),
+                         ("listeningItems", "lines"), ("vocabEntries", "termEn")):
+        english = records_in(all_languages, group, "en")
+        spanish = records_in(all_languages, group, "es")
+        assert spanish[0][field] != english[0][field], group
+        assert spanish[-1][field] != english[-1][field], group
+
+
+@pytest.mark.parametrize("language", ["en", "es"])
+def test_audio_is_copied_where_its_url_is_served(builder, language):
+    """main.ts serves api/static at /static, so the copy folder must mirror the audio URL."""
+    sources = builder.LANGUAGES[language]
+    assert sources.audio_dest == REPO / "api" / sources.audio_url.strip("/")
+
+
+def test_languages_copy_audio_to_different_folders(builder):
+    """Both languages name their files listening-NN.mp3; a shared folder would overwrite English."""
+    assert builder.LANGUAGES["en"].audio_dest != builder.LANGUAGES["es"].audio_dest
+
+
+def test_spanish_audio_is_copied_only_into_its_destination(builder, tmp_path):
+    """The copy honours `audio_dest` and never writes into the served static folders."""
+    before = static_listening_state()
+    sources = dataclasses.replace(builder.LANGUAGES["es"], audio_dest=tmp_path)
+
+    items = builder.parse_listening(sources)
+
+    copied = sorted(p.name for p in tmp_path.iterdir())
+    assert copied == [f"listening-{n:02d}.mp3" for n in range(1, 13)]
+    assert static_listening_state() == before
+    assert all(item["audioPath"].startswith("/static/listening/es/listening-") for item in items)
 
 
 def test_english_records_equal_the_samples_taken_before_languages_existed(all_languages):
