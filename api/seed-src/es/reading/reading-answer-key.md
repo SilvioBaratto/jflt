@@ -553,3 +553,113 @@
   - Lectura errónea: la información no basta, pues se trata de «un rechazo que ningún dato consigue disipar»; el comentario sugiere más bien que pensar en el origen del agua lo agravaría.
 - [x] **D)** Que el rechazo depende menos del camino que ha recorrido el agua que de que cada ciudadano se pare a pensar en él.
   - Correcta: el agua de muchos ríos ha hecho un camino parecido, pues «Poco importa que el agua de numerosos ríos haya atravesado ya las depuradoras», y nadie la rechaza porque «nadie piensa en ello al abrir el grifo»; con el embalse ocurre igual: el agua «sale convertida en agua del embalse».
+
+### 51. Key: B
+
+- [ ] **A)** Que el respaldo a la ampliación es lo bastante sólido para que salga adelante en cuanto las delegaciones pacten el documento del que partir.
+  - Lectura errónea: toma al pie de la letra la causa que «goce de mejor salud»; casi todos los aspirantes tienen «un vecino que prefiere un Consejo anacrónico», y la coalición de esos vecinos exige «el acuerdo de todos los Estados miembros».
+- [x] **B)** Que ese apoyo general se sostiene porque ningún gobierno ha tenido que pronunciarse aún sobre una propuesta con candidatos concretos.
+  - Correcta: el apoyo es unánime en los discursos, pero cada aspirante choca con un vecino que lo rechaza; como las negociaciones «todavía no han producido un borrador», nadie ha tenido que decidir sobre una lista con nombres, y cada año se repiten «las mismas palabras de aliento».
+- [ ] **C)** Que los cinco miembros permanentes solo aparentan apoyar el cambio, pues ninguno consentiría que otros Estados compartieran su derecho de veto.
+  - Conocimiento externo: el texto no presenta el veto como el obstáculo, pues los permanentes aceptan que el Consejo crezca «siempre que los recién llegados no hereden el veto», condición que la mayoría de los aspirantes «ha terminado por admitir».
+- [ ] **D)** Que la ampliación suma tantos partidarios porque cada región obtendría un asiento permanente y ningún gobierno saldría perdiendo.
+  - Lectura errónea: la reforma no beneficia a todos por igual, ya que cada aspirante tiene un vecino que prefiere un Consejo anacrónico «a otro en el que su rival se siente de por vida».
+
+### 52. Key: C
+
+- [ ] **A)** Que el mal estado de muchos mercantes con bandera de conveniencia provoca accidentes que una inspección más rigurosa habría evitado.
+  - Lectura errónea: toma la «asombrosa torpeza» al pie de la letra, cuando el autor subraya que esos fallos aparecen «sobre los tramos más sensibles del fondo y en las semanas de mayor tensión diplomática».
+- [ ] **B)** Que los daños son intencionados, y que al Estado ribereño le basta con inspeccionar el buque retenido para dejarlo demostrado.
+  - Lectura errónea: acierta en la intención, pero la inspección solo revela «deficiencias en el freno del ancla», mientras que «demostrar la intención exige probar que alguien dio una orden» en nombre de una empresa casi ilocalizable.
+- [x] **C)** Que esos accidentes encubren actos deliberados, ejecutados de tal modo que la intención de causarlos no pueda probarse.
+  - Correcta: el elogio de la torpeza es irónico, pues los fallos coinciden con los tramos sensibles y los momentos de tensión, y todo el método, del buque viejo al «fallo mecánico», está pensado para que «demostrar la intención» resulte casi imposible.
+- [ ] **D)** Que la responsabilidad recae, sobre todo, en un derecho del mar que deja sin protección los cables tendidos lejos de la costa.
+  - Lectura errónea: el derecho del mar explica por qué estos casos quedan casi impunes, ya que «ofrece poco asidero», pero la ironía sobre la torpeza no se dirige a la norma, sino a quienes provocan los daños.
+
+### 53. Key: D
+
+- [ ] **A)** Como un reproche a los Estados con las flotas más numerosas, que se sirven de la falta de datos para imponer sus cifras a los demás.
+  - No se dice: el texto no distingue entre flotas grandes y pequeñas; la inclinación de la duda favorece a todos los que negocian, pues la cifra aprobada «supera la recomendada en no pocas poblaciones».
+- [ ] **B)** Como una concesión a los ministros, cuyas objeciones sobre la calidad de los datos el autor considera a menudo fundadas.
+  - Lectura errónea: el autor admite que «En muchos casos es así», pero la frase sobre la duda es irónica: lo que censura es la conclusión que se extrae una y otra vez de esa incertidumbre.
+- [ ] **C)** Como una crítica a los científicos, que amplían sus márgenes de error para no tener que responder de sus previsiones.
+  - Atribución cambiada: los científicos no ocultan nada, pues reconocen la incertidumbre «en sus informes» y sus dictámenes contienen la alarma «con todas sus letras»; la ironía apunta a quienes negocian.
+- [x] **D)** Como un modo de señalar que la falta de certeza se esgrime para justificar capturas mayores, y no para extremar la prudencia.
+  - Correcta: los márgenes de error pueden «sobrestimar el estado de una población» tanto como subestimarlo, pero de la incertidumbre se deduce «con notable regularidad» que no conviene recortar, como el conductor que acelera en la niebla.
+
+### 54. Key: B
+
+- [ ] **A)** Para mostrar que las versiones adaptadas se han convertido en una herramienta útil para la formación interna del personal de las administraciones.
+  - Lectura errónea: la anécdota no trata de la formación del personal; se suma al dato de que la versión adaptada es el documento «más descargado de la web municipal» para mostrar que sus lectores no son solo los previstos.
+- [x] **B)** Para dar a entender que las normas oficiales resultan oscuras incluso para quienes las aplican, que recurren a la versión pensada para otros lectores.
+  - Correcta: la jefa de servicio necesita la versión adaptada para explicar una norma «redactada en su propio departamento», y la pregunta final apunta a lo mismo: si no la entienden sin ayuda «quienes deben aplicarla», la dificultad está en el original.
+- [ ] **C)** Para censurar la escasa preparación de algunos mandos de la Administración, incapaces de entender las normas que redacta su propio departamento.
+  - Atribución cambiada: la ironía no recae sobre la funcionaria, que lo cuenta «entre risas», sino sobre unos textos cuyas ambigüedades habían pasado «inadvertidas a los juristas».
+- [ ] **D)** Para advertir de que la versión adaptada está desplazando al texto oficial incluso entre quienes lo aplican, con el riesgo jurídico que eso supone.
+  - No se dice: la autora no habla de riesgo jurídico alguno; recuerda que la versión adaptada «no sustituye a la norma», y su pregunta final no pone en duda la adaptación, sino el original.
+
+### 55. Key: A
+
+- [x] **A)** Que la compañía dispone sobre su moneda de un margen de maniobra mayor que el de un banco central, sin los controles que limitan a este.
+  - Correcta: la comparación es «no del todo exacta» porque la aerolínea carece de las «ataduras» de un banco central y puede cambiar el valor de los puntos «de un día para otro» o borrar los saldos inactivos.
+- [ ] **B)** Que los puntos funcionan ya como una moneda tan sólida como el dinero, puesto que bancos, hoteles y otros comercios los adquieren a diario.
+  - Lectura errónea: los bancos compran los puntos «para regalarlos con cada pago con tarjeta», no para pagar con ellos, y se trata de una moneda que la aerolínea emite «y que solo ella acepta».
+- [ ] **C)** Que la aerolínea, igual que un banco central, cuida el valor de sus puntos, porque de la confianza de los clientes depende que los sigan usando.
+  - Lectura errónea: atribuye a la aerolínea las obligaciones de un banco central, cuando el texto afirma que «La aerolínea no tiene ninguna de esas ataduras» y que puede encarecer un billete «de un día para otro».
+- [ ] **D)** Que los titulares de puntos actúan de forma irracional, ya que siguen acumulando una moneda en la que ellos mismos han dejado de confiar.
+  - Atribución cambiada: el texto no censura a los clientes, que reaccionan «como cualquier ahorrador ante una moneda que se deprecia»; lo llamativo es lo que consigue la aerolínea.
+
+### 56. Key: C
+
+- [ ] **A)** Que resultan insuficientes porque los complementos no compensan una diferencia de sueldo que puede llegar a triplicar el salario militar.
+  - Lectura errónea: el sueldo pesa, pues las compañías ofrecen uno que «duplica, o incluso triplica» el militar, pero quienes se marchan hablan sobre todo de «meses enteros en el simulador» y de misiones canceladas.
+- [ ] **B)** Que cargan sobre los pilotos un problema que corresponde a las compañías, las cuales se aprovechan de una formación que no han pagado.
+  - Atribución cambiada: el texto recuerda que las compañías «No han pagado un euro de su formación», pero no las culpa; lo que pone en duda es que las medidas atiendan a las razones de los pilotos, que explican su marcha de un modo que «encaja mal con los cálculos del ministerio».
+- [x] **C)** Que mantienen a los pilotos en filas sin devolverles las horas en el aire cuya falta los lleva a marcharse.
+  - Correcta: las medidas «han frenado algo las bajas», pero dejan en las bases más pilotos y no más aviones, con escuadrillas que tienen «la mitad de sus aparatos en tierra»; quienes se marchan lo hacen porque no vuelan, y por eso mismo «se han ido».
+- [ ] **D)** Que han resultado contraproducentes, porque han empujado a pedir la baja a pilotos que antes no pensaban en marcharse.
+  - Lectura errónea: el texto no dice que las medidas hayan aumentado las bajas; al contrario, afirma que «han frenado algo las bajas».
+
+### 57. Key: D
+
+- [ ] **A)** A los empleados, que cumplen las normas al pie de la letra con unas claves que cualquier programa de ataque prueba en primer lugar.
+  - Lectura errónea: el ingenio de los empleados responde a unas reglas que les imponen decenas de claves «todas distintas, todas arbitrarias», y el autor no los culpa, pues los cursos no han logrado «ampliar la memoria humana».
+- [ ] **B)** A los organismos de normalización, que difundieron durante años unas recomendaciones que más tarde tuvieron que corregir.
+  - Lectura errónea: el texto presenta la revisión de esos organismos como el buen ejemplo, ya que aconsejan ahora «frases largas y fáciles de recordar»; los que no la han seguido son los reglamentos internos.
+- [ ] **C)** A los fabricantes de programas, que venden como garantía de seguridad unas exigencias que facilitan el trabajo a los atacantes.
+  - No se dice: el texto no atribuye a los fabricantes promesa alguna; los programas traen esas exigencias de fábrica, pero «cualquier administrador puede cambiarlas en unos minutos», de modo que mantenerlas es decisión de cada organización.
+- [x] **D)** A los encargados de la seguridad, que achacan a la falta de formación del personal unos hábitos que nacen de sus propias reglas.
+  - Correcta: quienes redactan y vigilan las normas atribuyen las malas prácticas a «la escasa cultura digital de la plantilla», cuando nacen de unas reglas imposibles de cumplir, y conservan «la caducidad de noventa días» que ya se ha desaconsejado.
+
+### 58. Key: A
+
+- [x] **A)** Que un gobierno puede presentar como fruto de su propia firmeza la contención de un adversario que nunca había pensado llegar tan lejos.
+  - Correcta: trazar la línea donde el adversario «no tiene intención alguna de llegar» permite al gobierno «atribuirse el mérito de su prudencia», es decir, de una contención ajena que no le ha costado nada.
+- [ ] **B)** Que un gobierno prudente solo amenaza allí donde está seguro de poder cumplir sus advertencias, y preserva así su credibilidad.
+  - Lectura errónea: entiende que la prudencia es la del gobierno, cuando la regla no busca amenazas que puedan cumplirse, sino líneas que eviten «tener que defenderlas», dentro de un «arte considerable» que el autor describe con ironía.
+- [ ] **C)** Que los gobiernos calculan mal a menudo hasta dónde piensa llegar el adversario, de modo que trazan sus líneas lejos del pulso real.
+  - Lectura errónea: la regla no describe un error de cálculo, sino una elección deliberada: dibujar la línea «allí donde el adversario no tiene intención alguna de llegar».
+- [ ] **D)** Que el adversario sabe de antemano qué líneas no van a defenderse, lo que priva de todo efecto a las advertencias de los gobiernos.
+  - Generalización excesiva: el adversario lee las declaraciones «con atención de filólogo», pero el autor reconoce que algunas líneas «han resistido décadas sin que nadie se atreviera a pisarlas».
+
+### 59. Key: C
+
+- [ ] **A)** Que los pueblos de montaña mantienen con sus ríos un vínculo que las administraciones hidráulicas suelen pasar por alto al planificar las obras.
+  - Lectura errónea: el vínculo que se invoca apareció «de pronto», pues el azud llevaba «ochenta años sin que nadie reparara en él»; el texto no reprocha a las administraciones haberlo ignorado.
+- [ ] **B)** Que las asociaciones de defensa del patrimonio actúan movidas por intereses turísticos ajenos a la historia del lugar.
+  - No se dice: el texto no atribuye a la asociación interés turístico alguno; habla de los «baños de su infancia» y de las «fotografías de boda» que recuerdan los vecinos.
+- [x] **C)** Que el apego a estas construcciones nace a menudo de la amenaza de perderlas, más que de un aprecio que existiera desde antes.
+  - Correcta: el muro pasó inadvertido hasta que se anunció su derribo y, «en pocos días», se convirtió en «una seña de identidad local», de modo que su valor surge ante la amenaza de perderlo.
+- [ ] **D)** Que los expedientes para proteger el patrimonio se han convertido en el principal obstáculo legal para devolver a los ríos su cauce natural.
+  - Generalización excesiva: el expediente es uno de los detalles de la anécdota; el autor solo afirma que «El freno rara vez es técnico» y no señala ningún obstáculo legal como el principal.
+
+### 60. Key: B
+
+- [ ] **A)** Que las compañías se han esforzado por que la oficina resulte tan acogedora como el hogar y atraiga así de nuevo a la plantilla.
+  - Lectura errónea: toma la comparación por un elogio; las cabinas no hacen la oficina más acogedora, sino que reproducen el aislamiento de casa para hablar con compañeros que están «en sus casas o en otra ciudad».
+- [x] **B)** Que la solución traslada a la sede el aislamiento de casa, en vez de procurar que coincidan quienes trabajan juntos.
+  - Correcta: como cada empleado elige «qué días acude», los miembros de un mismo equipo no coinciden, y las cabinas resuelven sus videollamadas trasladando a la oficina el «cuarto de estar» que dejaron en casa, sin crear ocasiones de encuentro.
+- [ ] **C)** Que la vuelta obligatoria encubre la desconfianza hacia unos empleados a los que no se puede vigilar desde lejos.
+  - No se dice: el texto no habla de desconfianza ni de vigilancia; recoge que las empresas invocan «la colaboración espontánea» y la «cultura de empresa».
+- [ ] **D)** Que los empleados, reacios a volver, se encierran en las cabinas para evitar el trato con los compañeros que encuentran en la planta.
+  - Lectura errónea: los empleados no evitan a sus compañeros, sino que pasan la mañana en videoconferencias «con compañeros de su propio equipo», que han elegido otros días.
