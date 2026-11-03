@@ -77,7 +77,8 @@ Invalid `lang`/`language` → 400 from the existing Zod validation pipe. Submitt
 ## Error handling and edge cases
 
 - Unknown language in storage → default `en`. Storage unavailable → in-memory default (no crash).
-- A language with no seeded items → API returns an empty list; Home shows an empty state; `POST /sessions` for it returns a clear 4xx (existing behaviour for empty banks, re-checked per language).
+- A language with no seeded items → API returns an empty list; Home shows an empty state; `POST /sessions` whose assembled session would hold zero items returns 422 with a clear message (new behaviour for every language: today an empty session is created).
+- `lang`/`language` is lowercase only: `?lang=` (empty), `ES`, `fr` → 400. An absent parameter means `en`.
 - Old sessions (created before the migration) are `en`.
 - Mixed-language items never appear in one session (selection filters before sampling).
 - Switching language mid-session never changes that session's items or its audio base.
