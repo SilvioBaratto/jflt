@@ -66,7 +66,7 @@
   "questions": [
     {
       "id": 1,
-      "question": "¿Qué postura mantiene el investigador ante la prohibición de llevar el teléfono personal?",
+      "question": "¿Qué opina el investigador de la prohibición de llevar el teléfono personal?",
       "options": {
         "A": "La admite en operaciones breves y arriesgadas, pero la cree contraproducente en las misiones largas.",
         "B": "La considera eficaz, aunque cree que debería compensarse con más llamadas desde la propia base.",
@@ -84,7 +84,7 @@
     },
     {
       "id": 2,
-      "question": "¿Qué se desprende de lo que el investigador cuenta sobre los oficiales en los ejercicios?",
+      "question": "¿Qué se desprende de lo que el investigador cuenta sobre los ejercicios que ha evaluado?",
       "options": {
         "A": "Que los soldados más jóvenes entienden mejor que sus mandos los riesgos que entraña cada aplicación.",
         "B": "Que el puesto de mando es el lugar donde con más rigor se vigila el uso de los teléfonos personales.",

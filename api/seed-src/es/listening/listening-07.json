@@ -83,7 +83,7 @@
       "question": "¿A qué atribuye la corresponsal la prudencia de la misión al hablar en público?",
       "options": {
         "A": "A que teme que una valoración dura desate protestas en la calle y ponga en peligro a sus equipos.",
-        "B": "A que su presencia en el país depende de la voluntad del Gobierno, y aún tiene trabajo pendiente allí.",
+        "B": "A que debe su presencia en el país a la voluntad del Gobierno, y aún tiene trabajo pendiente allí.",
         "C": "A que la misión llegó tarde al país y espera al informe final para juzgar la campaña.",
         "D": "A que coincide con el Gobierno en que lo decisivo de unas elecciones es lo que ocurre el día de la votación."
       },
@@ -102,11 +102,11 @@
       "options": {
         "A": "Para dar a entender que los diplomáticos europeos desconfían de la imparcialidad de la misión.",
         "B": "Para advertir de que el informe final suavizará sus críticas a fin de no incomodar al Gobierno.",
-        "C": "Para subrayar que las críticas de fondo llegarán cuando ya apenas interesen al público.",
+        "C": "Para subrayar que el informe final traerá críticas de fondo cuando ya apenas interesen al público.",
         "D": "Para señalar que la oposición se apoyará en el informe final para impugnar los resultados oficiales."
       },
       "answer": "C",
-      "rationale": "El diplomático contrapone el calendario de la prensa, «el de los periodistas, que se acaba esta semana», al de la misión, «al que aún le quedan dos meses»: cuando llegue el informe final, el presidente «ya habrá empezado su nuevo mandato» y la atención estará en otra parte.",
+      "rationale": "El diplomático contrapone el calendario de la prensa, «el de los periodistas, que se acaba esta semana», al de la misión, «al que aún le quedan dos meses»: como recuerda el presentador, para entonces el presidente «ya habrá empezado su nuevo mandato», y la atención estará en otra parte.",
       "option_rationales": {
         "A": "No se dice: el diplomático no pone en duda la imparcialidad de la misión; solo contrapone dos plazos, «el de los periodistas, que se acaba esta semana», y el de la misión.",
         "B": "Conocimiento externo: nada indica que el informe vaya a rebajar las críticas; los observadores dicen que allí estará «el análisis de fondo».",

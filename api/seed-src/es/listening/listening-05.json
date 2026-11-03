@@ -94,7 +94,7 @@
       "options": {
         "A": "Que se quedan cortos al estimar su intensidad, porque aprenden de un pasado sin casos comparables.",
         "B": "Que no explican por qué prevén el episodio, lo que complica justificar una alerta ante la población.",
-        "C": "Que arrastran los fallos del sistema clásico con los extremos, ya que arrancan de sus cálculos.",
+        "C": "Que pierden fiabilidad más allá de cinco o seis días, justo cuando conviene anticipar el aviso.",
         "D": "Que sus cientos de escenarios alternativos complican decidir cuándo se debe dar la alarma."
       },
       "answer": "A",
@@ -102,7 +102,7 @@
       "option_rationales": {
         "A": "Correcta: un modelo que «aprende del pasado» tiende a «suavizar los picos», de modo que subestima la intensidad de lo que no ha visto antes.",
         "B": "Conocimiento externo: la opacidad de estos modelos es una crítica real, pero el director no la plantea; su reserva es que «tienden a suavizar los picos».",
-        "C": "Lectura errónea: mezcla dos reservas distintas; que el modelo nuevo «arranca del estado de la atmósfera» calculado por el sistema clásico es el primer argumento, no la causa de su fallo con los extremos.",
+        "C": "No se dice: el director no habla del plazo de la predicción; los «cinco o seis días» los menciona la ingeniera para destacar que aciertan «tanto como los modelos clásicos».",
         "D": "Lectura errónea: los «cientos de predicciones ligeramente distintas» son una ventaja que presenta la ingeniera; el director no los critica: su reserva es que estos modelos «tienden a suavizar los picos»."
       }
     },
@@ -110,7 +110,7 @@
       "id": 3,
       "question": "¿Qué deja entrever el director al mencionar a quien aprueba el presupuesto de su servicio?",
       "options": {
-        "A": "Que reprocha a la ingeniera haber exagerado el ahorro de energía para promocionar sus modelos.",
+        "A": "Que reprocha a la ingeniera haber exagerado las ventajas de sus modelos para promocionarlos.",
         "B": "Que pide que las empresas tecnológicas compartan con el servicio público el coste de los avisos.",
         "C": "Que condiciona la adopción de los modelos nuevos a que su servicio reciba más fondos para ello.",
         "D": "Que teme que quien reparte el dinero vea lo barato de los modelos nuevos y no sus limitaciones."
@@ -118,7 +118,7 @@
       "answer": "D",
       "rationale": "Al pedir que quien «aprueba nuestro presupuesto» oiga la conversación «entera», y no únicamente «la parte de los minutos y la energía», el director deja ver su temor a que el ahorro pese más que las reservas que ha expuesto.",
       "option_rationales": {
-        "A": "Lectura errónea: «la parte de los minutos y la energía» alude a lo que podría retener quien decide el gasto; el director no acusa a la ingeniera de exagerar.",
+        "A": "Lectura errónea: el director no acusa a la ingeniera de exagerar; acaba de decirle «No le falta razón», y lo que le inquieta es que se oiga solo «la parte de los minutos y la energía».",
         "B": "No se dice: las empresas tecnológicas las menciona la ingeniera, que advierte que ninguna «está obligada a avisar a nadie»; el director no propone que paguen nada.",
         "C": "Lectura errónea: el director dice sin reservas «no tengo intención de quedarme quieto»; no pone condiciones económicas a la adopción de los modelos nuevos.",
         "D": "Correcta: si teme que se oiga solo «la parte de los minutos y la energía», es porque cree que quien «aprueba nuestro presupuesto» podría ver en el ahorro un motivo para prescindir de lo clásico."

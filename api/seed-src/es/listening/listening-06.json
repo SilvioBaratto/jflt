@@ -90,7 +90,7 @@
     },
     {
       "id": 2,
-      "question": "¿Qué replica el inspector cuando la directora pone reparos a la propuesta del asesor?",
+      "question": "¿Qué replica el inspector al último reparo de la directora?",
       "options": {
         "A": "Que el gasto será menor de lo previsto, porque pocas familias usarán esas actividades.",
         "B": "Que las asociaciones de familias podrían asumir las actividades en los colegios que lo soliciten.",
@@ -111,7 +111,7 @@
       "question": "¿Qué decide finalmente la directora?",
       "options": {
         "A": "Aprobar ya las solicitudes de los centros con actividades de tarde para cualquier alumno y aplazar el resto.",
-        "B": "Aprobar las once solicitudes a condición de que la consejería pague actividades de tarde al alumnado becado.",
+        "B": "Aprobar las once solicitudes a condición de que la consejería financie actividades de tarde en cada centro.",
         "C": "Rechazar las solicitudes de los centros en los que votaron menos de la mitad de las familias con hijos matriculados.",
         "D": "Autorizar las once solicitudes durante un curso de prueba y revisar después cómo ha funcionado."
       },
@@ -119,7 +119,7 @@
       "rationale": "La directora autoriza ya a los colegios con actividades de tarde «abiertas a todos los alumnos» y deja los demás en suspenso hasta que presenten «un plan para atender a esos niños».",
       "option_rationales": {
         "A": "Correcta: se aprueban ya los centros con tardes «abiertas a todos los alumnos», y el resto queda a la espera de «un plan para atender a esos niños».",
-        "B": "Atribución cambiada: es la propuesta del asesor, que la directora frena porque «Suena muy bien hasta que se le pone precio»; al final no autoriza las once.",
+        "B": "Atribución cambiada: que pague la consejería es la idea del asesor («la consejería corre con el gasto»), y la directora la frena porque «Suena muy bien hasta que se le pone precio»; al final no autoriza las once.",
         "C": "Lectura errónea: la baja participación la señala el inspector, pero el asesor advierte que denegar por eso haría perder «el primer recurso que se presente»; la directora no rechaza ninguna solicitud.",
         "D": "Lectura errónea: la revisión «dentro de un año» acompaña a una autorización parcial; los centros sin actividades abiertas a todos «quedan en suspenso», no se autorizan a prueba."
       }
