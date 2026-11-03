@@ -23,6 +23,7 @@ function makeSession(overrides: Partial<Session> = {}): Session {
     mode: 'exam',
     skill: null,
     status: 'in_progress',
+    language: 'en',
     startedAt: '2026-10-13T00:00:00Z',
     answers: [],
     items: {

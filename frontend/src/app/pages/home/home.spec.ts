@@ -18,8 +18,24 @@ import { HomeComponent } from './home';
 const READING: ContentList<ReadingSummary> = {
   total: 60,
   items: [
-    { id: 'r1', level: 3, topic: 'Sanctions', passage: 'p', question: 'q', source: 'seed' },
-    { id: 'r2', level: 4, topic: 'Deterrence', passage: 'p', question: 'q', source: 'seed' },
+    {
+      id: 'r1',
+      level: 3,
+      topic: 'Sanctions',
+      passage: 'p',
+      question: 'q',
+      source: 'seed',
+      language: 'en',
+    },
+    {
+      id: 'r2',
+      level: 4,
+      topic: 'Deterrence',
+      passage: 'p',
+      question: 'q',
+      source: 'seed',
+      language: 'en',
+    },
   ],
 };
 const LISTENING: ContentList<ListeningSummary> = {
@@ -32,6 +48,7 @@ const LISTENING: ContentList<ListeningSummary> = {
       conversationType: 'radio interview',
       questionCount: 3,
       source: 'seed',
+      language: 'en',
     },
   ],
 };
@@ -47,6 +64,7 @@ const WRITING: ContentList<WritingSummary> = {
       wordCountMin: 350,
       wordCountMax: 700,
       source: 'seed',
+      language: 'en',
     },
   ],
 };

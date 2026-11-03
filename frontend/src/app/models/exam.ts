@@ -1,3 +1,5 @@
+import { Language } from '../services/language';
+
 /** One reading option as shown to the candidate (no key/rationale). */
 export interface ReadingOption {
   label: string;
@@ -79,6 +81,7 @@ export interface Session {
   mode: string;
   skill?: string | null;
   status: string;
+  language: Language;
   result?: SessionResult | null;
   startedAt: string;
   completedAt?: string | null;
@@ -93,6 +96,7 @@ export interface CreateSessionBody {
   levels?: number[];
   counts?: { reading?: number; listening?: number; writing?: number };
   adaptive?: boolean;
+  language?: Language;
 }
 
 /** Request body to submit one answer. */
