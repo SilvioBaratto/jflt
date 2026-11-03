@@ -68,7 +68,7 @@ Redacte un correo electrónico formal dirigido al general director de Personal e
 - Proponer medidas de retención que respondan a cada una de las causas identificadas.
 - Comparar brevemente el coste de las medidas con el de no actuar.
 - Solicitar una decisión o una reunión antes de una fecha vinculada al calendario presupuestario.
-- Emplear el tratamiento y las fórmulas propias de la correspondencia militar con un superior, en un tono formal y constructivo.
+- Emplear las fórmulas y el tratamiento propios de la correspondencia militar con un superior, en un tono formal y constructivo.
 
 ## Task 6 — Infraestructuras de defensa y despoblación rural
 *Level 3 · essay · 250–500 words*
