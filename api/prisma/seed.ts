@@ -3,7 +3,9 @@
  *
  * The data holds one or more content languages, and each is loaded on its own: its seed-sourced
  * rows are cleared (generated items and other languages stay) and recreated in one transaction,
- * so re-running is safe and an interrupted run never leaves a language half-seeded.
+ * so an interrupted run never leaves a language half-seeded. The seed records carry no ids, though,
+ * so a plain run gives every seed row of the languages in the file a new UUID: sessions, answers and
+ * review items that referenced the old ids dangle. Use it on an empty or disposable database only.
  * With SEED_IF_EMPTY=1 only languages that have no seed rows yet are loaded, so container restarts
  * never wipe seeded rows that exam answers reference, while a database seeded before a language
  * existed still receives it.

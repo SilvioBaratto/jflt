@@ -62,7 +62,7 @@ Invalid `lang`/`language` → 400 from the existing Zod validation pipe. Submitt
 - `grounding.ts`: the grounding documents are selected by language — English from `api/references/`, Spanish from `api/references/es/` (the four documents already exist there).
 - `claude-agent.service.ts`: a small language profile (`en` → "English", `es` → "Spanish") is threaded into the generation, verification, listening-key and writing-grading prompts so they name the language of the item, test the right language's register, and (for grading) write the feedback in the exam language. CEFR/STANAG mapping is unchanged.
 - TTS: unchanged (`tts-1` handles Spanish); generated Spanish listening items keep the voice rules of the Spanish rules document (voice gender matches self-reference).
-- The Foundry authentication gotcha in `CLAUDE.md` is unchanged.
+- The `claude` CLI authentication gotcha in `CLAUDE.md` (the binary must be on PATH and logged in) is unchanged.
 
 ### 5. Frontend (`frontend/src/app`)
 
@@ -90,7 +90,7 @@ Invalid `lang`/`language` → 400 from the existing Zod validation pipe. Submitt
 - Seed: a Python test (or script check in CI) running `build-seed-data.py --lang all` to a temp output and asserting the counts above and that every record carries `language`; a `seed.ts` unit check of the per-language emptiness rule if it can be isolated.
 - Frontend (Vitest): `LanguageService` (default, persistence, invalid storage, throwing storage), selector component (menu, selection, aria, harness), services send `lang`/`language`, Home reload on change, session hides topic and sets `lang`.
 - Existing suites stay green: API `npm test`, `npm run lint`, `npm run build`, e2e; frontend `npm test`, `npm run build` (CI runs these).
-- Manual smoke (documented, not automated): `docker compose up -d --build`, switch to Español, start a reading practice and a listening session, play the audio, finish a session, check the dashboard counts per language. Live Claude calls need `az login` on the host (Foundry gotcha).
+- Manual smoke (documented, not automated): `docker compose up -d --build`, switch to Español, start a reading practice and a listening session, play the audio, finish a session, check the dashboard counts per language. Live Claude calls need the `claude` CLI logged in (`claude auth login`) wherever the API runs.
 
 ## Delivery and sequencing
 

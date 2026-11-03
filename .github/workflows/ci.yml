@@ -45,3 +45,15 @@ jobs:
       - run: npm ci --legacy-peer-deps --no-audit --no-fund
       - run: npx ng test --watch=false
       - run: npm run build
+
+  seed-script:
+    # The only automated check that each language's listening audio lands in its own folder and
+    # that the seed counts and `language` labels stay intact.
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install pytest
+      - run: python -m pytest -q -p no:cacheprovider scripts/test_build_seed_data.py

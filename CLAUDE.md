@@ -45,8 +45,8 @@ without it and npm aborts on an `ERESOLVE` peer conflict.
 | Build | `npm run build` | `npm run build` |
 | E2E | `npm run test:e2e` | — |
 
-CI (`.github/workflows/ci.yml`) runs the API's lint, unit, e2e and build, and the frontend's test and
-build, on every push and pull request to `main`.
+CI (`.github/workflows/ci.yml`) runs the API's lint, unit, e2e and build, the frontend's test and
+build, and the pytest suite for `scripts/build-seed-data.py`, on every push and pull request to `main`.
 
 API Jest needs **Node 24** (what CI and the Dockerfile use; from Node 24.9 Jest can `require` ESM natively). On
 Node 22 the specs that import `@nestjs/common` fail with "Must use import to load ES Module".
@@ -79,8 +79,15 @@ any source guide: `python scripts/build-seed-data.py`.
 
 `prisma/seed.ts` (`npm run seed`) loads `seed-data.json` one language at a time: it deletes only that
 language's `source = 'seed'` rows (generated items and the other language stay) and recreates them in one
-transaction. With `SEED_IF_EMPTY=1` (set by `api/entrypoint.sh`) a language is skipped only when it already
-has seed rows, so a database seeded before Spanish existed still receives Spanish on the next start.
+transaction. With `SEED_IF_EMPTY=1` a language is skipped only when it already has seed rows, so a database
+seeded before Spanish existed still receives Spanish on the next start. `api/entrypoint.sh` sets it, but only
+in the dev image: the production image installs production dependencies only (`npm ci --omit=dev`), `tsx` is
+missing there and the entrypoint skips the seed, so a production database must be seeded from a dev checkout.
+
+A plain `npm run seed` (without `SEED_IF_EMPTY`) is **not** safe on a database in use. The seed data carries no
+ids, so every seed row of every language in the file is deleted and recreated with a new UUID: existing
+sessions then load no items, and `Answer` and `ReviewItem` rows point at ids that no longer exist. Run it
+only on an empty or disposable database; the `SEED_IF_EMPTY=1` form never touches a language that has seed rows.
 
 ## Backend architecture (`api/`)
 
@@ -144,7 +151,9 @@ The bank is bilingual. `language` (`en` | `es`, lowercase, default `en`) is a co
 - Read routes (`content/*`, `vocab`, `vocab/sections`, `vocab/flashcards`, `progress`, `GET sessions`) take
   `?lang=`; `POST sessions` and the `generate/*` bodies take `language`. Controllers resolve `?lang=` with
   `parseLanguage` (`src/common/language.ts`). Absent means `en`; any other value is a 400, including an
-  empty `?lang=`, `ES`, `fr` and a repeated key (`?lang=es&lang=en`).
+  empty `?lang=`, `ES`, `fr` and a repeated key (`?lang=es&lang=en`). Bracket syntax is not an error: under
+  Express 5's simple query parser `?lang[]=es` and `?lang[a]=es` are different keys (`lang[]`, `lang[a]`), so
+  the request carries no `lang` and English is served with 200.
 - A session draws every item from its own language and never mixes them. `POST sessions` returns 422 when no
   item of that language matches the request. `completeSession` updates `TopicStat` under each item's own language.
 
@@ -154,6 +163,34 @@ under `app-content-language` (default `en`; blocked or unreadable storage falls 
 and session requests send it, Home reloads the question bank when it changes, and a new session starts in the
 current language. An open session keeps the language it began with: the session screen hides each item's topic
 (English topics state the answer) and marks the content and feedback with `lang` set to the session language.
+
+### Upgrading an existing database
+
+Migration `20261103102139_add_content_language` cannot be undone by Prisma: it drops the unique index
+`topic_stats_skill_level_topic_key`, adds `language` (default `en`, so every existing row becomes English) to
+`reading_items`, `writing_tasks`, `listening_items`, `vocab_entries`, `exam_sessions` and `topic_stats`, and
+creates the new `(language, skill, level, topic)` unique index. Back up before the first start of the new
+version. In the compose setup the database service is `db`, user `postgres`, database `app_db`
+(`docker-compose.yml`):
+
+```bash
+docker compose exec -T db pg_dump -U postgres -d app_db -Fc > jflt-before-language-switch.dump
+```
+
+The first start then runs the migration and, in the dev image, `SEED_IF_EMPTY=1 npm run seed`, which also
+seeds Spanish (English rows and their ids are left alone).
+
+To roll back, stop the API and restore the dump, then start the previous version:
+
+```bash
+docker compose stop api
+docker compose exec -T db pg_restore -U postgres -d app_db --clean --if-exists < jflt-before-language-switch.dump
+```
+
+The alternative that keeps newer data is to delete the `language = 'es'` rows (the five content and session
+tables above plus `topic_stats`; an `exam_sessions` row takes its `answers` with it) and recreate the old index with
+`CREATE UNIQUE INDEX "topic_stats_skill_level_topic_key" ON "topic_stats"("skill", "level", "topic");`. The
+`language` columns can stay, since they default to `en`.
 
 ## Frontend architecture (`frontend/`)
 
