@@ -636,18 +636,18 @@ El arreglo tiene méritos difíciles de discutir. Ningún ministerio protesta, n
 
 **¿Qué da a entender el autor cuando califica de «detalle menor» lo que se pierde con el arreglo?**
 
-- **A)** Que esa pérdida es grave, pues cada población da por cerrada una disputa que sus gobernantes quizá tengan que resolver con concesiones.
+- **A)** Que esa pérdida es grave, pues cada población da por cerrada una disputa que sus gobernantes aún tienen abierta en la mesa de negociación.
 - **B)** Que esa pérdida es secundaria frente a la tranquilidad que el arreglo procura a ministerios, empresas y ciudadanos de ambos países.
-- **C)** Que esa pérdida afecta sobre todo a los observadores extranjeros, a quienes la línea discontinua ya no basta para entender el conflicto.
+- **C)** Que esa pérdida es grave, pues priva a los observadores extranjeros de la línea discontinua que hasta ahora les permitía entender el conflicto.
 - **D)** Que esa pérdida es inevitable, ya que en más de un país la ley castiga la publicación de mapas contrarios a la versión oficial.
 
 ### 42. (Los precios dinámicos en la venta de entradas y en el transporte)
 
 En la venta de entradas para un gran concierto, el precio se mueve hoy como una cotización en bolsa. A las nueve en punto, cuando se abre la venta, una localidad cuesta sesenta euros; a las nueve y cinco, con trescientas mil personas en la cola virtual, el algoritmo la ofrece por doscientos cuarenta. El mismo mecanismo encarece el último tren de la tarde en vísperas de un puente y el coche con conductor que se pide por aplicación en cuanto empieza a llover. La indignación de los compradores es tan previsible como la reacción de los economistas, que suelen acogerla con un suspiro.
 
-Hay que admitir que los economistas tienen buenos argumentos. Con un precio fijo, las entradas se agotan en minutos y reaparecen horas después en las páginas de reventa al triple o al cuádruple de su valor, de modo que el sobreprecio existe igualmente, solo que lo cobra alguien que no ha compuesto una sola canción. El precio dinámico, al menos, devuelve ese margen a quien organiza el concierto y lo pone a la vista desde el primer momento.
+Hay que admitir que los economistas tienen buenos argumentos. Con un precio fijo, las entradas se agotan en minutos y reaparecen horas después en las páginas de reventa al triple o al cuádruple de su valor, de modo que el sobreprecio existe igualmente, solo que lo cobra alguien que no ha compuesto una sola canción. El precio dinámico, al menos, devuelve ese margen a quien organiza el concierto.
 
-El argumento deja fuera, sin embargo, algo que el público percibe con claridad. La cola virtual, con todos sus defectos, trataba igual al estudiante que lleva diez años escuchando al grupo y al directivo que descubrió al grupo la semana pasada: pasaba antes quien antes llegaba, y las reglas eran las mismas para todos de principio a fin. El algoritmo, en cambio, modifica el precio mientras uno espera, sin avisar de cuánto ni por qué. El conductor que triplica la tarifa bajo un aguacero asigna su vehículo con una eficiencia irreprochable; lo que difícilmente conseguirá es que el pasajero, empapado, se lo agradezca.
+Ahora bien, la cola virtual, con todos sus defectos, trataba igual al estudiante que lleva diez años fiel al grupo y al directivo que lo descubrió la semana pasada: pasaba antes quien antes llegaba, y las reglas eran las mismas para todos de principio a fin. El algoritmo, en cambio, modifica el precio mientras uno espera, sin avisar de cuánto ni por qué. El conductor que triplica la tarifa bajo un aguacero asigna su vehículo con una eficiencia irreprochable; lo que difícilmente conseguirá es que el pasajero, empapado, se lo agradezca.
 
 **¿Cómo hay que entender la razón que el autor concede a los economistas?**
 
@@ -658,15 +658,15 @@ El argumento deja fuera, sin embargo, algo que el público percibe con claridad.
 
 ### 43. (El regreso del oso pardo a algunos valles de montaña)
 
-En los archivos de algunos ayuntamientos de montaña se conservan todavía los recibos de las recompensas que se pagaban, hace un siglo, por cada oso abatido. La junta de vecinos fijaba la cantidad, el cazador presentaba la piel o las zarpas como prueba y el pueblo entero celebraba haberse librado de una fiera que mataba el ganado y saqueaba las colmenas. A mediados del siglo pasado, la especie había desaparecido de casi todas las sierras donde se la perseguía.
+En los archivos de algunos ayuntamientos de montaña se conservan todavía los recibos de las recompensas que se pagaban, hace un siglo, por cada oso abatido. La junta de vecinos fijaba la cantidad, el cazador presentaba la piel o las zarpas como prueba y el pueblo entero celebraba haberse librado de una fiera que mataba el ganado y saqueaba las colmenas. A mediados del siglo pasado, la especie había desaparecido de casi todos los valles donde se la perseguía.
 
-Hoy el oso ha vuelto a algunos de esos valles, y los pueblos que pagaban por su piel lo reciben de otra manera. Su silueta adorna los carteles de bienvenida, da nombre a una ruta de senderismo y a un queso artesano, y atrae a visitantes que madrugan para verlo de lejos con prismáticos y que después comen, duermen y compran en el pueblo. En uno de esos valles, la casa del último cazador de osos se ha restaurado para convertirla en centro de interpretación de la especie. Los folletos turísticos hablan de una reconciliación entre el hombre y la naturaleza, y la fórmula tiene el mérito de dejar contentos a todos.
+Hoy el oso ha vuelto a algunos de esos valles, y los pueblos que pagaban por su piel lo reciben de otra manera. Su silueta adorna los carteles de bienvenida, su nombre bautiza una ruta de senderismo y un queso artesano, y el propio animal atrae a visitantes que madrugan para verlo de lejos con prismáticos y que después comen, duermen y compran en el pueblo. En uno de esos valles, la casa del último cazador de osos se ha restaurado para convertirla en centro de interpretación de la especie. Los folletos turísticos hablan de una reconciliación entre el hombre y la naturaleza, y la fórmula tiene el mérito de dejar contentos a todos.
 
-El oso, entretanto, no ha cambiado de costumbres: sigue asaltando alguna colmena y, de vez en cuando, mata alguna oveja. Han cambiado las de sus vecinos. Donde hace un siglo vivían doscientas familias de pastores quedan hoy unas cuarenta personas, y la mitad de ellas vive de quienes llegan con prismáticos. En los valles vecinos, donde el ganado sigue siendo el principal sustento, la reconciliación parece avanzar, por cierto, bastante más despacio.
+El oso, entretanto, no ha cambiado de costumbres: sigue asaltando alguna colmena y, de vez en cuando, mata alguna oveja. Han cambiado las de sus vecinos. Donde hace un siglo vivían doscientas familias de pastores quedan hoy unas cuarenta personas, y la mitad de ellas vive de quienes llegan con prismáticos. En los valles vecinos, donde el ganado sigue siendo el principal sustento, la reconciliación parece avanzar bastante más despacio.
 
 **¿Para qué alude el autor, en la última frase, a los valles vecinos?**
 
-- **A)** Para denunciar que el turismo ha convertido al oso en un reclamo comercial, igual que antes hizo de su piel una mercancía.
+- **A)** Para denunciar que el turismo ha convertido al oso en un reclamo comercial, igual que las recompensas hicieron antes de su piel una mercancía.
 - **B)** Para reprochar a los ganaderos que sigan anclados en una hostilidad hacia el oso que el resto de los vecinos ya ha superado.
 - **C)** Para insinuar que la nueva acogida al oso obedece más a lo que cada valle obtiene hoy de él que a una reconciliación con la naturaleza.
 - **D)** Para sugerir que el oso no podrá asentarse de forma duradera en un valle mientras el pastoreo no deje paso al turismo.
@@ -677,11 +677,11 @@ Entre las respuestas al calentamiento global que se discuten en los círculos ci
 
 La objeción de fondo es moral antes que técnica. Si los gobiernos llegan a creer que disponen de un remedio de último recurso, sostienen los críticos de la técnica, perderán el interés por reducir las emisiones, que es lo único que ataca la causa del problema. Por ese motivo, algunos investigadores se niegan a trabajar en el asunto y varias revistas lo tratan con una cautela poco habitual. El argumento merece respeto y descansa en una observación sensata: quien se sabe asegurado tiende a arriesgar más.
 
-El razonamiento presupone, sin embargo, unas administraciones volcadas en recortar sus emisiones, a las que la mera existencia de unos cuantos modelos informáticos podría apartar de su tarea. Sería una lástima, sin duda, distraerlas de un empeño al que llevan tres décadas dedicando, cumbre tras cumbre, tanta elocuencia. Queda, con todo, una cuestión sin resolver: si un solo país pudiera desplegar la técnica por su cuenta, sus efectos, desiguales entre regiones, plantearían problemas de gobierno para los que aún no existe respuesta.
+El razonamiento presupone, sin embargo, unas administraciones volcadas en recortar sus emisiones, a las que la mera existencia de unos cuantos modelos informáticos podría apartar de su tarea. Sería una lástima, sin duda, distraerlas de un empeño al que llevan tres décadas dedicando, cumbre tras cumbre, tanta elocuencia. Queda, con todo, una cuestión sin resolver: si un solo país pudiera desplegar la técnica por su cuenta, sus efectos, desiguales entre regiones, plantearían problemas de gobernanza para los que aún no existe respuesta.
 
 **¿Qué pone en duda el autor cuando dice que sería una lástima distraer a los gobiernos de su empeño?**
 
-- **A)** Que la reducción de las emisiones ocupe en la agenda de los gobiernos el lugar preferente que la objeción da por supuesto.
+- **A)** Que la reducción de las emisiones ocupe en la agenda de los gobiernos el lugar preferente que le conceden quienes critican la técnica.
 - **B)** Que la geoingeniería pueda investigarse sin debilitar el compromiso de los gobiernos con la reducción de las emisiones.
 - **C)** Que los científicos que se niegan a investigar la técnica actúen por convicción, y no por miedo a perjudicar su prestigio profesional.
 - **D)** Que los gobiernos estén dispuestos a renunciar a una técnica que les saldría bastante más barata que recortar de verdad sus emisiones.
@@ -711,10 +711,10 @@ El valor de un servicio secreto se ha desplazado. Cuando cualquiera puede ver lo
 
 **¿Qué insinúa el autor en las dos frases con que termina el segundo párrafo?**
 
-- **A)** Que los aficionados son, en conjunto, más fiables que los servicios profesionales, puesto que se equivocan con bastante menos frecuencia.
-- **B)** Que los servicios reprochan a los aficionados una falta de contraste que, en su propio caso, nadie puede comprobar a tiempo.
+- **A)** Que los aficionados resultan, en conjunto, más fiables que los servicios profesionales, puesto que se equivocan con bastante menos frecuencia que ellos.
+- **B)** Que los servicios reprochan a los aficionados una falta de contraste, cuando nadie puede comprobar a tiempo los análisis de los propios servicios.
 - **C)** Que los servicios deberían hacer públicos sus análisis con la misma rapidez con que los aficionados difunden los suyos en las redes.
-- **D)** Que los servicios ocultan deliberadamente sus errores para proteger ante los ministros y ante el público su prestigio y su presupuesto.
+- **D)** Que los servicios ocultan deliberadamente sus errores durante décadas para proteger ante los ministros y ante el público su prestigio y su presupuesto.
 
 ### 47. (Los programas de clemencia contra los cárteles empresariales)
 
@@ -722,13 +722,13 @@ Un cártel es un contrato que no puede escribirse. Los directivos de varias empr
 
 El cambio llegó cuando alguien reparó en que el punto débil de un cártel estaba dentro de él. Los programas de clemencia, hoy extendidos por casi todas las economías avanzadas, perdonan la multa a la primera empresa que denuncie el acuerdo y aporte pruebas, y ofrecen rebajas menores a las que lleguen después. Desde entonces, cada participante sabe que su mayor peligro se sienta al otro lado de la mesa de reuniones, y que le basta con sospechar de un socio para que le convenga adelantarse. Muchos de los cárteles sancionados en los últimos años no los descubrió inspector alguno: se presentaron solos, con uno de sus miembros por delante, en las oficinas del regulador.
 
-El viejo dicho sobre el honor entre ladrones ha resultado, en este terreno, de un optimismo conmovedor. Los cárteles han reaccionado como han podido: pactos de silencio más solemnes, reuniones sin teléfonos, alguna amenaza velada contra el que piense en hablar. Las autoridades, por su parte, se limitan a recordar de vez en cuando que su oferta sigue en pie para el primero que se presente. A juzgar por la afluencia de arrepentidos, ninguna de aquellas precauciones ha resultado tan persuasiva como ese recordatorio.
+El dicho sobre el honor entre ladrones ha resultado, en este terreno, de un optimismo conmovedor. Los cárteles han reaccionado como han podido: pactos de silencio más solemnes, reuniones sin teléfonos, alguna amenaza velada contra el que piense en hablar. Las autoridades, por su parte, se limitan a recordar de vez en cuando que su oferta sigue en pie para el primero que se presente. A juzgar por la afluencia de arrepentidos, ninguna de esas precauciones ha resultado tan persuasiva como ese recordatorio.
 
 **¿Qué actitud deja ver el autor hacia los programas de clemencia?**
 
 - **A)** Una aprobación socarrona de un sistema que vuelve contra los cárteles la desconfianza que se tienen sus propios miembros.
 - **B)** Un reparo moral ante una política que deja sin castigo al primero que traiciona a quienes habían sido sus cómplices.
-- **C)** Un escepticismo de fondo, porque los cárteles han aprendido a protegerse con pactos de silencio más estrictos que antes.
+- **C)** Una aprobación con reservas, pues teme que los cárteles acaben burlando el sistema con unos pactos de silencio más estrictos.
 - **D)** Una aceptación resignada de un remedio adoptado porque las inspecciones no daban los resultados que se esperaban.
 
 ### 48. (Las ventanas de consentimiento al navegar por internet)
@@ -759,7 +759,7 @@ Los colegios han aprendido a convivir con un canal que no controlan. Más de un 
 - **A)** Ridiculizar a las familias por debatir con tanta solemnidad asuntos tan menores como la pérdida de un jersey en el patio.
 - **B)** Anticipar con humor que el grupo, sin que nadie se lo haya encomendado, toma decisiones que obligan también a quienes no han intervenido.
 - **C)** Dar a entender que el grupo, como un parlamento sin mayoría, discute durante horas y horas sin llegar a resolver nada de lo que se plantea.
-- **D)** Criticar que el colegio delegue en las familias unas decisiones que le corresponden, como la elección del regalo de fin de curso para la tutora.
+- **D)** Criticar que el colegio delegue en las familias unas decisiones que le corresponden, como la organización de la excursión prevista para mayo.
 
 ### 50. (El aprovechamiento del agua depurada para el consumo humano)
 
@@ -774,4 +774,4 @@ La solución adoptada en más de un lugar es de una sencillez ejemplar. El agua 
 - **A)** Que conviene no informar a la población del origen del agua que bebe, como ya ocurre en las ciudades situadas río abajo.
 - **B)** Que el agua de los ríos es en realidad menos segura que la depurada y que los ciudadanos hacen mal en beberla tranquilos.
 - **C)** Que el rechazo desaparecería por sí solo si se explicara a los ciudadanos que ya beben el agua que han depurado otros pueblos.
-- **D)** Que el rechazo nace menos de lo que contiene el agua que de lo que cada ciudadano sabe del camino que ha recorrido.
+- **D)** Que el rechazo depende menos del camino que ha recorrido el agua que de que cada ciudadano se pare a pensar en él.
