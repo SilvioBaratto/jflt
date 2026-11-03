@@ -2,7 +2,7 @@
   "id": "listening-02",
   "level": "C1",
   "stanag_level": 3,
-  "topic": "El futuro de las estaciones de esquí de media montaña",
+  "topic": "Las estaciones de esquí de media montaña ante la falta de nieve",
   "conversation_type": "tertulia radiofónica",
   "setting": "Tertulia de un programa nocturno de radio. El presentador conversa con una columnista especializada en medio ambiente y con un economista que estudia los valles de montaña sobre las estaciones de esquí situadas a baja altitud.",
   "voices": {
@@ -42,15 +42,15 @@
     },
     {
       "speaker": "ECONOMISTA",
-      "text": "Pues menos de lo que parece. En lo fundamental coincido con Marta: hay estaciones que tienen los años contados, con cañones o sin ellos. Lo que pasa es que desde la ciudad se suele olvidar una cosa. En muchos de esos valles, la estación es la principal empresa de la zona, o, mejor dicho, la única que contrata a gente en invierno, y de ella viven el hotel, la escuela de esquí y el restaurante. Cuando alguien dice que hay que dejar de gastar en nieve, yo me pregunto qué propone poner en su lugar."
+      "text": "Pues menos de lo que parece. En lo fundamental, Marta tiene razón: hay estaciones que tienen los años contados, con cañones o sin ellos. Lo que pasa es que desde la ciudad se suele olvidar una cosa. En muchos de esos valles, la estación es la principal empresa de la zona, o, mejor dicho, la única que contrata a gente en invierno, y de ella viven los hoteles y la escuela de esquí. Cuando alguien dice que hay que dejar de gastar en nieve, yo me pregunto qué propone poner en su lugar."
     },
     {
       "speaker": "COLUMNISTA",
-      "text": "Por eso hablamos de reconvertir, no de cerrar sin más. El dinero que hoy se va en cañones podría dedicarse a un turismo de todo el año: senderismo, bicicleta de montaña, observación de aves. Hay valles que ya lo están intentando."
+      "text": "De ahí que hablemos de reconvertir, no de cerrar sin más. El dinero que hoy se va en cañones podría dedicarse a un turismo de todo el año: senderismo, bicicleta de montaña, observación de aves. Hay valles que ya lo están intentando."
     },
     {
       "speaker": "ECONOMISTA",
-      "text": "Ya, el famoso turismo de las cuatro estaciones. Queda precioso en los folletos, y no digo que no haya que intentarlo. Pero yo he recorrido algunos de esos valles en noviembre, con sus rutas recién señalizadas y su centro de visitantes recién inaugurado, y me encontré las persianas bajadas. Unos cuantos senderistas el fin de semana no sostienen un hotel durante todo el año."
+      "text": "Ya, el famoso turismo de las cuatro estaciones. Queda precioso en los folletos, y no digo que no haya que intentarlo. Pero yo recorrí algunos de esos valles el pasado noviembre, con sus rutas recién señalizadas y su centro de visitantes recién inaugurado, y me encontré las persianas bajadas. Unos cuantos senderistas el fin de semana no sostienen un hotel durante todo el año."
     },
     {
       "speaker": "PRESENTADOR",
@@ -77,7 +77,7 @@
         "A": "En que fabricar nieve compensa su coste mientras los valles no cuenten con otra fuente de ingresos.",
         "B": "En que algunas estaciones de poca altitud dejarán de ser viables por mucha nieve artificial que se fabrique.",
         "C": "En que el dinero público tendría que pasar de los cañones a un turismo capaz de llenar los doce meses del año.",
-        "D": "En que el consumo de agua y de energía de los cañones es la mayor amenaza para el futuro de esos valles."
+        "D": "En que las estaciones tendrían que pagar a su precio real el agua y la energía que gastan los cañones."
       },
       "answer": "B",
       "rationale": "La columnista afirma que la nieve ya no es algo con lo que «se pueda contar», y el economista coincide en que hay estaciones que «tienen los años contados», «con cañones o sin ellos».",
@@ -85,7 +85,7 @@
         "A": "Lectura errónea: el economista pregunta qué se pondría «en su lugar», pero no defiende que los cañones compensen; la columnista cree que se paga cada vez más por alargar algo que «se acorta igualmente».",
         "B": "Correcta: los dos dan por hecho que, por debajo de cierta altitud, la temporada no se salvará fabricando nieve: «con cañones o sin ellos».",
         "C": "Atribución cambiada: el turismo «de todo el año» es la propuesta de la columnista, y el economista la recibe con escepticismo.",
-        "D": "Generalización excesiva: el agua y la energía son un argumento de la columnista sobre el coste de fabricar nieve («mucha agua y mucha energía»); el economista no lo comenta y nadie lo presenta como la amenaza principal."
+        "D": "No se dice: el agua y la energía son un argumento de la columnista sobre lo que exige fabricar nieve («mucha agua y mucha energía»); nadie propone cobrarlas a precio real y el economista no las menciona."
       }
     },
     {
@@ -93,7 +93,7 @@
       "question": "¿Qué quiere mostrar el economista cuando cuenta lo que vio en algunos valles en noviembre?",
       "options": {
         "A": "Que esos valles apostaron por el senderismo demasiado tarde y sin la promoción turística que habría hecho falta.",
-        "B": "Que los senderistas gastan poco y apenas se alojan en los hoteles cuando visitan esos valles.",
+        "B": "Que los senderistas gastan menos que los esquiadores, aunque lleguen a esos valles en mayor número.",
         "C": "Que, a su juicio, la reconversión es un error y lo sensato es mantener la apuesta por el esquí.",
         "D": "Que lo creado para atraer visitantes fuera del invierno aún no basta para sostener los negocios del valle."
       },
@@ -101,7 +101,7 @@
       "rationale": "Aunque las rutas y el centro de visitantes eran nuevos, el economista se encontró «las persianas bajadas», y concluye que unos pocos senderistas «no sostienen un hotel durante todo el año».",
       "option_rationales": {
         "A": "No se dice: «recién señalizadas» indica que la oferta es nueva, no que llegara tarde, y el economista no habla de promoción.",
-        "B": "Lectura errónea: el economista no habla del gasto de cada visitante, sino de que unos cuantos senderistas «el fin de semana» no bastan para mantener un hotel abierto.",
+        "B": "Lectura errónea: el economista no compara el gasto de senderistas y esquiadores, y habla de «Unos cuantos senderistas», no de que lleguen en mayor número.",
         "C": "Generalización excesiva: su escepticismo no llega a rechazar la reconversión, como deja claro al decir «no digo que no haya que intentarlo».",
         "D": "Correcta: con la oferta nueva ya en marcha, encontró «las persianas bajadas»; las actividades fuera de temporada no bastan aún para sostener la economía del valle."
       }

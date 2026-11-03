@@ -7,8 +7,8 @@
   "setting": "Rueda de prensa tras la reunión semanal del Consejo de Ministros. La portavoz del Ministerio de Economía presenta un programa de avales públicos para préstamos a pymes y responde a dos periodistas, uno de un diario económico y otro de una emisora de radio.",
   "voices": {
     "PORTAVOZ": "nova",
-    "PERIODISTA1": "echo",
-    "PERIODISTA2": "alloy"
+    "PERIODISTA_1": "echo",
+    "PERIODISTA_2": "alloy"
   },
   "speakers": [
     {
@@ -17,12 +17,12 @@
       "voice": "nova"
     },
     {
-      "id": "PERIODISTA1",
+      "id": "PERIODISTA_1",
       "role": "periodista de un diario económico",
       "voice": "echo"
     },
     {
-      "id": "PERIODISTA2",
+      "id": "PERIODISTA_2",
       "role": "periodista de una emisora de radio",
       "voice": "alloy"
     }
@@ -30,26 +30,26 @@
   "lines": [
     {
       "speaker": "PORTAVOZ",
-      "text": "Buenos días. El Consejo de Ministros ha aprobado hoy un programa de avales públicos para préstamos a pequeñas y medianas empresas, y quiero empezar explicando por qué. Las encuestas que hemos hecho este año dicen algo que quizá sorprenda: el precio del crédito no es lo que más les preocupa. Lo que nos cuentan es que llegan al banco con un buen proyecto y lo primero que les preguntan es qué tienen a su nombre. Y una empresa con dos o tres años de vida, que trabaja en una nave alquilada, no tiene gran cosa que ofrecer. Por eso el Estado cubrirá una parte de cada préstamo, nunca la totalidad, y solo para inversiones nuevas, no para pagar deudas antiguas."
+      "text": "Buenos días. El Consejo de Ministros ha aprobado hoy un programa de avales públicos para préstamos a pequeñas y medianas empresas, y quiero empezar explicando por qué. Las encuestas que hemos hecho este año dicen algo que quizá sorprenda: el precio del crédito no es lo que más les preocupa. Lo que nos cuentan es que llegan al banco con un buen proyecto y lo primero que les preguntan es qué tienen a su nombre. Y una empresa con dos o tres años de vida, que trabaja en una nave alquilada, no tiene gran cosa que ofrecer. Así que el Estado cubrirá una parte de cada préstamo, nunca la totalidad, y solo para inversiones nuevas, no para pagar deudas antiguas."
     },
     {
-      "speaker": "PERIODISTA1",
+      "speaker": "PERIODISTA_1",
       "text": "Usted habla de empresas sin nada que ofrecer. Pero quien decide a quién se presta sigue siendo el banco, y el banco conoce muy bien a sus clientes de toda la vida. ¿Tiene el ministerio alguna manera de saber a qué empresas acaba llegando el aval?"
     },
     {
       "speaker": "PORTAVOZ",
-      "text": "La tiene, y es una pregunta muy pertinente. Por un lado, el banco conserva una parte del riesgo, así que no le sale gratis prestar a cualquiera. Por otro, cada operación quedará registrada con los datos de la empresa: su antigüedad, su tamaño y lo que piensa invertir. No le voy a decir que el sistema sea perfecto; habrá casos que se nos escapen. Pero los veremos y podremos corregir el rumbo."
+      "text": "Sí, la tenemos, y es una pregunta muy pertinente. Por un lado, el banco conserva una parte del riesgo, de modo que no le sale gratis prestar a cualquiera. Por otro, cada operación quedará registrada con los datos de la empresa y de lo que piensa invertir. No le voy a decir que el sistema sea perfecto; habrá casos que se nos escapen. Pero los veremos y podremos corregir el rumbo."
     },
     {
-      "speaker": "PERIODISTA2",
+      "speaker": "PERIODISTA_2",
       "text": "En la última crisis ya hubo líneas de avales parecidas, y una parte de aquellas empresas no pudo devolver nada. ¿Qué garantiza que esta vez no vaya a pasar lo mismo?"
     },
     {
       "speaker": "PORTAVOZ",
-      "text": "Aquellas líneas tenían otro objetivo: ayudar a empresas sin ingresos a aguantar unos meses. Esta es para invertir, que es algo muy distinto. Y le diré algo que quizá suene raro dicho desde este atril: si dentro de tres años no hubiera ni un solo impago, yo no lo celebraría."
+      "text": "Aquellas líneas tenían otro objetivo: ayudar a empresas sin ingresos a aguantar unos meses. Esta es para invertir, que es algo muy distinto. Y le diré algo que puede sonar raro dicho desde este atril: si dentro de tres años no hubiera ni un solo impago, yo no lo celebraría."
     },
     {
-      "speaker": "PERIODISTA2",
+      "speaker": "PERIODISTA_2",
       "text": "¿No lo celebraría? Explíquese, por favor."
     },
     {
@@ -57,8 +57,8 @@
       "text": "Porque significaría que solo hemos avalado a quien ya tenía abiertas las puertas del banco. Un programa como este está precisamente para cubrir un riesgo razonable que el banco, por sí solo, no correría."
     },
     {
-      "speaker": "PERIODISTA1",
-      "text": "Ha dicho usted que lo verán. ¿Y quién hará ese balance dentro de tres años? ¿El propio ministerio?"
+      "speaker": "PERIODISTA_1",
+      "text": "Ha dicho usted que esos casos los verán. ¿Y quién hará ese balance dentro de tres años? ¿El propio ministerio?"
     },
     {
       "speaker": "PORTAVOZ",
@@ -73,12 +73,12 @@
         "A": "El precio de los préstamos, que vuelve poco rentables muchos de los proyectos que querrían poner en marcha.",
         "B": "La incertidumbre sobre la demanda futura, que lleva a muchos empresarios a aplazar sus planes de inversión.",
         "C": "Las deudas acumuladas durante la última crisis, que muchas empresas todavía no han terminado de pagar.",
-        "D": "La falta de bienes propios con los que respaldar un préstamo, sobre todo en las empresas de creación reciente."
+        "D": "La falta de bienes propios con los que respaldar un préstamo, frecuente en las empresas jóvenes."
       },
       "answer": "D",
       "rationale": "La portavoz explica que a las empresas les preguntan «qué tienen a su nombre» y que una empresa joven que trabaja en «una nave alquilada» no tiene «gran cosa que ofrecer»: lo que les falta son garantías, no crédito barato.",
       "option_rationales": {
-        "A": "Relación invertida: la portavoz afirma que «el precio del crédito no es lo que más les preocupa».",
+        "A": "Lectura errónea: la portavoz afirma que «el precio del crédito no es lo que más les preocupa».",
         "B": "No se dice: la portavoz no menciona la demanda ni la incertidumbre; sitúa el freno en lo que pregunta el banco: «qué tienen a su nombre».",
         "C": "Lectura errónea: las «deudas antiguas» aparecen solo para precisar que el programa no servirá para pagarlas; no se presentan como freno de la inversión.",
         "D": "Correcta: reformula la idea de que una empresa con «dos o tres años de vida» y una «nave alquilada» no puede ofrecer al banco garantías propias."
@@ -86,12 +86,12 @@
     },
     {
       "id": 2,
-      "question": "¿Qué insinúa el periodista que pregunta en primer lugar?",
+      "question": "¿Qué insinúa la primera pregunta que recibe la portavoz?",
       "options": {
         "A": "Que sería más eficaz que el ministerio concediera los préstamos directamente, sin pasar por los bancos.",
         "B": "Que el aval podría acabar respaldando a clientes habituales del banco que habrían obtenido el crédito sin él.",
         "C": "Que los bancos encarecerán los préstamos avalados, aprovechando que el Estado asume una parte del riesgo.",
-        "D": "Que pone en duda que haya tantas empresas sin garantías como aseguran las encuestas hechas por el ministerio."
+        "D": "Que las encuestas del ministerio exageran cuántas pequeñas empresas carecen de garantías que ofrecer al banco."
       },
       "answer": "B",
       "rationale": "El periodista recuerda que es el banco quien decide y que conoce bien a «sus clientes de toda la vida», y pregunta a quién «acaba llegando el aval»: sugiere que puede ir a parar a esos clientes en lugar de a las empresas jóvenes.",
@@ -107,17 +107,17 @@
       "question": "¿Por qué no celebraría la portavoz que el programa terminara sin ningún impago?",
       "options": {
         "A": "Porque los impagos permitirán al ministerio saber qué empresas no deberían volver a recibir un aval público.",
-        "B": "Porque considera que un número elevado de impagos sería la mejor prueba de que el programa está funcionando.",
-        "C": "Porque eso indicaría que el aval solo ha llegado a empresas que el banco habría financiado de todos modos.",
-        "D": "Porque la experiencia de la última crisis enseña que cualquier línea de avales acaba registrando pérdidas."
+        "B": "Porque la evaluación independiente necesita casos de impago para medir con rigor los resultados del programa.",
+        "C": "Porque el aval existe para cubrir riesgos que el banco no asumiría solo, y algún impago es esperable.",
+        "D": "Porque las líneas de avales de la última crisis demostraron que es difícil evitar las pérdidas."
       },
       "answer": "C",
-      "rationale": "La portavoz explica que, sin impagos, querría decir que «solo hemos avalado a quien ya tenía abiertas las puertas del banco», cuando el programa existe para cubrir un riesgo que el banco, «por sí solo, no correría».",
+      "rationale": "La portavoz explica que, sin impagos, querría decir que «solo hemos avalado a quien ya tenía abiertas las puertas del banco», cuando el programa está para cubrir «un riesgo razonable» que el banco, «por sí solo, no correría»: algún impago es el precio de asumir ese riesgo.",
       "option_rationales": {
         "A": "Lectura errónea: el seguimiento del que habla la portavoz es el registro de cada operación, que permitirá «corregir el rumbo»; no relaciona los impagos con excluir a empresas.",
-        "B": "Generalización excesiva: la portavoz habla de cubrir «un riesgo razonable», no de que muchos impagos demuestren el éxito del programa.",
-        "C": "Correcta: si nadie dejara de pagar, el aval habría ido a quien «ya tenía abiertas las puertas del banco», es decir, a empresas que no lo necesitaban.",
-        "D": "Atribución cambiada: la referencia a la última crisis es del periodista; la portavoz la usa para marcar diferencias («Aquellas líneas tenían otro objetivo»), no como prueba de que las pérdidas sean inevitables."
+        "B": "Lectura errónea: «una institución independiente» aparece al final, cuando el periodista pregunta quién hará el balance; la portavoz no la relaciona con los impagos.",
+        "C": "Correcta: sin impagos, el aval habría ido solo a quien «ya tenía abiertas las puertas del banco», cuando el programa está para cubrir «un riesgo razonable» que el banco, «por sí solo, no correría».",
+        "D": "Atribución cambiada: la referencia a la última crisis es del periodista; la portavoz la usa para marcar diferencias («Aquellas líneas tenían otro objetivo»), no como prueba de que las pérdidas sean difíciles de evitar."
       }
     }
   ]

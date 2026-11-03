@@ -28,7 +28,7 @@
     },
     {
       "speaker": "EXPERTO",
-      "text": "Bueno, ahí estamos metiendo dos decisiones en el mismo saco, y conviene separarlas. Una es proteger a quienes trabajan en la embajada, y en eso no hay discusión: si su vida corre un riesgo serio, hay que sacarlos de allí y punto. La otra es usar el cierre como mensaje político. Y ahí, mire, mi experiencia es que ese mensaje lo acaba recibiendo sobre todo quien lo envía."
+      "text": "Bueno, ahí estamos metiendo dos decisiones en el mismo saco, y conviene separarlas. Una es proteger a quienes trabajan en la embajada, y en eso no hay discusión: si su vida corre peligro, hay que sacarlos de allí y punto. La otra es usar el cierre como mensaje político. Y ahí, mire, la experiencia me dice que ese mensaje lo acaba recibiendo sobre todo quien lo envía."
     },
     {
       "speaker": "PRESENTADORA",
@@ -60,7 +60,7 @@
     },
     {
       "speaker": "EXPERTO",
-      "text": "Ojalá. Volver suele ser lo más complicado. Quien sigue en el poder sabe que la reapertura tiene un valor, y le pone precio: una visita de alto nivel, una declaración amable o alguna concesión que nada tiene que ver con la embajada. Por eso, antes de cerrar, yo me haría siempre una pregunta: ¿cuánto me va a costar volver a abrir?"
+      "text": "Ojalá. Volver suele ser lo más complicado. Quien sigue en el poder sabe que la reapertura tiene un valor, y le pone precio: una visita de alto nivel o alguna concesión que nada tiene que ver con la embajada. Por eso, antes de cerrar, yo me haría siempre una pregunta: ¿cuánto me va a costar volver a abrir?"
     },
     {
       "speaker": "PRESENTADORA",
@@ -70,9 +70,9 @@
   "questions": [
     {
       "id": 1,
-      "question": "¿Qué objeta el experto, en lo esencial, al planteamiento con el que la presentadora abre la entrevista?",
+      "question": "¿Qué sostiene el experto ante la pregunta con la que la presentadora abre la entrevista?",
       "options": {
-        "A": "Acepta que el cierre transmite una condena clara, pero cree que la seguridad del personal se invoca con demasiada ligereza.",
+        "A": "Considera indiscutible proteger al personal, pero cree que la condena que acompaña al cierre apenas llega a la opinión pública.",
         "B": "Considera indiscutible proteger al personal, pero cree que la condena pierde fuerza si no la secundan los principales socios.",
         "C": "Considera indiscutible proteger al personal, pero cree que cerrar en señal de condena perjudica sobre todo al país que se marcha.",
         "D": "Considera prioritario proteger al personal, aunque advierte de que seguir abierto equivale en la práctica a reconocer al gobierno."
@@ -80,7 +80,7 @@
       "answer": "C",
       "rationale": "El experto separa dos decisiones: sacar al personal en peligro, en lo que «no hay discusión», y usar el cierre como «mensaje político», que a su juicio acaba recibiendo sobre todo «quien lo envía», porque el país que se va pierde un conocimiento que «tarda años en recuperarse».",
       "option_rationales": {
-        "A": "Lectura errónea: el experto no pone en duda la seguridad del personal («en eso no hay discusión») ni da por eficaz la condena, que a su juicio se oye solo «un par de días».",
+        "A": "Lectura errónea: el experto admite que la condena se oye, aunque solo «un par de días»; lo que discute es su duración y su coste.",
         "B": "No se dice: los socios aparecen más tarde, cuando el experto describe cómo basta con que «dos o tres socios importantes» se marchen para que los demás los sigan; nunca hace depender de ellos la fuerza de la condena.",
         "C": "Correcta: reformula la distinción entre proteger al personal y usar el cierre como «mensaje político», cuyo coste recae en el país que se va, que pierde la capacidad de «entender lo que pasa».",
         "D": "Atribución cambiada: es la objeción que plantea luego la presentadora; el experto responde que tener la embajada abierta «no obliga a dar por bueno a quien manda»."
@@ -106,19 +106,19 @@
     },
     {
       "id": 3,
-      "question": "¿Qué sugiere el experto sobre la manera en que se deciden muchos cierres?",
+      "question": "¿Qué sugiere el experto sobre la manera en que se deciden algunos cierres?",
       "options": {
-        "A": "Que los gobiernos suelen apurar demasiado y retrasan la salida hasta que el peligro para su personal es evidente.",
+        "A": "Que los gobiernos suelen retrasar la salida más de la cuenta, hasta que el peligro para su personal es evidente.",
         "B": "Que los socios pactan la salida entre todos para que ningún país quede expuesto a represalias por quedarse.",
         "C": "Que se adoptan por falta de información, porque en las capitales apenas se leen los informes de las embajadas.",
-        "D": "Que el temor a quedarse solo entre los aliados puede pesar más que lo que cada país sabe de la situación."
+        "D": "Que el miedo a ser el único aliado que se queda puede pesar más que lo que cada país sabe de la situación."
       },
       "answer": "D",
       "rationale": "Al decir que basta con que se marchen «dos o tres socios importantes» para que quedarse parezca «una temeridad», y que hasta «el país que mejor conocía el terreno» acaba yéndose, el experto da a entender que el miedo a quedarse solo pesa más que el conocimiento propio.",
       "option_rationales": {
         "A": "Relación invertida: que nadie quiera «ser el último en el aeropuerto» describe salidas precipitadas por imitación, no retrasos en la evacuación.",
         "B": "No se dice: el experto describe un contagio, no un acuerdo, porque basta con que unos socios «anuncien que se marchan» para que los demás los sigan; tampoco menciona represalias.",
-        "C": "Relación invertida: a la pregunta de si es por desconocimiento, el experto contesta «No, claro que no»; los informes aparecen antes, como algo que no sustituye a estar sobre el terreno («leyendo informes desde la capital»).",
+        "C": "Lectura errónea: a la pregunta de si es por desconocimiento, el experto contesta «No, claro que no»; los informes aparecen antes, como algo que no sustituye a estar sobre el terreno («leyendo informes desde la capital»).",
         "D": "Correcta: si hasta «el país que mejor conocía el terreno» acaba «haciendo las maletas detrás de los demás», lo que decide es no quedarse solo, no la información propia."
       }
     }
