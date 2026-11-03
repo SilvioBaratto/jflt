@@ -48,6 +48,9 @@ without it and npm aborts on an `ERESOLVE` peer conflict.
 CI (`.github/workflows/ci.yml`) runs the API's lint, unit, e2e and build, and the frontend's test and
 build, on every push and pull request to `main`.
 
+API Jest needs **Node 24** (what CI and the Dockerfile use; from Node 24.9 Jest can `require` ESM natively). On
+Node 22 the specs that import `@nestjs/common` fail with "Must use import to load ES Module".
+
 ### Database & seed (API)
 
 ```bash
@@ -59,11 +62,25 @@ npm run prisma:studio
 ```
 
 Seed data (`api/prisma/seed-data.json`) is **built from in-repo generated content** by
-`scripts/build-seed-data.py`: exam markdown and listening JSON under `api/seed-src/`
-(`reading/`, `writing/`, `listening/`) plus the bilingual vocabulary guide
-`api/references/english-vocabulary-guide.md`. The script also copies the listening MP3s into
-`api/static/listening/`. `prisma/seed.ts` (`npm run seed`) then loads `seed-data.json` into the DB.
-Regenerate after editing any source guide: `python scripts/build-seed-data.py`.
+`scripts/build-seed-data.py [--lang en|es|all] [--out PATH] [--no-audio]`. Each content language has an
+entry in the script's `LANGUAGES` table (source folder, reference folder, vocabulary guide, audio folder
+and URL prefix), and every record it emits carries its `language`:
+
+| | English (`en`) | Spanish (`es`) |
+|---|---|---|
+| Exam markdown + listening JSON | `api/seed-src/` (`reading/`, `writing/`, `listening/`) | `api/seed-src/es/` |
+| Vocabulary guide | `api/references/english-vocabulary-guide.md` | `api/references/es/spanish-vocabulary-guide.md` |
+| Listening MP3s copied to | `api/static/listening/` | `api/static/listening/es/` (same `listening-NN.mp3` names) |
+
+`--lang` defaults to `all`. `--out` redirects the JSON and `--no-audio` skips the MP3 copy. A partial
+build such as `--lang es` without `--out` overwrites the committed `seed-data.json` with only that
+language's records, so give it a different `--out` unless that is what you want. Regenerate after editing
+any source guide: `python scripts/build-seed-data.py`.
+
+`prisma/seed.ts` (`npm run seed`) loads `seed-data.json` one language at a time: it deletes only that
+language's `source = 'seed'` rows (generated items and the other language stay) and recreates them in one
+transaction. With `SEED_IF_EMPTY=1` (set by `api/entrypoint.sh`) a language is skipped only when it already
+has seed rows, so a database seeded before Spanish existed still receives Spanish on the next start.
 
 ## Backend architecture (`api/`)
 
@@ -83,6 +100,9 @@ subscription — no API key, no `@anthropic-ai/claude-agent-sdk`. It passes a JS
 from the Zod schemas in `claude/schemas.ts` via `toSdkSchema`) and returns the CLI's `structured_output`,
 validated with Zod. `grounding.ts` holds the reading/writing grounding prompts. The `generate` and `exam`
 modules depend on it via `ClaudeModule`. Model comes from `JFLT_MODEL` (alias or id, default `sonnet`).
+Every generate, verify and grade method takes the content language (default English): the prompts name
+the language (`claude/language-profile.ts`) and `grounding.ts` embeds the reference set for it, `api/references/`
+for English or `api/references/es/` for Spanish. The grader writes its feedback in the exam language.
 
 > **Auth gotcha.** The `claude` binary must be on PATH and logged in (`claude auth login`) wherever the API
 > runs. The Docker images install the CLI, and compose keeps the container's own login in the
@@ -100,7 +120,9 @@ in `app.module.ts` — response schemas whitelist fields so Prisma rows can't le
 `tsconfig` resolve these through the aliases `@generated/prisma`, `@generated/zod`, and `@/` (= `src/`).
 
 **Static assets:** `main.ts` serves `api/static` at `/static` — this is where listening-item TTS audio
-lives (`ListeningItem.audioPath` points into it).
+lives (`ListeningItem.audioPath` points into it). English audio is `/static/listening/listening-NN.mp3`,
+Spanish audio `/static/listening/es/listening-NN.mp3`; the two sets share file names, so never copy one
+language's files into the other's folder.
 
 **Routing & infra:** global prefix `api/v1`; Swagger at `/docs`; BullMQ + Bull Board are wired, with the
 queue dashboard at `/api/v1/admin/queues` (unprotected — gate it behind a reverse proxy in production).
@@ -112,6 +134,26 @@ Three concerns: **content bank** (`ReadingItem`, `WritingTask`, `ListeningItem`,
 `itemType`/`itemId` — MCQ answers set `chosenLabel`/`isCorrect`, writing answers set
 `responseText`/`score`/`feedback`), and the **adaptive engine** (`TopicStat` for weak-area targeting,
 `ReviewItem` for SM-2-style spaced repetition). Columns are `snake_case` in the DB via `@map`.
+
+### Content language
+
+The bank is bilingual. `language` (`en` | `es`, lowercase, default `en`) is a column on `ReadingItem`,
+`WritingTask`, `ListeningItem`, `VocabEntry`, `ExamSession` and `TopicStat`, whose unique key is
+`(language, skill, level, topic)`. The API picks the language per request:
+
+- Read routes (`content/*`, `vocab`, `vocab/sections`, `vocab/flashcards`, `progress`, `GET sessions`) take
+  `?lang=`; `POST sessions` and the `generate/*` bodies take `language`. Controllers resolve `?lang=` with
+  `parseLanguage` (`src/common/language.ts`). Absent means `en`; any other value is a 400, including an
+  empty `?lang=`, `ES`, `fr` and a repeated key (`?lang=es&lang=en`).
+- A session draws every item from its own language and never mixes them. `POST sessions` returns 422 when no
+  item of that language matches the request. `completeSession` updates `TopicStat` under each item's own language.
+
+The frontend keeps the choice in `LanguageService` (`services/language.ts`), persisted in `localStorage`
+under `app-content-language` (default `en`; blocked or unreadable storage falls back to `en`). The shell's
+`app-language-selector` (top bar on compact windows, sidebar footer from 600px) changes it. Content, progress
+and session requests send it, Home reloads the question bank when it changes, and a new session starts in the
+current language. An open session keeps the language it began with: the session screen hides each item's topic
+(English topics state the answer) and marks the content and feedback with `lang` set to the session language.
 
 ## Frontend architecture (`frontend/`)
 
