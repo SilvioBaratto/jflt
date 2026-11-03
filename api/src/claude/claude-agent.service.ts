@@ -208,14 +208,15 @@ ${JSON.stringify(blind, null, 2)}
     speakers = 2,
     language: Language = DEFAULT_LANGUAGE,
   ): Promise<GeneratedListeningItem> {
+    const { name, dialogueWords } = LANGUAGE_PROFILE[language];
     const prompt = `${readingGrounding(language)}
 
-Produce ONE STANAG Level 3 / C1 listening item: a natural spoken conversation in ${LANGUAGE_PROFILE[language].name} plus three comprehension questions. The text will be read by a text-to-speech model, so it must sound natural aloud.
+Produce ONE STANAG Level 3 / C1 listening item: a natural spoken conversation in ${name} plus three comprehension questions. The text will be read by a text-to-speech model, so it must sound natural aloud.
 
 - Topic/domain angle: ${topic.trim()}
 - Genre: ${genre}
 - Distinct speakers: ${speakers}; give each a distinct voice from exactly this set: ${VOICES.join(', ')}.
-- 320-480 words of dialogue, analytical broadcast register, with a genuine disagreement or concession.
+- ${dialogueWords.min}-${dialogueWords.max} words of dialogue, analytical broadcast register, with a genuine disagreement or concession.
 - TTS-friendly: full punctuated sentences, no stage directions or bracketed notes in the spoken text.
 - Three questions (inference, speaker stance, implication, function, tone, or key detail); four options
   A-D each; exactly one defensible key that paraphrases rather than quotes; realistic distractors; a

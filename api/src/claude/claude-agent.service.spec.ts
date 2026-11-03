@@ -153,6 +153,28 @@ describe('ClaudeAgentService prompts', () => {
       expect(lastPrompt()).toContain('spoken conversation in English');
       expect(lastPrompt()).toContain('Distinct speakers: 2');
     });
+
+    // The ranges are pinned as literals: the Spanish listening rules (references/es/item-writing-rules.md)
+    // ask for 380-500 words, so a shared English range would let the model undershoot.
+    it.each<[Language, string, string]>([
+      ['en', '320-480 words of dialogue', '380-500'],
+      ['es', '380-500 words of dialogue', '320-480'],
+    ])('asks for the %s dialogue length: %s', async (language, wanted, other) => {
+      stub(listeningItem);
+
+      await service.generateListeningConversation('topic', 'debate', 2, language);
+
+      expect(lastPrompt()).toContain(wanted);
+      expect(lastPrompt()).not.toContain(other);
+    });
+
+    it('keeps the English dialogue length of 320-480 words by default', async () => {
+      stub(listeningItem);
+
+      await service.generateListeningConversation('topic', 'debate');
+
+      expect(lastPrompt()).toContain('320-480 words of dialogue');
+    });
   });
 
   describe('solveListeningKeys', () => {

@@ -10,7 +10,11 @@ import {
   GenListeningDto,
 } from './dto/generate.dto';
 
-/** On-demand content generation endpoints (grow the bank with fresh items). */
+/**
+ * On-demand content generation endpoints (grow the bank with fresh items).
+ *
+ * Each body carries the content `language` (`en` default) the item is written and stored in.
+ */
 @ApiTags('Generate')
 @Controller('generate')
 export class GenerateController {
@@ -20,20 +24,20 @@ export class GenerateController {
   @Post('reading')
   @ApiOperation({ summary: 'Generate a reading item' })
   reading(@Body({ schema: GenReadingSchema }) dto: GenReadingDto): Promise<unknown> {
-    return this.gen.reading(dto.level, dto.topic);
+    return this.gen.reading(dto.level, dto.topic, dto.language);
   }
 
   /** Generate and store a fresh writing task. */
   @Post('writing')
   @ApiOperation({ summary: 'Generate a writing task' })
   writing(@Body({ schema: GenWritingSchema }) dto: GenWritingDto): Promise<unknown> {
-    return this.gen.writing(dto.taskType);
+    return this.gen.writing(dto.taskType, dto.language);
   }
 
   /** Generate and store a fresh listening conversation with audio. */
   @Post('listening')
   @ApiOperation({ summary: 'Generate a listening item' })
   listening(@Body({ schema: GenListeningSchema }) dto: GenListeningDto): Promise<unknown> {
-    return this.gen.listening(dto.topic, dto.genre, dto.speakers ?? 2);
+    return this.gen.listening(dto.topic, dto.genre, dto.speakers ?? 2, dto.language);
   }
 }

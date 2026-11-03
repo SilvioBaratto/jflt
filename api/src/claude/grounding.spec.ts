@@ -1,6 +1,7 @@
 import { readFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { readingGrounding, writingGrounding } from './grounding';
+import type { Language } from '../common/language';
 
 const ref = (...parts: string[]): string =>
   readFileSync(join(process.cwd(), 'references', ...parts), 'utf8');
@@ -34,6 +35,17 @@ describe('readingGrounding', () => {
     expect(readingGrounding('es')).toBe(es);
     expect(readingGrounding('en')).toBe(en);
   });
+});
+
+describe('reference folder lookup', () => {
+  // 'es/..' resolves to the English folder if the value were used as a path segment, so it must not be one.
+  it.each(['es/..', '../..', 'fr', 'constructor'])(
+    'refuses %j instead of turning it into a directory name',
+    (value) => {
+      expect(() => readingGrounding(value as Language)).toThrow();
+      expect(() => writingGrounding(value as Language)).toThrow();
+    },
+  );
 });
 
 describe('writingGrounding', () => {

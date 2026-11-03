@@ -9,10 +9,16 @@ export interface LanguageProfile {
    * Spanish reads the examiner's comments in Spanish too.
    */
   feedbackLanguage: string;
+  /**
+   * Word range requested for a generated listening dialogue. It follows each language's own
+   * item-writing rules (`references/item-writing-rules.md`, `references/es/item-writing-rules.md`),
+   * which size the dialogue differently.
+   */
+  dialogueWords: { min: number; max: number };
 }
 
 /** Prompt wording per content language. */
 export const LANGUAGE_PROFILE: Record<Language, LanguageProfile> = {
-  en: { name: 'English', feedbackLanguage: 'English' },
-  es: { name: 'Spanish', feedbackLanguage: 'Spanish' },
+  en: { name: 'English', feedbackLanguage: 'English', dialogueWords: { min: 320, max: 480 } },
+  es: { name: 'Spanish', feedbackLanguage: 'Spanish', dialogueWords: { min: 380, max: 500 } },
 };

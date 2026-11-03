@@ -5,9 +5,9 @@ import { DEFAULT_LANGUAGE, type Language } from '../common/language';
 const cache = new Map<string, string>();
 
 // English references live directly in api/references; every other language gets its own subfolder.
-function refDir(language: Language): string[] {
-  return language === DEFAULT_LANGUAGE ? [] : [language];
-}
+// An explicit map, not the language code itself, so a value that slips past the type system fails
+// the lookup instead of becoming a path segment.
+const REFERENCE_SUBDIR: Record<Language, string> = { en: '', es: 'es' };
 
 /**
  * Read a grounding reference file once (memoized) from api/references, relative to the run cwd.
@@ -17,7 +17,7 @@ function readRef(name: string, language: Language): string {
   const key = `${language}/${name}`;
   const cached = cache.get(key);
   if (cached !== undefined) return cached;
-  const path = join(process.cwd(), 'references', ...refDir(language), name);
+  const path = join(process.cwd(), 'references', REFERENCE_SUBDIR[language], name);
   const text = readFileSync(path, 'utf8');
   cache.set(key, text);
   return text;
