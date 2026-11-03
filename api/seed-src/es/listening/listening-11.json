@@ -1,0 +1,124 @@
+{
+  "id": "listening-11",
+  "level": "C1",
+  "stanag_level": 3,
+  "topic": "Las licitaciones de obra pública que quedan sin ofertas",
+  "conversation_type": "rueda de prensa",
+  "setting": "Rueda de prensa en la sede de la consejería de obras públicas de una comunidad autónoma. El consejero informa de los concursos de obra que han quedado sin ofertas y responde a las preguntas de dos periodistas, de una televisión autonómica y de un diario local.",
+  "voices": {
+    "CONSEJERO": "onyx",
+    "PERIODISTA_1": "nova",
+    "PERIODISTA_2": "alloy"
+  },
+  "speakers": [
+    {
+      "id": "CONSEJERO",
+      "role": "consejero de obras públicas de la comunidad autónoma",
+      "voice": "onyx"
+    },
+    {
+      "id": "PERIODISTA_1",
+      "role": "periodista de una televisión autonómica",
+      "voice": "nova"
+    },
+    {
+      "id": "PERIODISTA_2",
+      "role": "periodista de un diario local",
+      "voice": "alloy"
+    }
+  ],
+  "lines": [
+    {
+      "speaker": "CONSEJERO",
+      "text": "Como consejero de obras públicas, tengo que darles hoy una cifra que no nos gusta. Este año, uno de cada cuatro concursos de obra que hemos convocado ha quedado desierto: no se ha presentado ninguna empresa. Entre ellos están un centro de salud, un instituto y varios tramos de carretera, y no son obras que se puedan aplazar sin consecuencias."
+    },
+    {
+      "speaker": "PERIODISTA_1",
+      "text": "Laura Gil, de la televisión autonómica. Las constructoras dicen que la vivienda privada les da ahora tanto trabajo que no necesitan la obra pública. ¿No es esa la explicación?"
+    },
+    {
+      "speaker": "CONSEJERO",
+      "text": "Es una parte, pero la menor. Cuando a un promotor privado se le encarece el hormigón, se sienta con la constructora y renegocia el precio. Nosotros no podemos hacerlo. El presupuesto de cada concurso se calcula con una base de precios que actualizamos cada cuatro o cinco años. Y una vez firmado el contrato, apenas se mueve. La empresa que se presentara hoy a construir ese instituto sabría que pierde dinero desde el primer día."
+    },
+    {
+      "speaker": "PERIODISTA_2",
+      "text": "Del diario de la comarca. ¿Qué van a cambiar, en concreto?"
+    },
+    {
+      "speaker": "CONSEJERO",
+      "text": "Dos cosas, y las dos se aprobarán este mismo mes. La base de precios se actualizará cada año. Y en los contratos de larga duración incluiremos una fórmula de revisión, en los términos que permite la ley. Irá ligada a los índices oficiales del precio de los materiales y de la energía."
+    },
+    {
+      "speaker": "PERIODISTA_2",
+      "text": "Con esa fórmula, ¿no se anima a las empresas a ofrecer un precio muy bajo para ganar el concurso, contando con recuperar la diferencia más adelante?"
+    },
+    {
+      "speaker": "CONSEJERO",
+      "text": "La fórmula no mira las facturas de la empresa. Mira los índices que publica la estadística oficial. Si el acero sube, se corrige la parte del precio que corresponde al acero, sea cual sea la empresa que haga la obra. Lo que alguien rebajó por su cuenta para quedarse con el contrato no se lo devuelve ningún índice."
+    },
+    {
+      "speaker": "PERIODISTA_1",
+      "text": "En cualquier caso, las obras van a salir más caras. ¿Podrá asumirlo el presupuesto de la comunidad?"
+    },
+    {
+      "speaker": "CONSEJERO",
+      "text": "Le pondré un ejemplo. El instituto de la comarca norte lleva tres cursos funcionando en aulas prefabricadas, porque su concurso quedó desierto dos veces. Solo el alquiler de esas aulas ya ha costado más de lo que habría hecho falta añadir al presupuesto para que alguna empresa se presentara. Y a eso súmele el gasto de convocar dos concursos que no sirvieron para nada."
+    }
+  ],
+  "questions": [
+    {
+      "id": 1,
+      "question": "¿Dónde sitúa el consejero el origen de los concursos desiertos?",
+      "options": {
+        "A": "En unos presupuestos con precios desfasados, que tras la firma del contrato ya casi no pueden variar.",
+        "B": "En la preferencia de las constructoras por la vivienda privada, que hoy les ofrece más margen y menos trámites.",
+        "C": "En la escasez de mano de obra cualificada, que impide a las empresas comprometerse con plazos largos.",
+        "D": "En unos presupuestos que la consejería recortó para ahorrar, y que ya no cubren lo que cuesta construir."
+      },
+      "answer": "A",
+      "rationale": "El consejero ve en el tirón de la vivienda privada «una parte, pero la menor»; lo decisivo es que el presupuesto se calcula con «una base de precios que actualizamos cada cuatro o cinco años» y que, firmado el contrato, «apenas se mueve».",
+      "option_rationales": {
+        "A": "Correcta: los precios de base se actualizan «cada cuatro o cinco años» y el contrato «apenas se mueve», de modo que quien se presente «pierde dinero desde el primer día».",
+        "B": "Atribución cambiada: la vivienda privada es la explicación que trae la periodista; el consejero la reduce a «una parte, pero la menor».",
+        "C": "Conocimiento externo: la falta de mano de obra es un problema real del sector, pero el consejero no la menciona; habla de «una base de precios» que se actualiza tarde.",
+        "D": "No se dice: el consejero no habla de recortes; los precios se quedan atrás porque la base se actualiza «cada cuatro o cinco años»."
+      }
+    },
+    {
+      "id": 2,
+      "question": "¿En qué se basa el consejero para negar que la nueva fórmula premie las ofertas temerarias?",
+      "options": {
+        "A": "En que la consejería podrá apartar del concurso las ofertas anormalmente bajas antes de adjudicar el contrato de obra.",
+        "B": "En que la corrección sigue la subida de los materiales en el mercado, y no el descuento con que cada empresa ganó.",
+        "C": "En que la fórmula se aplicará a las obras de larga duración, y no alcanzará a las de pocos meses.",
+        "D": "En que las empresas tendrán que justificar con sus propias facturas cada aumento de coste que reclamen a la consejería."
+      },
+      "answer": "B",
+      "rationale": "El consejero explica que la fórmula «no mira las facturas de la empresa», sino los índices oficiales, y que lo rebajado para quedarse con el contrato «no se lo devuelve ningún índice»: se compensa la subida del mercado, no la oferta a la baja.",
+      "option_rationales": {
+        "A": "Conocimiento externo: la ley permite excluir ofertas anormalmente bajas, pero el consejero no recurre a ese argumento; dice que lo rebajado «no se lo devuelve ningún índice».",
+        "B": "Correcta: si el acero sube, se corrige «la parte del precio que corresponde al acero, sea cual sea la empresa», mientras que lo que una empresa «rebajó por su cuenta» no lo compensa la fórmula.",
+        "C": "Cierta pero no responde: la fórmula irá en «los contratos de larga duración», pero eso no explica por qué no favorece a quien oferta a la baja.",
+        "D": "Lectura errónea: el consejero dice que la fórmula «no mira las facturas de la empresa», sino los índices oficiales."
+      }
+    },
+    {
+      "id": 3,
+      "question": "¿Qué papel cumple el ejemplo de las aulas prefabricadas en la respuesta del consejero?",
+      "options": {
+        "A": "Justificar que los próximos concursos den prioridad a los centros educativos frente a los tramos de carretera.",
+        "B": "Admitir que las obras costarán más, y que para pagarlas habrá que aplazar las que sean menos urgentes.",
+        "C": "Mostrar que una obra que se queda sin adjudicar tiene su propio coste, que puede superar al de pagarla más cara.",
+        "D": "Demostrar que las soluciones provisionales resultan más baratas mientras se prepara y se convoca un nuevo concurso."
+      },
+      "answer": "C",
+      "rationale": "Ante la pregunta de si la comunidad podrá pagar obras más caras, el consejero recuerda que el alquiler de las aulas «ya ha costado más de lo que habría hecho falta añadir al presupuesto»: dejar la obra sin adjudicar no ahorró, encareció.",
+      "option_rationales": {
+        "A": "No se dice: el consejero no establece prioridades entre obras; usa el instituto para responder a si las obras más caras se pueden pagar, con el alquiler que «ya ha costado más».",
+        "B": "No se dice: el consejero no anuncia aplazamientos; sostiene que el retraso ya ha costado más de lo que habría hecho falta «añadir al presupuesto».",
+        "C": "Correcta: si el alquiler «ya ha costado más de lo que habría hecho falta añadir al presupuesto», no adjudicar la obra no ahorró dinero: la aplazó y la encareció.",
+        "D": "Relación invertida: según el consejero, el alquiler de las aulas «ya ha costado más» que el aumento que habría atraído a alguna empresa."
+      }
+    }
+  ]
+}

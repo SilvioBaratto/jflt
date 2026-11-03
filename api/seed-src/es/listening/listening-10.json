@@ -1,0 +1,128 @@
+{
+  "id": "listening-10",
+  "level": "C1",
+  "stanag_level": 3,
+  "topic": "La secuenciación del genoma de los recién nacidos",
+  "conversation_type": "debate televisivo",
+  "setting": "Debate en un programa de televisión sobre ciencia y salud. El moderador reúne a una genetista clínica que coordina un estudio sobre el tema y a un pediatra de un centro de salud para discutir si conviene analizar el genoma de los recién nacidos.",
+  "voices": {
+    "MODERADOR": "fable",
+    "GENETISTA": "shimmer",
+    "PEDIATRA": "echo"
+  },
+  "speakers": [
+    {
+      "id": "MODERADOR",
+      "role": "moderador del debate",
+      "voice": "fable"
+    },
+    {
+      "id": "GENETISTA",
+      "role": "genetista clínica que coordina un estudio sobre la secuenciación neonatal",
+      "voice": "shimmer"
+    },
+    {
+      "id": "PEDIATRA",
+      "role": "pediatra de atención primaria en un centro de salud",
+      "voice": "echo"
+    }
+  ],
+  "lines": [
+    {
+      "speaker": "MODERADOR",
+      "text": "Desde hace décadas, a cada recién nacido se le toman unas gotas de sangre del talón para detectar a tiempo un grupo reducido de enfermedades graves. Algunos países ya ensayan algo mucho más ambicioso: leer el genoma completo del bebé. Lo debaten esta noche Marta Ibáñez, genetista clínica que coordina un estudio sobre el tema, y Pablo Serrano, pediatra en un centro de salud. Doctora Ibáñez, ¿qué ganaríamos?"
+    },
+    {
+      "speaker": "GENETISTA",
+      "text": "Ganaríamos tiempo, que en estas enfermedades lo es casi todo. Hay más de doscientos trastornos genéticos que aparecen en la infancia y que tienen tratamiento si se actúa pronto. La prueba del talón detecta una pequeña parte. Y quiero aclarar algo, porque se repite mucho. No proponemos examinar el genoma entero y contárselo todo a los padres. Se secuencia completo, sí, pero solo se mira una lista cerrada de genes, los de enfermedades infantiles que se pueden tratar. El resto queda sin abrir."
+    },
+    {
+      "speaker": "MODERADOR",
+      "text": "Doctor Serrano, dicho así, cuesta oponerse."
+    },
+    {
+      "speaker": "PEDIATRA",
+      "text": "Y no me opongo a la idea. Me preocupa lo que ocurre al día siguiente. Tener una variante en un gen no es tener una enfermedad. A menudo indica una probabilidad, unas veces alta y otras muy baja, y en bastantes casos ni siquiera sabemos cuál. Así, muchos bebés sanos se convierten en pacientes a la espera. Los padres salen del hospital con un niño perfecto y un papel que dice que tal vez algún día. ¿Y a quién llaman esos padres cada vez que el niño tiene fiebre? A mi consulta."
+    },
+    {
+      "speaker": "GENETISTA",
+      "text": "Ese riesgo existe, y precisamente para reducirlo la lista es corta. Pero hay otra ventaja de la que se habla poco. El genoma se secuencia una vez y puede volver a consultarse durante toda la vida. Cuando dentro de diez años sepamos interpretar un gen que hoy no entendemos, no hará falta otra muestra."
+    },
+    {
+      "speaker": "PEDIATRA",
+      "text": "Esa ventaja es la que más me inquieta. Si dentro de diez años aparece algo en el genoma de ese niño, ¿quién decide si se avisa a la familia? ¿Y si el chico, ya adolescente, prefiere no saberlo? Hoy firman los padres, en la planta de maternidad, por alguien que mañana tendrá su propia opinión."
+    },
+    {
+      "speaker": "MODERADOR",
+      "text": "Doctora Ibáñez, ¿tiene respuesta para eso?"
+    },
+    {
+      "speaker": "GENETISTA",
+      "text": "Una respuesta completa, no. Hay propuestas razonables. Por ejemplo, guardar los datos cifrados y no volver a analizarlos sin un consentimiento nuevo. Ese consentimiento podría darlo el propio interesado al llegar a la mayoría de edad. Pero reconozco que en este punto la ética va por detrás de la técnica. De ahí que yo hable de un estudio piloto con familias voluntarias, y no de cambiar mañana la prueba del talón."
+    },
+    {
+      "speaker": "PEDIATRA",
+      "text": "Con un piloto puedo vivir. Solo pediría una cosa. Que en el informe final, junto a los casos que se detectan a tiempo, aparezca también mi agenda."
+    },
+    {
+      "speaker": "MODERADOR",
+      "text": "Queda anotado. Gracias a los dos."
+    }
+  ],
+  "questions": [
+    {
+      "id": 1,
+      "question": "¿Qué precisa la genetista sobre el análisis que propone?",
+      "options": {
+        "A": "Que se centraría en enfermedades graves de la edad adulta que ya pueden prevenirse desde la infancia.",
+        "B": "Que no sustituiría a la prueba del talón, sino que se reservaría para los bebés que obtengan en ella un resultado dudoso.",
+        "C": "Que se ceñiría a un repertorio cerrado de genes, los de trastornos de aparición infantil que admiten tratamiento.",
+        "D": "Que se ofrecería en primer lugar a las familias con antecedentes de enfermedades hereditarias en su entorno."
+      },
+      "answer": "C",
+      "rationale": "La genetista aclara que no propone «examinar el genoma entero y contárselo todo a los padres»: solo se mira «una lista cerrada de genes», los de enfermedades infantiles «que se pueden tratar».",
+      "option_rationales": {
+        "A": "Lectura errónea: la genetista habla de «enfermedades infantiles que se pueden tratar», no de enfermedades de la edad adulta; «El resto queda sin abrir».",
+        "B": "No se dice: la genetista descarta «cambiar mañana la prueba del talón», pero no propone reservar el genoma a los resultados dudosos; habla de «una lista cerrada de genes» para cada bebé.",
+        "C": "Correcta: el análisis se limitaría a «una lista cerrada de genes», los de enfermedades infantiles «que se pueden tratar»; «El resto queda sin abrir».",
+        "D": "Conocimiento externo: empezar por las familias con antecedentes es una estrategia habitual, pero la genetista no la plantea; su piloto sería «con familias voluntarias»."
+      }
+    },
+    {
+      "id": 2,
+      "question": "¿Qué inconveniente encuentra el pediatra en que el genoma pueda consultarse a lo largo de la vida?",
+      "options": {
+        "A": "Que los padres dan su permiso al nacer el niño, y las consecuencias recaerán en un hijo con criterio propio.",
+        "B": "Que los datos guardados durante años quedarían expuestos a filtraciones o al interés comercial de las compañías aseguradoras.",
+        "C": "Que cada nueva consulta obligaría a tomar otra muestra al niño y a repetir el análisis entero desde el principio.",
+        "D": "Que no está claro que la ciencia llegue a descifrar los genes que hoy no se saben interpretar."
+      },
+      "answer": "A",
+      "rationale": "El pediatra pregunta quién decidirá qué hacer si «aparece algo en el genoma de ese niño» y qué ocurrirá si el chico «prefiere no saberlo»: hoy «firman los padres» por alguien que «mañana tendrá su propia opinión».",
+      "option_rationales": {
+        "A": "Correcta: la decisión la toman «los padres, en la planta de maternidad», y la información acompañará a alguien que «mañana tendrá su propia opinión».",
+        "B": "Conocimiento externo: la seguridad de los datos genéticos es una preocupación real, pero el pediatra no la menciona; le inquieta «quién decide si se avisa a la familia».",
+        "C": "Lectura errónea: la genetista dice precisamente que «no hará falta otra muestra», y el pediatra no discute ese punto.",
+        "D": "No se dice: el pediatra no duda de los avances; da por hecho que puede aparecer algo «en el genoma de ese niño» y pregunta «quién decide si se avisa a la familia»."
+      }
+    },
+    {
+      "id": 3,
+      "question": "¿Qué condición pone el pediatra para aceptar el estudio piloto?",
+      "options": {
+        "A": "Que los pediatras de atención primaria participen en el diseño del estudio desde su comienzo.",
+        "B": "Que se refuercen las plantillas de los centros de salud antes de que se ponga en marcha el estudio piloto.",
+        "C": "Que el estudio se limite a las familias que acepten de antemano un seguimiento periódico en su centro de salud.",
+        "D": "Que se mida el seguimiento que provocan los resultados inciertos, además de los aciertos del cribado."
+      },
+      "answer": "D",
+      "rationale": "El pediatra acepta el piloto («Con un piloto puedo vivir») si en el informe final aparece «mi agenda» junto a «los casos que se detectan a tiempo»: como los padres con un resultado incierto llaman «A mi consulta», pide que se mida también esa carga.",
+      "option_rationales": {
+        "A": "No se dice: el pediatra no pide intervenir en el diseño del estudio; pide que en el informe final aparezca también «mi agenda».",
+        "B": "Lectura errónea: el pediatra no pide más personal antes de empezar; lo que pide es que en el informe final aparezca también «mi agenda».",
+        "C": "Atribución cambiada: el estudio «con familias voluntarias» es la propuesta de la genetista; el pediatra no pide restringirlo, sino que se mida lo que llega a su consulta.",
+        "D": "Correcta: su «agenda» remite a las llamadas de los padres con un resultado dudoso («A mi consulta»); quiere que el balance recoja esa carga y no solo «los casos que se detectan a tiempo»."
+      }
+    }
+  ]
+}

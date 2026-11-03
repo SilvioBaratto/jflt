@@ -1,0 +1,120 @@
+{
+  "id": "listening-09",
+  "level": "C1",
+  "stanag_level": 3,
+  "topic": "Las grandes plantas solares en tierras de cultivo",
+  "conversation_type": "tertulia radiofónica",
+  "setting": "Tertulia de un programa de radio de fin de semana. El presentador comenta con una investigadora en desarrollo rural y con un periodista especializado en energía la instalación de grandes plantas solares en tierras de cultivo.",
+  "voices": {
+    "PRESENTADOR": "alloy",
+    "INVESTIGADORA": "nova",
+    "PERIODISTA": "onyx"
+  },
+  "speakers": [
+    {
+      "id": "PRESENTADOR",
+      "role": "presentador del programa",
+      "voice": "alloy"
+    },
+    {
+      "id": "INVESTIGADORA",
+      "role": "investigadora en desarrollo rural",
+      "voice": "nova"
+    },
+    {
+      "id": "PERIODISTA",
+      "role": "periodista especializado en energía",
+      "voice": "onyx"
+    }
+  ],
+  "lines": [
+    {
+      "speaker": "PRESENTADOR",
+      "text": "Esta semana nos ha escrito un oyente de una comarca de secano. En su pueblo se van a cubrir de paneles solares varios cientos de hectáreas de cereal, y nos pregunta si no estaremos cambiando comida por electricidad. Lo comentamos con Irene Campos, investigadora en desarrollo rural, y con Daniel Ortega, periodista especializado en energía. Irene, ¿hace bien en preocuparse nuestro oyente?"
+    },
+    {
+      "speaker": "INVESTIGADORA",
+      "text": "Hace bien, aunque no por la comida. Incluso si se construyeran todas las plantas previstas, ocuparían una porción muy pequeña de la tierra cultivada del país. Lo que sí cambia es quién gana y quién pierde dentro del pueblo. La empresa ofrece al dueño de la finca varias veces lo que le daba el cereal, con contratos de veinticinco o treinta años. Pero muchas de esas fincas no las trabajaba su dueño, sino un agricultor que las tenía arrendadas. Y ese agricultor no suele ver un euro de la renta: sencillamente se queda sin tierra."
+    },
+    {
+      "speaker": "PRESENTADOR",
+      "text": "Daniel, la salida parece evidente: llevar las plantas a terrenos donde no se pueda cultivar. ¿Por qué no se hace así?"
+    },
+    {
+      "speaker": "PERIODISTA",
+      "text": "Porque un promotor no empieza mirando el suelo, sino el enchufe. Una planta solo sale adelante cerca de un punto de la red eléctrica con capacidad libre para recibir lo que produce, y esos puntos escasean. Alrededor de cada uno se desata una carrera, y varias empresas se disputan las mismas fincas, sean buena tierra de labor o un pedregal. Algunas administraciones han publicado ya mapas con las zonas más adecuadas para estas plantas. Son mapas muy útiles, sobre todo para saber dónde no se va a construir ninguna."
+    },
+    {
+      "speaker": "PRESENTADOR",
+      "text": "Las empresas tienen otro argumento. Dicen que la tierra sigue siendo agrícola, porque entre los paneles pueden pastar ovejas. Daniel, usted ha recorrido unas cuantas de esas plantas."
+    },
+    {
+      "speaker": "PERIODISTA",
+      "text": "Y en varias he visto ovejas, no lo niego. Lo curioso es que el rebaño suele aparecer en el proyecto justo cuando toca presentarlo en el ayuntamiento o explicárselo a los vecinos. Un proyecto con un pastor se defiende mucho mejor en un pleno municipal que uno con vallas y cámaras de seguridad."
+    },
+    {
+      "speaker": "INVESTIGADORA",
+      "text": "Yo no sería tan desconfiada. Conozco plantas donde el pastoreo funciona de verdad: el ganadero encuentra pasto fresco en pleno verano y la empresa se ahorra desbrozar. Lo que pediría es otra cosa. Que ese uso figure en el contrato con obligaciones concretas. Y que alguien lo compruebe pasados unos años, no solo el día de la inauguración."
+    },
+    {
+      "speaker": "PRESENTADOR",
+      "text": "Ovejas con contrato. Lo dejamos aquí por hoy. Gracias a los dos, y gracias a nuestro oyente por la pregunta."
+    }
+  ],
+  "questions": [
+    {
+      "id": 1,
+      "question": "¿Qué matiz introduce la investigadora en la preocupación del oyente?",
+      "options": {
+        "A": "Que las empresas se quedan con el beneficio y pagan a los dueños de las fincas rentas inferiores a su valor.",
+        "B": "Que lo que está en juego no es el suministro de alimentos, sino el reparto entre quien posee la tierra y quien la trabaja.",
+        "C": "Que la comida no corre un riesgo serio, aunque las plantas restan atractivo a pueblos que viven del turismo rural.",
+        "D": "Que lo inquietante no es la cosecha que hoy se pierde, sino el estado en que quedará el suelo cuando se retiren los paneles."
+      },
+      "answer": "B",
+      "rationale": "La investigadora descarta que la comida corra peligro, porque las plantas ocuparían «una porción muy pequeña de la tierra cultivada del país»; lo que cambia es «quién gana y quién pierde dentro del pueblo»: el dueño cobra y el agricultor arrendatario «se queda sin tierra».",
+      "option_rationales": {
+        "A": "Lectura errónea: la investigadora dice lo contrario: la empresa ofrece al dueño «varias veces lo que le daba el cereal»; quien pierde es el agricultor que tenía la finca arrendada.",
+        "B": "Correcta: la comida no corre peligro, pero sí el reparto: el dueño cobra «varias veces lo que le daba el cereal» y el agricultor que la tenía arrendada «se queda sin tierra».",
+        "C": "No se dice: la investigadora coincide en que la comida no peligra, pero no habla del turismo; lo que cambia, según ella, es «quién gana y quién pierde dentro del pueblo».",
+        "D": "Conocimiento externo: el estado del suelo tras retirar los paneles es una inquietud real, pero la investigadora no la menciona; lo que cambia, según ella, es «quién gana y quién pierde dentro del pueblo»."
+      }
+    },
+    {
+      "id": 2,
+      "question": "¿Qué actitud muestra el periodista hacia los mapas de las zonas más adecuadas para las plantas solares?",
+      "options": {
+        "A": "Confianza, porque cree que con el tiempo desviarán las inversiones hacia los terrenos de menor valor agrícola.",
+        "B": "Recelo, porque cree que se dibujan sin tener en cuenta las comarcas que reciben más horas de sol al año.",
+        "C": "Aprobación, aunque lamenta que lleguen tarde, cuando las empresas ya se han asegurado las mejores fincas.",
+        "D": "Escepticismo, porque la ubicación la decide el acceso a la red eléctrica, y no la idoneidad del terreno elegido."
+      },
+      "answer": "D",
+      "rationale": "El periodista explica que un promotor «no empieza mirando el suelo, sino el enchufe» y que los puntos con capacidad libre «escasean»; de ahí la ironía de que los mapas sean útiles «para saber dónde no se va a construir ninguna».",
+      "option_rationales": {
+        "A": "Lectura errónea: el periodista no espera que los mapas orienten la inversión; un promotor «no empieza mirando el suelo, sino el enchufe».",
+        "B": "Conocimiento externo: la radiación solar pesa en la elección de un emplazamiento, pero el periodista no la menciona; lo que manda, según él, es la cercanía a «un punto de la red eléctrica con capacidad libre».",
+        "C": "Lectura errónea: «muy útiles» es una ironía, porque añade que sirven «para saber dónde no se va a construir ninguna»; no habla de que lleguen tarde.",
+        "D": "Correcta: si un promotor mira primero «el enchufe» y esos puntos «escasean», las plantas no irán a las zonas del mapa, que solo sirven «para saber dónde no se va a construir ninguna»."
+      }
+    },
+    {
+      "id": 3,
+      "question": "¿Qué sospecha deja caer el periodista a propósito de las ovejas que pastan entre los paneles?",
+      "options": {
+        "A": "Que el ganado figura en los proyectos tanto o más para ganarse al pueblo que por lo que aporta al campo.",
+        "B": "Que el ganado se retira de las plantas en cuanto la empresa deja de cobrar ayudas públicas por mantenerlo.",
+        "C": "Que los rebaños pertenecen a ganaderos de otras comarcas, a los que contratan y pagan las propias empresas.",
+        "D": "Que las empresas meten ganado para ahorrarse el desbroce, aunque lo presenten como un uso agrícola."
+      },
+      "answer": "A",
+      "rationale": "El periodista observa que el rebaño «suele aparecer en el proyecto justo cuando toca presentarlo» y que un proyecto con un pastor «se defiende mucho mejor en un pleno municipal»: da a entender que las ovejas sirven ante todo para hacer aceptable la planta.",
+      "option_rationales": {
+        "A": "Correcta: si el rebaño aparece «justo cuando toca presentarlo en el ayuntamiento» y con él el proyecto «se defiende mucho mejor», el ganado sirve ante todo para ganarse a los vecinos.",
+        "B": "No se dice: nadie habla de ayudas públicas; es la investigadora quien pide que alguien compruebe el pastoreo «pasados unos años».",
+        "C": "No se dice: el periodista no dice de dónde vienen los pastores; su sospecha se refiere al momento en que el rebaño «suele aparecer en el proyecto».",
+        "D": "Atribución cambiada: el ahorro lo menciona la investigadora como una ventaja real («la empresa se ahorra desbrozar»), no el periodista como sospecha."
+      }
+    }
+  ]
+}
