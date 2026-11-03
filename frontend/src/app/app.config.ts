@@ -11,6 +11,7 @@ import { LucideIconConfig } from 'lucide-angular';
 import { routes } from './app.routes';
 import { ICON_PROVIDER } from './icons';
 import { errorInterceptor } from './interceptors/error.interceptor';
+import { LanguageService } from './services/language';
 import { ThemeService } from './services/theme';
 
 export const appConfig: ApplicationConfig = {
@@ -31,9 +32,11 @@ export const appConfig: ApplicationConfig = {
       },
     },
     // Apply the stored light/dark choice before the first view renders, so every
-    // routed view honours it, not only those inside the shell.
+    // routed view honours it, not only those inside the shell. The stored content language is
+    // read here too, so the first request of any routed view already carries it.
     provideAppInitializer(() => {
       inject(ThemeService);
+      inject(LanguageService);
     }),
   ],
 };
