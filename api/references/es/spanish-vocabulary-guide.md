@@ -284,8 +284,9 @@ di un italofono** segnano con ✗ la forma sbagliata e con ✓ quella corretta.
 Nello spagnolo di Spagna decide l'arco di tempo: il *perfecto* indica fatti avvenuti in un periodo che
 comprende il momento in cui si parla (*hoy, esta mañana, este año, hasta ahora, ya, todavía no*),
 l'*indefinido* fatti collocati in un periodo concluso (*ayer, el lunes, el mes pasado, en 2023, hace
-dos días*). Attenzione, diverso dall'italiano: l'italiano parlato usa quasi sempre il passato
-prossimo, anche con «ieri». In gran parte dell'America l'*indefinido* copre anche i fatti di oggi.
+dos días*). Attenzione, diverso dall'italiano: l'italiano parlato del Centro-Nord usa quasi sempre il
+passato prossimo, anche con «ieri». In gran parte dell'America (e in Galizia, Asturie e Canarie)
+l'*indefinido* copre anche i fatti di oggi.
 - *Esta mañana se ha restablecido el enlace con la base de operaciones avanzada.* → Stamattina è stato ristabilito il collegamento con la base operativa avanzata.
 - *Ayer la patrulla detectó dos artefactos explosivos en la carretera de acceso.* → Ieri la pattuglia ha rilevato due ordigni esplosivi sulla strada d'accesso.
 - *Hasta ahora no se han registrado bajas.* → Finora non si sono registrate perdite.
@@ -296,7 +297,7 @@ cronologia (come imperfetto e passato prossimo/remoto italiani).
 
 **Pluscuamperfecto** — passato anteriore a un altro passato. Il *pretérito anterior* (*hubo llegado*)
 è letterario: nei rapporti non si usa.
-- *Cuando llegó la Guardia Civil, los autores ya habían abandonado el lugar.* → Quando è arrivata la Guardia Civil, gli autori avevano già lasciato il luogo.
+- *Cuando llegó la Guardia Civil, los autores ya habían abandonado el lugar.* → Quando è arrivata la Guardia Civil, i responsabili avevano già lasciato il posto.
 
 **Perifrasi aspettuali**, più frequenti che in italiano:
 - *estar + gerundio*, anche per un'azione conclusa e delimitata: *Estuvimos vigilando el acceso norte toda la noche.* → Abbiamo sorvegliato l'accesso nord per tutta la notte (in italiano non si direbbe «siamo stati sorvegliando»).
@@ -305,8 +306,9 @@ cronologia (come imperfetto e passato prossimo/remoto italiani).
 
 **Futuro e futuro perfecto** — come in italiano, anche per la congettura sul presente: *Serán unos
 doscientos manifestantes.* → Saranno circa duecento manifestanti. *A estas horas el convoy habrá
-cruzado ya la frontera.* → A quest'ora il convoglio avrà già passato il confine. Per la congettura sul
-passato, invece, lo spagnolo usa il **condicional**: *Serían las tres cuando se oyó la primera
+cruzado ya la frontera.* → A quest'ora il convoglio avrà già passato il confine. Per la congettura su
+un fatto passato che andrebbe all'imperfetto o all'indefinido (*eran, fue*), lo spagnolo usa invece il
+**condicional** dove l'italiano usa il futuro anteriore: *Serían las tres cuando se oyó la primera
 explosión.* → Saranno state le tre quando si è sentita la prima esplosione.
 
 **Temporali con valore futuro** (*cuando, en cuanto, hasta que, mientras*): **presente di
@@ -318,7 +320,8 @@ congiuntivo**, mai il futuro che l'italiano ammette («quando arriveranno»).
 - ✗ *Ayer hemos detenido a dos sospechosos.* → ✓ *Ayer detuvimos a dos sospechosos.* (periodo concluso: *indefinido*)
 - ✗ *Los refuerzos son llegados.* → ✓ *Los refuerzos han llegado.* (i tempi composti si formano sempre con *haber*, anche con i verbi di moto e i riflessivi: *se han retirado*)
 - ✗ *Cuando llegarán los refuerzos, avanzaremos.* → ✓ *Cuando lleguen los refuerzos, avanzaremos.*
-- ✗ *Los refuerzos han apenas llegado.* → ✓ *Los refuerzos acaban de llegar.* (*apenas* significa «a malapena» o «non appena»: vedi 8.11)
+- ✗ *Los refuerzos han apenas llegado.* → ✓ *Los refuerzos acaban de llegar.* (l'«appena» del passato prossimo si rende con *acabar de*: vedi 8.11)
+- ✗ *Patrullamos la zona desde dos semanas.* → ✓ *Patrullamos la zona desde hace dos semanas.* / ✓ *Llevamos dos semanas patrullando la zona.* (calco di «da due settimane»: con una durata *desde hace*; *desde* solo con un punto nel tempo: *desde el lunes*)
 
 ### 8.2 Forma passiva e impersonale
 
@@ -343,11 +346,12 @@ singolare, obbligatoria quando l'oggetto è una persona determinata introdotta d
 - *Se estima que el grupo cuenta con unos cincuenta combatientes.* → Si stima che il gruppo conti una cinquantina di combattenti. (in spagnolo indicativo: vedi 8.10)
 - *Se ruega a la población que no se acerque a la zona acordonada.* → Si prega la popolazione di non avvicinarsi alla zona transennata.
 - *Al parecer, el sospechoso huyó hacia la frontera.* → A quanto pare, il sospetto è fuggito verso il confine.
-- *Según fuentes policiales, el sospechoso habría huido hacia la frontera.* → Secondo fonti di polizia, il sospetto sarebbe fuggito verso il confine. È il *condicional de rumor* della stampa, gemello del condizionale «di dissociazione» dei giornali italiani; il libro di stile di *El País* e quelli di altri quotidiani lo escludono dai titoli, e in un rapporto è più trasparente nominare la fonte, come qui.
+- *Según fuentes policiales, el sospechoso habría huido hacia la frontera.* → Secondo fonti di polizia, il sospetto sarebbe fuggito verso il confine. È il *condicional de rumor* della stampa, gemello del condizionale «di dissociazione» dei giornali italiani; i libri di stile dei quotidiani spagnoli lo sconsigliano; in un rapporto conviene nominare la fonte, come qui.
 
 **Errori tipici di un italofono**
 - ✗ *Se han detenido a tres sospechosos.* → ✓ *Se ha detenido a tres sospechosos.* (con *a* + persona la frase è impersonale; concorda invece la *pasiva refleja* senza *a*: *Se han hallado dos fusiles.*)
 - ✗ *Se han tomadas medidas.* → ✓ *Se han tomado medidas.* (con *haber* il participio è invariabile: *las medidas que hemos tomado*)
+- ✗ *El juez interrogó el detenido.* → ✓ *El juez interrogó al detenido.* (complemento oggetto di persona determinata: *a*, come in *se ha detenido a*)
 
 ### 8.3 *Ser*, *estar*, *haber* & verbi modali
 
@@ -355,7 +359,7 @@ singolare, obbligatoria quando l'oggetto è una persona determinata introdotta d
 - *ser*: identità, classificazione, caratteristica stabile, e anche **luogo e ora di un evento**: *La reunión de coordinación es en el cuartel general a las 09:00.* → La riunione di coordinamento è al quartier generale alle 09:00.
 - *estar*: posizione di persone e cose, stato risultante: *El puesto de mando está en la cota 412.* → Il posto comando è a quota 412.
 - Con il participio, *ser* descrive l'azione, *estar* il risultato: *La carretera fue cortada por los manifestantes a las 07:00; a mediodía todavía estaba cortada.* → La strada è stata bloccata dai manifestanti alle 07:00; a mezzogiorno era ancora bloccata.
-- Aggettivi che cambiano senso: *ser seguro* (senza pericolo) / *estar seguro* (essere certo); *ser listo* (sveglio) / *estar listo* (pronto); *ser grave* (di un fatto) / *estar grave* (di un ferito). *La zona no es segura para los cooperantes.* → La zona non è sicura per i cooperanti. *Dos de los heridos están graves.* → Due dei feriti sono in gravi condizioni.
+- Aggettivi che cambiano senso: *ser seguro* (di un luogo: senza pericolo; *es seguro que* = è certo che) / *estar seguro* (essere certo; anche «essere al sicuro»); *ser listo* (sveglio) / *estar listo* (pronto); *ser grave* (di un fatto) / *estar grave* (di un ferito). *La zona no es segura para los cooperantes.* → La zona non è sicura per i cooperanti. *Dos de los heridos están graves.* → Due dei feriti sono in gravi condizioni.
 
 **Haber esistenziale** (*hay, había, ha habido* = «c'è, ci sono»): è impersonale, quindi **sempre al
 singolare**, e introduce entità indeterminate; ciò che è determinato si colloca con *estar*.
@@ -363,15 +367,18 @@ singolare**, e introduce entità indeterminate; ciò che è determinato si collo
 - *Hay un puesto de control a la entrada del pueblo; el puesto de mando está en la escuela.* → C'è un posto di blocco all'ingresso del paese; il posto comando è nella scuola.
 
 **Obbligo:** *deber* + infinito (dovere regolamentare o morale), *tener que* (necessità concreta), *hay
-que* (impersonale), *haber de* (formale, scritto). Assenza di obbligo: *no hace falta / no es
-necesario*; divieto: *no deber*.
+que* (impersonale), *haber de* (formale, scritto). Assenza di obbligo: *no tener que / no hace falta /
+no es necesario* (*No tienen que presentarse hasta las 10:00.* → Non sono tenuti a presentarsi prima
+delle 10:00); divieto: *no deber*.
 - *Todo el personal debe conocer las reglas de enfrentamiento.* → Tutto il personale deve conoscere le regole d'ingaggio.
 - *Hay que relevar a la escuadra del puesto norte antes del anochecer.* → Bisogna dare il cambio al nucleo del posto nord prima del tramonto.
 - *El informe ha de remitirse al MOPS en un plazo de 24 horas.* → Il rapporto va trasmesso al MOPS entro 24 ore.
-- *No hace falta evacuar el edificio; los observadores, en cambio, no deben portar armas.* → Non occorre evacuare l'edificio; gli osservatori, invece, non devono portare armi.
+- *No hace falta evacuar el edificio.* → Non occorre evacuare l'edificio. *Los observadores no deben portar armas.* → Gli osservatori non devono portare armi.
 
-**Deduzione e possibilità:** la norma colta riserva *deber de* + infinito alla supposizione (*deber*
-senza *de* resta per l'obbligo); *puede que* + congiuntivo = «può darsi che».
+**Deduzione e possibilità:** per la supposizione si usa *deber de* + infinito, ma la norma colta
+ammette anche *deber* senza *de* (*Debe de quedarles / Debe quedarles poca munición*); per l'obbligo,
+invece, solo *deber* senza *de* (✗ *El personal debe de conocer las reglas de enfrentamiento*).
+*Puede que* + congiuntivo = «può darsi che».
 - *Debe de quedarles poca munición tras tres días de combate.* → Devono avere ormai poche munizioni dopo tre giorni di combattimenti.
 - *El artefacto debió de colocarse poco antes del paso de la patrulla.* → L'ordigno dev'essere stato collocato poco prima del passaggio della pattuglia.
 - *Puede que el convoy se retrase por el estado de la carretera.* → Può darsi che il convoglio ritardi per lo stato della strada.
@@ -394,32 +401,37 @@ Regola d'oro: dopo il *si* condizionale **mai** il futuro, il condizionale o il 
 congiuntivo. L'italiano ammette «se arriveranno» e «qualora sia»: in spagnolo diventano *si llegan* e
 *en caso de que sea*.
 
-| Tipo | Forma | Ejemplo | Italiano |
-|---|---|---|---|
-| Real (procedimiento) | *si* + presente, presente | *Si se pierde el enlace, la patrulla regresa al último punto de control.* | Se si perde il collegamento, la pattuglia rientra all'ultimo punto di controllo. |
-| Real (futuro u orden) | *si* + presente, futuro o imperativo | *Si detectan un artefacto sospechoso, cierren el itinerario y avisen a los TEDAX.* | Se rilevate un ordigno sospetto, chiudete l'itinerario e avvisate gli artificieri. |
-| Potencial | *si* + imperfecto de subjuntivo, condicional simple | *Si dispusiéramos de más helicópteros, podríamos evacuar a todos los heridos esta noche.* | Se disponessimo di più elicotteri, potremmo evacuare tutti i feriti stanotte. |
-| Irreal de pasado | *si* + pluscuamperfecto de subjuntivo, condicional compuesto | *Si se hubiera cerrado el paso fronterizo, los insurgentes no habrían recibido suministros.* | Se il valico fosse stato chiuso, gli insorti non avrebbero ricevuto rifornimenti. |
-| Mixta (pasado → presente) | *si* + pluscuamperfecto de subjuntivo, condicional simple | *Si el Consejo de Seguridad hubiera aprobado la resolución, la misión ya estaría desplegada.* | Se il Consiglio di sicurezza avesse approvato la risoluzione, la missione sarebbe già schierata. |
-| Mixta (presente → pasado) | *si* + imperfecto de subjuntivo, condicional compuesto | *Si la amenaza fuera creíble, Interior ya habría elevado el nivel de alerta antiterrorista.* | Se la minaccia fosse credibile, il Ministero dell'Interno avrebbe già innalzato il livello di allerta antiterrorismo. |
-| De + infinitivo | *de* + infinitivo simple o compuesto | *De confirmarse la información, se activará el plan de evacuación.* | Se l'informazione sarà confermata, verrà attivato il piano di evacuazione. |
+| Tipo e forma | Ejemplo | Italiano |
+|---|---|---|
+| Real (procedimiento): *si* + presente, presente | *Si se pierde el enlace, la patrulla regresa al último punto de control.* | Se si perde il collegamento, la pattuglia rientra all'ultimo punto di controllo. |
+| Real (futuro u orden): *si* + presente, futuro o imperativo | *Si detectan un artefacto sospechoso, cierren el itinerario y avisen a los TEDAX.* | Se rilevate un ordigno sospetto, chiudete l'itinerario e avvisate gli artificieri. |
+| Potencial: *si* + imperfecto de subjuntivo, condicional simple | *Si dispusiéramos de más helicópteros, podríamos evacuar a todos los heridos esta noche.* | Se disponessimo di più elicotteri, potremmo evacuare tutti i feriti stanotte. |
+| Irreal de pasado: *si* + pluscuamperfecto de subjuntivo, condicional compuesto | *Si se hubiera cerrado el paso fronterizo, los insurgentes no habrían recibido suministros.* | Se il valico fosse stato chiuso, gli insorti non avrebbero ricevuto rifornimenti. |
+| Mixta (pasado → presente): *si* + pluscuamperfecto de subjuntivo, condicional simple | *Si el Consejo de Seguridad hubiera aprobado la resolución, la misión ya estaría desplegada.* | Se il Consiglio di sicurezza avesse approvato la risoluzione, la missione sarebbe già schierata. |
+| Mixta (presente → pasado): *si* + imperfecto de subjuntivo, condicional compuesto | *Si la amenaza fuera creíble, Interior ya habría elevado el nivel de alerta antiterrorista.* | Se la minaccia fosse credibile, il Ministero dell'Interno avrebbe già innalzato il livello di allerta antiterrorismo. |
+| *De* + infinitivo simple o compuesto | *De confirmarse la información, se activará el plan de evacuación.* | Se l'informazione sarà confermata, verrà attivato il piano di evacuazione. |
+
+Nel tipo irreale di passato l'apodosi ammette anche *hubiera* + participio: *…los insurgentes no
+hubieran recibido suministros.*
 
 **Altre congiunzioni condizionali**, tutte con il **congiuntivo**:
 - *en caso de que* (qualora, nel caso in cui): *En caso de que se rompa la tregua, el contingente se replegará a la base.* → Qualora la tregua venga rotta, il contingente ripiegherà sulla base.
 - *siempre que / siempre y cuando* (purché; con l'indicativo *siempre que* = «ogni volta che»): *Se autorizará el paso del convoy siempre que se respete el horario pactado.* → Il passaggio del convoglio sarà autorizzato purché si rispetti l'orario concordato.
 - *a menos que / a no ser que / salvo que* (a meno che): *La operación seguirá adelante a menos que el JEMAD ordene lo contrario.* → L'operazione proseguirà a meno che il JEMAD non ordini il contrario.
-- *como* + congiuntivo a inizio frase (condizione con tono di avvertimento): *Como no llegue el combustible mañana, tendremos que inmovilizar los vehículos.* → Se domani non arriva il carburante, dovremo fermare i mezzi.
-- Eccezione: *por si (acaso)* (nel caso, per l'eventualità che) vuole di norma l'**indicativo**: *Lleven raciones para dos días por si se retrasa el relevo.* → Portate razioni per due giorni nel caso in cui il cambio tardi.
+- *como* + congiuntivo a inizio frase (condizione con tono di avvertimento; registro parlato, nello scritto *si* o *en caso de que*): *Como no llegue el combustible mañana, tendremos que inmovilizar los vehículos.* → Se domani non arriva il carburante, dovremo fermare i mezzi.
+- Eccezione: *por si (acaso)* (nel caso, per l'eventualità che) vuole l'**indicativo**, oppure l'imperfetto di congiuntivo per un'eventualità remota, mai il presente di congiuntivo: *Lleven raciones para dos días por si se retrasa el relevo.* → Portate razioni per due giorni nel caso in cui il cambio tardi.
 
 **Errori tipici di un italofono**
 - ✗ *Si los refuerzos llegarán a tiempo, mantendremos la posición.* → ✓ *Si los refuerzos llegan a tiempo, mantendremos la posición.*
 - ✗ *Si sea necesario, se solicitará apoyo aéreo.* → ✓ *Si es necesario…* / ✓ *En caso de que sea necesario…*
 - ✗ *…a menos que el JEMAD no ordene lo contrario.* → ✓ *…a menos que el JEMAD ordene lo contrario.* (il «non» dell'italiano «a meno che non» è pleonastico; in spagnolo il *no* nega davvero e capovolge il senso)
+- ✗ *…por si se retrase el relevo.* → ✓ *…por si se retrasa el relevo.* / ✓ *…por si se retrasara el relevo.* (calco di «nel caso in cui tardi»)
 
 ### 8.5 Discorso indiretto (estilo indirecto)
 
 Con il verbo introduttivo al passato (*dijo que, informó de que*) la concordanza dei tempi è quasi
-quella italiana: presente → *imperfecto*, *perfecto* / *indefinido* → *pluscuamperfecto*. Una
+quella italiana: presente → *imperfecto*, *perfecto* / *indefinido* → *pluscuamperfecto* (l'indefinido
+può anche restare: *dijo que el convoy salió a las 06:00*). Una
 differenza decisiva: il **futuro nel passato** è in spagnolo il *condicional simple*, in italiano il
 condizionale composto. Se il contenuto è ancora valido, o il verbo introduttivo è al *perfecto*, si può
 non arretrare.
@@ -452,16 +464,17 @@ non arretrare.
 **Errori tipici di un italofono**
 - ✗ *Los que llegarán tarde al punto de reunión serán sancionados.* → ✓ *Los que lleguen tarde al punto de reunión serán sancionados.*
 - ✗ *El enemigo abandonó la cota, el que permitió el avance.* → ✓ *…, lo que (lo cual) permitió el avance.* (il «che» riferito a una frase si rende con il neutro *lo*)
+- ✗ *el detenido, la cuya identidad no ha trascendido* → ✓ *el detenido, cuya identidad no ha trascendido* (calco di «la cui»: *cuyo* non vuole articolo)
 
 ### 8.7 Participi, gerundi & costrutti assoluti
 
 - **Participio assoluto** (anteriorità), come in italiano: *Concluida la batida, la compañía regresó a la base.* → Concluso il rastrellamento, la compagnia rientrò alla base. Con *una vez*: *Una vez asegurada la zona, se autorizó la entrada de la Policía Científica.* → Una volta messa in sicurezza l'area, è stato autorizzato l'ingresso della Polizia scientifica.
 - ***al* + infinito** (nel momento in cui): *Al llegar al puesto de control, el vehículo aceleró y forzó la barrera.* → Arrivato al posto di blocco, il veicolo accelerò e sfondò la sbarra.
 - **Gerundio**: azione contemporanea o immediatamente anteriore, modo, causa. *La patrulla avanzó cubriéndose tras los muros del pueblo.* → La pattuglia avanzò riparandosi dietro i muri del paese. *Habiendo recibido la orden, la sección inició el repliegue.* → Ricevuto l'ordine, il plotone iniziò il ripiegamento.
-- **Limiti del gerundio**: non esprime un fatto successivo o una conseguenza (*gerundio de posterioridad*) e non qualifica un nome come il participio presente italiano (*contenente, proveniente, riguardante*); si usano una relativa, una coordinata o un aggettivo (*procedente de, relativo a*). *El convoy sufrió una emboscada en la que murieron dos soldados.* → Il convoglio subì un'imboscata in cui morirono due soldati. *Se interceptó una furgoneta procedente de la frontera que transportaba armas.* → È stato intercettato un furgone proveniente dal confine che trasportava armi.
+- **Limiti del gerundio**: la RAE censura il *gerundio de posterioridad* che riferisce un fatto successivo senza legame con la principale; lo ammette solo se la successione è immediata (*Salió del despacho dando un portazo.*) o se il gerundio ne è chiaramente la conseguenza. In un rapporto conviene comunque una coordinata o una relativa. Il gerundio inoltre non qualifica un nome come il participio presente italiano (*contenente, proveniente, riguardante*), salvo *hirviendo*, *ardiendo* e dopo i verbi di percezione (*Vimos a dos hombres huyendo.*): si usano una relativa o un aggettivo (*procedente de, relativo a*). *El convoy sufrió una emboscada en la que murieron dos soldados.* → Il convoglio subì un'imboscata in cui morirono due soldati. *Se interceptó una furgoneta procedente de la frontera que transportaba armas.* → È stato intercettato un furgone proveniente dal confine che trasportava armi.
 
 **Errori tipici di un italofono**
-- ✗ *El convoy sufrió una emboscada, muriendo dos soldados.* → ✓ *El convoy sufrió una emboscada en la que murieron dos soldados.*
+- ✗ *El sospechoso huyó, siendo detenido dos días después en Algeciras.* → ✓ *El sospechoso huyó y fue detenido dos días después en Algeciras.* (posteriorità senza legame: il caso che la RAE censura)
 - ✗ *una caja conteniendo munición* → ✓ *una caja que contenía munición* / ✓ *una caja con munición* (calco del participio presente «contenente»)
 
 ### 8.8 Scopo, causa, conseguenza, concessione & contrasto
@@ -483,7 +496,10 @@ que* + indicativo; *tan… que*; ***de ahí que* + congiuntivo**, anche se il fa
 
 **Concessione:** *aunque* + indicativo (fatto reale e informativo) o + congiuntivo (ipotesi, o fatto
 noto che non conta); *a pesar de* + nome o infinito, *a pesar de que*; *si bien* + **indicativo**
-(formale, dove l'italiano «sebbene» vuole il congiuntivo); *por mucho que / por más que* + congiuntivo.
+(formale, dove l'italiano «sebbene» vuole il congiuntivo); *por mucho que / por más que* + congiuntivo
+(ipotesi o fatto che non conta) o + indicativo (fatto reale: *Por más que lo intentaron, no lograron
+romper el cerco.* → Per quanto ci abbiano provato, non sono riusciti a rompere l'accerchiamento;
+attenzione: l'italiano «per quanto» vuole sempre il congiuntivo).
 - *Aunque el alto el fuego está en vigor, se siguen registrando violaciones esporádicas.* → Anche se il cessate il fuoco è in vigore, continuano a registrarsi violazioni sporadiche.
 - *Aunque se confirme la retirada, el contingente permanecerá en la zona de amortiguación.* → Anche se il ritiro dovesse essere confermato, il contingente resterà nella zona cuscinetto.
 - *Si bien la operación alcanzó sus objetivos, el coste en material fue elevado.* → Sebbene l'operazione abbia raggiunto i suoi obiettivi, il costo in materiali è stato elevato.
@@ -504,7 +520,7 @@ noto che non conta); *a pesar de* + nome o infinito, *a pesar de que*; *si bien*
 
 Rapporti e comunicati spagnoli sono fortemente nominali: verbo → sostantivo + *de*, con verbi di
 supporto (*proceder a, llevar a cabo, efectuar, realizar*).
-- *desplegar → el despliegue*, *detener → la detención*, *retirarse → la retirada* (non *el retiro*, che è il pensionamento), *deteriorarse → el deterioro*, *incautar → la incautación*.
+- *desplegar → el despliegue*, *detener → la detención*, *retirarse → la retirada* (*el retiro* è di solito il pensionamento o il ritiro spirituale; per le truppe si usa *la retirada*), *deteriorarse → el deterioro*, *incautar → la incautación*.
 - *Como la situación se deterioró, el Gobierno evacuó a sus nacionales.* → *El deterioro de la situación obligó al Gobierno a evacuar a sus nacionales.* → Il deterioramento della situazione ha costretto il Governo a evacuare i propri connazionali.
 - *Se procedió a la detención de los dos sospechosos.* → Si è proceduto al fermo dei due sospetti.
 - *el hecho de que* + di solito congiuntivo (come «il fatto che»): *El hecho de que no se hayan producido bajas no reduce la gravedad del ataque.* → Il fatto che non vi siano state vittime non riduce la gravità dell'attacco.
@@ -543,21 +559,26 @@ prossimo cambio.
 
 ### 8.11 Ordine delle parole & enfasi
 
-Lo spagnolo non ha l'inversione ausiliare–soggetto dell'inglese: l'enfasi si ottiene spostando gli
-elementi, come in italiano, con alcune regole proprie.
+Lo spagnolo non ha l'inversione ausiliare–soggetto: l'enfasi si ottiene spostando gli elementi, come
+in italiano, con alcune regole proprie.
 - **Soggetto posposto** con i verbi di comparsa e di accadimento: *Se produjo una explosión en el mercado central.* → C'è stata un'esplosione al mercato centrale. *Han llegado los observadores de la OSCE.* → Sono arrivati gli osservatori dell'OSCE.
 - **Elemento focalizzato in testa, verbo prima del soggetto:** *Solo entonces comprendió el mando la magnitud del ataque.* → Solo allora il comando comprese la portata dell'attacco. *Muy distinta es la situación en la frontera sur.* → Ben diversa è la situazione alla frontiera meridionale.
 - **Negazione in testa senza *no***, come con «mai» in italiano: *Nunca se había registrado un ataque de esta magnitud en la provincia.* → Mai si era registrato un attacco di questa portata nella provincia. *Ni siquiera el portavoz pudo confirmar la cifra de víctimas.* → Nemmeno il portavoce ha potuto confermare il numero delle vittime. *En ningún caso se entregará a los detenidos sin orden judicial.* → In nessun caso i detenuti saranno consegnati senza un ordine del giudice.
-- ***apenas*** = «non appena» (con *cuando* nella reggente) oppure «a malapena», mai «da poco»: *Apenas había salido el convoy cuando se recibió el aviso de bomba.* → Il convoglio era appena partito quando è arrivato l'allarme bomba. *Apenas quedan víveres para dos días.* → Restano viveri a malapena per due giorni.
+- ***apenas*** ha due valori: «a malapena, quasi non» (*Apenas quedan víveres para dos días.* → Restano viveri a malapena per due giorni) e «(non) appena», come congiunzione (*Apenas se confirme la posición, se informará al puesto de mando.* → Non appena la posizione sarà confermata, verrà informato il posto comando) o nello schema *apenas… cuando* (*Apenas había salido el convoy cuando se recibió el aviso de bomba.* → Il convoglio era appena partito quando è arrivato l'allarme bomba). Non rende l'«appena» italiano accanto al passato prossimo («sono appena arrivati»): *acaban de llegar* (in America anche *recién llegaron*).
 - **Dislocazione a sinistra** con ripresa pronominale, come in italiano: *Los informes de inteligencia los recibirá el JEMAD esta tarde.* → I rapporti d'intelligence li riceverà il JEMAD oggi pomeriggio.
-- **Raddoppiamento del complemento indiretto** con *le / les*, normale in spagnolo e assente in italiano: *Le entregamos el atestado al juez de instrucción.* → Abbiamo consegnato il verbale al giudice istruttore. Al plurale *les*: *Les comunicamos la decisión a los observadores.*
+- **Raddoppiamento del complemento indiretto** con *le / les*, normale in spagnolo e assente nell'italiano standard: *Le entregamos el atestado al juez de instrucción.* → Abbiamo consegnato il verbale al giudice istruttore. Al plurale *les*: *Les comunicamos la decisión a los observadores.*
 - *es que, lo que pasa es que* appartengono al parlato colloquiale; nell'esposizione formale: *Lo cierto es que la tregua nunca se respetó del todo.* → Il fatto è che la tregua non è mai stata rispettata del tutto.
+
+**Errori tipici di un italofono**
+- ✗ *No se había nunca registrado un ataque así.* → ✓ *Nunca se había registrado…* / ✓ *No se había registrado nunca…* (di norma nessun avverbio tra *haber* e participio: ✓ *ya han llegado*, non *han ya llegado*)
+- ✗ *Le lo entregamos al juez.* → ✓ *Se lo entregamos al juez.* (calco di «glielo»: davanti a *lo, la, los, las*, *le / les* diventa *se*)
 
 ### 8.12 Frasi scisse (perífrasis de relieve)
 
 Forma: *ser* + elemento in rilievo + relativo che **concorda** con quell'elemento: *quien / quienes*
 per le persone, *el que / la que* per persone e cose, *lo que* per idee e fatti, e ***cuando, donde, como*** per tempo,
-luogo e modo, dove l'italiano usa sempre «che». *Ser* concorda nel tempo con il resto della frase.
+luogo e modo, dove l'italiano usa «che» (o *a* + infinito: «è stato il Governo a ordinare»). *Ser* di
+norma concorda nel tempo con il resto della frase.
 - *Fue el Gobierno quien ordenó la evacuación de la embajada.* → È stato il Governo a ordinare l'evacuazione dell'ambasciata.
 - *Fueron los vecinos quienes dieron la voz de alarma.* → Sono stati gli abitanti della zona a dare l'allarme.
 - *Es en este punto donde el despliegue resulta más vulnerable.* → È in questo punto che lo schieramento risulta più vulnerabile.
@@ -566,7 +587,7 @@ luogo e modo, dove l'italiano usa sempre «che». *Ser* concorda nel tempo con i
 - *Lo único que se puede garantizar ahora es la seguridad del corredor humanitario.* → L'unica cosa che si può garantire ora è la sicurezza del corridoio umanitario.
 
 **Errori tipici di un italofono**
-- ✗ *Fue entonces que se perdió el contacto.* / ✗ *Es aquí que…* → ✓ *Fue entonces cuando se perdió el contacto.* / ✓ *Es aquí donde…* (il cosiddetto *que galicado*, diffuso soprattutto in America e da evitare nella prosa formale)
+- ✗ *Fue entonces que se perdió el contacto.* / ✗ *Es aquí que…* → ✓ *Fue entonces cuando se perdió el contacto.* / ✓ *Es aquí donde…* (il cosiddetto *que galicado*: in America è comune e accettato in ogni registro, ma la norma colta di Spagna lo evita; nel registro istituzionale spagnolo si usano *cuando / donde / como* o il relativo con articolo)
 
 ### 8.13 Comparativi, superlativi & proporzione
 
@@ -576,6 +597,7 @@ luogo e modo, dove l'italiano usa sempre «che». *Ser* concorda nel tempo con i
 - ***cuanto más… más*** (congiuntivo se il riferimento è futuro): *Cuanto más se prolongue el asedio, más difícil será abrir un corredor humanitario.* → Più si prolunga l'assedio, più difficile sarà aprire un corridoio umanitario.
 - ***cada vez más / menos*** («sempre più / meno»): *La situación en la zona de amortiguación es cada vez más inestable.* → La situazione nella zona cuscinetto è sempre più instabile.
 - **Superlativo relativo** *el / la… más… de*: *Es, con diferencia, el paso fronterizo más vigilado de la región.* → È, di gran lunga, il valico più sorvegliato della regione. Neutro *lo más / lo antes… posible*: *Hay que evacuar a los heridos lo antes posible.* → Bisogna evacuare i feriti il prima possibile.
+- ***no… más que*** = «solo», ***no… más de*** = «non più di»: *No quedan más que dos días de víveres.* → Restano viveri solo per due giorni. *No se admitirán más de veinte periodistas.* → Non saranno ammessi più di venti giornalisti.
 - **Rafforzare il comparativo** con *mucho / bastante / algo* (molto / parecchio / un po'): *El riesgo es mucho mayor de lo que reflejan los informes.* → Il rischio è molto maggiore di quanto risulti dai rapporti.
 
 **Errori tipici di un italofono**
@@ -589,7 +611,7 @@ luogo e modo, dove l'italiano usa sempre «che». *Ser* concorda nel tempo con i
 - **Con preposizione:** *tratar de* (cercare di), *dejar de* (smettere di), *acabar de* (avere appena), *volver a* (ri-, di nuovo), *empezar a, negarse a, obligar a, proceder a*. *Los combates volvieron a estallar al amanecer.* → I combattimenti sono riesplosi all'alba. *La milicia se negó a entregar las armas.* → La milizia si è rifiutata di consegnare le armi.
 - **Verbo + gerundio:** *seguir / continuar* («continuare a»), *ir* (progressione), *llevar* (vedi 8.1). *La patrulla siguió avanzando pese al fuego de hostigamiento.* → La pattuglia ha continuato ad avanzare nonostante il fuoco di disturbo. *La tensión va aumentando en la frontera.* → La tensione al confine aumenta di giorno in giorno.
 - **Verbo + participio** (risultato): *tener* + participio concordato con l'oggetto, *quedar* + participio, *dar por* + participio. *Tenemos localizados a los tres sospechosos.* → Abbiamo localizzato i tre sospetti (e li teniamo d'occhio). *La carretera quedó cortada durante seis horas.* → La strada è rimasta interrotta per sei ore. *Se da por concluida la fase de despliegue.* → La fase di schieramento si considera conclusa.
-- **Preposizione + infinito:** *al* (nel momento in cui), *por* (causa, oppure azione ancora da compiere), *sin, tras, antes de, después de*. *Quedan tres viviendas por registrar.* → Restano tre abitazioni da perquisire. *El sospechoso fue detenido tras intentar huir.* → Il sospetto è stato fermato dopo aver tentato la fuga. Il tipo *asuntos a tratar* è un francesismo, tollerato solo nel linguaggio amministrativo: meglio *por tratar* o *que tratar*.
+- **Preposizione + infinito:** *al* (nel momento in cui), *por* (causa, oppure azione ancora da compiere), *sin, tras, antes de, después de*. *Quedan tres viviendas por registrar.* → Restano tre abitazioni da perquisire. *El sospechoso fue detenido tras intentar huir.* → Il sospetto è stato fermato dopo aver tentato la fuga. Il tipo *asuntos a tratar* è un calco del francese, frequente negli ordini del giorno: nella prosa curata si preferisce *asuntos por tratar* o *que tratar*; resta normale nelle formule contabili (*total a pagar*).
 - ***impedir / permitir / prohibir*** + infinito, oppure + *que* + congiuntivo: *Las barreras impidieron que los manifestantes llegaran al Congreso.* → Le transenne hanno impedito ai manifestanti di raggiungere il Congresso.
 
 **Errori tipici di un italofono**
@@ -607,13 +629,14 @@ luogo e modo, dove l'italiano usa sempre «che». *Ser* concorda nel tempo con i
 
 **Errori tipici di un italofono**
 - ✗ *¡No disparar!* (rivolto a una persona) → ✓ *¡No dispares!* (l'infinito resta solo nei cartelli e negli avvisi generici: *No fumar*)
+- ✗ *Se identifique, por favor.* → ✓ *Identifíquese, por favor.* (con *usted* il pronome segue l'imperativo affermativo; l'italiano con il Lei lo antepone: «Si identifichi»)
 
 ### 8.16 Telai di frase pronti all'uso (sentence frames)
 
 **Descrivere / informare:**
 - *Parte de situación a las [hora]: en [zona] se registra…* → Rapporto di situazione alle [ora]: in [zona] si registra…
 - *Desde el último parte, el hecho más relevante ha sido…* → Dall'ultimo rapporto, il fatto più rilevante è stato…
-- *Según fuentes de [organismo], …; este extremo no ha podido ser confirmado.* → Secondo fonti di [ente], …; la circostanza non ha potuto essere confermata.
+- *Según fuentes de [organismo], …; no se ha podido confirmar este extremo.* → Secondo fonti di [ente], …; non è stato possibile confermare la circostanza.
 - *Conviene subrayar que…* → Occorre sottolineare che…
 
 **Opinare / argomentare:**
@@ -751,36 +774,49 @@ spagnoli sono stati verificati sul Wikcionario e sulle fonti normative e istituz
   https://www.treccani.it/vocabolario/contestare/; *quartiere* —
   https://www.treccani.it/vocabolario/quartiere/; *attestato* —
   https://www.treccani.it/vocabolario/attestato/ — significati italiani dei falsi amici.
-- Sezione 8: la *Nueva gramática de la lengua española*, il *Diccionario panhispánico de dudas*, la
-  FundéuRAE e il *Plan curricular* dell'Instituto Cervantes non erano consultabili dall'ambiente di
-  redazione (accesso rifiutato o pagina non trovata); le regole grammaticali sono state verificate
-  sulle fonti seguenti.
+- Sezione 8: la *Nueva gramática de la lengua española*, il *Diccionario panhispánico de dudas*, le
+  pagine *Buen uso del español* della RAE, la FundéuRAE e il *Plan curricular* dell'Instituto
+  Cervantes non erano consultabili dall'ambiente di redazione (accesso rifiutato o pagina non
+  trovata); le regole grammaticali sono state verificate sulle fonti seguenti. Le tre pagine RAE
+  elencate subito sotto sono state consultate solo tramite estratti dei risultati di ricerca.
+- RAE, *Diccionario panhispánico de dudas*, voci «gerundio» — https://www.rae.es/dpd/gerundio —
+  gerundio di posteriorità ammesso con successione immediata o legame logico di conseguenza; e
+  «deber» — https://www.rae.es/dpd/deber — *deber* + infinito per l'obbligo, *deber de* + infinito
+  per la supposizione, *deber* senza *de* ammesso anche per la supposizione (consultati tramite
+  estratti di ricerca).
+- RAE, *Buen uso del español*, «Las construcciones de que galicado» —
+  https://www.rae.es/buen-uso-español/las-construcciones-de-que-galicado — in America le costruzioni
+  con *que galicado* sono considerate naturali e corrette (consultata tramite estratti di ricerca).
 - Treccani, *Enciclopedia dell'Italiano* (2010), voci «Condizionale» (S. C. Sgroi) —
   https://www.treccani.it/enciclopedia/condizionale_(Enciclopedia-dell'Italiano)/ — condizionale
   composto come futuro nel passato, condizionale di dissociazione dei giornali; «Futuro» —
-  https://www.treccani.it/enciclopedia/futuro_(Enciclopedia-dell'Italiano)/ — futuro dopo *se* e
-  *quando* in italiano; «Congiuntivo» —
+  https://www.treccani.it/enciclopedia/futuro_(Enciclopedia-dell'Italiano)/ — si veda anche per il
+  futuro dopo *se* e *quando* in italiano; «Congiuntivo» —
   https://www.treccani.it/enciclopedia/congiuntivo_(Enciclopedia-dell'Italiano)/ — *credere che* con
   congiuntivo o indicativo; «Periodo ipotetico» —
   https://www.treccani.it/enciclopedia/periodo-ipotetico_(Enciclopedia-dell'Italiano)/ — tipi di
   periodo ipotetico in italiano.
 - Wikipedia (es), «Pretérito perfecto compuesto» —
   https://es.wikipedia.org/wiki/Pret%C3%A9rito_perfecto_compuesto — uso del perfecto e
-  dell'indefinido in Spagna e in America; «Gerundio» — https://es.wikipedia.org/wiki/Gerundio —
-  gerundio di posteriorità e gerundio riferito a un nome; «Dequeísmo» —
-  https://es.wikipedia.org/wiki/Deque%C3%ADsmo — queísmo, *informar de que* (Spagna) e *informar que*
-  (America), *advertir (de) que*; «Voz pasiva» (aperta da https://es.wikipedia.org/wiki/Pasiva_refleja)
-  — concordanza della pasiva refleja.
+  dell'indefinido in Spagna e in America; «Pretérito perfecto simple» —
+  https://es.wikipedia.org/wiki/Pret%C3%A9rito_perfecto_simple — indefinido più esteso in Galizia,
+  Asturie, parte di León e Canarie; «Gerundio» — https://es.wikipedia.org/wiki/Gerundio — gerundio di
+  posteriorità e gerundio riferito a un nome (posizione prescrittiva tradizionale; la norma attuale:
+  DPD «gerundio»); «Dequeísmo» — https://es.wikipedia.org/wiki/Deque%C3%ADsmo — definizione di
+  queísmo, *informar de que* (Spagna) e *informar que* (America), *advertir (de) que* tra i verbi che
+  oscillano (la voce non tratta *darse cuenta de que*); «Voz pasiva» (aperta da
+  https://es.wikipedia.org/wiki/Pasiva_refleja) — concordanza della pasiva refleja; «Galicismo» —
+  https://es.wikipedia.org/wiki/Galicismo — *sustantivo + a + infinitivo* diffuso per influsso
+  francese (NGLE § 26.61), riservato da M. Seco alle formule bancarie e contabili (*total a pagar*),
+  alternative con *por* o *que*; costrutti del tipo *es por este motivo que…* fra i francesismi.
 - Universidad de Piura, *Castellano Actual*, «Duda resuelta: gerundios» (16 agosto 2012) —
   https://www.udep.edu.pe/castellanoactual/duda-resuelta-gerundios/ — gerundio di posteriorità e
   correzione con relativa.
-- Hispanopedia, «Galicismo» — https://es.hispanopedia.com/wiki/Galicismo — costrutti del tipo *es por
-  este motivo que…* e *sustantivo + a + infinitivo* come francesismi.
 - L. P. Francescutti, «El tiempo de los titulares. Un análisis verbal de la titulación en la prensa
   española durante el periodo 1980/2005», *Estudios sobre el Mensaje Periodístico* 15 (2009),
   243–259 — https://revistas.ucm.es/index.php/ESMP/article/download/ESMP0909110243A/11649/12576 —
-  libri di stile di El País e di altri quotidiani contro il condizionale congetturale nei titoli;
-  definizione del *condicional de rumor*.
+  libri di stile dei quotidiani spagnoli (El País, La Vanguardia) contro il condizionale congetturale
+  nei titoli.
 - F. Bermúdez, «Rumores y otros malos hábitos. El condicional evidencial en español», *Cuadernos de
   Lingüística de El Colegio de México* (2016) —
   https://revistas.colmex.mx/Record/oai:oai.cuadernoslinguistica.colmex.mx:article-37/Description —
