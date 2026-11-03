@@ -40,10 +40,12 @@ model ReadingItem {
   options      Json // [{ label, text, rationale }]
   correctLabel String   @map("correct_label") @db.VarChar(1)
   source       String   @default("seed") @db.VarChar(16) // seed | generated
+  language     String   @default("en") @db.VarChar(2) // en | es
   createdAt    DateTime @default(now()) @map("created_at") @db.Timestamptz
 
   @@index([level])
   @@index([topic])
+  @@index([language, level])
   @@map("reading_items")
 }
 
@@ -60,8 +62,10 @@ model WritingTask {
   rubric       Json // [{ dimension, descriptor }]
   options      Json // [{ key, prompt, modelAnswer }]
   source       String   @default("seed") @db.VarChar(16)
+  language     String   @default("en") @db.VarChar(2) // en | es
   createdAt    DateTime @default(now()) @map("created_at") @db.Timestamptz
 
+  @@index([language])
   @@map("writing_tasks")
 }
 
@@ -81,9 +85,11 @@ model ListeningItem {
   audioPath        String?  @map("audio_path") @db.VarChar(255) // served static path
   hasKey           Boolean  @default(false) @map("has_key")
   source           String   @default("seed") @db.VarChar(16)
+  language         String   @default("en") @db.VarChar(2) // en | es
   createdAt        DateTime @default(now()) @map("created_at") @db.Timestamptz
 
   @@index([level])
+  @@index([language, level])
   @@map("listening_items")
 }
 
@@ -95,10 +101,12 @@ model VocabEntry {
   termEn        String   @map("term_en")
   translationIt String   @map("translation_it")
   note          String?
+  language      String   @default("en") @db.VarChar(2) // en | es
   createdAt     DateTime @default(now()) @map("created_at") @db.Timestamptz
 
   @@index([part])
   @@index([section])
+  @@index([language])
   @@map("vocab_entries")
 }
 
@@ -112,12 +120,14 @@ model ExamSession {
   status      String    @default("in_progress") @db.VarChar(16) // in_progress | completed
   config      Json? // { levels, counts, timed, durationSec, ... }
   result      Json? // SLP-style { reading, listening, writing }
+  language    String    @default("en") @db.VarChar(2) // en | es
   startedAt   DateTime  @default(now()) @map("started_at") @db.Timestamptz
   completedAt DateTime? @map("completed_at") @db.Timestamptz
 
   answers Answer[]
 
   @@index([mode])
+  @@index([language])
   @@map("exam_sessions")
 }
 
@@ -147,6 +157,7 @@ model Answer {
 /// Rolling performance per (skill, level, topic) — drives weak-area targeting.
 model TopicStat {
   id        String   @id @default(uuid()) @db.Uuid
+  language  String   @default("en") @db.VarChar(2) // en | es
   skill     String   @db.VarChar(16) // reading | listening | writing
   level     Int
   topic     String   @db.VarChar(255)
@@ -154,7 +165,7 @@ model TopicStat {
   correct   Int      @default(0)
   updatedAt DateTime @updatedAt @map("updated_at") @db.Timestamptz
 
-  @@unique([skill, level, topic])
+  @@unique([language, skill, level, topic], name: "language_skill_level_topic")
   @@map("topic_stats")
 }
 

@@ -400,8 +400,22 @@ export class ExamService {
             });
       if (!meta) continue;
       await this.prisma.topicStat.upsert({
-        where: { skill_level_topic: { skill: a.itemType, level: meta.level, topic: meta.topic } },
-        create: { skill: a.itemType, level: meta.level, topic: meta.topic, seen: 1, correct: a.isCorrect ? 1 : 0 },
+        where: {
+          language_skill_level_topic: {
+            language: 'en',
+            skill: a.itemType,
+            level: meta.level,
+            topic: meta.topic,
+          },
+        },
+        create: {
+          language: 'en',
+          skill: a.itemType,
+          level: meta.level,
+          topic: meta.topic,
+          seen: 1,
+          correct: a.isCorrect ? 1 : 0,
+        },
         update: { seen: { increment: 1 }, correct: { increment: a.isCorrect ? 1 : 0 } },
       });
     }
