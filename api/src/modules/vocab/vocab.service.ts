@@ -1,5 +1,7 @@
 import { Injectable } from '@nestjs/common';
+import type { VocabEntry } from '@generated/prisma';
 import { PrismaService } from '../../prisma/prisma.service';
+import type { Language } from '../../common/language';
 import { VocabReviewDto } from './dto/vocab.dto';
 
 const DAY = 86400000;
@@ -9,8 +11,9 @@ const DAY = 86400000;
 export class VocabService {
   constructor(private readonly prisma: PrismaService) {}
 
-  /** List/search vocab entries, filtered by part/section and a case-insensitive text query. */
+  /** List/search vocab entries of one language, filtered by part/section and a case-insensitive text query. */
   async list(params: {
+    language: Language;
     part?: string;
     section?: string;
     q?: string;
@@ -18,6 +21,7 @@ export class VocabService {
     offset?: number;
   }): Promise<unknown> {
     const where = {
+      language: params.language,
       ...(params.part ? { part: params.part } : {}),
       ...(params.section ? { section: params.section } : {}),
       ...(params.q
@@ -41,34 +45,45 @@ export class VocabService {
     return { total, items };
   }
 
-  /** Distinct sections with their entry counts, for grouping the vocab browser. */
-  async sections(): Promise<unknown> {
+  /** Distinct sections of one language with their entry counts, for grouping the vocab browser. */
+  async sections(language: Language): Promise<unknown> {
     const rows = await this.prisma.vocabEntry.groupBy({
       by: ['section'],
+      where: { language },
       _count: { _all: true },
       orderBy: { section: 'asc' },
     });
     return rows.map((r) => ({ section: r.section, count: r._count._all }));
   }
 
-  /** Return flashcards: due review items first, topped up with undrilled entries. */
-  async flashcards(limit = 20): Promise<unknown> {
+  /** Return flashcards of one language: due review items first, topped up with undrilled entries. */
+  async flashcards(language: Language, limit = 20): Promise<unknown> {
+    // ReviewItem has no language column, so the due queue cannot be narrowed in SQL. A `take` here
+    // would let older due cards of the other language crowd this one out; the queue is bounded by
+    // the vocab bank (one row per entry), so reading it whole is cheap.
     const due = await this.prisma.reviewItem.findMany({
       where: { itemType: 'vocab', dueAt: { lte: new Date() } },
       orderBy: { dueAt: 'asc' },
-      take: limit,
+      select: { itemId: true },
     });
-    const ids = due.map((d) => d.itemId);
-    if (ids.length < limit) {
+    const dueEntries = due.length
+      ? await this.prisma.vocabEntry.findMany({
+          where: { id: { in: due.map((d) => d.itemId) }, language },
+        })
+      : [];
+    const byId = new Map(dueEntries.map((e) => [e.id, e]));
+    const cards = due
+      .map((d) => byId.get(d.itemId))
+      .filter((e): e is VocabEntry => e !== undefined)
+      .slice(0, limit);
+    if (cards.length < limit) {
       const extra = await this.prisma.vocabEntry.findMany({
-        where: ids.length ? { id: { notIn: ids } } : {},
-        take: limit - ids.length,
+        where: { language, ...(cards.length ? { id: { notIn: cards.map((c) => c.id) } } : {}) },
+        take: limit - cards.length,
       });
-      ids.push(...extra.map((e) => e.id));
+      cards.push(...extra);
     }
-    const entries = await this.prisma.vocabEntry.findMany({ where: { id: { in: ids } } });
-    const byId = new Map(entries.map((e) => [e.id, e]));
-    return ids.map((id) => byId.get(id)).filter(Boolean);
+    return cards;
   }
 
   /** Record a flashcard outcome and schedule its next review (SM-2-lite). */

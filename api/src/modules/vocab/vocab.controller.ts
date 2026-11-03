@@ -1,5 +1,6 @@
 import { Controller, Get, Post, Query, Body } from '@nestjs/common';
 import { ApiTags, ApiOperation } from '@nestjs/swagger';
+import { parseLanguage } from '../../common/language';
 import { VocabService } from './vocab.service';
 import { VocabReviewSchema, VocabReviewDto } from './dto/vocab.dto';
 
@@ -13,6 +14,7 @@ export class VocabController {
   @Get()
   @ApiOperation({ summary: 'List or search vocab entries' })
   list(
+    @Query('lang') lang?: string,
     @Query('part') part?: string,
     @Query('section') section?: string,
     @Query('q') q?: string,
@@ -20,6 +22,7 @@ export class VocabController {
     @Query('offset') offset?: string,
   ): Promise<unknown> {
     return this.vocab.list({
+      language: parseLanguage(lang),
       part,
       section,
       q,
@@ -31,15 +34,15 @@ export class VocabController {
   /** List the distinct vocab sections with counts. */
   @Get('sections')
   @ApiOperation({ summary: 'List vocab sections' })
-  sections(): Promise<unknown> {
-    return this.vocab.sections();
+  sections(@Query('lang') lang?: string): Promise<unknown> {
+    return this.vocab.sections(parseLanguage(lang));
   }
 
   /** Fetch a set of flashcards (due items first). */
   @Get('flashcards')
   @ApiOperation({ summary: 'Get flashcards to drill' })
-  flashcards(@Query('limit') limit?: string): Promise<unknown> {
-    return this.vocab.flashcards(limit ? Number(limit) : undefined);
+  flashcards(@Query('lang') lang?: string, @Query('limit') limit?: string): Promise<unknown> {
+    return this.vocab.flashcards(parseLanguage(lang), limit ? Number(limit) : undefined);
   }
 
   /** Record a flashcard review outcome. */
