@@ -28,18 +28,18 @@ Escriba un correo electrónico formal a la coordinadora del consorcio, la doctor
 - Ofrecer una vía de contacto o una reunión para resolver posibles dudas.
 - Mantener un registro formal y cordial, adecuado a la comunicación entre la Administración y una institución académica.
 
-## Task 3 — Las misiones europeas de adiestramiento militar en Estados frágiles
+## Task 3 — Las operaciones de paz de las Naciones Unidas y la protección de civiles
 *Level 3 · essay · 250–500 words*
 
-Desde hace años, la Unión Europea y varios de sus Estados miembros despliegan misiones para formar y asesorar a las fuerzas armadas de Estados frágiles. Sus defensores las consideran una forma económica de contener la inestabilidad sin enviar tropas de combate. Sus críticos sostienen que los resultados han sido escasos y que, en ocasiones, la formación ha beneficiado a fuerzas que después actuaron al margen de las autoridades civiles.
+Buena parte de las operaciones de paz de las Naciones Unidas tiene hoy el mandato de proteger a la población civil en países en conflicto. Sus defensores sostienen que la presencia de cascos azules disuade de los ataques contra la población y aporta una legitimidad que ningún otro actor ofrece. Sus críticos recuerdan que estas misiones carecen a menudo de los medios y del respaldo político necesarios para cumplir ese mandato, y que cada fracaso ante una matanza erosiona la credibilidad de toda la organización.
 
-Escriba un ensayo analítico en el que valore si las misiones de adiestramiento militar siguen siendo un instrumento útil para la seguridad europea. Su ensayo debe:
+Escriba un ensayo analítico en el que valore si la protección de civiles debe seguir siendo el núcleo del mandato de las operaciones de paz. Su ensayo debe:
 
-- Fijar en el primer párrafo una postura clara sobre la utilidad de estas misiones.
-- Explicar qué ventajas ofrecen a Europa frente a otros instrumentos, como el despliegue de tropas propias.
-- Examinar los riesgos de adiestrar a fuerzas que no están sometidas a un control civil efectivo, así como otras objeciones relevantes.
+- Fijar en el primer párrafo una postura clara sobre la cuestión.
+- Explicar qué aporta una operación de las Naciones Unidas frente a otras opciones, como la intervención de una organización regional.
+- Examinar los riesgos de encomendar a una misión un mandato que no puede cumplir, así como otras objeciones relevantes.
 - Hacer al menos una concesión a la postura contraria y, si lo considera oportuno, proponer una alternativa al modelo actual.
-- Concluir valorando si la ayuda debería condicionarse a reformas verificables del sector de la seguridad del país receptor.
+- Concluir valorando qué condiciones deberían cumplirse antes de aprobar un mandato de protección de civiles.
 - Mantener en todo el texto un registro analítico e impersonal.
 
 ## Task 4 — Constelaciones comerciales de satélites y soberanía tecnológica europea
@@ -56,16 +56,16 @@ Escriba un ensayo analítico en el que evalúe si Europa debe desarrollar capaci
 - Cerrar con una recomendación que tenga en cuenta el coste de la opción defendida.
 - Mantener un registro analítico e impersonal, propio de un análisis estratégico.
 
-## Task 5 — Recomendación para retener al personal técnico de mantenimiento aeronáutico
+## Task 5 — Recomendación para reducir el gasto energético de las bases
 *Level 3 · formal_correspondence · 150–250 words*
 
-Usted es comandante y dirige la sección de estudios de personal de un mando del Ejército del Aire y del Espacio. Según un estudio interno de su sección, en los tres últimos años han causado baja voluntaria unos 360 técnicos de mantenimiento aeronáutico, que representan el 31 % de la plantilla de técnicos con menos de ocho años de servicio. La mayoría se ha incorporado a empresas civiles de mantenimiento, que ofrecen salarios hasta un 40 % superiores y una carrera técnica estable. Formar a cada técnico cuesta unos noventa mil euros y cuatro años, y las bajas ya afectan a la disponibilidad de algunas flotas.
+Usted es comandante y dirige la sección de infraestructura de un mando del Ejército de Tierra. Según un estudio interno de su sección, el gasto energético de las doce bases del mando ha crecido un 38 % en tres años y supone ya el 22 % de su presupuesto de funcionamiento. El estudio atribuye la mayor parte del consumo a edificios mal aislados, a calderas de gasóleo con más de veinte años y a la falta de contadores que permitan saber qué instalaciones consumen más. Las medidas propuestas costarían unos cuatro millones de euros y, según el estudio, se amortizarían en unos seis años.
 
-Redacte un correo electrónico formal dirigido al general director de Personal en el que recomiende medidas para corregir la situación. Su correo debe:
+Redacte un correo electrónico formal dirigido al general director de Infraestructura del Ejército de Tierra en el que recomiende medidas para corregir la situación. Su correo debe:
 
 - Resumir el problema con los datos principales del estudio.
-- Explicar las causas de las bajas que el estudio ha identificado.
-- Proponer medidas de retención que respondan a cada una de las causas identificadas.
+- Explicar las causas del elevado consumo que el estudio ha identificado.
+- Proponer medidas de ahorro energético que respondan a cada una de las causas identificadas.
 - Comparar brevemente el coste de las medidas con el de no actuar.
 - Solicitar una decisión o una reunión antes de una fecha vinculada al calendario presupuestario.
 - Emplear las fórmulas y el tratamiento propios de la correspondencia militar con un superior, en un tono formal y constructivo.

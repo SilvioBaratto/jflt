@@ -10,6 +10,7 @@ from checks import (
     WRITING_BANDS,
     check_answer_key_layout,
     check_audio,
+    check_exam_layout,
     check_listening,
     check_reading,
     check_vocab,
@@ -160,11 +161,28 @@ def test_level_four_uses_its_own_band():
     assert errors_with(check_reading([make_item(level=4, words=200)]), "passage length")
 
 
-def test_flags_question_without_closing_mark():
-    item = make_item()
-    item["question"] = "¿Qué sugiere el autor?»"
+def test_flags_question_without_closing_mark(tmp_path):
+    reading = tmp_path / "reading"
+    reading.mkdir()
+    (reading / "reading-exam.md").write_text(
+        "### 1. (Tema)\n\nUn pasaje breve.\n\n**¿Qué sugiere el autor?»**\n\n"
+        + "".join(f"- **{label})** Opción {label}.\n" for label in "ABCD"),
+        encoding="utf-8",
+    )
+    (reading / "reading-answer-key.md").write_text(
+        "### 1. Key: A\n\n"
+        + "".join(
+            f"- [{'x' if label == 'A' else ' '}] **{label})** Opción {label}.\n  - Razón {label}.\n"
+            for label in "ABCD"
+        ),
+        encoding="utf-8",
+    )
+    builder = load_builder(tmp_path, tmp_path / "ref", tmp_path / "audio")
 
-    assert errors_with(check_reading([item]), "must end with '?'")
+    items = builder.parse_reading()
+
+    assert items[0]["question"] == ""
+    assert errors_with(check_reading(items), "R1", "question missing")
 
 
 def test_flags_missing_inverted_mark():
@@ -285,6 +303,50 @@ VALID_KEY = """# Clave
 - [ ] **D)** Cuarta opción.
   - Error: motivo de la cuarta.
 """
+
+
+EXAM_ITEM = """\
+### 1. (Tema)
+
+Un pasaje breve.
+
+**¿Qué sugiere el autor?**
+
+- **A)** Primera opción.
+- **B)** Segunda opción.
+- **C)** Tercera opción.
+- **D)** Cuarta opción.
+"""
+
+
+def test_exam_layout_accepts_valid_item():
+    assert check_exam_layout(EXAM_ITEM) == []
+
+
+def test_exam_layout_accepts_the_real_spanish_exam():
+    exam = (SEED_SRC / "es" / "reading" / "reading-exam.md").read_text(encoding="utf-8")
+
+    assert check_exam_layout(exam) == []
+
+
+def test_exam_layout_flags_wrapped_option():
+    wrapped = EXAM_ITEM.replace("- **B)** Segunda opción.\n", "- **B)** Segunda\n  opción.\n")
+
+    assert errors_with(check_exam_layout(wrapped), "R1", "option B wraps")
+
+
+def test_exam_layout_flags_second_bold_question_in_passage():
+    stray = EXAM_ITEM.replace(
+        "Un pasaje breve.\n", "Un pasaje breve.\n\n**¿Es esto una pregunta?**\n"
+    )
+
+    assert errors_with(check_exam_layout(stray), "R1", "found 2")
+
+
+def test_exam_layout_flags_missing_bold_question():
+    unbolded = EXAM_ITEM.replace("**¿Qué sugiere el autor?**", "¿Qué sugiere el autor?")
+
+    assert errors_with(check_exam_layout(unbolded), "R1", "found 0")
 
 
 def test_answer_key_layout_accepts_valid_block():

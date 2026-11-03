@@ -74,17 +74,17 @@
       "id": 1,
       "question": "¿Qué apunta el inspector con el dato del colegio del barrio de la estación?",
       "options": {
-        "A": "Que en ese colegio no se alcanzó la participación mínima que la norma exige para dar por válida la votación.",
+        "A": "Que en la votación ha pesado poco la opinión de las familias que más dependen de los servicios del centro.",
         "B": "Que las familias con beca de comedor votaron mayoritariamente en contra de cambiar el horario.",
-        "C": "Que en la votación ha pesado poco la opinión de las familias que más dependen de los servicios del centro.",
+        "C": "Que en ese colegio no se alcanzó la participación mínima que la norma exige para dar por válida la votación.",
         "D": "Que convendría repetir la votación en los centros donde la mayoría a favor fue más ajustada."
       },
-      "answer": "C",
+      "answer": "A",
       "rationale": "El inspector junta dos datos sin sacar la conclusión: en ese colegio votaron «cuatro de cada diez familias» y es el que tiene «más alumnos que comen allí gracias a una beca de comedor»; da a entender que la mayoría puede no representar a las familias que más dependen del centro.",
       "option_rationales": {
-        "A": "Lectura errónea: la baja participación no incumple la norma; el asesor recuerda que esta «fija una participación mínima» y que ese colegio «la supera», y el inspector no lo discute.",
+        "A": "Correcta: la baja participación coincide con el colegio de «más alumnos que comen allí gracias a una beca de comedor»; en el resultado pesa poco la voz de las familias que más necesitan el centro.",
         "B": "No se dice: el inspector cuenta cuántas familias votaron, «cuatro de cada diez», pero no cómo votaron las que tienen beca.",
-        "C": "Correcta: la baja participación coincide con el colegio de «más alumnos que comen allí gracias a una beca de comedor»; en el resultado pesa poco la voz de las familias que más necesitan el centro.",
+        "C": "Lectura errónea: la baja participación no incumple la norma; el asesor recuerda que esta «fija una participación mínima» y que ese colegio «la supera», y el inspector no lo discute.",
         "D": "Lectura errónea: el inspector describe mayorías «amplias»; no pide repetir ninguna votación ni habla de mayorías ajustadas."
       }
     },

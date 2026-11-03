@@ -86,7 +86,7 @@
 - [ ] **B)** Matiza la tesis del texto al reconocer que muchos voluntarios, llegado el momento de activarse, pierden la vocación que los llevó a presentarse.
   - Lectura errónea: el trabajador renuncia a activarse «para no comprometer su carrera», es decir, por un coste laboral que nadie compensa, no por falta de vocación.
 - [ ] **C)** Explica por qué las campañas de captación apenas logran atraer solicitudes entre los trabajadores por cuenta ajena y los autónomos.
-  - Lectura errónea: el párrafo no trata de la captación, que según el texto funciona («las solicitudes superan con frecuencia a las plazas ofertadas»), sino de lo que ocurre después, al activarse.
+  - Lectura errónea: el párrafo no trata de la captación, que según el texto funciona («las solicitudes pueden superar a las plazas disponibles»), sino de lo que ocurre después, al activarse.
 - [ ] **D)** Demuestra que la ley no protege el puesto de trabajo del reservista y que, por tanto, la reforma debe centrarse en modificar esa normativa.
   - Lectura errónea: el texto dice que «la ley protege su puesto», aunque esa protección formal no basta, y la reforma que propone consiste en repartir el coste, no en cambiar la ley.
 
@@ -317,7 +317,7 @@
 - [ ] **B)** Señala el origen de la mayoría de los incendios actuales, que se deben todavía a las quemas agrícolas y ganaderas tradicionales de las zonas rurales del interior.
   - Lectura errónea: según el texto, «El abandono rural acabó con casi todas esas prácticas», que se citan por la vegetación que retiraban del monte, no como causa de los incendios actuales.
 - [ ] **C)** Ilustra que el fuego forma parte del ciclo natural del monte, por lo que el texto considera un error destinar tantos medios a sofocar cada incendio.
-  - Lectura errónea: el texto reconoce que los pequeños fuegos «limpiaban el terreno», pero no tacha de error la extinción; recoge propuestas para gestionar el combustible y advierte de que, «Sin ellas», seguirá acumulándose.
+  - Lectura errónea: el texto reconoce que los pequeños fuegos «limpiaban el terreno», pero no tacha de error la extinción; recoge propuestas para gestionar el combustible y advierte de que, sin ellas, cada verano extremo encontrará «más combustible que el anterior».
 - [x] **D)** Explica por qué el monte ya no se despeja como antes, lo que ayuda a entender que extinguir más rápido no haya frenado los grandes incendios.
   - Correcta: esas prácticas consumían la vegetación, y su desaparición, unida a una extinción más rápida, explica que la biomasa se acumule «sin que nada la retire» y que los grandes incendios sean más violentos.
 
@@ -557,13 +557,13 @@
 ### 51. Key: B
 
 - [ ] **A)** Que el respaldo a la ampliación es lo bastante sólido para que salga adelante en cuanto las delegaciones pacten el documento del que partir.
-  - Lectura errónea: toma al pie de la letra que no haya causa que «goce de mejor salud»; casi todos los aspirantes tienen «un vecino que prefiere un Consejo anacrónico», y la coalición de esos vecinos exige «el acuerdo de todos los Estados miembros».
+  - Lectura errónea: toma al pie de la letra que no haya causa que «goce de mejor salud»; casi todos los aspirantes tienen «un vecino que prefiere un Consejo anacrónico», y la coalición de esos vecinos exige «el consenso más amplio posible».
 - [x] **B)** Que el apoyo unánime a cambiar la composición del Consejo se sostiene porque ningún gobierno ha tenido que votar aún un texto concreto.
-  - Correcta: el apoyo es unánime en los discursos, pero casi todos los aspirantes chocan con un vecino que los rechaza; como las negociaciones «todavía no han producido un borrador», ningún gobierno ha tenido que votar un texto concreto, y cada año se repiten «las mismas palabras de aliento».
+  - Correcta: el apoyo es unánime en los discursos, pero casi todos los aspirantes chocan con un vecino que los rechaza; como las negociaciones «todavía no han producido un texto de negociación acordado», ningún gobierno ha tenido que votar un texto concreto, y cada año se repiten «las mismas palabras de aliento».
 - [ ] **C)** Que los cinco miembros permanentes solo aparentan apoyar el cambio, pues ninguno consentiría que otros Estados compartieran su derecho de veto.
   - Conocimiento externo: el texto no presenta el veto como el obstáculo, pues los permanentes aceptan que el Consejo crezca «siempre que los recién llegados no hereden el veto», condición que la mayoría de los aspirantes «ha terminado por admitir».
 - [ ] **D)** Que la coalición de vecinos, con su constancia, ha conseguido mantener viva una reforma que los cinco permanentes preferirían olvidar.
-  - Lectura errónea: toma al pie de la letra la «constancia digna de elogio» de esa coalición, que no sostiene la reforma, sino que exige para ella «el acuerdo de todos los Estados miembros».
+  - Lectura errónea: toma al pie de la letra la «constancia digna de elogio» de esa coalición, que no sostiene la reforma, sino que exige para ella «el consenso más amplio posible».
 
 ### 52. Key: C
 

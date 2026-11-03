@@ -23,7 +23,7 @@ El debate sobre las adquisiciones de defensa en Europa suele presentarse como un
 
 Lo que esa dicotomía oculta es que el cuello de botella está menos en la decisión de compra que en la capacidad de producción. Varias empresas europeas cuentan con diseños competitivos, pero no con líneas de montaje dimensionadas para fabricar a gran escala, porque durante años los pedidos llegaron a cuentagotas y sin compromisos plurianuales. Ninguna dirección financiera amplía una fábrica para atender una demanda que puede esfumarse en el siguiente ciclo presupuestario. Los proveedores de fuera, por su parte, tampoco entregan de inmediato: sus plazos se han alargado a medida que crecía la demanda mundial.
 
-Planteado así, el problema cambia de naturaleza. No se trata tanto de elegir entre rapidez y soberanía como de ofrecer a la industria la previsibilidad que justifique invertir. Contratos a largo plazo, compras conjuntas entre Estados miembros y especificaciones comunes podrían hacer más por la autonomía que cualquier cláusula de preferencia europea. Mientras los gobiernos sigan comprando al ritmo de cada urgencia, seguirán descubriendo que su propio modelo de compra es lo que les impide responder a tiempo a la siguiente.
+Planteado así, el problema cambia de naturaleza. No se trata tanto de elegir entre rapidez y soberanía como de ofrecer a la industria la previsibilidad que justifique invertir. Contratos a largo plazo, compras conjuntas entre Estados miembros y especificaciones comunes podrían hacer más por la autonomía que cualquier cláusula de preferencia europea. Comprar al ritmo de cada urgencia, en cambio, condena a la industria a no estar preparada para la siguiente.
 
 **¿Qué función cumple en el argumento la última frase del segundo párrafo?**
 
@@ -72,7 +72,7 @@ El problema es que ese enfoque deja en penumbra a una población mucho más nume
 
 Retener exige un tipo de política menos vistosa. Mantener abierta una escuela con pocos alumnos, garantizar la presencia de un médico varios días por semana o asegurar un transporte público mínimo son gastos recurrentes que difícilmente se inauguran con una foto. Por eso tienden a perder la competencia presupuestaria frente a programas que prometen resultados rápidos y fáciles de comunicar.
 
-Atraer nuevos habitantes sigue siendo útil, pero conviene admitir que la población se pierde por la puerta de salida. Mientras esa puerta siga abierta, cada nuevo vecino servirá sobre todo para disimular cuántos se marchan.
+Atraer nuevos habitantes sigue siendo útil, pero conviene admitir que la población se pierde por la puerta de salida. Con esa puerta abierta, cada nuevo vecino sirve sobre todo para disimular cuántos se marchan.
 
 **¿Qué significa en este contexto la expresión «menos vistosa» referida a la política de retener población?**
 
@@ -115,13 +115,13 @@ Si la Unión quiere que la relación con la región sea algo más que retórica,
 
 ### 8. (La reserva voluntaria de las Fuerzas Armadas)
 
-Cada vez que se debate cómo reforzar la reserva voluntaria de las Fuerzas Armadas, la primera explicación suele apuntar a la falta de vocación: se da por sentado que pocos ciudadanos están dispuestos a dedicar parte de su tiempo a la defensa y que, por tanto, la solución pasa por campañas de captación más atractivas. Los datos de las convocatorias, sin embargo, encajan mal con esa explicación, ya que las solicitudes superan con frecuencia a las plazas ofertadas.
+Cada vez que se debate cómo reforzar la reserva voluntaria de las Fuerzas Armadas, la primera explicación suele apuntar a la falta de vocación: se da por sentado que pocos ciudadanos están dispuestos a dedicar parte de su tiempo a la defensa y que, por tanto, la solución pasa por campañas de captación más atractivas. Los datos de las convocatorias, sin embargo, encajan mal con esa explicación, ya que las solicitudes pueden superar a las plazas disponibles.
 
 Las dificultades aparecen después. Un reservista que trabaja por cuenta ajena necesita ausentarse durante semanas para completar su formación y sus periodos de activación, y aunque la ley protege su puesto, la protección formal no disipa las reticencias. Para una pequeña empresa, prescindir de un empleado cualificado durante un mes supone un coste real que nadie le compensa, y no es raro que el trabajador, consciente de ello, renuncie a activarse para no comprometer su carrera. Los autónomos se enfrentan a un dilema todavía más crudo: cada día de servicio es un día sin ingresos.
 
 Si ahí está el obstáculo, las campañas de captación sirven de poco. Cabría esperar de una reforma seria que repartiera el coste entre el Estado y el empleador mediante compensaciones, bonificaciones en las cotizaciones o un reconocimiento de la experiencia militar que la empresa pudiera valorar. Algunos países aliados han avanzado en esa dirección con resultados alentadores.
 
-En definitiva, la reserva seguirá infrautilizada mientras servir en ella obligue a sus miembros a pagar un precio personal desproporcionado.
+En definitiva, el éxito de la reserva depende menos de cuántos se ofrezcan que de cuánto les cueste servir.
 
 **¿Qué función cumple el segundo párrafo en el argumento del texto?**
 
@@ -446,7 +446,7 @@ Los grandes incendios forestales alcanzan hoy una violencia que ni los técnicos
 
 Para entenderlo hay que remontarse en el tiempo. Durante siglos, el monte mediterráneo se mantuvo relativamente despejado gracias a actividades que consumían la vegetación: los rebaños pastaban en el sotobosque, los vecinos recogían leña para calentarse y cocinar, y los pequeños fuegos, que nadie se apresuraba a apagar, ardían con poca intensidad y limpiaban el terreno. El abandono rural acabó con casi todas esas prácticas, y una extinción cada vez más rápida eliminó también los fuegos menores. La biomasa que antes desaparecía año tras año se acumula ahora sin que nada la retire, y cuando un incendio escapa al primer ataque, en un día de calor extremo y viento, encuentra una masa continua de combustible y se convierte en un frente que ninguna brigada puede detener.
 
-Algunos especialistas proponen gestionar esa carga de combustible mediante quemas controladas en invierno, ayudas a la ganadería extensiva o el aprovechamiento de la biomasa con fines energéticos. Son medidas lentas, que apenas lucen en una rueda de prensa y que exigen convencer a una población que asocia cualquier columna de humo con una catástrofe. Sin ellas, el combustible seguirá acumulándose en el monte a la espera del próximo verano extremo.
+Algunos especialistas proponen gestionar esa carga de combustible mediante quemas controladas en invierno, ayudas a la ganadería extensiva o el aprovechamiento de la biomasa con fines energéticos. Son medidas lentas, que apenas lucen en una rueda de prensa y que exigen convencer a una población que asocia cualquier columna de humo con una catástrofe. Sin ellas, cada verano extremo encontrará en el monte más combustible que el anterior.
 
 **¿Qué función cumple en el texto la mención de los rebaños, la leña y los pequeños fuegos de otras épocas?**
 
@@ -523,7 +523,7 @@ Para muchas ciudades, la cita tiene además una utilidad de otro orden. Una fech
 
 ### 34. (La edición genética de cultivos y la normativa sobre organismos modificados)
 
-En algunos ordenamientos, la normativa sobre organismos modificados genéticamente distingue con encomiable firmeza entre dos maneras de alterar el genoma de una planta. La primera consiste en exponer miles de semillas a radiaciones o a sustancias químicas que provocan mutaciones al azar, sembrarlas y quedarse con los pocos ejemplares que muestran algún rasgo útil, sin saber muy bien qué otros cambios arrastran consigo. La segunda, mucho más reciente, permite modificar una sola letra del genoma en el punto exacto que se elige. La ley considera la primera una técnica convencional, exenta de controles especiales, y somete la segunda a años de evaluación, etiquetado y trazabilidad.
+En algunos ordenamientos, la normativa sobre organismos modificados genéticamente distingue con encomiable firmeza entre dos maneras de alterar el genoma de una planta. La primera consiste en exponer miles de semillas a radiaciones o a sustancias químicas que provocan mutaciones al azar, sembrarlas y quedarse con los pocos ejemplares que muestran algún rasgo útil, sin saber muy bien qué otros cambios arrastran consigo. La segunda, mucho más reciente, permite modificar una sola letra del genoma en el punto exacto que se elige. Por ahora, la ley considera la primera una técnica convencional, exenta de controles especiales, y somete la segunda a años de evaluación, etiquetado y trazabilidad.
 
 El criterio invocado es el de la experiencia. La mutagénesis por radiación se emplea desde mediados del siglo pasado, y de ella proceden variedades de cereales y de cítricos que se consumen a diario sin que la mayoría de la gente lo sepa y sin que se les conozcan efectos nocivos. Es un argumento respetable, aunque conduce a una conclusión curiosa: el método que altera el genoma a ciegas pasa por ser el de confianza, y el que lo hace con precisión, el sospechoso. Más que el riesgo del producto, la norma parece medir la antigüedad del procedimiento.
 
@@ -780,9 +780,9 @@ La solución adoptada en más de un lugar es de una sencillez ejemplar. El agua 
 
 En el debate de alto nivel con que la Asamblea General de las Naciones Unidas abre cada año su periodo de sesiones, raro es el gobierno que no dedique algún párrafo a la composición del Consejo de Seguridad. El órgano conserva el reparto de poder que dejó la Segunda Guerra Mundial: cinco miembros permanentes con derecho de veto y otros diez que se turnan cada dos años. Que regiones enteras carezcan de un asiento estable se denuncia desde la tribuna como un anacronismo intolerable, y la reforma aparece por igual en los discursos de aliados y adversarios, de grandes potencias y de pequeños Estados insulares.
 
-Es difícil encontrar en la diplomacia una causa que goce de mejor salud. Los cinco miembros permanentes aceptan, en principio, que el Consejo crezca, siempre que los recién llegados no hereden el veto, y la mayoría de los aspirantes ha terminado por admitir esa condición. Los candidatos a un asiento permanente son de sobra conocidos: dos potencias asiáticas, un gigante sudamericano, una gran economía europea y dos o tres Estados africanos. Casi todos tienen, además, un vecino que prefiere un Consejo anacrónico a otro en el que su rival se siente de por vida. Esos vecinos han formado una coalición que reclama, con una constancia digna de elogio, que cualquier reforma cuente con el acuerdo de todos los Estados miembros.
+Es difícil encontrar en la diplomacia una causa que goce de mejor salud. Los cinco miembros permanentes aceptan, en principio, que el Consejo crezca, siempre que los recién llegados no hereden el veto, y la mayoría de los aspirantes ha terminado por admitir esa condición. Los candidatos a un asiento permanente son de sobra conocidos: dos potencias asiáticas, un gigante sudamericano, una gran economía europea y dos o tres Estados africanos. Casi todos tienen, además, un vecino que prefiere un Consejo anacrónico a otro en el que su rival se siente de por vida. Esos vecinos han formado una coalición que reclama, con una constancia digna de elogio, que cualquier reforma reúna el consenso más amplio posible antes de someterse a votación.
 
-Las negociaciones formales llevan más de quince años abiertas y todavía no han producido un borrador; las delegaciones dedican sus sesiones a discutir qué documento debería servir de base para empezar a negociar. Al llegar el otoño, los mismos gobiernos piden desde la tribuna que se acelere el proceso, y los aspirantes reciben de sus vecinos las mismas palabras de aliento que el año anterior. El Consejo sigue reuniéndose con los cinco miembros permanentes de 1945, como una vieja fotografía de grupo que nadie se decide a descolgar.
+Las negociaciones formales llevan más de quince años abiertas y todavía no han producido un texto de negociación acordado; las delegaciones dedican sus sesiones a discutir qué documento debería servir de base para empezar a negociar. Al llegar el otoño, los mismos gobiernos piden desde la tribuna que se acelere el proceso, y los aspirantes reciben de sus vecinos las mismas palabras de aliento que el año anterior. El Consejo sigue reuniéndose con los cinco miembros permanentes de 1945, como una vieja fotografía de grupo que nadie se decide a descolgar.
 
 **¿Qué quiere decir el autor al afirmar que es difícil encontrar en la diplomacia una causa que goce de mejor salud?**
 

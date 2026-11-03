@@ -70,17 +70,17 @@
       "id": 1,
       "question": "¿Cuál es la principal objeción del coronel al modelo que defiende la analista?",
       "options": {
-        "A": "Que, cuando estalla una crisis, el apoyo contratado depende de lo que resuelva la empresa y no de una orden.",
+        "A": "Que, en plena crisis, las empresas podrían subir sus precios sabiendo que las Fuerzas Armadas dependen de ellas.",
         "B": "Que, a la larga, las empresas resultan más caras que los militares que antes se ocupaban de esas tareas.",
-        "C": "Que, en plena crisis, las empresas podrían subir sus precios sabiendo que las Fuerzas Armadas dependen de ellas.",
+        "C": "Que, cuando estalla una crisis, el apoyo contratado depende de lo que resuelva la empresa y no de una orden.",
         "D": "Que los contratos que se firman hoy no obligan a las empresas a enviar personal a las zonas de operaciones."
       },
-      "answer": "A",
+      "answer": "C",
       "rationale": "Para el coronel, a un soldado «se le puede ordenar» ir a una zona peligrosa, mientras que la empresa «lee su contrato» y decide; en una crisis, el apoyo depende de «una decisión que ya no está en sus manos».",
       "option_rationales": {
-        "A": "Correcta: reformula el contraste entre la orden al soldado y la decisión de la empresa, que deja el apoyo en manos ajenas «el día en que las cosas se tuercen».",
+        "A": "No se dice: el coronel no habla de precios; le preocupa que la empresa «lee su contrato, llama a su aseguradora y decide», no lo que vaya a cobrar.",
         "B": "Relación invertida: el coronel no discute el ahorro; en un cuartel y en tiempo de paz, dice, «no le discuto ni una coma».",
-        "C": "No se dice: el coronel no habla de precios; le preocupa que la empresa «lee su contrato, llama a su aseguradora y decide», no lo que vaya a cobrar.",
+        "C": "Correcta: reformula el contraste entre la orden al soldado y la decisión de la empresa, que deja el apoyo en manos ajenas «el día en que las cosas se tuercen».",
         "D": "Lectura errónea: es la analista quien menciona cláusulas que «obligan a la empresa a desplazar personal», y el coronel no niega que existan; objeta que las penalizaciones «se cobran después»."
       }
     },

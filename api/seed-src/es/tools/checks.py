@@ -171,14 +171,8 @@ def _check_reading_item(ident: str, item: dict, bands: dict) -> list[str]:
     question = (item.get("question") or "").strip()
     if not question:
         errors.append(f"{ident}: question missing (the parser found no '**...?**' line)")
-    else:
-        if not question.endswith("?"):
-            errors.append(
-                f"{ident}: question must end with '?' (the parser drops one that does not "
-                f"close with '?**'), found {question[-12:]!r}"
-            )
-        if "¿" not in question:
-            errors.append(f"{ident}: question missing '¿'")
+    elif "¿" not in question:
+        errors.append(f"{ident}: question missing '¿'")
 
     level = item.get("level")
     passage = item.get("passage") or ""
@@ -271,6 +265,37 @@ def check_reading(
     for position, item in enumerate(items, start=1):
         errors += _check_reading_item(f"R{position}", item, bands)
     return errors + _check_reading_set(items, expect_count, bands)
+
+
+_EXAM_OPTION = re.compile(r"^- \*\*([A-D])\)\*\* \S")
+_BOLD_QUESTION = re.compile(r"^\*\*.*\?\*\*\s*$")
+
+
+def check_exam_layout(exam_markdown: str) -> list[str]:
+    """Check the exam markdown for layouts the parser silently truncates.
+
+    Args:
+        exam_markdown: Full text of `reading-exam.md`.
+
+    Returns:
+        One `R<n>` string per item whose option continues on a second line or that does
+        not have exactly one bold `**…?**` question line.
+    """
+    errors = []
+    for block in re.split(r"(?m)^(?=### \d+\. )", exam_markdown):
+        number = re.match(r"### (\d+)\. ", block)
+        if not number:
+            continue
+        ident, lines = f"R{number.group(1)}", block.splitlines()
+        questions = sum(bool(_BOLD_QUESTION.match(line)) for line in lines)
+        if questions != 1:
+            errors.append(f"{ident}: expected one bold question line, found {questions}")
+        for line, following in zip(lines, lines[1:] + [""], strict=True):
+            if _EXAM_OPTION.match(line) and following.strip() and not (
+                _EXAM_OPTION.match(following) or following.startswith("#")
+            ):
+                errors.append(f"{ident}: option {line[4]} wraps; the parser keeps only its first line")
+    return errors
 
 
 _KEY_HEADER = re.compile(r"^### (\d+)\. Key: ([A-D])\s*$")
@@ -476,7 +501,7 @@ def check_writing_alignment(
     model = [heading.strip() for heading in _TASK_HEADING.findall(model_markdown)]
     errors = [
         f"W{position}: alignment: exam task {exam_title!r} is paired with model answer {model_title!r}"
-        for position, (exam_title, model_title) in enumerate(zip(exam, model), start=1)
+        for position, (exam_title, model_title) in enumerate(zip(exam, model, strict=False), start=1)
         if exam_title != model_title
     ]
     fewer_is_fine = allow_pending and len(model) < len(exam)
