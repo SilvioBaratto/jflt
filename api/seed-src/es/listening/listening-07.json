@@ -1,0 +1,118 @@
+{
+  "id": "listening-07",
+  "level": "C1",
+  "stanag_level": 3,
+  "topic": "La primera valoración de una misión internacional de observación electoral",
+  "conversation_type": "conexión con un corresponsal",
+  "setting": "Informativo de mediodía de una emisora de radio. El presentador conecta con su corresponsal en la capital de un país donde una misión internacional de observadores ha presentado esa misma mañana su primera valoración de las elecciones presidenciales.",
+  "voices": {
+    "PRESENTADOR": "onyx",
+    "CORRESPONSAL": "nova"
+  },
+  "speakers": [
+    {
+      "id": "PRESENTADOR",
+      "role": "presentador del informativo",
+      "voice": "onyx"
+    },
+    {
+      "id": "CORRESPONSAL",
+      "role": "corresponsal de la emisora en el país",
+      "voice": "nova"
+    }
+  ],
+  "lines": [
+    {
+      "speaker": "PRESENTADOR",
+      "text": "Nos vamos ahora a la capital, donde la misión internacional de observadores ha presentado esta mañana su primera valoración de las elecciones presidenciales del domingo. Según los resultados oficiales, el presidente ha sido reelegido con holgura. Allí sigue nuestra corresponsal, Elena Ruiz. Elena, ¿qué ha dicho la misión?"
+    },
+    {
+      "speaker": "CORRESPONSAL",
+      "text": "Ha dicho dos cosas, y el orden en que las ha dicho importa. La jefa de la misión ha empezado destacando que la jornada electoral transcurrió con normalidad y que el recuento fue ordenado. Después, ya al final y casi de pasada, ha añadido que la campaña se desarrolló en condiciones desiguales. La televisión pública dedicó al presidente muchas más horas que a sus rivales, y dos candidatos de la oposición quedaron fuera por defectos de forma en su inscripción."
+    },
+    {
+      "speaker": "PRESENTADOR",
+      "text": "Y me imagino que, de las dos cosas, ahí se está oyendo sobre todo la primera."
+    },
+    {
+      "speaker": "CORRESPONSAL",
+      "text": "Así es. El Gobierno lleva toda la mañana citando la primera parte, y los medios oficiales abren con ella. La segunda apenas la recogen los periódicos de la oposición. Lo curioso es que, cuando hablas con los observadores lejos de los micrófonos, ninguno cree que el domingo fuera lo importante. Para ellos, lo que pesó en el resultado se decidió en los meses anteriores."
+    },
+    {
+      "speaker": "PRESENTADOR",
+      "text": "La oposición ya los acusa de mirar hacia otro lado. Si lo tienen tan claro, ¿por qué no lo dicen con la misma claridad delante de las cámaras?"
+    },
+    {
+      "speaker": "CORRESPONSAL",
+      "text": "Yo no lo llamaría así. Las razones son más prosaicas. Una misión como esta solo trabaja en un país si su Gobierno la invita, y necesita seguir aquí unas semanas más, mientras se resuelven las reclamaciones. Además, lo de hoy es una declaración preliminar. El informe final, con los datos completos y una serie de recomendaciones, se publicará dentro de unos dos meses. Los observadores insisten en que el análisis de fondo estará ahí. Y conviene recordar que sus equipos llegaron seis semanas antes de la votación, así que vieron la campaña de cerca."
+    },
+    {
+      "speaker": "PRESENTADOR",
+      "text": "Dos meses. Para entonces el presidente ya habrá empezado su nuevo mandato."
+    },
+    {
+      "speaker": "CORRESPONSAL",
+      "text": "Y la noticia será otra, claro. Ese informe lo leerán algunos ministerios de Exteriores y las organizaciones que trabajan en el país, y poco más. Hace un rato, un diplomático europeo me lo resumía con cierta ironía: la declaración preliminar la oye todo el mundo, y el informe final lo lee quien ya lo sabía."
+    },
+    {
+      "speaker": "PRESENTADOR",
+      "text": "Elena Ruiz, desde la capital. Mañana volveremos a conectar con ella para conocer los próximos pasos de la oposición."
+    }
+  ],
+  "questions": [
+    {
+      "id": 1,
+      "question": "¿Qué destaca la corresponsal de la declaración de la misión?",
+      "options": {
+        "A": "Que denunció irregularidades en el recuento de votos de varios colegios electorales de la capital.",
+        "B": "Que no quiso pronunciarse sobre la campaña hasta contar con los datos del informe final.",
+        "C": "Que concedió más importancia a los problemas de la campaña que a la normalidad con que se votó el domingo.",
+        "D": "Que dejó para el final, y sin darles relieve, sus reparos sobre cómo se desarrolló la campaña."
+      },
+      "answer": "D",
+      "rationale": "La corresponsal advierte que «el orden en que las ha dicho importa»: la misión empezó por la normalidad de la jornada y mencionó la campaña desigual «ya al final y casi de pasada».",
+      "option_rationales": {
+        "A": "Lectura errónea: la misión afirmó que «el recuento fue ordenado»; sus reparos se refieren a la campaña, no a la votación.",
+        "B": "Lectura errónea: la misión sí habló de la campaña, aunque «casi de pasada»; el informe final aparece después como el lugar del «análisis de fondo».",
+        "C": "Relación invertida: invierte el peso que la misión dio a cada parte; empezó por la jornada y dejó la campaña para el final, «casi de pasada».",
+        "D": "Correcta: los reparos sobre la campaña llegaron «ya al final y casi de pasada», después de destacar la normalidad de la jornada, y la corresponsal subraya que ese «orden» importa."
+      }
+    },
+    {
+      "id": 2,
+      "question": "Según la corresponsal, ¿a qué se debe la prudencia de la misión al hablar en público?",
+      "options": {
+        "A": "A que teme que una valoración dura desate protestas en la calle y ponga en peligro a sus equipos.",
+        "B": "A que necesita el visto bueno del Gobierno para trabajar y deja el examen detallado para más adelante.",
+        "C": "A que sus observadores llegaron tarde al país y apenas pudieron seguir la campaña electoral.",
+        "D": "A que coincide con el Gobierno en que lo decisivo de unas elecciones es lo que ocurre el día de la votación."
+      },
+      "answer": "B",
+      "rationale": "La corresponsal atribuye la prudencia a razones «más prosaicas»: la misión solo trabaja si el Gobierno «la invita», necesita seguir en el país, y el «análisis de fondo» llegará con el informe final.",
+      "option_rationales": {
+        "A": "Conocimiento externo: el temor a protestas o por la seguridad de los equipos es una explicación plausible, pero la corresponsal no la menciona; sus razones son la invitación del Gobierno y el «informe final».",
+        "B": "Correcta: reúne las dos razones de la corresponsal: la misión depende de que el Gobierno «la invita» y reserva el «análisis de fondo» para el informe final.",
+        "C": "Lectura errónea: los equipos de la misión llegaron «seis semanas antes de la votación» y vieron la campaña de cerca.",
+        "D": "Relación invertida: según la corresponsal, los observadores piensan lo contrario: «ninguno cree que el domingo fuera lo importante»."
+      }
+    },
+    {
+      "id": 3,
+      "question": "¿Con qué intención reproduce la corresponsal el comentario de un diplomático europeo?",
+      "options": {
+        "A": "Para dar a entender que los diplomáticos europeos desconfían de la imparcialidad de la misión.",
+        "B": "Para advertir de que el informe final suavizará sus críticas a fin de no incomodar al Gobierno.",
+        "C": "Para subrayar que las críticas de fondo llegarán cuando ya apenas interesen al público.",
+        "D": "Para señalar que la oposición se apoyará en el informe final para impugnar los resultados oficiales."
+      },
+      "answer": "C",
+      "rationale": "Tras recordar que el informe lo leerán «algunos ministerios de Exteriores» «y poco más», la corresponsal cita la ironía del diplomático: «el informe final lo lee quien ya lo sabía».",
+      "option_rationales": {
+        "A": "No se dice: el diplomático no pone en duda la imparcialidad de la misión; su comentario contrapone quién oye la «declaración preliminar» y quién lee el informe.",
+        "B": "Conocimiento externo: nada indica que el informe vaya a rebajar las críticas; los observadores dicen que allí estará «el análisis de fondo».",
+        "C": "Correcta: si el informe final lo lee «quien ya lo sabía», las críticas sobre la campaña llegarán cuando «la noticia será otra».",
+        "D": "No se dice: la oposición solo aparece acusando a la misión de «mirar hacia otro lado»; nadie habla de impugnar los resultados con el informe."
+      }
+    }
+  ]
+}

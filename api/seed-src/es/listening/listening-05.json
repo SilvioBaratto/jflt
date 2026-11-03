@@ -1,0 +1,128 @@
+{
+  "id": "listening-05",
+  "level": "C1",
+  "stanag_level": 3,
+  "topic": "Los modelos de predicción meteorológica basados en inteligencia artificial",
+  "conversation_type": "mesa redonda en un congreso",
+  "setting": "Mesa redonda en un congreso de meteorología. El moderador da la palabra a una ingeniera que desarrolla modelos de predicción basados en inteligencia artificial y al director de predicción de un servicio meteorológico público.",
+  "voices": {
+    "MODERADOR": "fable",
+    "INGENIERA": "shimmer",
+    "DIRECTOR": "onyx"
+  },
+  "speakers": [
+    {
+      "id": "MODERADOR",
+      "role": "moderador de la mesa redonda",
+      "voice": "fable"
+    },
+    {
+      "id": "INGENIERA",
+      "role": "ingeniera que desarrolla modelos de predicción basados en inteligencia artificial",
+      "voice": "shimmer"
+    },
+    {
+      "id": "DIRECTOR",
+      "role": "director de predicción de un servicio meteorológico público",
+      "voice": "onyx"
+    }
+  ],
+  "lines": [
+    {
+      "speaker": "MODERADOR",
+      "text": "Abrimos la sesión de la tarde con el asunto más comentado en los pasillos. Desde hace poco existen modelos que aprenden de décadas de datos meteorológicos y calculan la predicción de una semana en pocos minutos. Un modelo clásico necesita para eso horas de superordenador. Lucía Ferrer desarrolla estos sistemas, y Andrés Molina dirige la predicción en un servicio meteorológico público. Señora Ferrer, ¿qué son capaces de hacer hoy?"
+    },
+    {
+      "speaker": "INGENIERA",
+      "text": "Más de lo que esperábamos hace cinco años. En las pruebas habituales aciertan tanto como los modelos clásicos a cinco o seis días vista, y en muchas variables algo más. Y gastan una fracción mínima de energía. Eso permite algo que antes era un lujo: lanzar cientos de predicciones ligeramente distintas y ver qué escenarios son más probables. Creo sinceramente que en pocos años serán la herramienta principal de cualquier servicio."
+    },
+    {
+      "speaker": "MODERADOR",
+      "text": "Señor Molina, usted dirige uno de esos servicios. ¿Cómo lo ve desde dentro?"
+    },
+    {
+      "speaker": "DIRECTOR",
+      "text": "Con interés, y los resultados están ahí. Pero conviene precisar una cosa. Esos datos del pasado no son observaciones tal cual. Las estaciones y los satélites dejan huecos enormes, y lo que se usa para entrenar son reconstrucciones de la atmósfera hechas con modelos clásicos. Además, cada mañana el modelo nuevo arranca del estado de la atmósfera que ha calculado el sistema de siempre. Si alguien piensa ahorrar apagando lo antiguo, que sepa que está serrando la rama en la que se sienta lo nuevo."
+    },
+    {
+      "speaker": "INGENIERA",
+      "text": "Hoy es así, no tengo nada que objetar. Ya hay equipos, sin embargo, que entrenan modelos capaces de partir directamente de las observaciones. Los primeros resultados son modestos, lo reconozco. Aun así, yo no daría esa dependencia por permanente."
+    },
+    {
+      "speaker": "MODERADOR",
+      "text": "Desde el público nos llega una y otra vez la misma pregunta. ¿Qué ocurre con los episodios extremos, que son los que obligan a avisar a la población?"
+    },
+    {
+      "speaker": "DIRECTOR",
+      "text": "Ahí tengo mi segunda reserva. Un modelo que aprende del pasado se maneja muy bien con lo que ha visto muchas veces. Pero imagine una ola de calor más intensa que cualquiera de las registradas. Lo que observamos es que estos modelos tienden a suavizar los picos, como si les costara creerse lo que están calculando. Y a un servicio público le sirve de poco acertar los días corrientes si falla el día en que hay que dar la alarma."
+    },
+    {
+      "speaker": "INGENIERA",
+      "text": "Es una crítica justa, y la estamos estudiando. Ahora bien, eso no es motivo para quedarnos quietos. Si los servicios públicos no incorporan estos modelos, lo harán otros. Algunas grandes empresas tecnológicas ya publican sus propias predicciones, y ninguna está obligada a avisar a nadie cuando llega una ola de calor."
+    },
+    {
+      "speaker": "DIRECTOR",
+      "text": "En eso le doy la razón, y no tengo intención de quedarme quieto. Solo me gustaría que esta conversación la oyera también quien aprueba nuestro presupuesto. Y que la oyera entera, no únicamente la parte de los minutos y la energía."
+    },
+    {
+      "speaker": "MODERADOR",
+      "text": "Con esa petición abrimos el turno de preguntas. Gracias a los dos."
+    }
+  ],
+  "questions": [
+    {
+      "id": 1,
+      "question": "¿Por qué desaconseja el director prescindir de los modelos clásicos para ahorrar?",
+      "options": {
+        "A": "Porque los modelos nuevos aún no igualan a los clásicos en las predicciones a varios días.",
+        "B": "Porque los modelos nuevos se forman con cálculos de esos sistemas y parten de ellos cada día.",
+        "C": "Porque el entrenamiento de los modelos nuevos exige la potencia de cálculo de los superordenadores.",
+        "D": "Porque los modelos que parten directamente de las observaciones dan, por ahora, resultados modestos."
+      },
+      "answer": "B",
+      "rationale": "El director explica que se entrena con «reconstrucciones de la atmósfera hechas con modelos clásicos» y que cada mañana el modelo nuevo «arranca del estado de la atmósfera que ha calculado el sistema de siempre»: apagar lo antiguo sería serrar «la rama en la que se sienta lo nuevo».",
+      "option_rationales": {
+        "A": "Lectura errónea: el director no discute la precisión de los modelos nuevos («los resultados están ahí»); es la ingeniera quien afirma que a cinco o seis días aciertan «tanto como los modelos clásicos».",
+        "B": "Correcta: los modelos nuevos se entrenan con «reconstrucciones de la atmósfera hechas con modelos clásicos» y parten cada día del estado que calcula «el sistema de siempre».",
+        "C": "Conocimiento externo: el director no habla de la potencia necesaria para entrenar; su argumento es que el modelo nuevo «arranca del estado de la atmósfera» que calcula el sistema clásico.",
+        "D": "Atribución cambiada: que «Los primeros resultados son modestos» lo admite después la ingeniera, a propósito de los modelos que parten de las observaciones; no es la razón del director."
+      }
+    },
+    {
+      "id": 2,
+      "question": "¿Qué reserva plantea el director sobre los modelos nuevos ante los episodios extremos?",
+      "options": {
+        "A": "Que se quedan cortos al estimar su intensidad, porque aprenden de un pasado sin casos comparables.",
+        "B": "Que no explican por qué prevén el episodio, lo que complica justificar una alerta ante la población.",
+        "C": "Que arrastran los fallos del sistema clásico con los extremos, ya que arrancan de sus cálculos.",
+        "D": "Que tardan más que los clásicos en recalcular la predicción si el episodio cambia de rumbo."
+      },
+      "answer": "A",
+      "rationale": "Ante «una ola de calor más intensa que cualquiera de las registradas», el director observa que estos modelos «tienden a suavizar los picos», «como si les costara creerse lo que están calculando»: al aprender del pasado, se quedan cortos ante lo nunca visto.",
+      "option_rationales": {
+        "A": "Correcta: un modelo que «aprende del pasado» tiende a «suavizar los picos», de modo que subestima la intensidad de lo que no ha visto antes.",
+        "B": "No se dice: el director no reprocha a los modelos que no expliquen sus predicciones; su reserva es que «tienden a suavizar los picos».",
+        "C": "Lectura errónea: mezcla dos reservas distintas; que el modelo nuevo «arranca del estado de la atmósfera» calculado por el sistema clásico es el primer argumento, no la causa de su fallo con los extremos.",
+        "D": "Relación invertida: la rapidez es la ventaja de los modelos nuevos, que calculan una semana «en pocos minutos»; el director no les atribuye lentitud."
+      }
+    },
+    {
+      "id": 3,
+      "question": "¿Qué da a entender el director en su última intervención?",
+      "options": {
+        "A": "Que reprocha a la ingeniera haber exagerado el ahorro de energía para promocionar sus modelos.",
+        "B": "Que pide que las empresas tecnológicas compartan con el servicio público el coste de los avisos.",
+        "C": "Que condiciona la adopción de los modelos nuevos a que su servicio reciba más fondos para ello.",
+        "D": "Que teme que quien reparte el dinero vea lo barato de los modelos nuevos y no sus limitaciones."
+      },
+      "answer": "D",
+      "rationale": "Al pedir que quien «aprueba nuestro presupuesto» oiga la conversación «entera», y no únicamente «la parte de los minutos y la energía», el director deja ver su temor a que el ahorro pese más que las reservas que ha expuesto.",
+      "option_rationales": {
+        "A": "Lectura errónea: «la parte de los minutos y la energía» alude a lo que podría retener quien decide el gasto; el director no acusa a la ingeniera de exagerar.",
+        "B": "No se dice: las empresas tecnológicas las menciona la ingeniera, que advierte que ninguna «está obligada a avisar a nadie»; el director no propone que paguen nada.",
+        "C": "Lectura errónea: el director asegura que no tiene «intención de quedarme quieto»; no pone condiciones económicas a la adopción de los modelos nuevos.",
+        "D": "Correcta: si teme que se oiga solo «la parte de los minutos y la energía», es porque cree que quien «aprueba nuestro presupuesto» podría ver en el ahorro un motivo para prescindir de lo clásico."
+      }
+    }
+  ]
+}

@@ -1,0 +1,128 @@
+{
+  "id": "listening-06",
+  "level": "C1",
+  "stanag_level": 3,
+  "topic": "Las solicitudes de jornada escolar continua en colegios públicos",
+  "conversation_type": "reunión de trabajo",
+  "setting": "Reunión en la consejería de educación de una comunidad autónoma. La directora general de centros prepara con un inspector de educación y un asesor jurídico su decisión sobre las solicitudes de varios colegios públicos que quieren concentrar las clases por la mañana.",
+  "voices": {
+    "DIRECTORA": "nova",
+    "INSPECTOR": "echo",
+    "ASESOR": "alloy"
+  },
+  "speakers": [
+    {
+      "id": "DIRECTORA",
+      "role": "directora general de centros educativos",
+      "voice": "nova"
+    },
+    {
+      "id": "INSPECTOR",
+      "role": "inspector de educación",
+      "voice": "echo"
+    },
+    {
+      "id": "ASESOR",
+      "role": "asesor jurídico de la dirección general",
+      "voice": "alloy"
+    }
+  ],
+  "lines": [
+    {
+      "speaker": "DIRECTORA",
+      "text": "Tenemos que resolver esto antes del viernes. Han llegado once solicitudes de colegios que quieren pasar a la jornada continua, con todas las clases por la mañana. Las once cumplen el procedimiento: las ha aprobado el consejo escolar de cada centro y las familias han votado a favor. Antes de firmar, quiero saber qué han visto ustedes. Inspector, usted ha estado en los centros."
+    },
+    {
+      "speaker": "INSPECTOR",
+      "text": "En siete de los once. Los papeles están en regla y las mayorías son amplias, de unos tres votos a favor por cada uno en contra. Pero hay un dato que no aparece en el resumen. En el colegio del barrio de la estación votaron cuatro de cada diez familias. Y es el colegio con más alumnos que comen allí gracias a una beca de comedor."
+    },
+    {
+      "speaker": "ASESOR",
+      "text": "Entiendo por dónde va, pero la norma fija una participación mínima, y ese colegio la supera. Si denegamos una solicitud por lo que suponemos que habrían votado quienes no votaron, perderemos el primer recurso que se presente. Y con razón, porque estaríamos cambiando las reglas con el partido ya terminado."
+    },
+    {
+      "speaker": "DIRECTORA",
+      "text": "Nadie propone denegar por una impresión. Lo que sí podemos hacer es poner condiciones a la autorización. ¿Qué pasa ahora mismo por las tardes en esos colegios?"
+    },
+    {
+      "speaker": "INSPECTOR",
+      "text": "Depende mucho del centro. Donde la asociación de familias tiene fuerza, hay talleres y deporte, aunque casi todo es de pago. Donde no la tiene, la puerta se cierra en cuanto termina el comedor. Y los niños que no tienen a nadie en casa a esa hora no desaparecen. Pasan la tarde en la calle o delante de una pantalla."
+    },
+    {
+      "speaker": "ASESOR",
+      "text": "Entonces la condición podría ir por ahí. Se autoriza el cambio, pero el colegio debe ofrecer actividades gratuitas por la tarde al alumnado con beca de comedor, y la consejería corre con el gasto. Así se respeta el voto y se protege a quien más lo necesita."
+    },
+    {
+      "speaker": "DIRECTORA",
+      "text": "Suena muy bien hasta que se le pone precio. Hablamos de monitores cuatro tardes por semana, en once colegios y durante todo el curso. Y el año que viene no serán once solicitudes, serán treinta, porque en cuanto un colegio lo consigue, el de al lado lo pide."
+    },
+    {
+      "speaker": "INSPECTOR",
+      "text": "Yo le daría la vuelta a ese argumento. Precisamente porque los demás van a copiar lo que hagamos, este primer modelo tiene que salir bien hecho. Si ahora autorizamos sin condiciones, el año que viene será imposible exigirlas."
+    },
+    {
+      "speaker": "DIRECTORA",
+      "text": "Muy bien, lo dejamos así. Autorizamos ya a los colegios que tienen actividades de tarde abiertas a todos los alumnos. Los demás quedan en suspenso hasta que presenten un plan para atender a esos niños, con su coste. Y dentro de un año revisamos cómo ha funcionado."
+    },
+    {
+      "speaker": "ASESOR",
+      "text": "Dejar una solicitud en suspenso también se puede recurrir, pero es mucho más fácil de defender que una negativa, con tal de que a todos se les pida lo mismo. Esta tarde le paso el borrador de la resolución."
+    }
+  ],
+  "questions": [
+    {
+      "id": 1,
+      "question": "¿Qué sugiere el inspector con el dato del colegio del barrio de la estación?",
+      "options": {
+        "A": "Que en ese colegio no se alcanzó la participación mínima que la norma exige para dar por válida la votación.",
+        "B": "Que las familias con beca de comedor votaron mayoritariamente en contra de cambiar el horario.",
+        "C": "Que en la votación ha pesado poco la opinión de las familias que más dependen de los servicios del centro.",
+        "D": "Que convendría repetir la votación en los centros donde la mayoría a favor fue más ajustada."
+      },
+      "answer": "C",
+      "rationale": "El inspector junta dos datos sin sacar la conclusión: en ese colegio votaron «cuatro de cada diez familias» y es el que tiene «más alumnos que comen allí gracias a una beca de comedor»; da a entender que la mayoría puede no representar a las familias que más dependen del centro.",
+      "option_rationales": {
+        "A": "Lectura errónea: la baja participación no incumple la norma; el asesor recuerda que esta «fija una participación mínima» y que ese colegio «la supera», y el inspector no lo discute.",
+        "B": "No se dice: el inspector cuenta cuántas familias votaron, «cuatro de cada diez», pero no cómo votaron las que tienen beca.",
+        "C": "Correcta: la baja participación coincide con el colegio de «más alumnos que comen allí gracias a una beca de comedor»; en el resultado pesa poco la voz de las familias que más necesitan el centro.",
+        "D": "Lectura errónea: el inspector describe mayorías «amplias»; no pide repetir ninguna votación ni habla de mayorías ajustadas."
+      }
+    },
+    {
+      "id": 2,
+      "question": "¿Cómo responde el inspector a la preocupación de la directora por el coste?",
+      "options": {
+        "A": "Que el gasto será menor de lo previsto, porque pocas familias acabarán usando esas actividades.",
+        "B": "Que las asociaciones de familias podrían asumir las actividades en los colegios que lo soliciten.",
+        "C": "Que la consejería debería frenar las nuevas solicitudes hasta conocer el resultado de estas once.",
+        "D": "Que hay que acertar con las condiciones desde ahora, porque otros centros imitarán la decisión."
+      },
+      "answer": "D",
+      "rationale": "Ante el aviso de que, en cuanto un colegio lo consigue, «el de al lado lo pide», el inspector le da «la vuelta a ese argumento»: como los demás van a copiar la decisión, el primer modelo «tiene que salir bien hecho».",
+      "option_rationales": {
+        "A": "No se dice: el inspector no discute el precio ni prevé poca demanda; parte de que los demás «van a copiar lo que hagamos» para pedir condiciones.",
+        "B": "Lectura errónea: las asociaciones de familias aparecen antes, cuando el inspector explica que donde tienen fuerza hay actividades, «aunque casi todo es de pago»; no las propone para cubrir el coste.",
+        "C": "Conocimiento externo: frenar las solicitudes sería una medida plausible, pero el inspector no la plantea; lo que rechaza es autorizar «sin condiciones».",
+        "D": "Correcta: reformula el giro del inspector: como los demás «van a copiar lo que hagamos», las condiciones deben fijarse ya, porque después «será imposible exigirlas»."
+      }
+    },
+    {
+      "id": 3,
+      "question": "¿Qué decide finalmente la directora?",
+      "options": {
+        "A": "Aprobar ya las solicitudes de los centros que ofrecen tardes a cualquier alumno y aplazar el resto.",
+        "B": "Aprobar las once solicitudes a condición de que la consejería pague actividades de tarde al alumnado becado.",
+        "C": "Rechazar las solicitudes de los centros en los que votaron menos de la mitad de las familias con hijos matriculados.",
+        "D": "Pedir que se repita la votación en los centros de los barrios con más dificultades."
+      },
+      "answer": "A",
+      "rationale": "La directora autoriza ya a los colegios con actividades de tarde «abiertas a todos los alumnos» y deja los demás en suspenso hasta que presenten «un plan para atender a esos niños».",
+      "option_rationales": {
+        "A": "Correcta: se aprueban ya los centros con tardes «abiertas a todos los alumnos», y el resto queda a la espera de «un plan para atender a esos niños».",
+        "B": "Atribución cambiada: es la propuesta del asesor, que la directora frena porque «Suena muy bien hasta que se le pone precio»; al final no autoriza las once.",
+        "C": "Lectura errónea: la baja participación la señala el inspector, pero el asesor advierte que denegar por eso haría perder «el primer recurso que se presente»; la directora no rechaza ninguna solicitud.",
+        "D": "No se dice: nadie propone repetir la votación; la directora condiciona la autorización a que el centro presente «un plan para atender a esos niños»."
+      }
+    }
+  ]
+}
