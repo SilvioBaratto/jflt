@@ -24,8 +24,8 @@ describe('parseLanguage with a non-string value', () => {
   // Express hands the controller an array for a repeated `?lang=es&lang=en`, and an object or array
   // for bracket syntax when the extended query parser is enabled; none may be coerced to a language.
   it.each([[['es', 'en']], [['es']], [{ a: 'es' }]])('rejects %j with a 400', (value) => {
-    expect(() => parseLanguage(value as unknown as string)).toThrow(BadRequestException);
-    expect(() => parseLanguage(value as unknown as string)).toThrow('lang must be one of: en, es');
+    expect(() => parseLanguage(value)).toThrow(BadRequestException);
+    expect(() => parseLanguage(value)).toThrow('lang must be one of: en, es');
   });
 });
 

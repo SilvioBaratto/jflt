@@ -1,7 +1,6 @@
 import { Test, TestingModule } from '@nestjs/testing';
 import { INestApplication } from '@nestjs/common';
 import { MemoryHealthIndicator } from '@nestjs/terminus';
-import { getOptionsToken } from '@nestjs/throttler';
 // supertest is an `export =` CommonJS module and esModuleInterop is off, so a default import would
 // compile to an undefined `.default` at runtime.
 import request = require('supertest');
@@ -75,10 +74,6 @@ describe('AppModule (e2e)', () => {
     })
       .overrideProvider(PrismaService)
       .useValue(mockPrismaService)
-      // The suite sends every request from one address, and the production limit of 100 per minute
-      // would start answering 429 once the language matrix below grows past it.
-      .overrideProvider(getOptionsToken())
-      .useValue([{ ttl: 60000, limit: 100000 }])
       // The real heap check reads this Jest worker's heap, which ts-jest can push past the
       // liveness threshold and make the probe flap.
       .overrideProvider(MemoryHealthIndicator)
@@ -133,7 +128,7 @@ describe('AppModule (e2e)', () => {
   describe('lang query parameter on read routes', () => {
     // Each route lists the Prisma calls that carry its language filter, so one matrix proves both
     // that a bad value is refused before any query and that a good one reaches the database.
-    const routes: { path: string; queried: () => jest.Mock[] }[] = [
+    const routes: { path: string; queried: () => jest.Mock[]; arrange?: () => void }[] = [
       {
         path: '/api/v1/content/reading',
         queried: () => [dataDelegates.readingItem.count, dataDelegates.readingItem.findMany],
@@ -154,9 +149,14 @@ describe('AppModule (e2e)', () => {
       { path: '/api/v1/vocab/flashcards', queried: () => [dataDelegates.vocabEntry.findMany] },
       {
         path: '/api/v1/progress',
+        // ReviewItem has no language column, so a due row is resolved through its item table; one
+        // due reading row makes the dashboard run that language-filtered lookup.
+        arrange: () =>
+          dataDelegates.reviewItem.findMany.mockResolvedValue([{ itemType: 'reading', itemId: 'r-1' }]),
         queried: () => [
           dataDelegates.topicStat.findMany,
           dataDelegates.examSession.findMany,
+          dataDelegates.readingItem.findMany,
           dataDelegates.readingItem.count,
           dataDelegates.listeningItem.count,
           dataDelegates.writingTask.count,
@@ -177,7 +177,7 @@ describe('AppModule (e2e)', () => {
       ['a repeated parameter in the other order', 'lang=en&lang=es'],
     ];
 
-    describe.each(routes)('GET $path', ({ path, queried }) => {
+    describe.each(routes)('GET $path', ({ path, queried, arrange }) => {
       it.each(rejectedQueries)(
         'when lang is %s (?%s), returns 400 and never queries the database',
         async (_label, query) => {
@@ -189,21 +189,24 @@ describe('AppModule (e2e)', () => {
       );
 
       it('when lang=es, returns 200 and filters every query by es', async () => {
+        arrange?.();
         await request(app.getHttpServer()).get(`${path}?lang=es`).expect(200);
 
-        expect(languagesQueried(...queried())).toEqual(['es']);
+        expect(languagesQueried(...queried())).toStrictEqual(['es']);
       });
 
       it('when lang=en, returns 200 and filters every query by en', async () => {
+        arrange?.();
         await request(app.getHttpServer()).get(`${path}?lang=en`).expect(200);
 
-        expect(languagesQueried(...queried())).toEqual(['en']);
+        expect(languagesQueried(...queried())).toStrictEqual(['en']);
       });
 
       it('when lang is absent, returns 200 and filters every query by en', async () => {
+        arrange?.();
         await request(app.getHttpServer()).get(path).expect(200);
 
-        expect(languagesQueried(...queried())).toEqual(['en']);
+        expect(languagesQueried(...queried())).toStrictEqual(['en']);
       });
     });
 
@@ -255,7 +258,7 @@ describe('AppModule (e2e)', () => {
 
       expect(res.status).toBe(422);
       expect(res.body.message).toBe('no Spanish items available for this request');
-      expect(languagesQueried(...bankQueries())).toEqual(['es']);
+      expect(languagesQueried(...bankQueries())).toStrictEqual(['es']);
       expect(dataDelegates.examSession.create).not.toHaveBeenCalled();
     });
 
@@ -264,7 +267,7 @@ describe('AppModule (e2e)', () => {
 
       expect(res.status).toBe(422);
       expect(res.body.message).toBe('no English items available for this request');
-      expect(languagesQueried(...bankQueries())).toEqual(['en']);
+      expect(languagesQueried(...bankQueries())).toStrictEqual(['en']);
     });
 
     it('when language is es and the Spanish bank has an item, creates the session in es from es items only', async () => {

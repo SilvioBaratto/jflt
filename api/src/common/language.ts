@@ -19,11 +19,12 @@ export const LanguageSchema = z.enum(LANGUAGES);
  * Matching is deliberately strict, with no trimming or case folding: a typo such as `ES` or an
  * empty `?lang=` must fail loudly rather than silently serve English to a Spanish learner.
  *
- * @param value Raw `lang` query value, or `undefined` when the parameter is absent.
+ * @param value Raw `lang` query value, or `undefined` when the parameter is absent. Typed `unknown`
+ * because Express passes an array for a repeated key, whatever the controller declares.
  * @returns The matching language, or {@link DEFAULT_LANGUAGE} when `value` is `undefined`.
  * @throws BadRequestException when `value` is anything other than `undefined`, `'en'` or `'es'`.
  */
-export function parseLanguage(value: string | undefined): Language {
+export function parseLanguage(value: unknown): Language {
   if (value === undefined) return DEFAULT_LANGUAGE;
   const parsed = LanguageSchema.safeParse(value);
   if (!parsed.success) {
