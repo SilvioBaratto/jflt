@@ -12,6 +12,7 @@ import { MatTooltip } from '@angular/material/tooltip';
 import { RouterLink, RouterLinkActive } from '@angular/router';
 import { LucideAngularModule } from 'lucide-angular';
 
+import { LanguageSelectorComponent } from '../language-selector/language-selector';
 import { NavItem, NAV_ITEMS, RailActionsSheet, SidebarMode } from '../nav-item';
 import { NavSectionService } from '../nav-section';
 
@@ -42,12 +43,16 @@ export const RAIL_ACTIONS_SHEET: RailActionsSheet = {
     MatListItemIcon,
     MatListItemTitle,
     LucideAngularModule,
+    LanguageSelectorComponent,
   ],
   templateUrl: './sidebar.html',
   styleUrl: './sidebar.css',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-/** Navigation rail contents: destinations and (in the auth variants) account actions. Light mode only — no theme choice. */
+/**
+ * Navigation rail contents: destinations, the content language selector and (in the auth variants)
+ * account actions. Light mode only — no theme choice.
+ */
 export class SidebarComponent {
   /** Rail form to render; see {@link SidebarMode}. */
   readonly mode = input<SidebarMode>('expanded');

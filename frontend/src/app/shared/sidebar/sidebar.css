@@ -35,6 +35,14 @@
   gap: 8px;
 }
 
+/*
+ * The icon button's 24px icon sits 8px inside its 40px container, so a 20px start inset puts it at
+ * the destination icons' 28px (12px list inset + 16px icon start).
+ */
+.sidebar:not(.sidebar-collapsed) .sidebar-language {
+  padding-inline: 20px;
+}
+
 /* Grid hosts: the 24px svg leaves no inline baseline gap. */
 .sidebar-icon,
 .rail-icon,

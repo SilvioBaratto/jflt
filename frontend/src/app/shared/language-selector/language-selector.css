@@ -1,0 +1,29 @@
+/*
+ * Standard icon button (matIconButton) that opens a mat-menu. Angular Material supplies the 40px
+ * container, the 48px touch target, the state layers and the on-surface-variant icon color; the
+ * keyboard focus ring comes from mat.strong-focus-indicators() in styles.scss.
+ */
+:host {
+  /* The button becomes a grid item, so the host adds no line box around it. */
+  display: inline-grid;
+}
+
+.language-selector-icon {
+  /* The 24px svg that matIconButton sizes becomes a grid item: no inline baseline gap below it. */
+  display: grid;
+}
+
+/*
+ * The menu panel renders in the overlay container, but its items come from this template, so this
+ * rule still reaches them. Material spaces and colors only mat-icon beside a menu label, so the
+ * Lucide check, and the empty slot that keeps the labels aligned, take the same 24px box, 12px gap
+ * and icon color.
+ */
+.language-option-mark {
+  display: grid;
+  flex-shrink: 0;
+  inline-size: 24px;
+  block-size: 24px;
+  margin-inline-end: var(--mat-menu-item-spacing, 12px);
+  color: var(--mat-menu-item-icon-color, var(--mat-sys-on-surface-variant));
+}

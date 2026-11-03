@@ -157,13 +157,35 @@ describe('LayoutComponent', () => {
     expect(host.querySelector('app-toast')).toBeNull();
   });
 
-  it('when the top app bar renders at compact, it holds the brand and no actions button while the sheet has no actions', async () => {
+  it('when the top app bar renders at compact, it holds the brand and the language selector but no actions-sheet button', async () => {
     await render();
     const navbar = host.querySelector('app-navbar')!;
     expect(navbar.querySelector('header')).toBeTruthy();
     expect(navbar.querySelector('[navbarBrand]')?.textContent?.trim()).toBe('JFLT');
+    expect(navbar.querySelector('.navbar-actions app-language-selector')).toBeTruthy();
     // The base scaffold's sheet is empty (no theme or account controls), so nothing may promise it.
-    expect(navbar.querySelector('button')).toBeNull();
+    const buttons = Array.from(navbar.querySelectorAll('button'));
+    expect(buttons.length).toBe(1);
+    expect(buttons[0].getAttribute('aria-label')).toBe('Content language, current: English');
+    expect(navbar.querySelector('.shell-actions-toggle')).toBeNull();
+  });
+
+  it('when the shell renders at compact, the language selector is in the top app bar only', async () => {
+    await render();
+    expect(host.querySelectorAll('app-language-selector').length).toBe(1);
+    expect(host.querySelector('app-bottom-tab-bar app-language-selector')).toBeNull();
+  });
+
+  it('when the shell renders from 600px, the language selector is in the rail footer only', async () => {
+    await render('medium');
+    expect(host.querySelectorAll('app-language-selector').length).toBe(1);
+    expect(host.querySelector('mat-sidenav#app-rail .sidebar-footer app-language-selector')).toBeTruthy();
+  });
+
+  it('when the language selector is in the shell, it does not add a landmark: one banner and one Primary navigation remain', async () => {
+    await render('medium');
+    expect(host.querySelectorAll('[role="banner"]').length).toBe(1);
+    expect(host.querySelectorAll('nav, [role="navigation"]').length).toBe(1);
   });
 
   it('when the actions sheet opens, a modal bottom sheet holds app-sidebar in its modal form', async () => {
