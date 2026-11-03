@@ -782,14 +782,14 @@ En el debate de alto nivel con que la Asamblea General de las Naciones Unidas ab
 
 Es difícil encontrar en la diplomacia una causa que goce de mejor salud. Los cinco miembros permanentes aceptan, en principio, que el Consejo crezca, siempre que los recién llegados no hereden el veto, y la mayoría de los aspirantes ha terminado por admitir esa condición. Los candidatos a un asiento permanente son de sobra conocidos: dos potencias asiáticas, un gigante sudamericano, una gran economía europea y dos o tres Estados africanos. Casi todos tienen, además, un vecino que prefiere un Consejo anacrónico a otro en el que su rival se siente de por vida. Esos vecinos han formado una coalición que reclama, con una constancia digna de elogio, que cualquier reforma cuente con el acuerdo de todos los Estados miembros.
 
-Las negociaciones formales llevan más de quince años abiertas y todavía no han producido un borrador; las delegaciones dedican sus sesiones a discutir qué documento debería servir de base para empezar a negociar. Al llegar el otoño, los mismos gobiernos piden desde la tribuna que se acelere el proceso, y los aspirantes reciben de sus vecinos las mismas palabras de aliento que el año anterior. El Consejo sigue reuniéndose con los cinco miembros permanentes de 1945, y nada hace pensar que no vaya a conservarlos el día en que cumpla su primer siglo.
+Las negociaciones formales llevan más de quince años abiertas y todavía no han producido un borrador; las delegaciones dedican sus sesiones a discutir qué documento debería servir de base para empezar a negociar. Al llegar el otoño, los mismos gobiernos piden desde la tribuna que se acelere el proceso, y los aspirantes reciben de sus vecinos las mismas palabras de aliento que el año anterior. El Consejo sigue reuniéndose con los cinco miembros permanentes de 1945, como una vieja fotografía de grupo que nadie se decide a descolgar.
 
 **¿Qué quiere decir el autor al afirmar que es difícil encontrar en la diplomacia una causa que goce de mejor salud?**
 
 - **A)** Que el respaldo a la ampliación es lo bastante sólido para que salga adelante en cuanto las delegaciones pacten el documento del que partir.
 - **B)** Que el apoyo unánime a cambiar la composición del Consejo se sostiene porque ningún gobierno ha tenido que votar aún un texto concreto.
 - **C)** Que los cinco miembros permanentes solo aparentan apoyar el cambio, pues ninguno consentiría que otros Estados compartieran su derecho de veto.
-- **D)** Que la coalición de vecinos, con su constancia, ha conseguido mantener viva una reforma que los cinco permanentes preferían olvidar.
+- **D)** Que la coalición de vecinos, con su constancia, ha conseguido mantener viva una reforma que los cinco permanentes preferirían olvidar.
 
 ### 52. (Los daños en los cables submarinos de telecomunicaciones)
 
@@ -797,7 +797,7 @@ Por el fondo del mar discurren más de un millón de kilómetros de cables, apen
 
 En algunos mares se ha vuelto habitual, sin embargo, un tipo de accidente muy particular. Un mercante de cierta edad, con bandera de conveniencia y un propietario difícil de localizar, arrastra el ancla por el lecho marino a lo largo de decenas de kilómetros, corta a su paso uno o dos cables y prosigue su travesía. Interrogada después, la tripulación atribuye lo ocurrido a un fallo mecánico: el ancla se soltó sola, y nadie a bordo advirtió durante horas las vibraciones ni la pérdida de velocidad. Las armadas de la región han aprendido a apreciar la asombrosa torpeza de estas tripulaciones, que suele manifestarse sobre los tramos más sensibles del fondo y en las semanas de mayor tensión diplomática.
 
-El derecho del mar ofrece poco asidero frente a esa torpeza. Fuera de sus aguas territoriales, un Estado ribereño apenas tiene potestad para detener un buque extranjero, y aun cuando logra inspeccionarlo, demostrar la intención exige probar que alguien dio una orden, a bordo o en una oficina lejana, en nombre de una empresa que a menudo no tiene más sede que un apartado de correos. Lo habitual es que el buque quede retenido unas semanas, que los inspectores encuentren deficiencias en el freno del ancla y que el armador pague la multa correspondiente. Las aseguradoras, poco dadas a la alarma, han empezado a encarecer las pólizas de los buques que frecuentan esas rutas.
+El derecho del mar ofrece poco asidero frente a esa torpeza. Fuera de sus aguas territoriales, un Estado ribereño apenas tiene potestad para detener un buque extranjero, y aun cuando logra inspeccionarlo, demostrar la intención exige probar que alguien dio una orden, a bordo o en una oficina lejana, en nombre de una empresa que a menudo no tiene más sede que un apartado de correos. Lo habitual es que el buque quede retenido unas semanas, que los inspectores encuentren deficiencias en el freno del ancla y que el armador pague la multa correspondiente. Bajo el agua, los cables siguen tendidos como nervios al descubierto, a la espera de la próxima tripulación distraída.
 
 **¿Qué sugiere el autor al referirse a la «asombrosa torpeza» de estas tripulaciones?**
 
@@ -832,8 +832,8 @@ Las administraciones replican que el texto oficial no puede renunciar a la preci
 **¿Qué da a entender la autora con el caso de la jefa de servicio que imprime la versión de lectura fácil?**
 
 - **A)** Que las versiones adaptadas se han convertido en una herramienta útil para la formación interna del personal de las administraciones.
-- **B)** Que ni siquiera quienes trabajan con las normas oficiales las entienden sin la ayuda de la versión pensada para otros lectores.
-- **C)** Que algunos mandos de la Administración carecen de la preparación necesaria para entender las normas que redacta su propio departamento.
+- **B)** Que ni siquiera quienes trabajan a diario con las normas oficiales las entienden sin la ayuda de la versión pensada para otros lectores.
+- **C)** Que las normas oficiales les sirven a los juristas, mientras que el resto del personal necesita versiones simplificadas para entenderlas.
 - **D)** Que la versión adaptada está desplazando al texto oficial dentro de la propia Administración, con el riesgo jurídico que eso supone.
 
 ### 55. (Los programas de puntos de las compañías aéreas)
@@ -842,7 +842,7 @@ Las grandes aerolíneas obtienen de sus programas de puntos unos beneficios que,
 
 La comparación con un banco central es frecuente entre los analistas, y no del todo exacta. Un banco central rinde cuentas ante el parlamento, anuncia sus decisiones y procura que el dinero conserve su valor, porque de esa confianza depende que se siga usando. La aerolínea no tiene ninguna de esas ataduras. Puede decidir de un día para otro que el billete que costaba treinta mil puntos cueste cuarenta y cinco mil, reducir los asientos disponibles para canje en las fechas que todo el mundo quiere o fijar una fecha de caducidad para los saldos inactivos. A ningún banco central se le ocurriría borrar los ahorros de quien deja de usar su moneda durante dieciocho meses.
 
-Los titulares de puntos reaccionan como cualquier ahorrador ante una moneda que se deprecia: se apresuran a gastarla. Los foros de viajeros rebosan de consejos para canjear los saldos antes del próximo cambio de tarifas, y la aerolínea consigue de este modo algo que ningún banco central se propone: que sus clientes desconfíen de su moneda y sigan, aun así, acumulándola. Las condiciones del programa se reservan ese poder en letra pequeña, con una sinceridad que pocos gobernadores se permitirían: «La compañía podrá modificar en cualquier momento el valor de los puntos y las condiciones para su obtención y canje».
+Los titulares de puntos reaccionan como cualquier ahorrador ante una moneda que se deprecia: se apresuran a gastarla. Los foros de viajeros rebosan de consejos para canjear los saldos antes del próximo cambio de tarifas, y la aerolínea consigue de este modo algo que ningún banco central se propone: que sus clientes desconfíen de su moneda y sigan, aun así, acumulándola. Las condiciones del programa se reservan en letra pequeña el poder de cambiar las reglas, con una sinceridad que pocos gobernadores se permitirían: «La compañía podrá modificar en cualquier momento el valor de los puntos y las condiciones para su obtención y canje».
 
 **¿Qué insinúa el autor al atribuir a las condiciones del programa «una sinceridad que pocos gobernadores se permitirían»?**
 
@@ -855,7 +855,7 @@ Los titulares de puntos reaccionan como cualquier ahorrador ante una moneda que 
 
 Formar a un piloto de caza cuesta varios millones de euros y lleva cerca de una década, entre la academia, los cursos de vuelo y los años que se tarda en alcanzar la plena calificación operativa. Las compañías aéreas, escasas de pilotos desde hace tiempo, saben que un aviador militar con diez años de servicio es el candidato perfecto: disciplinado, acostumbrado a decidir bajo presión y con más de mil horas de vuelo en condiciones difíciles de reproducir en un simulador. No han pagado un euro de su formación y le ofrecen un sueldo que duplica, o incluso triplica, el que percibe.
 
-La respuesta del Ministerio de Defensa ha sido la previsible. Se han alargado los compromisos de permanencia, de modo que quien desee marcharse antes de tiempo debe indemnizar al Estado, y se han creado complementos para quienes renuncien a hacerlo. Las medidas han frenado algo las bajas. Han tenido también un efecto menos comentado: hay hoy en las bases más pilotos contando los meses que faltan para que venza su compromiso, y no más aviones en condiciones de despegar, porque los recortes en mantenimiento y en repuestos han dejado a varias escuadrillas con la mitad de sus aparatos en tierra.
+La respuesta del Ministerio de Defensa ha sido la previsible. Se han alargado los compromisos de permanencia, de modo que quien desee marcharse antes de tiempo debe indemnizar al Estado, y se han creado complementos para quienes renuncien a marcharse. Las medidas han frenado algo las bajas. Han tenido también un efecto menos comentado: hay hoy en las bases más pilotos contando los meses que faltan para que venza su compromiso, y no más aviones en condiciones de despegar, porque los recortes en mantenimiento y en repuestos han dejado a varias escuadrillas con la mitad de sus aparatos en tierra.
 
 Quienes se han marchado dan razones que no figuran en los cálculos del ministerio. Hablan de meses enteros en el simulador o en tareas de oficina, de misiones canceladas por falta de una pieza y de la calificación que se pierde cuando no se vuela lo suficiente. En la compañía aérea, con todas sus rutinas, volarán hasta novecientas horas al año. Muchos ingresaron en el ejército para volar, y por eso mismo se han ido.
 
@@ -870,14 +870,14 @@ Quienes se han marchado dan razones que no figuran en los cálculos del minister
 
 Las normas internas de muchas organizaciones exigen que una contraseña tenga al menos doce caracteres y contenga una mayúscula, un número y un símbolo; obligan además a cambiarla cada noventa días y prohíben repetir cualquiera de las cinco anteriores. Multiplicadas por la docena de sistemas que maneja a diario un empleado medio, esas reglas suman decenas de claves al año, todas distintas, todas arbitrarias y todas, por orden del mismo reglamento, confiadas en exclusiva a la memoria. Muchos programas traen de fábrica estas exigencias, aunque cualquier administrador puede cambiarlas en unos minutos.
 
-Los empleados han respondido con un ingenio digno de mejor causa. La contraseña típica empieza por mayúscula, termina con un número y un signo de exclamación y lleva en medio una estación del año o el nombre de un hijo; cuando caduca, el invierno da paso a la primavera o el uno se convierte en un dos. Los que no se fían de su memoria recurren a una nota adhesiva pegada bajo el teclado, el primer lugar donde miraría cualquier intruso. Los programas con que los atacantes prueban contraseñas conocen todas estas costumbres y empiezan precisamente por ellas.
+Los empleados han encontrado su propia solución. La contraseña típica empieza por mayúscula, termina con un número y un signo de exclamación y lleva en medio una estación del año o el nombre de un hijo; cuando caduca, el invierno da paso a la primavera o el uno se convierte en un dos. Los que no se fían de su memoria recurren a una nota adhesiva pegada bajo el teclado, el primer lugar donde miraría cualquier intruso. Los programas con que los atacantes prueban contraseñas conocen todas estas costumbres y empiezan precisamente por ellas.
 
 Ante estas prácticas, las organizaciones suelen recurrir a más formación. La plantilla completa cada año un curso en línea sobre los peligros de las contraseñas débiles y aprueba el cuestionario final con notas excelentes. Los cursos, de momento, no han logrado ampliar la memoria humana. Varios organismos de normalización revisaron hace años sus propias recomendaciones, y aconsejan ahora frases largas y fáciles de recordar, que solo se cambien cuando haya indicios de que se han filtrado y que se guarden en un gestor de contraseñas. ¿Cuántas estaciones más tendrán que pasar por las notas adhesivas antes de que los reglamentos internos renuncien a la caducidad de noventa días?
 
-**¿Qué deja ver el autor al observar que los cursos, «de momento», no han logrado ampliar la memoria humana?**
+**¿Qué pone de relieve el autor al precisar que la plantilla aprueba el cuestionario final «con notas excelentes»?**
 
 - **A)** Que los cursos fracasan porque se dirigen a una plantilla poco interesada en la seguridad y reacia a cambiar sus costumbres.
-- **B)** Que habrá que esperar algunos años para comprobar si la formación consigue, por fin, que los empleados memoricen mejor sus claves.
+- **B)** Que los cuestionarios de los cursos son tan sencillos que aprobarlos no demuestra que la plantilla haya aprendido nada.
 - **C)** Que los cursos deberían enseñar técnicas de memorización en lugar de insistir en los riesgos de las contraseñas débiles.
 - **D)** Que la formación no puede corregir unos hábitos que nacen de exigir a la memoria más claves de las que es capaz de retener.
 
@@ -906,8 +906,8 @@ Conviene no despachar ese apego con una sonrisa. Algunos de esos muros tienen va
 
 **¿Qué contrapone el autor al apego por el azud cuando escribe que este ocupa «apenas un párrafo» en la historia del río?**
 
-- **A)** La sensatez técnica de las demoliciones, frente a unos recuerdos que el autor considera pura nostalgia sin fundamento.
-- **B)** El valor ecológico del río, que a juicio del autor debe anteponerse a cualquier consideración histórica o sentimental.
+- **A)** La sensatez técnica de las demoliciones, frente a unos recuerdos que el autor despacha como simple nostalgia.
+- **B)** El valor ecológico del río, que a juicio del autor debe pesar más que las razones históricas o sentimentales.
 - **C)** Una memoria más antigua del propio río, que permite invocar la tradición en favor del cauce libre y no solo del muro.
 - **D)** La escasa antigüedad del muro, demasiado reciente para merecer la protección que reclaman los vecinos del pueblo.
 
@@ -922,6 +922,6 @@ Las empresas han reaccionado instalando cabinas insonorizadas para las videollam
 **¿Qué subraya el autor al comparar las cabinas insonorizadas con el cuarto de estar de los empleados?**
 
 - **A)** Que las compañías se han esforzado por que la oficina resulte tan acogedora como el hogar y atraiga así de nuevo a la plantilla.
-- **B)** Que la solución reproduce dentro de la oficina el aislamiento de casa, en vez de procurar que coincidan quienes trabajan juntos.
+- **B)** Que la solución traslada a la oficina el aislamiento de casa, en vez de procurar que coincidan quienes trabajan juntos.
 - **C)** Que la vuelta obligatoria encubre la desconfianza hacia unos empleados a los que no se puede vigilar desde lejos.
 - **D)** Que los empleados, reacios a volver, se encierran en las cabinas para evitar el trato con los compañeros que encuentran en la planta.

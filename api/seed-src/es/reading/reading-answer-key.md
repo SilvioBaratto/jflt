@@ -562,7 +562,7 @@
   - Correcta: el apoyo es unánime en los discursos, pero casi todos los aspirantes chocan con un vecino que los rechaza; como las negociaciones «todavía no han producido un borrador», ningún gobierno ha tenido que votar un texto concreto, y cada año se repiten «las mismas palabras de aliento».
 - [ ] **C)** Que los cinco miembros permanentes solo aparentan apoyar el cambio, pues ninguno consentiría que otros Estados compartieran su derecho de veto.
   - Conocimiento externo: el texto no presenta el veto como el obstáculo, pues los permanentes aceptan que el Consejo crezca «siempre que los recién llegados no hereden el veto», condición que la mayoría de los aspirantes «ha terminado por admitir».
-- [ ] **D)** Que la coalición de vecinos, con su constancia, ha conseguido mantener viva una reforma que los cinco permanentes preferían olvidar.
+- [ ] **D)** Que la coalición de vecinos, con su constancia, ha conseguido mantener viva una reforma que los cinco permanentes preferirían olvidar.
   - Lectura errónea: toma al pie de la letra la «constancia digna de elogio» de esa coalición, que no sostiene la reforma, sino que exige para ella «el acuerdo de todos los Estados miembros».
 
 ### 52. Key: C
@@ -570,7 +570,7 @@
 - [ ] **A)** Que el mal estado de muchos mercantes con bandera de conveniencia provoca accidentes que una inspección más rigurosa habría evitado.
   - Lectura errónea: toma la «asombrosa torpeza» al pie de la letra, cuando el autor subraya que esos fallos aparecen «sobre los tramos más sensibles del fondo y en las semanas de mayor tensión diplomática».
 - [ ] **B)** Que las armadas ribereñas atribuyen sin pruebas a las tripulaciones extranjeras unos daños que en realidad fueron fortuitos.
-  - Lectura errónea: la ironía no recae sobre las armadas, sino sobre la versión de la tripulación, según la cual «el ancla se soltó sola» y nadie notó nada durante horas; el autor comparte la sospecha que despierta esa coincidencia.
+  - Lectura errónea: la ironía no recae sobre las armadas, sino sobre la versión de la tripulación, según la cual «el ancla se soltó sola» y nadie notó nada durante horas; el autor comparte la sospecha, pues esos fallos se producen «en las semanas de mayor tensión diplomática».
 - [x] **C)** Que esos accidentes encubren actos deliberados, ejecutados de tal modo que la intención de causarlos no llegue a probarse.
   - Correcta: el elogio de la torpeza es irónico, pues los fallos coinciden con los tramos sensibles y los momentos de tensión, y todo el método, del buque viejo al «fallo mecánico», está pensado para que «demostrar la intención» resulte casi imposible.
 - [ ] **D)** Que la responsabilidad recae, sobre todo, en un derecho del mar que deja sin protección los cables tendidos lejos de la costa.
@@ -591,12 +591,12 @@
 
 - [ ] **A)** Que las versiones adaptadas se han convertido en una herramienta útil para la formación interna del personal de las administraciones.
   - Lectura errónea: la anécdota no trata de la formación del personal; se suma al dato de que la versión adaptada es el documento «más descargado de la web municipal» para mostrar que sus lectores no son solo los previstos.
-- [x] **B)** Que ni siquiera quienes trabajan con las normas oficiales las entienden sin la ayuda de la versión pensada para otros lectores.
+- [x] **B)** Que ni siquiera quienes trabajan a diario con las normas oficiales las entienden sin la ayuda de la versión pensada para otros lectores.
   - Correcta: la jefa de servicio necesita la versión adaptada para explicar una norma «redactada en su propio departamento», los validadores hallan ambigüedades que habían pasado «inadvertidas a los juristas», y la autora acaba preguntando para qué lector «se escribió el original».
-- [ ] **C)** Que algunos mandos de la Administración carecen de la preparación necesaria para entender las normas que redacta su propio departamento.
-  - Atribución cambiada: la ironía no recae sobre la funcionaria, que lo cuenta «entre risas», sino sobre unos textos cuyas ambigüedades habían pasado «inadvertidas a los juristas».
+- [ ] **C)** Que las normas oficiales les sirven a los juristas, mientras que el resto del personal necesita versiones simplificadas para entenderlas.
+  - Lectura errónea: la autora no cree que el original sirva siquiera a los juristas, a quienes las ambigüedades halladas por los validadores «habían pasado inadvertidas», y por eso pregunta para qué lector «se escribió el original».
 - [ ] **D)** Que la versión adaptada está desplazando al texto oficial dentro de la propia Administración, con el riesgo jurídico que eso supone.
-  - Atribución cambiada: la preocupación por la precisión jurídica es de las administraciones, que alegan que el texto oficial «no puede renunciar a la precisión jurídica»; la autora la concede, recuerda que la versión adaptada «no sustituye a la norma» y dirige su pregunta final al original.
+  - Atribución cambiada: la preocupación por la precisión jurídica es de las administraciones, que alegan que el texto oficial «no puede renunciar a la precisión jurídica»; la autora admite que el argumento «tiene su peso», recuerda que la versión adaptada «no sustituye a la norma» y dirige su pregunta final al original.
 
 ### 55. Key: A
 
@@ -605,9 +605,9 @@
 - [ ] **B)** Que la aerolínea merece reconocimiento por advertir con claridad a sus clientes de unos riesgos que los bancos centrales prefieren callar.
   - Lectura errónea: toma la «sinceridad» por un elogio; la cláusula anuncia que la compañía podrá cambiar el valor de los puntos «en cualquier momento», un poder que el texto presenta como ausencia de «ataduras», no como transparencia.
 - [ ] **C)** Que los gobernadores de los bancos centrales suelen ocultar a los ciudadanos sus verdaderas intenciones sobre el valor del dinero.
-  - Atribución cambiada: el texto no acusa de nada a los bancos centrales; al contrario, un banco central «rinde cuentas ante el parlamento» y «anuncia sus decisiones».
+  - Lectura errónea: el texto no acusa de nada a los bancos centrales; al contrario, un banco central «rinde cuentas ante el parlamento» y «anuncia sus decisiones».
 - [ ] **D)** Que la cláusula apenas tiene efectos prácticos, porque casi nadie lee la letra pequeña y la compañía rara vez llega a aplicarla.
-  - Lectura errónea: la cláusula se aplica, pues la aerolínea «Puede decidir de un día para otro» encarecer un billete, y los foros aconsejan canjear los saldos «antes del próximo cambio de tarifas».
+  - Lectura errónea: la cláusula se aplica, pues la aerolínea puede decidir «de un día para otro» encarecer un billete, y los foros aconsejan canjear los saldos «antes del próximo cambio de tarifas».
 
 ### 56. Key: C
 
@@ -623,13 +623,13 @@
 ### 57. Key: D
 
 - [ ] **A)** Que los cursos fracasan porque se dirigen a una plantilla poco interesada en la seguridad y reacia a cambiar sus costumbres.
-  - Lectura errónea: la plantilla no es reacia ni desinteresada, pues aprueba el cuestionario «con notas excelentes»; sus hábitos responden a unas reglas que confían decenas de claves «en exclusiva a la memoria».
-- [ ] **B)** Que habrá que esperar algunos años para comprobar si la formación consigue, por fin, que los empleados memoricen mejor sus claves.
-  - Lectura errónea: toma «de momento» al pie de la letra; la memoria no es algo que un curso pueda ampliar, y por eso los organismos de normalización aconsejan ya «frases largas y fáciles de recordar».
+  - Lectura errónea: el texto no atribuye desinterés a la plantilla, que aprueba el cuestionario «con notas excelentes»; sus hábitos responden a unas reglas que confían decenas de claves «en exclusiva a la memoria».
+- [ ] **B)** Que los cuestionarios de los cursos son tan sencillos que aprobarlos no demuestra que la plantilla haya aprendido nada.
+  - Lectura errónea: el autor no discute lo que la plantilla ha aprendido; la frase siguiente sitúa el límite en otra parte, pues los cursos no han logrado «ampliar la memoria humana».
 - [ ] **C)** Que los cursos deberían enseñar técnicas de memorización en lugar de insistir en los riesgos de las contraseñas débiles.
   - No se dice: el texto no propone enseñar a memorizar, sino pedir menos a la memoria, con frases «fáciles de recordar» guardadas «en un gestor de contraseñas».
 - [x] **D)** Que la formación no puede corregir unos hábitos que nacen de exigir a la memoria más claves de las que es capaz de retener.
-  - Correcta: las reglas suman «decenas de claves al año, todas distintas, todas arbitrarias», y ningún curso cambia ese límite; los hábitos que se quieren corregir son la respuesta a esa exigencia, no una falta de formación.
+  - Correcta: la plantilla conoce los peligros, pues aprueba el cuestionario «con notas excelentes», y aun así conserva sus hábitos, porque las reglas suman «decenas de claves al año, todas distintas, todas arbitrarias» y ningún curso ha logrado «ampliar la memoria humana».
 
 ### 58. Key: A
 
@@ -644,9 +644,9 @@
 
 ### 59. Key: C
 
-- [ ] **A)** La sensatez técnica de las demoliciones, frente a unos recuerdos que el autor considera pura nostalgia sin fundamento.
+- [ ] **A)** La sensatez técnica de las demoliciones, frente a unos recuerdos que el autor despacha como simple nostalgia.
   - Lectura errónea: el autor no desprecia ese apego, pues advierte que «Conviene no despachar ese apego con una sonrisa» y admite que «el paisaje de toda la vida forma parte de lo que un pueblo es».
-- [ ] **B)** El valor ecológico del río, que a juicio del autor debe anteponerse a cualquier consideración histórica o sentimental.
+- [ ] **B)** El valor ecológico del río, que a juicio del autor debe pesar más que las razones históricas o sentimentales.
   - Lectura errónea: la historia «bastante más larga» del río no es solo natural; es la que guardan las fotografías en las que «algún vecino reconoce a su bisabuelo pescando truchas».
 - [x] **C)** Una memoria más antigua del propio río, que permite invocar la tradición en favor del cauce libre y no solo del muro.
   - Correcta: frente al muro convertido en «seña de identidad local», el autor recuerda que el río tiene una historia «bastante más larga», y los técnicos la llevan a los pueblos en fotografías donde un vecino reconoce «a su bisabuelo pescando truchas»: la tradición también habla a favor del cauce.
@@ -657,7 +657,7 @@
 
 - [ ] **A)** Que las compañías se han esforzado por que la oficina resulte tan acogedora como el hogar y atraiga así de nuevo a la plantilla.
   - Lectura errónea: toma la comparación por un elogio; las cabinas no hacen la oficina más acogedora, sino que reproducen el aislamiento de casa para hablar con compañeros que están «en sus casas o en otra ciudad».
-- [x] **B)** Que la solución reproduce dentro de la oficina el aislamiento de casa, en vez de procurar que coincidan quienes trabajan juntos.
+- [x] **B)** Que la solución traslada a la oficina el aislamiento de casa, en vez de procurar que coincidan quienes trabajan juntos.
   - Correcta: como cada empleado elige «qué días acude», los miembros de un mismo equipo no coinciden, y las cabinas resuelven sus videollamadas trasladando a la oficina el «cuarto de estar» que dejaron en casa, sin crear ocasiones de encuentro.
 - [ ] **C)** Que la vuelta obligatoria encubre la desconfianza hacia unos empleados a los que no se puede vigilar desde lejos.
   - No se dice: el texto no habla de desconfianza ni de vigilancia; recoge que las empresas invocan «la colaboración espontánea» y la «cultura de empresa».
