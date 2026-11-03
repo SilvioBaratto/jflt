@@ -8,6 +8,7 @@ import {
 import { PrismaService } from '../../prisma/prisma.service';
 import { LanguageSchema, type Language } from '../../common/language';
 import { ClaudeAgentService } from '../../claude/claude-agent.service';
+import { LANGUAGE_PROFILE } from '../../claude/language-profile';
 import { CreateSessionDto, SubmitAnswerDto } from './dto/exam.dto';
 import { capTaskLevel, scoreMcq, scoreWriting, slpProfile, type McqOutcome } from './scoring';
 import { pickWritingTasks, stratifiedSample, weightedSample } from './selection';
@@ -66,7 +67,9 @@ export class ExamService {
     // An empty session is unusable, and a language without seeded content must be visible to the
     // caller instead of surfacing as a blank test.
     if (!items.reading.length && !items.listening.length && !items.writing.length) {
-      throw new UnprocessableEntityException(`no ${language} items available for this request`);
+      throw new UnprocessableEntityException(
+        `no ${LANGUAGE_PROFILE[language].name} items available for this request`,
+      );
     }
 
     const session = await this.prisma.examSession.create({

@@ -246,7 +246,7 @@ describe('ExamService', () => {
       const attempt = service.createSession({ mode: 'exam', language: 'es' });
 
       await expect(attempt).rejects.toBeInstanceOf(UnprocessableEntityException);
-      await expect(attempt).rejects.toThrow('no es items available for this request');
+      await expect(attempt).rejects.toThrow('no Spanish items available for this request');
       expect(mockPrisma.examSession.create).not.toHaveBeenCalled();
     });
 
@@ -344,6 +344,23 @@ describe('ExamService', () => {
           });
         },
       );
+    });
+
+    it('when an en session holds an es reading item, updates the topic stat under the item language, not the session language', async () => {
+      const item = fullBank.reading.find((r) => r.language === 'es')!;
+      storeSession('en', { reading: [item.id] });
+      mockPrisma.answer.findMany.mockResolvedValue([
+        { itemType: 'reading', itemId: item.id, questionIndex: 0, isCorrect: true, score: null, feedback: null },
+      ]);
+
+      await service.completeSession('session-1');
+
+      expect(mockPrisma.topicStat.upsert).toHaveBeenCalledTimes(1);
+      expect(mockPrisma.topicStat.upsert).toHaveBeenCalledWith({
+        where: { language_skill_level_topic: { language: 'es', skill: 'reading', level: 3, topic: item.topic } },
+        create: { language: 'es', skill: 'reading', level: 3, topic: item.topic, seen: 1, correct: 1 },
+        update: { seen: { increment: 1 }, correct: { increment: 1 } },
+      });
     });
 
     it('when the session only has a writing answer, leaves the topic stats untouched', async () => {

@@ -10,9 +10,8 @@ export interface LanguageProfile {
    */
   feedbackLanguage: string;
   /**
-   * Word range requested for a generated listening dialogue. It follows each language's own
-   * item-writing rules (`references/item-writing-rules.md`, `references/es/item-writing-rules.md`),
-   * which size the dialogue differently.
+   * Word range requested for a generated listening dialogue. English keeps the range the prompt
+   * always used; Spanish follows `references/es/item-writing-rules.md`.
    */
   dialogueWords: { min: number; max: number };
 }
