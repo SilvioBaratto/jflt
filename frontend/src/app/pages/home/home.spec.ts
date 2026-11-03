@@ -267,7 +267,15 @@ describe('HomeComponent content language', () => {
   };
   const ES_LISTENING: ContentList<ListeningSummary> = {
     total: 1,
-    items: [{ ...LISTENING.items[0], id: 'l-es-1', topic: 'Reparto de cargas', language: 'es' }],
+    items: [
+      {
+        ...LISTENING.items[0],
+        id: 'l-es-1',
+        topic: 'Reparto de cargas',
+        conversationType: 'entrevista de radio',
+        language: 'es',
+      },
+    ],
   };
   const ES_WRITING: ContentList<WritingSummary> = {
     total: 1,
@@ -399,6 +407,31 @@ describe('HomeComponent content language', () => {
     es.writing.flush(ES_WRITING);
     await settle();
     expect(host.textContent).toContain('Sanciones');
+  });
+
+  it.each<['en' | 'es', string[]]>([
+    ['en', ['Sanctions', 'Deterrence', 'Burden-sharing', 'radio interview', 'Task 10 — Nuclear deterrence']],
+    ['es', ['Sanciones', 'Disuasión', 'Reparto de cargas', 'entrevista de radio', 'Tarea 10 — Disuasión nuclear']],
+  ])('when the %s lists render, only the item texts carry that lang and the English labels stay outside', async (lang, texts) => {
+    language.setLanguage(lang);
+    await open();
+    const r = lists(lang);
+    r.reading.flush(lang === 'es' ? ES_READING : READING);
+    r.listening.flush(lang === 'es' ? ES_LISTENING : LISTENING);
+    r.writing.flush(lang === 'es' ? ES_WRITING : WRITING);
+    await settle();
+
+    const marked = Array.from(host.querySelectorAll('[lang]')).map((n) => [
+      n.getAttribute('lang'),
+      n.textContent,
+    ]);
+    expect(marked).toEqual(texts.map((text) => [lang, text]));
+    // The count, level and length labels are the interface's own English, so no lang element holds them.
+    expect(host.querySelector('.it-body .meta')!.textContent).toBe(`${texts[3]} · 3 questions`);
+    const labels = [...host.querySelectorAll('.n'), ...host.querySelectorAll('.lvl'), ...host.querySelectorAll('.meta')];
+    for (const label of labels) {
+      expect(label.closest('[lang]')).toBeNull();
+    }
   });
 
   it('when the selected language is chosen again, nothing is requested', async () => {

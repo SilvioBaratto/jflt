@@ -134,6 +134,8 @@ describe('SidebarComponent', () => {
         TestBed.resetTestingModule();
         const el = await render(mode);
         expect(el.querySelector('.sidebar-theme-toggle')).toBeNull();
+        // The content language selector is a menu trigger too; it is the only one allowed.
+        expect(el.querySelector('[aria-haspopup="menu"]:not(app-language-selector *)')).toBeNull();
         expect(el.querySelector('mat-selection-list')).toBeNull();
         expect(el.textContent).not.toMatch(/theme|dark/i);
       }

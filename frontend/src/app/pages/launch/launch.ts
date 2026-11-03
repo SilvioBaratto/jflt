@@ -9,6 +9,7 @@ import {
   viewChild,
 } from '@angular/core';
 import { ActivatedRoute, Router, RouterLink } from '@angular/router';
+import { HttpErrorResponse } from '@angular/common/http';
 import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 import { MatButtonModule } from '@angular/material/button';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
@@ -41,6 +42,8 @@ export class LaunchComponent implements OnInit {
   readonly title = signal('Starting');
   readonly label = signal('Starting…');
   readonly failed = signal(false);
+  /** The API refused with 422: the chosen language has no questions, so retrying cannot help. */
+  readonly noQuestions = signal(false);
 
   private data: LaunchData = { mode: 'practice' };
 
@@ -57,6 +60,7 @@ export class LaunchComponent implements OnInit {
   /** Creates the session; a retry moves focus to the heading so the changed state is read from the top. */
   start(moveFocus = true): void {
     this.failed.set(false);
+    this.noQuestions.set(false);
     if (moveFocus) this.heading().nativeElement.focus();
     const body: CreateSessionBody = {
       mode: this.data.mode,
@@ -69,7 +73,8 @@ export class LaunchComponent implements OnInit {
       .pipe(takeUntilDestroyed(this.destroyRef))
       .subscribe({
         next: (s) => this.router.navigate(['/session', s.id], { replaceUrl: true }),
-        error: () => {
+        error: (err: unknown) => {
+          this.noQuestions.set(err instanceof HttpErrorResponse && err.status === 422);
           this.failed.set(true);
           // Focus survives on the h1 so the role=alert text is announced without losing position.
           this.heading().nativeElement.focus();

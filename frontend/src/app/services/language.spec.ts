@@ -33,13 +33,10 @@ describe('LanguageService', () => {
       expect(createService().language()).toBe('es');
     });
 
-    it.each(['fr', '', 'ES'])(
-      'when %j is stored, English is the language',
-      (stored) => {
-        localStorage.setItem(STORAGE_KEY, stored);
-        expect(createService().language()).toBe('en');
-      },
-    );
+    it.each(['fr', '', 'ES'])('when %j is stored, English is the language', (stored) => {
+      localStorage.setItem(STORAGE_KEY, stored);
+      expect(createService().language()).toBe('en');
+    });
   });
 
   describe('setLanguage', () => {

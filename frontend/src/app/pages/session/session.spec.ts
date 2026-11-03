@@ -495,8 +495,8 @@ describe('SessionComponent', () => {
       return c;
     }
 
-    it('shows the level alone in a reading header and the conversation type alone in a listening header', async () => {
-      await open(makeLanguageSession('es'));
+    it.each<Language>(['en', 'es'])('shows the level alone in a reading header and the conversation type alone in a listening header of a %s session', async (language) => {
+      await open(makeLanguageSession(language));
       harness.detectChanges();
 
       const [reading, listening] = cards().map((card) => card.querySelector('.meta')!);
@@ -508,8 +508,8 @@ describe('SessionComponent', () => {
       }
     });
 
-    it('keeps the topic out of the audio name that a screen reader announces', async () => {
-      await open(makeLanguageSession('es'));
+    it.each<Language>(['en', 'es'])('keeps the topic out of the audio name that a screen reader announces in a %s session', async (language) => {
+      await open(makeLanguageSession(language));
       harness.detectChanges();
 
       const label = el().querySelector('audio')!.getAttribute('aria-label')!;

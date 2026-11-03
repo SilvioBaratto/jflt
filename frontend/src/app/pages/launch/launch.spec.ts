@@ -1,3 +1,4 @@
+import { HttpErrorResponse } from '@angular/common/http';
 import { TestBed } from '@angular/core/testing';
 import { ActivatedRoute, Router, provideRouter } from '@angular/router';
 import { Subject, throwError } from 'rxjs';
@@ -91,6 +92,72 @@ describe('LaunchComponent', () => {
     expect(el.querySelector('mat-spinner')).not.toBeNull();
     ok.next({ id: 'z' });
     expect(nav).toHaveBeenCalledWith(['/session', 'z'], { replaceUrl: true });
+  });
+
+  describe('failure kinds', () => {
+    const buttonLabels = (el: HTMLElement): (string | undefined)[] =>
+      Array.from(el.querySelectorAll('button')).map((b) => b.textContent?.trim());
+
+    it('when the API has no questions in the language (422), it says so and offers only the way back', () => {
+      const create = vi
+        .fn()
+        .mockReturnValue(throwError(() => new HttpErrorResponse({ status: 422 })));
+      const { fixture, el } = setup({ mode: 'practice', skill: 'reading' }, create, 'es');
+      fixture.detectChanges();
+
+      expect(el.querySelector('[role="alert"]')?.textContent?.trim()).toBe(
+        'No questions in this language yet',
+      );
+      expect(buttonLabels(el)).not.toContain('Try again');
+      expect(el.querySelector('a[href="/"]')?.textContent?.trim()).toBe('Back to question bank');
+      expect(document.activeElement).toBe(el.querySelector('h1'));
+      expect(create).toHaveBeenCalledTimes(1);
+    });
+
+    it.each([500, 0])(
+      'when the request fails with status %i, it keeps the connection message and Try again',
+      (status) => {
+        const create = vi.fn().mockReturnValue(throwError(() => new HttpErrorResponse({ status })));
+        const { fixture, el } = setup({ mode: 'practice', skill: 'reading' }, create);
+        fixture.detectChanges();
+
+        expect(el.querySelector('[role="alert"]')?.textContent?.trim()).toBe(
+          "Couldn't start the session. Check your connection and try again.",
+        );
+        expect(buttonLabels(el)).toContain('Try again');
+        expect(el.querySelector('a[href="/"]')?.textContent?.trim()).toBe('Back to question bank');
+      },
+    );
+
+    it('when a failure that is not an HTTP response occurs, it keeps the connection message', () => {
+      const create = vi.fn().mockReturnValue(throwError(() => new Error('x')));
+      const { fixture, el } = setup({ mode: 'practice' }, create);
+      fixture.detectChanges();
+
+      expect(el.querySelector('[role="alert"]')?.textContent).toContain(
+        "Couldn't start the session",
+      );
+      expect(buttonLabels(el)).toContain('Try again');
+    });
+
+    it('when Try again follows a connection failure and the retry gets a 422, the retry is replaced by the empty message', () => {
+      const create = vi
+        .fn()
+        .mockReturnValueOnce(throwError(() => new HttpErrorResponse({ status: 500 })))
+        .mockReturnValueOnce(throwError(() => new HttpErrorResponse({ status: 422 })));
+      const { fixture, el } = setup({ mode: 'exam' }, create);
+      fixture.detectChanges();
+      const retry = Array.from(el.querySelectorAll('button')).find(
+        (b) => b.textContent?.trim() === 'Try again',
+      ) as HTMLButtonElement;
+      retry.click();
+      fixture.detectChanges();
+
+      expect(el.querySelector('[role="alert"]')?.textContent?.trim()).toBe(
+        'No questions in this language yet',
+      );
+      expect(buttonLabels(el)).not.toContain('Try again');
+    });
   });
 
   describe('content language', () => {

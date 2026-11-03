@@ -26,7 +26,7 @@
               @if (d.items.length) {
                 <ul class="items" role="list">
                   @for (it of d.items; track it.id) {
-                    <li><span class="lvl"><span aria-hidden="true">L{{ it.level }}</span><span class="cdk-visually-hidden">Level {{ it.level }}</span></span><span class="topic">{{ it.topic }}</span></li>
+                    <li><span class="lvl"><span aria-hidden="true">L{{ it.level }}</span><span class="cdk-visually-hidden">Level {{ it.level }}</span></span><span class="topic" [attr.lang]="it.language">{{ it.topic }}</span></li>
                   }
                 </ul>
               } @else {
@@ -62,8 +62,8 @@
                     <li>
                       <span class="lvl"><span aria-hidden="true">L{{ it.level }}</span><span class="cdk-visually-hidden">Level {{ it.level }}</span></span>
                       <span class="it-body">
-                        <span class="topic">{{ it.topic }}</span>
-                        <span class="meta">{{ it.conversationType }} · {{ it.questionCount | i18nPlural: questionsPlural }}</span>
+                        <span class="topic" [attr.lang]="it.language">{{ it.topic }}</span>
+                        <span class="meta"><span [attr.lang]="it.language">{{ it.conversationType }}</span> · {{ it.questionCount | i18nPlural: questionsPlural }}</span>
                       </span>
                     </li>
                   }
@@ -101,7 +101,7 @@
                     <li>
                       <span class="lvl"><span aria-hidden="true">L{{ it.stanagLevel }}</span><span class="cdk-visually-hidden">Level {{ it.stanagLevel }}</span></span>
                       <span class="it-body">
-                        <span class="topic">{{ it.title }}</span>
+                        <span class="topic" [attr.lang]="it.language">{{ it.title }}</span>
                         <span class="meta">{{ it.wordCountMin }}–{{ it.wordCountMax }} words</span>
                       </span>
                     </li>

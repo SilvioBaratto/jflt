@@ -1,6 +1,11 @@
 <div class="launch">
   <h1 #heading tabindex="-1">{{ title() }}</h1>
-  @if (failed()) {
+  @if (noQuestions()) {
+    <p class="error" role="alert">No questions in this language yet</p>
+    <div class="actions">
+      <a matButton="filled" routerLink="/">Back to question bank</a>
+    </div>
+  } @else if (failed()) {
     <p class="error" role="alert">Couldn't start the session. Check your connection and try again.</p>
     <div class="actions">
       <button matButton="filled" type="button" (click)="start()">Try again</button>

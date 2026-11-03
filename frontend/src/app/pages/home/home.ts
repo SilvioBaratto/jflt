@@ -83,7 +83,8 @@ export class HomeComponent {
     // A response for the previous language must not land over the new one, so a reload cancels
     // the request still in flight for the same section.
     this.inFlight.get(key)?.unsubscribe();
-    // The old items belong to the previous language; showing them under the spinner would mislabel them.
+    // Clearing the data also hides the previous language's total in the section heading, which would
+    // otherwise label the new list while it loads.
     data.set(null);
     state.set('loading');
     this.inFlight.set(

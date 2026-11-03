@@ -75,7 +75,7 @@ describe('Theme menu (integration)', () => {
       expect(
         el.querySelectorAll(
           'mat-selection-list, mat-button-toggle, mat-slide-toggle, [role="menuitemradio"], ' +
-            '[role="radio"], [role="switch"]',
+            '[role="radio"], [role="switch"], [aria-haspopup="menu"]:not(app-language-selector *)',
         ).length,
       ).toBe(0);
       // Destinations stay; what must not come back is any control named for a scheme.
