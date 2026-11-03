@@ -72,7 +72,7 @@ El problema es que ese enfoque deja en penumbra a una población mucho más nume
 
 Retener exige un tipo de política menos vistosa. Mantener abierta una escuela con pocos alumnos, garantizar la presencia de un médico varios días por semana o asegurar un transporte público mínimo son gastos recurrentes que difícilmente se inauguran con una foto. Por eso tienden a perder la competencia presupuestaria frente a programas que prometen resultados rápidos y fáciles de comunicar.
 
-Atraer nuevos habitantes sigue siendo útil, pero conviene admitir que la población se pierde por la puerta de salida. Sin políticas que la cierren, cada nuevo vecino servirá sobre todo para disimular cuántos se marchan.
+Atraer nuevos habitantes sigue siendo útil, pero conviene admitir que la población se pierde por la puerta de salida. Con esa puerta abierta, cada nuevo vecino sirve sobre todo para disimular cuántos se marchan.
 
 **¿Qué significa en este contexto la expresión «menos vistosa» referida a la política de retener población?**
 

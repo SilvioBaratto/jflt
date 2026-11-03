@@ -153,8 +153,9 @@ Steps 2–5 are independent once step 1 is accepted, so batches can run in paral
 - No file outside `api/references/es/`, `api/seed-src/es/` (including its `tools/`) and
   `docs/superpowers/` is changed, and `prisma/seed-data.json` and `api/static/` are untouched.
 
-At hand-over two items stay open: the requester's spot-listen of `listening-01`, `-06` and `-12`, and
-the question of whether the reverse-test bar should be relaxed (see Amendments and Known limitations).
+At hand-over three items stay open: the requester's spot-listen of `listening-01`, `-06` and `-12`,
+the re-render of `listening-09` after the journalist's name change, and the question of whether the
+reverse-test bar should be relaxed (see Amendments and Known limitations).
 
 ## Amendments (2026-11-02, during planning)
 
@@ -191,7 +192,7 @@ Found while reading the parsers and the English files for the plan:
 
 ## Amendments (implementation)
 
-Changes made while the content was written and reviewed, in the order they happened. The git-ignored
+Changes made while the content was written and reviewed. The git-ignored
 SDD ledger records each gate result and ruling.
 
 - **Neutral headings.** The reading heading and the listening card (`<conversation type> · <topic>`)
@@ -223,8 +224,8 @@ SDD ledger records each gate result and ruling.
   given to the writer carried aims that differed from the spec's; the bands are binding.
 - **Writing Tasks 3 and 5 replaced.** The whole-branch review found that Task 3 repeats the argument of
   Reading 1 (EU training missions in the Sahel) and Task 5 the Air Force retention case of Reading 56.
-  Both tasks are rewritten in a separate writer task with its own gates; this bullet is completed with
-  the writer's report and the commits once that task lands.
+  Both tasks were rewritten in a separate writer task (commit `b43794b`), then checked by a
+  language/facts review and an independent blind rater (results in the ledger).
 
 **Blind-solve log.** Every solve of every batch matched all its keys, and the last solve of each batch
 found no second defensible option (earlier rounds flagged second-key candidates, for example R14 and
@@ -234,7 +235,7 @@ solver's label is liberal and the prompt was tightened between rounds.
 
 | Batch | Solves (keys matched) | Reverse test, form-driven at medium+ |
 |---|---|---|
-| Reading B1 (1–10) | 10/10 in each of four solves | no count recorded; last solve 10/10 at medium or low confidence, mostly by knowledge; round-3 cap applied |
+| Reading B1 (1–10) | 10/10 in each of four solves | metric not yet defined; solve 2 flagged 5 keys guessable from option shape (R1, R3, R7, R9, R10); solve 3 reached 6 keys (R2, R3, R4, R5, R7, R10) plus 3 partly; solve 4 reached 10/10 at medium or low confidence (high only R6), mostly by knowledge; round-3 cap applied |
 | Reading B2 (11–20) | 10/10, 10/10 | 4 (R14, R15, R19, R20), then 2 (R15, R20) |
 | Reading B3 (21–30) | 10/10, 10/10 | 2 (R26, R30), then 0; re-reviewer 2 (R25, R30) |
 | Reading B4 (31–40) | 10/10, 10/10 | 3 (R33, R37, R40), then 7 with a stricter prompt; low to medium after round 2 |
@@ -278,5 +279,7 @@ solver's label is liberal and the prompt was tightened between rounds.
 11. **Toolkit.** Its tests are not in CI, need `ffprobe`, use the English files as fixtures, and
     `builder.py` locates the repo by `parents[4]`.
 12. **Process.** Gate results and rulings are in the git-ignored SDD ledger. Commit trailers do not
-    record the authoring model (drafts by Opus-class models carry the Sonnet trailer by instruction).
+    reliably record the authoring model: most drafts by Opus-class models carry the Sonnet trailer by
+    instruction, while eight commits (among them `fd142f8`, `18fe79f`, `9148056`, `40ad0e5`) carry an
+    Opus trailer.
     The branch base `0dc2c02` is six commits past the Mac copy's `63b64bd`.

@@ -317,7 +317,7 @@
 - [ ] **B)** Señala el origen de la mayoría de los incendios actuales, que se deben todavía a las quemas agrícolas y ganaderas tradicionales de las zonas rurales del interior.
   - Lectura errónea: según el texto, «El abandono rural acabó con casi todas esas prácticas», que se citan por la vegetación que retiraban del monte, no como causa de los incendios actuales.
 - [ ] **C)** Ilustra que el fuego forma parte del ciclo natural del monte, por lo que el texto considera un error destinar tantos medios a sofocar cada incendio.
-  - Lectura errónea: el texto reconoce que los pequeños fuegos «limpiaban el terreno», pero no tacha de error la extinción; recoge propuestas para gestionar el combustible y advierte de que, «Sin ellas», seguirá acumulándose.
+  - Lectura errónea: el texto reconoce que los pequeños fuegos «limpiaban el terreno», pero no tacha de error la extinción; recoge propuestas para gestionar el combustible y advierte de que, sin ellas, cada verano extremo encontrará «más combustible que el anterior».
 - [x] **D)** Explica por qué el monte ya no se despeja como antes, lo que ayuda a entender que extinguir más rápido no haya frenado los grandes incendios.
   - Correcta: esas prácticas consumían la vegetación, y su desaparición, unida a una extinción más rápida, explica que la biomasa se acumule «sin que nada la retire» y que los grandes incendios sean más violentos.
 

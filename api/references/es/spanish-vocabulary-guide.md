@@ -697,10 +697,12 @@ spagnoli sono stati verificati sul Wikcionario e sulle fonti normative e istituz
 - *Legge 5 agosto 2022, n. 119*, art. 7 (modifiche al Codice dell'ordinamento militare), Gazzetta
   Ufficiale n. 189 del 13 agosto 2022 —
   https://concorsi.difesa.it/interforze/VSP704_1bis/2017/Documents/Legge119_2022.pdf — nomi attuali
-  dei gradi dell'Esercito (graduato, graduato scelto, graduato capo, primo graduato, graduato aiutante,
-  al posto di caporal maggiore scelto, capo e capo scelto). Non esiste una tabella ufficiale di
-  equivalenza spagnolo-italiana per i gradi della tropa y marinería: le righe con ≈ sono equivalenze
-  di posizione, non ufficiali.
+  dei gradi dell'Esercito (graduato, graduato scelto, graduato capo, primo graduato e graduato aiutante,
+  al posto di primo caporal maggiore, caporal maggiore scelto, caporal maggiore capo, caporal maggiore
+  capo scelto e relativa qualifica speciale). Non esiste una tabella ufficiale bilaterale di
+  equivalenza spagnolo-italiana per i gradi della tropa y marinería (la STANAG 2116 assegna solo
+  codici NATO OR, ciascuno comune a più gradi): le righe con ≈ sono equivalenze di posizione, non
+  ufficiali.
 - *Real Decreto 194/2010, de 26 de febrero, Normas sobre seguridad en las Fuerzas Armadas*, art. 25 —
   https://www.boe.es/buscar/act.php?id=BOE-A-2010-4219 — il centinela «informará de las novedades».
 - La Moncloa, «Administración periférica del Estado» —
