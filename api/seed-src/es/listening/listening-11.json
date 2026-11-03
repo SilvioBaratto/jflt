@@ -72,7 +72,7 @@
       "options": {
         "A": "En unos presupuestos con precios desfasados, que tras la firma del contrato ya casi no pueden variar.",
         "B": "En la preferencia de las constructoras por la vivienda privada, que hoy les ofrece más margen y menos trámites.",
-        "C": "En la escasez de mano de obra cualificada, que impide a las empresas comprometerse con plazos largos.",
+        "C": "En una subida del hormigón y del acero que ha golpeado a esta comunidad más que al resto del país.",
         "D": "En unos presupuestos que la consejería recortó para ahorrar, y que ya no cubren lo que cuesta construir."
       },
       "answer": "A",
@@ -80,7 +80,7 @@
       "option_rationales": {
         "A": "Correcta: los precios de base se actualizan «cada cuatro o cinco años» y el contrato «apenas se mueve», de modo que quien se presente «pierde dinero desde el primer día».",
         "B": "Atribución cambiada: la vivienda privada es la explicación que trae la periodista; el consejero la reduce a «una parte, pero la menor».",
-        "C": "Conocimiento externo: la falta de mano de obra es un problema real del sector, pero el consejero no la menciona; habla de «una base de precios» que se actualiza tarde.",
+        "C": "No se dice: el consejero pone el hormigón y el acero como ejemplos de lo que se encarece, pero no compara la comunidad con otras; el problema es «una base de precios que actualizamos cada cuatro o cinco años».",
         "D": "No se dice: el consejero no habla de recortes; los precios se quedan atrás porque la base se actualiza «cada cuatro o cinco años»."
       }
     },
@@ -91,7 +91,7 @@
         "A": "En que la consejería podrá apartar del concurso las ofertas anormalmente bajas antes de adjudicar el contrato de obra.",
         "B": "En que la corrección sigue la subida de los materiales en el mercado, y no el descuento con que cada empresa ganó.",
         "C": "En que la fórmula se aplicará a las obras de larga duración, y no alcanzará a las de pocos meses.",
-        "D": "En que las empresas tendrán que justificar con sus propias facturas cada aumento de coste que reclamen a la consejería."
+        "D": "En que el ajuste se repartirá a partes iguales entre la consejería y la empresa adjudicataria."
       },
       "answer": "B",
       "rationale": "El consejero explica que la fórmula «no mira las facturas de la empresa», sino los índices oficiales, y que lo rebajado para quedarse con el contrato «no se lo devuelve ningún índice»: se compensa la subida del mercado, no la oferta a la baja.",
@@ -99,25 +99,25 @@
         "A": "Conocimiento externo: la ley permite excluir ofertas anormalmente bajas, pero el consejero no recurre a ese argumento; dice que lo rebajado «no se lo devuelve ningún índice».",
         "B": "Correcta: si el acero sube, se corrige «la parte del precio que corresponde al acero, sea cual sea la empresa», mientras que lo que una empresa «rebajó por su cuenta» no lo compensa la fórmula.",
         "C": "Cierta pero no responde: la fórmula irá en «los contratos de larga duración», pero eso no explica por qué no favorece a quien oferta a la baja.",
-        "D": "Lectura errónea: el consejero dice que la fórmula «no mira las facturas de la empresa», sino los índices oficiales."
+        "D": "No se dice: el consejero no habla de repartir el ajuste; explica que la fórmula «no mira las facturas de la empresa» y que lo rebajado «no se lo devuelve ningún índice»."
       }
     },
     {
       "id": 3,
-      "question": "¿Qué papel cumple el ejemplo de las aulas prefabricadas en la respuesta del consejero?",
+      "question": "¿Qué contesta en el fondo el consejero a la pregunta de si la comunidad podrá pagar obras más caras?",
       "options": {
-        "A": "Justificar que los próximos concursos den prioridad a los centros educativos frente a los tramos de carretera.",
-        "B": "Admitir que las obras costarán más, y que para pagarlas habrá que aplazar las que sean menos urgentes.",
-        "C": "Mostrar que una obra que se queda sin adjudicar tiene su propio coste, que puede superar al de pagarla más cara.",
-        "D": "Demostrar que las soluciones provisionales resultan más baratas mientras se prepara y se convoca un nuevo concurso."
+        "A": "Que esa decisión no le corresponde a él, sino a la consejería de hacienda cuando prepare el presupuesto.",
+        "B": "Que la comunidad pagará más, y que para hacerlo tendrá que aplazar las obras que sean menos urgentes.",
+        "C": "Que la comunidad ya está pagando ese sobrecoste, aunque en gastos que no dejan ninguna obra hecha.",
+        "D": "Que la comunidad no puede asumir sola el aumento y deberá pedir ayuda al Gobierno central."
       },
       "answer": "C",
-      "rationale": "Ante la pregunta de si la comunidad podrá pagar obras más caras, el consejero recuerda que el alquiler de las aulas «ya ha costado más de lo que habría hecho falta añadir al presupuesto»: dejar la obra sin adjudicar no ahorró, encareció.",
+      "rationale": "Preguntado si la comunidad podrá asumir obras más caras, el consejero no da cifras: recuerda que el alquiler de las aulas «ya ha costado más de lo que habría hecho falta añadir al presupuesto» y que se pagaron «dos concursos que no sirvieron para nada».",
       "option_rationales": {
-        "A": "No se dice: el consejero no establece prioridades entre obras; usa el instituto para responder a si las obras más caras se pueden pagar, con el alquiler que «ya ha costado más».",
+        "A": "No se dice: el consejero no remite a otra consejería; contesta con el ejemplo del instituto, cuyo alquiler «ya ha costado más» de lo que habría costado subir el presupuesto.",
         "B": "No se dice: el consejero no anuncia aplazamientos; sostiene que el retraso ya ha costado más de lo que habría hecho falta «añadir al presupuesto».",
-        "C": "Correcta: si el alquiler «ya ha costado más de lo que habría hecho falta añadir al presupuesto», no adjudicar la obra no ahorró dinero: la aplazó y la encareció.",
-        "D": "Relación invertida: según el consejero, el alquiler de las aulas «ya ha costado más» que el aumento que habría atraído a alguna empresa."
+        "C": "Correcta: el alquiler de las aulas «ya ha costado más de lo que habría hecho falta añadir al presupuesto», y a eso se suman «dos concursos que no sirvieron para nada»: el sobrecoste ya se paga, sin obra a cambio.",
+        "D": "No se dice: el consejero no pide ayuda a otras administraciones; su respuesta es que la comunidad ya paga más con el alquiler de las aulas, que «ya ha costado más»."
       }
     }
   ]

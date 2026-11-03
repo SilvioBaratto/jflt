@@ -30,7 +30,7 @@
   "lines": [
     {
       "speaker": "PRESENTADOR",
-      "text": "Esta semana nos ha escrito un oyente de una comarca de secano. En su pueblo se van a cubrir de paneles solares varios cientos de hectáreas de cereal, y nos pregunta si no estaremos cambiando comida por electricidad. Lo comentamos con Irene Campos, investigadora en desarrollo rural, y con Daniel Ortega, periodista especializado en energía. Irene, ¿hace bien en preocuparse nuestro oyente?"
+      "text": "Esta semana nos ha escrito un oyente de una comarca de secano. En su pueblo se van a cubrir de paneles solares varios cientos de hectáreas de cereal, y nos pregunta si no estaremos cambiando comida por electricidad. Están con nosotros Irene Campos, investigadora en desarrollo rural, y Daniel Ortega, periodista especializado en energía. Irene, ¿hace bien en preocuparse nuestro oyente?"
     },
     {
       "speaker": "INVESTIGADORA",
@@ -50,15 +50,15 @@
     },
     {
       "speaker": "PERIODISTA",
-      "text": "Y en varias he visto ovejas, no lo niego. Lo curioso es que el rebaño suele aparecer en el proyecto justo cuando toca presentarlo en el ayuntamiento o explicárselo a los vecinos. Un proyecto con un pastor se defiende mucho mejor en un pleno municipal que uno con vallas y cámaras de seguridad."
+      "text": "Y en varias he visto ovejas, no lo niego. Ahora bien, el rebaño suele aparecer en el proyecto justo cuando toca presentarlo en el ayuntamiento o explicárselo a los vecinos. Un proyecto con un pastor se defiende mucho mejor en un pleno municipal que uno con vallas y cámaras de seguridad."
     },
     {
       "speaker": "INVESTIGADORA",
-      "text": "Yo no sería tan desconfiada. Conozco plantas donde el pastoreo funciona de verdad: el ganadero encuentra pasto fresco en pleno verano y la empresa se ahorra desbrozar. Lo que pediría es otra cosa. Que ese uso figure en el contrato con obligaciones concretas. Y que alguien lo compruebe pasados unos años, no solo el día de la inauguración."
+      "text": "Yo no sería tan desconfiada. Conozco plantas donde el pastoreo funciona de verdad: el ganadero encuentra pasto fresco en pleno verano y la empresa se ahorra desbrozar. Eso sí, ese uso tendría que figurar en el contrato con obligaciones concretas, y alguien debería comprobarlo pasados unos años, no solo el día de la inauguración."
     },
     {
       "speaker": "PRESENTADOR",
-      "text": "Ovejas con contrato. Lo dejamos aquí por hoy. Gracias a los dos, y gracias a nuestro oyente por la pregunta."
+      "text": "Ovejas con contrato. Lo dejamos aquí por hoy, con nuestro agradecimiento a Irene, a Daniel y al oyente que nos hizo la pregunta."
     }
   ],
   "questions": [
@@ -74,7 +74,7 @@
       "answer": "B",
       "rationale": "La investigadora descarta que la comida corra peligro, porque las plantas ocuparían «una porción muy pequeña de la tierra cultivada del país»; lo que cambia es «quién gana y quién pierde dentro del pueblo»: el dueño cobra y el agricultor arrendatario «se queda sin tierra».",
       "option_rationales": {
-        "A": "Lectura errónea: la investigadora dice lo contrario: la empresa ofrece al dueño «varias veces lo que le daba el cereal»; quien pierde es el agricultor que tenía la finca arrendada.",
+        "A": "Lectura errónea: según la investigadora, la empresa ofrece al dueño «varias veces lo que le daba el cereal»; quien pierde es el agricultor que tenía la finca arrendada.",
         "B": "Correcta: la comida no corre peligro, pero sí el reparto: el dueño cobra «varias veces lo que le daba el cereal» y el agricultor que la tenía arrendada «se queda sin tierra».",
         "C": "No se dice: la investigadora coincide en que la comida no peligra, pero no habla del turismo; lo que cambia, según ella, es «quién gana y quién pierde dentro del pueblo».",
         "D": "Conocimiento externo: el estado del suelo tras retirar los paneles es una inquietud real, pero la investigadora no la menciona; lo que cambia, según ella, es «quién gana y quién pierde dentro del pueblo»."
@@ -85,15 +85,15 @@
       "question": "¿Qué actitud muestra el periodista hacia los mapas de las zonas más adecuadas para las plantas solares?",
       "options": {
         "A": "Confianza, porque cree que con el tiempo desviarán las inversiones hacia los terrenos de menor valor agrícola.",
-        "B": "Recelo, porque cree que se dibujan sin tener en cuenta las comarcas que reciben más horas de sol al año.",
+        "B": "Recelo, porque cree que se trazaron pensando en el paisaje y no en los lugares donde más energía se produce.",
         "C": "Aprobación, aunque lamenta que lleguen tarde, cuando las empresas ya se han asegurado las mejores fincas.",
-        "D": "Escepticismo, porque la ubicación la decide el acceso a la red eléctrica, y no la idoneidad del terreno elegido."
+        "D": "Escepticismo, porque la ubicación la decide el acceso a la red eléctrica, y no las condiciones del terreno."
       },
       "answer": "D",
       "rationale": "El periodista explica que un promotor «no empieza mirando el suelo, sino el enchufe» y que los puntos con capacidad libre «escasean»; de ahí la ironía de que los mapas sean útiles «para saber dónde no se va a construir ninguna».",
       "option_rationales": {
         "A": "Lectura errónea: el periodista no espera que los mapas orienten la inversión; un promotor «no empieza mirando el suelo, sino el enchufe».",
-        "B": "Conocimiento externo: la radiación solar pesa en la elección de un emplazamiento, pero el periodista no la menciona; lo que manda, según él, es la cercanía a «un punto de la red eléctrica con capacidad libre».",
+        "B": "Conocimiento externo: estos mapas suelen trazarse con criterios ambientales, pero el periodista no se lo reprocha; lo que manda, según él, es la cercanía a «un punto de la red eléctrica con capacidad libre».",
         "C": "Lectura errónea: «muy útiles» es una ironía, porque añade que sirven «para saber dónde no se va a construir ninguna»; no habla de que lleguen tarde.",
         "D": "Correcta: si un promotor mira primero «el enchufe» y esos puntos «escasean», las plantas no irán a las zonas del mapa, que solo sirven «para saber dónde no se va a construir ninguna»."
       }

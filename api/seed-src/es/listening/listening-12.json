@@ -30,7 +30,7 @@
   "lines": [
     {
       "speaker": "CONCEJAL",
-      "text": "Este año los talleres y las excursiones para mayores han llenado todas las plazas. En la partida contra la soledad no deseada tenemos margen para duplicarlos. Esa es la propuesta que quiero llevar, como concejal de servicios sociales, a la junta de gobierno. Antes quiero oír al servicio de estadística y a la coordinadora de los trabajadores sociales. Usted, desde estadística, ha cruzado los datos del padrón. ¿Qué ha salido?"
+      "text": "Este año los talleres y las excursiones para mayores han llenado todas las plazas, y en la partida de mi concejalía contra la soledad no deseada hay margen para duplicarlos. Es lo que pienso proponer en la junta de gobierno, pero me interesa la opinión del servicio de estadística y de la coordinadora de los trabajadores sociales. Empecemos por los datos del padrón. ¿Qué ha salido al cruzarlos?"
     },
     {
       "speaker": "TECNICO",
@@ -50,11 +50,11 @@
     },
     {
       "speaker": "CONCEJAL",
-      "text": "La entiendo. Pero piense en cómo se ve esto desde fuera. Un taller lleno sale en la revista municipal, y la gente lo comenta en el mercado. A una trabajadora social subiendo cuatro pisos no la ve nadie."
+      "text": "La entiendo. Pero tenga en cuenta cómo se ve esto desde fuera. Un taller lleno sale en la revista municipal, y la gente lo comenta en el mercado. A una trabajadora social subiendo cuatro pisos no la ve nadie."
     },
     {
       "speaker": "COORDINADORA",
-      "text": "Tampoco ve nadie a la mujer que lleva un mes sin hablar con otra persona, y es a esa a quien tenemos que encontrar. Le propongo otra vía. Que nos avisen quienes tratan a diario con esas personas: la farmacia, el cartero, la panadería de la esquina. Son los primeros en notar que alguien ha dejado de bajar."
+      "text": "Tampoco ve nadie a la mujer que lleva un mes sin hablar con otra persona, y es a esa a quien tenemos que encontrar. Hay otra vía. Quienes tratan a diario con esas personas pueden avisarnos: la farmacia, el cartero, la panadería de la esquina. Son los primeros en notar que alguien ha dejado de bajar."
     },
     {
       "speaker": "TECNICO",
@@ -62,7 +62,7 @@
     },
     {
       "speaker": "CONCEJAL",
-      "text": "De acuerdo. Los talleres se quedan como están, y el dinero previsto para duplicarlos lo dedicamos a probar esa red de avisos en los dos barrios antiguos. Antes del verano quiero un solo número: cuántas personas hemos encontrado que no figuraban en ninguna de nuestras listas."
+      "text": "De acuerdo. Los talleres se quedan como están, y el dinero previsto para duplicarlos lo dedicamos a probar esa red de avisos en los dos barrios antiguos. Antes del verano quiero un solo número: cuántas personas hemos encontrado que no figuraban en ningún expediente de servicios sociales."
     }
   ],
   "questions": [
@@ -72,16 +72,16 @@
       "options": {
         "A": "Que los mayores más aislados no acuden porque los talleres se imparten lejos de los barrios antiguos.",
         "B": "Que las plazas de los talleres se reparten mal, porque las acaparan vecinos de otros barrios del municipio.",
-        "C": "Que la oferta de talleres se ha quedado corta, porque cada año crece el número de mayores que viven solos.",
-        "D": "Que ampliar los talleres apenas alcanzaría a los mayores más aislados, que son justo los que no acuden."
+        "C": "Que duplicar las plazas no bastaría, porque ya hay más mayores esperando una plaza libre.",
+        "D": "Que duplicar los talleres favorecería a quienes todavía se valen por sí mismos para salir de casa."
       },
       "answer": "D",
       "rationale": "Frente a las «tres mil personas» que viven solas, las coincidencias con los talleres «no llegan a ciento cincuenta», y la coordinadora ve en ellos «casi siempre las mismas» caras; a la señora sin ascensor no la verá «por muchas plazas que abramos».",
       "option_rationales": {
         "A": "No se dice: la coordinadora no habla de la distancia; lo que retiene en casa a la señora es vivir en un «cuarto piso sin ascensor».",
         "B": "No se dice: la coordinadora ve «casi siempre las mismas» caras, pero no dice que vengan de otros barrios; lo que señala es quién no acude.",
-        "C": "Lectura errónea: la coordinadora no pide más plazas; cree que no llegará a quien le preocupa «por muchas plazas que abramos».",
-        "D": "Correcta: los talleres apenas recogen a esos mayores («no llegan a ciento cincuenta»), y la coordinadora no espera ver a la señora del cuarto piso «por muchas plazas que abramos»."
+        "C": "No se dice: la coordinadora no habla de listas de espera; lo que señala es que a la señora del cuarto piso no la verá «por muchas plazas que abramos».",
+        "D": "Correcta: los talleres apenas recogen a quienes viven solos («no llegan a ciento cincuenta») y se llenan con «Gente que baja a la calle por su propio pie»; a la señora del cuarto piso no la verá «por muchas plazas que abramos»."
       }
     },
     {
@@ -90,15 +90,15 @@
       "options": {
         "A": "Que contiene errores, porque muchas personas siguen empadronadas en domicilios donde ya no residen.",
         "B": "Que las personas más aisladas no suelen abrir la puerta a desconocidos, por mucho que se las visite.",
-        "C": "Que reúne a quienes viven sin compañía, entre los que hay muchas personas que no se sienten aisladas.",
+        "C": "Que su pequeño equipo pasaría meses visitando a gente acompañada antes de dar con quien está aislado.",
         "D": "Que deja fuera a los mayores de menos de ochenta años, que también pueden sufrir aislamiento en sus casas."
       },
       "answer": "C",
-      "rationale": "La coordinadora objeta que la lista dice «quién vive solo, que no es lo mismo que quién está solo»: muchos tienen «una hija que pasa cada tarde», y visitarlos a todos retrasaría la llegada a quien «de verdad nos necesita».",
+      "rationale": "La coordinadora objeta que la lista dice «quién vive solo, que no es lo mismo que quién está solo», que con «ocho trabajadoras sociales» recorrerla llevaría «más de un año» y que llegarían a quien «de verdad nos necesita» después de visitar a «cientos de personas que están perfectamente».",
       "option_rationales": {
         "A": "Conocimiento externo: un padrón desactualizado es un problema real, pero la coordinadora no lo plantea; su objeción es que la lista dice «quién vive solo».",
         "B": "No se dice: la coordinadora no duda de que esas personas abran la puerta; su objeción es que muchas de ellas «están perfectamente».",
-        "C": "Correcta: la lista recoge a quien vive solo, «que no es lo mismo que quién está solo»; muchos tienen «una hija que pasa cada tarde» o una vecina.",
+        "C": "Correcta: con «ocho trabajadoras sociales», llamar a todas las puertas llevaría «más de un año», y buena parte de ese tiempo se iría en personas que viven solas pero «están perfectamente».",
         "D": "No se dice: la coordinadora no discute el límite de edad del cruce; le preocupa que muchas de esas personas «están perfectamente»."
       }
     },
@@ -112,11 +112,11 @@
         "D": "Que considera la red de avisos un remedio provisional hasta poder visitar uno a uno a los mayores."
       },
       "answer": "B",
-      "rationale": "Al principio, el concejal quería duplicar los talleres porque «han llenado todas las plazas»; al final pide saber «cuántas personas hemos encontrado que no figuraban en ninguna de nuestras listas»: ha cambiado el criterio con el que juzga el programa.",
+      "rationale": "Al principio, el concejal quería duplicar los talleres porque «han llenado todas las plazas»; al final pide saber «cuántas personas hemos encontrado que no figuraban en ningún expediente de servicios sociales»: ha cambiado el criterio con el que juzga el programa.",
       "option_rationales": {
         "A": "Lectura errónea: la red de avisos irá a «los dos barrios antiguos», pero el concejal no habla de la asistencia a los talleres en ellos; pide un número de personas encontradas.",
-        "B": "Correcta: frente a las plazas que «han llenado» los talleres, ahora pide contar las personas «que no figuraban en ninguna de nuestras listas».",
-        "C": "Lectura errónea: el concejal no pide contar avisos, sino personas encontradas «que no figuraban en ninguna de nuestras listas».",
+        "B": "Correcta: frente a las plazas que «han llenado» los talleres, ahora pide contar las personas «que no figuraban en ningún expediente».",
+        "C": "Lectura errónea: el concejal no pide contar avisos, sino personas encontradas «que no figuraban en ningún expediente».",
         "D": "No se dice: el concejal no presenta la red de avisos como algo provisional ni vuelve a la idea del técnico de visitar a esas personas «una a una»."
       }
     }
