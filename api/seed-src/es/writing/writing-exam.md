@@ -157,14 +157,14 @@ Redacte la carta con la que responde a la presidenta de la Comisión. Su carta d
 
 En la Unión Europea, las decisiones de política exterior y de seguridad común se adoptan, salvo contadas excepciones, por unanimidad: basta la oposición de un solo Estado para bloquear una declaración, un paquete de sanciones o el lanzamiento de una misión. Varios gobiernos proponen extender la votación por mayoría cualificada a algunos de estos ámbitos para ganar rapidez y credibilidad. Otros responden que la política exterior pertenece al núcleo de la soberanía, que la unanimidad protege a los Estados pequeños y medianos y que una decisión impuesta a un Estado que la rechaza difícilmente se aplicará con convicción.
 
-Escriba un ensayo, dirigido a un público de diplomáticos y responsables políticos, en el que discuta si la Unión debería renunciar a la unanimidad en su política exterior. Su ensayo debe:
+Escriba un ensayo, dirigido a un público de diplomáticos y responsables políticos, en el que discuta si la Unión debería renunciar a la unanimidad en su política exterior, y ciérrelo con una conclusión que formule una idea nueva en lugar de resumir. Su ensayo debe:
 
 - Precisar a qué tipos de decisión aplicaría la mayoría cualificada y cuáles mantendría bajo la regla de la unanimidad, y justificar la línea divisoria.
 - Analizar qué ocurre con la legitimidad y la aplicación efectiva de una decisión cuando un Estado miembro ha votado en contra.
 - Valorar qué ganaría y qué arriesgaría España, como Estado de tamaño medio, con el cambio de regla.
 - Identificar la objeción que considere más difícil de rebatir y dejar que modifique su propuesta.
 - Admitir qué problemas de la política exterior europea no resolvería ningún cambio en las reglas de votación.
-- Mantener el tono de un análisis dirigido a diplomáticos, con al menos un recurso retórico deliberado, y cerrar con una conclusión que formule una idea nueva en lugar de resumir.
+- Mantener el tono de un análisis dirigido a diplomáticos, con al menos un recurso retórico deliberado.
 
 ## Task 13 — Documento de posición sobre una reserva europea de aviones contra incendios
 *Level 4 · formal_correspondence · 250–400 words*
