@@ -1,5 +1,6 @@
-import { Controller, Get, Post, Body, Param } from '@nestjs/common';
+import { Controller, Get, Post, Body, Param, Query } from '@nestjs/common';
 import { ApiTags, ApiOperation } from '@nestjs/swagger';
+import { parseLanguage } from '../../common/language';
 import { ExamService } from './exam.service';
 import {
   CreateSessionSchema,
@@ -8,24 +9,31 @@ import {
   SubmitAnswerDto,
 } from './dto/exam.dto';
 
-/** Session endpoints: create/list/get sessions, submit answers, and complete a session. */
+/**
+ * Session endpoints: create/list/get sessions, submit answers, and complete a session.
+ *
+ * A session's language is fixed when it is created; later calls on it never take a language.
+ */
 @ApiTags('Exam')
 @Controller('sessions')
 export class ExamController {
   constructor(private readonly exam: ExamService) {}
 
-  /** Create a practice set or timed mock exam and return it with items (keys stripped). */
+  /**
+   * Create a practice set or timed mock exam in the body's `language` (`en` default) and return it
+   * with items (keys stripped).
+   */
   @Post()
   @ApiOperation({ summary: 'Create a practice set or mock exam' })
   create(@Body({ schema: CreateSessionSchema }) dto: CreateSessionDto): Promise<unknown> {
     return this.exam.createSession(dto);
   }
 
-  /** List past sessions, most recent first. */
+  /** List past sessions of the `lang` language (`en` default), most recent first. */
   @Get()
   @ApiOperation({ summary: 'List sessions' })
-  list(): Promise<unknown> {
-    return this.exam.listSessions();
+  list(@Query('lang') lang?: string): Promise<unknown> {
+    return this.exam.listSessions(parseLanguage(lang));
   }
 
   /** Get one session with its items and submitted answers. */

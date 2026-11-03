@@ -154,7 +154,7 @@ model Answer {
 
 // --- Adaptive engine ---------------------------------------------
 
-/// Rolling performance per (skill, level, topic) — drives weak-area targeting.
+/// Rolling performance per (language, skill, level, topic) — drives weak-area targeting.
 model TopicStat {
   id        String   @id @default(uuid()) @db.Uuid
   language  String   @default("en") @db.VarChar(2) // en | es

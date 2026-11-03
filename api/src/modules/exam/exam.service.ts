@@ -1,5 +1,12 @@
-import { Injectable, NotFoundException, BadRequestException, ConflictException } from '@nestjs/common';
+import {
+  Injectable,
+  NotFoundException,
+  BadRequestException,
+  ConflictException,
+  UnprocessableEntityException,
+} from '@nestjs/common';
 import { PrismaService } from '../../prisma/prisma.service';
+import { LanguageSchema, type Language } from '../../common/language';
 import { ClaudeAgentService } from '../../claude/claude-agent.service';
 import { CreateSessionDto, SubmitAnswerDto } from './dto/exam.dto';
 import { capTaskLevel, scoreMcq, scoreWriting, slpProfile, type McqOutcome } from './scoring';
@@ -33,8 +40,15 @@ export class ExamService {
     private readonly claude: ClaudeAgentService,
   ) {}
 
-  /** Create a session, assemble its items per mode/skill/levels/counts, and return it (keys stripped). */
+  /**
+   * Create a session, assemble its items per language/mode/skill/levels/counts, and return it (keys stripped).
+   *
+   * Every item is drawn from the session's language only, so a session never mixes languages.
+   *
+   * @throws UnprocessableEntityException when no item of the language matches the request.
+   */
   async createSession(dto: CreateSessionDto): Promise<unknown> {
+    const { language } = dto;
     const skills = dto.skill ? [dto.skill] : (['reading', 'listening', 'writing'] as const);
     const levels = dto.levels?.length ? dto.levels : [3, 4];
     const base = DEFAULT_COUNTS[dto.mode];
@@ -45,17 +59,23 @@ export class ExamService {
     };
 
     const items = {
-      reading: counts.reading ? await this.pickReading(levels, counts.reading, !!dto.adaptive) : [],
-      listening: counts.listening ? await this.pickListening(counts.listening) : [],
-      writing: counts.writing ? await this.pickWriting(levels, counts.writing) : [],
+      reading: counts.reading ? await this.pickReading(language, levels, counts.reading, !!dto.adaptive) : [],
+      listening: counts.listening ? await this.pickListening(language, counts.listening) : [],
+      writing: counts.writing ? await this.pickWriting(language, levels, counts.writing) : [],
     };
+    // An empty session is unusable, and a language without seeded content must be visible to the
+    // caller instead of surfacing as a blank test.
+    if (!items.reading.length && !items.listening.length && !items.writing.length) {
+      throw new UnprocessableEntityException(`no ${language} items available for this request`);
+    }
 
     const session = await this.prisma.examSession.create({
       data: {
         mode: dto.mode,
         skill: dto.skill ?? null,
         status: 'in_progress',
-        config: { levels, counts, adaptive: !!dto.adaptive, items },
+        language,
+        config: { language, levels, counts, adaptive: !!dto.adaptive, items },
       },
     });
     return this.getSession(session.id);
@@ -76,6 +96,7 @@ export class ExamService {
       id: session.id,
       mode: session.mode,
       skill: session.skill,
+      language: session.language,
       status: session.status,
       config: session.config,
       result: session.result,
@@ -86,9 +107,9 @@ export class ExamService {
     };
   }
 
-  /** List sessions most-recent first (exam history). */
-  async listSessions(): Promise<unknown> {
-    return this.prisma.examSession.findMany({ orderBy: { startedAt: 'desc' }, take: 100 });
+  /** List the sessions of one language most-recent first (exam history). */
+  async listSessions(language: Language): Promise<unknown> {
+    return this.prisma.examSession.findMany({ where: { language }, orderBy: { startedAt: 'desc' }, take: 100 });
   }
 
   /**
@@ -157,6 +178,7 @@ export class ExamService {
       response: dto.responseText,
       wordCountMin: task.wordCountMin,
       wordCountMax: task.wordCountMax,
+      language: LanguageSchema.parse(session.language),
     });
     grade.estimatedLevel = capTaskLevel(grade.estimatedLevel, task.stanagLevel, grade.overallScore);
     await this.record(sessionId, dto, { score: grade.overallScore, feedback: grade });
@@ -241,15 +263,15 @@ export class ExamService {
 
   // ---------------- assembly ----------------
 
-  private async pickReading(levels: number[], count: number, adaptive: boolean): Promise<string[]> {
+  private async pickReading(language: Language, levels: number[], count: number, adaptive: boolean): Promise<string[]> {
     const candidates = await this.prisma.readingItem.findMany({
-      where: { level: { in: levels } },
+      where: { language, level: { in: levels } },
       select: { id: true, level: true, topic: true },
     });
     if (!candidates.length) return [];
     let weighted = candidates.map((c) => ({ id: c.id, level: c.level, w: 1 }));
     if (adaptive) {
-      const stats = await this.prisma.topicStat.findMany({ where: { skill: 'reading' } });
+      const stats = await this.prisma.topicStat.findMany({ where: { skill: 'reading', language } });
       const byKey = new Map(stats.map((s) => [`${s.level}|${s.topic}`, s]));
       weighted = candidates.map((c) => {
         const s = byKey.get(`${c.level}|${c.topic}`);
@@ -260,16 +282,17 @@ export class ExamService {
     return stratifiedSample(weighted, count);
   }
 
-  private async pickListening(count: number): Promise<string[]> {
-    const items = await this.prisma.listeningItem.findMany({ select: { id: true } });
+  private async pickListening(language: Language, count: number): Promise<string[]> {
+    const items = await this.prisma.listeningItem.findMany({ where: { language }, select: { id: true } });
     return weightedSample(
       items.map((i) => ({ id: i.id, w: 1 })),
       count,
     );
   }
 
-  private async pickWriting(levels: number[], count: number): Promise<string[]> {
+  private async pickWriting(language: Language, levels: number[], count: number): Promise<string[]> {
     const tasks = await this.prisma.writingTask.findMany({
+      where: { language },
       select: { id: true, taskType: true, stanagLevel: true },
     });
     return pickWritingTasks(tasks, levels, count);
@@ -388,28 +411,30 @@ export class ExamService {
       (a) => (a.itemType === 'reading' || a.itemType === 'listening') && a.isCorrect !== null,
     );
     for (const a of mcq) {
+      // The stat is keyed by the item's own language, so English and Spanish topics with the same
+      // name never pool their accuracy.
       const meta =
         a.itemType === 'reading'
           ? await this.prisma.readingItem.findUnique({
               where: { id: a.itemId },
-              select: { level: true, topic: true },
+              select: { language: true, level: true, topic: true },
             })
           : await this.prisma.listeningItem.findUnique({
               where: { id: a.itemId },
-              select: { level: true, topic: true },
+              select: { language: true, level: true, topic: true },
             });
       if (!meta) continue;
       await this.prisma.topicStat.upsert({
         where: {
           language_skill_level_topic: {
-            language: 'en',
+            language: meta.language,
             skill: a.itemType,
             level: meta.level,
             topic: meta.topic,
           },
         },
         create: {
-          language: 'en',
+          language: meta.language,
           skill: a.itemType,
           level: meta.level,
           topic: meta.topic,

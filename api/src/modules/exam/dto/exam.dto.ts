@@ -1,4 +1,5 @@
 import { z } from 'zod';
+import { DEFAULT_LANGUAGE, LanguageSchema } from '../../../common/language';
 
 const skill = z.enum(['reading', 'listening', 'writing']);
 const label = z.enum(['A', 'B', 'C', 'D']);
@@ -16,6 +17,7 @@ export const CreateSessionSchema = z.object({
     })
     .optional(),
   adaptive: z.boolean().optional(),
+  language: LanguageSchema.default(DEFAULT_LANGUAGE),
 });
 export type CreateSessionDto = z.infer<typeof CreateSessionSchema>;
 
