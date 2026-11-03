@@ -129,28 +129,28 @@ Redacte la nota verbal con la que el Ministerio responde a la Embajada. Su nota 
 
 Los avances de la farmacología y de la neurotecnología permiten ya prolongar la vigilia, acelerar el aprendizaje o atenuar los efectos del estrés en situaciones extremas. El centro de investigación militar de un Estado aliado ha anunciado ensayos con fármacos que mantendrían la capacidad de concentración de los pilotos durante más de cuarenta horas y con técnicas de estimulación cerebral no invasiva destinadas a acortar la formación de los operadores de sistemas complejos. Sus defensores sostienen que un Estado tiene el deber de dar a sus militares todas las ventajas posibles; sus detractores advierten de que el consentimiento de un militar nunca es del todo libre, de que se desconocen los efectos a largo plazo y de que la mejora obligaría a los ejércitos rivales a seguir el mismo camino.
 
-Escriba un ensayo en el que analice si las Fuerzas Armadas de un Estado democrático pueden recurrir legítimamente a técnicas de mejora del rendimiento físico o cognitivo de su personal y, en su caso, con qué límites. Su ensayo debe:
+Escriba un ensayo en el que analice si las Fuerzas Armadas de un Estado democrático pueden recurrir legítimamente a técnicas de mejora del rendimiento físico o cognitivo de su personal y, en su caso, con qué límites, y ciérrelo con una idea propia que no se limite a resumir lo dicho. Su ensayo debe:
 
 - Establecer en la introducción el criterio (por ejemplo, la reversibilidad, el consentimiento o la finalidad) con el que juzgará qué intervenciones son admisibles.
 - Analizar si el consentimiento de un militar puede ser libre dentro de una estructura jerárquica y qué garantías podrían compensar esa limitación.
-- Dar voz al argumento de que el Estado debe a sus militares toda ventaja posible y concederle lo bastante como para tener que corregir su propia tesis.
+- Dar voz al argumento de que el Estado debe a sus militares toda ventaja posible y concederle lo bastante como para tener que modificar su propia tesis.
 - Considerar las obligaciones del Estado hacia el militar una vez que este abandone el servicio.
 - Señalar al menos una cuestión que su propuesta deja sin resolver.
-- Concluir con una idea que no se limite a resumir lo dicho y emplear con intención al menos un recurso de estilo, como una pregunta retórica, una ironía contenida o una atenuación deliberada.
+- Emplear al menos un recurso de estilo identificable, como una pregunta retórica, una ironía o una atenuación.
 
 ## Task 11 — Respuesta a una comisión parlamentaria sobre un informe clasificado
 *Level 4 · formal_correspondence · 250–400 words*
 
-Usted es secretario de Estado de Defensa. Los días 14 y 15 de febrero de 2028, un ciberataque dejó fuera de servicio durante 36 horas el sistema informático con el que las Fuerzas Armadas gestionan sus suministros en territorio nacional. El Ministerio encargó una investigación técnica, el «Informe Cierzo», que describe las vulnerabilidades aprovechadas por los atacantes, algunas de las cuales aún no se han corregido; el informe está clasificado como secreto. La presidenta de la Comisión de Defensa del Congreso de los Diputados, Pilar Montaner Ruiz, le ha remitido una carta, fechada el 6 de marzo de 2028, en la que pide que se envíe una copia íntegra del informe a todos los miembros de la Comisión en un plazo de quince días. La carta afirma, además, citando informaciones de prensa, que el ataque «comprometió el abastecimiento de las operaciones en el exterior», lo que no es cierto: esas operaciones se abastecen a través de un sistema distinto, que no se vio afectado. Su respuesta se incorporará al expediente de la Comisión y es probable que se haga pública.
+Usted es secretario de Estado de Defensa. Los días 14 y 15 de febrero de 2028, un ciberataque dejó fuera de servicio durante 36 horas el sistema informático con el que las Fuerzas Armadas gestionan sus suministros en territorio nacional. El Ministerio encargó una investigación técnica, el «Informe Cierzo», que describe las vulnerabilidades aprovechadas por los atacantes, algunas de las cuales aún no se han corregido; el informe está clasificado como secreto. La presidenta de la Comisión de Defensa del Congreso de los Diputados, Pilar Montaner Ruiz, le ha remitido una carta, fechada el 6 de marzo de 2028, en la que pide que se envíe una copia íntegra del informe a todos los miembros de la Comisión en un plazo de quince días. La carta afirma, además, citando informaciones de prensa, que el ataque «comprometió el abastecimiento de las operaciones en el exterior», lo que no es cierto: esas operaciones se abastecen a través de un sistema distinto, que no se vio afectado. La ley garantiza a las Cortes el acceso a la información clasificada, pero solo por los procedimientos que fija cada Cámara, que no prevén el reparto de copias. En la correspondencia oficial, a la presidenta de una comisión del Congreso le corresponde el tratamiento de excelentísima señora. Su respuesta se incorporará al expediente de la Comisión y es probable que se haga pública.
 
 Redacte la carta con la que responde a la presidenta de la Comisión. Su carta debe:
 
 - Reconocer expresamente la función de control que corresponde a la Comisión y la legitimidad de su petición.
 - Explicar por qué el informe no puede remitirse en la forma solicitada, sin que la negativa pueda leerse como desconfianza hacia los diputados.
-- Desmentir la afirmación sobre las operaciones en el exterior sin revelar detalles técnicos que pudieran estar clasificados.
+- Desmentir la afirmación sobre las operaciones en el exterior.
 - Proponer al menos dos vías alternativas para que la Comisión acceda a la información, con fechas concretas.
-- Cuidar cada formulación teniendo en cuenta que la carta puede hacerse pública: ninguna frase debe poder interpretarse como un desaire a la Cámara ni como un intento de ocultación.
-- Emplear el tratamiento y las fórmulas propias de la correspondencia oficial entre un alto cargo del Gobierno y la presidencia de una comisión parlamentaria.
+- Tener en cuenta que la carta puede publicarse: no confirmar ningún detalle técnico ni el estado de corrección de los sistemas.
+- Emplear las fórmulas y el tratamiento propios de la correspondencia oficial entre un alto cargo del Gobierno y la presidencia de una comisión parlamentaria.
 
 ## Task 12 — La regla de la unanimidad en la política exterior europea
 *Level 4 · essay · 350–700 words*
@@ -169,15 +169,14 @@ Escriba un ensayo, dirigido a un público de diplomáticos y responsables polít
 ## Task 13 — Documento de posición sobre una reserva europea de aviones contra incendios
 *Level 4 · formal_correspondence · 250–400 words*
 
-Usted es consejero de Interior en la Representación Permanente de España ante la Unión Europea. El Consejo negocia un reglamento que crearía la Reserva Europea de Medios Aéreos contra Incendios Forestales (REMAI), una flota de 24 aviones anfibios adquiridos y mantenidos en común. El último texto transaccional de la Presidencia (documento 7412/28) prevé que los costes se repartan en proporción a la renta nacional bruta de cada Estado miembro, que los aviones tengan su base permanente en dos aeródromos de Europa central, elegidos por su posición equidistante, y que cada solicitud de activación deba ser validada por un comité de representantes de los Estados en un plazo de hasta 24 horas. España apoya la creación de la reserva y está dispuesta a aceptar el reparto de costes, aunque con él su contribución sería mayor que con el criterio basado en el riesgo de incendio que había propuesto. Considera, en cambio, inaceptables la ubicación permanente y el plazo de validación: desde Europa central, un avión anfibio tarda entre cuatro y cinco horas en llegar a un incendio en el litoral mediterráneo. Varias delegaciones del norte de Europa, donde los incendios forestales también aumentan, temen que trasladar los aviones al sur deje sin cobertura sus territorios. La presidenta del Grupo de Trabajo sobre Protección Civil ha pedido a las delegaciones un documento de posición antes de la reunión del 12 de abril de 2028.
+Usted es consejero de Interior en la Representación Permanente de España ante la Unión Europea. El Consejo negocia un reglamento que crearía la Reserva Europea de Medios Aéreos contra Incendios Forestales (REMAI), una flota de 24 aviones anfibios adquiridos y mantenidos en común. El último texto transaccional de la Presidencia (doc. 7412/28) prevé que los costes se repartan en proporción a la renta nacional bruta, que los aviones tengan su base permanente en dos aeródromos de Europa central y que cada activación sea validada previamente por un comité de representantes de los Estados en un plazo de hasta 24 horas. España apoya la reserva y aceptaría el reparto de costes, aunque le resulta más gravoso que el criterio basado en el riesgo que había propuesto; considera inaceptables, en cambio, la ubicación permanente y el plazo de validación. Varias delegaciones del norte de Europa temen que cualquier traslado de los aviones hacia el sur deje sin cobertura sus territorios. La presidenta del Grupo de Trabajo sobre Protección Civil ha pedido a las delegaciones un documento de posición antes de la reunión del 12 de abril de 2028.
 
 Redacte el documento de posición de España dirigido a la presidenta del grupo de trabajo. Su documento debe:
 
-- Incluir un encabezamiento con la destinataria, el asunto y la referencia del texto transaccional, y mantener de principio a fin la redacción impersonal propia de un documento de posición.
-- Explicar brevemente por qué España considera necesaria la reserva y reconocer el esfuerzo de la Presidencia.
+- Incluir un encabezamiento con la destinataria, el asunto y la referencia del texto transaccional, y redactar todo el documento en tercera persona, sin primera persona.
 - Aceptar expresamente el reparto de costes y explicar por qué España lo acepta aunque no le resulte favorable.
-- Rebatir la ubicación permanente y el plazo de validación con argumentos operativos concretos.
-- Proponer una fórmula de ubicación y otra de activación que no dejen sin cobertura a los Estados del norte.
+- Indicar sin ambigüedad qué disposiciones no puede aceptar España tal como están formuladas y rebatirlas con al menos dos argumentos operativos distintos.
+- Proponer una alternativa a la ubicación y otra a la validación que no dejen sin cobertura a los Estados del norte.
 - Formular las discrepancias sin que ninguna frase enfrente a los Estados del norte con los del sur.
 
 ## Task 14 — La financiación del aumento del gasto en defensa
@@ -185,13 +184,13 @@ Redacte el documento de posición de España dirigido a la presidenta del grupo 
 
 Numerosos gobiernos europeos se han comprometido a aumentar de forma sostenida su gasto en defensa durante la próxima década. Las vías para financiarlo son conocidas: emitir deuda, subir impuestos o recortar otras partidas del presupuesto. Cada una tiene sus defensores: la deuda reparte el coste entre generaciones que también se beneficiarán de la seguridad; los impuestos hacen visible el esfuerzo y lo someten al juicio de los ciudadanos; los recortes evitan aumentar la presión fiscal, pero recaen sobre otras políticas públicas.
 
-Escriba un ensayo en el que defienda la forma de financiación que considere más adecuada para un país como España. Su ensayo debe:
+Escriba, para una revista especializada en finanzas públicas, un ensayo en el que defienda la fórmula de financiación que considere más adecuada para un país como España. Su ensayo debe:
 
-- Proponer en la introducción una combinación concreta de fuentes de financiación, no una sola, y el principio que la ordena.
-- Relacionar la elección de cada fuente con el tipo de gasto (inversión en equipos o gastos permanentes de personal y mantenimiento) y con la duración prevista del esfuerzo.
+- Proponer en la introducción una combinación concreta de fuentes de financiación, no una sola, y el criterio que decide qué gastos se financian con cada fuente.
 - Examinar si el recurso a la deuda traslada a las generaciones futuras una carga injusta o un beneficio legítimo.
 - Considerar cómo afectaría cada opción a la cohesión social y al apoyo ciudadano a la defensa.
 - Anticipar la crítica más seria que recibiría su propuesta y añadirle la garantía que esa crítica haga necesaria.
+- Emplear al menos un recurso de estilo identificable, como una ironía, una metáfora sostenida o una pregunta retórica.
 - Cerrar extrayendo del razonamiento una consecuencia para el debate público, no un resumen de lo dicho.
 
 ## Task 15 — Memorándum sobre una candidatura a una organización internacional
@@ -201,7 +200,7 @@ Usted es director general de Organismos Internacionales en el Ministerio de Asun
 
 Redacte el memorándum que se entregará al embajador de Orlania en Madrid para fijar por escrito la posición española. Su texto debe:
 
-- Ajustarse a la forma de un memorándum diplomático: título, redacción impersonal en tercera persona, sin saludo ni firma, y lugar y fecha al final.
+- Ajustarse a la forma de un memorándum diplomático: la palabra «Memorándum» como encabezamiento, redacción impersonal en tercera persona, sin saludo ni firma, y lugar y fecha al final.
 - Elogiar a la candidata sin que el elogio pueda interpretarse como una puerta abierta.
 - Comunicar de forma inequívoca, aunque con la cortesía que exige el caso, que España no podrá apoyar la candidatura, y explicar el motivo sin identificar al otro candidato.
 - Desvincular con firmeza, pero sin reproche, la elección de la negociación sobre transporte aéreo.
@@ -216,7 +215,7 @@ Escriba un ensayo para una revista de pensamiento en el que se pronuncie sobre s
 
 - Responder por separado a las dos cuestiones (la admisión y el acceso a la nacionalidad), que no tienen por qué recibir la misma respuesta.
 - Explicar qué concepción de la ciudadanía presupone cada una de las posturas en debate.
-- Analizar el riesgo de que la oferta atraiga sobre todo a quienes tienen menos alternativas y las consecuencias que ello tendría.
+- Analizar el riesgo de que la oferta atraiga sobre todo a quienes tienen menos alternativas y señalar al menos dos consecuencias.
 - Discutir el argumento más fuerte de la postura contraria a la suya y extraer de él una corrección de su propia tesis.
 - Reconocer al menos un límite de su argumentación.
-- Mantener un estilo cuidado, propio de una revista de pensamiento, con algún recurso expresivo deliberado y sin generalizaciones sobre ningún colectivo.
+- Mantener un estilo cuidado, propio de una revista de pensamiento, con algún recurso expresivo deliberado y sin atribuir rasgos positivos ni negativos a ningún grupo por su origen.
