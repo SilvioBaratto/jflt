@@ -346,7 +346,7 @@ singolare, obbligatoria quando l'oggetto è una persona determinata introdotta d
 - *Se estima que el grupo cuenta con unos cincuenta combatientes.* → Si stima che il gruppo conti una cinquantina di combattenti. (in spagnolo indicativo: vedi 8.10)
 - *Se ruega a la población que no se acerque a la zona acordonada.* → Si prega la popolazione di non avvicinarsi alla zona transennata.
 - *Al parecer, el sospechoso huyó hacia la frontera.* → A quanto pare, il sospetto è fuggito verso il confine.
-- *Según fuentes policiales, el sospechoso habría huido hacia la frontera.* → Secondo fonti di polizia, il sospetto sarebbe fuggito verso il confine. È il *condicional de rumor* della stampa, gemello del condizionale «di dissociazione» dei giornali italiani; i libri di stile dei quotidiani spagnoli lo sconsigliano; in un rapporto conviene nominare la fonte, come qui.
+- *Según fuentes policiales, el sospechoso habría huido hacia la frontera.* → Secondo fonti di polizia, il sospetto sarebbe fuggito verso il confine. È il *condicional de rumor* della stampa, gemello del condizionale «di dissociazione» dei giornali italiani; i libri di stile dei quotidiani spagnoli lo sconsigliano, in particolare nei titoli; in un rapporto conviene nominare la fonte, come qui.
 
 **Errori tipici di un italofono**
 - ✗ *Se han detenido a tres sospechosos.* → ✓ *Se ha detenido a tres sospechosos.* (con *a* + persona la frase è impersonale; concorda invece la *pasiva refleja* senza *a*: *Se han hallado dos fusiles.*)
@@ -376,8 +376,9 @@ delle 10:00); divieto: *no deber*.
 - *No hace falta evacuar el edificio.* → Non occorre evacuare l'edificio. *Los observadores no deben portar armas.* → Gli osservatori non devono portare armi.
 
 **Deduzione e possibilità:** per la supposizione si usa *deber de* + infinito, ma la norma colta
-ammette anche *deber* senza *de* (*Debe de quedarles / Debe quedarles poca munición*); per l'obbligo,
-invece, solo *deber* senza *de* (✗ *El personal debe de conocer las reglas de enfrentamiento*).
+ammette anche *deber* senza *de* (*Debe de quedarles / Debe quedarles poca munición*); per l'obbligo
+si usa di norma *deber* senza *de* (*El personal debe conocer las reglas de enfrentamiento*): *deber de*
+con valore di obbligo è molto meno frequente e rischia di essere letto come supposizione.
 *Puede que* + congiuntivo = «può darsi che».
 - *Debe de quedarles poca munición tras tres días de combate.* → Devono avere ormai poche munizioni dopo tre giorni di combattimenti.
 - *El artefacto debió de colocarse poco antes del paso de la patrulla.* → L'ordigno dev'essere stato collocato poco prima del passaggio della pattuglia.
@@ -497,13 +498,13 @@ que* + indicativo; *tan… que*; ***de ahí que* + congiuntivo**, anche se il fa
 **Concessione:** *aunque* + indicativo (fatto reale e informativo) o + congiuntivo (ipotesi, o fatto
 noto che non conta); *a pesar de* + nome o infinito, *a pesar de que*; *si bien* + **indicativo**
 (formale, dove l'italiano «sebbene» vuole il congiuntivo); *por mucho que / por más que* + congiuntivo
-(ipotesi o fatto che non conta) o + indicativo (fatto reale: *Por más que lo intentaron, no lograron
-romper el cerco.* → Per quanto ci abbiano provato, non sono riusciti a rompere l'accerchiamento;
-attenzione: l'italiano «per quanto» vuole sempre il congiuntivo).
+(ipotesi o fatto che non conta) o + indicativo (fatto reale, vedi l'ultimo esempio); l'italiano «per
+quanto» vuole di norma il congiuntivo.
 - *Aunque el alto el fuego está en vigor, se siguen registrando violaciones esporádicas.* → Anche se il cessate il fuoco è in vigore, continuano a registrarsi violazioni sporadiche.
 - *Aunque se confirme la retirada, el contingente permanecerá en la zona de amortiguación.* → Anche se il ritiro dovesse essere confermato, il contingente resterà nella zona cuscinetto.
 - *Si bien la operación alcanzó sus objetivos, el coste en material fue elevado.* → Sebbene l'operazione abbia raggiunto i suoi obiettivi, il costo in materiali è stato elevato.
 - *Por mucho que insistan, no se negociará con los secuestradores.* → Per quanto insistano, non si tratterà con i sequestratori.
+- *Por más que lo intentaron, no lograron romper el cerco.* → Per quanto ci abbiano provato, non sono riusciti a rompere l'accerchiamento.
 
 **Contrasto:** *mientras que* (mentre, invece), *en cambio*, *sin embargo / no obstante* (tuttavia),
 *ahora bien* (ciò detto); dopo una negazione **sino** («ma, bensì») e *sino que* davanti a un verbo.
@@ -559,8 +560,8 @@ prossimo cambio.
 
 ### 8.11 Ordine delle parole & enfasi
 
-Lo spagnolo non ha l'inversione ausiliare–soggetto: l'enfasi si ottiene spostando gli elementi, come
-in italiano, con alcune regole proprie.
+In spagnolo l'enfasi si ottiene spostando gli elementi della frase, come in italiano, con alcune
+regole proprie.
 - **Soggetto posposto** con i verbi di comparsa e di accadimento: *Se produjo una explosión en el mercado central.* → C'è stata un'esplosione al mercato centrale. *Han llegado los observadores de la OSCE.* → Sono arrivati gli osservatori dell'OSCE.
 - **Elemento focalizzato in testa, verbo prima del soggetto:** *Solo entonces comprendió el mando la magnitud del ataque.* → Solo allora il comando comprese la portata dell'attacco. *Muy distinta es la situación en la frontera sur.* → Ben diversa è la situazione alla frontiera meridionale.
 - **Negazione in testa senza *no***, come con «mai» in italiano: *Nunca se había registrado un ataque de esta magnitud en la provincia.* → Mai si era registrato un attacco di questa portata nella provincia. *Ni siquiera el portavoz pudo confirmar la cifra de víctimas.* → Nemmeno il portavoce ha potuto confermare il numero delle vittime. *En ningún caso se entregará a los detenidos sin orden judicial.* → In nessun caso i detenuti saranno consegnati senza un ordine del giudice.
@@ -611,7 +612,7 @@ norma concorda nel tempo con il resto della frase.
 - **Con preposizione:** *tratar de* (cercare di), *dejar de* (smettere di), *acabar de* (avere appena), *volver a* (ri-, di nuovo), *empezar a, negarse a, obligar a, proceder a*. *Los combates volvieron a estallar al amanecer.* → I combattimenti sono riesplosi all'alba. *La milicia se negó a entregar las armas.* → La milizia si è rifiutata di consegnare le armi.
 - **Verbo + gerundio:** *seguir / continuar* («continuare a»), *ir* (progressione), *llevar* (vedi 8.1). *La patrulla siguió avanzando pese al fuego de hostigamiento.* → La pattuglia ha continuato ad avanzare nonostante il fuoco di disturbo. *La tensión va aumentando en la frontera.* → La tensione al confine aumenta di giorno in giorno.
 - **Verbo + participio** (risultato): *tener* + participio concordato con l'oggetto, *quedar* + participio, *dar por* + participio. *Tenemos localizados a los tres sospechosos.* → Abbiamo localizzato i tre sospetti (e li teniamo d'occhio). *La carretera quedó cortada durante seis horas.* → La strada è rimasta interrotta per sei ore. *Se da por concluida la fase de despliegue.* → La fase di schieramento si considera conclusa.
-- **Preposizione + infinito:** *al* (nel momento in cui), *por* (causa, oppure azione ancora da compiere), *sin, tras, antes de, después de*. *Quedan tres viviendas por registrar.* → Restano tre abitazioni da perquisire. *El sospechoso fue detenido tras intentar huir.* → Il sospetto è stato fermato dopo aver tentato la fuga. Il tipo *asuntos a tratar* è un calco del francese, frequente negli ordini del giorno: nella prosa curata si preferisce *asuntos por tratar* o *que tratar*; resta normale nelle formule contabili (*total a pagar*).
+- **Preposizione + infinito:** *al* (nel momento in cui), *por* (causa, oppure azione ancora da compiere), *sin, tras, antes de, después de*. *Quedan tres viviendas por registrar.* → Restano tre abitazioni da perquisire. *El sospechoso fue detenido tras intentar huir.* → Il sospetto è stato fermato dopo aver tentato la fuga. Il tipo *asuntos a tratar* è un calco del francese, diffuso dall'Ottocento: nella prosa curata si preferisce *asuntos por tratar* o *que tratar*; secondo Seco resta normale nelle formule bancarie e contabili (*total a pagar*).
 - ***impedir / permitir / prohibir*** + infinito, oppure + *que* + congiuntivo: *Las barreras impidieron que los manifestantes llegaran al Congreso.* → Le transenne hanno impedito ai manifestanti di raggiungere il Congresso.
 
 **Errori tipici di un italofono**
@@ -780,13 +781,17 @@ spagnoli sono stati verificati sul Wikcionario e sulle fonti normative e istituz
 - Sezione 8: la *Nueva gramática de la lengua española*, il *Diccionario panhispánico de dudas*, le
   pagine *Buen uso del español* della RAE, la FundéuRAE e il *Plan curricular* dell'Instituto
   Cervantes non erano consultabili dall'ambiente di redazione (accesso rifiutato o pagina non
-  trovata); le regole grammaticali sono state verificate sulle fonti seguenti. Le tre pagine RAE
+  trovata); le regole grammaticali sono state verificate sulle fonti seguenti. Le quattro pagine RAE
   elencate subito sotto sono state consultate solo tramite estratti dei risultati di ricerca.
 - RAE, *Diccionario panhispánico de dudas*, voci «gerundio» — https://www.rae.es/dpd/gerundio —
   gerundio di posteriorità ammesso con successione immediata o legame logico di conseguenza; e
   «deber» — https://www.rae.es/dpd/deber — *deber* + infinito per l'obbligo, *deber de* + infinito
-  per la supposizione, *deber* senza *de* ammesso anche per la supposizione (consultati tramite
-  estratti di ricerca).
+  per la supposizione, *deber* senza *de* ammesso anche per la supposizione; *deber de* per l'obbligo
+  è raro ma non censurato nella seconda edizione (consultati tramite estratti di ricerca, anche di una
+  nota FundéuRAE del 2025).
+- RAE, *Diccionario panhispánico de dudas*, voce «que» — https://www.rae.es/dpd/que — *que galicado*
+  diffuso in America; in Spagna si preferisce il relativo con preposizione e articolo o l'avverbio
+  relativo (consultata tramite estratti di ricerca).
 - RAE, *Buen uso del español*, «Las construcciones de que galicado» —
   https://www.rae.es/buen-uso-español/las-construcciones-de-que-galicado — in America le costruzioni
   con *que galicado* sono considerate naturali e corrette (consultata tramite estratti di ricerca).
