@@ -1,14 +1,18 @@
 """Build the Prisma seed-data.json from the in-repo generated content.
 
-Reads the exam markdown and listening JSON under api/seed-src/ plus the bilingual
-vocabulary guide under api/references/, normalises them into the shapes the Prisma
-seed expects, and copies the listening MP3s into the API static dir. Pure parsing —
-no DB access.
+For each content language, reads the exam markdown and listening JSON under its seed-src
+folder plus its bilingual vocabulary guide, normalises them into the shapes the Prisma seed
+expects (every record tagged with its `language`), and copies the listening MP3s into the
+API static dir. Pure parsing — no DB access.
+
+Usage: python scripts/build-seed-data.py [--lang en|es|all] [--out PATH] [--no-audio]
 """
 
+import argparse
 import json
 import re
 import shutil
+from dataclasses import dataclass, replace
 from pathlib import Path
 
 REPO = Path(__file__).resolve().parents[1]
@@ -22,21 +26,67 @@ MIN_LEVEL = 3
 
 DASH = r"[\u2013\u2014-]"  # en-dash / em-dash / hyphen
 
+SEED_GROUPS = ("readingItems", "writingTasks", "listeningItems", "vocabEntries")
+
+
+@dataclass(frozen=True)
+class LanguageSources:
+    """Where one content language's seed sources live and where its audio is served from.
+
+    Attributes:
+        language: Code stored on every record built from these sources.
+        src: Folder holding `reading/`, `writing/` and `listening/`.
+        ref: Folder holding the vocabulary guide.
+        vocab: File name of the vocabulary guide inside `ref`.
+        audio_dest: Folder the listening MP3s are copied into.
+        audio_url: URL prefix the API serves `audio_dest` under.
+    """
+
+    language: str
+    src: Path
+    ref: Path
+    vocab: str
+    audio_dest: Path
+    audio_url: str
+
+
+LANGUAGES = {
+    "en": LanguageSources("en", OUT, REF, "english-vocabulary-guide.md",
+                          AUDIO_DEST, "/static/listening/"),
+    "es": LanguageSources("es", OUT / "es", REF / "es", "spanish-vocabulary-guide.md",
+                          AUDIO_DEST / "es", "/static/listening/es/"),
+}
+
+
+def _resolve(sources: LanguageSources | None) -> LanguageSources:
+    """Return `sources`, or English sources read from the module-level paths when omitted.
+
+    api/seed-src/es/tools/builder.py loads this file, reassigns OUT, REF and AUDIO_DEST and
+    calls the parsers without arguments, so the fallback reads those names at call time.
+    """
+    if sources is not None:
+        return sources
+    return replace(LANGUAGES["en"], src=OUT, ref=REF, audio_dest=AUDIO_DEST)
+
 
 def level_of(n: int) -> int:
     """Map a 1-based reading item number (1-60) to its STANAG level: L3 for 1-30, L4 for 31-60."""
     return 3 if n <= 30 else 4
 
 
-def parse_reading() -> list[dict]:
+def parse_reading(sources: LanguageSources | None = None) -> list[dict]:
     """Parse the reading exam + answer-key markdown into reading-item dicts.
+
+    Args:
+        sources: Language to parse; omitted means English at the module-level paths.
 
     Returns:
         One dict per item with level, topic, passage, question, options
-        (each {label, text, rationale}), correctLabel, and source.
+        (each {label, text, rationale}), correctLabel, source, and language.
     """
-    exam = (OUT / "reading" / "reading-exam.md").read_text(encoding="utf-8")
-    key = (OUT / "reading" / "reading-answer-key.md").read_text(encoding="utf-8")
+    sources = _resolve(sources)
+    exam = (sources.src / "reading" / "reading-exam.md").read_text(encoding="utf-8")
+    key = (sources.src / "reading" / "reading-answer-key.md").read_text(encoding="utf-8")
 
     exam_items: dict[int, dict] = {}
     for m in re.finditer(r"^### (\d+)\. \((.*?)\)\s*$\n(.*?)(?=^### \d+\.|^## |\Z)",
@@ -75,23 +125,27 @@ def parse_reading() -> list[dict]:
         items.append({
             "level": level_of(n), "topic": ei["topic"], "passage": ei["passage"],
             "question": ei["question"], "options": ei["options"],
-            "correctLabel": ki["correct"], "source": "seed",
+            "correctLabel": ki["correct"], "source": "seed", "language": sources.language,
         })
     return items
 
 
-def parse_writing() -> list[dict]:
+def parse_writing(sources: LanguageSources | None = None) -> list[dict]:
     """Parse the writing exam + model-answer markdown into writing-task dicts.
 
     Each task declares its type and level inline (`*Level N \u00b7 type \u00b7 min\u2013max words*`),
     so tasks can be added or reordered without the parser inferring type from position.
 
+    Args:
+        sources: Language to parse; omitted means English at the module-level paths.
+
     Returns:
         One dict per task with taskType, stanagLevel, title, instructions, word band,
-        rubric, and a single `main` option carrying the model answer.
+        rubric, a single `main` option carrying the model answer, source, and language.
     """
-    exam = (OUT / "writing" / "writing-exam.md").read_text(encoding="utf-8")
-    model = (OUT / "writing" / "writing-model-answers.md").read_text(encoding="utf-8")
+    sources = _resolve(sources)
+    exam = (sources.src / "writing" / "writing-exam.md").read_text(encoding="utf-8")
+    model = (sources.src / "writing" / "writing-model-answers.md").read_text(encoding="utf-8")
 
     def split_tasks(text: str) -> list[tuple[str, str]]:
         """Split a writing markdown doc into (task-title, task-body) pairs."""
@@ -122,31 +176,40 @@ def parse_writing() -> list[dict]:
             "instructions": instructions, "wordCountMin": wmin, "wordCountMax": wmax,
             "rubric": rubric,
             "options": [{"key": "main", "label": "", "prompt": "", "modelAnswer": model_answer}],
-            "source": "seed",
+            "source": "seed", "language": sources.language,
         })
     return tasks
 
 
-def parse_listening() -> list[dict]:
+def parse_listening(sources: LanguageSources | None = None, copy_audio: bool = True) -> list[dict]:
     """Load the listening JSON files and copy their MP3s into the API static dir.
 
     Each question's key comes from its `answer`, `rationale` and `option_rationales`
     fields; a question without an `answer` stays unkeyed and is left ungraded by the API.
 
+    Args:
+        sources: Language to parse; omitted means English at the module-level paths.
+        copy_audio: Copy each MP3 into `sources.audio_dest` (created if missing). When
+            false nothing is written, yet `audioPath` still names where the file is served.
+
     Returns:
         One dict per conversation with level, topic, voices/speakers/lines, questions
-        (each {question, options, correctLabel, rationale, optionRationales}), audioPath,
-        hasKey (true only when every question is keyed), and source.
+        (each {question, options, correctLabel, rationale, optionRationales}), audioPath
+        (None when the conversation has no MP3), hasKey (true only when every question
+        is keyed), source, and language.
     """
-    AUDIO_DEST.mkdir(parents=True, exist_ok=True)
+    sources = _resolve(sources)
+    if copy_audio:
+        sources.audio_dest.mkdir(parents=True, exist_ok=True)
     items = []
-    for jp in sorted((OUT / "listening").glob("listening-*.json")):
+    for jp in sorted((sources.src / "listening").glob("listening-*.json")):
         d = json.loads(jp.read_text(encoding="utf-8"))
         mp3 = jp.with_suffix(".mp3")
         audio_path = None
         if mp3.exists():
-            shutil.copy2(mp3, AUDIO_DEST / mp3.name)
-            audio_path = f"/static/listening/{mp3.name}"
+            if copy_audio:
+                shutil.copy2(mp3, sources.audio_dest / mp3.name)
+            audio_path = f"{sources.audio_url}{mp3.name}"
         qs = [{"question": q.get("question", ""), "options": q.get("options", {}),
                "correctLabel": q.get("answer"), "rationale": q.get("rationale"),
                "optionRationales": q.get("option_rationales")} for q in d.get("questions", [])]
@@ -156,18 +219,24 @@ def parse_listening() -> list[dict]:
             "voices": d.get("voices", {}), "speakers": d.get("speakers", []),
             "lines": d.get("lines", []), "questions": qs, "audioPath": audio_path,
             "hasKey": bool(qs) and all(q["correctLabel"] for q in qs), "source": "seed",
+            "language": sources.language,
         })
     return items
 
 
-def parse_vocab() -> list[dict]:
+def parse_vocab(sources: LanguageSources | None = None) -> list[dict]:
     """Parse the bilingual vocab/grammar guide's markdown tables into vocab entries.
 
+    Args:
+        sources: Language to parse; omitted means English at the module-level paths.
+
     Returns:
-        One dict per table row with part, section, termEn, translationIt, and an
-        optional note (the middle column of three-column acronym tables).
+        One dict per table row with part, section, termEn (the term in the exam
+        language, whichever it is), translationIt, an optional note (the middle column
+        of three-column acronym tables), and language.
     """
-    text = (REF / "english-vocabulary-guide.md").read_text(encoding="utf-8")
+    sources = _resolve(sources)
+    text = (sources.ref / sources.vocab).read_text(encoding="utf-8")
     entries = []
     part = "I"
     section = ""
@@ -193,27 +262,40 @@ def parse_vocab() -> list[dict]:
                         term, it, note = cells[0], cells[1], None
                     entries.append({"part": part, "section": section or "General",
                                     "termEn": re.sub(r"[*_`]", "", term),
-                                    "translationIt": it, "note": note})
+                                    "translationIt": it, "note": note,
+                                    "language": sources.language})
                 j += 1
             i = j; continue
         i += 1
     return entries
 
 
-def main() -> None:
-    """Build seed-data.json from the jflt sources and report the parsed counts."""
-    reading = [r for r in parse_reading() if r["level"] >= MIN_LEVEL]
-    writing = [w for w in parse_writing() if w["stanagLevel"] >= MIN_LEVEL]
-    listening = parse_listening()
-    vocab = parse_vocab()
-    data = {"readingItems": reading, "writingTasks": writing,
-            "listeningItems": listening, "vocabEntries": vocab}
-    SEED_PATH.parent.mkdir(parents=True, exist_ok=True)
-    SEED_PATH.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
+def build_language(sources: LanguageSources, copy_audio: bool) -> dict[str, list[dict]]:
+    """Parse one language's sources into the seed groups, keeping only STANAG L3+ reading/writing.
 
+    Args:
+        sources: Language to build.
+        copy_audio: Whether to copy the listening MP3s into `sources.audio_dest`.
+
+    Returns:
+        The records of that language, keyed by the names in `SEED_GROUPS`.
+    """
+    return {
+        "readingItems": [r for r in parse_reading(sources) if r["level"] >= MIN_LEVEL],
+        "writingTasks": [w for w in parse_writing(sources) if w["stanagLevel"] >= MIN_LEVEL],
+        "listeningItems": parse_listening(sources, copy_audio=copy_audio),
+        "vocabEntries": parse_vocab(sources),
+    }
+
+
+def print_summary(language: str, data: dict[str, list[dict]]) -> None:
+    """Print the parsed counts of one language so a short or broken source shows up at once."""
+    reading, writing = data["readingItems"], data["writingTasks"]
+    listening, vocab = data["listeningItems"], data["vocabEntries"]
+    print(f"[{language}]")
     print(f"readingItems:   {len(reading)}")
     print(f"writingTasks:   {len(writing)}  types={[t['taskType'] for t in writing]}")
-    print(f"listeningItems: {len(listening)}  audio_copied={sum(1 for x in listening if x['audioPath'])} "
+    print(f"listeningItems: {len(listening)}  with_audio={sum(1 for x in listening if x['audioPath'])} "
           f"keyed={sum(1 for x in listening if x['hasKey'])}")
     print(f"vocabEntries:   {len(vocab)}")
     if reading:
@@ -224,7 +306,44 @@ def main() -> None:
         print(f"  {t['taskType']}: L{t['stanagLevel']} {t['wordCountMin']}-{t['wordCountMax']}w "
               f"rubric={len(t['rubric'])} opts={len(t['options'])} "
               f"model_words={[len(o['modelAnswer'].split()) for o in t['options']]}")
-    print(f"written: {SEED_PATH}")
+
+
+def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
+    """Parse the command line.
+
+    Args:
+        argv: Arguments without the program name; None reads `sys.argv`.
+
+    Returns:
+        The namespace with `lang` (a language code or "all"), `out` and `no_audio`.
+    """
+    parser = argparse.ArgumentParser(description="Build the Prisma seed data from the in-repo content.")
+    parser.add_argument("--lang", choices=[*LANGUAGES, "all"], default="all",
+                        help="content language to build (default: all)")
+    parser.add_argument("--out", type=Path, default=SEED_PATH,
+                        help=f"output file (default: {SEED_PATH.relative_to(REPO)})")
+    parser.add_argument("--no-audio", action="store_true",
+                        help="do not copy listening MP3s into the API static dir")
+    return parser.parse_args(argv)
+
+
+def main(argv: list[str] | None = None) -> None:
+    """Build seed-data.json for the selected languages and report the parsed counts.
+
+    Args:
+        argv: Arguments without the program name; None reads `sys.argv`.
+    """
+    args = parse_args(argv)
+    languages = list(LANGUAGES) if args.lang == "all" else [args.lang]
+    data: dict[str, list[dict]] = {group: [] for group in SEED_GROUPS}
+    for language in languages:
+        part = build_language(LANGUAGES[language], copy_audio=not args.no_audio)
+        print_summary(language, part)
+        for group in SEED_GROUPS:
+            data[group].extend(part[group])
+    args.out.parent.mkdir(parents=True, exist_ok=True)
+    args.out.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
+    print(f"written: {args.out}")
 
 
 if __name__ == "__main__":

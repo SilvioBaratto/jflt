@@ -1,0 +1,404 @@
+{
+  "readingItems": [
+    {
+      "level": 3,
+      "topic": "NATO open-door deterrence is self-undermining",
+      "passage": "The case for NATO's open-door policy has long rested on a self-evident premise: each new member state reinforces the alliance's collective deterrent and thus reduces the risk of conflict across the continent. Yet this argument has grown more contested as the geopolitical landscape has shifted. Critics contend that the very clarity of the commitment the alliance offers actually amplifies a rival power's incentives to act before a prospective member formally accedes — precisely the window of maximum vulnerability. The empirical record is ambiguous. While the states that joined after 1999 have remained free from direct attack, the accession process itself has periodically catalysed the tensions it was designed to pre-empt. Defenders of enlargement dismiss such concerns as conceding undue influence to a revisionist neighbour, insisting that any threshold short of full membership merely invites further encroachment. What the debate ultimately discloses is that deterrence theory, applied to membership decisions, generates no stable equilibrium: every threshold clarifies the boundary while simultaneously advertising what lies just beyond it.",
+      "question": "What does the author ultimately suggest about the logic of open-door deterrence?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Enlargement has proved ineffective because no new member state has been defended from direct attack.",
+          "rationale": "Misread: the passage states new members have not been directly attacked, meaning the empirical record is ambiguous, not that enlargement failed."
+        },
+        {
+          "label": "B",
+          "text": "Critics of enlargement overstate the risks by ignoring the consistently peaceful record of post-1999 accessions.",
+          "rationale": "Attribution-swap: defenders of enlargement make this claim in the passage, but the author does not endorse it."
+        },
+        {
+          "label": "C",
+          "text": "The deterrence logic of open-door membership is self-undermining because each threshold signals what remains beyond the alliance's protection.",
+          "rationale": "Correct: paraphrases \"every threshold clarifies the boundary while simultaneously advertising what lies just beyond it,\" which is the author's final conclusion."
+        },
+        {
+          "label": "D",
+          "text": "A rival power's opposition to enlargement should be treated as a negotiating position rather than a genuine security threat.",
+          "rationale": "Outside-knowledge lure: this diplomatic reframing does not appear in the passage and introduces an inference the text does not support."
+        }
+      ],
+      "correctLabel": "C",
+      "source": "seed"
+    },
+    {
+      "level": 4,
+      "topic": "Education / competency frameworks and cultural capital",
+      "passage": "The turn toward competency-based curricula in secondary and post-secondary education has been presented, by its advocates, as a democratisation of learning: by emphasising transferable skills — critical thinking, collaboration, adaptability — over the transmission of specific bodies of knowledge, education systems can, in principle, prepare students for an uncertain future without privileging particular cultural or disciplinary traditions. The diagnosis is progressive; the remedy, on closer inspection, is regressive in specific and underappreciated ways.\n\nContent-rich curricula, whatever their cultural biases, provide students with a common stock of material. The student who has been taught the causes of the First World War, the structure of an argument in formal logic, or the metabolic pathway of cellular respiration has acquired something transferable not because it is abstract but because it is shared. Competencies, by contrast, are capacities that require content to operate on. Critical thinking without a domain of knowledge to think critically about is an empty formalism — a point that cognitive science research on expert performance has made with some consistency.\n\nThe distributional consequence is not difficult to trace. Students from households rich in cultural capital — books, conversation, museum visits, travel, exposure to professional discourse — arrive at competency-based classrooms with the content that gives the competency substance. Students from households where that cultural capital is thin arrive with the same nominal competency framework but without the material it requires to become operational. The curriculum that appears to be neutral is, in practice, one that externalises the work of knowledge transmission to the home, and in doing so transmits advantage from one generation to the next through the very reform that claimed to interrupt it.",
+      "question": "What is the author's central objection to competency-based curricula?",
+      "options": [
+        {
+          "label": "A",
+          "text": "They misrepresent cognitive science findings on expert performance in order to justify a marketable reform agenda",
+          "rationale": "The author cites cognitive science as supporting their own argument against competency frameworks, not as misrepresented by advocates."
+        },
+        {
+          "label": "B",
+          "text": "They transfer the burden of knowledge provision to the home environment, thereby reproducing the very inequalities the reform claims to address",
+          "rationale": "The passage concludes the curriculum \"externalises the work of knowledge transmission to the home, and in doing so transmits advantage from one generation to the next through the very reform that claimed to interrupt it,\" directly matching this option."
+        },
+        {
+          "label": "C",
+          "text": "They overestimate students' intrinsic motivation to supply their own content in the absence of structured knowledge transmission",
+          "rationale": "Motivation is not discussed; the author's distributional argument concerns access to cultural capital, not willingness to engage."
+        },
+        {
+          "label": "D",
+          "text": "They replace disciplinary rigour with an undifferentiated emphasis on soft skills that employers cannot reliably assess",
+          "rationale": "Employer assessment is not mentioned; this captures a surface-level criticism of competency education but has no basis in the passage's argument."
+        }
+      ],
+      "correctLabel": "B",
+      "source": "seed"
+    }
+  ],
+  "writingTasks": [
+    {
+      "taskType": "formal_correspondence",
+      "stanagLevel": 3,
+      "title": "Task 1 — Sanctions Framework Renewal: Request for Clarification",
+      "instructions": "You are a staff officer (Major, J5 Political-Military Affairs) at a Multinational Corps Headquarters. The joint sanctions framework agreed under the Bremerhaven Accord is due to expire at the end of the calendar year. Several partner nations have signalled support for renewal and potential strengthening of the measures, but your headquarters has not yet received a formal written position from one partner nation.\n\nWrite a formal letter to that partner nation's Defence Attaché. Your letter must:\n\n- State the purpose of the letter clearly and identify the relevant framework by name and expiry date.\n- Explain the current status of partner consultations and why the partner nation's position is needed.\n- Request written clarification on three specific points: support for renewal; proposed modifications, if any; and the designated national focal point for further consultations.\n- State a clear response deadline and explain why it is necessary.\n- Use a register and conventions appropriate to formal inter-governmental military correspondence.",
+      "wordCountMin": 150,
+      "wordCountMax": 250,
+      "rubric": [
+        {
+          "dimension": "Accuracy",
+          "descriptor": "Consistent control of complex formal structures — subordinate clauses, passive constructions, conditionals, and modal phrases such as \"would be grateful if you could\" — with no errors that impede comprehension or undermine professional register."
+        },
+        {
+          "dimension": "Range",
+          "descriptor": "Precise diplomatic vocabulary (\"focal point\", \"consolidated partner assessment\", \"designated parties\", \"non-compliance\") deployed accurately; varied sentence length and structure; no repetition of high-frequency words."
+        },
+        {
+          "dimension": "Coherence & organisation",
+          "descriptor": "Logical four-paragraph structure (purpose → context → request → deadline and close); cohesive devices (\"As you are aware\", \"We would therefore\", \"should you require\") link ideas smoothly without mechanical repetition."
+        },
+        {
+          "dimension": "Task fulfilment",
+          "descriptor": "All five prompt requirements met — framework named with expiry date, consultation status explained, three specific clarification points listed, deadline stated with justification, letter closed with offer of further contact."
+        },
+        {
+          "dimension": "Register & tone",
+          "descriptor": "Consistently formal inter-governmental register throughout; polite but precise; no informality, contractions, or hedging language inappropriate to official military correspondence."
+        }
+      ],
+      "options": [
+        {
+          "key": "main",
+          "label": "",
+          "prompt": "",
+          "modelAnswer": "Dear Colonel Harkov,\n\nI am writing on behalf of the Multinational Corps Headquarters to seek clarification on your government's current position regarding the renewal of the joint sanctions framework agreed under the Bremerhaven Accord of 2021, which is due to expire on 31 December of this year.\n\nAs you are aware, several partner nations have indicated in recent weeks a desire to extend and, in certain respects, strengthen the existing measures in light of continued non-compliance by the designated parties. However, your government's formal position on this matter has not yet been communicated to this headquarters, and its absence creates a significant gap in the consolidated partner assessment currently being prepared.\n\nWe would be grateful if you could provide, at your earliest convenience, a written summary of your government's stance on the following three points: whether your government supports renewal of the framework; whether it proposes any modifications to the current measures; and which national authority should serve as the designated focal point for subsequent consultations.\n\nThe Corps Commander is scheduled to present the consolidated assessment to the Steering Committee on 14 November. We would therefore appreciate a formal response no later than 28 October, in order to allow sufficient time for the submission to be prepared.\n\nPlease do not hesitate to contact me directly should you require any further information or clarification.\n\nYours sincerely,\n\nMajor T. Eriksson\nJ5 Political-Military Affairs\nMultinational Corps Headquarters"
+        }
+      ],
+      "source": "seed"
+    },
+    {
+      "taskType": "essay",
+      "stanagLevel": 4,
+      "title": "Task 16 — Essay: The Economics of Supply Chain Reshoring",
+      "instructions": "Assess the following argument: \"The strategic imperative to reshore critical supply chains for reasons of national security is, in the long run, economically self-defeating: it raises costs, reduces efficiency, and risks provoking the very trade fragmentation it purports to prevent.\"\n\nYour essay must:\n\n- State a clear, arguable thesis in the introduction that responds directly to the claim\n- Present and evaluate the main economic objections to reshoring, drawing on appropriate analytical concepts such as comparative advantage, deadweight loss, and value chain efficiency\n- Identify and interrogate the key assumptions or gaps in the \"self-defeating\" argument\n- Distinguish between different types or scales of reshoring intervention and assess whether the critique applies with equal force to all of them\n- Reach a substantiated conclusion that specifies the conditions under which reshoring is, or is not, strategically and economically justified\n\nWrite in an analytical, impersonal register consistent with quality economic journalism or a policy brief addressed to senior decision-makers.",
+      "wordCountMin": 350,
+      "wordCountMax": 700,
+      "rubric": [
+        {
+          "dimension": "Accuracy",
+          "descriptor": "A top-scoring response exercises near-native grammatical control throughout sustained, complex argumentation: conditionals, nominalisations, participial phrases, relative clauses, and passive constructions are deployed accurately across diverse syntactic environments; modal auxiliaries are used with logical consistency; register and agreement are maintained under maximum structural complexity."
+        },
+        {
+          "dimension": "Range",
+          "descriptor": "Vocabulary spans the intersecting registers of economics, trade policy, and security studies with confident precision — terms such as *comparative advantage*, *deadweight loss*, *systemic vulnerability*, *rent-seeking*, *friend-shoring*, *plurilateral*, *autarky*, and *value chain* are used with full idiomatic and denotative control; a wide inventory of syntactic structures is deployed purposefully, varying sentence length and architecture to achieve clarity and emphasis."
+        },
+        {
+          "dimension": "Coherence & organisation",
+          "descriptor": "The essay is structured with a clearly framed thesis introduction, analytically developed body paragraphs each centred on a distinct argumentative move — stating the objection, exposing its baseline assumption, distinguishing intervention types, addressing the fragmentation risk — and a synthesising conclusion responsive to the original claim; discourse markers connect ideas accurately; the argument accumulates logically rather than repeating itself."
+        },
+        {
+          "dimension": "Task fulfilment",
+          "descriptor": "All five requirements are addressed: the thesis responds directly to the claim; the main economic objections are presented with reference to comparative advantage and deadweight loss; the assumptions of the \"self-defeating\" argument are identified and interrogated; different scales and types of reshoring are distinguished; the conclusion specifies conditions of justification rather than offering a blanket verdict; the word count falls within the 350–700 word band."
+        },
+        {
+          "dimension": "Register & tone",
+          "descriptor": "A consistent, analytical, and impersonal register is maintained throughout; the prose is that of a policy analyst rather than an advocate; no lapses into informality, unsupported assertion, or emotive framing occur; the argument is accessible without being reductive."
+        }
+      ],
+      "options": [
+        {
+          "key": "main",
+          "label": "",
+          "prompt": "",
+          "modelAnswer": "The argument that reshoring is economically self-defeating has gained considerable purchase among economists since pandemic-era supply chain disruptions prompted a wave of industrial policy legislation — the US CHIPS and Science Act, the EU Critical Raw Materials Act, and comparable measures in Japan and South Korea — that explicitly subordinates productive efficiency to strategic resilience. The critique rests on sound analytical foundations, and its strongest form deserves engagement rather than dismissal. Nevertheless, this essay contends that the \"self-defeating\" thesis rests on a partial accounting that systematically undervalues the costs of strategic dependency and conflates all forms of reshoring intervention with the most economically distortive variant.\n\nThe core economic objection invokes comparative advantage. If Country A produces semiconductors at substantially lower cost than Country B, redirecting Country B's capital toward domestic fabrication generates deadweight loss from a global welfare standpoint. Subsidising uncompetitive domestic production imposes costs on consumers, distorts capital allocation, and — where trading partners respond symmetrically — sets in motion the very spiral of fragmentation that reshoring advocates claim to be preventing. The OECD has estimated that deep fragmentation of global value chains could reduce global GDP by several percentage points, a cost falling disproportionately on smaller, trade-dependent economies. These objections are analytically rigorous.\n\nTheir central weakness, however, lies in the baseline assumption against which reshoring is assessed. The argument measures the costs of industrial policy against a counterfactual of undisturbed free trade, which is no longer the relevant comparison for any economy operating in the current geopolitical environment. The appropriate counterfactual is a world in which strategic dependencies have been allowed to deepen — a world whose costs were illustrated with unusual clarity by the European natural gas crisis of 2022. The efficiency gains accumulated over a decade of cheap pipeline imports were substantially offset within a single year by price shocks, industrial disruption, and emergency public expenditure. A framework that systematically underprices systemic risk until it materialises is analytically deficient, whatever its formal elegance.\n\nThe thesis also conflates reshoring as a generic category with reshoring as practised in its most distortive form. Credible industrial policy interventions do not attempt to replicate comparative advantage where it does not exist; they target specific nodes in supply chains where production concentrated under a single geopolitical adversary creates structural vulnerabilities that market mechanisms cannot self-correct. Requiring that final assembly of dual-use components occur domestically, while continuing to source inputs from a diversified range of partners, is categorically different from autarky. Friend-shoring — redistributing supply chains toward allied states — achieves meaningful risk reduction at a substantially lower efficiency cost than full domestic substitution. The critique applies with full force to badly designed, reflexively protectionist interventions; it applies with considerably less force to calibrated, targeted measures with a clear security rationale.\n\nThe fragmentation risk deserves acknowledgement as the thesis's most serious component: if each state acts unilaterally to insulate its critical industries, the aggregate outcome may be a more fragmented and less prosperous world than any individual actor intended. This concern, however, points toward multilateral coordination rather than strategic passivity. Binding plurilateral frameworks governing subsidy transparency, mutual recognition of strategic categories, and export controls can constrain competitive distortions while preserving legitimate resilience objectives.\n\nIn conclusion, reshoring is not inherently self-defeating, but its costs and benefits are sharply sensitive to design quality and the nature of the dependency being addressed. The case against it is strongest where it reflects reflexive economic nationalism rather than calibrated strategic investment; the case for it is strongest where genuine structural vulnerabilities have been identified, the intervention is proportionate, and coordination mechanisms are in place to limit the fragmentation dynamic that the critique rightly fears."
+        }
+      ],
+      "source": "seed"
+    }
+  ],
+  "listeningItems": [
+    {
+      "level": 3,
+      "topic": "NATO burden-sharing and the credibility of extended deterrence",
+      "conversationType": "radio current-affairs interview",
+      "setting": "A prime-time radio current-affairs programme in which the host interviews a Brussels-based defence policy analyst on whether NATO spending targets are the right measure of allied commitment.",
+      "voices": {
+        "HOST": "nova",
+        "ANALYST": "onyx"
+      },
+      "speakers": [
+        {
+          "id": "HOST",
+          "role": "Radio journalist and interviewer",
+          "voice": "nova"
+        },
+        {
+          "id": "ANALYST",
+          "role": "Defence policy analyst",
+          "voice": "onyx"
+        }
+      ],
+      "lines": [
+        {
+          "speaker": "HOST",
+          "text": "Good evening. NATO's two per cent spending target was once a vague aspiration; today it is a genuine flashpoint. Joining me is defence analyst Dr. Elena Voss, recently back from Brussels. Dr. Voss, is the burden-sharing debate really about money, or is it about something deeper?"
+        },
+        {
+          "speaker": "ANALYST",
+          "text": "Thank you. It is both, in a sense, though I would argue that money is the more visible symptom of a deeper strategic ambivalence. Several European allies have technically met the two per cent threshold, yet their contributions to collective defence remain patchy. You can spend two per cent of GDP and still fail to field deployable, interoperable forces. So the metric itself is rather blunt."
+        },
+        {
+          "speaker": "HOST",
+          "text": "But surely, if allies persistently fall short of the baseline, that signals a lack of political commitment. Washington has made clear that it regards chronic under-spending as free-riding. Is that not a legitimate grievance?"
+        },
+        {
+          "speaker": "ANALYST",
+          "text": "It is a legitimate grievance, up to a point. The problem is that burden-sharing arguments tend to reduce a complex alliance to a simple ledger. Extended deterrence, particularly the nuclear guarantee, depends not just on spending levels but on credible signalling, on forward posture, on the quality of political consultation. If the United States conveys to adversaries that its commitment is contingent on a budget figure, it may inadvertently erode the very deterrent it is trying to uphold."
+        },
+        {
+          "speaker": "HOST",
+          "text": "That is a striking point. You are saying that the rhetoric of conditionality can itself become destabilising."
+        },
+        {
+          "speaker": "ANALYST",
+          "text": "Precisely. Adversaries read American statements very carefully. Any suggestion that the Article Five guarantee is transactional rather than unconditional gives those adversaries an opening to question NATO's cohesion. And that is damaging regardless of what European defence ministries actually spend."
+        },
+        {
+          "speaker": "HOST",
+          "text": "Yet some analysts argue the opposite — that tougher conditionality would sharpen European resolve. If allies knew the guarantee was not automatic, might they not invest more seriously in their own defence?"
+        },
+        {
+          "speaker": "ANALYST",
+          "text": "I understand the logic, and I concede it has a certain internal coherence. But the historical evidence is mixed. The countries that have significantly raised their defence budgets have generally done so in response to a proximate threat, not to American pressure. Estonia, Poland, Finland — they spend because they feel directly exposed, not because Washington threatened to walk away. There is a real risk that conditionality will harden European scepticism about American reliability without producing the strategic depth NATO actually needs."
+        },
+        {
+          "speaker": "HOST",
+          "text": "So your argument is that the alliance needs better metrics rather than louder warnings."
+        },
+        {
+          "speaker": "ANALYST",
+          "text": "Exactly. Assess allies on capability and readiness — on whether they can actually field and sustain forces — not simply on what share of GDP passes through the defence budget. That is where the credibility of extended deterrence is genuinely built or lost."
+        }
+      ],
+      "questions": [
+        {
+          "question": "What is the analyst's central concern about using spending targets as the primary measure of allied commitment?",
+          "options": {
+            "A": "European allies have consistently refused to meet even the minimum two per cent target, putting collective defence at serious risk.",
+            "B": "Framing the Article Five guarantee as conditional on budget levels may signal to adversaries that NATO's cohesion is negotiable.",
+            "C": "The two per cent threshold is set too low to fund a credible conventional deterrent against modern threats.",
+            "D": "NATO allies prefer to contribute to collective defence through non-financial means such as intelligence sharing."
+          },
+          "correctLabel": "B",
+          "rationale": "The analyst warns that if the US ties its commitment to a budget figure, or treats Article Five as transactional, adversaries gain an opening to question NATO's cohesion. That is the core danger of leaning on spending targets.",
+          "optionRationales": {
+            "A": "Over-generalisation: the analyst says several allies have technically met the two per cent threshold, so they have not consistently refused it.",
+            "B": "Correct: the analyst says conditionality tied to a budget figure may erode deterrence by letting adversaries question NATO's cohesion.",
+            "C": "Not said: the analyst calls the metric blunt, but never says two per cent is too low to fund deterrence.",
+            "D": "Not said: non-financial contributions such as intelligence sharing are never mentioned; the analyst stresses capability and readiness."
+          }
+        },
+        {
+          "question": "When the analyst concedes that the conditionality argument 'has a certain internal coherence,' what is the primary function of this concession in the discussion?",
+          "options": {
+            "A": "To acknowledge the opposing argument's logical appeal before introducing contradictory historical evidence.",
+            "B": "To signal a change of position and indicate growing support for stricter conditionality.",
+            "C": "To suggest that both sides of the debate are equally well supported by the available facts.",
+            "D": "To imply that analysts who favour conditionality are ignoring the lessons of recent history."
+          },
+          "correctLabel": "A",
+          "rationale": "The analyst grants the logic of conditionality and then immediately counters with 'the historical evidence is mixed', citing Estonia, Poland and Finland. The concession is a rhetorical step before rebuttal.",
+          "optionRationales": {
+            "A": "Correct: the analyst grants the logic, then introduces historical evidence that undercuts the argument.",
+            "B": "Misreads concession as a change of position; the analyst goes on to warn that conditionality will harden scepticism.",
+            "C": "False balance: the analyst says the evidence is mixed but ends up arguing against conditionality, not for parity of support.",
+            "D": "Overstates the tone: the analyst is courteous and never accuses proponents of ignoring history."
+          }
+        },
+        {
+          "question": "What does the analyst imply by citing Estonia, Poland, and Finland as countries that have significantly raised their defence spending?",
+          "options": {
+            "A": "Sustained American diplomatic pressure is the most reliable way to persuade NATO members to increase their budgets.",
+            "B": "Smaller alliance members are inherently more committed to collective defence than larger NATO nations.",
+            "C": "Countries that meet the two per cent target automatically develop deployable and interoperable military forces.",
+            "D": "Direct exposure to a perceived proximate threat, rather than alliance pressure, is the primary driver of serious defence investment."
+          },
+          "correctLabel": "D",
+          "rationale": "The analyst says these states spend because they feel directly exposed, not because Washington threatened to walk away. This implies proximate threat, not alliance pressure, drives serious investment.",
+          "optionRationales": {
+            "A": "Reversed relation: the analyst says these countries did not raise budgets in response to American pressure.",
+            "B": "Unsupported generalisation: the analyst compares motivation by exposure, not commitment of small versus large members.",
+            "C": "Contradicts earlier remarks: the analyst says meeting two per cent can still leave forces undeployable and non-interoperable.",
+            "D": "Correct: the examples show spending driven by direct exposure to a proximate threat, not by pressure."
+          }
+        }
+      ],
+      "audioPath": "/static/listening/listening-01.mp3",
+      "hasKey": true,
+      "source": "seed"
+    },
+    {
+      "level": 3,
+      "topic": "Climate-driven competition over water and Arctic resources",
+      "conversationType": "panel discussion",
+      "setting": "A broadcast panel discussion exploring how climate change is reshaping geopolitical competition over freshwater and Arctic resources, recorded for an international affairs programme.",
+      "voices": {
+        "MOD": "echo",
+        "DR_COLE": "alloy",
+        "PROF_SANTOS": "nova"
+      },
+      "speakers": [
+        {
+          "id": "MOD",
+          "role": "Moderator",
+          "voice": "echo"
+        },
+        {
+          "id": "DR_COLE",
+          "role": "Senior fellow, Global Security Institute",
+          "voice": "alloy"
+        },
+        {
+          "id": "PROF_SANTOS",
+          "role": "UN Environment Programme adviser",
+          "voice": "nova"
+        }
+      ],
+      "lines": [
+        {
+          "speaker": "MOD",
+          "text": "Welcome to Climate Watch. Today we examine two intersecting pressures: dwindling freshwater across vulnerable river basins and the rapidly opening Arctic — both reshaping geopolitical competition in ways that demand urgent attention. Joining me are Dr. Cole, a senior fellow at the Global Security Institute, and Professor Santos, who advises the UN Environment Programme. Dr. Cole, how serious is the resource competition dynamic?"
+        },
+        {
+          "speaker": "DR_COLE",
+          "text": "Arguably the defining security challenge of this decade. States sharing river basins — the Nile, the Mekong, the Amu Darya — are shifting from cooperative frameworks toward unilateral infrastructure projects. Upstream nations build dams; downstream populations bear the cost. And what concerns me most is that climate is compressing the timeline. Countries that once had thirty years to negotiate are now looking at a decade before the pressure becomes acute."
+        },
+        {
+          "speaker": "PROF_SANTOS",
+          "text": "I'd push back on the framing of inevitability, though. The history of shared waterways shows that even adversarial states have found workable arrangements — the Indus Waters Treaty survived two wars between India and Pakistan. The question isn't whether cooperation is possible; it's whether political will can be mobilised ahead of a crisis rather than in response to one."
+        },
+        {
+          "speaker": "DR_COLE",
+          "text": "Fair point, and I wouldn't entirely dispute it. But the Arctic is a different matter. Ice melt has opened shipping routes and exposed hydrocarbon and mineral deposits inaccessible a generation ago. Russia is asserting territorial claims; NATO allies are scrambling to close capability gaps; and China — without a single kilometre of Arctic coastline — is styling itself a near-Arctic state. That signals something qualitatively different from a river-basin dispute."
+        },
+        {
+          "speaker": "PROF_SANTOS",
+          "text": "Where I agree with you is that the Arctic Council's consensus model is under genuine strain. But we must distinguish competitive positioning — which is inevitable — from outright conflict, which is not. States are hedging, yes, yet they're also concluding quiet bilateral arrangements because they recognise an open confrontation would be costly for all sides."
+        },
+        {
+          "speaker": "MOD",
+          "text": "So — the gravitational pull of national interest versus the logic of mutual constraint. Professor Santos, is there a realistic mechanism that could hold?"
+        },
+        {
+          "speaker": "PROF_SANTOS",
+          "text": "Sector-specific agreements, I would argue. We've already seen this work with Arctic fisheries: when a resource is finite and mismanagement harms everyone, pragmatic cooperation emerges even among rivals. The danger is that energy and rare-earth deposits don't carry the same mutuality of vulnerability — the asymmetries are too large."
+        },
+        {
+          "speaker": "DR_COLE",
+          "text": "And that is precisely where I remain sceptical. When the stakes involve strategic advantage — rare-earth deposits, year-round shipping lanes — the incentive to defect from any framework is enormous. History suggests that in high-value resource contests, legal commitments tend to be honoured in the breach."
+        },
+        {
+          "speaker": "MOD",
+          "text": "A sobering note on which to close. Thank you both."
+        }
+      ],
+      "questions": [
+        {
+          "question": "What does Dr. Cole imply about the effect of climate change on resource diplomacy?",
+          "options": {
+            "A": "Climate change is reducing the time available for negotiated solutions to resource disputes.",
+            "B": "Climate change has already caused armed conflict over shared river basins.",
+            "C": "Climate change is a less significant driver of conflict than the failure of international law.",
+            "D": "Climate change affects downstream nations more severely than upstream nations."
+          },
+          "correctLabel": "A",
+          "rationale": "Dr. Cole says climate is compressing the timeline: countries once had thirty years to negotiate and now have about a decade. So less time remains for negotiated solutions.",
+          "optionRationales": {
+            "A": "Correct: the thirty-years-to-a-decade contrast shows climate shrinking the window for negotiation.",
+            "B": "Targets an over-reading: Cole speaks of rising pressure and unilateral projects, never of armed conflict having already occurred.",
+            "C": "Reverses the stress: Cole names climate as what compresses the timeline, and never ranks it below failed international law.",
+            "D": "True-but-not-said distractor: Cole notes downstream populations bear the cost of dams, but he does not link this to climate change."
+          }
+        },
+        {
+          "question": "When Professor Santos cites the Indus Waters Treaty, her underlying point is that:",
+          "options": {
+            "A": "international law has been uniquely effective in South Asian water management.",
+            "B": "the treaty provides a specific template that Arctic nations should formally adopt.",
+            "C": "military conflict between states has no lasting effect on existing water agreements.",
+            "D": "even states in deep political conflict can sustain cooperative resource arrangements."
+          },
+          "correctLabel": "D",
+          "rationale": "Santos says the Indus treaty survived two India-Pakistan wars, to show that adversarial states can find workable arrangements. Her point is that cooperation is possible even amid hostility.",
+          "optionRationales": {
+            "A": "Over-generalisation: she cites one treaty as an example and makes no claim that law is uniquely effective in South Asia.",
+            "B": "Not said: she never proposes the treaty as a template for the Arctic, and later favours sector-specific agreements.",
+            "C": "Over-reading: the treaty survived the wars, but she does not claim conflict never affects water agreements.",
+            "D": "Correct: the treaty surviving two wars shows that even adversaries can sustain cooperative arrangements."
+          }
+        },
+        {
+          "question": "What is the primary function of Dr. Cole's phrase 'Fair point, and I wouldn't entirely dispute it' at the start of his second turn?",
+          "options": {
+            "A": "To signal a fundamental reversal of his earlier view on the inevitability of resource conflict.",
+            "B": "To concede limited validity to Santos's argument before redirecting attention to a more contested case.",
+            "C": "To challenge the historical accuracy of the Indus Waters Treaty as an example of successful cooperation.",
+            "D": "To agree with Santos that existing legal frameworks are adequate to manage Arctic competition."
+          },
+          "correctLabel": "B",
+          "rationale": "Cole grants Santos some validity, then says the Arctic is a different matter. The phrase is a limited concession that sets up a contrast.",
+          "optionRationales": {
+            "A": "Too strong: the hedge 'wouldn't entirely dispute' is partial, and Cole later repeats his scepticism.",
+            "B": "Correct: he concedes some validity, then uses 'But the Arctic is a different matter' to shift to a harder case.",
+            "C": "Wrong target: Cole does not question the Indus example's accuracy, and he accepts it as a fair point.",
+            "D": "Reversed: Cole never calls existing frameworks adequate for the Arctic and ends by doubting legal commitments."
+          }
+        }
+      ],
+      "audioPath": "/static/listening/listening-12.mp3",
+      "hasKey": true,
+      "source": "seed"
+    }
+  ],
+  "vocabEntries": [
+    {
+      "part": "I",
+      "section": "Gradi, struttura organizzativa & strutture",
+      "termEn": "Headquarters (HQ)",
+      "translationIt": "Quartier generale",
+      "note": null
+    },
+    {
+      "part": "I",
+      "section": "4 Periodo ipotetico (conditionals)",
+      "termEn": "Mixed",
+      "translationIt": "*If they had secured the depot, we wouldn't be short of fuel now.*",
+      "note": "*if* + past perfect, *would* (ora)"
+    }
+  ]
+}
