@@ -5,11 +5,12 @@ two defensible keys, or distractors a test-wise candidate eliminates without rea
 breaks any rule below is invalid regardless of how good the passage is.
 
 They govern the Spanish set (`api/seed-src/es/`). Passages, stems, options and rationales are written
-in Spanish; this file is in English because it instructs the generator. Every threshold below equals a
-constant in `api/seed-src/es/tools/checks.py`. A rule marked **(checked)** is enforced by that tool,
-which fails the batch when the rule is broken; the mark says whether it covers reading, listening or
-both. Everything else — including each check the tool runs for reading only — is verified by the
-reviewers (the blind solver and the Spanish language review) on every batch.
+in Spanish; this file is in English because it instructs the generator. Every threshold the tool enforces
+equals a constant in `api/seed-src/es/tools/checks.py`; aims and hand-checked targets are guidance. A rule
+marked **(checked)** is enforced by that tool, which fails the batch when the rule is broken; the mark says
+whether it covers reading, listening or both. Everything else — including each check the tool runs for
+reading only — is verified by the reviewers (the blind solver and the Spanish language review) on every
+batch.
 
 ## The key
 1. Exactly ONE option is defensibly correct given only the passage. No second option can be argued

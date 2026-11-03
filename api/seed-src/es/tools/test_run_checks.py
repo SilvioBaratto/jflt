@@ -174,6 +174,35 @@ def test_vocab_with_invalid_utf8_prints_one_error_line(root, capsys):
     assert "Traceback" not in out
 
 
+def test_reading_flags_a_wrapped_option_in_the_exam(root, capsys):
+    """A wrapped option is reported by the reading run, not silently truncated by the parser."""
+    exam = root / "api" / "seed-src" / "es" / "reading" / "reading-exam.md"
+    replace_with_copy(exam, exam.read_text(encoding="utf-8").replace("- **B)** ", "- **B)** x\n  ", 1))
+
+    assert main(["reading"], root=root) == 1
+
+    assert "R1: option B wraps" in capsys.readouterr().out
+
+
+def test_writing_reports_unreadable_files_when_the_exam_says_palabras(root, capsys):
+    """`parse_writing` only reads the English `words` token, so a Spanish one drops the file set."""
+    exam = root / "api" / "seed-src" / "es" / "writing" / "writing-exam.md"
+    replace_with_copy(exam, exam.read_text(encoding="utf-8").replace(" words*", " palabras*"))
+
+    assert main(["writing"], root=root) == 1
+
+    assert "cannot read the content files" in capsys.readouterr().out
+
+
+def test_writing_reports_model_answer_missing_when_labelled_respuesta_modelo(root, capsys):
+    """`parse_writing` only reads `**Model answer**`, so a Spanish label leaves the answer empty."""
+    edit_model_answers(root, lambda text: text.replace("**Model answer**", "**Respuesta modelo**"))
+
+    assert main(["writing"], root=root) == 1
+
+    assert "model answer missing" in capsys.readouterr().out
+
+
 def test_help_describes_the_tool(capsys):
     """The parser carries its own one-line description instead of slicing the module doc."""
     with pytest.raises(SystemExit) as stopped:

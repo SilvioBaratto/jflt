@@ -27,6 +27,7 @@ from builder import REPO, load_builder
 from checks import (
     check_answer_key_layout,
     check_audio,
+    check_exam_layout,
     check_listening,
     check_reading,
     check_vocab,
@@ -69,10 +70,12 @@ def run_reading(root: Path, scratch: Path, final: bool) -> Result:
     builder = _es_builder(root, scratch)
     try:
         items = builder.parse_reading()
+        exam_markdown = (es / "reading" / "reading-exam.md").read_text(encoding="utf-8")
         key_markdown = (es / "reading" / "reading-answer-key.md").read_text(encoding="utf-8")
     except (OSError, ValueError) as exc:
         return _unreadable("R", exc)
     errors = check_reading(items, expect_count=READING_COUNT if final else None)
+    errors += check_exam_layout(exam_markdown)
     errors += check_answer_key_layout(key_markdown)
     levels = Counter(item["level"] for item in items)
     split = ", ".join(f"L{level} {levels[level]}" for level in sorted(levels))
@@ -143,7 +146,7 @@ def run_audio(root: Path, scratch: Path, final: bool) -> Result:
     scripts = sorted((es / "listening").glob("listening-*.json"))
     errors = []
     # `parse_listening` walks the same sorted glob, so items and scripts line up by index.
-    for item, script in zip(items, scripts):
+    for item, script in zip(items, scripts, strict=True):
         errors += check_audio(item, script.with_suffix(".mp3"))
     if not scripts:
         errors.append("L: no listening-*.json scripts found")
@@ -300,7 +303,10 @@ def _add_window_arguments(command: argparse.ArgumentParser) -> None:
 
 def build_parser() -> argparse.ArgumentParser:
     """Build the command-line parser: one subcommand per check, `all`, `pack` and `compare`."""
-    parser = argparse.ArgumentParser(prog="run_checks.py", description="Run the mechanical quality checks over the Spanish STANAG content.")
+    parser = argparse.ArgumentParser(
+        prog="run_checks.py",
+        description="Run the mechanical quality checks over the Spanish STANAG content.",
+    )
     commands = parser.add_subparsers(dest="command", required=True)
     for name in (*CHECKS, "all"):
         help_text = "run every check" if name == "all" else f"run the {name} check"
