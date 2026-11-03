@@ -4,8 +4,8 @@
 
 ### 1. Key: B
 
-- [ ] **A)** Reforzaron a gobiernos civiles frágiles frente a sus propios ejércitos, lo que provocó la reacción de los militares y la ruptura del orden constitucional.
-  - Relación invertida: lo que se reforzó fue el instrumento militar, sin «contrapesos civiles» que lo limitaran, y fueron unidades instruidas las que participaron en «la ruptura del orden constitucional».
+- [ ] **A)** Fracasaron porque Europa formó a las tropas sin atender a las causas sociales de la insurgencia, que siguieron alimentando a los grupos yihadistas.
+  - Conocimiento externo: el texto no habla de las causas sociales de la insurgencia; sitúa el fallo en que se reforzó el instrumento militar sin «contrapesos civiles» que lo limitaran.
 - [x] **B)** Trataron la capacidad militar como algo ajeno a la política, cuando reforzarla en Estados de la región altera el reparto interno del poder.
   - Correcta: reformula «como si la capacidad fuera políticamente neutra» y la idea de que fortalecer al ejército «equivale a alterar el equilibrio interno de poder», que es el núcleo del argumento.
 - [ ] **C)** Acertaron en el planteamiento, pero se quedaron cortas: habría hecho falta formar a más unidades y durante más tiempo.
@@ -39,7 +39,7 @@
 
 - [ ] **A)** Trasladan la responsabilidad a cada investigador, que es quien decide en último término a qué fines civiles o militares se aplican sus resultados.
   - Relación invertida: el texto dice que el uso del conocimiento «escapa en gran medida al control del investigador una vez publicado el trabajo».
-- [ ] **B)** Expresan una inquietud que el autor comparte, hasta el punto de proponer que el veto alcance también a los fondos civiles con posibles usos bélicos.
+- [ ] **B)** Expresan una inquietud que el autor comparte hasta el punto de proponer que el veto alcance también a los fondos civiles con posibles usos bélicos.
   - Lectura errónea: el autor reconoce la preocupación ética, pero no propone ampliar el veto; pide fijarse en «la evaluación de riesgos» y en «los usos previstos».
 - [x] **C)** Se basan en un criterio fácil de comprobar, pero que deja a la universidad sin capacidad de influir en el uso que otros den a sus hallazgos.
   - Correcta: sintetiza que el criterio de la financiación es «sencillo de aplicar», pero rechazar la financiación militar «priva a la universidad de cualquier capacidad de influir en las condiciones de uso».
@@ -73,7 +73,7 @@
 - [ ] **A)** Nostálgico, pues lamenta que se haya perdido la afinidad cultural y humana que durante décadas unió a Europa con la región.
   - Atribución cambiada: la nostalgia es la impresión que la insistencia europea causa «al otro lado del Atlántico»; el texto afirma que los vínculos siguen siendo «tan densos».
 - [ ] **B)** Crítico con Bruselas pero resignado, pues da a entender que la región ya ha optado por otros socios y que poco cabe hacer al respecto.
-  - Lectura errónea: toma por fatalismo el aviso final («De lo contrario…»), pero el autor plantea una condición («Si la Unión quiere…») y dice qué tendría que cambiar.
+  - Lectura errónea: toma por fatalismo el aviso final («De lo contrario, seguirá llegando a las cumbres con los mejores discursos»), pero el autor plantea una condición («Si la Unión quiere que la relación con la región sea algo más que retórica») y dice qué tendría que cambiar.
 - [x] **C)** Exigente con la Unión: reconoce sus bazas, pero le reprocha que la lentitud de sus decisiones las desaproveche frente a socios más rápidos.
   - Correcta: admite que el diagnóstico de afinidad «no es falso» y que Europa tiene bazas propias, pero censura una lentitud que «las vacía de valor político» y señala qué tendría que cambiar.
 - [ ] **D)** Sarcástico con la diplomacia europea, cuyos discursos presenta como simple retórica para disimular la falta de interés real por la región.
@@ -92,7 +92,7 @@
 
 ### 9. Key: B
 
-- [ ] **A)** La cuestiona, pero atribuye el retraso a que la regulación ha ahuyentado el capital que la industria tecnológica europea necesitaba para crecer.
+- [ ] **A)** La matiza, pues atribuye el retraso a que la regulación ha ahuyentado el capital que la industria tecnológica europea necesitaba para crecer.
   - Relación invertida: el texto no culpa a la norma de la falta de capital; dice que culpar al regulador permite «eludir una pregunta más incómoda» sobre por qué el capital no apuesta por la industria europea.
 - [x] **B)** La juzga exagerada y atribuye el retraso sobre todo a la escala, aunque reconoce el riesgo que una aplicación dispar de las normas supone para las pymes.
   - Correcta: sitúa el problema, que es «de escala», en la inversión, la infraestructura y la fragmentación del mercado, pero reconoce el riesgo de «inseguridad jurídica» para las empresas pequeñas.
@@ -107,8 +107,8 @@
   - Lectura errónea: el texto no jerarquiza los instrumentos y advierte que, con las reservas públicas, las administraciones «no siempre aciertan» al decidir qué almacenar.
 - [ ] **B)** Comparten un mismo punto débil: dependen de que la administración prevea qué productos serán críticos, algo en lo que no siempre acierta.
   - Generalización excesiva: el texto atribuye esa dificultad a las reservas estratégicas públicas, en las que las administraciones «no siempre aciertan»; los demás instrumentos tienen otros costes.
-- [ ] **C)** Acaban trasladando el coste al contribuyente, de modo que elegir entre ellos es una cuestión de eficacia más que de reparto de la carga.
-  - Generalización excesiva: solo de las subvenciones dice el texto que trasladan el coste «al contribuyente»; las obligaciones regulatorias, en cambio, «acaban repercutiendo en los precios que paga el consumidor».
+- [ ] **C)** Acaban haciendo pagar a los mismos hogares por una vía u otra, de modo que elegir entre ellos es una cuestión de eficacia más que de reparto de la carga.
+  - Lectura errónea: el texto distingue quién soporta el coste, el contribuyente o «los precios que paga el consumidor», y concluye que elegir es decidir «a quién se pide que financie» esa seguridad.
 - [x] **D)** Al repartir cada uno el coste de forma distinta, elegir entre ellos equivale a decidir quién paga una protección que beneficia al conjunto.
   - Correcta: sintetiza que «ninguna de las respuestas sale gratis» y que elegir entre los instrumentos supone decidir «a quién se pide que financie» una seguridad común.
 
@@ -230,7 +230,7 @@
   - Lectura errónea: según el texto, «Las cifras suelen darle la razón a corto plazo»; el socio relaja la vigilancia de forma calculada, como baza en cada negociación, no por haber cobrado ya.
 - [ ] **C)** Funcionan mientras dure la financiación, de modo que unos fondos estables y plurianuales bastarían para garantizar la cooperación del socio durante muchos años.
   - Lectura errónea: el socio no solo pide «más fondos», sino también concesiones «en materias que nada tienen que ver con la migración», de modo que una financiación estable no le quita la baza.
-- [x] **D)** Ponen en manos del socio una baza que puede jugar cuando le conviene, y esa dependencia priva a la Unión de autoridad para exigirle cambios.
+- [x] **D)** Ponen en manos del socio una baza que puede jugar cuando le convenga, y la dependencia resultante resta a la Unión autoridad para exigirle cambios.
   - Correcta: al confiar a un tercero «el control de un flujo», la Unión le entrega también la capacidad de reabrirlo, y cuanto más depende del acuerdo, «menos margen conserva para exigir reformas».
 
 ### 22. Key: B
@@ -241,7 +241,7 @@
   - Correcta: la paradoja se aclara enseguida, porque si cada dron abatido «exige un misil que cuesta cien veces más», el atacante gana al vaciar «los arsenales del defensor».
 - [ ] **C)** Adelanta la tesis de que los drones baratos han dejado obsoletos los misiles de alta gama, que el texto propone sustituir por cañones y armas de energía dirigida.
   - Generalización excesiva: el texto afirma que los misiles de alta gama «seguirán siendo imprescindibles contra amenazas complejas» y propone completarlos con capas más baratas, no sustituirlos.
-- [ ] **D)** Introduce una concesión a quienes defienden los sistemas actuales, pues admite que su elevada tasa de acierto justifica el precio de cada interceptor.
+- [ ] **D)** Recoge el argumento de quienes defienden los sistemas actuales, cuya elevada tasa de acierto justificaría el precio de cada interceptor.
   - Lectura errónea: la tasa de acierto se menciona para mostrar que no basta, ya que el sistema puede, «aun así, estar perdiendo» si cada derribo «exige un misil que cuesta cien veces más».
 
 ### 23. Key: A
@@ -261,15 +261,15 @@
   - Lectura errónea: el texto afirma que «Volver al sistema anterior no parece una salida razonable» y valora fórmulas que combinan los datos con la lectura de los trabajos.
 - [ ] **B)** Los juzga útiles y fiables, pero lamenta que perjudiquen a las disciplinas cuyos resultados tardan más en publicarse y acumulan menos citas.
   - No se dice: el texto no compara disciplinas; quienes salen perjudicados son «Los proyectos arriesgados» y las tareas que «ningún índice registra».
-- [ ] **C)** Los tiene por una herramienta mejorable, pero confía en que indicadores más completos, que midan también la docencia y la divulgación, corrijan sus defectos.
+- [ ] **C)** Los tiene por una herramienta mejorable, pero confía en que unos indicadores más completos, que midan también la docencia y la divulgación, corrijan sus defectos.
   - Lectura errónea: las fórmulas que el texto valora no añaden indicadores, sino que «obligan a confiar de nuevo en el juicio de los evaluadores».
-- [x] **D)** Los reconoce como un avance frente a la arbitrariedad previa, pero advierte que los investigadores han acabado ajustando su trabajo a lo que esas cifras premian.
+- [x] **D)** Los reconoce como un avance frente a la arbitrariedad previa, pero advierte de que los investigadores han acabado ajustando su trabajo a lo que esas cifras premian.
   - Correcta: admite que los indicadores frenaron la endogamia, pero señala que «han empezado a moldear la conducta que pretendían medir», como muestran la división de estudios y las autocitas.
 
 ### 25. Key: C
 
 - [ ] **A)** Elogioso, pues presenta el turismo como la fuerza que rescató a unos barrios degradados y casi vacíos.
-  - Lectura errónea: la prosperidad del primer párrafo es solo el punto de partida; el texto describe después cómo esa afluencia «va desgastando aquello que los visitantes vienen a buscar».
+  - Lectura errónea: la prosperidad del primer párrafo es solo el punto de partida; el texto describe después cómo esa afluencia «va vaciando de contenido aquello que los visitantes vienen a buscar».
 - [ ] **B)** Acusatorio, pues responsabiliza a los visitantes de la marcha de los vecinos y exige a los ayuntamientos que prohíban los pisos de uso turístico.
   - No se dice: el texto no culpa a los visitantes ni pide prohibiciones; explica la marcha de los vecinos porque un piso «rinde más alquilado por noches» y ve difíciles de evaluar las medidas municipales.
 - [x] **C)** Irónico, pues muestra que el éxito turístico del barrio acaba despojándolo precisamente de los rasgos que atrajeron a los visitantes.
@@ -279,7 +279,7 @@
 
 ### 26. Key: A
 
-- [x] **A)** Les concede que estas coaliciones negocian con más agilidad, pero les reprocha ignorar el coste de un orden fragmentado en normas que solo obligan a quienes las firman.
+- [x] **A)** Les concede que estas coaliciones negocian con más agilidad, pero les reprocha ignorar el coste de un orden fragmentado en normas que no vinculan a quienes no las suscriben.
   - Correcta: reconoce que «No les falta razón», pero advierte de que las normas pactadas entre pocos «obligan solo a quienes las firman» y dan lugar a «un mosaico de regímenes superpuestos».
 - [ ] **B)** Les concede la razón en lo esencial, pero cree que estas coaliciones deberían limitarse a los asuntos técnicos y dejar las cuestiones de seguridad a los foros universales.
   - No se dice: el texto no reparte materias entre coaliciones y foros; entre sus ejemplos figuran tanto normas sobre semiconductores como «patrullas marítimas».
@@ -290,12 +290,12 @@
 
 ### 27. Key: C
 
-- [ ] **A)** Reservan la ayuda militar para cuando la situación se desborda, de modo que en la práctica apenas recurren a ella fuera de las grandes catástrofes.
-  - Lectura errónea: «si la situación se desborda» describe aquello con lo que cuentan las administraciones, no un uso restringido; el texto añade que la ayuda militar empieza a figurar en los planes de emergencia «como un recurso ordinario».
+- [ ] **A)** Reservan la ayuda militar para cuando la situación se desborde, de modo que en la práctica apenas recurren a ella fuera de las grandes catástrofes.
+  - Lectura errónea: «si la situación se desborda» expresa la garantía con la que cuentan las administraciones, no un uso restringido; el texto añade que la ayuda militar empieza a figurar en los planes de emergencia «como una pieza habitual».
 - [ ] **B)** Reclaman la ayuda militar en cuanto surge una emergencia, porque el presupuesto de Defensa les reembolsa después lo que gastan en ella sus propios servicios.
   - Lectura errónea: lo que paga el presupuesto de Defensa es la intervención militar, una reserva «que no le cuesta nada»; el texto no habla de reembolsos a los servicios civiles.
-- [x] **C)** Escatiman recursos a sus servicios de emergencia, porque el auxilio militar, que financia otro presupuesto, cubre los pocos días al año en que hace falta.
-  - Correcta: la pregunta retórica del segundo párrafo muestra que, con una reserva que «la paga el presupuesto de Defensa», disminuye el incentivo para «dotar de medios a sus propios servicios».
+- [x] **C)** Escatiman recursos a sus servicios de emergencia, porque el auxilio militar, financiado por otro presupuesto, cubre los pocos días al año en que hace falta.
+  - Correcta: la pregunta retórica del segundo párrafo muestra que, como esa reserva «la paga el presupuesto de Defensa», disminuye el incentivo para «dotar de medios a sus propios servicios».
 - [ ] **D)** Piden ayuda militar sobre todo por el rédito político que les reporta, porque las encuestas premian cada intervención de las Fuerzas Armadas.
   - No se dice: la aprobación que recogen las encuestas es la de los militares («una aprobación ciudadana muy alta cada vez que intervienen»); el texto atribuye la dependencia a una reserva que no pagan, no a un cálculo de imagen.
 
@@ -326,7 +326,7 @@
 - [x] **A)** Que su resultado dependerá sobre todo de qué especies se elijan y de que los ejemplares jóvenes reciban riego y cuidado durante sus primeros años.
   - Correcta: la dificultad aparece al decidir «qué árboles plantar», y muchos ejemplares «mueren en sus primeros veranos por falta de riego o de mantenimiento», de modo que la cifra de plantaciones no garantiza la sombra prometida.
 - [ ] **B)** Que su resultado dependerá sobre todo de evitar la tala de los árboles maduros, que hoy dan a las calles mucha más sombra que la que aportarán los nuevos ejemplares.
-  - Lectura errónea: la tala de «un ejemplar maduro» ilustra la cuestión de plazos, no el factor decisivo de los planes, y el texto no compara la sombra de los árboles maduros con la que darán los nuevos.
+  - Lectura errónea: la tala de «un ejemplar maduro» ilustra la cuestión de plazos, no el factor decisivo de los planes, y el texto no dice que los nuevos árboles vayan a dar menos sombra, sino que reponerla tardará «una generación».
 - [ ] **C)** Que su resultado será más simbólico que real, porque el efecto del arbolado sobre la temperatura de las calles es menor de lo que suele suponerse.
   - Lectura errónea: el texto atribuye al arbolado beneficios tangibles, como rebajar «varios grados la temperatura de la acera», y afirma que las dificultades no restan valor a la idea.
 - [ ] **D)** Que su resultado dependerá sobre todo de cuántos árboles se planten, porque la rebaja de temperatura en las calles aumenta con cada nuevo ejemplar.
@@ -392,13 +392,13 @@
 ### 36. Key: C
 
 - [ ] **A)** Que se distinga entre las especies que conviene tolerar y las que hay que eliminar, igual que el jardinero decide qué plantas conserva.
-  - Lectura errónea: el autor no propone tolerar unas especies y eliminar otras; asumir «una presencia que ya no va a desaparecer» no supone dejar de actuar, pues «Recordarlo no exime de controlarlo», y la erradicación resulta «casi siempre inalcanzable».
+  - Lectura errónea: la jardinería no remite a escoger qué especies se toleran, sino al «cuidado constante» de lo que ya no va a desaparecer: asumir «una presencia que ya no va a desaparecer» no supone dejar de actuar, pues «Recordarlo no exime de controlarlo».
 - [ ] **B)** Que se sustituya la erradicación por la plantación de especies autóctonas capaces de ocupar el terreno antes que las invasoras.
   - No se dice: la jardinería es una imagen del tipo de trabajo que se necesita, «un cuidado constante», no una propuesta de plantar especies autóctonas.
 - [x] **C)** Que se valore el control por lo que consigue contener año tras año, y no por una erradicación que casi nunca se logra del todo.
   - Correcta: si la erradicación es «casi siempre inalcanzable» y lo realista es «contener su expansión», el «cuidado constante» que pide el autor se mide por lo que se logra contener, no por una victoria final.
 - [ ] **D)** Que baste con suavizar el vocabulario de las campañas, puesto que los métodos de control empleados hasta ahora ya dan buen resultado.
-  - Lectura errónea: el autor no pide un simple retoque de vocabulario ni da por buenos los métodos actuales: la erradicación es «casi siempre inalcanzable», y con la lógica bélica los presupuestos «se recortan cuando la victoria no llega».
+  - Generalización excesiva: el texto cita un solo programa que «ha hecho bien su trabajo» y no afirma que los métodos actuales basten; lo que pide no es un vocabulario más suave, sino otra vara de medir, porque «juzgado con la vara de la guerra» ese programa «parece una derrota interminable» y los presupuestos «se recortan cuando la victoria no llega».
 
 ### 37. Key: D
 
@@ -458,7 +458,7 @@
 ### 42. Key: D
 
 - [ ] **A)** Como prueba de que la protesta del público nace, ante todo, de no advertir que un precio fijo acaba enriqueciendo a los revendedores de entradas.
-  - Lectura errónea: toma la concesión por una adhesión; el autor opone enseguida a la cola, que trataba a todos por igual, un algoritmo que cambia el precio «mientras uno espera».
+  - Lectura errónea: toma la concesión por una adhesión; el autor contrapone enseguida a la cola, que trataba a todos por igual, un algoritmo que cambia el precio «mientras uno espera».
 - [ ] **B)** Como una cortesía hacia el adversario, que el autor retira luego al mostrar que los precios dinámicos encarecen en conjunto lo que se vende.
   - Lectura errónea: el autor no retira la concesión ni afirma que los precios suban en conjunto; admite que con un precio fijo el sobreprecio «existe igualmente» y atribuye al conductor «una eficiencia irreprochable».
 - [ ] **C)** Como el reconocimiento de que el sistema es aceptable en los conciertos, donde frena la reventa, pero no en servicios necesarios como el transporte.
@@ -468,7 +468,7 @@
 
 ### 43. Key: C
 
-- [ ] **A)** Para denunciar que el turismo ha convertido al oso en un reclamo comercial, igual que las recompensas hicieron antes de su piel una mercancía.
+- [ ] **A)** Para denunciar que el turismo ha convertido al oso en un reclamo comercial, igual que antes las recompensas hicieron de su piel una mercancía.
   - Lectura errónea: los valles de la última frase son aquellos donde «el ganado sigue siendo el principal sustento», no los que viven de los visitantes; la alusión no trata del uso comercial de la imagen del oso.
 - [ ] **B)** Para reprochar a los ganaderos que sigan anclados en una hostilidad hacia el oso que el resto de los vecinos ya ha superado.
   - Lectura errónea: toma al pie de la letra la «reconciliación entre el hombre y la naturaleza» de los folletos; el autor no culpa a los ganaderos, sino que recuerda que el oso «no ha cambiado de costumbres» y que «Han cambiado las de sus vecinos».
@@ -570,7 +570,7 @@
 - [ ] **A)** Que el mal estado de muchos mercantes con bandera de conveniencia provoca accidentes que una inspección más rigurosa habría evitado.
   - Lectura errónea: toma la «asombrosa torpeza» al pie de la letra, cuando el autor subraya que esos fallos aparecen «sobre los tramos más sensibles del fondo y en las semanas de mayor tensión diplomática».
 - [ ] **B)** Que las armadas ribereñas atribuyen sin pruebas a las tripulaciones extranjeras unos daños que en realidad fueron fortuitos.
-  - Lectura errónea: la ironía no recae sobre las armadas, sino sobre la versión de la tripulación, según la cual «el ancla se soltó sola» y nadie notó nada durante horas; el autor comparte la sospecha, pues esos fallos se producen «en las semanas de mayor tensión diplomática».
+  - Lectura errónea: la ironía no recae sobre las armadas, sino sobre la versión de la tripulación, según la cual «el ancla se soltó sola» y nadie notó nada durante horas; el autor comparte la sospecha de las armadas, pues esos fallos se producen «en las semanas de mayor tensión diplomática».
 - [x] **C)** Que esos accidentes encubren actos deliberados, ejecutados de tal modo que la intención de causarlos no llegue a probarse.
   - Correcta: el elogio de la torpeza es irónico, pues los fallos coinciden con los tramos sensibles y los momentos de tensión, y todo el método, del buque viejo al «fallo mecánico», está pensado para que «demostrar la intención» resulte casi imposible.
 - [ ] **D)** Que la responsabilidad recae, sobre todo, en un derecho del mar que deja sin protección los cables tendidos lejos de la costa.
@@ -581,7 +581,7 @@
 - [ ] **A)** Como un reproche a los Estados con las flotas más numerosas, que se sirven de la falta de datos para imponer sus cifras a los demás.
   - No se dice: el texto no distingue entre flotas grandes y pequeñas; la duda se inclina en favor de todos los que negocian, y las cuotas acaban «por encima del dictamen».
 - [ ] **B)** Como una concesión a los ministros, cuyas objeciones sobre la calidad de los datos el autor considera a menudo fundadas.
-  - Lectura errónea: el autor admite que «En muchos casos es así», pero la frase sobre la duda es irónica: lo que censura es que esa incertidumbre acabe sirviendo, una y otra vez, para fijar cuotas «por encima del dictamen».
+  - Lectura errónea: el autor admite que en muchos casos «es así», pero la frase sobre la duda es irónica: lo que censura es que esa incertidumbre acabe sirviendo, una y otra vez, para fijar cuotas «por encima del dictamen».
 - [ ] **C)** Como una crítica a los científicos, que amplían sus márgenes de error para no tener que responder de sus previsiones.
   - Atribución cambiada: los científicos no ocultan nada, pues reconocen la incertidumbre «en sus informes» y sus dictámenes contienen la alarma «con todas sus letras»; la ironía apunta a quienes negocian.
 - [x] **D)** Como una censura a los negociadores, que esgrimen la falta de certeza para autorizar más capturas y no para extremar la prudencia.
@@ -645,13 +645,13 @@
 ### 59. Key: C
 
 - [ ] **A)** La sensatez técnica de las demoliciones, frente a unos recuerdos que el autor despacha como simple nostalgia.
-  - Lectura errónea: el autor no desprecia ese apego, pues advierte que «Conviene no despachar ese apego con una sonrisa» y admite que «el paisaje de toda la vida forma parte de lo que un pueblo es».
+  - Lectura errónea: el autor no desprecia ese apego, pues advierte que conviene «no despachar ese apego con una sonrisa» y admite que «el paisaje de toda la vida forma parte de lo que un pueblo es».
 - [ ] **B)** El valor ecológico del río, que a juicio del autor debe pesar más que las razones históricas o sentimentales.
   - Lectura errónea: la historia «bastante más larga» del río no es solo natural; es la que guardan las fotografías en las que «algún vecino reconoce a su bisabuelo pescando truchas».
 - [x] **C)** Una memoria más antigua del propio río, que permite invocar la tradición en favor del cauce libre y no solo del muro.
   - Correcta: frente al muro convertido en «seña de identidad local», el autor recuerda que el río tiene una historia «bastante más larga», y los técnicos la llevan a los pueblos en fotografías donde un vecino reconoce «a su bisabuelo pescando truchas»: la tradición también habla a favor del cauce.
 - [ ] **D)** La escasa antigüedad del muro, demasiado reciente para merecer la protección que reclaman los vecinos del pueblo.
-  - Lectura errónea: «apenas un párrafo» no mide la edad del muro, sino su lugar en una historia más larga, y el autor concede que «Algunos de esos muros tienen valor histórico y merecen conservarse».
+  - Lectura errónea: «apenas un párrafo» no mide la edad del muro, sino su lugar en una historia más larga, y el autor concede que algunos de esos muros «tienen valor histórico y merecen conservarse».
 
 ### 60. Key: B
 

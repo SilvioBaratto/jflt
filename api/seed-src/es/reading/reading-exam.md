@@ -12,7 +12,7 @@ Abandonar la región tampoco sería una respuesta sensata, puesto que su estabil
 
 **¿Cuál es la tesis central del texto sobre las misiones europeas de adiestramiento en el Sahel?**
 
-- **A)** Reforzaron a gobiernos civiles frágiles frente a sus propios ejércitos, lo que provocó la reacción de los militares y la ruptura del orden constitucional.
+- **A)** Fracasaron porque Europa formó a las tropas sin atender a las causas sociales de la insurgencia, que siguieron alimentando a los grupos yihadistas.
 - **B)** Trataron la capacidad militar como algo ajeno a la política, cuando reforzarla en Estados de la región altera el reparto interno del poder.
 - **C)** Acertaron en el planteamiento, pero se quedaron cortas: habría hecho falta formar a más unidades y durante más tiempo.
 - **D)** Perdieron su sentido sobre todo por la llegada de proveedores de seguridad rivales, que ofrecían a los gobiernos de la región condiciones mucho menos exigentes.
@@ -60,7 +60,7 @@ Nada de esto hace ingenua la preocupación ética; lo que sí sugiere es que una
 **¿Qué se desprende del texto acerca de las declaraciones universitarias que excluyen la colaboración militar?**
 
 - **A)** Trasladan la responsabilidad a cada investigador, que es quien decide en último término a qué fines civiles o militares se aplican sus resultados.
-- **B)** Expresan una inquietud que el autor comparte, hasta el punto de proponer que el veto alcance también a los fondos civiles con posibles usos bélicos.
+- **B)** Expresan una inquietud que el autor comparte hasta el punto de proponer que el veto alcance también a los fondos civiles con posibles usos bélicos.
 - **C)** Se basan en un criterio fácil de comprobar, pero que deja a la universidad sin capacidad de influir en el uso que otros den a sus hallazgos.
 - **D)** Deberían mantenerse, aunque acompañadas de una mayor transparencia sobre el origen de los fondos que recibe cada grupo de investigación.
 
@@ -89,7 +89,7 @@ El balance de las cuencas, sin embargo, es muy distinto. En numerosos casos, el 
 
 La tecnología conserva, con todo, ventajas claras: reduce la erosión, mejora los rendimientos y permite dosificar con más precisión los fertilizantes. Se pone en cuestión, en cambio, la contabilidad que se empleó para justificarla. Si el objetivo era aliviar la presión sobre ríos y acuíferos, la subvención tendría que haber ido acompañada de una revisión de las concesiones que impidiera destinar el agua ahorrada a nuevos regadíos. Sin ese límite, la eficiencia se convierte, paradójicamente, en una invitación a consumir más.
 
-**¿Qué se deduce del texto sobre las ayudas a la modernización del regadío que se concedan en el futuro?**
+**¿Qué se deduce del texto sobre cómo deberían haberse planteado las ayudas a la modernización del regadío?**
 
 - **A)** Deberían reducirse poco a poco, ya que el goteo ha favorecido en muchas fincas el paso a cultivos más exigentes y rentables.
 - **B)** Deberían condicionarse a que se revisen las concesiones de agua, para que el volumen liberado no acabe regando nuevas superficies.
@@ -142,7 +142,7 @@ Menos defendible parece convertir la norma en chivo expiatorio de un problema qu
 
 **¿Qué posición adopta el texto ante la tesis de que la regulación explica el retraso europeo en inteligencia artificial?**
 
-- **A)** La cuestiona, pero atribuye el retraso a que la regulación ha ahuyentado el capital que la industria tecnológica europea necesitaba para crecer.
+- **A)** La matiza, pues atribuye el retraso a que la regulación ha ahuyentado el capital que la industria tecnológica europea necesitaba para crecer.
 - **B)** La juzga exagerada y atribuye el retraso sobre todo a la escala, aunque reconoce el riesgo que una aplicación dispar de las normas supone para las pymes.
 - **C)** La relativiza, pero sitúa el principal obstáculo en que cada Estado miembro interprete las normas a su manera, algo que convendría corregir cuanto antes.
 - **D)** La rechaza en el caso de las grandes compañías, pero la comparte respecto de las empresas emergentes, a las que la norma empuja a instalarse fuera de Europa.
@@ -159,7 +159,7 @@ Admitido esto, la pregunta pertinente es quién paga y por qué vía, y ninguna 
 
 - **A)** Las reservas estratégicas públicas resultan la opción más equilibrada, ya que evitan que el coste acabe repercutiendo en los precios que paga el consumidor.
 - **B)** Comparten un mismo punto débil: dependen de que la administración prevea qué productos serán críticos, algo en lo que no siempre acierta.
-- **C)** Acaban trasladando el coste al contribuyente, de modo que elegir entre ellos es una cuestión de eficacia más que de reparto de la carga.
+- **C)** Acaban haciendo pagar a los mismos hogares por una vía u otra, de modo que elegir entre ellos es una cuestión de eficacia más que de reparto de la carga.
 - **D)** Al repartir cada uno el coste de forma distinta, elegir entre ellos equivale a decidir quién paga una protección que beneficia al conjunto.
 
 ### 11. (Las sanciones económicas como instrumento de política exterior)
@@ -243,7 +243,7 @@ El cierre de un periódico comarcal apenas ocupa unas líneas en la prensa nacio
 
 Con ella desaparece, en cambio, algo que no figura en ningún balance. Las redes difunden opiniones y rumores con enorme eficacia, pero casi nadie en ellas asiste a un pleno municipal de tres horas, revisa los pliegos de un contrato de recogida de basuras o compara el presupuesto aprobado con lo efectivamente gastado. Ese trabajo, tedioso y poco rentable, lo hacía el periodista local, y cuando falta no estalla ningún escándalo: sencillamente, deja de haber alguien que mire. Según estudios de varios países, allí donde ha cerrado la prensa local tiende a bajar la participación en las elecciones municipales, se presentan menos candidatos y los ayuntamientos pagan más por endeudarse, quizá porque los prestamistas perciben un menor control de sus cuentas.
 
-Como esos costes no se reflejan en ninguna cuenta de resultados, el mercado los ignora cuando concluye que un periódico ya no es viable. De ahí que haya empezado a discutirse si la información local merece algún tipo de apoyo público. La cuestión es delicada, porque un medio que depende de la subvención del ayuntamiento al que debe vigilar difícilmente lo vigilará con libertad. Dar con fórmulas que sostengan ese trabajo sin crear tal dependencia es una de las tareas pendientes de las democracias locales.
+Como nadie contabiliza esos costes, el mercado los ignora cuando concluye que un periódico ya no es viable. De ahí que haya empezado a discutirse si la información local merece algún tipo de apoyo público. La cuestión es delicada, porque un medio que depende de la subvención del ayuntamiento al que debe vigilar difícilmente lo vigilará con libertad. Dar con fórmulas que sostengan ese trabajo sin crear tal dependencia es una de las tareas pendientes de las democracias locales.
 
 **¿Qué da a entender el texto sobre el cierre de los periódicos comarcales?**
 
@@ -318,29 +318,29 @@ Cuando aumentan las llegadas irregulares por el Mediterráneo, la Unión Europea
 
 La factura completa tarda más en llegar. Al confiar a un tercero el control de un flujo que la opinión pública europea considera prioritario, la Unión le entrega también la capacidad de reabrirlo. El socio descubre pronto que basta con relajar la vigilancia unas semanas para que el asunto vuelva a las portadas europeas, y aprende a usar esa posibilidad en cada negociación: para pedir más fondos, para acallar las críticas sobre su situación interna o para obtener concesiones en materias que nada tienen que ver con la migración. La cooperación inicial deriva así en una relación en la que una de las partes fija el precio.
 
-Las organizaciones humanitarias han denunciado, con razón, las condiciones en que se retiene a los migrantes en algunos de estos países. A esa objeción se suma otra, de alcance diplomático, que recibe menos atención: cuanto más depende la Unión del acuerdo, menos margen conserva para exigir reformas, condicionar su ayuda o denunciar abusos. Estos pactos pueden tener sentido como pieza de una política más amplia, siempre que no se conviertan en la única. Quien delega en otro el control de su frontera no debería extrañarse de que, con el tiempo, sea ese otro quien fije las condiciones.
+Las organizaciones humanitarias han denunciado, con razón, las condiciones en que se retiene a los migrantes en algunos de estos países. A esa objeción se suma otra, de alcance diplomático, que recibe menos atención: cuanto más depende la Unión del acuerdo, menos margen conserva para exigir reformas, condicionar su ayuda o denunciar abusos. Estos pactos pueden tener sentido como pieza de una política más amplia, siempre que no se conviertan en la única. Delegar la vigilancia de una frontera acaba siendo, con el tiempo, delegar también una parte de la política exterior.
 
 **¿Cuál es la idea central del texto acerca de estos acuerdos?**
 
 - **A)** Plantean ante todo un problema humanitario, ya que el trato que reciben los migrantes retenidos en los países socios pesa más que la reducción de las llegadas.
 - **B)** Apenas cumplen su objetivo inmediato, porque las salidas se reanudan en cuanto el socio cobra los fondos y deja de tener motivos para vigilar sus costas.
 - **C)** Funcionan mientras dure la financiación, de modo que unos fondos estables y plurianuales bastarían para garantizar la cooperación del socio durante muchos años.
-- **D)** Ponen en manos del socio una baza que puede jugar cuando le conviene, y esa dependencia priva a la Unión de autoridad para exigirle cambios.
+- **D)** Ponen en manos del socio una baza que puede jugar cuando le convenga, y la dependencia resultante resta a la Unión autoridad para exigirle cambios.
 
 ### 22. (La defensa antiaérea ante los ataques con drones)
 
 Durante décadas, la defensa antiaérea se concibió para un tipo concreto de amenaza: aviones y misiles caros, escasos y difíciles de reponer. Frente a ellos tenía sentido emplear interceptores sofisticados, cuyo precio quedaba justificado por el valor de lo que derribaban. La aparición de drones de ataque fabricados en serie, con componentes comerciales y a un coste que a veces no supera el de un automóvil, ha alterado esa ecuación.
 
-Un sistema de defensa puede tener hoy una tasa de acierto excelente y, aun así, estar perdiendo. Si cada dron que se abate exige un misil que cuesta cien veces más, el atacante puede permitirse lanzar oleadas sabiendo que la mayoría de sus aparatos caerá, porque su propósito es menos alcanzar el objetivo que vaciar los arsenales del defensor y agotar su presupuesto. Las estadísticas de interceptación, que se difunden como prueba de eficacia, dicen poco sobre esa otra contabilidad, la del desgaste.
+Un sistema de defensa puede tener hoy una tasa de acierto excelente y, aun así, estar perdiendo. Si cada dron que se abate exige un misil que cuesta cien veces más, el atacante puede permitirse lanzar oleadas sabiendo que la mayoría de sus aparatos caerá, porque su propósito es menos alcanzar el objetivo que vaciar los arsenales del defensor y agotar su presupuesto. Las estadísticas de interceptación, que se difunden como prueba de eficacia, callan precisamente lo que el atacante persigue: el desgaste.
 
-De ahí que haya cambiado lo que se valora en un sistema. Junto a su precisión cuentan ahora el coste de cada disparo y la cantidad de munición que puede reponerse al ritmo al que se gasta. Cañones de tiro rápido, sistemas de guerra electrónica o armas de energía dirigida, que hace unos años se consideraban soluciones secundarias, pasan a ocupar el centro de los programas de adquisición. Los misiles de alta gama seguirán siendo imprescindibles contra amenazas complejas, pero reservarlos para ellas exigirá disponer de capas más baratas que filtren el resto. Todo indica que, en un enfrentamiento prolongado, resistirá mejor el ejército que antes resuelva esa combinación.
+Ha cambiado, en consecuencia, lo que se valora en un sistema. Junto a su precisión cuentan ahora el coste de cada disparo y la cantidad de munición que puede reponerse al ritmo al que se gasta. Cañones de tiro rápido, sistemas de guerra electrónica o armas de energía dirigida, que hace unos años se consideraban soluciones secundarias, pasan a ocupar el centro de los programas de adquisición. Los misiles de alta gama seguirán siendo imprescindibles contra amenazas complejas, pero reservarlos para ellas exigirá disponer de capas más baratas que filtren el resto. Todo indica que, en un enfrentamiento prolongado, resistirá mejor el ejército que antes resuelva esa combinación.
 
 **¿Qué papel desempeña en el argumento la primera frase del segundo párrafo?**
 
 - **A)** Anticipa una crítica a la fiabilidad de los sistemas actuales, cuyos fallos de interceptación permiten que una parte de los drones alcance su objetivo.
 - **B)** Plantea una aparente contradicción que el párrafo resuelve, pues abatir casi todos los drones puede ser una derrota si cada disparo cuesta más que el blanco.
 - **C)** Adelanta la tesis de que los drones baratos han dejado obsoletos los misiles de alta gama, que el texto propone sustituir por cañones y armas de energía dirigida.
-- **D)** Introduce una concesión a quienes defienden los sistemas actuales, pues admite que su elevada tasa de acierto justifica el precio de cada interceptor.
+- **D)** Recoge el argumento de quienes defienden los sistemas actuales, cuya elevada tasa de acierto justificaría el precio de cada interceptor.
 
 ### 23. (Las ayudas públicas para atraer grandes plantas industriales)
 
@@ -371,14 +371,14 @@ Volver al sistema anterior no parece una salida razonable, porque la arbitraried
 
 - **A)** Los valora como freno a la endogamia, pero estima que su efecto se ha agotado y que lo sensato sería devolver la evaluación al criterio de los colegas.
 - **B)** Los juzga útiles y fiables, pero lamenta que perjudiquen a las disciplinas cuyos resultados tardan más en publicarse y acumulan menos citas.
-- **C)** Los tiene por una herramienta mejorable, pero confía en que indicadores más completos, que midan también la docencia y la divulgación, corrijan sus defectos.
-- **D)** Los reconoce como un avance frente a la arbitrariedad previa, pero advierte que los investigadores han acabado ajustando su trabajo a lo que esas cifras premian.
+- **C)** Los tiene por una herramienta mejorable, pero confía en que unos indicadores más completos, que midan también la docencia y la divulgación, corrijan sus defectos.
+- **D)** Los reconoce como un avance frente a la arbitrariedad previa, pero advierte de que los investigadores han acabado ajustando su trabajo a lo que esas cifras premian.
 
 ### 25. (El turismo en los centros históricos de las ciudades)
 
 El casco antiguo de muchas ciudades europeas vive una prosperidad que sus vecinos de hace treinta años no habrían imaginado. Las fachadas se han restaurado, las calles están limpias y los comercios abren todo el año. Los visitantes acuden atraídos por algo que los folletos llaman autenticidad: la plaza donde juegan los niños, la tienda de ultramarinos, la ropa tendida en los balcones, el bar donde los parroquianos discuten de fútbol.
 
-Esa misma afluencia va desgastando aquello que los visitantes vienen a buscar. Cuando un piso rinde más alquilado por noches que a un residente, los propietarios hacen sus cuentas y los vecinos se van marchando a la periferia. Con ellos cierra la tienda de ultramarinos, que da paso a una de recuerdos, y la escuela del barrio pierde alumnos. La ropa tendida desaparece de los balcones. El decorado sigue en pie, pero cada vez quedan menos personas que lo habiten, y el visitante acaba recorriendo un escenario en el que los únicos vecinos que encuentra son otros visitantes.
+La propia afluencia va vaciando de contenido aquello que los visitantes vienen a buscar. Cuando un piso rinde más alquilado por noches que a un residente, los propietarios hacen sus cuentas y los vecinos se van marchando a la periferia. Con ellos cierra la tienda de ultramarinos, que da paso a una de recuerdos, y la escuela del barrio pierde alumnos. La ropa tendida desaparece de los balcones. El decorado sigue en pie, pero cada vez quedan menos personas que lo habiten, y el visitante acaba recorriendo un escenario en el que los únicos vecinos que encuentra son otros visitantes.
 
 Los ayuntamientos han empezado a reaccionar con licencias limitadas, tasas turísticas y restricciones a los pisos de uso turístico. Sus efectos aún son difíciles de evaluar, y los sectores que viven del turismo recuerdan, no sin cierta razón, que el barrio también se moría cuando nadie lo visitaba. Ninguna ciudad desea volver a los edificios ruinosos y a las calles desiertas de hace unas décadas. Pero conviene preguntarse qué se pretende conservar cuando se protege un centro histórico: ¿las piedras o la vida que les daba sentido?
 
@@ -401,7 +401,7 @@ Es probable que las coaliciones reducidas hayan llegado para quedarse, y quizá 
 
 **¿Qué posición adopta el texto ante quienes defienden las coaliciones reducidas de Estados?**
 
-- **A)** Les concede que estas coaliciones negocian con más agilidad, pero les reprocha ignorar el coste de un orden fragmentado en normas que solo obligan a quienes las firman.
+- **A)** Les concede que estas coaliciones negocian con más agilidad, pero les reprocha ignorar el coste de un orden fragmentado en normas que no vinculan a quienes no las suscriben.
 - **B)** Les concede la razón en lo esencial, pero cree que estas coaliciones deberían limitarse a los asuntos técnicos y dejar las cuestiones de seguridad a los foros universales.
 - **C)** Les concede que los foros universales están paralizados, pero confía en que el ejemplo de estas coaliciones acabe empujándolos a reformar sus reglas de votación.
 - **D)** Les concede que estas coaliciones son eficaces, pero les reprocha olvidar que los grandes foros multilaterales, por lentos que sean, acaban siendo más eficaces a largo plazo.
@@ -410,17 +410,17 @@ Es probable que las coaliciones reducidas hayan llegado para quedarse, y quizá 
 
 En incendios, inundaciones, nevadas o crisis sanitarias, la imagen de militares desplegados para auxiliar a la población se ha vuelto habitual, y las encuestas reflejan una aprobación ciudadana muy alta cada vez que intervienen. El reconocimiento es merecido. Las Fuerzas Armadas disponen de medios que ninguna otra administración reúne a la vez: helicópteros, ingenieros, hospitales de campaña, capacidad logística y personal disponible a cualquier hora y en cualquier punto del territorio.
 
-Menos atención reciben los efectos de esa disponibilidad. Cuando una comunidad autónoma o un ayuntamiento sabe que, si la situación se desborda, acabará llegando una unidad militar, disminuye su incentivo para dotar de medios a sus propios servicios de bomberos, de protección civil o de vialidad invernal. ¿Para qué mantener todo el año una plantilla y un parque de maquinaria que solo se necesitan unos pocos días, si existe una reserva que no le cuesta nada porque la paga el presupuesto de Defensa? La ayuda militar, pensada para cuando todo lo demás falla, empieza así a figurar en los planes de emergencia como un recurso ordinario.
+Menos atención reciben los efectos de esa disponibilidad. Cuando una comunidad autónoma o un ayuntamiento sabe que, si la situación se desborda, acabará llegando una unidad militar, disminuye su incentivo para dotar de medios a sus propios servicios de bomberos, de protección civil o de vialidad invernal. ¿Para qué mantener todo el año una plantilla y un parque de maquinaria que solo se necesitan unos pocos días, si existe una reserva que no le cuesta nada porque la paga el presupuesto de Defensa? La ayuda militar, pensada para cuando todo lo demás falla, empieza así a figurar en los planes de emergencia como una pieza habitual.
 
-Esa dependencia tiene también un precio para los propios ejércitos. Las horas que una unidad dedica a despejar caminos o a atender una residencia son horas que no dedica a instruirse para su cometido principal, y los equipos se desgastan en tareas para las que no fueron adquiridos. Mientras las emergencias sean esporádicas, el coste resulta asumible. Si se vuelven más frecuentes, como apuntan las previsiones climáticas, la suma de despliegues podría mermar la preparación de unidades que no tienen sustituto en su propio terreno.
+Tampoco los propios ejércitos salen indemnes de esa dependencia. Las horas que una unidad dedica a despejar caminos o a atender una residencia son horas que no dedica a instruirse para su cometido principal, y los equipos se desgastan en tareas para las que no fueron adquiridos. Mientras las emergencias sean esporádicas, el coste resulta asumible. Si se vuelven más frecuentes, como apuntan las previsiones climáticas, la suma de despliegues podría mermar la preparación de unidades que no tienen sustituto en su propio terreno.
 
 Nadie discute que los militares deban acudir cuando su ayuda es imprescindible. Queda por ver quién se ocupará de que lo sea con menos frecuencia.
 
 **¿Qué da a entender el texto sobre las administraciones autonómicas y locales en estas situaciones?**
 
-- **A)** Reservan la ayuda militar para cuando la situación se desborda, de modo que en la práctica apenas recurren a ella fuera de las grandes catástrofes.
+- **A)** Reservan la ayuda militar para cuando la situación se desborde, de modo que en la práctica apenas recurren a ella fuera de las grandes catástrofes.
 - **B)** Reclaman la ayuda militar en cuanto surge una emergencia, porque el presupuesto de Defensa les reembolsa después lo que gastan en ella sus propios servicios.
-- **C)** Escatiman recursos a sus servicios de emergencia, porque el auxilio militar, que financia otro presupuesto, cubre los pocos días al año en que hace falta.
+- **C)** Escatiman recursos a sus servicios de emergencia, porque el auxilio militar, financiado por otro presupuesto, cubre los pocos días al año en que hace falta.
 - **D)** Piden ayuda militar sobre todo por el rédito político que les reporta, porque las encuestas premian cada intervención de las Fuerzas Armadas.
 
 ### 28. (La implantación de la formación profesional dual)
@@ -429,7 +429,7 @@ Las reformas que buscan generalizar la formación dual aspiran a que todos los e
 
 Ese modelo, sin embargo, descansa en un tejido empresarial muy distinto del nuestro. Allí abundan las empresas medianas con una larga tradición de aprendices, y existen tutores acreditados y cámaras de comercio que velan por la calidad de la enseñanza. Aquí predominan las empresas muy pequeñas, sin esa tradición ni personal dedicado a formar. Para la gran empresa, en cambio, el sistema resulta muy conveniente, porque le sirve de cantera: durante meses observa a los estudiantes en situaciones reales y después contrata a los que mejor han respondido, sin necesidad de convocar procesos de selección.
 
-Por eso los puestos de formación tienden a concentrarse donde hay grandes empresas, es decir, en las áreas metropolitanas y en unos pocos sectores. El alumno de una comarca rural, o el que cursa un ciclo con escasa presencia industrial, encuentra pocas opciones, y algunas consisten en prácticas en las que apenas aprende nada nuevo. Las administraciones educativas intentan compensarlo con incentivos y con la figura del tutor compartido entre varias empresas, pero su alcance es todavía limitado.
+Los puestos de formación tienden así a concentrarse donde hay grandes empresas, es decir, en las áreas metropolitanas y en unos pocos sectores. El alumno de una comarca rural, o el que cursa un ciclo con escasa presencia industrial, encuentra pocas opciones, y algunas consisten en prácticas en las que apenas aprende nada nuevo. Las administraciones educativas intentan compensarlo con incentivos y con la figura del tutor compartido entre varias empresas, pero su alcance es todavía limitado.
 
 El sistema puede madurar con los años, como ocurrió en los países que se toman como referencia. Conviene recordar, no obstante, que allí hicieron falta generaciones para construir lo que aquí se pretende implantar en unos pocos cursos.
 
@@ -442,11 +442,11 @@ El sistema puede madurar con los años, como ocurrió en los países que se toma
 
 ### 29. (Los incendios forestales y los medios de extinción)
 
-Los grandes incendios forestales alcanzan hoy una violencia que los técnicos más veteranos no recuerdan, y ello pese a que los servicios de extinción disponen de medios aéreos, redes de vigilancia y brigadas capaces de llegar a un foco en pocos minutos.
+Los grandes incendios forestales alcanzan hoy una violencia que ni los técnicos más veteranos recuerdan, y ello pese a que los servicios de extinción disponen de medios aéreos, redes de vigilancia y brigadas capaces de llegar a un foco en pocos minutos.
 
 Para entenderlo hay que remontarse en el tiempo. Durante siglos, el monte mediterráneo se mantuvo relativamente despejado gracias a actividades que consumían la vegetación: los rebaños pastaban en el sotobosque, los vecinos recogían leña para calentarse y cocinar, y los pequeños fuegos, que nadie se apresuraba a apagar, ardían con poca intensidad y limpiaban el terreno. El abandono rural acabó con casi todas esas prácticas, y una extinción cada vez más rápida eliminó también los fuegos menores. La biomasa que antes desaparecía año tras año se acumula ahora sin que nada la retire, y cuando un incendio escapa al primer ataque, en un día de calor extremo y viento, encuentra una masa continua de combustible y se convierte en un frente que ninguna brigada puede detener.
 
-Algunos especialistas proponen gestionar esa carga de combustible mediante quemas controladas en invierno, ayudas a la ganadería extensiva o el aprovechamiento de la biomasa con fines energéticos. Son medidas lentas, que apenas lucen en una rueda de prensa y que exigen convencer a una población que asocia cualquier columna de humo con una catástrofe. Sin ellas, cada verano dejará en el monte algo más del combustible que alimentará el siguiente gran incendio.
+Algunos especialistas proponen gestionar esa carga de combustible mediante quemas controladas en invierno, ayudas a la ganadería extensiva o el aprovechamiento de la biomasa con fines energéticos. Son medidas lentas, que apenas lucen en una rueda de prensa y que exigen convencer a una población que asocia cualquier columna de humo con una catástrofe. Sin ellas, el combustible seguirá acumulándose en el monte a la espera del próximo verano extremo.
 
 **¿Qué función cumple en el texto la mención de los rebaños, la leña y los pequeños fuegos de otras épocas?**
 
@@ -482,7 +482,7 @@ Esa traducción suele circular como una anécdota sobre la hipocresía del ofici
 
 El sistema descansa, sin embargo, en una premisa que empieza a fallar: que el comunicado sea la única versión autorizada de lo ocurrido. Hoy, antes de que los analistas de las cancillerías hayan terminado de pesar los adjetivos, los mandatarios ya han difundido en sus redes un relato propio, a menudo más tajante y a veces incompatible con lo que acaban de firmar. El texto pactado sobrevive como el único lugar donde el desacuerdo se administra con cuidado. Nunca se había puesto tanto esmero en un documento destinado a tan pocos lectores.
 
-**¿Con qué propósito se traducen en el texto las fórmulas habituales de estos comunicados?**
+**¿Con qué propósito se ofrece en el texto la traducción de las fórmulas habituales de estos comunicados?**
 
 - **A)** Denunciar que la diplomacia oculta sus fracasos a los ciudadanos tras unas fórmulas huecas que el profano no está en condiciones de descifrar.
 - **B)** Señalar que la mayoría de las cumbres bilaterales termina sin acuerdo alguno, porque los gobiernos acuden a ellas con unas posiciones que saben de antemano irreconciliables.
@@ -583,7 +583,7 @@ Que las grandes potencias lo llamen oportunismo tiene su gracia, pues ellas mism
 
 ### 38. (La propuesta de recuperar el servicio militar obligatorio)
 
-La idea de restablecer el servicio militar obligatorio vuelve al debate público de tanto en tanto, siempre envuelta en el mismo vocabulario solemne. Se invocan la cohesión nacional, el crisol en el que jóvenes de toda procedencia aprenderían a convivir, la disciplina que tanta falta le haría a una generación criada entre pantallas y el deber de todo ciudadano de contribuir a la defensa común. Pronunciada desde una tribuna, la propuesta tiene algo de irresistible.
+La idea de restablecer el servicio militar obligatorio vuelve al debate público de tanto en tanto, siempre envuelta en el mismo vocabulario solemne. Se invocan la cohesión nacional, el crisol en el que jóvenes de toda procedencia aprenderían a convivir, la disciplina que tanta falta le haría a una generación criada entre pantallas y el deber de todo ciudadano de contribuir a la defensa común. Formulada desde una tribuna, la propuesta tiene algo de irresistible.
 
 Llama la atención, por otra parte, el escaso entusiasmo de la institución que tendría que acoger a los reclutas. Los ejércitos profesionales llevan décadas organizándose en torno a unidades reducidas, material complejo y largos periodos de formación. Un soldado que sirva nueve meses empieza a resultar útil más o menos cuando le llega la hora de volver a casa, y lo que haya aprendido sobre sistemas que tardan años en dominarse quedará olvidado mucho antes de que alguien vuelva a necesitarlo. Faltan acuartelamientos, faltan instructores y falta presupuesto para alojar, alimentar y equipar cada año a decenas de miles de jóvenes. Dicho en román paladino: los cuarteles no están para muchos trotes.
 
@@ -647,7 +647,7 @@ En la venta de entradas para un gran concierto, el precio se mueve hoy como una 
 
 Hay que admitir que los economistas tienen buenos argumentos. Con un precio fijo, las entradas se agotan en minutos y reaparecen horas después en las páginas de reventa al triple o al cuádruple de su valor, de modo que el sobreprecio existe igualmente, solo que lo cobra alguien que no ha compuesto una sola canción. El precio dinámico, al menos, devuelve ese margen a quien organiza el concierto.
 
-Ahora bien, la cola virtual, con todos sus defectos, trataba igual al estudiante que lleva diez años fiel al grupo y al directivo que lo descubrió la semana pasada: pasaba antes quien antes llegaba, y las reglas eran las mismas para todos de principio a fin. El algoritmo, en cambio, modifica el precio mientras uno espera, sin avisar de cuánto ni por qué. El conductor que triplica la tarifa bajo un aguacero asigna su vehículo con una eficiencia irreprochable; lo que difícilmente conseguirá es que el pasajero, empapado, se lo agradezca.
+Pero la cola virtual, con todos sus defectos, trataba igual al estudiante que lleva diez años fiel al grupo y al directivo que lo descubrió la semana pasada: pasaba antes quien antes llegaba, y las reglas eran las mismas para todos de principio a fin. El algoritmo, en cambio, modifica el precio mientras uno espera, sin avisar de cuánto ni por qué. El conductor que triplica la tarifa bajo un aguacero asigna su vehículo con una eficiencia irreprochable; lo que difícilmente conseguirá es que el pasajero, empapado, se lo agradezca.
 
 **¿Cómo hay que entender la razón que el autor concede a los economistas?**
 
@@ -666,7 +666,7 @@ El oso, entretanto, no ha cambiado de costumbres: sigue asaltando alguna colmena
 
 **¿Para qué alude el autor, en la última frase, a los valles vecinos?**
 
-- **A)** Para denunciar que el turismo ha convertido al oso en un reclamo comercial, igual que las recompensas hicieron antes de su piel una mercancía.
+- **A)** Para denunciar que el turismo ha convertido al oso en un reclamo comercial, igual que antes las recompensas hicieron de su piel una mercancía.
 - **B)** Para reprochar a los ganaderos que sigan anclados en una hostilidad hacia el oso que el resto de los vecinos ya ha superado.
 - **C)** Para insinuar que la nueva acogida al oso obedece más a lo que cada valle obtiene hoy de él que a una reconciliación con la naturaleza.
 - **D)** Para sugerir que el oso no podrá asentarse de forma duradera en un valle mientras el pastoreo no deje paso al turismo.
