@@ -11,7 +11,7 @@ Parte I, lessico operativo e di campo più le strutture grammaticali di livello 
 > The Spanish is neutral standard Spanish with Spain-based institutional terms (*OTAN*, *Ejército de
 > Tierra*, *Guardia Civil*, *Cortes Generales*); a Latin-American usage appears only as a marked
 > note. Rank equivalences follow each rank's position in the hierarchy, not the look of the word.
-> Rows tagged **(falso amico: …)** flag Spanish words that an Italian speaker tends to misread;
+> Rows tagged **(falso amico: …)** or **(falso amico parziale: …)** flag Spanish words that an Italian speaker tends to misread;
 > **(Spagna)** marks institutions, bodies, posts and legal terms specific to Spain; rank rows follow
 > the Spanish *Ley 39/2007* and carry no tag. Sources are listed under **Fuentes**.
 
@@ -33,10 +33,10 @@ utilizzo comune · 8. Strutture grammaticali per costruire frasi (livello C1)
 |---|---|
 | Fuerzas Armadas (FAS) | Forze Armate (in Spagna: Ejército de Tierra, Armada ed Ejército del Aire y del Espacio) |
 | Ejército de Tierra | Esercito (la forza armata terrestre spagnola) (Spagna) |
-| Armada | Marina Militare (falso amico: non «armata», che in italiano è una grande unità terrestre) |
+| Armada | Marina Militare (falso amico: non «armata», che in italiano è una grande unità terrestre) (Spagna) |
 | Ejército del Aire y del Espacio | Aeronautica Militare (nome in vigore dal 2022; prima Ejército del Aire) (Spagna) |
 | cuartel general | Quartier generale |
-| cuartel / acuartelamiento | Caserma / Installazione militare (l'it. «quartiere» in senso militare è ormai raro, salvo in quartier generale) |
+| cuartel / acuartelamiento | Caserma / Installazione militare (falso amico parziale: il «quartiere» è soprattutto il rione, che si dice barrio, anche se cuartel può indicare una sezione amministrativa di certe città; in senso militare l'it. «quartiere» è ormai raro, salvo in quartier generale) |
 | puesto de mando | Posto comando (PC) |
 | base de operaciones avanzada | Base operativa avanzata (FOB) |
 | puesto de control | Posto di blocco / Posto di controllo (checkpoint) |
@@ -44,7 +44,7 @@ utilizzo comune · 8. Strutture grammaticali per costruire frasi (livello C1)
 | cadena de mando | Catena di comando |
 | mando / los mandos | Comando / I comandanti, i superiori (al plurale indica chi esercita il comando) |
 | empleo militar | Grado militare (falso amico: in questo senso non è «impiego»; la Ley 39/2007 elenca i gradi come empleos militares. Nel senso di uso, invece, empleo = impiego: el empleo de la fuerza) |
-| oficiales generales / oficiales / suboficiales / tropa y marinería | Ufficiali generali / Ufficiali / Sottufficiali / Truppa (graduati e militari di truppa) |
+| oficiales generales / oficiales / suboficiales / tropa y marinería | Ufficiali generali / Ufficiali / Sottufficiali / Truppa e marinai (graduati e militari di truppa) |
 | soldado / marinero | Soldato / Marinaio (primo grado della tropa y marinería) |
 | cabo | Caporale (comanda una escuadra di circa quattro militari) |
 | cabo primero | Caporal maggiore (≈; terzo grado della tropa, sopra il cabo) |
@@ -111,7 +111,7 @@ utilizzo comune · 8. Strutture grammaticali per costruire frasi (livello C1)
 | Guardia Civil | Guardia Civil: istituto armato di natura militare, dipende dal Ministero dell'Interno e, per le missioni militari, dalla Difesa (≈ Arma dei Carabinieri) (Spagna) |
 | Policía Nacional | Polizia Nazionale: istituto armato di natura civile, dipende dal Ministero dell'Interno (≈ Polizia di Stato) (Spagna) |
 | Fuerzas y Cuerpos de Seguridad del Estado | Forze di polizia dello Stato, cioè Guardia Civil e Policía Nacional (denominazione della LO 2/1986) (Spagna) |
-| Policía Militar | Polizia militare (nell'Ejército de Tierra; in Marina Policía Naval, in Aeronautica Policía Aérea) |
+| Policía Militar | Polizia militare (nell'Ejército de Tierra; in Marina Policía Naval, in Aeronautica Policía Aérea) (Spagna) |
 | Fuerza de Gendarmería Europea (EUROGENDFOR) | Forza di Gendarmeria Europea: ne fanno parte la Guardia Civil e l'Arma dei Carabinieri; quartier generale a Vicenza |
 | puesto / casa cuartel | Stazione territoriale della Guardia Civil (≈ stazione dei Carabinieri) / Caserma che ospita anche gli alloggi delle famiglie (Spagna) |
 | inspector / comisario | Ispettore / Commissario (≈): categorie della Policía Nacional (scala esecutiva e scala superiore), che non coincidono con i ruoli della Polizia di Stato (Spagna) |
@@ -123,8 +123,8 @@ utilizzo comune · 8. Strutture grammaticali per costruire frasi (livello C1)
 | incautación / decomiso | Sequestro / Confisca |
 | detención / detenido | Arresto, fermo / Arrestato, fermato (falso amico: non la «detenzione» come pena, che si dice prisión) |
 | investigado (antes imputado) | Indagato (dal 2015, LO 13/2015, la legge spagnola usa investigado nella fase istruttoria ed encausado dopo l'accusa formale) (Spagna) |
-| prisión provisional | Custodia cautelare in carcere |
-| secuestro / secuestro aéreo | Sequestro di persona, rapimento / Dirottamento aereo (falso amico parziale: il «sequestro» di beni da parte della polizia si dice di solito incautación; secuestro in questo senso resta nel linguaggio giudiziario, es. el secuestro de publicaciones) |
+| prisión provisional | Custodia cautelare in carcere (Spagna) |
+| secuestro / secuestro aéreo | Sequestro di persona, rapimento / Dirottamento aereo (falso amico parziale: il «sequestro» di beni da parte della polizia si dice di solito incautación; secuestro in questo senso resta nel linguaggio giudiziario, ad es. el secuestro de publicaciones) |
 | orden de busca y captura | Ordine di ricerca e cattura |
 | orden europea de detención y entrega | Mandato d'arresto europeo (MAE) |
 | notificación roja | Avviso rosso dell'Interpol (red notice): richiesta di localizzare e arrestare provvisoriamente una persona in vista dell'estradizione; non è un mandato d'arresto |
@@ -174,7 +174,7 @@ utilizzo comune · 8. Strutture grammaticali per costruire frasi (livello C1)
 
 | Término español | Traducción / Significato |
 |---|---|
-| alto el fuego | Cessate il fuoco (in gran parte dell'America Latina: alto al fuego) |
+| alto el fuego | Cessate il fuoco (in gran parte dell'America Latina: alto al fuego; anche cese al fuego, ad es. in Colombia) |
 | tregua / armisticio | Tregua / Armistizio |
 | desarme | Disarmo |
 | mantenimiento de la paz / imposición de la paz | Mantenimento della pace (peacekeeping) / Imposizione della pace (peace enforcement) |
@@ -227,7 +227,7 @@ utilizzo comune · 8. Strutture grammaticali per costruire frasi (livello C1)
 | GEO | Grupo Especial de Operaciones | Unità d'élite della Policía Nacional per le operazioni ad alto rischio (≈ NOCS) (Spagna) |
 | UEI | Unidad Especial de Intervención | Unità speciale d'intervento della Guardia Civil (≈ GIS dei Carabinieri) (Spagna) |
 | UIP | Unidades de Intervención Policial | Reparti di ordine pubblico della Policía Nacional (≈ Reparti mobili) (Spagna) |
-| GRS | Grupo de Reserva y Seguridad | Reparto di ordine pubblico e sicurezza della Guardia Civil (Spagna) |
+| GRS | Grupos de Reserva y Seguridad | Reparti di ordine pubblico e sicurezza della Guardia Civil, inquadrati nell'Agrupación de Reserva y Seguridad (Spagna) |
 | UNIFIL / FPNUL | Fuerza Provisional de las Naciones Unidas en el Líbano | UNIFIL, forza dell'ONU in Libano: mandato finale fino al 31 dicembre 2026, poi ritiro (la Difesa spagnola usa UNIFIL; FPNUL è la sigla spagnola) |
 | ACNUR | Alto Comisionado de las Naciones Unidas para los Refugiados | UNHCR, Alto Commissariato delle Nazioni Unite per i rifugiati |
 | EE. UU. | Estados Unidos | USA, Stati Uniti (la lettera doppia indica il plurale) |
@@ -242,7 +242,7 @@ utilizzo comune · 8. Strutture grammaticali per costruire frasi (livello C1)
 | Espere. | Attenda: non trasmetta finché non la richiamo. |
 | Adelante. | Avanti: la stazione chiamata invita a trasmettere. |
 | ¿Cómo me recibe? | Come mi riceve? (controllo della qualità del collegamento) |
-| Recibido alto y claro. / Le oigo alto y claro. | La ricevo forte e chiaro (risposta a «¿Cómo me recibe?»; recibido alto y claro è la forma militare). |
+| Recibido alto y claro. / Le oigo alto y claro. | Ricevuto forte e chiaro. / La sento forte e chiaro (risposta a «¿Cómo me recibe?»; «recibido alto y claro» è la forma militare). |
 | Cambio. | Passo: ho finito di parlare e attendo risposta. |
 | Corto. / Terminado. | Chiudo: fine della comunicazione, non attendo risposta («corto» è la voce radio militare, «terminado» quella della fraseologia aeronautica ufficiale; tra radioamatori si dice «fuera»). Per procedura non si unisce a «cambio», anche se nel parlato e nei film si sente «cambio y corto». |
 | Solicito información actualizada sobre… | Richiedo aggiornamento su… |
@@ -753,6 +753,9 @@ spagnoli sono stati verificati sul Wikcionario e sulle fonti normative e istituz
   equivalente del battaglione, GEO e UEI.
 - Oposiciones.es, «GRS de la Guardia Civil» — https://oposiciones.es/oposiciones-guardia-civil/grs/ —
   scioglimento della sigla GRS e compiti di ordine pubblico.
+- Guardia Civil, «Seguridad y orden público» — https://web.guardiacivil.es/es/institucional/conocenos/especialidades/OrdenPublico/ —
+  Grupos de Reserva y Seguridad, Agrupación de Reserva y Seguridad, ordine pubblico nelle grandi
+  concentrazioni.
 - El Orden Mundial, «¿Qué es la UNIFIL?» — https://elordenmundial.com/que-es-unifil/ — UNIFIL o FPNUL;
   Nazioni Unite, comunicato SC/16159 (28 agosto 2025) — https://press.un.org/en/2025/sc16159.doc.htm —
   risoluzione 2790 (2025): mandato finale fino al 31 dicembre 2026, poi ritiro.
