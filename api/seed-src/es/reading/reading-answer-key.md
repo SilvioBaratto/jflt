@@ -446,80 +446,80 @@
 
 ### 41. Key: A
 
-- [x] **A)** Que, al convencer a cada población de que el litigio ya está resuelto a su favor, el arreglo resta a los gobiernos margen para un compromiso.
-  - Correcta: cada población ve en su pantalla la frontera «que prefiere su gobierno» y, con ella, «un asunto zanjado», de modo que ceder «un palmo» obligaría a un gobierno a desmentir lo que sus votantes dan por resuelto.
-- [ ] **B)** Que, al calmar a la opinión pública de ambos países, el arreglo concede a los gobiernos la discreción que suelen requerir las negociaciones fronterizas.
-  - Lectura errónea: toma al pie de la letra los «méritos difíciles de discutir»; la pregunta final sugiere lo contrario, pues unos votantes que «nunca han visto en disputa» el territorio estrechan el margen para «ceder un palmo».
-- [ ] **C)** Que los ciudadanos deberían poder pronunciarse sobre una eventual cesión de territorio, ya que serían ellos quienes tendrían que defenderlo.
-  - No se dice: el autor no reclama ninguna consulta; menciona a los ciudadanos «que eligen a los gobiernos que negocian» para explicar por qué el margen de esos gobiernos es escaso.
-- [ ] **D)** Que las empresas, al decidir qué frontera muestra cada pantalla, han acabado por sustituir a los gobiernos en la gestión de estos litigios.
-  - Lectura errónea: las empresas no deciden la frontera, pues muestran a cada usuario la «que prefiere su gobierno», y el autor considera «exacta» su descripción como «una adaptación a la legislación local».
+- [x] **A)** Que esa pérdida es grave, pues cada población da por cerrada una disputa que sus gobernantes quizá tengan que resolver con concesiones.
+  - Correcta: el «detalle menor» es irónico, porque lo que se pierde es que los ciudadanos sepan que hay disputa: ven en su pantalla «un asunto zanjado», y eso hará muy difícil a sus gobiernos «ceder un palmo».
+- [ ] **B)** Que esa pérdida es secundaria frente a la tranquilidad que el arreglo procura a ministerios, empresas y ciudadanos de ambos países.
+  - Lectura errónea: toma al pie de la letra los «méritos difíciles de discutir»; la pregunta final muestra que la tranquilidad tiene un precio, pues unos votantes que «nunca han visto en disputa» el territorio no admitirían cesiones.
+- [ ] **C)** Que esa pérdida afecta sobre todo a los observadores extranjeros, a quienes la línea discontinua ya no basta para entender el conflicto.
+  - Lectura errónea: los observadores extranjeros conservan la línea discontinua, que «queda reservada a quienes contemplan el conflicto desde fuera»; quienes pierden la noticia de la disputa son «los ciudadanos de los dos países».
+- [ ] **D)** Que esa pérdida es inevitable, ya que en más de un país la ley castiga la publicación de mapas contrarios a la versión oficial.
+  - No se dice: la ley explica que publicar otro mapa «constituye un delito» en algunos países, pero el texto presenta el arreglo como «una solución más ingeniosa» que los servicios han encontrado, no como algo inevitable.
 
 ### 42. Key: D
 
-- [ ] **A)** Como el reconocimiento de que la protesta del público nace, ante todo, de no advertir que un precio fijo acaba favoreciendo a los revendedores.
-  - Lectura errónea: toma la concesión por una adhesión; el autor añade enseguida que valorar más y poder pagar más no son lo mismo, pues «la equivalencia dista de ser evidente».
+- [ ] **A)** Como prueba de que la protesta del público nace, ante todo, de no advertir que un precio fijo acaba enriqueciendo a los revendedores de entradas.
+  - Lectura errónea: toma la concesión por una adhesión; el autor añade enseguida que el argumento deja algo fuera, pues el algoritmo cambia el precio «mientras uno espera».
 - [ ] **B)** Como una cortesía hacia el adversario, que el autor retira luego al mostrar que los precios dinámicos encarecen en conjunto lo que se vende.
-  - Lectura errónea: el autor no retira la concesión ni afirma que los precios suban en conjunto; admite que un precio fijo «no abarata las entradas» y atribuye al taxista «una eficiencia irreprochable».
+  - Lectura errónea: el autor no retira la concesión ni afirma que los precios suban en conjunto; admite que con un precio fijo el sobreprecio «existe igualmente» y atribuye al conductor «una eficiencia irreprochable».
 - [ ] **C)** Como el reconocimiento de que el sistema es aceptable en los conciertos, donde frena la reventa, pero no en servicios necesarios como el transporte.
-  - Lectura errónea: el autor no distingue entre sectores; su reparo sobre lo que significa valorar más lo ilustra con el propio concierto y con «el estudiante que lleva diez años escuchando al grupo».
+  - Lectura errónea: el autor no distingue entre sectores; su reparo lo ilustra primero con el propio concierto, cuya cola trataba igual «al estudiante que lleva diez años escuchando al grupo» y al recién llegado.
 - [x] **D)** Como el reconocimiento de que el sistema reparte con eficacia lo escaso, sin que ello baste para desacreditar la queja de quienes protestan.
-  - Correcta: el autor admite que «el suspiro tiene fundamento», pero muestra que asignar el asiento a quien más paga no equivale a dárselo a quien más lo aprecia y que el pasajero «empapado» no tiene por qué agradecer esa eficiencia.
+  - Correcta: el autor admite que los economistas «tienen buenos argumentos», pero señala que la cola trataba a todos por igual mientras el algoritmo cambia el precio «sin avisar de cuánto ni por qué», y que el pasajero «empapado» no tiene por qué agradecer esa eficiencia.
 
 ### 43. Key: C
 
-- [ ] **A)** Ridiculizar el tono de las crónicas, que, al hacer de la borrasca un personaje, tienden a exagerar su violencia y a alarmar a la población.
-  - Lectura errónea: el autor no acusa a las crónicas de exagerar la fuerza del temporal ni de alarmar; reconoce que el nombre «cuesta poco y funciona», y lo que le interesa es a quién se atribuyen los daños, pues en ellas «los daños tienen un sujeto».
-- [ ] **B)** Defender que los meteorólogos dejen de bautizar las borrascas, pues el nombre propio las hace responsables de unos daños que comparten con otros.
-  - Lectura errónea: convierte la crítica en una propuesta que el autor rechaza expresamente: «Nadie propone, desde luego, que los meteorólogos vuelvan a designar las borrascas por la fecha en que llegan».
-- [x] **C)** Señalar que el relato habitual de cada temporal le atribuye en exclusiva unos daños en los que también han pesado decisiones humanas que nadie menciona.
-  - Correcta: la defensa imaginaria enumera decisiones humanas, como la urbanización levantada en «el cauce de una rambla» o el colector que «no se ha ampliado en treinta años», ausentes de unas crónicas en las que el único sujeto de los daños es la borrasca.
-- [ ] **D)** Proponer que los afectados puedan reclamar ante los tribunales contra las administraciones que permitieron construir en zonas de riesgo.
-  - Lectura errónea: toma al pie de la letra una figura hipotética («Si lo tuviera»); el texto no menciona tribunales ni reclamaciones de los afectados.
+- [ ] **A)** Para denunciar que el turismo ha convertido al oso en un reclamo comercial, igual que antes hizo de su piel una mercancía.
+  - Lectura errónea: los valles de la última frase son aquellos donde «el ganado sigue siendo el principal sustento», no los que viven de los visitantes; la alusión no trata del uso comercial de la imagen del oso.
+- [ ] **B)** Para reprochar a los ganaderos que sigan anclados en una hostilidad hacia el oso que el resto de los vecinos ya ha superado.
+  - Lectura errónea: toma al pie de la letra la «reconciliación entre el hombre y la naturaleza» de los folletos; el autor no culpa a los ganaderos, sino que recuerda que el oso «no ha cambiado de costumbres» y que «Han cambiado las de sus vecinos».
+- [x] **C)** Para insinuar que la nueva acogida al oso obedece más a lo que cada valle obtiene hoy de él que a una reconciliación con la naturaleza.
+  - Correcta: el animal es el mismo en todos los valles, pero la acogida cambia con lo que cada uno obtiene de él: donde la mitad de los vecinos «vive de quienes llegan con prismáticos» se le celebra, y donde vive del ganado la reconciliación avanza «bastante más despacio».
+- [ ] **D)** Para sugerir que el oso no podrá asentarse de forma duradera en un valle mientras el pastoreo no deje paso al turismo.
+  - No se dice: el autor no hace pronósticos sobre el asentamiento del oso; compara la acogida que recibe y constata que en los valles ganaderos la reconciliación avanza «bastante más despacio».
 
 ### 44. Key: A
 
-- [x] **A)** Que los gobiernos se dediquen de verdad a la tarea de la que, según los críticos, podría apartarlos la investigación.
-  - Correcta: la «lástima» es irónica, porque el autor no reconoce en la objeción «a los gobiernos que uno conoce», cuyo empeño en reducir emisiones se ha traducido, «cumbre tras cumbre», en «tanta elocuencia».
+- [x] **A)** Que la reducción de las emisiones ocupe en la agenda de los gobiernos el lugar preferente que la objeción da por supuesto.
+  - Correcta: la «lástima» es irónica, porque el razonamiento presupone unas administraciones «volcadas en recortar sus emisiones», cuyo empeño se ha traducido, «cumbre tras cumbre», en «tanta elocuencia».
 - [ ] **B)** Que la geoingeniería pueda investigarse sin debilitar el compromiso de los gobiernos con la reducción de las emisiones.
-  - Lectura errónea: lee al pie de la letra la «lástima» y atribuye al autor el temor de los críticos, cuando él duda de la premisa: «Cuesta, sin embargo, reconocer en esa objeción a los gobiernos que uno conoce».
+  - Lectura errónea: lee al pie de la letra «Sería una lástima» y atribuye al autor el temor de los críticos, cuando lo que él pone en duda es la premisa de unas administraciones «volcadas en recortar sus emisiones».
 - [ ] **C)** Que los científicos que se niegan a investigar la técnica actúen por convicción, y no por miedo a perjudicar su prestigio profesional.
-  - Lectura errónea: la ironía no apunta a los investigadores, cuyo argumento, según el autor, «merece respeto», sino a las administraciones que ese razonamiento presupone «volcadas en recortar sus emisiones».
-- [ ] **D)** Que los gobiernos estén dispuestos a renunciar a una técnica que les saldría mucho más barata que recortar sus emisiones.
-  - No se dice: el texto no atribuye a los gobiernos ninguna preferencia por la técnica; de que sea «relativamente barata» deduce solo que plantea «problemas de gobierno que nadie ha empezado a resolver».
+  - Lectura errónea: la ironía no apunta a los investigadores, cuyo argumento, según el autor, «merece respeto», sino a lo que ese razonamiento da por supuesto acerca de los gobiernos.
+- [ ] **D)** Que los gobiernos estén dispuestos a renunciar a una técnica que les saldría bastante más barata que recortar de verdad sus emisiones.
+  - No se dice: el texto no atribuye a los gobiernos preferencia alguna por la técnica; solo advierte que su despliegue por un solo país plantearía «problemas de gobierno para los que aún no existe respuesta».
 
 ### 45. Key: D
 
-- [ ] **A)** Presentar el fraude en las ayudas como una respuesta legítima de quienes reciben de la administración un trato duro e injusto.
+- [ ] **A)** Presentar el fraude en las ayudas como una respuesta legítima de quienes reciben de la Administración un trato duro e injusto.
   - Lectura errónea: el autor no justifica el fraude, pues afirma que «El fraude, por supuesto, debe perseguirse»; lo que recuerda es de quién aprende Lázaro sus trampas.
 - [ ] **B)** Recordar que la picaresca es un rasgo arraigado en la cultura del país, presente ya en algunas de las obras más célebres de su literatura clásica.
   - Lectura errónea: es la lectura de las tertulias que el autor discute; al volver a la novela se encuentra «algo más incómodo», porque «Lázaro no nace tramposo».
-- [ ] **C)** Reprochar a los comentaristas que citen una novela que no conocen y que, bien leída, trata sobre todo del hambre y no tanto del engaño.
-  - Lectura errónea: el texto no dice que la novela trate sobre todo del hambre; muestra cómo Lázaro aprende a hacer trampas y cómo estas «responden, casi siempre, a las de quienes tenían el deber de alimentarlo».
-- [x] **D)** Señalar que el clásico, leído entero, obliga a mirar también a unas instituciones cuyo trato empuja al engaño a quien depende de ellas.
-  - Correcta: en la novela, las trampas del muchacho responden a las de sus amos, y el autor sitúa a su lado unos expedientes con «requisitos que cambian a mitad del trámite»; por eso aconseja leerla «entera antes de citarla».
+- [ ] **C)** Mostrar que la novela, bien leída, trata sobre todo del hambre de una época y no tanto del engaño de su protagonista.
+  - Lectura errónea: el hambre es el medio con que los amos enseñan, pero el texto subraya el engaño, pues Lázaro «aprende a serlo, y aprende de sus amos».
+- [x] **D)** Señalar que el clásico, bien leído, obliga a mirar también a unas instituciones cuyo trato empuja al engaño a quien depende de ellas.
+  - Correcta: Lázaro «aprende de sus amos», y el autor sitúa a su lado unos expedientes con «requisitos que cambian a mitad del trámite»; de esos amos, observa, «nunca se acuerda nadie en las tertulias».
 
 ### 46. Key: B
 
 - [ ] **A)** Que los aficionados son, en conjunto, más fiables que los servicios profesionales, puesto que se equivocan con bastante menos frecuencia.
-  - Generalización excesiva: el autor no dice que los aficionados se equivoquen menos; admite que «los aficionados se equivocan», y lo que compara es la visibilidad de los errores, no su número.
-- [x] **B)** Que la advertencia de los servicios contra los análisis ajenos olvida que sus propios errores escapan durante décadas a todo examen.
-  - Correcta: frente a la queja por la «proliferación de análisis no contrastados», el autor recuerda que los errores de los aficionados se cometen «a la vista de todos», mientras que los de los profesionales «aguardan treinta años en un archivo».
+  - No se dice: el autor no afirma que los aficionados se equivoquen menos; admite que «los aficionados se equivocan», y lo que contrapone es la visibilidad de los errores, no su número.
+- [x] **B)** Que los servicios reprochan a los aficionados una falta de contraste que, en su propio caso, nadie puede comprobar a tiempo.
+  - Correcta: los servicios alertan de «la proliferación de análisis no contrastados», pero, tras el «eso sí», el autor recuerda que sus propios errores «aguardan treinta años en un archivo», donde nadie puede contrastarlos a tiempo.
 - [ ] **C)** Que los servicios deberían hacer públicos sus análisis con la misma rapidez con que los aficionados difunden los suyos en las redes.
-  - No se dice: el autor no pide que los servicios publiquen sus análisis; cree que su valor está en ventajas que ningún aficionado iguala, como «las fuentes humanas» o «las comunicaciones interceptadas».
+  - No se dice: el autor no pide que los servicios publiquen sus análisis; sitúa su valor en ventajas como «las fuentes humanas» o «las comunicaciones interceptadas».
 - [ ] **D)** Que los servicios ocultan deliberadamente sus errores para proteger ante los ministros y ante el público su prestigio y su presupuesto.
-  - No se dice: el texto no habla de ocultación deliberada ni de presupuestos; los errores profesionales corren la suerte de cualquier documento reservado y esperan «treinta años en un archivo».
+  - No se dice: el texto no habla de ocultación deliberada, de prestigio ni de presupuestos; solo constata que los errores profesionales «aguardan treinta años en un archivo».
 
 ### 47. Key: A
 
-- [x] **A)** Que no dejar propina sigue siendo posible, pero la pantalla convierte esa elección en una excepción que el cliente tendría que justificar.
-  - Correcta: como las salidas de emergencia, la opción existe y su ubicación la conoce «todo el mundo», pero «nadie» la usa «sin un buen motivo», porque la pantalla ha puesto cifras a lo que antes era un simple gesto.
-- [ ] **B)** Que el comercio ofrece la opción de no dejar propina porque una norma lo obliga, y no porque desee que algún cliente la elija.
-  - No se dice: el texto no menciona ninguna norma que obligue al comercio; lo que recuerdan los defensores del sistema es que el cliente no tiene obligación alguna, pues «nadie está obligado a nada».
-- [ ] **C)** Que el botón para no dejar propina está tan escondido que muchos clientes no lo encuentran y pagan una propina que no pensaban dejar.
-  - Lectura errónea: toma al pie de la letra el tamaño y la esquina del botón, cuando la comparación subraya que se trata de algo «cuya ubicación todo el mundo conoce».
-- [ ] **D)** Que son los empleados, con su presencia junto al mostrador, quienes disuaden al cliente de pulsar la opción de no dejar propina.
-  - Atribución cambiada: el empleado «mira hacia otro lado con una discreción muy profesional»; la presión procede de la pantalla y de las cifras que propone.
+- [x] **A)** Una aprobación socarrona de un sistema que vuelve contra los cárteles la desconfianza que se tienen sus propios miembros.
+  - Correcta: el autor celebra con ironía un mecanismo que aprovecha que el mayor peligro de cada socio «se sienta al otro lado de la mesa de reuniones», y que ha dejado en evidencia el «optimismo conmovedor» del dicho sobre el honor entre ladrones.
+- [ ] **B)** Un reparo moral ante una política que deja sin castigo al primero que traiciona a quienes habían sido sus cómplices.
+  - Lectura errónea: el autor no expresa ningún reparo ante el perdón de la multa; su ironía recae sobre los infractores, cuyo honor entre ladrones ha resultado de «un optimismo conmovedor», no sobre la política.
+- [ ] **C)** Un escepticismo de fondo, porque los cárteles han aprendido a protegerse con pactos de silencio más estrictos que antes.
+  - Lectura errónea: el autor enumera las precauciones de los cárteles, pero concluye que ninguna ha sido tan persuasiva como la oferta de las autoridades, «A juzgar por la afluencia de arrepentidos».
+- [ ] **D)** Una aceptación resignada de un remedio adoptado porque las inspecciones no daban los resultados que se esperaban.
+  - Lectura errónea: los «resultados más bien discretos» de las inspecciones explican el origen de los programas, pero el autor no los acepta con resignación: subraya que muchos cárteles «se presentaron solos» ante el regulador.
 
 ### 48. Key: C
 
@@ -535,21 +535,21 @@
 ### 49. Key: B
 
 - [ ] **A)** Ridiculizar a las familias por debatir con tanta solemnidad asuntos tan menores como la pérdida de un jersey en el patio.
-  - Lectura errónea: la solemnidad es del narrador, no de las familias, y el autor reconoce que «Su utilidad es evidente»; el tono parlamentario prepara la idea de que en el grupo se toman decisiones, como el regalo aprobado «sin votación y casi sin advertirlo».
-- [x] **B)** Anticipar con humor que el grupo ejerce, sin mandato ni procedimiento alguno, unas funciones propias de un órgano de gobierno.
-  - Correcta: el vocabulario de la sesión anticipa que el grupo adopta acuerdos y hasta dicta sentencias, como la queja que llega al colegio «con sentencia firme», aunque funciona «con reglas que nadie ha escrito» y ningún reglamento lo reconoce.
-- [ ] **C)** Dar a entender que las familias trasladan al grupo las rivalidades y los bandos de la política, de los que ni el colegio se libra.
-  - No se dice: en el texto no hay bandos ni rivalidades políticas; los acuerdos se adoptan «por agotamiento de los demás», no por el enfrentamiento entre facciones.
-- [ ] **D)** Defender que los colegios regulen estos grupos y nombren a un moderador que ordene los debates y someta los acuerdos a votación.
-  - No se dice: el autor no propone regular los grupos ni nombrar moderadores; constata que los colegios «han aprendido a convivir con un canal que no controlan».
+  - Lectura errónea: la solemnidad es del narrador, no de las familias, y el autor reconoce que «Su utilidad es evidente»; el tono prepara la idea de que en el grupo se toman decisiones, como el regalo aprobado «sin votación y casi sin advertirlo».
+- [x] **B)** Anticipar con humor que el grupo, sin que nadie se lo haya encomendado, toma decisiones que obligan también a quienes no han intervenido.
+  - Correcta: el vocabulario de asamblea anticipa que el grupo, regido por «reglas que nadie ha escrito», resuelve asuntos que afectan a todos, como el regalo para la tutora o la queja que «llegaba ya con sentencia firme» al colegio.
+- [ ] **C)** Dar a entender que el grupo, como un parlamento sin mayoría, discute durante horas y horas sin llegar a resolver nada de lo que se plantea.
+  - Lectura errónea: aunque el jersey no aparece, el grupo sí resuelve: «la asamblea había aprobado» el regalo, y las quejas llegan a la dirección «con sentencia firme».
+- [ ] **D)** Criticar que el colegio delegue en las familias unas decisiones que le corresponden, como la elección del regalo de fin de curso para la tutora.
+  - No se dice: el texto no reprocha al colegio ninguna delegación; constata que los colegios conviven con «un canal que no controlan».
 
 ### 50. Key: D
 
-- [ ] **A)** La considera un engaño piadoso: tranquiliza a la población, pero a costa de ocultarle la verdadera procedencia del agua que bebe.
-  - Lectura errónea: el autor descarta cualquier ocultación al precisar que «El procedimiento no tiene nada de secreto» y que las compañías lo explican «con todo detalle».
-- [ ] **B)** La considera la opción más prudente: el tiempo que el agua pasa en el embalse permite a la naturaleza completar su depuración.
-  - Lectura errónea: toma al pie de la letra la «sencillez ejemplar»; el texto afirma que el agua «no sale del embalse más limpia de lo que entró».
-- [ ] **C)** La considera un gasto injustificado: obedece a un temor infundado que bastaría con disipar dando a conocer los análisis.
-  - Lectura errónea: aunque admite que el rodeo es «caro», el autor advierte que se trata de un rechazo «que ningún dato consigue disipar» y que el procedimiento resulta probablemente «más barato que cualquier campaña destinada a convencer a la población».
-- [x] **D)** La considera un rodeo de escaso valor sanitario: no mejora el agua, pero la vuelve aceptable para quien la rechazaba.
-  - Correcta: desde el punto de vista sanitario el paseo «aporta poco», pero el agua «sale convertida en agua del embalse», que se bebe «sin reparos», y así sortea el «factor asco».
+- [ ] **A)** Que conviene no informar a la población del origen del agua que bebe, como ya ocurre en las ciudades situadas río abajo.
+  - Lectura errónea: el autor no defiende ocultar nada; del paso por el embalse dice que «El procedimiento no tiene nada de secreto» y que las compañías lo explican «con todo detalle».
+- [ ] **B)** Que el agua de los ríos es en realidad menos segura que la depurada y que los ciudadanos hacen mal en beberla tranquilos.
+  - No se dice: el texto afirma que el agua depurada «supera con holgura los análisis que se exigen a la del grifo», pero no que la de los ríos sea menos segura.
+- [ ] **C)** Que el rechazo desaparecería por sí solo si se explicara a los ciudadanos que ya beben el agua que han depurado otros pueblos.
+  - Lectura errónea: la información no basta, pues se trata de «un rechazo que ningún dato consigue disipar»; el comentario sugiere más bien que pensar en el origen del agua lo agravaría.
+- [x] **D)** Que el rechazo nace menos de lo que contiene el agua que de lo que cada ciudadano sabe del camino que ha recorrido.
+  - Correcta: lo que repugna es «la idea de beber lo que hace unos días bajaba por los desagües», por eso «Poco importa que el agua de numerosos ríos haya atravesado ya las depuradoras» mientras nadie lo piense, y por eso se acepta el agua que «sale convertida en agua del embalse».
