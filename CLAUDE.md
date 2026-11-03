@@ -171,7 +171,8 @@ Migration `20261103102139_add_content_language` cannot be undone by Prisma: it d
 `reading_items`, `writing_tasks`, `listening_items`, `vocab_entries`, `exam_sessions` and `topic_stats`, and
 creates the new `(language, skill, level, topic)` unique index. Back up before the first start of the new
 version. In the compose setup the database service is `db`, user `postgres`, database `app_db`
-(`docker-compose.yml`):
+(`docker-compose.yml`). `pg_dump` runs inside the `db` container, so if the stack is down start it first with
+`docker compose up -d db`:
 
 ```bash
 docker compose exec -T db pg_dump -U postgres -d app_db -Fc > jflt-before-language-switch.dump
@@ -187,10 +188,20 @@ docker compose stop api
 docker compose exec -T db pg_restore -U postgres -d app_db --clean --if-exists < jflt-before-language-switch.dump
 ```
 
-The alternative that keeps newer data is to delete the `language = 'es'` rows (the five content and session
-tables above plus `topic_stats`; an `exam_sessions` row takes its `answers` with it) and recreate the old index with
+Restoring the dump is the clean rollback, because it also restores `_prisma_migrations`. The alternative that
+keeps newer data is to delete the `language = 'es'` rows (the five content and session tables above plus
+`topic_stats`; an `exam_sessions` row takes its `answers` with it) and recreate the old index with
 `CREATE UNIQUE INDEX "topic_stats_skill_level_topic_key" ON "topic_stats"("skill", "level", "topic");`. The
-`language` columns can stay, since they default to `en`.
+`language` columns can stay, since they default to `en`. `review_items` carries no language and has no foreign
+key, so the Spanish deletes leave orphaned rows there; remove them afterwards:
+
+```sql
+DELETE FROM review_items WHERE item_id NOT IN (
+  SELECT id FROM reading_items UNION SELECT id FROM listening_items UNION SELECT id FROM vocab_entries);
+```
+
+This route leaves `_prisma_migrations` listing `add_content_language` (the full name is
+`20261103102139_add_content_language`) as applied.
 
 ## Frontend architecture (`frontend/`)
 
