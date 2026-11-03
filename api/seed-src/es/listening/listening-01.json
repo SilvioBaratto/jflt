@@ -90,17 +90,17 @@
       "id": 2,
       "question": "¿Cómo responde el experto a la objeción de que quedarse puede legitimar a un gobierno que ha tomado el poder por la fuerza?",
       "options": {
-        "A": "Le reconoce peso, pero sostiene que hay peldaños intermedios para marcar distancias sin necesidad de abandonar el país.",
+        "A": "Le reconoce peso y concluye que, en esos casos concretos, cerrar la embajada resulta la opción menos mala.",
         "B": "La descarta, porque cree que los gobiernos de ese tipo apenas sacan partido de las visitas de diplomáticos extranjeros.",
-        "C": "Le reconoce peso y concluye que, en esos casos concretos, cerrar la embajada resulta la opción menos mala.",
+        "C": "Le reconoce peso, pero sostiene que hay peldaños intermedios para marcar distancias sin necesidad de abandonar el país.",
         "D": "La admite, pero cree que importa más no dejar sin atención a los compatriotas que siguen en el país."
       },
-      "answer": "A",
+      "answer": "C",
       "rationale": "El experto admite que es «la objeción más seria», pero responde que entre la normalidad y el cierre «hay muchos peldaños», como reducir contactos, llamar al embajador a consultas o dejar a un encargado de negocios.",
       "option_rationales": {
-        "A": "Correcta: concede la objeción («se lo reconozco») y la matiza con medidas como «reducir los contactos al mínimo», que mantienen la presencia sin respaldar a quien gobierna.",
+        "A": "Lectura errónea: toma la concesión por su postura; tras reconocer la objeción, el experto critica justamente que los pasos intermedios se salten «todos de golpe» para ir directos al cierre.",
         "B": "Relación invertida: el experto reconoce lo contrario, que hay gobiernos que «exhiben cada visita de un diplomático extranjero» como un respaldo.",
-        "C": "Lectura errónea: toma la concesión por su postura; tras reconocer la objeción, el experto critica justamente que los pasos intermedios se salten «todos de golpe» para ir directos al cierre.",
+        "C": "Correcta: concede la objeción («se lo reconozco») y la matiza con medidas como «reducir los contactos al mínimo», que mantienen la presencia sin respaldar a quien gobierna.",
         "D": "Lectura errónea: los compatriotas que «no tienen a quién llamar» son un argumento anterior contra el cierre; ante la objeción de la legitimidad, el experto no vuelve a ellos y responde con los pasos intermedios."
       }
     },

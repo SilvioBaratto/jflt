@@ -89,17 +89,17 @@
       "question": "¿Qué insinúa la primera pregunta que recibe la portavoz?",
       "options": {
         "A": "Que sería más eficaz que el ministerio concediera los préstamos directamente, sin pasar por los bancos.",
-        "B": "Que el aval podría acabar respaldando a clientes habituales del banco que habrían obtenido el crédito sin él.",
+        "B": "Que las encuestas del ministerio exageran cuántas pequeñas empresas carecen de garantías que ofrecer al banco.",
         "C": "Que los bancos encarecerán los préstamos avalados, aprovechando que el Estado asume una parte del riesgo.",
-        "D": "Que las encuestas del ministerio exageran cuántas pequeñas empresas carecen de garantías que ofrecer al banco."
+        "D": "Que el aval podría acabar respaldando a clientes habituales del banco que habrían obtenido el crédito sin él."
       },
-      "answer": "B",
+      "answer": "D",
       "rationale": "El periodista recuerda que es el banco quien decide y que conoce bien a «sus clientes de toda la vida», y pregunta a quién «acaba llegando el aval»: sugiere que puede ir a parar a esos clientes en lugar de a las empresas jóvenes.",
       "option_rationales": {
         "A": "No se dice: el periodista señala que «quien decide a quién se presta sigue siendo el banco», pero no propone que el ministerio preste directamente.",
-        "B": "Correcta: al subrayar que el banco conoce a «sus clientes de toda la vida» y preguntar a quién «acaba llegando el aval», da a entender que podría beneficiar a quien ya tenía crédito.",
+        "B": "Lectura errónea: «Usted habla de empresas sin nada que ofrecer» recoge la premisa de la portavoz para plantear otra duda; el periodista no discute los datos de las encuestas.",
         "C": "No se dice: el periodista no habla de lo que costarán los préstamos; recuerda que el banco conoce a «sus clientes de toda la vida» para preguntar a quién «acaba llegando el aval».",
-        "D": "Lectura errónea: «Usted habla de empresas sin nada que ofrecer» recoge la premisa de la portavoz para plantear otra duda; el periodista no discute los datos de las encuestas."
+        "D": "Correcta: al subrayar que el banco conoce a «sus clientes de toda la vida» y preguntar a quién «acaba llegando el aval», da a entender que podría beneficiar a quien ya tenía crédito."
       }
     },
     {

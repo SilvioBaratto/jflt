@@ -106,17 +106,17 @@
       "id": 3,
       "question": "¿Qué contesta en el fondo el consejero a la pregunta de si la comunidad podrá pagar obras más caras?",
       "options": {
-        "A": "Que esa decisión no le corresponde a él, sino a la consejería de hacienda cuando prepare el presupuesto.",
+        "A": "Que la comunidad ya está pagando ese sobrecoste, aunque en gastos que no dejan ninguna obra hecha.",
         "B": "Que la comunidad pagará más, y que para hacerlo tendrá que aplazar las obras que sean menos urgentes.",
-        "C": "Que la comunidad ya está pagando ese sobrecoste, aunque en gastos que no dejan ninguna obra hecha.",
+        "C": "Que esa decisión no le corresponde a él, sino a la consejería de hacienda cuando prepare el presupuesto.",
         "D": "Que la comunidad no puede asumir sola el aumento y deberá pedir ayuda al Gobierno central."
       },
-      "answer": "C",
+      "answer": "A",
       "rationale": "Preguntado si la comunidad podrá asumir obras más caras, el consejero no da cifras: recuerda que el alquiler de las aulas «ya ha costado más de lo que habría hecho falta añadir al presupuesto» y que se pagaron «dos concursos que no sirvieron para nada».",
       "option_rationales": {
-        "A": "No se dice: el consejero no remite a otra consejería; contesta con el ejemplo del instituto, cuyo alquiler «ya ha costado más» de lo que habría costado subir el presupuesto.",
+        "A": "Correcta: el alquiler de las aulas «ya ha costado más de lo que habría hecho falta añadir al presupuesto», y a eso se suman «dos concursos que no sirvieron para nada»: el sobrecoste ya se paga, sin obra a cambio.",
         "B": "No se dice: el consejero no anuncia aplazamientos; sostiene que el retraso ya ha costado más de lo que habría hecho falta «añadir al presupuesto».",
-        "C": "Correcta: el alquiler de las aulas «ya ha costado más de lo que habría hecho falta añadir al presupuesto», y a eso se suman «dos concursos que no sirvieron para nada»: el sobrecoste ya se paga, sin obra a cambio.",
+        "C": "No se dice: el consejero no remite a otra consejería; contesta con el ejemplo del instituto, cuyo alquiler «ya ha costado más» de lo que habría costado subir el presupuesto.",
         "D": "No se dice: el consejero no pide ayuda a otras administraciones; su respuesta es que la comunidad ya paga más con el alquiler de las aulas, que «ya ha costado más»."
       }
     }

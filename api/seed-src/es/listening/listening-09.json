@@ -30,7 +30,7 @@
   "lines": [
     {
       "speaker": "PRESENTADOR",
-      "text": "Esta semana nos ha escrito un oyente de una comarca de secano. En su pueblo se van a cubrir de paneles solares varios cientos de hectáreas de cereal, y nos pregunta si no estaremos cambiando comida por electricidad. Están con nosotros Irene Campos, investigadora en desarrollo rural, y Daniel Ortega, periodista especializado en energía. Irene, ¿hace bien en preocuparse nuestro oyente?"
+      "text": "Esta semana nos ha escrito un oyente de una comarca de secano. En su pueblo se van a cubrir de paneles solares varios cientos de hectáreas de cereal, y nos pregunta si no estaremos cambiando comida por electricidad. Están con nosotros Irene Campos, investigadora en desarrollo rural, y Daniel Olmos, periodista especializado en energía. Irene, ¿hace bien en preocuparse nuestro oyente?"
     },
     {
       "speaker": "INVESTIGADORA",
@@ -85,17 +85,17 @@
       "question": "¿Qué actitud muestra el periodista hacia los mapas de las zonas más adecuadas para las plantas solares?",
       "options": {
         "A": "Confianza, porque cree que con el tiempo desviarán las inversiones hacia los terrenos de menor valor agrícola.",
-        "B": "Recelo, porque cree que se trazaron pensando en el paisaje y no en los lugares donde más energía se produce.",
+        "B": "Escepticismo, porque la ubicación la decide el acceso a la red eléctrica, y no las condiciones del terreno.",
         "C": "Aprobación, aunque lamenta que lleguen tarde, cuando las empresas ya se han asegurado las mejores fincas.",
-        "D": "Escepticismo, porque la ubicación la decide el acceso a la red eléctrica, y no las condiciones del terreno."
+        "D": "Recelo, porque cree que se trazaron pensando en el paisaje y no en los lugares donde más energía se produce."
       },
-      "answer": "D",
+      "answer": "B",
       "rationale": "El periodista explica que un promotor «no empieza mirando el suelo, sino el enchufe» y que los puntos con capacidad libre «escasean»; de ahí la ironía de que los mapas sean útiles «para saber dónde no se va a construir ninguna».",
       "option_rationales": {
         "A": "Lectura errónea: el periodista no espera que los mapas orienten la inversión; un promotor «no empieza mirando el suelo, sino el enchufe».",
-        "B": "Conocimiento externo: estos mapas suelen trazarse con criterios ambientales, pero el periodista no se lo reprocha; lo que manda, según él, es la cercanía a «un punto de la red eléctrica con capacidad libre».",
+        "B": "Correcta: si un promotor mira primero «el enchufe» y esos puntos «escasean», las plantas no irán a las zonas del mapa, que solo sirven «para saber dónde no se va a construir ninguna».",
         "C": "Lectura errónea: «muy útiles» es una ironía, porque añade que sirven «para saber dónde no se va a construir ninguna»; no habla de que lleguen tarde.",
-        "D": "Correcta: si un promotor mira primero «el enchufe» y esos puntos «escasean», las plantas no irán a las zonas del mapa, que solo sirven «para saber dónde no se va a construir ninguna»."
+        "D": "Conocimiento externo: estos mapas suelen trazarse con criterios ambientales, pero el periodista no se lo reprocha; lo que manda, según él, es la cercanía a «un punto de la red eléctrica con capacidad libre»."
       }
     },
     {
