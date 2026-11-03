@@ -778,63 +778,63 @@ La solución adoptada en más de un lugar es de una sencillez ejemplar. El agua 
 
 ### 51. (La reforma de la composición del Consejo de Seguridad)
 
-En el debate general con que la Asamblea General de las Naciones Unidas abre cada año su periodo de sesiones, raro es el gobierno que no dedica algún párrafo a la composición del Consejo de Seguridad. El órgano conserva el reparto de poder que dejó la Segunda Guerra Mundial: cinco miembros permanentes con derecho de veto y otros diez que se turnan cada dos años. Que regiones enteras carezcan de un asiento estable se denuncia desde la tribuna como un anacronismo intolerable, y la reforma aparece por igual en los discursos de aliados y adversarios, de grandes potencias y de pequeños Estados insulares.
+En el debate de alto nivel con que la Asamblea General de las Naciones Unidas abre cada año su periodo de sesiones, raro es el gobierno que no dedique algún párrafo a la composición del Consejo de Seguridad. El órgano conserva el reparto de poder que dejó la Segunda Guerra Mundial: cinco miembros permanentes con derecho de veto y otros diez que se turnan cada dos años. Que regiones enteras carezcan de un asiento estable se denuncia desde la tribuna como un anacronismo intolerable, y la reforma aparece por igual en los discursos de aliados y adversarios, de grandes potencias y de pequeños Estados insulares.
 
-Es difícil encontrar en la diplomacia una causa que goce de mejor salud. Los cinco miembros permanentes aceptan, en principio, que el Consejo crezca, siempre que los recién llegados no hereden el veto, y la mayoría de los aspirantes ha terminado por admitir esa condición. Los candidatos a un asiento permanente son de sobra conocidos: dos potencias asiáticas, un gigante sudamericano, una gran economía europea y dos o tres Estados africanos. Casi todos tienen, además, un vecino que prefiere un Consejo anacrónico a otro en el que su rival se siente de por vida. Esos vecinos han formado una coalición que reclama, con una constancia ejemplar, que cualquier reforma cuente con el acuerdo de todos los Estados miembros.
+Es difícil encontrar en la diplomacia una causa que goce de mejor salud. Los cinco miembros permanentes aceptan, en principio, que el Consejo crezca, siempre que los recién llegados no hereden el veto, y la mayoría de los aspirantes ha terminado por admitir esa condición. Los candidatos a un asiento permanente son de sobra conocidos: dos potencias asiáticas, un gigante sudamericano, una gran economía europea y dos o tres Estados africanos. Casi todos tienen, además, un vecino que prefiere un Consejo anacrónico a otro en el que su rival se siente de por vida. Esos vecinos han formado una coalición que reclama, con una constancia digna de elogio, que cualquier reforma cuente con el acuerdo de todos los Estados miembros.
 
-Las negociaciones formales llevan más de quince años abiertas y todavía no han producido un borrador; las delegaciones dedican sus sesiones a discutir qué documento debería servir de base para empezar a negociar. Al llegar el otoño, los mismos gobiernos piden desde la tribuna que se acelere el proceso, y los aspirantes reciben de sus vecinos las mismas palabras de aliento que el año anterior. Entretanto, el Consejo sigue reuniéndose con los cinco miembros permanentes de 1945, y nada hace pensar que no vaya a conservarlos el día en que cumpla su primer siglo.
+Las negociaciones formales llevan más de quince años abiertas y todavía no han producido un borrador; las delegaciones dedican sus sesiones a discutir qué documento debería servir de base para empezar a negociar. Al llegar el otoño, los mismos gobiernos piden desde la tribuna que se acelere el proceso, y los aspirantes reciben de sus vecinos las mismas palabras de aliento que el año anterior. El Consejo sigue reuniéndose con los cinco miembros permanentes de 1945, y nada hace pensar que no vaya a conservarlos el día en que cumpla su primer siglo.
 
 **¿Qué quiere decir el autor al afirmar que es difícil encontrar en la diplomacia una causa que goce de mejor salud?**
 
 - **A)** Que el respaldo a la ampliación es lo bastante sólido para que salga adelante en cuanto las delegaciones pacten el documento del que partir.
-- **B)** Que ese apoyo general se sostiene porque ningún gobierno ha tenido que pronunciarse aún sobre una propuesta con candidatos concretos.
+- **B)** Que el apoyo unánime a cambiar la composición del Consejo se sostiene porque ningún gobierno ha tenido que votar aún un texto concreto.
 - **C)** Que los cinco miembros permanentes solo aparentan apoyar el cambio, pues ninguno consentiría que otros Estados compartieran su derecho de veto.
-- **D)** Que la ampliación suma tantos partidarios porque cada región obtendría un asiento permanente y ningún gobierno saldría perdiendo.
+- **D)** Que la coalición de vecinos, con su constancia, ha conseguido mantener viva una reforma que los cinco permanentes preferían olvidar.
 
 ### 52. (Los daños en los cables submarinos de telecomunicaciones)
 
 Por el fondo del mar discurren más de un millón de kilómetros de cables, apenas más gruesos que una manguera de jardín, por los que circula casi todo el tráfico de datos entre continentes, desde las llamadas telefónicas hasta las órdenes de compra de los mercados financieros. Se rompen con cierta frecuencia: cada año se registran más de un centenar de averías, causadas en su mayoría por redes de arrastre y por anclas, y unos buques especializados las reparan en cuestión de días o de semanas. El percance es tan corriente que rara vez llega a los periódicos.
 
-En algunos mares se ha vuelto habitual, sin embargo, un tipo de accidente muy particular. Un mercante de cierta edad, con bandera de conveniencia y un propietario difícil de localizar, arrastra el ancla por el lecho marino a lo largo de decenas de kilómetros, corta a su paso uno o dos cables, y en ocasiones algún gasoducto, y prosigue su travesía. Interrogada después, la tripulación atribuye lo ocurrido a un fallo mecánico: el ancla se soltó sola, y nadie a bordo advirtió durante horas las vibraciones ni la pérdida de velocidad. Las armadas de la región han aprendido a apreciar la asombrosa torpeza de estas tripulaciones, que suele manifestarse sobre los tramos más sensibles del fondo y en las semanas de mayor tensión diplomática.
+En algunos mares se ha vuelto habitual, sin embargo, un tipo de accidente muy particular. Un mercante de cierta edad, con bandera de conveniencia y un propietario difícil de localizar, arrastra el ancla por el lecho marino a lo largo de decenas de kilómetros, corta a su paso uno o dos cables y prosigue su travesía. Interrogada después, la tripulación atribuye lo ocurrido a un fallo mecánico: el ancla se soltó sola, y nadie a bordo advirtió durante horas las vibraciones ni la pérdida de velocidad. Las armadas de la región han aprendido a apreciar la asombrosa torpeza de estas tripulaciones, que suele manifestarse sobre los tramos más sensibles del fondo y en las semanas de mayor tensión diplomática.
 
 El derecho del mar ofrece poco asidero frente a esa torpeza. Fuera de sus aguas territoriales, un Estado ribereño apenas tiene potestad para detener un buque extranjero, y aun cuando logra inspeccionarlo, demostrar la intención exige probar que alguien dio una orden, a bordo o en una oficina lejana, en nombre de una empresa que a menudo no tiene más sede que un apartado de correos. Lo habitual es que el buque quede retenido unas semanas, que los inspectores encuentren deficiencias en el freno del ancla y que el armador pague la multa correspondiente. Las aseguradoras, poco dadas a la alarma, han empezado a encarecer las pólizas de los buques que frecuentan esas rutas.
 
 **¿Qué sugiere el autor al referirse a la «asombrosa torpeza» de estas tripulaciones?**
 
 - **A)** Que el mal estado de muchos mercantes con bandera de conveniencia provoca accidentes que una inspección más rigurosa habría evitado.
-- **B)** Que los daños son intencionados, y que al Estado ribereño le basta con inspeccionar el buque retenido para dejarlo demostrado.
-- **C)** Que esos accidentes encubren actos deliberados, ejecutados de tal modo que la intención de causarlos no pueda probarse.
+- **B)** Que las armadas ribereñas atribuyen sin pruebas a las tripulaciones extranjeras unos daños que en realidad fueron fortuitos.
+- **C)** Que esos accidentes encubren actos deliberados, ejecutados de tal modo que la intención de causarlos no llegue a probarse.
 - **D)** Que la responsabilidad recae, sobre todo, en un derecho del mar que deja sin protección los cables tendidos lejos de la costa.
 
 ### 53. (La negociación anual de las cuotas de pesca en la Unión Europea)
 
 Al acercarse la Navidad, los ministros de Pesca de la Unión Europea se reúnen durante dos días, y a menudo durante dos noches, para fijar cuánto podrá capturarse al año siguiente de cada especie en cada caladero. Sobre la mesa tienen el dictamen de los científicos, que estiman para cada población el volumen de capturas compatible con su recuperación. El dictamen no es una cifra caída del cielo: se elabora a partir de campañas de muestreo, de los registros de desembarque y de modelos que, como todos los modelos, trabajan con márgenes de error a veces amplios, y que tanto pueden sobrestimar el estado de una población como subestimarlo.
 
-Esos márgenes ocupan un lugar destacado en las negociaciones. Los datos de tal caladero, se recuerda, son incompletos; el muestreo de tal especie se hizo con un solo buque; el modelo no recoge la buena campaña que, según las cofradías de pescadores, se vivió el otoño pasado. En muchos casos es así, y los propios científicos lo reconocen en sus informes. De esa incertidumbre se deduce, con notable regularidad, que sería imprudente recortar las capturas sobre bases tan endebles, y la cifra que finalmente se aprueba supera la recomendada en no pocas poblaciones. La duda, en estas reuniones, muestra una curiosa inclinación.
+Esos márgenes ocupan un lugar destacado en las negociaciones. Los datos de tal caladero, se recuerda, son incompletos; el muestreo de tal especie se hizo con un solo buque; el modelo no recoge la buena campaña que, según las cofradías de pescadores, se vivió el otoño pasado. En muchos casos es así, y los propios científicos lo reconocen en sus informes. La duda, en estas reuniones, muestra una curiosa inclinación.
 
-Cuando, años después, una población se desploma y hay que cerrar la pesquería, los mismos ministerios preguntan con cierta irritación por qué los científicos no dieron la alarma a tiempo. Los científicos conservan en sus archivos los dictámenes de aquellos años, y en ellos la alarma figura con todas sus letras. La escena recuerda a la del conductor que, metido en un banco de niebla, pisa el acelerador porque no alcanza a distinguir con claridad ningún obstáculo.
+Cuando, tras varias temporadas con cuotas por encima del dictamen, una población se desploma y hay que cerrar la pesquería, los mismos ministerios preguntan con cierta irritación por qué los científicos no dieron la alarma a tiempo. Los científicos conservan en sus archivos los dictámenes de aquellos años, y en ellos la alarma figura con todas sus letras.
 
 **¿Cómo hay que entender la «curiosa inclinación» que, según el autor, muestra la duda en estas reuniones?**
 
 - **A)** Como un reproche a los Estados con las flotas más numerosas, que se sirven de la falta de datos para imponer sus cifras a los demás.
 - **B)** Como una concesión a los ministros, cuyas objeciones sobre la calidad de los datos el autor considera a menudo fundadas.
 - **C)** Como una crítica a los científicos, que amplían sus márgenes de error para no tener que responder de sus previsiones.
-- **D)** Como un modo de señalar que la falta de certeza se esgrime para justificar capturas mayores, y no para extremar la prudencia.
+- **D)** Como una censura a los negociadores, que esgrimen la falta de certeza para autorizar más capturas y no para extremar la prudencia.
 
 ### 54. (Las versiones de lectura fácil de los textos administrativos)
 
-La lectura fácil es un método de redacción con reglas precisas: frases cortas, una sola idea por frase, palabras de uso común, ejemplos concretos y, cuando no queda más remedio que emplear un término técnico, una explicación al margen. Antes de publicarse, cada texto pasa por un grupo de validadores, personas con discapacidad intelectual que comprueban si lo entienden e indican en qué punto se pierden. Ayuntamientos, ministerios y juntas electorales difunden ya versiones adaptadas de leyes, guías de voto y formularios, pensadas para ellas, para muchas personas mayores y para quienes están aprendiendo el idioma.
+La lectura fácil es un método de redacción con reglas precisas: frases cortas, una sola idea por frase, palabras de uso común, ejemplos concretos y, cuando no queda más remedio que emplear un término técnico, una explicación al margen. Antes de publicarse, cada texto pasa por un grupo de validadores, personas con discapacidad intelectual que comprueban si lo entienden e indican en qué punto se pierden. Ayuntamientos, ministerios y juntas electorales difunden ya versiones adaptadas de leyes, guías de voto y formularios, pensadas para esas personas, para muchos mayores y para quienes están aprendiendo el idioma.
 
 Los destinatarios previstos no son, sin embargo, los únicos lectores. En algunos ayuntamientos, la versión adaptada de las ordenanzas fiscales es el documento más descargado de la web municipal, muy por delante del texto oficial. En un ministerio, una jefa de servicio reconoce entre risas que, cuando tiene que explicar a su equipo una norma redactada en su propio departamento, imprime la versión de lectura fácil. Los validadores, por su parte, han detectado en más de un texto oficial frases que admitían dos interpretaciones y que habían pasado inadvertidas a los juristas encargados de revisarlo, y lo han hecho con una pregunta tan sencilla como «¿Quién tiene que hacer esto?».
 
-Las administraciones replican que el texto oficial no puede renunciar a la precisión jurídica, y el argumento tiene su peso: un término como «sujeto pasivo» abarca supuestos que «la persona que paga» no recoge del todo, y la versión adaptada no sustituye a la norma, sino que la explica. Resulta llamativo, con todo, que esa precisión no haya impedido las ambigüedades que los validadores descubrieron. Si una norma necesita una traducción para que la entiendan quienes deben aplicarla, ¿para qué lector se escribió el original?
+Las administraciones replican que el texto oficial no puede renunciar a la precisión jurídica, y el argumento tiene su peso: un término como «sujeto pasivo» abarca supuestos que «la persona que paga» no recoge del todo, y la versión adaptada no sustituye a la norma, sino que la explica. Resulta llamativo, con todo, que esa precisión no haya impedido las ambigüedades que los validadores descubrieron. ¿Para qué lector, entonces, se escribió el original?
 
-**¿Para qué recurre la autora al caso de la jefa de servicio que imprime la versión de lectura fácil?**
+**¿Qué da a entender la autora con el caso de la jefa de servicio que imprime la versión de lectura fácil?**
 
-- **A)** Para mostrar que las versiones adaptadas se han convertido en una herramienta útil para la formación interna del personal de las administraciones.
-- **B)** Para dar a entender que las normas oficiales resultan oscuras incluso para quienes las aplican, que recurren a la versión pensada para otros lectores.
-- **C)** Para censurar la escasa preparación de algunos mandos de la Administración, incapaces de entender las normas que redacta su propio departamento.
-- **D)** Para advertir de que la versión adaptada está desplazando al texto oficial incluso entre quienes lo aplican, con el riesgo jurídico que eso supone.
+- **A)** Que las versiones adaptadas se han convertido en una herramienta útil para la formación interna del personal de las administraciones.
+- **B)** Que ni siquiera quienes trabajan con las normas oficiales las entienden sin la ayuda de la versión pensada para otros lectores.
+- **C)** Que algunos mandos de la Administración carecen de la preparación necesaria para entender las normas que redacta su propio departamento.
+- **D)** Que la versión adaptada está desplazando al texto oficial dentro de la propia Administración, con el riesgo jurídico que eso supone.
 
 ### 55. (Los programas de puntos de las compañías aéreas)
 
@@ -842,29 +842,29 @@ Las grandes aerolíneas obtienen de sus programas de puntos unos beneficios que,
 
 La comparación con un banco central es frecuente entre los analistas, y no del todo exacta. Un banco central rinde cuentas ante el parlamento, anuncia sus decisiones y procura que el dinero conserve su valor, porque de esa confianza depende que se siga usando. La aerolínea no tiene ninguna de esas ataduras. Puede decidir de un día para otro que el billete que costaba treinta mil puntos cueste cuarenta y cinco mil, reducir los asientos disponibles para canje en las fechas que todo el mundo quiere o fijar una fecha de caducidad para los saldos inactivos. A ningún banco central se le ocurriría borrar los ahorros de quien deja de usar su moneda durante dieciocho meses.
 
-Los titulares de puntos reaccionan como cualquier ahorrador ante una moneda que se deprecia: se apresuran a gastarla. Los foros de viajeros rebosan de consejos para canjear los saldos antes del próximo cambio de tarifas, y la aerolínea consigue así algo que ningún banco central se propone: que sus clientes desconfíen de su moneda y sigan, aun así, acumulándola. Las condiciones del programa lo advierten en letra pequeña con una sinceridad que pocos gobernadores se permitirían: «La compañía podrá modificar en cualquier momento el valor de los puntos y las condiciones para su obtención y canje».
+Los titulares de puntos reaccionan como cualquier ahorrador ante una moneda que se deprecia: se apresuran a gastarla. Los foros de viajeros rebosan de consejos para canjear los saldos antes del próximo cambio de tarifas, y la aerolínea consigue de este modo algo que ningún banco central se propone: que sus clientes desconfíen de su moneda y sigan, aun así, acumulándola. Las condiciones del programa se reservan ese poder en letra pequeña, con una sinceridad que pocos gobernadores se permitirían: «La compañía podrá modificar en cualquier momento el valor de los puntos y las condiciones para su obtención y canje».
 
-**¿Qué pone de manifiesto la comparación entre la aerolínea y un banco central?**
+**¿Qué insinúa el autor al atribuir a las condiciones del programa «una sinceridad que pocos gobernadores se permitirían»?**
 
-- **A)** Que la compañía dispone sobre su moneda de un margen de maniobra mayor que el de un banco central, sin los controles que limitan a este.
-- **B)** Que los puntos funcionan ya como una moneda tan sólida como el dinero, puesto que bancos, hoteles y otros comercios los adquieren a diario.
-- **C)** Que la aerolínea, igual que un banco central, cuida el valor de sus puntos, porque de la confianza de los clientes depende que los sigan usando.
-- **D)** Que los titulares de puntos actúan de forma irracional, ya que siguen acumulando una moneda en la que ellos mismos han dejado de confiar.
+- **A)** Que la compañía puede admitir sin rodeos un poder que ningún banco central confesaría, porque la desconfianza no le cuesta clientes.
+- **B)** Que la aerolínea merece reconocimiento por advertir con claridad a sus clientes de unos riesgos que los bancos centrales prefieren callar.
+- **C)** Que los gobernadores de los bancos centrales suelen ocultar a los ciudadanos sus verdaderas intenciones sobre el valor del dinero.
+- **D)** Que la cláusula apenas tiene efectos prácticos, porque casi nadie lee la letra pequeña y la compañía rara vez llega a aplicarla.
 
-### 56. (Los pilotos militares y la oferta de las compañías aéreas)
+### 56. (Los pilotos militares y la demanda de las aerolíneas)
 
 Formar a un piloto de caza cuesta varios millones de euros y lleva cerca de una década, entre la academia, los cursos de vuelo y los años que se tarda en alcanzar la plena calificación operativa. Las compañías aéreas, escasas de pilotos desde hace tiempo, saben que un aviador militar con diez años de servicio es el candidato perfecto: disciplinado, acostumbrado a decidir bajo presión y con más de mil horas de vuelo en condiciones difíciles de reproducir en un simulador. No han pagado un euro de su formación y le ofrecen un sueldo que duplica, o incluso triplica, el que percibe.
 
-La respuesta del Ministerio de Defensa ha sido la previsible. Se han alargado los compromisos de permanencia, de modo que quien desee marcharse antes de tiempo debe indemnizar al Estado, y se han creado complementos para quienes renuncien a hacerlo. Las medidas han frenado algo las bajas. Han tenido también un efecto menos comentado: hay hoy en las bases más pilotos que cuentan los meses que faltan para que venza su compromiso, y no más aviones en condiciones de despegar, porque los recortes en mantenimiento y en repuestos han dejado a varias escuadrillas con la mitad de sus aparatos en tierra.
+La respuesta del Ministerio de Defensa ha sido la previsible. Se han alargado los compromisos de permanencia, de modo que quien desee marcharse antes de tiempo debe indemnizar al Estado, y se han creado complementos para quienes renuncien a hacerlo. Las medidas han frenado algo las bajas. Han tenido también un efecto menos comentado: hay hoy en las bases más pilotos contando los meses que faltan para que venza su compromiso, y no más aviones en condiciones de despegar, porque los recortes en mantenimiento y en repuestos han dejado a varias escuadrillas con la mitad de sus aparatos en tierra.
 
-Quienes se han marchado explican su decisión de un modo que encaja mal con los cálculos del ministerio. Hablan de meses enteros en el simulador o en tareas de oficina, de misiones canceladas por falta de una pieza y de la calificación que se pierde cuando no se vuela lo suficiente. En la compañía aérea, con todas sus rutinas, volarán hasta novecientas horas al año. Muchos ingresaron en el ejército para volar, y por eso mismo se han ido.
+Quienes se han marchado dan razones que no figuran en los cálculos del ministerio. Hablan de meses enteros en el simulador o en tareas de oficina, de misiones canceladas por falta de una pieza y de la calificación que se pierde cuando no se vuela lo suficiente. En la compañía aérea, con todas sus rutinas, volarán hasta novecientas horas al año. Muchos ingresaron en el ejército para volar, y por eso mismo se han ido.
 
-**¿Qué se desprende del texto acerca de las medidas con que el ministerio intenta retener a sus pilotos?**
+**¿Qué juicio encierra el calificativo de «previsible» que el autor aplica a la respuesta del ministerio?**
 
-- **A)** Que resultan insuficientes porque los complementos no compensan una diferencia de sueldo que puede llegar a triplicar el salario militar.
-- **B)** Que cargan sobre los pilotos un problema que corresponde a las compañías, las cuales se aprovechan de una formación que no han pagado.
-- **C)** Que mantienen a los pilotos en filas sin devolverles las horas en el aire cuya falta los lleva a marcharse.
-- **D)** Que han resultado contraproducentes, porque han empujado a pedir la baja a pilotos que antes no pensaban en marcharse.
+- **A)** Que el ministerio poco más podía hacer, puesto que una administración no está en condiciones de igualar los sueldos de las compañías.
+- **B)** Que las compañías aéreas contaban con esa reacción y han subido todavía más los sueldos que ofrecen a los aviadores militares.
+- **C)** Que el ministerio acudió a los resortes de siempre, retener y compensar, sin preguntarse por qué se marchaban sus pilotos.
+- **D)** Que la respuesta fue la sensata y esperable, pues ha conseguido frenar las bajas, que era justamente lo que se buscaba.
 
 ### 57. (Las normas para elegir contraseñas en las organizaciones)
 
@@ -872,44 +872,44 @@ Las normas internas de muchas organizaciones exigen que una contraseña tenga al
 
 Los empleados han respondido con un ingenio digno de mejor causa. La contraseña típica empieza por mayúscula, termina con un número y un signo de exclamación y lleva en medio una estación del año o el nombre de un hijo; cuando caduca, el invierno da paso a la primavera o el uno se convierte en un dos. Los que no se fían de su memoria recurren a una nota adhesiva pegada bajo el teclado, el primer lugar donde miraría cualquier intruso. Los programas con que los atacantes prueban contraseñas conocen todas estas costumbres y empiezan precisamente por ellas.
 
-Los responsables de seguridad, que redactan y vigilan estas normas, suelen atribuir tales prácticas a la escasa cultura digital de la plantilla, y organizan cursos para remediarla. Los cursos, de momento, no han logrado ampliar la memoria humana. Varios organismos de normalización revisaron hace años sus propias recomendaciones, y aconsejan ahora frases largas y fáciles de recordar, que solo se cambien cuando haya indicios de que se han filtrado y que se guarden en un gestor de contraseñas. Los reglamentos internos, entretanto, conservan la caducidad de noventa días, y las notas adhesivas siguen cambiando de estación.
+Ante estas prácticas, las organizaciones suelen recurrir a más formación. La plantilla completa cada año un curso en línea sobre los peligros de las contraseñas débiles y aprueba el cuestionario final con notas excelentes. Los cursos, de momento, no han logrado ampliar la memoria humana. Varios organismos de normalización revisaron hace años sus propias recomendaciones, y aconsejan ahora frases largas y fáciles de recordar, que solo se cambien cuando haya indicios de que se han filtrado y que se guarden en un gestor de contraseñas. ¿Cuántas estaciones más tendrán que pasar por las notas adhesivas antes de que los reglamentos internos renuncien a la caducidad de noventa días?
 
-**¿A quién apunta, en el fondo, la ironía del texto?**
+**¿Qué deja ver el autor al observar que los cursos, «de momento», no han logrado ampliar la memoria humana?**
 
-- **A)** A los empleados, que cumplen las normas al pie de la letra con unas claves que cualquier programa de ataque prueba en primer lugar.
-- **B)** A los organismos de normalización, que difundieron durante años unas recomendaciones que más tarde tuvieron que corregir.
-- **C)** A los fabricantes de programas, que venden como garantía de seguridad unas exigencias que facilitan el trabajo a los atacantes.
-- **D)** A los encargados de la seguridad, que achacan a la falta de formación del personal unos hábitos que nacen de sus propias reglas.
+- **A)** Que los cursos fracasan porque se dirigen a una plantilla poco interesada en la seguridad y reacia a cambiar sus costumbres.
+- **B)** Que habrá que esperar algunos años para comprobar si la formación consigue, por fin, que los empleados memoricen mejor sus claves.
+- **C)** Que los cursos deberían enseñar técnicas de memorización en lugar de insistir en los riesgos de las contraseñas débiles.
+- **D)** Que la formación no puede corregir unos hábitos que nacen de exigir a la memoria más claves de las que es capaz de retener.
 
 ### 58. (Las líneas rojas que los gobiernos anuncian a sus adversarios)
 
-Cuando un gobierno declara que determinada acción de un adversario supondría cruzar una línea roja, adquiere un compromiso con dos destinatarios. Al adversario le advierte de que cruzarla tendrá consecuencias; a su propia opinión pública y a sus aliados, de que está dispuesto a imponerlas. La fórmula resulta eficaz precisamente porque es costosa: el gobierno que traza una línea y no reacciona cuando alguien la pisa pierde algo más que una disputa concreta, porque todas sus advertencias posteriores valdrán un poco menos.
+Cuando un gobierno declara que determinada acción de un adversario supondría cruzar una línea roja, adquiere un compromiso con dos destinatarios. Al adversario le advierte de que cruzarla tendrá consecuencias; a su propia opinión pública y a sus aliados, de que está dispuesto a imponerlas. La fórmula resulta eficaz precisamente porque es costosa. El gobierno que traza una línea y no reacciona cuando alguien la pisa pierde algo más que una disputa concreta: todas sus advertencias posteriores valdrán un poco menos.
 
 Los gobiernos lo saben, y con el tiempo han desarrollado un arte considerable para trazar líneas. La primera regla consiste en dibujarlas allí donde el adversario no tiene intención alguna de llegar, lo que evita tener que defenderlas y permite, de paso, atribuirse el mérito de su prudencia. La segunda, en mantenerlas lo bastante borrosas como para que, si alguien las cruza, siempre pueda discutirse si las ha cruzado de verdad. La tercera, reservada a los casos desesperados, consiste en descubrir, una vez pisada la línea, que en realidad estaba un poco más allá.
 
-El adversario, que ha leído los mismos manuales, examina estas declaraciones con atención de filólogo. Distingue lo que se califica de «inaceptable» de lo que «tendría graves consecuencias» y ajusta sus pasos a esa gramática con notable exactitud. Hay que reconocer, con todo, que algunas líneas han resistido décadas sin que nadie se atreviera a pisarlas; suelen ser las que se anunciaron con menos palabras y las que el adversario sabía de antemano que se defenderían.
+El adversario, que ha leído los mismos manuales, ha aprendido a avanzar a pasos lo bastante cortos para que ninguno, por separado, parezca justificar una respuesta. Hay que reconocer, no obstante, que algunas líneas han resistido décadas sin que nadie se atreviera a pisarlas; suelen ser las que se anunciaron con menos palabras y las que el adversario sabía de antemano que se defenderían.
 
-**¿Qué revela la primera de las reglas que, según el autor, siguen los gobiernos al trazar líneas rojas?**
+**¿Qué esconde, según el autor, el «arte considerable» que los gobiernos han desarrollado para trazar líneas rojas?**
 
-- **A)** Que un gobierno puede presentar como fruto de su propia firmeza la contención de un adversario que nunca había pensado llegar tan lejos.
-- **B)** Que un gobierno prudente solo amenaza allí donde está seguro de poder cumplir sus advertencias, y preserva así su credibilidad.
-- **C)** Que los gobiernos calculan mal a menudo hasta dónde piensa llegar el adversario, de modo que trazan sus líneas lejos del pulso real.
-- **D)** Que el adversario sabe de antemano qué líneas no van a defenderse, lo que priva de todo efecto a las advertencias de los gobiernos.
+- **A)** Que los gobiernos han aprendido a sacar provecho de sus advertencias sin exponerse al coste de tener que defender las líneas.
+- **B)** Que la diplomacia de las líneas rojas se ha perfeccionado tanto que hoy permite evitar casi cualquier enfrentamiento abierto entre Estados.
+- **C)** Que los gobiernos fijan sus líneas pensando sobre todo en sus aliados, y apenas les preocupa lo que vaya a hacer el adversario.
+- **D)** Que el adversario ha aprendido a sortear esas advertencias, de modo que ninguna surte ya efecto sobre su conducta.
 
 ### 59. (La demolición de presas y azudes que han quedado sin uso)
 
-Los ríos de la península están cortados por miles de pequeñas presas y azudes construidos para mover molinos, regar huertas o alimentar centrales eléctricas que dejaron de funcionar hace décadas. Muchos ya no cumplen función alguna, salvo impedir que los peces remonten el río hasta sus zonas de freza y retener los sedimentos que deberían llegar a la costa. Derribarlos es, con diferencia, la manera más barata de devolver a un río su continuidad: una excavadora, unas semanas de obra y, al cabo de un par de inviernos, el cauce ha recuperado su forma.
+Los ríos de la península ibérica están cortados por miles de pequeñas presas y azudes construidos para mover molinos, regar huertas o alimentar centrales eléctricas que dejaron de funcionar hace décadas. Muchos ya no cumplen función alguna, salvo impedir que los peces remonten el río hasta sus zonas de freza y retener los sedimentos que deberían llegar a la costa. Derribarlos es, con diferencia, la manera más barata de devolver a un río su continuidad: una excavadora, unas semanas de obra y, al cabo de un par de inviernos, el cauce ha recuperado su forma.
 
-Las administraciones hidráulicas llevan tiempo elaborando listas de obstáculos prescindibles, y las demoliciones avanzan, aunque a un ritmo modesto. El freno rara vez es técnico. En un pueblo de montaña, un azud del siglo XIX que llevaba ochenta años sin que nadie reparara en él se convirtió, la semana en que se anunció su derribo, en una seña de identidad local: en pocos días tuvo asociación de defensa, página en las redes sociales y un expediente para declararlo bien de interés cultural. Los vecinos recordaron de pronto los baños de su infancia en la poza que formaba el muro y las fotografías de boda tomadas junto a la cascada.
+Las administraciones hidráulicas llevan tiempo elaborando listas de obstáculos prescindibles, y las demoliciones avanzan, aunque a un ritmo modesto. En un pueblo de montaña, un azud levantado a principios del siglo pasado que llevaba ochenta años sin que nadie reparara en él se convirtió, la semana en que se anunció su derribo, en una seña de identidad local: en pocos días tuvo asociación de defensa, página en las redes sociales y un expediente para declararlo bien de interés cultural. Los vecinos recordaron de pronto los baños de su infancia en la poza que formaba el muro y las fotografías de boda tomadas junto a la cascada.
 
 Conviene no despachar ese apego con una sonrisa. Algunos de esos muros tienen valor histórico y merecen conservarse, y el paisaje de toda la vida forma parte de lo que un pueblo es. El río que corre detrás del muro tiene también, sin embargo, una historia, bastante más larga, en la que el azud ocupa apenas un párrafo. Los técnicos que preparan las demoliciones llegan ahora a los pueblos con fotografías del cauce anteriores a la presa, en las que algún vecino reconoce a su bisabuelo pescando truchas.
 
-**¿Qué ilustra, en el razonamiento del autor, la historia del azud del pueblo de montaña?**
+**¿Qué contrapone el autor al apego por el azud cuando escribe que este ocupa «apenas un párrafo» en la historia del río?**
 
-- **A)** Que los pueblos de montaña mantienen con sus ríos un vínculo que las administraciones hidráulicas suelen pasar por alto al planificar las obras.
-- **B)** Que las asociaciones de defensa del patrimonio actúan movidas por intereses turísticos ajenos a la historia del lugar.
-- **C)** Que el apego a estas construcciones nace a menudo de la amenaza de perderlas, más que de un aprecio que existiera desde antes.
-- **D)** Que los expedientes para proteger el patrimonio se han convertido en el principal obstáculo legal para devolver a los ríos su cauce natural.
+- **A)** La sensatez técnica de las demoliciones, frente a unos recuerdos que el autor considera pura nostalgia sin fundamento.
+- **B)** El valor ecológico del río, que a juicio del autor debe anteponerse a cualquier consideración histórica o sentimental.
+- **C)** Una memoria más antigua del propio río, que permite invocar la tradición en favor del cauce libre y no solo del muro.
+- **D)** La escasa antigüedad del muro, demasiado reciente para merecer la protección que reclaman los vecinos del pueblo.
 
 ### 60. (La vuelta a la oficina tras la extensión del teletrabajo)
 
@@ -917,11 +917,11 @@ Muchas empresas que en su día generalizaron el teletrabajo piden ahora a sus em
 
 La escena que resulta es conocida en muchas sedes. Un empleado dedica una hora a llegar a la oficina, busca una mesa libre en una planta medio vacía, se pone los auriculares y pasa la mañana en videoconferencias con compañeros de su propio equipo que, por haber elegido otros días, están en sus casas o en otra ciudad. Las salas de reuniones las ocupa una sola persona que habla con una pantalla. La máquina de café, testigo de tantas ideas brillantes, registra un movimiento discreto, y la conversación espontánea más frecuente versa sobre lo que ha costado llegar.
 
-Las empresas han reaccionado instalando cabinas insonorizadas para las videollamadas, pequeños cubículos con una silla, una mesa, una lámpara y la puerta cerrada, lo que equivale a construir dentro de la oficina réplicas del cuarto de estar que los empleados dejaron en casa. Las cabinas tienen tanto éxito que hay que reservarlas con días de antelación. Es como si un restaurante obligara a sus clientes a acudir a diario y, para que se sintieran cómodos, les instalara en el comedor una cocina como la suya.
+Las empresas han reaccionado instalando cabinas insonorizadas para las videollamadas, pequeños cubículos con una silla, una mesa, una lámpara y la puerta cerrada, lo que equivale a construir dentro de la oficina réplicas del cuarto de estar que los empleados dejaron en casa. Las cabinas tienen tanto éxito que hay que reservarlas con días de antelación. Es como si un restaurante obligara a sus clientes a acudir a diario y, para que se sintieran cómodos, les instalara en el comedor una cocina como la de su casa.
 
 **¿Qué subraya el autor al comparar las cabinas insonorizadas con el cuarto de estar de los empleados?**
 
 - **A)** Que las compañías se han esforzado por que la oficina resulte tan acogedora como el hogar y atraiga así de nuevo a la plantilla.
-- **B)** Que la solución traslada a la sede el aislamiento de casa, en vez de procurar que coincidan quienes trabajan juntos.
+- **B)** Que la solución reproduce dentro de la oficina el aislamiento de casa, en vez de procurar que coincidan quienes trabajan juntos.
 - **C)** Que la vuelta obligatoria encubre la desconfianza hacia unos empleados a los que no se puede vigilar desde lejos.
 - **D)** Que los empleados, reacios a volver, se encierran en las cabinas para evitar el trato con los compañeros que encuentran en la planta.
