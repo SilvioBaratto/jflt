@@ -12,6 +12,7 @@ describe('LanguageService', () => {
   }
 
   beforeEach(() => localStorage.clear());
+  afterEach(() => localStorage.clear());
 
   describe('options', () => {
     it('offers English and Spanish with their display labels and compact codes', () => {

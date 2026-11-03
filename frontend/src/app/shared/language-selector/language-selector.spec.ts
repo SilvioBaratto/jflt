@@ -60,6 +60,8 @@ describe('LanguageSelectorComponent', () => {
     await fixture.whenStable();
   }
 
+  beforeEach(() => localStorage.clear());
+
   afterEach(() => {
     localStorage.clear();
   });

@@ -139,6 +139,8 @@ describe('SessionComponent', () => {
     });
   });
 
+  afterEach(() => localStorage.clear());
+
   it('when finishing, submits unchecked choices and ungraded writing before completing', async () => {
     const c = await open(makeSession());
     c.pickReading('r1', 'B');

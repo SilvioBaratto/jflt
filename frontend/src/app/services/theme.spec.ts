@@ -37,6 +37,13 @@ describe('ThemeService', () => {
     document.documentElement.style.removeProperty('color-scheme');
   });
 
+  afterEach(() => {
+    localStorage.clear();
+    // jsdom has no matchMedia and every spec shares one window: a stub left behind reaches unrelated
+    // specs, where its missing listener methods surface as unhandled errors.
+    delete (window as { matchMedia?: unknown }).matchMedia;
+  });
+
   // The product is light-only: stored or OS dark preferences must never reach the scheme.
   describe('isDark computed', () => {
     it.each([

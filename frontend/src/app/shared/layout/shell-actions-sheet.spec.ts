@@ -52,6 +52,9 @@ describe('ShellActionsSheetComponent', () => {
   afterEach(() => {
     document.documentElement.classList.remove('dark', 'light', 'theme-transitioning');
     localStorage.clear();
+    // jsdom has no matchMedia and every spec shares one window: a stub left behind reaches unrelated
+    // specs, where its missing listener methods surface as unhandled errors.
+    delete (window as { matchMedia?: unknown }).matchMedia;
   });
 
   function sidebarElement(): HTMLElement {

@@ -59,6 +59,8 @@ describe('SidebarComponent', () => {
     return fixture.nativeElement;
   }
 
+  beforeEach(() => localStorage.clear());
+
   describe('expanded rail (default mode)', () => {
     it('when the rail renders, destinations sit in a mat-nav-list labelled Primary', async () => {
       const el = await render();

@@ -91,9 +91,14 @@ describe('LayoutComponent', () => {
     await fixture.whenStable();
   }
 
+  beforeEach(() => localStorage.clear());
+
   afterEach(() => {
     document.documentElement.classList.remove('dark', 'light', 'theme-transitioning');
     localStorage.clear();
+    // jsdom has no matchMedia and every spec shares one window: a stub left behind reaches unrelated
+    // specs, where its missing listener methods surface as unhandled errors.
+    delete (window as { matchMedia?: unknown }).matchMedia;
   });
 
   it('when the shell renders from 600px, app-sidebar is hosted in the docked mat-sidenav rail', async () => {
