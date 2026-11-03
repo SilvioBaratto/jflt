@@ -12,7 +12,8 @@ Parte I, lessico operativo e di campo più le strutture grammaticali di livello 
 > Tierra*, *Guardia Civil*, *Cortes Generales*); a Latin-American usage appears only as a marked
 > note. Rank equivalences follow each rank's position in the hierarchy, not the look of the word.
 > Rows tagged **(falso amico: …)** flag Spanish words that an Italian speaker tends to misread;
-> **(Spagna)** marks institutions and usages specific to Spain. Sources are listed under **Fuentes**.
+> **(Spagna)** marks institutions, bodies, posts and legal terms specific to Spain; rank rows follow
+> the Spanish *Ley 39/2007* and carry no tag. Sources are listed under **Fuentes**.
 
 ## Indice
 
@@ -31,22 +32,23 @@ utilizzo comune · 8. Strutture grammaticali per costruire frasi (livello C1)
 | Término español | Traducción / Significato |
 |---|---|
 | Fuerzas Armadas (FAS) | Forze Armate (in Spagna: Ejército de Tierra, Armada ed Ejército del Aire y del Espacio) |
-| Ejército de Tierra | Esercito (la forza armata terrestre spagnola) |
+| Ejército de Tierra | Esercito (la forza armata terrestre spagnola) (Spagna) |
 | Armada | Marina Militare (falso amico: non «armata», che in italiano è una grande unità terrestre) |
 | Ejército del Aire y del Espacio | Aeronautica Militare (nome in vigore dal 2022; prima Ejército del Aire) (Spagna) |
 | cuartel general | Quartier generale |
+| cuartel / acuartelamiento | Caserma / Installazione militare (l'it. «quartiere» in senso militare è ormai raro, salvo in quartier generale) |
 | puesto de mando | Posto comando (PC) |
 | base de operaciones avanzada | Base operativa avanzata (FOB) |
 | puesto de control | Posto di blocco / Posto di controllo (checkpoint) |
 | punto de reunión | Punto di raccolta / Punto di adunata |
 | cadena de mando | Catena di comando |
 | mando / los mandos | Comando / I comandanti, i superiori (al plurale indica chi esercita il comando) |
-| empleo militar | Grado militare (falso amico: nel lessico militare spagnolo non è «impiego»; la legge sulla carriera militare elenca i gradi come empleos) |
-| oficiales generales / oficiales / suboficiales / tropa y marinería | Ufficiali generali / Ufficiali / Sottufficiali / Militari di truppa e marinai |
+| empleo militar | Grado militare (falso amico: in questo senso non è «impiego»; la Ley 39/2007 elenca i gradi come empleos militares. Nel senso di uso, invece, empleo = impiego: el empleo de la fuerza) |
+| oficiales generales / oficiales / suboficiales / tropa y marinería | Ufficiali generali / Ufficiali / Sottufficiali / Truppa (graduati e militari di truppa) |
 | soldado / marinero | Soldato / Marinaio (primo grado della tropa y marinería) |
 | cabo | Caporale (comanda una escuadra di circa quattro militari) |
-| cabo primero | Caporal maggiore (≈; secondo grado della truppa, sopra il cabo) |
-| cabo mayor | Grado più alto della truppa, sopra il cabo primero (senza equivalente esatto: ≈ graduato anziano) |
+| cabo primero | Caporal maggiore (≈; terzo grado della tropa, sopra il cabo) |
+| cabo mayor | Grado più alto della tropa, sopra il cabo primero (senza equivalente esatto: per posizione ≈ primo graduato o graduato aiutante, al vertice dei graduati italiani) |
 | sargento | Sergente (primo grado dei sottufficiali) |
 | sargento primero | Sergente maggiore (≈; secondo grado dei sottufficiali) |
 | brigada (empleo) | Maresciallo (≈; sottufficiale subito sopra il sargento primero: per rango e funzioni corrisponde al ruolo marescialli, non ai sergenti) (falso amico: come grado non è la «brigata»; brigada = brigata solo quando indica l'unità) |
@@ -59,16 +61,17 @@ utilizzo comune · 8. Strutture grammaticali per costruire frasi (livello C1)
 | teniente coronel | Tenente colonnello |
 | coronel | Colonnello |
 | general de brigada / general de división | Generale di brigata / Generale di divisione |
-| teniente general | Generale di corpo d'armata (non «tenente generale»: è il terzo grado dei generali) |
+| teniente general | Di norma generale di corpo d'armata (terzo grado dei generali) |
 | general de ejército | Generale (massimo grado effettivo; in Aeronautica general del aire, in Marina almirante general) |
-| alférez de fragata / alférez de navío | Guardiamarina / Sottotenente di vascello (nell'Armada equivalgono ad alférez e teniente) |
+| alférez de fragata / alférez de navío | Guardiamarina / Sottotenente di vascello (nell'Armada equivalgono ad alférez e teniente; lo spagnolo guardiamarina è invece l'allievo della Escuela Naval) |
 | teniente de navío | Tenente di vascello (nell'Armada equivale al capitán, non al teniente) |
 | capitán de corbeta / capitán de fragata / capitán de navío | Capitano di corvetta / di fregata / di vascello (equivalgono a comandante, teniente coronel e coronel) |
 | contralmirante / vicealmirante / almirante | Contrammiraglio / Ammiraglio di divisione / Ammiraglio di squadra (l'almirante spagnolo equivale al teniente general) |
-| escuadra | Nucleo (fire team): circa quattro militari al comando di un cabo, oggi detto anche equipo de fuego (falso amico: non è la «squadra» italiana, che corrisponde al pelotón) |
-| pelotón | Squadra: due o tre escuadras al comando di un sargento (falso amico: non è il «plotone», che in spagnolo è la sección) |
-| sección | Plotone: circa trenta militari al comando di un teniente o di un alférez (falso amico: non «sezione») |
+| escuadra | Nucleo (fire team): circa quattro militari al comando di un cabo, oggi detto anche equipo de fuego (falso amico: non è la «squadra» italiana, che corrisponde al pelotón; nel senso navale, invece, escuadra = squadra navale) |
+| pelotón | Squadra: due o tre escuadras al comando di un sargento (falso amico: non è il «plotone», che in spagnolo è la sección; ma pelotón de fusilamiento = plotone d'esecuzione) |
+| sección | Plotone: circa trenta militari al comando di un teniente o di un alférez (falso amico: come unità di fanteria non è la «sezione») |
 | compañía / batallón / regimiento | Compagnia / Battaglione / Reggimento |
+| batería / escuadrón / grupo | Batteria / Squadrone / Gruppo: in artiglieria e cavalleria, unità di livello compagnia (batería, escuadrón) e battaglione (grupo) |
 | brigada / división (unidades) | Brigata / Divisione (grandi unità) |
 | oficial de enlace | Ufficiale di collegamento |
 
@@ -90,10 +93,11 @@ utilizzo comune · 8. Strutture grammaticali per costruire frasi (livello C1)
 | transferencia de autoridad | Trasferimento di autorità (TOA): passaggio del comando operativo di un contingente al comando multinazionale |
 | limitaciones nacionales (caveats) | Restrizioni nazionali all'impiego di un contingente (caveat) |
 | contingente | Contingente (forza nazionale schierata in una missione) |
+| relevo (de un contingente) | Avvicendamento, cambio (del contingente o della guardia) |
 | vigilancia | Sorveglianza |
 | zona de operaciones / teatro de operaciones | Area delle operazioni / Teatro operativo |
 | orden de operaciones | Ordine di operazione |
-| cometido | Compito, incarico (falso amico: come sostantivo non è «commesso»; lo è solo il participio di cometer: un delito cometido) |
+| cometido | Compito, incarico (un delito cometido = un delitto commesso) |
 | apoyo de fuego | Supporto di fuoco |
 | ejercicio / maniobras | Esercitazione / Manovre |
 | realizar (una patrulla, un reconocimiento) | Effettuare, compiere (falso amico: non significa «rendersi conto», che si dice darse cuenta) |
@@ -110,28 +114,34 @@ utilizzo comune · 8. Strutture grammaticali per costruire frasi (livello C1)
 | Policía Militar | Polizia militare (nell'Ejército de Tierra; in Marina Policía Naval, in Aeronautica Policía Aérea) |
 | Fuerza de Gendarmería Europea (EUROGENDFOR) | Forza di Gendarmeria Europea: ne fanno parte la Guardia Civil e l'Arma dei Carabinieri; quartier generale a Vicenza |
 | puesto / casa cuartel | Stazione territoriale della Guardia Civil (≈ stazione dei Carabinieri) / Caserma che ospita anche gli alloggi delle famiglie (Spagna) |
-| inspector / comisario | Ispettore / Commissario: categorie della Policía Nacional (scala esecutiva e scala superiore) |
+| inspector / comisario | Ispettore / Commissario (≈): categorie della Policía Nacional (scala esecutiva e scala superiore), che non coincidono con i ruoli della Polizia di Stato (Spagna) |
 | patrulla a pie / patrulla motorizada | Pattuglia appiedata / Pattuglia automontata |
 | control de masas / antidisturbios | Controllo della folla / Reparti antisommossa (Crowd and Riot Control) |
 | registro / entrada y registro | Perquisizione / Perquisizione domiciliare (falso amico: in questo senso non è il «registro»; registrar = perquisire) |
 | cacheo | Perquisizione personale sommaria (pat-down) |
+| redada | Retata, operazione di polizia a sorpresa |
 | incautación / decomiso | Sequestro / Confisca |
 | detención / detenido | Arresto, fermo / Arrestato, fermato (falso amico: non la «detenzione» come pena, che si dice prisión) |
+| investigado (antes imputado) | Indagato (dal 2015, LO 13/2015, la legge spagnola usa investigado nella fase istruttoria ed encausado dopo l'accusa formale) (Spagna) |
+| prisión provisional | Custodia cautelare in carcere |
+| secuestro / secuestro aéreo | Sequestro di persona, rapimento / Dirottamento aereo (falso amico parziale: il «sequestro» di beni da parte della polizia si dice di solito incautación; secuestro in questo senso resta nel linguaggio giudiziario, es. el secuestro de publicaciones) |
 | orden de busca y captura | Ordine di ricerca e cattura |
 | orden europea de detención y entrega | Mandato d'arresto europeo (MAE) |
 | notificación roja | Avviso rosso dell'Interpol (red notice): richiesta di localizzare e arrestare provvisoriamente una persona in vista dell'estradizione; non è un mandato d'arresto |
 | cadena de custodia | Catena di custodia (delle prove, dei reperti) |
-| Policía Científica / Criminalística | Polizia scientifica (Policía Nacional) / Servizio di criminalistica (Guardia Civil; ≈ RIS dei Carabinieri) |
-| atestado | Verbale, informativa di polizia giudiziaria |
+| Policía Científica / Criminalística | Polizia scientifica (Policía Nacional) / Servizio di criminalistica (Guardia Civil; ≈ RIS dei Carabinieri) (Spagna) |
+| atestado | Verbale, informativa di polizia giudiziaria (falso amico: non «attestato», che si dice certificado) |
 | suceso | Fatto, avvenimento, spesso delittuoso o di cronaca nera (falso amico: non «successo», che si dice éxito) |
-| presidio | Carcere, penitenziario (falso amico: l'it. «presidio», nel senso di guarnigione, si dice guarnición; il «presidio del territorio» si rende con control o vigilancia) |
-| juez de instrucción | Giudice istruttore: in Spagna dirige le indagini penali, funzione che in Italia spetta al pubblico ministero |
+| presidio | Carcere, penitenziario (falso amico: l'it. «presidio», nel senso di guarnigione, si dice guarnición; il «presidio del territorio» si rende con control o vigilancia; in spagnolo il senso di guarnigione è storico) |
+| juez de instrucción | Giudice istruttore: in Spagna dirige le indagini penali, funzione che in Italia spetta al pubblico ministero (Spagna) |
 | fiscal / Fiscalía | Pubblico ministero / Procura (falso amico: come sostantivo non è «fiscale»; come aggettivo, invece, fiscal = fiscale) |
 | Audiencia Nacional | Tribunale con giurisdizione su tutto il territorio per terrorismo, criminalità organizzata e altri reati gravi (Spagna) |
-| Delegación del Gobierno | Delegazione del Governo: rappresenta il Governo centrale in ogni comunità autonoma e coordina la sicurezza pubblica (≈ Prefettura) (Spagna) |
+| Delegación del Gobierno | Delegazione del Governo: rappresenta il Governo centrale in ogni comunità autonoma e coordina la sicurezza pubblica; a livello provinciale c'è la Subdelegación del Gobierno, più vicina alla Prefettura (Spagna) |
 | Estado de derecho | Stato di diritto |
 | fortalecimiento de capacidades | Rafforzamento delle capacità (capacity building delle forze locali) |
 | uso gradual y proporcionado de la fuerza | Uso graduale e proporzionato della forza |
+| trata de seres humanos / tráfico ilícito de migrantes | Tratta di esseri umani / Traffico di migranti |
+| blanqueo de capitales | Riciclaggio di denaro |
 
 ## 4. Intelligence, sicurezza & logistica
 
@@ -156,15 +166,15 @@ utilizzo comune · 8. Strutture grammaticali per costruire frasi (livello C1)
 | cadena de suministro | Catena di approvvigionamento |
 | depósito de combustible / almacén | Deposito carburante / Magazzino |
 | mantenimiento / repuestos | Manutenzione / Pezzi di ricambio |
-| taller | Officina (falso amico: l'«officina» italiana è il taller; lo spagnolo oficina = ufficio) |
-| oficina | Ufficio (falso amico: non «officina», che si dice taller) |
+| oficina / taller | Ufficio / Officina (falso amico: oficina = ufficio; l'«officina» si dice taller) |
+| equipo | Squadra, team / Equipaggiamento, attrezzatura (falso amico: l'«equipaggio» si dice tripulación) |
 | raciones de combate / víveres | Razioni da combattimento / Viveri |
 
 ## 5. Geopolitica, diplomazia & emergenze
 
 | Término español | Traducción / Significato |
 |---|---|
-| alto el fuego | Cessate il fuoco |
+| alto el fuego | Cessate il fuoco (in gran parte dell'America Latina: alto al fuego) |
 | tregua / armisticio | Tregua / Armistizio |
 | desarme | Disarmo |
 | mantenimiento de la paz / imposición de la paz | Mantenimento della pace (peacekeeping) / Imposizione della pace (peace enforcement) |
@@ -178,6 +188,7 @@ utilizzo comune · 8. Strutture grammaticali per costruire frasi (livello C1)
 | ley marcial / toque de queda | Legge marziale / Coprifuoco |
 | embargo / sanciones | Embargo / Sanzioni |
 | corredor humanitario / ayuda humanitaria | Corridoio umanitario / Aiuti umanitari |
+| Protección Civil / catástrofe natural / damnificados | Protezione civile / Calamità naturale / Persone colpite, sinistrati |
 | insurgencia / contrainsurgencia | Insurrezione / Controinsurrezione (COIN) |
 | evacuación médica / evacuación de bajas | Evacuazione medica (MEDEVAC) / Evacuazione dei feriti (CASEVAC) |
 | conciencia situacional | Consapevolezza della situazione (situational awareness) |
@@ -186,7 +197,8 @@ utilizzo comune · 8. Strutture grammaticali per costruire frasi (livello C1)
 | Consejo de Seguridad / resolución / veto | Consiglio di sicurezza / Risoluzione / Veto |
 | cartas credenciales | Lettere credenziali (falso amico: carta = lettera; la «carta» italiana si dice papel) |
 | nota verbal / comunicado conjunto | Nota verbale / Comunicato congiunto |
-| asistir a una cumbre | Partecipare a un vertice, esservi presente (falso amico: asistir a = presenziare; asistir a alguien = assistere, soccorrere) |
+| agregado de Defensa / encargado de negocios | Addetto per la Difesa (addetto militare) / Incaricato d'affari |
+| asistir a una cumbre | Partecipare a un vertice, esservi presente (come l'it. «assistere a», ma senza l'idea di spettatore passivo: los asistentes a la cumbre = i partecipanti al vertice) |
 | pretender | Proporsi, mirare a, cercare di ottenere (falso amico: non «pretendere», che si dice exigir) |
 | Consejo de Ministros | Consiglio dei ministri (Spagna) |
 | Cortes Generales | Parlamento spagnolo: Congreso de los Diputados e Senado (Costituzione, art. 66) (Spagna) |
@@ -197,25 +209,26 @@ utilizzo comune · 8. Strutture grammaticali per costruire frasi (livello C1)
 |---|---|---|
 | OTAN | Organización del Tratado del Atlántico Norte | NATO (in spagnolo si usa sempre la sigla OTAN) |
 | ONU | Organización de las Naciones Unidas | ONU, Nazioni Unite |
+| UE | Unión Europea | Unione Europea (UE) |
 | PCSD | Política Común de Seguridad y Defensa | PSDC, politica di sicurezza e di difesa comune dell'UE |
 | EMAD | Estado Mayor de la Defensa | Stato Maggiore della Difesa (Spagna) |
 | JEMAD | Jefe de Estado Mayor de la Defensa | Capo di Stato Maggiore della Difesa (Spagna) |
-| MOPS | Mando de Operaciones | Comando che pianifica e conduce le operazioni sotto il JEMAD (≈ COVI italiano) |
-| MCOE | Mando Conjunto de Operaciones Especiales | Comando interforze per le operazioni speciali (≈ COFS italiano) |
-| CIFAS | Centro de Inteligencia de las Fuerzas Armadas | Centro di intelligence militare delle Forze Armate spagnole, alle dipendenze del JEMAD |
-| CNI | Centro Nacional de Inteligencia | Servizio di intelligence nazionale spagnolo (≈ AISE e AISI) |
+| MOPS | Mando de Operaciones | Comando che pianifica e conduce le operazioni sotto il JEMAD (≈ COVI italiano) (Spagna) |
+| MCOE | Mando Conjunto de Operaciones Especiales | Comando interforze per le operazioni speciali (≈ COFS italiano) (Spagna) |
+| CIFAS | Centro de Inteligencia de las Fuerzas Armadas | Centro di intelligence militare delle Forze Armate, alle dipendenze del JEMAD (Spagna) |
+| CNI | Centro Nacional de Inteligencia | Servizio di intelligence nazionale, unico per l'estero e l'interno, adscrito (incardinato) al Ministerio de Defensa (≈ AISE e AISI insieme) (Spagna) |
 | UME | Unidad Militar de Emergencias | Unità militare per le emergenze: forza interforze permanente, creata nel 2005, che interviene in calamità su tutto il territorio nazionale (Spagna) |
 | ROE | Rules of Engagement: reglas de enfrentamiento | Regole d'ingaggio (sigla inglese usata anche nei testi spagnoli) |
 | TOA | Transfer of Authority: transferencia de autoridad | Trasferimento di autorità |
 | IED | artefacto explosivo improvisado | Ordigno esplosivo improvvisato (sigla inglese; C-IED = contrasto agli IED) |
 | RPAS | sistema aéreo pilotado remotamente | Sistema aereo a pilotaggio remoto (drone, APR) |
 | NBQ / NRBQ | nuclear, biológico y químico / nuclear, radiológico, biológico y químico | NBC / CBRN (difesa da agenti nucleari, radiologici, biologici e chimici) |
-| TEDAX | técnico especialista en desactivación de artefactos explosivos | Artificiere (Policía Nacional e Guardia Civil) |
-| GEO | Grupo Especial de Operaciones | Unità d'élite della Policía Nacional per le operazioni ad alto rischio (≈ NOCS) |
-| UEI | Unidad Especial de Intervención | Unità speciale d'intervento della Guardia Civil (≈ GIS dei Carabinieri) |
-| UIP | Unidades de Intervención Policial | Reparti di ordine pubblico della Policía Nacional (≈ Reparti mobili) |
-| GRS | Grupo de Reserva y Seguridad | Reparto di ordine pubblico e sicurezza della Guardia Civil |
-| UNIFIL / FPNUL | Fuerza Provisional de las Naciones Unidas en el Líbano | UNIFIL, forza dell'ONU in Libano (la Difesa spagnola usa UNIFIL; FPNUL è la sigla spagnola) |
+| TEDAX | técnico especialista en desactivación de artefactos explosivos | Artificiere (Policía Nacional e Guardia Civil) (Spagna) |
+| GEO | Grupo Especial de Operaciones | Unità d'élite della Policía Nacional per le operazioni ad alto rischio (≈ NOCS) (Spagna) |
+| UEI | Unidad Especial de Intervención | Unità speciale d'intervento della Guardia Civil (≈ GIS dei Carabinieri) (Spagna) |
+| UIP | Unidades de Intervención Policial | Reparti di ordine pubblico della Policía Nacional (≈ Reparti mobili) (Spagna) |
+| GRS | Grupo de Reserva y Seguridad | Reparto di ordine pubblico e sicurezza della Guardia Civil (Spagna) |
+| UNIFIL / FPNUL | Fuerza Provisional de las Naciones Unidas en el Líbano | UNIFIL, forza dell'ONU in Libano: mandato finale fino al 31 dicembre 2026, poi ritiro (la Difesa spagnola usa UNIFIL; FPNUL è la sigla spagnola) |
 | ACNUR | Alto Comisionado de las Naciones Unidas para los Refugiados | UNHCR, Alto Commissariato delle Nazioni Unite per i rifugiati |
 | EE. UU. | Estados Unidos | USA, Stati Uniti (la lettera doppia indica il plurale) |
 
@@ -229,18 +242,20 @@ utilizzo comune · 8. Strutture grammaticali per costruire frasi (livello C1)
 | Espere. | Attenda: non trasmetta finché non la richiamo. |
 | Adelante. | Avanti: la stazione chiamata invita a trasmettere. |
 | ¿Cómo me recibe? | Come mi riceve? (controllo della qualità del collegamento) |
-| Le oigo alto y claro. | La ricevo forte e chiaro. |
+| Recibido alto y claro. / Le oigo alto y claro. | La ricevo forte e chiaro (risposta a «¿Cómo me recibe?»; recibido alto y claro è la forma militare). |
 | Cambio. | Passo: ho finito di parlare e attendo risposta. |
-| Fuera. | Chiudo: fine della comunicazione, non attendo risposta (per procedura «cambio» e «fuera» non si usano insieme). |
+| Corto. / Terminado. | Chiudo: fine della comunicazione, non attendo risposta («corto» è la voce radio militare, «terminado» quella della fraseologia aeronautica ufficiale; tra radioamatori si dice «fuera»). Per procedura non si unisce a «cambio», anche se nel parlato e nei film si sente «cambio y corto». |
 | Solicito información actualizada sobre… | Richiedo aggiornamento su… |
 | ¿Cuál es su situación y posición actual? | Qual è la sua situazione e la sua posizione attuale? |
 | Mantengan la posición hasta nueva orden. | Mantenete la posizione fino a nuovo ordine. |
-| Replieguen al punto de reunión. | Ripiegate sul punto di raccolta. |
+| Repliéguense al punto de reunión. | Ripiegate sul punto di raccolta. |
 | ¡Alto el fuego! / ¡No disparen! | Cessate il fuoco! / Non sparate! |
 | Zona asegurada. | Area messa in sicurezza. |
 | Se ha detectado una posible amenaza en… | Rilevata una possibile minaccia a… |
 | Solicito evacuación médica en las coordenadas… | Richiedo evacuazione medica alle coordinate… |
 | La situación está bajo control. | La situazione è sotto controllo. |
+| Sin novedad. | Nulla da segnalare (formula del rapporto militare, risposta a «¿Novedades?») |
+| A sus órdenes, mi capitán. | Comandi, signor capitano (in Spagna ci si rivolge al superiore con «mi» + grado) |
 | No se han registrado bajas. | Non si registrano perdite. |
 | La operación se desarrolló conforme a lo previsto. | L'operazione si è svolta secondo i piani. |
 | La operación fue un éxito. | L'operazione è stata un successo (falso amico: éxito = successo; l'«esito» italiano si dice resultado). |
@@ -250,8 +265,8 @@ utilizzo comune · 8. Strutture grammaticali per costruire frasi (livello C1)
 | Las pruebas se recogieron respetando la cadena de custodia. | Le prove sono state raccolte nel rispetto della catena di custodia. |
 | El Gobierno de España condena con la mayor firmeza… | Il Governo spagnolo condanna con la massima fermezza… (formula dei comunicati ufficiali) |
 | España reitera su compromiso con… | La Spagna ribadisce il proprio impegno a favore di… |
-| Estimado señor: / Estimada señora: | Gentile Signore / Gentile Signora (in spagnolo il saluto è seguito dai due punti, non dalla virgola) |
-| Le ruego que conteste a la mayor brevedad. | La prego di rispondere al più presto (falso amico: contestar = rispondere; l'it. «contestare» si rende con impugnar o rebatir). |
+| Estimado señor: / Estimada señora: | Egregio Signore / Gentile Signora (in spagnolo il saluto è seguito dai due punti, non dalla virgola) |
+| Le ruego que conteste a la mayor brevedad. | La prego di rispondere al più presto (falso amico parziale: contestar è soprattutto rispondere; il senso di contestare, disputare esiste ma è secondario, e l'it. «contestare» si rende di solito con impugnar o rebatir). |
 
 ---
 
@@ -628,9 +643,10 @@ spagnoli sono stati verificati sul Wikcionario e sulle fonti normative e istituz
 - *Ley 39/2007, de 19 de noviembre, de la carrera militar*, art. 21 «Empleos militares» —
   https://www.boe.es/buscar/act.php?id=BOE-A-2007-19880 — elenco e ordine dei gradi di Esercito,
   Armada e Aeronautica, equivalenze tra gradi dell'Esercito e dell'Armada.
-- *Constitución española* (1978), arts. 8.1, 66.1 e 116.1 —
-  https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229 — Fuerzas Armadas, Cortes Generales, stati di
-  allarme, eccezione e assedio.
+- *Constitución española* (1978), arts. 8.1, 17.4, 20.5, 66.1, 116.1 e 154 —
+  https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229 — Fuerzas Armadas, prisión provisional,
+  secuestro de publicaciones, Cortes Generales, stati di allarme, eccezione e assedio, Delegado del
+  Gobierno.
 - *Ley Orgánica 2/1986, de 13 de marzo, de Fuerzas y Cuerpos de Seguridad*, arts. 2 e 9 —
   https://www.boe.es/buscar/act.php?id=BOE-A-1986-6859 — natura militare della Guardia Civil e civile
   della Policía Nacional, dipendenza da Interior e Defensa.
@@ -642,6 +658,24 @@ spagnoli sono stati verificati sul Wikcionario e sulle fonti normative e istituz
   Policial* (testo pubblicato dalla Policía Nacional) —
   https://www.policia.es:8043/miscelanea/estructura/dao/seguridad_ciudadana/normativa/normativa_uip.pdf
   — compiti delle UIP, «grandes concentraciones de masas».
+- *Ley de Enjuiciamiento Criminal* (1882), art. 292 —
+  https://www.boe.es/buscar/act.php?id=BOE-A-1882-6036 — l'atestado della Policía judicial; *Ley
+  Orgánica 13/2015, de 5 de octubre*, preambolo V — https://www.boe.es/buscar/act.php?id=BOE-A-2015-10725
+  — investigado ed encausado al posto di imputado.
+- *Ley 11/2002, de 6 de mayo, reguladora del Centro Nacional de Inteligencia*, arts. 1, 4 e 7 —
+  https://www.boe.es/buscar/act.php?id=BOE-A-2002-8628 — il CNI opera dentro e fuori il territorio
+  nazionale ed è adscrito al Ministerio de Defensa.
+- *Ley 10/2010, de 28 de abril, de prevención del blanqueo de capitales y de la financiación del
+  terrorismo* — https://www.boe.es/eli/es/l/2010/04/28/10/con — blanqueo de capitales; *Ley Orgánica
+  13/2022, de 20 de diciembre* — https://www.boe.es/buscar/act.php?id=BOE-A-2022-21676 — trata de seres
+  humanos.
+- *Real Decreto 757/1990, de 15 de junio, por el que se regulan las Agregadurías de Defensa* —
+  https://www.boe.es/eli/es/rd/1990/06/15/757 — Agregado de Defensa.
+- *Real Decreto 194/2010, de 26 de febrero, Normas sobre seguridad en las Fuerzas Armadas*, art. 25 —
+  https://www.boe.es/buscar/act.php?id=BOE-A-2010-4219 — il centinela «informará de las novedades».
+- La Moncloa, «Administración periférica del Estado» —
+  https://www.lamoncloa.gob.es/espana/eh18-19/adminterr/Paginas/admonperiferica.aspx — Delegaciones e
+  Subdelegaciones del Gobierno nelle province.
 - Agencia Española de Protección de Datos, informe jurídico 2016-0041 —
   https://www.aepd.es/documento/2016-0041.pdf — la Habilitación Personal de Seguridad, concessa
   dall'Oficina Nacional de Seguridad, che dipende dal CNI.
@@ -666,8 +700,16 @@ spagnoli sono stati verificati sul Wikcionario e sulle fonti normative e istituz
   https://log.logcluster.org/es/print-preview/177 — Afirmativo, Negativo, Recibido, Repita, Espere,
   ¿Cómo me recibe?, Le oigo alto y claro.
 - Unión de Radioaficionados Españoles (EA7P), «Prácticas operativas HF» —
-  https://ea7p.ure.es/graficos/textos/Practicas%20operativas%20HF.pdf — cambio (over) e fuera (out), da
-  non usare insieme.
+  https://ea7p.ure.es/graficos/textos/Practicas%20operativas%20HF.pdf — cambio (over) e, tra
+  radioamatori, fuera (out), da non usare insieme.
+- Agencia Estatal de Seguridad Aérea, *Curso de Radiofonista (RTF) UAS*, cap. 3 (2026) —
+  https://www.seguridadaerea.gob.es/sites/default/files/for-uas-p01-dt12_ed_02_curso_de_radiofonista_rtf_uas_aesa_cap_3.pdf
+  — fraseologia aeronautica ufficiale: cambio, terminado, recibido, cómo me recibe.
+- R. Gordo Peleato (Academia General Militar), «La traducción de las expresiones militares
+  estandarizadas en las películas del género bélico», *Miscelánea* 35 (2007), pp. 11–30 —
+  https://dialnet.unirioja.es/descarga/articulo/2725038.pdf — voci radio militari «corto», «cambio»,
+  «alto y claro», «recibido»; «recibido alto y claro»; «cambio y corto» nel doppiaggio; «a sus
+  órdenes, mi capitán» (Reales Ordenanzas del Ejército de Tierra, art. 287).
 - Ayuntamiento de Madrid, SAMUR-Protección Civil, «Central de Comunicaciones: procedimiento
   radiotelefónico» — https://www.madrid.es/ficheros/SAMUR/data/121.htm — Recibido, Adelante.
 - Wikipedia, «Military ranks of Spain» — https://en.wikipedia.org/wiki/Military_ranks_of_Spain —
@@ -677,23 +719,38 @@ spagnoli sono stati verificati sul Wikcionario e sulle fonti normative e istituz
   https://it.wikipedia.org/wiki/Gradi_e_qualifiche_dell%27Esercito_Italiano — ruoli e gradi dei
   sottufficiali italiani; «European Gendarmerie Force» —
   https://en.wikipedia.org/wiki/European_Gendarmerie_Force — membri e sede della EUROGENDFOR.
-- Hispanopedia, «Brigada (grado)» — https://es.hispanopedia.com/wiki/Brigada_(grado); «Subteniente» —
-  https://es.hispanopedia.com/wiki/Subteniente; «Cabo (rango)» —
-  https://es.hispanopedia.com/wiki/Cabo_(rango); «Sección (fuerzas armadas)» —
-  https://es.hispanopedia.com/wiki/Secci%C3%B3n_(fuerzas_armadas); «Grupo Especial de Operaciones» —
-  https://es.hispanopedia.com/wiki/Grupo_Especial_de_Operaciones — posizione di brigada e subteniente
-  fra i sottufficiali, subteniente come ufficiale in America Latina, escuadra ed equipo de fuego,
-  sección, GEO e UEI.
+- Wikipedia (es), «Brigada (grado)» — https://es.wikipedia.org/wiki/Brigada_(grado); «Subteniente» —
+  https://es.wikipedia.org/wiki/Subteniente; «Cabo (rango)» —
+  https://es.wikipedia.org/wiki/Cabo_(rango); «Sección (fuerzas armadas)» —
+  https://es.wikipedia.org/wiki/Secci%C3%B3n_(fuerzas_armadas); «Escuadrón» —
+  https://es.wikipedia.org/wiki/Escuadr%C3%B3n; «Batallón» — https://es.wikipedia.org/wiki/Batall%C3%B3n;
+  «Grupo Especial de Operaciones» — https://es.wikipedia.org/wiki/Grupo_Especial_de_Operaciones —
+  posizione di brigada e subteniente fra i sottufficiali, subteniente come ufficiale in America
+  Latina, escuadra ed equipo de fuego, sección, escuadrón e batería a livello compagnia, grupo come
+  equivalente del battaglione, GEO e UEI.
 - Oposiciones.es, «GRS de la Guardia Civil» — https://oposiciones.es/oposiciones-guardia-civil/grs/ —
   scioglimento della sigla GRS e compiti di ordine pubblico.
-- El Orden Mundial, «¿Qué es la UNIFIL?» — https://elordenmundial.com/que-es-unifil/ — UNIFIL o FPNUL.
+- El Orden Mundial, «¿Qué es la UNIFIL?» — https://elordenmundial.com/que-es-unifil/ — UNIFIL o FPNUL;
+  Nazioni Unite, comunicato SC/16159 (28 agosto 2025) — https://press.un.org/en/2025/sc16159.doc.htm —
+  risoluzione 2790 (2025): mandato finale fino al 31 dicembre 2026, poi ritiro.
+- Rete delle Nazioni Unite sulla migrazione, «Trazando un panorama del tráfico de migrantes» —
+  https://migrationnetwork.un.org/system/files/resources_files/Mapping%20the%20landscape%20of%20the%20Smuggling%20of%20Migrants_es.pdf
+  — tráfico ilícito de migrantes.
+- Castellano Actual (Universidad de Piura), «¿Alto el fuego o alto al fuego?» (10 dicembre 2014) —
+  https://www.udep.edu.pe/castellanoactual/?p=7628 — alto al fuego in gran parte dell'America.
+- El Español, «La Policía Nacional detiene a tres personas e identifica a 100 en una redada en El
+  Cerezo» (11 marzo 2026) —
+  https://www.elespanol.com/sevilla/20260311/policia-nacional-detiene-personas-identifica-redada-cerezo/1003744165329_0.html
+  — redada nell'uso giornalistico spagnolo.
 - Wikcionario (es), voci *armada*, *asistir*, *carta*, *comandante*, *cometido*, *contestar*,
-  *detención*, *éxito*, *fiscal*, *largo*, *oficina*, *presidio*, *pretender*, *realizar*,
-  *registrar*, *salir*, *suceso*, *taller* — https://es.wiktionary.org/wiki/ (+ voce) — significati
-  spagnoli dei falsi amici.
+  *cuartel*, *detención*, *equipo*, *éxito*, *fiscal*, *largo*, *novedad*, *oficina*, *presidio*,
+  *pretender*, *realizar*, *registrar*, *salir*, *secuestro*, *suceso*, *taller* —
+  https://es.wiktionary.org/wiki/ (+ voce) — significati spagnoli dei falsi amici e delle voci aggiunte.
 - Treccani, *Vocabolario*, voci *presidio* — https://www.treccani.it/vocabolario/presidio/; *officina* —
   https://www.treccani.it/vocabolario/officina/; *contestare* —
-  https://www.treccani.it/vocabolario/contestare/ — significati italiani dei falsi amici.
+  https://www.treccani.it/vocabolario/contestare/; *quartiere* —
+  https://www.treccani.it/vocabolario/quartiere/; *attestato* —
+  https://www.treccani.it/vocabolario/attestato/ — significati italiani dei falsi amici.
 - Sezione 8: la *Nueva gramática de la lengua española*, il *Diccionario panhispánico de dudas*, la
   FundéuRAE e il *Plan curricular* dell'Instituto Cervantes non erano consultabili dall'ambiente di
   redazione (accesso rifiutato o pagina non trovata); le regole grammaticali sono state verificate
