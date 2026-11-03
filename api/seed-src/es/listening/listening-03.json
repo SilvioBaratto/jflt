@@ -1,0 +1,124 @@
+{
+  "id": "listening-03",
+  "level": "C1",
+  "stanag_level": 3,
+  "topic": "La externalización de servicios de apoyo en las Fuerzas Armadas",
+  "conversation_type": "debate televisivo",
+  "setting": "Debate en un programa de televisión dedicado a la política de defensa. El moderador enfrenta a una analista de gestión económica de la defensa, partidaria de encargar a empresas parte del apoyo logístico, con un coronel retirado que desconfía de ese modelo.",
+  "voices": {
+    "MODERADOR": "alloy",
+    "ANALISTA": "shimmer",
+    "CORONEL": "onyx"
+  },
+  "speakers": [
+    {
+      "id": "MODERADOR",
+      "role": "moderador del debate",
+      "voice": "alloy"
+    },
+    {
+      "id": "ANALISTA",
+      "role": "analista de gestión económica de la defensa",
+      "voice": "shimmer"
+    },
+    {
+      "id": "CORONEL",
+      "role": "coronel retirado del Ejército de Tierra",
+      "voice": "onyx"
+    }
+  ],
+  "lines": [
+    {
+      "speaker": "MODERADOR",
+      "text": "Buenas noches. Comedores, mantenimiento de vehículos, transporte de material: cada vez más tareas que antes hacían los propios militares se encargan hoy a empresas privadas. ¿Es una forma sensata de aprovechar los recursos o una dependencia peligrosa? Lo debatimos con Carmen Navarro, analista especializada en la gestión económica de la defensa, y con Luis Prieto, coronel retirado del Ejército de Tierra. Señora Navarro, usted defiende este modelo."
+    },
+    {
+      "speaker": "ANALISTA",
+      "text": "Lo defiendo porque las cuentas salen. Formar a un soldado lleva años y cuesta mucho dinero, y no tiene sentido que dedique su jornada a servir comidas o a cambiar el aceite de un camión. Una empresa especializada lo hace igual de bien, muchas veces más barato, y el soldado queda libre para lo que solo él puede hacer. La mayoría de nuestros aliados trabaja así desde hace tiempo."
+    },
+    {
+      "speaker": "CORONEL",
+      "text": "Mire, en un cuartel y en tiempo de paz, no le discuto ni una coma. La dificultad aparece el día en que las cosas se tuercen. A un soldado se le puede ordenar que vaya a reparar un camión a una zona donde le pueden disparar. A una empresa, no. A una empresa se le pide, y la empresa lee su contrato, llama a su aseguradora y decide. Y en el peor momento uno descubre que su cadena de apoyo depende de una decisión que ya no está en sus manos."
+    },
+    {
+      "speaker": "MODERADOR",
+      "text": "Señora Navarro, ¿qué le contesta?"
+    },
+    {
+      "speaker": "ANALISTA",
+      "text": "Que es una objeción seria, pero que tiene solución en el contrato. Hoy ya se firman cláusulas que obligan a la empresa a desplazar personal a zona de operaciones, con seguros específicos y penalizaciones muy duras si no cumple. No estamos hablando de contratar la limpieza de una oficina."
+    },
+    {
+      "speaker": "CORONEL",
+      "text": "Las penalizaciones se cobran después, cuando ya ha pasado lo que tenía que pasar. Ningún tribunal le devuelve a usted un convoy que no salió a tiempo. Y hay otra cosa de la que se habla menos. Cuando una tarea lleva quince años en manos de una empresa, los sargentos que sabían hacerla se van retirando y nadie ocupa su sitio. Llega un momento en que ya no es que prefiera usted contratar; es que no le queda otro remedio."
+    },
+    {
+      "speaker": "MODERADOR",
+      "text": "Señora Navarro, ¿eso también se arregla con una cláusula?"
+    },
+    {
+      "speaker": "ANALISTA",
+      "text": "No, ahí tengo que darle la razón al coronel, al menos en parte. Lo he visto en otros países y es un riesgo real. Por eso yo no externalizaría por igual todo lo que no sea combatir. Todo lo que acompaña a las unidades cuando salen de misión tiene que seguir haciéndolo personal militar, aunque en tiempo de paz salga más caro. El resto, lo que no se mueve del territorio nacional, sí puede contratarse sin miedo."
+    },
+    {
+      "speaker": "CORONEL",
+      "text": "Si la línea se traza ahí, podemos entendernos. Aunque me temo que el día que toque recortar, lo primero que alguien considerará prescindible será justamente eso que la señora Navarro admite que sale más caro."
+    }
+  ],
+  "questions": [
+    {
+      "id": 1,
+      "question": "¿Cuál es la principal objeción del coronel al modelo que defiende la analista?",
+      "options": {
+        "A": "Que, cuando estalla una crisis, el apoyo contratado depende de lo que resuelva la empresa y no de una orden.",
+        "B": "Que, a la larga, las empresas resultan más caras que los militares que antes se ocupaban de esas tareas.",
+        "C": "Que las empresas carecen de la preparación técnica necesaria para mantener el material militar más complejo.",
+        "D": "Que los contratos que se firman hoy no obligan a las empresas a enviar personal a las zonas de operaciones."
+      },
+      "answer": "A",
+      "rationale": "Para el coronel, a un soldado «se le puede ordenar» ir a una zona peligrosa, mientras que la empresa «lee su contrato» y decide; en una crisis, el apoyo depende de «una decisión que ya no está en sus manos».",
+      "option_rationales": {
+        "A": "Correcta: reformula el contraste entre la orden al soldado y la decisión de la empresa, que deja el apoyo en manos ajenas «el día en que las cosas se tuercen».",
+        "B": "Relación invertida: el coronel no discute el ahorro; en un cuartel y en tiempo de paz, dice, «no le discuto ni una coma».",
+        "C": "No se dice: el coronel no duda de la competencia técnica de las empresas; la analista afirma que lo hacen «igual de bien» y él no lo rebate.",
+        "D": "Lectura errónea: es la analista quien menciona cláusulas que «obligan a la empresa a desplazar personal», y el coronel no niega que existan; objeta que las penalizaciones «se cobran después»."
+      }
+    },
+    {
+      "id": 2,
+      "question": "¿Qué argumento introduce el coronel cuando anuncia «otra cosa de la que se habla menos»?",
+      "options": {
+        "A": "Que el modelo funciona en tiempo de paz, aunque falle en cuanto las unidades tienen que salir de misión.",
+        "B": "Que las Fuerzas Armadas perderán especialistas si las empresas les ofrecen sueldos más altos.",
+        "C": "Que, con el tiempo, contratar deja de ser una elección, porque se pierde la capacidad de hacerlo uno mismo.",
+        "D": "Que las penalizaciones llegan demasiado tarde y no reparan el daño causado durante una operación."
+      },
+      "answer": "C",
+      "rationale": "Tras anunciar «otra cosa de la que se habla menos», el coronel explica que, cuando una tarea pasa años en manos de una empresa, los sargentos que sabían hacerla se retiran sin relevo, hasta que contratar deja de ser una opción: «no le queda otro remedio».",
+      "option_rationales": {
+        "A": "Lectura errónea: esa concesión aparece al principio («en tiempo de paz, no le discuto ni una coma»); lo que introduce después es un riesgo nuevo, el de los sargentos que se retiran.",
+        "B": "No se dice: los sargentos «se van retirando»; el coronel no habla de sueldos ni de empresas que se lleven a los especialistas.",
+        "C": "Correcta: si «nadie ocupa su sitio», la capacidad propia desaparece y contratar ya no es una preferencia: «no le queda otro remedio».",
+        "D": "Cierta pero no responde: que las penalizaciones «se cobran después» lo dice justo antes; «otra cosa» anuncia un argumento distinto, el de los sargentos que se retiran sin relevo."
+      }
+    },
+    {
+      "id": 3,
+      "question": "Al final del debate, ¿qué teme el coronel que se recorte primero?",
+      "options": {
+        "A": "El personal civil que las empresas envían a las zonas de operaciones, con seguros y cláusulas a medida.",
+        "B": "El apoyo que va con las unidades desplegadas, que la analista quiere mantener en manos militares.",
+        "C": "Los soldados que dedican su jornada a tareas de cuartel que una empresa haría por menos dinero.",
+        "D": "Los contratos del apoyo que no sale del territorio nacional, que la analista propone dejar en manos privadas."
+      },
+      "answer": "B",
+      "rationale": "El coronel teme que lo primero que se considere prescindible sea «eso que la señora Navarro admite que sale más caro», es decir, lo que acompaña a las unidades «cuando salen de misión», que ella quiere mantener en manos militares «aunque en tiempo de paz salga más caro».",
+      "option_rationales": {
+        "A": "Lectura errónea: los «seguros específicos» forman parte del contrato que defiende la analista; no son lo que ella admite que sale más caro ni lo que el coronel teme ver recortado.",
+        "B": "Correcta: «eso que la señora Navarro admite que sale más caro» remite al apoyo que acompaña a las unidades y que ella quiere dejar en manos de «personal militar».",
+        "C": "Lectura errónea: los soldados que sirven comidas aparecen al principio, cuando la analista defiende contratar porque una empresa lo hace «muchas veces más barato»; el coronel teme por otra cosa.",
+        "D": "Lectura errónea: confunde las dos mitades de la propuesta; lo que «no se mueve del territorio nacional» es lo que, según la analista, «sí puede contratarse sin miedo», no lo que sale más caro."
+      }
+    }
+  ]
+}
