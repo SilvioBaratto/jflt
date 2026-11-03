@@ -191,8 +191,8 @@
                     <li [attr.lang]="s.language"><strong>{{ d.dimension }}: {{ d.score }}/4</strong> — {{ d.comment }}</li>
                   }
                 </ul>
-                @if (wr.grade.strengths.length) { <p><strong>Strengths:</strong> <span [attr.lang]="s.language">{{ wr.grade.strengths.join('; ') }}</span></p> }
-                @if (wr.grade.improvements.length) { <p><strong>Improve:</strong> <span [attr.lang]="s.language">{{ wr.grade.improvements.join('; ') }}</span></p> }
+                @if (wr.grade.strengths.length) { <p><strong>Strengths:</strong>&ngsp;<span [attr.lang]="s.language">{{ wr.grade.strengths.join('; ') }}</span></p> }
+                @if (wr.grade.improvements.length) { <p><strong>Improve:</strong>&ngsp;<span [attr.lang]="s.language">{{ wr.grade.improvements.join('; ') }}</span></p> }
                 @if (wr.modelAnswer) {
                   <details><summary>Model answer</summary><div class="model md" [attr.lang]="s.language" [innerHTML]="wr.modelAnswer | markdown"></div></details>
                 }

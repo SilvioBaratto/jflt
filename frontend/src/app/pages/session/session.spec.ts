@@ -567,6 +567,19 @@ describe('SessionComponent', () => {
       expect(writing.querySelectorAll('.grade > p:not(.score) > strong')[0].textContent).toBe('Strengths:');
     });
 
+    it('keeps a space between each feedback label and the text after it', async () => {
+      await openWithFeedback('es');
+
+      const [reading, listening, writing] = cards();
+      // Angular drops a whitespace-only text node between two elements, so a label followed directly by a lang span would run together.
+      for (const card of [reading, listening]) {
+        expect(card.querySelector('.fb .muted')!.textContent).toBe('Your choice: La opcion B no aparece en el texto.');
+      }
+      const [strengths, improvements] = Array.from(writing.querySelectorAll('.grade > p:not(.score)'));
+      expect(strengths.textContent).toBe('Strengths: Buena estructura; Ideas claras');
+      expect(improvements.textContent).toBe('Improve: Revisar los acentos');
+    });
+
     it.each<[Language, Language]>([
       ['es', 'en'],
       ['en', 'es'],
