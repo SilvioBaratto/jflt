@@ -1,6 +1,17 @@
-# Project
+# JFLT
 
-Full-stack application with **NestJS**, **Angular**, and **Docker**.
+STANAG 6001 language-proficiency exam prep. Candidates practise and sit mock exams across four
+skills (reading multiple choice, listening comprehension, writing tasks, vocabulary), scored on the
+STANAG 1-4 / SLP scale. Items come from a seeded content bank in English and Spanish, and can also
+be generated and graded on demand by Claude. Built with **NestJS**, **Angular**, and **Docker**.
+
+> **Unofficial.** JFLT is an independent project. It is not affiliated with, endorsed by, or
+> approved by NATO or the Bureau for International Language Co-ordination (BILC). "STANAG" and the
+> proficiency levels are referenced only to describe the exam format. All exam items are original
+> text written for this project, not real test material.
+>
+> Listening audio is AI-generated speech (OpenAI text-to-speech for the Spanish and on-demand
+> items), not recordings of real speakers.
 
 ## Getting Started
 
@@ -55,11 +66,14 @@ ng test
 
 | Service | Port | Description |
 |---------|------|-------------|
-| `db` | 5433:5432 | PostgreSQL 16 |
-| `redis` | internal | Redis (BullMQ) |
+| `db` | 127.0.0.1:5433:5432 | PostgreSQL 16 |
+| `redis` | 127.0.0.1:6379:6379 | Redis (BullMQ) |
 | `api` | 8000:8000 | NestJS with hot reload |
 | `frontend` | 4200:80 | Angular + nginx |
-| `adminer` | 8080:8080 | Database admin UI |
+| `adminer` | 127.0.0.1:8080:8080 | Database admin UI |
+
+`db`, `redis` and `adminer` listen on localhost only because they ship with default credentials
+(`postgres:postgres`) or none. Keep them off public interfaces if you deploy this stack.
 
 ## License
 
